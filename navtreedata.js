@@ -66,7 +66,7 @@ var NAVTREE =
         ] ],
         [ "Built-in variables, functions and constants", "md_acc-runtime_2README.html#autotoc_md55", [
           [ "Built-in constants", "md_acc-runtime_2README.html#autotoc_md56", null ],
-          [ "Built-in dconsts", "md_acc-runtime_2README.html#autotoc_md57", null ]
+          [ "Built-in variables", "md_acc-runtime_2README.html#autotoc_md57", null ]
         ] ],
         [ "Advanced features", "md_acc-runtime_2README.html#autotoc_md58", [
           [ "Profiles", "md_acc-runtime_2README.html#autotoc_md59", null ],

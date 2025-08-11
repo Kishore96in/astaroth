@@ -481,65 +481,9 @@ Built-in constants</h3>
 <div class="line">real AC_REAL_MIN // Either DBL_MIN or FLT_MIN base on precision of `real`</div>
 <div class="line">real AC_REAL_EPSILON // Either DBL_EPSILON or FLT_EPSILON base on precision of `real`</div>
 </div><!-- fragment --> <h3><a class="anchor" id="autotoc_md57"></a>
-Built-in dconsts</h3>
-<div class="fragment"><div class="line">uniform spacings of the grid:</div>
-<div class="line">real3 AC_ds</div>
-<div class="line">and their inverses:</div>
-<div class="line">real3 AC_inv_ds</div>
-<div class="line">and powers of these:</div>
-<div class="line">real3 AC_ds_2</div>
-<div class="line">real3 AC_ds_3</div>
-<div class="line">real3 AC_ds_4</div>
-<div class="line">real3 AC_ds_5</div>
-<div class="line">real3 AC_ds_6</div>
-<div class="line"> </div>
-<div class="line">real3 AC_inv_ds_2</div>
-<div class="line">real3 AC_inv_ds_3</div>
-<div class="line">real3 AC_inv_ds_4</div>
-<div class="line">real3 AC_inv_ds_5</div>
-<div class="line">real3 AC_inv_ds_6</div>
-<div class="line"> </div>
-<div class="line">The smallest of the three spacings and its powers</div>
-<div class="line">real AC_dsmin</div>
-<div class="line">real AC_dsmin_2</div>
-<div class="line"> </div>
-<div class="line">Subdomain size (not incl. halos)</div>
-<div class="line">int3 AC_nlocal</div>
-<div class="line">Subdomain size (incl. halos)</div>
-<div class="line">int3 AC_mlocal</div>
-<div class="line">Domain size (not incl. halos)</div>
-<div class="line">int3 AC_ngrid</div>
-<div class="line">Domain size (incl. halos)</div>
-<div class="line">int3 AC_mgrid</div>
-<div class="line">Products of the domain sizes (xy, xz, yz, xyz)</div>
-<div class="line">AcDimProducts AC_nlocal_products</div>
-<div class="line">AcDimProducts AC_mlocal_products</div>
-<div class="line">AcDimProducts AC_ngrid_products</div>
-<div class="line">AcDimProducts AC_mgrid_products</div>
-<div class="line">First point in the computational subdomain/domain (also the ghost zone sizes)</div>
-<div class="line">int3 AC_nmin</div>
-<div class="line">Last point in the computational subdomain</div>
-<div class="line">int3 AC_nlocal_max</div>
-<div class="line">Last point in the computational domain</div>
-<div class="line">int3 AC_ngrid_max</div>
-<div class="line">The coordinate system used (default cartesian)</div>
-<div class="line">AC_COORDINATE_SYSTEM  AC_coordinate_system</div>
-<div class="line">Multi-GPU parameters</div>
-<div class="line">int3 AC_domain_decomposition //How the domain is decomposed to multiple GPUs</div>
-<div class="line">int3 AC_domain_coordinates   //Local coordinate of the current device in the grid of GPUs</div>
-<div class="line">int3 AC_multigpu_offset      //AC_domain_coordinates*int3(AC_nx,AC_ny_AC_nz)</div>
-<div class="line">Library config parameters (explained in the library documentation)</div>
-<div class="line">Not meaningful for DSL</div>
-<div class="line">int AC_proc_mapping_strategy</div>
-<div class="line">int AC_decompose_strategy</div>
-<div class="line">int AC_MPI_comm_strategy</div>
-<div class="line">int AC_MPI_comm_strategy</div>
-<div class="line">bool AC_host_has_row_memory_order</div>
-<div class="line">Coordinate vectors of a Lagrangian grid (need LAGRANGIAN_GRID=ON)</div>
-<div class="line">Field COORDS_X</div>
-<div class="line">Field COORDS_Y</div>
-<div class="line">Field COORDS_Z</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md58"></a>
+Built-in variables</h3>
+<p><a href="https://toxpuro.github.io/astaroth/variables_8h.html">See built-in variables here</a></p>
+<h2><a class="anchor" id="autotoc_md58"></a>
 Advanced features</h2>
 <p>If OPTIMIZE_FIELDS=ON, the DSL compiler will identify unused <code>Fields</code> and will not allocate them on the GPU. To still enable a loop across all allocated <code>Fields</code> non-allocated <code>Fields</code> are not counted in <code>NUM_FIELDS</code> and their numerical index is higher than <code>NUM_FIELDS</code>.</p>
 <p><b>Important</b> If you use runtime-compilation this can mean that the index value of the main application that calls Astaroth and the index value inside it might not match. To get the correct indexes, use API functions acGet&lt; Field name &gt;.</p>
