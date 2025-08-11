@@ -243,8 +243,8 @@ Advanced</h3>
 </ul>
 <p>The DSL compiler can also infer these qualifiers if OPTIMIZE_FIELDS=ON from <code>write</code>, <code>value</code> and <code>Stencil</code> calls. Additionally the DSL compiler can infer which <code>Fields</code> can be <code>dead</code> if you also have ALLOW_DEAD_FIELDS=ON <b>Important</b> requires that all conditionals are known at compile-time (or when loading Astaroth if using runtime compilation).</p>
 <ul>
-<li><code>input</code> Designed for variables that are inputs to Kernels, but should not be allocated/loaded to the GPU. <blockquote class="doxtable">
-<p>&zwj;Note: At the moment, mostly useful for <code>ComputeSteps</code> </p>
+<li><code>input</code> Designed for variables that are input parameters to Kernels, but should not be allocated/loaded to the GPU. Or for control variables that should only live on the host. (Renaming the qualifier to <code>host</code> is under consideration.) <blockquote class="doxtable">
+<p>&zwj;Note: At the moment, can be used only via <code>ComputeSteps</code>. See the section describing <code>ComputeSteps</code> for example usage. </p>
 </blockquote>
 * <code>output</code> At the moment, restricted to <code>real</code> and <code>int</code> scalar quantities resulting from reductions across the whole subdomain. <blockquote class="doxtable">
 <p>&zwj;Note: implicitly allocates memory on the GPU to perform reductions. </p>
@@ -374,12 +374,19 @@ Printing</h3>
 Kernels</h3>
 <p>Kernels are functions visible outside of the DSL code, called by the host. Calling kernels is the only way to execute DSL code.</p>
 <blockquote class="doxtable">
-<p>&zwj;Note: Kernels can not be called from other kernels. Note: <a class="el" href="structArray.html">Array</a> input parameters are not supported Note: The types of the input parameters have to be declared. Note: There are different ways to pass input parameters to kernels through API functions. </p>
+<p>&zwj;Note: Kernels can not be called from other kernels. Note: <a class="el" href="structArray.html">Array</a> input parameters of known sizes are not supported Note: The types of the input parameters have to be declared. Note: There are different ways to pass input parameters to kernels through API functions. </p>
 </blockquote>
-<div class="fragment"><div class="line">Kernel func3(input param) {</div>
+<div class="fragment"><div class="line">Kernel func3(type param) {</div>
 <div class="line"> </div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md54"></a>
+<div class="line"> </div>
+<div class="line">Kernel func4(type[] ptr) {</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --> <blockquote class="doxtable">
+<p>&zwj;Note: In the example of func4 the input param <code>ptr</code> is functionally a pointer to GPU allocated memory. The correctness of the pointer is not checked by Astaroth and is responsibility of the user. </p>
+</blockquote>
+<h3><a class="anchor" id="autotoc_md54"></a>
 Stencils</h3>
 <p>Stencils are functions that take in a <code>Field</code> input parameter and have an unique syntax and semantics. <b>Importantly</b>, they are the only way to access values of a <code>Field</code> on other vertexes than at the current one. A stencil operation multiplies all points of the stencil by their corresponding coefficients and performs a binary reduction operation (<code>Sum</code> or <code>Max</code>) over these values. Because Stencils act uniformly on the input parameter it is not declared. </p><div class="fragment"><div class="line">// Format</div>
 <div class="line">&lt;Optional reduction operation&gt; Stencil &lt;identifier&gt; {</div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"globals_vars_m.html":[21,1,2,11],
 "globals_vars_n.html":[21,1,2,12],
 "globals_vars_o.html":[21,1,2,13],
 "globals_vars_p.html":[21,1,2,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "kiss__fft_8h.html#a167bff53d1f15bc13289353390b7faae":[21,0,8,0,3,0,2,4],
 "kiss__fft_8h.html#a1c86cad1a0ff555e370ec3bdf9b823d5":[21,0,8,0,3,0,2,13],
 "kiss__fft_8h.html#a2b98b8eaff35a0f7767c8cc0867b820d":[21,0,8,0,3,0,2,2],
-"kiss__fft_8h.html#a3caa32967041322678450f0b210d06de":[21,0,8,0,3,0,2,1],
-"kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337":[21,0,8,0,3,0,2,7]
+"kiss__fft_8h.html#a3caa32967041322678450f0b210d06de":[21,0,8,0,3,0,2,1]
 };

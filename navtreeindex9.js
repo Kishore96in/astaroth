@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"cufft_8cc.html#a177bfe09122ac9cafccaf67e1c947194":[21,0,8,0,3,2,4],
 "cufft_8cc.html#a29f4ce60aeec9b59a5fc845ad7860ade":[21,0,8,0,3,2,0],
 "cufft_8cc.html#a4a2c38a3c895e671102a9af8712e208f":[21,0,8,0,3,2,6],
 "cufft_8cc.html#a549caa8bfd789addd51cc565279c1ade":[21,0,8,0,3,2,9],
@@ -127,8 +128,8 @@ var NAVTREEINDEX9 =
 "derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[21,0,2,5,6,2],
 "derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[21,0,2,5,6,33],
 "derivs_8h.html#a08a153103580544909f8a020f9603608":[21,0,2,5,6,6],
-"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,36],
 "derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,37],
+"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,36],
 "derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[21,0,2,5,6,13],
 "derivs_8h.html#a20a572dbe1ac8d4db589984d3828d7b6":[21,0,2,5,6,16],
 "derivs_8h.html#a24990b016a846112333af562a264df3a":[21,0,2,5,6,12],
@@ -155,8 +156,8 @@ var NAVTREEINDEX9 =
 "derivs_8h.html#a98c10eeb79ac83e5e928dc43469e15b7":[21,0,2,5,6,21],
 "derivs_8h.html#aaaa6728c5a5aae11ca7ecf9f4a3f9cbd":[21,0,2,5,6,29],
 "derivs_8h.html#abb9ed2f8f4b7ed735feb823cd4d5ef4e":[21,0,2,5,6,10],
-"derivs_8h.html#abfdf39c25d7396ad9c01fdef516f130e":[21,0,2,5,6,39],
 "derivs_8h.html#abfdf39c25d7396ad9c01fdef516f130e":[21,0,2,5,6,38],
+"derivs_8h.html#abfdf39c25d7396ad9c01fdef516f130e":[21,0,2,5,6,39],
 "derivs_8h.html#ac55ae232e66f9e72d37487e984f8be17":[21,0,2,5,6,25],
 "derivs_8h.html#ac563861d5733c653e3e9587753872e71":[21,0,2,5,6,7],
 "derivs_8h.html#ac972e08b9f66a38dad81989309aad37e":[21,0,2,5,6,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "device_8cc.html#ad3638bc514110d4f4e3106201f002c9f":[21,0,8,0,15,91],
 "device_8cc.html#ad487df15fe663acf1d5cb3b68ccd9324":[21,0,8,0,15,10],
 "device_8cc.html#ad78b99bd9fee6fa26f3a6cd29ae4cf15":[21,0,8,0,15,39],
-"device_8cc.html#ae467f6442627cf249f455b2bf06f16aa":[21,0,8,0,15,45],
-"device_8cc.html#aea660f13ce7342a1e6b8f3f4575c0f3b":[21,0,8,0,15,12]
+"device_8cc.html#ae467f6442627cf249f455b2bf06f16aa":[21,0,8,0,15,45]
 };

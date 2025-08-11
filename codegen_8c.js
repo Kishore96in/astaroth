@@ -79,6 +79,7 @@ var codegen_8c =
     [ "check_for_illegal_func_calls_in_func", "codegen_8c.html#a45bb84ff08dae73696487826044b32a2", null ],
     [ "check_for_illegal_writes", "codegen_8c.html#a1174aa8996dc3fc1b7ec2867c2d9d6d5", null ],
     [ "check_for_illegal_writes_in_func", "codegen_8c.html#a4f6300a21aa9c04f895d5a85464f0258", null ],
+    [ "check_for_input_use_in_other_than_computesteps", "codegen_8c.html#a498dc682c50eaa5328e1c6a95a8484eb", null ],
     [ "check_for_undeclared_functions", "codegen_8c.html#a972771e7a3f34b2ea0c2c9b25c14922f", null ],
     [ "check_global_array_dimensions", "codegen_8c.html#a568adf8d8e3f996d2aef79e466d58c8d", null ],
     [ "check_status", "codegen_8c.html#a57602150a79f816ee7339396c23d5636", null ],
