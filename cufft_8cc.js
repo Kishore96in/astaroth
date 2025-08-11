@@ -1,0 +1,13 @@
+var cufft_8cc =
+[
+    [ "CUFFT_CALL", "cufft_8cc.html#a29f4ce60aeec9b59a5fc845ad7860ade", null ],
+    [ "acFFTBackwardTransformC2C", "cufft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33", null ],
+    [ "acFFTBackwardTransformC2R", "cufft_8cc.html#abf0ae99bfae26402473c4e9bd6404b86", null ],
+    [ "acFFTBackwardTransformSymmetricC2R", "cufft_8cc.html#a96e8208c4cf11d80de43243342362c5a", null ],
+    [ "acFFTForwardTransformC2C", "cufft_8cc.html#a177bfe09122ac9cafccaf67e1c947194", null ],
+    [ "acFFTForwardTransformPlanar", "cufft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0", null ],
+    [ "acFFTForwardTransformR2C", "cufft_8cc.html#a4a2c38a3c895e671102a9af8712e208f", null ],
+    [ "acFFTForwardTransformR2Planar", "cufft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
+    [ "acFFTForwardTransformSymmetricR2C", "cufft_8cc.html#a60ac7badd6a8e10bd158609f3af30614", null ],
+    [ "acFFTTransformC2C", "cufft_8cc.html#a549caa8bfd789addd51cc565279c1ade", null ]
+];
