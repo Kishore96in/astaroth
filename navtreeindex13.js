@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"kiss__fft_8h.html#a167bff53d1f15bc13289353390b7faae":[21,0,8,0,3,0,2,4],
+"kiss__fft_8h.html#a1c86cad1a0ff555e370ec3bdf9b823d5":[21,0,8,0,3,0,2,13],
+"kiss__fft_8h.html#a2b98b8eaff35a0f7767c8cc0867b820d":[21,0,8,0,3,0,2,2],
+"kiss__fft_8h.html#a3caa32967041322678450f0b210d06de":[21,0,8,0,3,0,2,1],
 "kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337":[21,0,8,0,3,0,2,7],
 "kiss__fft_8h.html#a62e86236e852945b8e120d0228377d71":[21,0,8,0,3,0,2,5],
 "kiss__fft_8h.html#a7a5959c0424de9553661fe50fdc4264e":[21,0,8,0,3,0,2,11],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "md_acc-runtime_2README.html#autotoc_md57":[4,2,5,1],
 "md_acc-runtime_2README.html#autotoc_md58":[4,2,6],
 "md_acc-runtime_2README.html#autotoc_md59":[4,2,6,0],
-"md_acc-runtime_2README.html#autotoc_md60":[4,2,6,1],
-"md_acc-runtime_2README.html#autotoc_md61":[4,2,6,2],
-"md_acc-runtime_2README.html#autotoc_md62":[4,2,6,3],
-"md_acc-runtime_2README.html#autotoc_md63":[4,2,6,4],
-"md_acc-runtime_2README.html#autotoc_md64":[4,3]
+"md_acc-runtime_2README.html#autotoc_md60":[4,2,6,1]
 };

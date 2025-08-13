@@ -137,7 +137,7 @@ Macros</h2></td></tr>
 <tr class="separator:abea985adccca8897cb44ec06294a9195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47b4f7495eb58f5cf1479b952dfb0af" id="r_aa47b4f7495eb58f5cf1479b952dfb0af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyexpr_8c.html#aa47b4f7495eb58f5cf1479b952dfb0af">NEW_EXPR</a>(type, ...)&#160;&#160;&#160;new_expr((type), (const <a class="el" href="structte__expr.html">te_expr</a>*[]){__VA_ARGS__})</td></tr>
 <tr class="separator:aa47b4f7495eb58f5cf1479b952dfb0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c928e351562d938ce6532dd69582c4" id="r_a46c928e351562d938ce6532dd69582c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyexpr_8c.html#a46c928e351562d938ce6532dd69582c4">CHECK_NULL</a>(ptr, ...)&#160;&#160;&#160;if ((ptr) == NULL) { __VA_ARGS__; return NULL; }</td></tr>
+<tr class="memitem:a46c928e351562d938ce6532dd69582c4" id="r_a46c928e351562d938ce6532dd69582c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyexpr_8c.html#a46c928e351562d938ce6532dd69582c4">CHECK_NULL</a>(ptr, ...)&#160;&#160;&#160;<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a> ((ptr) == NULL) { __VA_ARGS__; return NULL; }</td></tr>
 <tr class="separator:a46c928e351562d938ce6532dd69582c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f38c2e0f46c5c58660f65efc14916c" id="r_a48f38c2e0f46c5c58660f65efc14916c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyexpr_8c.html#a48f38c2e0f46c5c58660f65efc14916c">TE_FUN</a>(...)&#160;&#160;&#160;((double(*)(__VA_ARGS__))n-&gt;function)</td></tr>
 <tr class="separator:a48f38c2e0f46c5c58660f65efc14916c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if ((ptr) == NULL) { __VA_ARGS__; return NULL; }</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a> ((ptr) == NULL) { __VA_ARGS__; return NULL; }</td>
         </tr>
       </table>
 </div><div class="memdoc">

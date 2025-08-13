@@ -52,5 +52,9 @@ var acc_runtime_2acc_2ast_8h =
       [ "NODE_BINARY_EXPRESSION", "acc-runtime_2acc_2ast_8h.html#acac9cbaeea226ed297804c012dc12b16a9390ffe4eca3bb8cc1e2b3fc6254301c", null ],
       [ "NODE_TERNARY_EXPRESSION", "acc-runtime_2acc_2ast_8h.html#acac9cbaeea226ed297804c012dc12b16a8f517a061dcff601154169f63ffc5dcc", null ],
       [ "NODE_ANY", "acc-runtime_2acc_2ast_8h.html#acac9cbaeea226ed297804c012dc12b16a155db094c2b0cb6b106fb8559f2e8203", null ]
-    ] ]
+    ] ],
+    [ "if", "acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930", null ],
+    [ "if", "acc-runtime_2acc_2ast_8h.html#adadbe985a0a930e6d3bf3126bdd24adb", null ],
+    [ "new_qualifier", "acc-runtime_2acc_2ast_8h.html#a08187fcca9bba11b127584ec4e70318a", null ],
+    [ "old_qualifier", "acc-runtime_2acc_2ast_8h.html#aedfcc3248ad933627f319b985f23ae9f", null ]
 ];

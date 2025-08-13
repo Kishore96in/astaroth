@@ -503,7 +503,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    left_add  = ln_field ? sld_add_left_exp(f)      : sld_add_left(f)</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    left_slope_ratio = 0.0</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    left_interface_diff = interface_values.y - interface_values.x</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    if((left_interface_diff)*left_diff &gt; 0.0)</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((left_interface_diff)*left_diff &gt; 0.0)</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    {</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit) left_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        left_slope_ratio = (left_interface_diff)/left_diff</div>
@@ -515,7 +515,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    right_add  =  ln_field ? sld_add_right_exp(f)  : sld_add_right(f)</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    right_slope_ratio = 0.0</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    right_interface_diff = interface_values.w - interface_values.z</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    if((right_interface_diff)*right_diff &gt; 0.0)</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((right_interface_diff)*right_diff &gt; 0.0)</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    {</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit) right_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        right_slope_ratio = (right_interface_diff)/right_diff</div>
@@ -533,7 +533,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    left_add  = ln_field ? sld_add_down_exp(f) : sld_add_down(f)</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    left_slope_ratio = 0.0</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    left_interface_diff = interface_values.y - interface_values.x</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    if((left_interface_diff)*left_diff &gt; 0.0)</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((left_interface_diff)*left_diff &gt; 0.0)</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    {</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit) left_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        left_slope_ratio = (left_interface_diff)/left_diff</div>
@@ -545,7 +545,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    right_add  =  ln_field ? sld_add_up_exp(f) : sld_add_up(f)</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    right_slope_ratio = 0.0</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    right_interface_diff = interface_values.w - interface_values.z</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    if((right_interface_diff)*right_diff &gt; 0.0)</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((right_interface_diff)*right_diff &gt; 0.0)</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    {</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit) right_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        right_slope_ratio = (right_interface_diff)/right_diff</div>
@@ -564,7 +564,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    left_add  = ln_field ? sld_add_back_exp(f)  : sld_add_back(f)</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    left_slope_ratio = 0.0</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    left_interface_diff = interface_values.y - interface_values.x</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    if((left_interface_diff)*left_diff &gt; 0.0)</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((left_interface_diff)*left_diff &gt; 0.0)</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    {</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit) left_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        left_slope_ratio = (left_interface_diff)/left_diff</div>
@@ -576,7 +576,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    right_add  =  ln_field ? sld_add_front_exp(f)  : sld_add_front(f)</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    right_slope_ratio = 0.0</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>    right_interface_diff = interface_values.w - interface_values.z</div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    if((right_interface_diff)*right_diff &gt; 0.0)</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    <a class="code hl_function" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>((right_interface_diff)*right_diff &gt; 0.0)</div>
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    {</div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit) right_diff = <a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>        right_slope_ratio = (right_interface_diff)/right_diff</div>
@@ -753,6 +753,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>{</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>}</div>
+<div class="ttc" id="aacc-runtime_2acc_2ast_8h_html_a7b50077bef75e0e1697a39b905253930"><div class="ttname"><a href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a></div><div class="ttdeci">if(node-&gt;rhs) change_qualifier(node -&gt; rhs, old_qualifier, new_qualifier)</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_afd8bf2ee8004f952446a6df0cbec3dc4"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a></div><div class="ttdeci">#define exp(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:40</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:395</div></div>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"structac_1_1ndbuffer.html#ab79136df57f7fca04d6b845de10b3479":[19,0,0,6,1],
+"structac_1_1ndbuffer.html#ac2c711b6a98491634766cbd1947f1313":[19,0,0,6,16],
+"structac_1_1ndbuffer.html#ac2c711b6a98491634766cbd1947f1313":[20,0,0,4,16],
+"structac_1_1ndbuffer.html#ad822460be7f8bb41a3fd15428f421243":[20,0,0,4,6],
 "structac_1_1ndbuffer.html#ad822460be7f8bb41a3fd15428f421243":[19,0,0,6,6],
 "structac_1_1ndbuffer.html#adefc20be81a3bba53594675040df2645":[20,0,0,4,13],
 "structac_1_1ndbuffer.html#adefc20be81a3bba53594675040df2645":[19,0,0,6,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX21 =
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#ae1a95f666a22a9a6a49ad26e15635201":[20,0,1,0,0,57],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#ae1a95f666a22a9a6a49ad26e15635201":[19,0,2,0,0,57],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#aecaf47e4932df6126e2f25e231001bbf":[20,0,1,0,0,45],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#aecaf47e4932df6126e2f25e231001bbf":[19,0,2,0,0,45],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#af3cdedd6213fd51f6a7e484eb231ca9c":[20,0,1,0,0,37],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#af3cdedd6213fd51f6a7e484eb231ca9c":[19,0,2,0,0,37],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#af63d49cff0820f3324b12da812c9a266":[20,0,1,0,0,3],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#af63d49cff0820f3324b12da812c9a266":[19,0,2,0,0,3]
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#aecaf47e4932df6126e2f25e231001bbf":[19,0,2,0,0,45]
 };
