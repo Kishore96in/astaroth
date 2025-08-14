@@ -38,7 +38,7 @@ var searchData=
   ['options_35',['options',['../index.html#autotoc_md181',1,'CMake Options'],['../structcombinatorial__params.html#a89e5f76ef2837ea519e92145276df160',1,'combinatorial_params::options'],['../structuser__enums__info.html#a2f8186ad918711d7547c00d27ff7d54b',1,'user_enums_info::options']]],
   ['order_36',['order',['../classTask.html#ad5897b98705092ab9361fe7c9ff85432',1,'Task::order'],['../md_acc-runtime_2README.html#autotoc_md67',1,'Stencil order']]],
   ['others_20freedom_37',['others freedom',['../md_LICENCE.html#autotoc_md161',1,'12. No Surrender of Others&apos; Freedom.'],['../md_acc-runtime_2LICENCE.html#autotoc_md24',1,'12. No Surrender of Others&apos; Freedom.']]],
-  ['out_38',['out',['../structbc__fields.html#aae50521e8e21bdc6b2c10cc126826230',1,'bc_fields::out'],['../structProfileBufferArray.html#a98f145e973737b6ed10e65d2735b66f3',1,'ProfileBufferArray::out'],['../structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b',1,'DeviceVertexBufferArray::out']]],
+  ['out_38',['out',['../structbc__fields.html#aae50521e8e21bdc6b2c10cc126826230',1,'bc_fields::out'],['../structProfileBufferArray.html#a39a6580c56488486a1e3fdf7b5a5d60d',1,'ProfileBufferArray::out'],['../structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b',1,'DeviceVertexBufferArray::out']]],
   ['outgoing_5fray_5flength_39',['outgoing_ray_length',['../radiation__ray_8h.html#a982fb04fcf6118f9846258a1c6029186',1,'radiation_ray.h']]],
   ['output_40',['output',['../structdevice__s.html#a2cde532c15cf8198d184888276da48a0',1,'device_s']]],
   ['output_20buffers_41',['Input and Output Buffers',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md130',1,'']]],
