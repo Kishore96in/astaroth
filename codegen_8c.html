@@ -390,6 +390,10 @@ Functions</h2></td></tr>
 <tr class="separator:a52b127d6b50d33ea932e1ca5a6496698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adae43d8e54a6028098459548fc460a31" id="r_adae43d8e54a6028098459548fc460a31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#adae43d8e54a6028098459548fc460a31">is_output_type</a> (const char *var)</td></tr>
 <tr class="separator:adae43d8e54a6028098459548fc460a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a6d692b779a6f63b787b35496496f4" id="r_ad0a6d692b779a6f63b787b35496496f4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ad0a6d692b779a6f63b787b35496496f4">generate_parameter_recursive</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const char *res)</td></tr>
+<tr class="separator:ad0a6d692b779a6f63b787b35496496f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110f776cce16fbdf762f819e904ecc80" id="r_a110f776cce16fbdf762f819e904ecc80"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a110f776cce16fbdf762f819e904ecc80">generate_parameter</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
+<tr class="separator:a110f776cce16fbdf762f819e904ecc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e1c9f3b4fe3e59e78794731bdc66b63" id="r_a0e1c9f3b4fe3e59e78794731bdc66b63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfunc__params__info.html">func_params_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a0e1c9f3b4fe3e59e78794731bdc66b63">get_func_call_params_info</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *func_call)</td></tr>
 <tr class="separator:a0e1c9f3b4fe3e59e78794731bdc66b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812b66734000e654a1e4c411d47add87" id="r_a812b66734000e654a1e4c411d47add87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a812b66734000e654a1e4c411d47add87">gen_loader</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *func_call, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>)</td></tr>
@@ -5982,6 +5986,52 @@ Variables</h2></td></tr>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a110f776cce16fbdf762f819e904ecc80" name="a110f776cce16fbdf762f819e904ecc80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110f776cce16fbdf762f819e904ecc80">&#9670;&#160;</a></span>generate_parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * generate_parameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0a6d692b779a6f63b787b35496496f4" name="ad0a6d692b779a6f63b787b35496496f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a6d692b779a6f63b787b35496496f4">&#9670;&#160;</a></span>generate_parameter_recursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * generate_parameter_recursive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

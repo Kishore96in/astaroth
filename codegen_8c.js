@@ -205,6 +205,8 @@ var codegen_8c =
     [ "generate_error_messages", "codegen_8c.html#ac22b324da2090386bf886ff5abc7ffd4", null ],
     [ "generate_executed_nodes", "codegen_8c.html#aacd4590316a19a25f1cd8e4aefc29313", null ],
     [ "generate_mem_accesses", "codegen_8c.html#aec386ebc54b3a34fcddfa3bd63adcaec", null ],
+    [ "generate_parameter", "codegen_8c.html#a110f776cce16fbdf762f819e904ecc80", null ],
+    [ "generate_parameter_recursive", "codegen_8c.html#ad0a6d692b779a6f63b787b35496496f4", null ],
     [ "get_all_acreal_structs", "codegen_8c.html#adb49df8a41110ccdfeb0f88c14e8af4e", null ],
     [ "get_all_datatypes", "codegen_8c.html#a71e71ad1807c2c17bea9232ff8b3ada7", null ],
     [ "get_all_field_structs", "codegen_8c.html#a9a8683d718b1e73cf8e327815309e74c", null ],
