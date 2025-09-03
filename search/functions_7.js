@@ -189,7 +189,7 @@ var searchData=
   ['get_5fnumber_5fof_5fmembers_186',['get_number_of_members',['../codegen_8c.html#a368749eac9e275da0e4fc91c6efaad78',1,'codegen.c']]],
   ['get_5foffsets_187',['get_offsets',['../reductions_8cu.html#a85c57339624ed609c19827b5d54f05c9',1,'reductions.cu']]],
   ['get_5fop_5finstruction_188',['get_op_instruction',['../warp__reduce_8h.html#a06f8db8d69443714aaa3b018cebd328c',1,'warp_reduce.h']]],
-  ['get_5foptions_189',['get_options',['../codegen_8c.html#a3b06e261bc7c1d8a37e9f4c7b01b3b93',1,'codegen.c']]],
+  ['get_5foptions_189',['get_options',['../codegen_8c.html#a9efcd61c38967753ba8186170a3a30e1',1,'codegen.c']]],
   ['get_5foverrided_5fvars_190',['get_overrided_vars',['../codegen_8c.html#a989f3938aa5cd55aca04f75ec43ccd5e',1,'codegen.c']]],
   ['get_5fprimary_5fexpr_5ftype_191',['get_primary_expr_type',['../codegen_8c.html#a5852fe6f1aef37be600b98ac85d193bd',1,'codegen.c']]],
   ['get_5fprimary_5fexpression_5fand_5ffunc_5fcall_5ftypes_192',['get_primary_expression_and_func_call_types',['../codegen_8c.html#af6c0d0d0f2384d981370a6157f1e772e',1,'codegen.c']]],
