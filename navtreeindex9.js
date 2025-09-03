@@ -1,9 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"cuda_8cc.html#afd52d182e56bfcc6b3c857b4bf1d067f":[21,0,8,0,0,1,32],
-"cuda__utils_8h.html":[21,0,1,0,0,7],
-"cuda__utils_8h.html#a803050db3c78e0db3ea59a0c35499622":[21,0,1,0,0,7,1],
-"cuda__utils_8h.html#ad54e07d96efd9a36dfca1a9f27776d62":[21,0,1,0,0,7,0],
 "cuda__utils_8h_source.html":[21,0,1,0,0,7],
 "cufft_8cc.html":[21,0,8,0,3,2],
 "cufft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0":[21,0,8,0,3,2,5],
@@ -135,8 +131,8 @@ var NAVTREEINDEX9 =
 "derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[21,0,2,5,6,2],
 "derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[21,0,2,5,6,33],
 "derivs_8h.html#a08a153103580544909f8a020f9603608":[21,0,2,5,6,6],
-"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,36],
 "derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,37],
+"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,6,36],
 "derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[21,0,2,5,6,13],
 "derivs_8h.html#a20a572dbe1ac8d4db589984d3828d7b6":[21,0,2,5,6,16],
 "derivs_8h.html#a24990b016a846112333af562a264df3a":[21,0,2,5,6,12],
@@ -170,8 +166,8 @@ var NAVTREEINDEX9 =
 "derivs_8h.html#ac972e08b9f66a38dad81989309aad37e":[21,0,2,5,6,19],
 "derivs_8h.html#ac9cdb9e5b6ffa202261ebcdf1ea141c7":[21,0,2,5,6,44],
 "derivs_8h.html#acb5b1b022534b29852f2d5935ef0e68a":[21,0,2,5,6,5],
-"derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[21,0,2,5,6,41],
 "derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[21,0,2,5,6,40],
+"derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[21,0,2,5,6,41],
 "derivs_8h.html#ae7757a44dbeb76b0d368b7b1c7e5c5cc":[21,0,2,5,6,1],
 "derivs_8h.html#aee56dddb642526bf346ca4838262fe1d":[21,0,2,5,6,26],
 "derivs_8h.html#afbb61efb334721d8246f04f5dcc3d344":[21,0,2,5,6,14],
@@ -249,5 +245,9 @@ var NAVTREEINDEX9 =
 "device_8cc.html#ac2b72cffdc48c4bb0e75beb4600aa15f":[21,0,8,0,15,58],
 "device_8cc.html#ac46e93d02dc53671b354b7ea985cfbc6":[21,0,8,0,15,55],
 "device_8cc.html#ac6c3c37bf5db17e7f52f35796711a024":[21,0,8,0,15,66],
-"device_8cc.html#ac8b592b7625728481233116382548951":[21,0,8,0,15,42]
+"device_8cc.html#ac8b592b7625728481233116382548951":[21,0,8,0,15,42],
+"device_8cc.html#acb2e963826cb26202acd8f047ec1903f":[21,0,8,0,15,36],
+"device_8cc.html#acf467511f478b384bf7111261e3e3505":[21,0,8,0,15,77],
+"device_8cc.html#acf88d16d2b13ca0d4403c28b62332625":[21,0,8,0,15,64],
+"device_8cc.html#ad3638bc514110d4f4e3106201f002c9f":[21,0,8,0,15,91]
 };

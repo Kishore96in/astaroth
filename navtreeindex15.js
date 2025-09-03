@@ -1,9 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"namespaceac.html#a65dd29b382990ec1b38f0bbd11f32e74":[19,0,0,56],
-"namespaceac.html#a68b90802733a6a804914755ba859ba6e":[19,0,0,46],
-"namespaceac.html#a6bf6a37c77c7c7770128c00666bb5341":[19,0,0,40],
-"namespaceac.html#a6d1e163b761190886b5b094d8b9cf4a5":[19,0,0,30],
 "namespaceac.html#a6d4ff1625dc8ae471a8d2727c520bfc5":[19,0,0,19],
 "namespaceac.html#a6e19a655735ea11c2ddbe4d6f770d426":[19,0,0,13],
 "namespaceac.html#a7137be6c3c61d44b69978ecdab973728":[19,0,0,27],
@@ -187,8 +183,8 @@ var NAVTREEINDEX15 =
 "namespacematplotlibcpp_1_1detail.html":[19,0,2,0],
 "namespacematplotlibcpp_1_1detail.html#ab78ea1d46cdefdf8037d2a2c0bcfaedb":[19,0,2,0,9],
 "namespacematplotlibcpp_1_1detail.html#ad711caf78c271008983e97009c6d314c":[19,0,2,0,8],
-"namespacemembers.html":[19,1,0,0],
 "namespacemembers.html":[19,1,0],
+"namespacemembers.html":[19,1,0,0],
 "namespacemembers_b.html":[19,1,0,1],
 "namespacemembers_c.html":[19,1,0,2],
 "namespacemembers_d.html":[19,1,0,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX15 =
 "node_8cc.html#ac6d180c7f3645f3e2d5fc91810423b6d":[21,0,8,0,21,21],
 "node_8cc.html#acc9beb0449cce16b4e8172919aa0d470":[21,0,8,0,21,22],
 "node_8cc.html#ada8543466aa30f521cb3c71cd72160bd":[21,0,8,0,21,27],
-"node_8cc.html#adcf98fd76d4c09df0b0a2642961c58a7":[21,0,8,0,21,8]
+"node_8cc.html#adcf98fd76d4c09df0b0a2642961c58a7":[21,0,8,0,21,8],
+"node_8cc.html#ae28cb9078f6ea1c56d1c83444d02bdfe":[21,0,8,0,21,9],
+"node_8cc.html#ae6c87ee2df857186dc7dbb6df46c27e3":[21,0,8,0,21,15],
+"node_8cc.html#aeed42829c552d31bf07f5b852dc3db44":[21,0,8,0,21,5],
+"node_8cc.html#af57af0b91ce13484a148c1abe5db714e":[21,0,8,0,21,12]
 };
