@@ -257,6 +257,7 @@ var codegen_8c =
     [ "get_node_decl", "codegen_8c.html#a00eb8fc3a904271fbc4145811e6d06ec", null ],
     [ "get_nodes", "codegen_8c.html#a43f1b6c5eb568f6030bf649fc58561f1", null ],
     [ "get_number_of_members", "codegen_8c.html#a368749eac9e275da0e4fc91c6efaad78", null ],
+    [ "get_options", "codegen_8c.html#a3b06e261bc7c1d8a37e9f4c7b01b3b93", null ],
     [ "get_overrided_vars", "codegen_8c.html#a989f3938aa5cd55aca04f75ec43ccd5e", null ],
     [ "get_primary_expr_type", "codegen_8c.html#a5852fe6f1aef37be600b98ac85d193bd", null ],
     [ "get_primary_expression_and_func_call_types", "codegen_8c.html#af6c0d0d0f2384d981370a6157f1e772e", null ],

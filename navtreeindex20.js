@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structAcShearInterpolationCoeffs.html#aee7e19c85a21fad8775fa862e4ebea93":[20,0,28,1],
 "structAcTaskGraph.html":[20,0,29],
 "structAcTaskGraph.html#a1ec0bf72efcbd522abd9b926641825a2":[20,0,29,3],
 "structAcTaskGraph.html#abf372b09f20d63b63a55fbe31c1a0d65":[20,0,29,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structac_1_1ndbuffer.html#a91f6ce5625f0f92a2d9143324ad1e0bc":[19,0,0,6,9],
 "structac_1_1ndbuffer.html#a91f6ce5625f0f92a2d9143324ad1e0bc":[20,0,0,4,9],
 "structac_1_1ndbuffer.html#a9a587e5c6c8272f58a4ed1e0b6b07b63":[19,0,0,6,12],
-"structac_1_1ndbuffer.html#a9a587e5c6c8272f58a4ed1e0b6b07b63":[20,0,0,4,12],
-"structac_1_1ndbuffer.html#a9d5c869b3facbf573b2467c2811eb023":[20,0,0,4,5]
+"structac_1_1ndbuffer.html#a9a587e5c6c8272f58a4ed1e0b6b07b63":[20,0,0,4,12]
 };
