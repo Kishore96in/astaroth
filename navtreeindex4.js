@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"astaroth__helpers_8h.html#a73766c19a1d14ae543ea8d5aff726212":[21,0,6,11,12],
+"astaroth__helpers_8h.html#a76d4105ebcd1dea3434d60eb6e979304":[21,0,6,11,14],
 "astaroth__helpers_8h.html#a7989b218ea9fdc11c47f971682b3919e":[21,0,6,11,3],
 "astaroth__helpers_8h.html#a79edb93646ae44dbbd6289cb8928a710":[21,0,6,11,10],
 "astaroth__helpers_8h.html#a7a325ffe44e7b78a63f1b6c043e883f2":[21,0,6,11,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "classComputeTask.html#a8b98ee78eaf9450c2750088192f312a7":[20,0,43,2],
 "classComputeTask.html#aa62c6fa4a048067cc89b6d6f8e1db70b":[20,0,43,7],
 "classComputeTask.html#ac1e82fd6d173d28af2edf2bf5ecf5383":[20,0,43,5],
-"classComputeTask.html#acb1e3f0971eb112cd73440e254d2d446":[20,0,43,3],
-"classComputeTask.html#adae886b2c38c22af025268416ab93e49":[20,0,43,0],
-"classComputeTask.html#aea568de614843be7eda5bdd3f922ee51":[20,0,43,1]
+"classComputeTask.html#acb1e3f0971eb112cd73440e254d2d446":[20,0,43,3]
 };
