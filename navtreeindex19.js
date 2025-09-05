@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"stdderiv_8h.html#a39c132057559a2390b35efbb766e105d":[21,0,4,0,1,0,3],
 "stdderiv_8h.html#a4121a561010d4e942c69edb0aae26570":[21,0,4,0,1,0,14],
 "stdderiv_8h.html#a45ee5dd62177633176f2f315ce88d9b7":[21,0,4,0,1,0,20],
 "stdderiv_8h.html#a4f1b04a46e55f63f00ba901f57685ec8":[21,0,4,0,1,0,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structAcShape.html#aae97b05dac026f52fe2b595036651388":[20,0,27,0],
 "structAcShape.html#abaa948d1c5c1c86ab28d4b6c9704b171":[20,0,27,3],
 "structAcShape.html#ae56eeb59044cad0b26038ba78fc186b9":[20,0,27,2],
-"structAcShearInterpolationCoeffs.html":[20,0,28],
-"structAcShearInterpolationCoeffs.html#a1d5a0d0bd987aa3d7c09feb3b41f9c4a":[20,0,28,5]
+"structAcShearInterpolationCoeffs.html":[20,0,28]
 };

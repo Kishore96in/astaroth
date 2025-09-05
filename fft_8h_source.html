@@ -130,10 +130,24 @@ $(document).ready(function(){initNavTree('fft_8h_source.html',''); initResizable
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    )</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="fft_8h.html#ac6f2abb89d8e30c0593116f0375ab8d7">   26</a></span><a class="code hl_function" href="fft_8h.html#ac6f2abb89d8e30c0593116f0375ab8d7">poisson_fft_solve</a>(ComplexField dst, ComplexField src)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structreal3.html">real3</a> k = <a class="code hl_function" href="fft_8h.html#a992268ee2bc03bcaa6d3a6bbcc47fe90">get_wavevector</a>()</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> real k2 = dot(k,k)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//We do this in the inplace manner to enable more flexible usage</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    dst[vertexIdx.x][vertexIdx.y][vertexIdx.z] = </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                (k2 == 0.0) ? <a class="code hl_struct" href="structcomplex.html">complex</a>(0.0,0.0) :</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                -src[vertexIdx.x][vertexIdx.y][vertexIdx.z]/k2</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+</div>
 <div class="ttc" id="afft_8h_html_a1817df411acf70df622971e220b7084a"><div class="ttname"><a href="fft_8h.html#a1817df411acf70df622971e220b7084a">get_wavevector_y</a></div><div class="ttdeci">get_wavevector_y()</div><div class="ttdef"><b>Definition</b> fft.h:6</div></div>
 <div class="ttc" id="afft_8h_html_a38105fbe8b6b09d5d236dd3ba3dc7b91"><div class="ttname"><a href="fft_8h.html#a38105fbe8b6b09d5d236dd3ba3dc7b91">get_wavevector_x</a></div><div class="ttdeci">get_wavevector_x()</div><div class="ttdef"><b>Definition</b> fft.h:1</div></div>
 <div class="ttc" id="afft_8h_html_a6d8c519caf992a227cb6f35d4c548d43"><div class="ttname"><a href="fft_8h.html#a6d8c519caf992a227cb6f35d4c548d43">get_wavevector_z</a></div><div class="ttdeci">get_wavevector_z()</div><div class="ttdef"><b>Definition</b> fft.h:11</div></div>
 <div class="ttc" id="afft_8h_html_a992268ee2bc03bcaa6d3a6bbcc47fe90"><div class="ttname"><a href="fft_8h.html#a992268ee2bc03bcaa6d3a6bbcc47fe90">get_wavevector</a></div><div class="ttdeci">get_wavevector()</div><div class="ttdef"><b>Definition</b> fft.h:16</div></div>
+<div class="ttc" id="afft_8h_html_ac6f2abb89d8e30c0593116f0375ab8d7"><div class="ttname"><a href="fft_8h.html#ac6f2abb89d8e30c0593116f0375ab8d7">poisson_fft_solve</a></div><div class="ttdeci">poisson_fft_solve(ComplexField dst, ComplexField src)</div><div class="ttdef"><b>Definition</b> fft.h:26</div></div>
+<div class="ttc" id="astructcomplex_html"><div class="ttname"><a href="structcomplex.html">complex</a></div><div class="ttdef"><b>Definition</b> typedefs.h:49</div></div>
 <div class="ttc" id="astructint3_html_a0a4ad50a155a35fa938ce6f16930affa"><div class="ttname"><a href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">int3::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5cd5a3c388fa28814e3496ef07c39360"><div class="ttname"><a href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">int3::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5d95e23491677d61019f0354b16adca9"><div class="ttname"><a href="structint3.html#a5d95e23491677d61019f0354b16adca9">int3::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>

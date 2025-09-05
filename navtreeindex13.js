@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"kernels_8cu.html#a33ea05b8ab6d864ba8166952e23517e4":[21,0,8,0,3,4,1],
 "kiss__fft_8c.html":[21,0,8,0,3,0,1],
 "kiss__fft_8c.html#a26b8ac31a43a356943061318831508e9":[21,0,8,0,3,0,1,3],
 "kiss__fft_8c.html#aab7972365fc8f30a13eed91fa29172ba":[21,0,8,0,3,0,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "md_acc-runtime_2README.html#autotoc_md49":[4,2,2,1],
 "md_acc-runtime_2README.html#autotoc_md50":[4,2,3],
 "md_acc-runtime_2README.html#autotoc_md51":[4,2,4],
-"md_acc-runtime_2README.html#autotoc_md52":[4,2,4,0],
-"md_acc-runtime_2README.html#autotoc_md53":[4,2,4,1]
+"md_acc-runtime_2README.html#autotoc_md52":[4,2,4,0]
 };
