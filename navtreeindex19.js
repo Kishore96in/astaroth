@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"stdderiv_8h.html#a4121a561010d4e942c69edb0aae26570":[21,0,4,0,1,0,14],
+"stdderiv_8h.html#a45ee5dd62177633176f2f315ce88d9b7":[21,0,4,0,1,0,20],
 "stdderiv_8h.html#a4f1b04a46e55f63f00ba901f57685ec8":[21,0,4,0,1,0,17],
 "stdderiv_8h.html#a5beb537c9593788cbad77d0a301746c0":[21,0,4,0,1,0,33],
 "stdderiv_8h.html#a5d15daf4ecaa8c76ed079906a5538cbf":[21,0,4,0,1,0,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "structAcShape.html#abaa948d1c5c1c86ab28d4b6c9704b171":[20,0,27,3],
 "structAcShape.html#ae56eeb59044cad0b26038ba78fc186b9":[20,0,27,2],
 "structAcShearInterpolationCoeffs.html":[20,0,28],
-"structAcShearInterpolationCoeffs.html#a1d5a0d0bd987aa3d7c09feb3b41f9c4a":[20,0,28,5],
-"structAcShearInterpolationCoeffs.html#a5dc1ed3aa775f600b59c3064345b05c3":[20,0,28,3],
-"structAcShearInterpolationCoeffs.html#a93ad920076ee79eb8ca61efa02c10aac":[20,0,28,2]
+"structAcShearInterpolationCoeffs.html#a1d5a0d0bd987aa3d7c09feb3b41f9c4a":[20,0,28,5]
 };
