@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"structAcShape.html#aae97b05dac026f52fe2b595036651388":[20,0,27,0],
+"structAcShape.html#abaa948d1c5c1c86ab28d4b6c9704b171":[20,0,27,3],
+"structAcShape.html#ae56eeb59044cad0b26038ba78fc186b9":[20,0,27,2],
+"structAcShearInterpolationCoeffs.html":[20,0,28],
 "structAcShearInterpolationCoeffs.html#a1d5a0d0bd987aa3d7c09feb3b41f9c4a":[20,0,28,5],
 "structAcShearInterpolationCoeffs.html#a5dc1ed3aa775f600b59c3064345b05c3":[20,0,28,3],
 "structAcShearInterpolationCoeffs.html#a93ad920076ee79eb8ca61efa02c10aac":[20,0,28,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "structac_1_1ndbuffer.html#a4bd0caf3ae3baedfde03078036bca886":[19,0,0,6,18],
 "structac_1_1ndbuffer.html#a4eb005b370291fea81e7db4a959ce5bc":[20,0,0,4,3],
 "structac_1_1ndbuffer.html#a4eb005b370291fea81e7db4a959ce5bc":[19,0,0,6,3],
-"structac_1_1ndbuffer.html#a537f7f66df8834c6e533454ca5111e30":[19,0,0,6,14],
-"structac_1_1ndbuffer.html#a537f7f66df8834c6e533454ca5111e30":[20,0,0,4,14],
-"structac_1_1ndbuffer.html#a5ac63cfd9ba3067f55dece61062ac263":[19,0,0,6,2],
-"structac_1_1ndbuffer.html#a5ac63cfd9ba3067f55dece61062ac263":[20,0,0,4,2],
-"structac_1_1ndbuffer.html#a80d3fbf7921c315be495626d27b3320c":[19,0,0,6,8]
+"structac_1_1ndbuffer.html#a537f7f66df8834c6e533454ca5111e30":[19,0,0,6,14]
 };

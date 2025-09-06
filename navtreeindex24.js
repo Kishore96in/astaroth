@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"vba_8cc.html#a439802289df68e7567b716e216925938":[21,0,2,1,22,8],
+"vba_8cc.html#a714a110caa52b166d44e172c552fe375":[21,0,2,1,22,2],
+"vba_8cc.html#a77c35ca32c708790b40124633c9c293c":[21,0,2,1,22,6],
+"vba_8cc.html#a8bcfe9c6ade39f6f44bdbb2362f11e6e":[21,0,2,1,22,4],
 "vba_8cc.html#a93b9fbcee9024a47049013b5a634fe86":[21,0,2,1,22,0],
 "vba_8cc.html#aa33edc580156ffb5583238de26e2add8":[21,0,2,1,22,3],
 "vba_8cc.html#aaf53c6e4675bd63f3359d7d1dc763aa4":[21,0,2,1,22,1],

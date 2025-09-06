@@ -2,7 +2,11 @@ var acc_runtime_2api_2hip_8h =
 [
     [ "__HIP_PLATFORM_AMD__", "acc-runtime_2api_2hip_8h.html#ac564497d9952b6cc98197be56507f45a", null ],
     [ "__HIP_PLATFORM_HCC__", "acc-runtime_2api_2hip_8h.html#a69073f48a1171fa0b948f4b50e63ad1a", null ],
+    [ "cudaDevAttrClockRate", "acc-runtime_2api_2hip_8h.html#a3400f4dfb02c31aaea9adf5e539c8041", null ],
+    [ "cudaDevAttrComputeMode", "acc-runtime_2api_2hip_8h.html#aa6135265fd88022851f41431b2ca4bb3", null ],
     [ "cudaDevAttrCooperativeLaunch", "acc-runtime_2api_2hip_8h.html#a8424920780a97b5927a38ecd47d41118", null ],
+    [ "cudaDevAttrMemoryClockRate", "acc-runtime_2api_2hip_8h.html#ad1c0943fb9beef6cd8d4b75e1d46eb5d", null ],
+    [ "cudaDevAttrSingleToDoublePrecisionPerfRatio", "acc-runtime_2api_2hip_8h.html#ac71823e8c38c558582f2b19a3045dc28", null ],
     [ "cudaDeviceAttr", "acc-runtime_2api_2hip_8h.html#ad4d59cbc3775c38a8e05df8fb1c3b956", null ],
     [ "cudaDeviceGetAttribute", "acc-runtime_2api_2hip_8h.html#aba9ada02bb90ec1edbc2591c1f45c569", null ],
     [ "cudaDeviceGetPCIBusId", "acc-runtime_2api_2hip_8h.html#aecf2575483cc5a1d45f6c9f821ecc502", null ],

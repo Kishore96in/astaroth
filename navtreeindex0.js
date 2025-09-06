@@ -246,8 +246,8 @@ var NAVTREEINDEX0 =
 "acc-runtime_2api_2errchk_8h.html#ae91660239419ccde6d6ace940b10bdf3":[21,0,2,1,10,8],
 "acc-runtime_2api_2errchk_8h_source.html":[21,0,2,1,10],
 "acc-runtime_2api_2hip_8h.html":[21,0,2,1,13],
-"acc-runtime_2api_2hip_8h.html#a003dbfc6e0d6d52d5e8b4f40d9a989a0":[21,0,2,1,13,35],
-"acc-runtime_2api_2hip_8h.html#a04a9de68edab0d52cdb600a2d76ca6ac":[21,0,2,1,13,68],
-"acc-runtime_2api_2hip_8h.html#a06ddf2af6fa78b2d581bf47528a9d193":[21,0,2,1,13,37],
-"acc-runtime_2api_2hip_8h.html#a0a87c1d891812c773254b2c73cb42da2":[21,0,2,1,13,22]
+"acc-runtime_2api_2hip_8h.html#a003dbfc6e0d6d52d5e8b4f40d9a989a0":[21,0,2,1,13,39],
+"acc-runtime_2api_2hip_8h.html#a04a9de68edab0d52cdb600a2d76ca6ac":[21,0,2,1,13,72],
+"acc-runtime_2api_2hip_8h.html#a06ddf2af6fa78b2d581bf47528a9d193":[21,0,2,1,13,41],
+"acc-runtime_2api_2hip_8h.html#a0a87c1d891812c773254b2c73cb42da2":[21,0,2,1,13,26]
 };
