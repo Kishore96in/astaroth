@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[21,0,4,0,1,0,11],
+"stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[21,0,4,0,1,0,28],
+"stdderiv_8h.html#a2153d5a23ca2af0ac1f7a4c47ae913da":[21,0,4,0,1,0,9],
+"stdderiv_8h.html#a2732d7618e206debcf31e465133ba14f":[21,0,4,0,1,0,31],
+"stdderiv_8h.html#a27936075bfefb9cddd8d36a4e2d24f91":[21,0,4,0,1,0,5],
+"stdderiv_8h.html#a2d2751ba6b87a105fe2636f7966e041a":[21,0,4,0,1,0,26],
 "stdderiv_8h.html#a3176e3159384961995ab70edc553df08":[21,0,4,0,1,0,6],
 "stdderiv_8h.html#a33753bf2d15ce49018abd97c6c7729d9":[21,0,4,0,1,0,19],
 "stdderiv_8h.html#a345e49f9c8678fa3f3eb36980b8c8edc":[21,0,4,0,1,0,35],
@@ -28,10 +34,10 @@ var NAVTREEINDEX19 =
 "stdderiv_8h_source.html":[21,0,4,0,1,0],
 "stdlib_2utils_2intrinsics_8h.html":[21,0,2,5,3,1],
 "stdlib_2utils_2intrinsics_8h_source.html":[21,0,2,5,3,1],
-"stencil-accesses-fail-test_2main_8cc.html":[21,0,10,16,0],
-"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,16,0,0],
-"stencil-accesses-ok-test_2main_8cc.html":[21,0,10,17,0],
-"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,17,0,0],
+"stencil-accesses-fail-test_2main_8cc.html":[21,0,10,17,0],
+"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,17,0,0],
+"stencil-accesses-ok-test_2main_8cc.html":[21,0,10,18,0],
+"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,18,0,0],
 "stencil__defines_8h.html":[21,0,0,0,0],
 "stencil__defines_8h.html#a0a8164c6a1ab5792bc26f804c48c32d6":[21,0,0,0,0,22],
 "stencil__defines_8h.html#a197db3e093b526c14ba1511f98ddb07d":[21,0,0,0,0,19],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a":[20,0,25,3],
 "structAcReduction.html#a34a7c4b74b94494bcc13a842e91c6e22":[20,0,25,0],
 "structAcReduction.html#a99db014842ac6a814b8f1d9d2579bf69":[20,0,25,1],
-"structAcReduction.html#ad17ae34c0710021bbba4bbb537654d19":[20,0,25,4],
-"structAcReduction.html#afa3e8b7c5a222b87fbd962701f5feb6e":[20,0,25,2],
-"structAcScratchpadStates.html":[20,0,26],
-"structAcScratchpadStates.html#acb0b8c1da1cbe9452a823599092985cb":[20,0,26,1],
-"structAcScratchpadStates.html#ae56466473f0af5cc481c1dd774e279fb":[20,0,26,0],
-"structAcShape.html":[20,0,27],
-"structAcShape.html#a6fb924156f834d97c3f1ee7352921a88":[20,0,27,1]
+"structAcReduction.html#ad17ae34c0710021bbba4bbb537654d19":[20,0,25,4]
 };

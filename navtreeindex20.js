@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"structAcReduction.html#afa3e8b7c5a222b87fbd962701f5feb6e":[20,0,25,2],
+"structAcScratchpadStates.html":[20,0,26],
+"structAcScratchpadStates.html#acb0b8c1da1cbe9452a823599092985cb":[20,0,26,1],
+"structAcScratchpadStates.html#ae56466473f0af5cc481c1dd774e279fb":[20,0,26,0],
+"structAcShape.html":[20,0,27],
+"structAcShape.html#a6fb924156f834d97c3f1ee7352921a88":[20,0,27,1],
 "structAcShape.html#aae97b05dac026f52fe2b595036651388":[20,0,27,0],
 "structAcShape.html#abaa948d1c5c1c86ab28d4b6c9704b171":[20,0,27,3],
 "structAcShape.html#ae56eeb59044cad0b26038ba78fc186b9":[20,0,27,2],
@@ -233,21 +239,15 @@ var NAVTREEINDEX20 =
 "structacAnalysisBCInfo.html":[20,0,2],
 "structacAnalysisBCInfo.html#a7313ed75a2ca0b9d257fbd9ca26692c6":[20,0,2,0],
 "structacAnalysisBCInfo.html#abfa29e34f8c45d1b3de148bdf5ebfb63":[20,0,2,1],
-"structac_1_1mr_1_1host__allocator.html":[20,0,0,2,0],
 "structac_1_1mr_1_1host__allocator.html":[19,0,0,4,0],
-"structac_1_1ndbuffer.html":[20,0,0,4],
+"structac_1_1mr_1_1host__allocator.html":[20,0,0,2,0],
 "structac_1_1ndbuffer.html":[19,0,0,6],
+"structac_1_1ndbuffer.html":[20,0,0,4],
 "structac_1_1ndbuffer.html#a1387bf5abc37dfdd2d527f1b125f54f3":[19,0,0,6,10],
 "structac_1_1ndbuffer.html#a1387bf5abc37dfdd2d527f1b125f54f3":[20,0,0,4,10],
-"structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997":[19,0,0,6,7],
 "structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997":[20,0,0,4,7],
+"structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997":[19,0,0,6,7],
 "structac_1_1ndbuffer.html#a1ebaa1074ef5d103031994e8918b1980":[20,0,0,4,15],
 "structac_1_1ndbuffer.html#a1ebaa1074ef5d103031994e8918b1980":[19,0,0,6,15],
-"structac_1_1ndbuffer.html#a3609c6d6997cffb60163216770256b43":[20,0,0,4,4],
-"structac_1_1ndbuffer.html#a3609c6d6997cffb60163216770256b43":[19,0,0,6,4],
-"structac_1_1ndbuffer.html#a4bd0caf3ae3baedfde03078036bca886":[20,0,0,4,18],
-"structac_1_1ndbuffer.html#a4bd0caf3ae3baedfde03078036bca886":[19,0,0,6,18],
-"structac_1_1ndbuffer.html#a4eb005b370291fea81e7db4a959ce5bc":[20,0,0,4,3],
-"structac_1_1ndbuffer.html#a4eb005b370291fea81e7db4a959ce5bc":[19,0,0,6,3],
-"structac_1_1ndbuffer.html#a537f7f66df8834c6e533454ca5111e30":[19,0,0,6,14]
+"structac_1_1ndbuffer.html#a3609c6d6997cffb60163216770256b43":[19,0,0,6,4]
 };

@@ -16,6 +16,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "ray-mpi-test", "dir_bdaf9964a7d905e331ca1deb4fb2169a.html", "dir_bdaf9964a7d905e331ca1deb4fb2169a" ],
     [ "ray-test", "dir_3804065860f518b706332ecf697aa387.html", "dir_3804065860f518b706332ecf697aa387" ],
     [ "reduce-test", "dir_d939cf20c503d87a775c8a7eb4b9cd85.html", "dir_d939cf20c503d87a775c8a7eb4b9cd85" ],
+    [ "sor-test", "dir_e3479b23febb999f85847734691c34ef.html", "dir_e3479b23febb999f85847734691c34ef" ],
     [ "stencil-accesses-fail-test", "dir_4883b5fc47ccb2299fe4276080b3f4b0.html", "dir_4883b5fc47ccb2299fe4276080b3f4b0" ],
     [ "stencil-accesses-ok-test", "dir_82d7cbc3b300695d2e5aab527055e3fc.html", "dir_82d7cbc3b300695d2e5aab527055e3fc" ],
     [ "use-scalar-reduce", "dir_ce0762aa15dd0aece41bf4b0189e9a0c.html", "dir_ce0762aa15dd0aece41bf4b0189e9a0c" ],
