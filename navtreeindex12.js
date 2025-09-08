@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"globals_r.html":[21,1,0,16],
 "globals_s.html":[21,1,0,17],
 "globals_t.html":[21,1,0,18],
 "globals_type.html":[21,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "internal__device__funcs_8h_source.html":[21,0,8,0,19],
 "interpolation_8h.html":[21,0,2,5,2,3],
 "interpolation_8h_source.html":[21,0,2,5,2,3],
-"io_8h.html":[21,0,1,0,0,20],
-"io_8h_source.html":[21,0,1,0,0,20]
+"io_8h.html":[21,0,1,0,0,20]
 };

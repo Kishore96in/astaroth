@@ -36,6 +36,7 @@ var codegen_8c =
     [ "MAX_NESTS", "codegen_8c.html#ae5d2e450f5ab148f66357e790f500d15", null ],
     [ "MAX_NUM_ARRAYS", "codegen_8c.html#a99f8efe19af524e49dcfdd4dfbfc4b47", null ],
     [ "min", "codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d", null ],
+    [ "NUM_ALWAYS_PRODUCED", "codegen_8c.html#a513061167b6560d265ae299c8e26f597", null ],
     [ "REAL3_SPECIFIER", "codegen_8c.html#add5bb67c0c673565c5393e4e41ab5fdd", null ],
     [ "REAL4_SPECIFIER", "codegen_8c.html#a3cb5856096228dfb9d4b14ab8e263935", null ],
     [ "REAL_SPECIFIER", "codegen_8c.html#a0beb9c8d1371ad6e01e032b67ff848c0", null ],
