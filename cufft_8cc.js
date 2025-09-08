@@ -1,6 +1,8 @@
 var cufft_8cc =
 [
     [ "CUFFT_CALL", "cufft_8cc.html#a29f4ce60aeec9b59a5fc845ad7860ade", null ],
+    [ "CUFFT_COMPLEX2COMPLEX", "cufft_8cc.html#a35d9f7c69b0c58fefc44a47947b3f1b2", null ],
+    [ "cuFFTPrecision", "cufft_8cc.html#ae06b3751c633d7137a6d44ed82e646c4", null ],
     [ "acFFTBackwardTransformC2C", "cufft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33", null ],
     [ "acFFTBackwardTransformC2R", "cufft_8cc.html#abf0ae99bfae26402473c4e9bd6404b86", null ],
     [ "acFFTBackwardTransformSymmetricC2R", "cufft_8cc.html#a96e8208c4cf11d80de43243342362c5a", null ],

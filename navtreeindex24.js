@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"variables_8h.html#aeab7b09ed8d9dae00deb5ed476ba93e7":[21,0,2,2,4,34],
+"variables_8h.html#af567cce8dd14565ee11cedb7f323181a":[21,0,2,2,4,24],
 "variables_8h.html#af7e032d6e36d93ec86bdadf5a4cad15d":[21,0,2,2,4,38],
 "variables_8h.html#aff573381cadf7a0710543ca2e5f25a1a":[21,0,2,2,4,50],
 "variables_8h_source.html":[21,0,2,2,4],

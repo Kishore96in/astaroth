@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,0],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,2],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[21,0,4,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[21,0,4,0,1,0,11],
 "stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[21,0,4,0,1,0,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "structAcReduceBuffer.html#aecb927b0a24d609b682e67e94cefa888":[20,0,24,1],
 "structAcReduction.html":[20,0,25],
 "structAcReduction.html#a29a3bf94741cd64340c6384374bd236c":[20,0,25,5],
-"structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a":[20,0,25,3],
-"structAcReduction.html#a34a7c4b74b94494bcc13a842e91c6e22":[20,0,25,0],
-"structAcReduction.html#a99db014842ac6a814b8f1d9d2579bf69":[20,0,25,1]
+"structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a":[20,0,25,3]
 };
