@@ -15,6 +15,7 @@ var hierarchy =
     [ "AcDimProducts", "structAcDimProducts.html", null ],
     [ "AcDimProductsInv", "structAcDimProductsInv.html", null ],
     [ "AcGridInfo", "structAcGridInfo.html", null ],
+    [ "AcGridMappingFunction", "structAcGridMappingFunction.html", null ],
     [ "AcInputs", "structAcInputs.html", null ],
     [ "AcMatrix", "structAcMatrix.html", null ],
     [ "AcMesh", "structAcMesh.html", null ],

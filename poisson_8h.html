@@ -109,8 +109,12 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:abaee67ab5c5654380389a6d4f970f21a" id="r_abaee67ab5c5654380389a6d4f970f21a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="poisson_8h.html#a3f2434bd46403d5b00c4b32e0c258532">SOR_STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#abaee67ab5c5654380389a6d4f970f21a">poisson_jacobi_update</a> (Field density, Field potential)</td></tr>
 <tr class="separator:abaee67ab5c5654380389a6d4f970f21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084631691b3883f70c7e8f9525b7781f" id="r_a084631691b3883f70c7e8f9525b7781f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#a084631691b3883f70c7e8f9525b7781f">poisson_jacobi_update_extended</a> (Field density, Field potential)</td></tr>
+<tr class="separator:a084631691b3883f70c7e8f9525b7781f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56859098b2a809dac87221f84b088b3" id="r_ab56859098b2a809dac87221f84b088b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#ab56859098b2a809dac87221f84b088b3">poisson_sor_red_black</a> (int color, Field density, Field potential, real omega)</td></tr>
 <tr class="separator:ab56859098b2a809dac87221f84b088b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0e2715889e9137f0c3c4e675258c92" id="r_a8d0e2715889e9137f0c3c4e675258c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#a8d0e2715889e9137f0c3c4e675258c92">poisson_sor_red_black_extended</a> (int color, Field density, Field potential, real omega)</td></tr>
+<tr class="separator:a8d0e2715889e9137f0c3c4e675258c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -163,6 +167,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a084631691b3883f70c7e8f9525b7781f" name="a084631691b3883f70c7e8f9525b7781f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084631691b3883f70c7e8f9525b7781f">&#9670;&#160;</a></span>poisson_jacobi_update_extended()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">poisson_jacobi_update_extended </td>
+          <td>(</td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>potential</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab56859098b2a809dac87221f84b088b3" name="ab56859098b2a809dac87221f84b088b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab56859098b2a809dac87221f84b088b3">&#9670;&#160;</a></span>poisson_sor_red_black()</h2>
 
@@ -171,6 +203,46 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">poisson_sor_red_black </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>potential</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>omega</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d0e2715889e9137f0c3c4e675258c92" name="a8d0e2715889e9137f0c3c4e675258c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0e2715889e9137f0c3c4e675258c92">&#9670;&#160;</a></span>poisson_sor_red_black_extended()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">poisson_sor_red_black_extended </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>color</em>, </td>

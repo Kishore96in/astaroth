@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('grid_8h.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">grid.h File Reference</div></div>
 </div><!--header-->
@@ -106,6 +107,11 @@ $(document).ready(function(){initNavTree('grid_8h.html',''); initResizable(); })
 </div>
 <p><a href="grid_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAcGridMappingFunction.html">AcGridMappingFunction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5a356515da390a56ac5c044b92c67a44" id="r_a5a356515da390a56ac5c044b92c67a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structint3.html">int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a5a356515da390a56ac5c044b92c67a44">ac_global_vertex_idx</a> (const <a class="el" href="structint3.html">int3</a> localVertexIdx, const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> config)</td></tr>
@@ -196,6 +202,8 @@ Functions</h2></td></tr>
 <tr class="separator:afc335b79e015db37bff41b081cb35ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1baf5b29f6f87fb6d6b12318615a1b47" id="r_a1baf5b29f6f87fb6d6b12318615a1b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcReal3.html">AcReal3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a1baf5b29f6f87fb6d6b12318615a1b47">ac_get_power_mapping</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> xi_scaled, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent)</td></tr>
 <tr class="separator:a1baf5b29f6f87fb6d6b12318615a1b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785df7746da0813648ccfd0154371289" id="r_a785df7746da0813648ccfd0154371289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcGridMappingFunction.html">AcGridMappingFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a785df7746da0813648ccfd0154371289">ac_compute_power_law_mapping_x</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> first_x, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> last_x, const int ngrid, const int n_points)</td></tr>
+<tr class="separator:a785df7746da0813648ccfd0154371289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7bd89106184a3528da67c535dc45b86" id="r_af7bd89106184a3528da67c535dc45b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#af7bd89106184a3528da67c535dc45b86">ac_compute_power_law_mapping_x</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *dst, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent)</td></tr>
 <tr class="separator:af7bd89106184a3528da67c535dc45b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -363,7 +371,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af7bd89106184a3528da67c535dc45b86" name="af7bd89106184a3528da67c535dc45b86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7bd89106184a3528da67c535dc45b86">&#9670;&#160;</a></span>ac_compute_power_law_mapping_x()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bd89106184a3528da67c535dc45b86">&#9670;&#160;</a></span>ac_compute_power_law_mapping_x() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,6 +387,52 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td>
           <td class="paramname"><em>exponent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a785df7746da0813648ccfd0154371289" name="a785df7746da0813648ccfd0154371289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785df7746da0813648ccfd0154371289">&#9670;&#160;</a></span>ac_compute_power_law_mapping_x() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAcGridMappingFunction.html">AcGridMappingFunction</a> ac_compute_power_law_mapping_x </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td>
+          <td class="paramname"><em>exponent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td>
+          <td class="paramname"><em>first_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td>
+          <td class="paramname"><em>last_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ngrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n_points</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

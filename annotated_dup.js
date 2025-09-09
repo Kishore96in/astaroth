@@ -46,6 +46,7 @@ var annotated_dup =
     [ "AcDimProducts", "structAcDimProducts.html", "structAcDimProducts" ],
     [ "AcDimProductsInv", "structAcDimProductsInv.html", "structAcDimProductsInv" ],
     [ "AcGridInfo", "structAcGridInfo.html", "structAcGridInfo" ],
+    [ "AcGridMappingFunction", "structAcGridMappingFunction.html", "structAcGridMappingFunction" ],
     [ "AcInputs", "structAcInputs.html", null ],
     [ "AcMatrix", "structAcMatrix.html", "structAcMatrix" ],
     [ "AcMesh", "structAcMesh.html", "structAcMesh" ],
