@@ -442,7 +442,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>FILE* fp = fopen("x.dat","w"); fprintf(fp,"x,dx,dx2\n");</p>
-<p>if(x &gt;= NGHOST &amp;&amp; x &lt; config[AC_mlocal].x-NGHOST) { fprintf(fp,"%7e,%7e,%7e\n",x_arr[x],x_prim[x],x_prim2[x]); }</p>
+<p>if(x &gt;= NGHOST &amp;&amp; x &lt; n_points-NGHOST) { fprintf(fp,"%7e,%7e,%7e\n",x_arr[x],x_prim[x],x_prim2[x]); }</p>
 
 </div>
 </div>
