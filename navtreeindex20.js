@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"structAcReduceBuffer.html#aecb927b0a24d609b682e67e94cefa888":[20,0,24,1],
+"structAcReduction.html":[20,0,25],
+"structAcReduction.html#a29a3bf94741cd64340c6384374bd236c":[20,0,25,5],
+"structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a":[20,0,25,3],
 "structAcReduction.html#a34a7c4b74b94494bcc13a842e91c6e22":[20,0,25,0],
 "structAcReduction.html#a99db014842ac6a814b8f1d9d2579bf69":[20,0,25,1],
 "structAcReduction.html#ad17ae34c0710021bbba4bbb537654d19":[20,0,25,4],
@@ -244,10 +248,6 @@ var NAVTREEINDEX20 =
 "structacAnalysisBCInfo.html#abfa29e34f8c45d1b3de148bdf5ebfb63":[20,0,2,1],
 "structac_1_1mr_1_1host__allocator.html":[19,0,0,4,0],
 "structac_1_1mr_1_1host__allocator.html":[20,0,0,2,0],
-"structac_1_1ndbuffer.html":[19,0,0,6],
 "structac_1_1ndbuffer.html":[20,0,0,4],
-"structac_1_1ndbuffer.html#a1387bf5abc37dfdd2d527f1b125f54f3":[19,0,0,6,10],
-"structac_1_1ndbuffer.html#a1387bf5abc37dfdd2d527f1b125f54f3":[20,0,0,4,10],
-"structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997":[19,0,0,6,7],
-"structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997":[20,0,0,4,7]
+"structac_1_1ndbuffer.html":[19,0,0,6]
 };
