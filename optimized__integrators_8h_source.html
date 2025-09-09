@@ -275,10 +275,10 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                2251764453980./15575788980749.,</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>               26877169314380./34165994151039., 0.0]</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>rkf4_alpha(real f_alpha, real roc, <span class="keywordtype">int</span> step_num, real dt) {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>rkf4_alpha(real f_beta, real roc, <span class="keywordtype">int</span> step_num, real dt) {</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">// explicit runge-kutta 4th vs 3rd order 3 register 5-step scheme</span></div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a>(AC_rk_order != 4, <span class="stringliteral">&quot;Used rkf4_alpha but AC_rk_order is not 4!\n&quot;</span>);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">return</span> f_alpha + rkf4_alpha_coeffs[step_num]*roc*dt</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">return</span> f_beta + rkf4_alpha_coeffs[step_num]*roc*dt</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">/*--------------------------------------------------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>rkf4_beta(real f_beta, real roc, <span class="keywordtype">int</span> step_num, real dt) {</div>
@@ -287,11 +287,11 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">return</span> f_beta + rkf4_beta_coeffs[step_num]*roc*dt</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">/*--------------------------------------------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>rkf4_alpha(<a class="code hl_struct" href="structreal3.html">real3</a> f_alpha, <a class="code hl_struct" href="structreal3.html">real3</a> roc, <span class="keywordtype">int</span> step_num, real dt) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>rkf4_alpha(<a class="code hl_struct" href="structreal3.html">real3</a> f_beta, <a class="code hl_struct" href="structreal3.html">real3</a> roc, <span class="keywordtype">int</span> step_num, real dt) {</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structreal3.html">real3</a>(</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            rkf4_alpha(f_alpha.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>,roc.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>,step_num,dt),</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            rkf4_alpha(f_alpha.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a>,roc.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a>,step_num,dt),</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            rkf4_alpha(f_alpha.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a>,roc.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a>,step_num,dt)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            rkf4_alpha(f_beta.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>,roc.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>,step_num,dt),</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            rkf4_alpha(f_beta.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a>,roc.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a>,step_num,dt),</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            rkf4_alpha(f_beta.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a>,roc.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a>,step_num,dt)</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            )</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">/*--------------------------------------------------------------------------------------------------------------------*/</span></div>
@@ -335,12 +335,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>          write(BETA,rkf4_beta(BETA,df,step_num,dt))</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">//Until the last step the &#39;proper&#39; registers hold the alpha updates</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">//Until the last step the &#39;proper&#39; registers holds alpha</span></div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">//Except in the last one we overwrite them with the beta update</span></div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment">//No need to write the error out for the last substep</span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordflow">if</span> (step_num != 4)</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          write(F,rkf4_alpha(F,df,step_num,dt))</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          write(F,rkf4_alpha(BETA,df,step_num,dt))</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
@@ -373,12 +373,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>          write(BETA,rkf4_beta(BETA,df,step_num,dt))</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="comment">//Until the last step the &#39;proper&#39; registers hold the alpha updates</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="comment">//Until the last step the &#39;proper&#39; registers holds alpha</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">//Except in the last one we overwrite them with the beta update</span></div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">//No need to write the error out for the last substep</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">if</span> (step_num != 4)</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    {</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>          write(F,rkf4_alpha(F,df,step_num,dt))</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>          write(F,rkf4_alpha(BETA,df,step_num,dt))</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordflow">else</span></div>
