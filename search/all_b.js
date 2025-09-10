@@ -44,7 +44,7 @@ var searchData=
   ['ac_5fcompute_5finv_5fsin_5ftheta_41',['ac_compute_inv_sin_theta',['../grid_8h.html#afa373c1a2efb716b7f66059e24d5e626',1,'grid.h']]],
   ['ac_5fcompute_5fnormalized_5fplms_42',['ac_compute_normalized_plms',['../grid_8h.html#aa6174a2e76f9dd24e3a06c95dde1b43f',1,'grid.h']]],
   ['ac_5fcompute_5fphi_43',['ac_compute_phi',['../grid_8h.html#aead77b7f7241ecae0b14dd045c246e08',1,'grid.h']]],
-  ['ac_5fcompute_5fpower_5flaw_5fmapping_5fx_44',['ac_compute_power_law_mapping_x',['../grid_8h.html#af7bd89106184a3528da67c535dc45b86',1,'ac_compute_power_law_mapping_x(AcMeshInfo *dst, const AcReal exponent):&#160;grid.h'],['../grid_8h.html#a785df7746da0813648ccfd0154371289',1,'ac_compute_power_law_mapping_x(const AcReal exponent, const AcReal first_x, const AcReal last_x, const int ngrid, const int n_points):&#160;grid.h']]],
+  ['ac_5fcompute_5fpower_5flaw_5fmapping_5fx_44',['ac_compute_power_law_mapping_x',['../grid_8h.html#af7bd89106184a3528da67c535dc45b86',1,'ac_compute_power_law_mapping_x(AcMeshInfo *dst, const AcReal exponent):&#160;grid.h'],['../grid_8h.html#a102595226f731dc764466a622f802eca',1,'ac_compute_power_law_mapping_x(const AcReal exponent, const AcReal first_x, const AcReal last_x, const int ngrid, const int n_points, const int left_extension, const int right_extension):&#160;grid.h']]],
   ['ac_5fcompute_5fr_45',['ac_compute_r',['../grid_8h.html#ac94106cb09236ba332dc0a4e18283029',1,'grid.h']]],
   ['ac_5fcompute_5fsin_5fm_5fphis_46',['ac_compute_sin_m_phis',['../grid_8h.html#aca4c41c6f44b5c92d1292a8d7d3a5823',1,'grid.h']]],
   ['ac_5fcompute_5fsin_5fphi_47',['ac_compute_sin_phi',['../grid_8h.html#af1e1cfc00015a51ed4552e2a515878df',1,'grid.h']]],

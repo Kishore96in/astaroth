@@ -202,8 +202,8 @@ Functions</h2></td></tr>
 <tr class="separator:afc335b79e015db37bff41b081cb35ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1baf5b29f6f87fb6d6b12318615a1b47" id="r_a1baf5b29f6f87fb6d6b12318615a1b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcReal3.html">AcReal3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a1baf5b29f6f87fb6d6b12318615a1b47">ac_get_power_mapping</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> xi_scaled, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent)</td></tr>
 <tr class="separator:a1baf5b29f6f87fb6d6b12318615a1b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a785df7746da0813648ccfd0154371289" id="r_a785df7746da0813648ccfd0154371289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcGridMappingFunction.html">AcGridMappingFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a785df7746da0813648ccfd0154371289">ac_compute_power_law_mapping_x</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> first_x, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> last_x, const int ngrid, const int n_points)</td></tr>
-<tr class="separator:a785df7746da0813648ccfd0154371289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102595226f731dc764466a622f802eca" id="r_a102595226f731dc764466a622f802eca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcGridMappingFunction.html">AcGridMappingFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a102595226f731dc764466a622f802eca">ac_compute_power_law_mapping_x</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> first_x, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> last_x, const int ngrid, const int n_points, const int left_extension, const int right_extension)</td></tr>
+<tr class="separator:a102595226f731dc764466a622f802eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7bd89106184a3528da67c535dc45b86" id="r_af7bd89106184a3528da67c535dc45b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#af7bd89106184a3528da67c535dc45b86">ac_compute_power_law_mapping_x</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *dst, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> exponent)</td></tr>
 <tr class="separator:af7bd89106184a3528da67c535dc45b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -398,8 +398,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a785df7746da0813648ccfd0154371289" name="a785df7746da0813648ccfd0154371289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a785df7746da0813648ccfd0154371289">&#9670;&#160;</a></span>ac_compute_power_law_mapping_x() <span class="overload">[2/2]</span></h2>
+<a id="a102595226f731dc764466a622f802eca" name="a102595226f731dc764466a622f802eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102595226f731dc764466a622f802eca">&#9670;&#160;</a></span>ac_compute_power_law_mapping_x() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +432,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>n_points</em>&#160;</td>
+          <td class="paramname"><em>n_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>left_extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>right_extension</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -441,8 +453,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>FILE* fp = fopen("x.dat","w"); fprintf(fp,"x,dx,dx2\n");</p>
-<p>if(x &gt;= NGHOST &amp;&amp; x &lt; n_points-NGHOST) { fprintf(fp,"%7e,%7e,%7e\n",x_arr[x],x_prim[x],x_prim2[x]); }</p>
+<p>const char* name = left_extension != 0 ? "x_ext.dat" : "x.dat"; FILE* fp = fopen(name,"w"); fprintf(fp,"x,dx,dx2\n");</p>
 
 </div>
 </div>

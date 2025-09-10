@@ -11,7 +11,7 @@ var grid_8h =
     [ "ac_compute_normalized_plms", "grid_8h.html#aa6174a2e76f9dd24e3a06c95dde1b43f", null ],
     [ "ac_compute_phi", "grid_8h.html#aead77b7f7241ecae0b14dd045c246e08", null ],
     [ "ac_compute_power_law_mapping_x", "grid_8h.html#af7bd89106184a3528da67c535dc45b86", null ],
-    [ "ac_compute_power_law_mapping_x", "grid_8h.html#a785df7746da0813648ccfd0154371289", null ],
+    [ "ac_compute_power_law_mapping_x", "grid_8h.html#a102595226f731dc764466a622f802eca", null ],
     [ "ac_compute_r", "grid_8h.html#ac94106cb09236ba332dc0a4e18283029", null ],
     [ "ac_compute_sin_m_phis", "grid_8h.html#aca4c41c6f44b5c92d1292a8d7d3a5823", null ],
     [ "ac_compute_sin_phi", "grid_8h.html#af1e1cfc00015a51ed4552e2a515878df", null ],
