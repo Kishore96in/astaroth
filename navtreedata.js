@@ -259,12 +259,12 @@ var NAVTREEINDEX =
 "namespacemembers_i.html",
 "poisson_8h.html#a084631691b3883f70c7e8f9525b7781f",
 "smooth__max_8h.html#a4cacb1a72b983a1679b5dfdd08382aaf",
-"src_2core_2kernels_2kernels_8h.html#a33ea05b8ab6d864ba8166952e23517e4",
-"structAcGridMappingFunction.html#ada5428cec6af5a2e8901aa7fb960206e",
-"structSymbol.html#a65a0fcc5efc8462caa20150ab0c75ed2",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3c4981fa6eea6f2bfc9bb2e685109032",
-"task_8h.html#a9f4fe74a008f3807f0b3e7087923410d",
-"variables_8h.html#a3fe7c3092a9071218ce516146c938da3"
+"src_2core_2kernels_2kernels_8h.html#a08f80594de4c0830634a1a8247bf9b4a",
+"structAcGridMappingFunction.html",
+"structSymbol.html#a21bce1a3f292b72060ea2bb474897d1b",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3aec514f70fba364c7315d4bafe01a54",
+"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a7b0820d38355b1c3c30ca78e542b9894",
+"variables_8h.html#a36de890d886cb1516a47b33772c2335f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

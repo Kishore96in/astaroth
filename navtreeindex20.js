@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"structAcGridMappingFunction.html":[20,0,16],
+"structAcGridMappingFunction.html#acac903d2b2ccef935791f3814d3d8316":[20,0,16,0],
 "structAcGridMappingFunction.html#ada5428cec6af5a2e8901aa7fb960206e":[20,0,16,1],
 "structAcGridMappingFunction.html#ae2944347ebc58e898858e30dae1a8f8b":[20,0,16,2],
 "structAcInputs.html":[20,0,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "structSOAVector.html#a43fe944427e535a2968d1a3c14808105":[20,0,105,2],
 "structSOAVector.html#ace916416c347ac8c8edfef955851a761":[20,0,105,1],
 "structSOAVector.html#aee9c6403aeacf06a297c217a28239517":[20,0,105,0],
-"structSymbol.html":[20,0,109],
-"structSymbol.html#a21bce1a3f292b72060ea2bb474897d1b":[20,0,109,6],
-"structSymbol.html#a3ce38edb84950e88ca9a82d829536586":[20,0,109,7]
+"structSymbol.html":[20,0,109]
 };

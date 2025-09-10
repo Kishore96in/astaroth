@@ -20,5 +20,6 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "shock.h", "shock_8h.html", null ],
     [ "slope_limited_diffusion.h", "slope__limited__diffusion_8h.html", null ],
     [ "smooth_max.h", "smooth__max_8h.html", "smooth__max_8h" ],
+    [ "spherical_harmonics.h", "spherical__harmonics_8h.html", null ],
     [ "units.h", "units_8h.html", "units_8h" ]
 ];
