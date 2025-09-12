@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"structTBConfig.html#ac4ec06a6adff3c24065c21c3411932bb":[20,0,111,2],
 "structTBConfig.html#ad79eb9e8f9a96d19713fcae2dd7f8666":[20,0,111,0],
 "structTBConfig.html#ae9cb53671ee7ff0b95a0b265a346377b":[20,0,111,1],
 "structTraceFile.html":[20,0,114],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3e29885c00054c68a9fc0d83e366c2d2":[20,0,1,0,0,19],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3e7a4c2ecaaf47a965f4909046a7703a":[19,0,2,0,0,54],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3e7a4c2ecaaf47a965f4909046a7703a":[20,0,1,0,0,54],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a431d3ef6677ff87223a815b524dc6e37":[19,0,2,0,0,16],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a431d3ef6677ff87223a815b524dc6e37":[20,0,1,0,0,16]
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a431d3ef6677ff87223a815b524dc6e37":[19,0,2,0,0,16]
 };

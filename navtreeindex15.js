@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"mpi__utils_8h.html#ab30a3b39b1a1b205ff1b45b533669f65":[21,0,1,0,0,24,21],
 "mpi__utils_8h.html#abbc5b0a94ca2a0aa5f79a67822663293":[21,0,1,0,0,24,12],
 "mpi__utils_8h.html#ac203996f8f50f72dee89f66d3decbcad":[21,0,1,0,0,24,14],
 "mpi__utils_8h.html#acf86835cdffca0048cb5bd37b9897428":[21,0,1,0,0,24,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "namespacemembers_q.html":[19,1,0,13],
 "namespacemembers_r.html":[19,1,0,14],
 "namespacemembers_s.html":[19,1,0,15],
-"namespacemembers_t.html":[19,1,0,16],
-"namespacemembers_type.html":[19,1,2]
+"namespacemembers_t.html":[19,1,0,16]
 };

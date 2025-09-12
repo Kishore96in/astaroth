@@ -460,6 +460,7 @@ var codegen_8c =
     [ "PROFILE_STR", "codegen_8c.html#a2e0aa300f6a0cc299841ef8675c01b95", null ],
     [ "RAYTRACE_STR", "codegen_8c.html#ab841f5e7bed0d2233917a6ee886cf969", null ],
     [ "read_accesses", "codegen_8c.html#a53ce8997f494cbde9cc91c786544eeaa", null ],
+    [ "REAL2_STR", "codegen_8c.html#ae45b6ace13ffd7f935c547208fb26d45", null ],
     [ "REAL3_PTR_STR", "codegen_8c.html#aff19ee62154c286231cd329c1ce8021d", null ],
     [ "REAL3_STR", "codegen_8c.html#a358e4d9476333f416b85e651952a49be", null ],
     [ "REAL_ARR_STR", "codegen_8c.html#a8f6658b49eb653f9604255ee44fc99d6", null ],
