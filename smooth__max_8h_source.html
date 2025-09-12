@@ -1596,7 +1596,7 @@ $(document).ready(function(){initNavTree('smooth__max_8h_source.html',''); initR
 <div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>    [3][0][0] = 1</div>
 <div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span>}</div>
 <div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span> </div>
-<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>Max Stencil max5_xy_stencil {</div>
+<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>Max Stencil max5_xy_stencil_r3 {</div>
 <div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>    [0][-3][0] = 1,</div>
 <div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>    [0][-2][-2] = 1,</div>
 <div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>    [0][-2][-1] = 1,</div>
@@ -1628,36 +1628,87 @@ $(document).ready(function(){initNavTree('smooth__max_8h_source.html',''); initR
 <div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>    [0][3][0] = 1</div>
 <div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span>}</div>
 <div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span> </div>
-<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>elemental max5(Field f, <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>{</div>
-<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
-<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>    {</div>
-<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>        <span class="keywordflow">return</span> max5_xy_stencil(f)</div>
-<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>    }</div>
-<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>    {</div>
-<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>        <span class="keywordflow">if</span>(radius == 1)</div>
-<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>        {</div>
-<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r1(f)</div>
-<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>        }</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(radius == 2)</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>        {</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r2(f)</div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>        }</div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>        {</div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r3(f)</div>
-<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>        }</div>
-<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>    }</div>
-<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>}</div>
-<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span> </div>
-<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>elemental max5(Field f)</div>
-<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>{</div>
-<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>    <span class="keywordflow">return</span> max5(f,NGHOST)</div>
+<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>Max Stencil max5_xy_stencil_r2 {</div>
+<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>    [0][-2][-2] = 1,</div>
+<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>    [0][-2][-1] = 1,</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>    [0][-2][0] = 1,</div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>    [0][-2][1] = 1,</div>
+<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>    [0][-2][2] = 1,</div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>    [0][-1][-2] = 1,</div>
+<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>    [0][-1][-1] = 1,</div>
+<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>    [0][-1][0] = 1,</div>
+<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>    [0][-1][1] = 1,</div>
+<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>    [0][-1][2] = 1,</div>
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>    [0][0][-2] = 1,</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>    [0][0][-1] = 1,</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>    [0][0][0] = 1,</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>    [0][0][1] = 1,</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>    [0][0][2] = 1,</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>    [0][1][-2] = 1,</div>
+<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>    [0][1][-1] = 1,</div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>    [0][1][0] = 1,</div>
+<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>    [0][1][1] = 1,</div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>    [0][1][2] = 1,</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>    [0][2][-2] = 1,</div>
+<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span>    [0][2][-1] = 1,</div>
+<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>    [0][2][0] = 1,</div>
+<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>    [0][2][1] = 1,</div>
+<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>    [0][2][2] = 1</div>
 <div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>}</div>
 <div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span> </div>
-<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span> </div>
+<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>Max Stencil max5_xy_stencil_r1 {</div>
+<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>    [0][-1][-1] = 1,</div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>    [0][-1][0] = 1,</div>
+<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>    [0][-1][1] = 1,</div>
+<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>    [0][0][-1] = 1,</div>
+<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>    [0][0][0] = 1,</div>
+<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span>    [0][0][1] = 1,</div>
+<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>    [0][1][-1] = 1,</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>    [0][1][0] = 1,</div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>    [0][1][1] = 1</div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>}</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span> </div>
+<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>elemental max5(Field f, <span class="keywordtype">int</span> radius)</div>
+<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>{</div>
+<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
+<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>    {</div>
+<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span>        <span class="keywordflow">if</span>(radius == 1)</div>
+<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span>        {</div>
+<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span>            <span class="keywordflow">return</span> max5_xy_stencil_r1(f)</div>
+<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span>        }</div>
+<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(radius == 2)</div>
+<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span>        {</div>
+<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>            <span class="keywordflow">return</span> max5_xy_stencil_r2(f)</div>
+<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>        }</div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>        {</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>            <span class="keywordflow">return</span> max5_xy_stencil_r3(f)</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>        }</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>    }</div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>    {</div>
+<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>        <span class="keywordflow">if</span>(radius == 1)</div>
+<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>        {</div>
+<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r1(f)</div>
+<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>        }</div>
+<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(radius == 2)</div>
+<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>        {</div>
+<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r2(f)</div>
+<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>        }</div>
+<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>        {</div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>            <span class="keywordflow">return</span> max5_xyz_stencil_r3(f)</div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span>        }</div>
+<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span>    }</div>
+<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span>}</div>
+<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span> </div>
+<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span>elemental max5(Field f)</div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>{</div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>    <span class="keywordflow">return</span> max5(f,NGHOST)</div>
+<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>}</div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span> </div>
+<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span> </div>
 <div class="ttc" id="asmooth__max_8h_html_a001fcd7e087562ec19f2653b4367c25e"><div class="ttname"><a href="smooth__max_8h.html#a001fcd7e087562ec19f2653b4367c25e">SMOOTH_XM2_YP1_ZP3</a></div><div class="ttdeci">#define SMOOTH_XM2_YP1_ZP3</div><div class="ttdef"><b>Definition</b> smooth_max.h:330</div></div>
 <div class="ttc" id="asmooth__max_8h_html_a002f023b66c38a22ef54d01eacdb19b9"><div class="ttname"><a href="smooth__max_8h.html#a002f023b66c38a22ef54d01eacdb19b9">SMOOTH_XP1_YP1_ZM3</a></div><div class="ttdeci">#define SMOOTH_XP1_YP1_ZM3</div><div class="ttdef"><b>Definition</b> smooth_max.h:39</div></div>
 <div class="ttc" id="asmooth__max_8h_html_a02cd963039c01bbd81e5a398cee1b9ee"><div class="ttname"><a href="smooth__max_8h.html#a02cd963039c01bbd81e5a398cee1b9ee">SMOOTH_XC0_YM2_ZP1</a></div><div class="ttdeci">#define SMOOTH_XC0_YM2_ZP1</div><div class="ttdef"><b>Definition</b> smooth_max.h:213</div></div>
