@@ -26,7 +26,6 @@ var variables_8h =
     [ "AC_host_has_row_memory_order", "variables_8h.html#a12a873255e2ec7e596d354e4e7937271", null ],
     [ "AC_include_3d_halo_corners", "variables_8h.html#af567cce8dd14565ee11cedb7f323181a", null ],
     [ "AC_inv_ds", "variables_8h.html#a00644960a6aef0ae474c249e7bd04329", null ],
-    [ "AC_inv_ds_2", "variables_8h.html#aaed351e7f4f180cf27aa158d18a37020", null ],
     [ "AC_inv_ds_3", "variables_8h.html#ae8a60d03d861590f06a0016a63310ab5", null ],
     [ "AC_inv_ds_4", "variables_8h.html#a99000a669a8caea6fbc119ef7acbf418", null ],
     [ "AC_inv_ds_5", "variables_8h.html#a512bf142cdc0b3e4b7d8b21389729e8f", null ],

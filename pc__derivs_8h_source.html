@@ -530,7 +530,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    real res = <a class="code hl_define" href="pc__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a></div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    {</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        res *= <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        res *= AC_inv_ds_2.x</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    }</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    {</div>
@@ -545,7 +545,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    real res = <a class="code hl_define" href="pc__derivs_8h.html#ad423177238bbaf3959b9f03b2cca1d7c">DER2_2nd_0</a></div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    {</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        res *= <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        res *= AC_inv_ds_2.x</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    }</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    {</div>
@@ -563,7 +563,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>    {</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        {</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>            res = derxx_stencil(prof)*<a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>            res = derxx_stencil(prof)*AC_inv_ds_2.x</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        }</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        {</div>
@@ -665,7 +665,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    }</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    {</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        grid_factor = AC_inv_ds_2.y</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    }</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    res = coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="comment">//Tilde factor vanishes!</span></div>
@@ -690,7 +690,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    }</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    {</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        grid_factor = AC_inv_ds_2.y</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    res = coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="comment">//Tilde factor vanishes!</span></div>
@@ -721,7 +721,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        }</div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        {</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            grid_factor = AC_inv_ds_2.y</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        }</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        res = deryy_stencil(prof)*coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a6c1aee22778f595647cacedd6ab333eb">y</a>)</div>
@@ -818,7 +818,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    }</div>
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    {</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        grid_factor = AC_inv_ds_2.z</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    }</div>
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    res = coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="comment">//Tilde factor conveniently vanishes</span></div>
@@ -840,7 +840,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    }</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    {</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        grid_factor = AC_inv_ds_2.z</div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    }</div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    res = coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="comment">//Tilde factor conveniently vanishes</span></div>
@@ -869,7 +869,7 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        }</div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        {</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            grid_factor = <a class="code hl_variable" href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            grid_factor = AC_inv_ds_2.z</div>
 <div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        }</div>
 <div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        res = derzz_stencil(prof)*coordinate_factor*grid_factor</div>
 <div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
@@ -2287,16 +2287,15 @@ $(document).ready(function(){initNavTree('pc__derivs_8h_source.html',''); initRe
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a></div><div class="ttdeci">@ AC_CYLINDRICAL_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:114</div></div>
 <div class="ttc" id="avariables_8h_html_a00644960a6aef0ae474c249e7bd04329"><div class="ttname"><a href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a></div><div class="ttdeci">run_const real3 AC_inv_ds</div><div class="ttdef"><b>Definition</b> variables.h:169</div></div>
 <div class="ttc" id="avariables_8h_html_a1aeb09ae6c2e41a7c1ac9ae4c11d7f23"><div class="ttname"><a href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a></div><div class="ttdeci">run_const bool3 AC_dimension_inactive</div><div class="ttdef"><b>Definition</b> variables.h:19</div></div>
-<div class="ttc" id="avariables_8h_html_a1ceced0c5c88cf7524974628429810cb"><div class="ttname"><a href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a></div><div class="ttdeci">run_const bool3 AC_nonequidistant_grid</div><div class="ttdef"><b>Definition</b> variables.h:312</div></div>
+<div class="ttc" id="avariables_8h_html_a1ceced0c5c88cf7524974628429810cb"><div class="ttname"><a href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a></div><div class="ttdeci">run_const bool3 AC_nonequidistant_grid</div><div class="ttdef"><b>Definition</b> variables.h:317</div></div>
 <div class="ttc" id="avariables_8h_html_a21eb87bed253df213669b42484ff3599"><div class="ttname"><a href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a></div><div class="ttdeci">int3 AC_mlocal</div><div class="ttdef"><b>Definition</b> variables.h:47</div></div>
-<div class="ttc" id="avariables_8h_html_a3606c9eda2815c6786d6aadd82403203"><div class="ttname"><a href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a></div><div class="ttdeci">run_const AcCoordinateSystem AC_coordinate_system</div><div class="ttdef"><b>Definition</b> variables.h:308</div></div>
+<div class="ttc" id="avariables_8h_html_a3606c9eda2815c6786d6aadd82403203"><div class="ttname"><a href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a></div><div class="ttdeci">run_const AcCoordinateSystem AC_coordinate_system</div><div class="ttdef"><b>Definition</b> variables.h:313</div></div>
 <div class="ttc" id="avariables_8h_html_a43216bbfb79de0f28fd692021fdafceb"><div class="ttname"><a href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a></div><div class="ttdeci">int3 AC_nlocal</div><div class="ttdef"><b>Definition</b> variables.h:38</div></div>
-<div class="ttc" id="avariables_8h_html_a512bf142cdc0b3e4b7d8b21389729e8f"><div class="ttname"><a href="variables_8h.html#a512bf142cdc0b3e4b7d8b21389729e8f">AC_inv_ds_5</a></div><div class="ttdeci">run_const real3 AC_inv_ds_5</div><div class="ttdef"><b>Definition</b> variables.h:185</div></div>
-<div class="ttc" id="avariables_8h_html_a8c720ba8f7b52331597d7f6d500cdece"><div class="ttname"><a href="variables_8h.html#a8c720ba8f7b52331597d7f6d500cdece">AC_inv_ds_6</a></div><div class="ttdeci">run_const real3 AC_inv_ds_6</div><div class="ttdef"><b>Definition</b> variables.h:189</div></div>
-<div class="ttc" id="avariables_8h_html_a9138d8deb2ab991f64f983a41657a97b"><div class="ttname"><a href="variables_8h.html#a9138d8deb2ab991f64f983a41657a97b">AC_bidiagonal_derij</a></div><div class="ttdeci">run_const bool AC_bidiagonal_derij</div><div class="ttdef"><b>Definition</b> variables.h:359</div></div>
-<div class="ttc" id="avariables_8h_html_a99000a669a8caea6fbc119ef7acbf418"><div class="ttname"><a href="variables_8h.html#a99000a669a8caea6fbc119ef7acbf418">AC_inv_ds_4</a></div><div class="ttdeci">run_const real3 AC_inv_ds_4</div><div class="ttdef"><b>Definition</b> variables.h:181</div></div>
-<div class="ttc" id="avariables_8h_html_aaed351e7f4f180cf27aa158d18a37020"><div class="ttname"><a href="variables_8h.html#aaed351e7f4f180cf27aa158d18a37020">AC_inv_ds_2</a></div><div class="ttdeci">run_const real3 AC_inv_ds_2</div><div class="ttdef"><b>Definition</b> variables.h:173</div></div>
-<div class="ttc" id="avariables_8h_html_ae8a60d03d861590f06a0016a63310ab5"><div class="ttname"><a href="variables_8h.html#ae8a60d03d861590f06a0016a63310ab5">AC_inv_ds_3</a></div><div class="ttdeci">run_const real3 AC_inv_ds_3</div><div class="ttdef"><b>Definition</b> variables.h:177</div></div>
+<div class="ttc" id="avariables_8h_html_a512bf142cdc0b3e4b7d8b21389729e8f"><div class="ttname"><a href="variables_8h.html#a512bf142cdc0b3e4b7d8b21389729e8f">AC_inv_ds_5</a></div><div class="ttdeci">run_const real3 AC_inv_ds_5</div><div class="ttdef"><b>Definition</b> variables.h:190</div></div>
+<div class="ttc" id="avariables_8h_html_a8c720ba8f7b52331597d7f6d500cdece"><div class="ttname"><a href="variables_8h.html#a8c720ba8f7b52331597d7f6d500cdece">AC_inv_ds_6</a></div><div class="ttdeci">run_const real3 AC_inv_ds_6</div><div class="ttdef"><b>Definition</b> variables.h:194</div></div>
+<div class="ttc" id="avariables_8h_html_a9138d8deb2ab991f64f983a41657a97b"><div class="ttname"><a href="variables_8h.html#a9138d8deb2ab991f64f983a41657a97b">AC_bidiagonal_derij</a></div><div class="ttdeci">run_const bool AC_bidiagonal_derij</div><div class="ttdef"><b>Definition</b> variables.h:364</div></div>
+<div class="ttc" id="avariables_8h_html_a99000a669a8caea6fbc119ef7acbf418"><div class="ttname"><a href="variables_8h.html#a99000a669a8caea6fbc119ef7acbf418">AC_inv_ds_4</a></div><div class="ttdeci">run_const real3 AC_inv_ds_4</div><div class="ttdef"><b>Definition</b> variables.h:186</div></div>
+<div class="ttc" id="avariables_8h_html_ae8a60d03d861590f06a0016a63310ab5"><div class="ttname"><a href="variables_8h.html#ae8a60d03d861590f06a0016a63310ab5">AC_inv_ds_3</a></div><div class="ttdeci">run_const real3 AC_inv_ds_3</div><div class="ttdef"><b>Definition</b> variables.h:182</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
