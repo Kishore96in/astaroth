@@ -31,11 +31,12 @@ var searchData=
   ['dfuncs_5fin_5ftopological_5forder_28',['dfuncs_in_topological_order',['../codegen_8c.html#a9ddd922b743ae9419c30bff3bbf2da43',1,'codegen.c']]],
   ['display_29',['display',['../classac_1_1buffer.html#ac5f41b860d92d3c0838341e76dec8302',1,'ac::buffer::display()'],['../structac_1_1ndbuffer.html#a17b73a1f4dcb9a3473cac08a46e43997',1,'ac::ndbuffer::display()']]],
   ['divergence_30',['divergence',['../general__operators_8h.html#afade80b5099ad85e65911670b5541e8c',1,'divergence(Field3 v):&#160;general_operators.h'],['../general__operators_8h.html#a343271a59a6118b6472689ded32de7d6',1,'divergence(Matrix m):&#160;general_operators.h'],['../general__operators_8h.html#a63a07772cffe435598a8f7f2bfde9b35',1,'divergence(Matrix m, real3 a):&#160;general_operators.h'],['../operators_8h.html#afade80b5099ad85e65911670b5541e8c',1,'divergence(Field3 v):&#160;operators.h'],['../operators_8h.html#a343271a59a6118b6472689ded32de7d6',1,'divergence(Matrix m):&#160;operators.h'],['../stdderiv_8h.html#a05560cd80904170070b863d504600cf8',1,'divergence(in VectorField vec):&#160;stdderiv.h']]],
-  ['dlnrho_5fdt_31',['dlnrho_dt',['../equ_8h.html#afc0c79382715eaa78bc70bd4a55b8df7',1,'equ.h']]],
-  ['dlnt_5fdt_32',['dlnT_dt',['../equ_8h.html#a3491f3de7247228840fe609c5bd35d65',1,'equ.h']]],
-  ['do_5fnot_5frename_33',['do_not_rename',['../codegen_8c.html#a53948420e80a6dc7d803653718e9fc50',1,'codegen.c']]],
-  ['dot_34',['dot',['../namespaceac.html#acd484af875cfee7fee80622e5ad687bb',1,'ac::dot(const ac::ntuple&lt; T &gt; &amp;a, const ac::ntuple&lt; U &gt; &amp;b)'],['../namespaceac.html#a2f78a450d9175329f2dda2662ebc2a84',1,'ac::dot(const ac::static_ntuple&lt; T, N &gt; &amp;a, const ac::static_ntuple&lt; U, N &gt; &amp;b)']]],
-  ['draw_35',['draw',['../namespacematplotlibcpp.html#acd9fc5bb7916c735390c2056214b12be',1,'matplotlibcpp']]],
-  ['dss_5fdt_36',['dss_dt',['../equ_8h.html#a9ad2079573d6f96a5bb9413243dbd1d1',1,'equ.h']]],
-  ['duu_5fdt_37',['duu_dt',['../equ_8h.html#a2598061d166e81f5c6c97142a74ad104',1,'equ.h']]]
+  ['divergence_5f2nd_31',['divergence_2nd',['../general__operators_8h.html#aab0cfa6a71633d54b716ab7c08a52b6a',1,'general_operators.h']]],
+  ['dlnrho_5fdt_32',['dlnrho_dt',['../equ_8h.html#afc0c79382715eaa78bc70bd4a55b8df7',1,'equ.h']]],
+  ['dlnt_5fdt_33',['dlnT_dt',['../equ_8h.html#a3491f3de7247228840fe609c5bd35d65',1,'equ.h']]],
+  ['do_5fnot_5frename_34',['do_not_rename',['../codegen_8c.html#a53948420e80a6dc7d803653718e9fc50',1,'codegen.c']]],
+  ['dot_35',['dot',['../namespaceac.html#acd484af875cfee7fee80622e5ad687bb',1,'ac::dot(const ac::ntuple&lt; T &gt; &amp;a, const ac::ntuple&lt; U &gt; &amp;b)'],['../namespaceac.html#a2f78a450d9175329f2dda2662ebc2a84',1,'ac::dot(const ac::static_ntuple&lt; T, N &gt; &amp;a, const ac::static_ntuple&lt; U, N &gt; &amp;b)']]],
+  ['draw_36',['draw',['../namespacematplotlibcpp.html#acd9fc5bb7916c735390c2056214b12be',1,'matplotlibcpp']]],
+  ['dss_5fdt_37',['dss_dt',['../equ_8h.html#a9ad2079573d6f96a5bb9413243dbd1d1',1,'equ.h']]],
+  ['duu_5fdt_38',['duu_dt',['../equ_8h.html#a2598061d166e81f5c6c97142a74ad104',1,'equ.h']]]
 ];

@@ -8,6 +8,8 @@ var math_2funcs_8h =
     [ "nint", "math_2funcs_8h.html#aba368c44f0395b30cb3ba893c5fa47cd", null ],
     [ "norm", "math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1", null ],
     [ "precise_sqrt_dot2", "math_2funcs_8h.html#a9a86a3014f27fc93f58cc370a60d370d", null ],
+    [ "quintic_step", "math_2funcs_8h.html#a019593061fdda2a0d33eaddb09928e52", null ],
+    [ "quintic_step", "math_2funcs_8h.html#aa643a55989445c8a4a01452be394ded5", null ],
     [ "set_max_val", "math_2funcs_8h.html#a1ebe946697f6615e4feb8d905b8bb802", null ],
     [ "set_min_val", "math_2funcs_8h.html#ab83506f6082639efff7d4d175915e2e0", null ],
     [ "set_zero_below_threshold", "math_2funcs_8h.html#a4a0ff7f823fa1a5588dd8c2627fa60f6", null ],

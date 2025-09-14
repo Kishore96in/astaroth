@@ -25,6 +25,7 @@ var general__operators_8h =
     [ "divergence", "general__operators_8h.html#afade80b5099ad85e65911670b5541e8c", null ],
     [ "divergence", "general__operators_8h.html#a343271a59a6118b6472689ded32de7d6", null ],
     [ "divergence", "general__operators_8h.html#a63a07772cffe435598a8f7f2bfde9b35", null ],
+    [ "divergence_2nd", "general__operators_8h.html#aab0cfa6a71633d54b716ab7c08a52b6a", null ],
     [ "get_d2A", "general__operators_8h.html#abfebbe5aa23c37ef89cce5ab2b73feb2", null ],
     [ "get_d2A", "general__operators_8h.html#a42e364544aaec8f76f4b666640e4910d", null ],
     [ "gij5", "general__operators_8h.html#a5848dea05998443e309b00e6ec089e7d", null ],
