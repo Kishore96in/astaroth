@@ -299,6 +299,26 @@ call_all_user_loaders(ParamLoadingInfo p)
 }
 **/
 
+static AcKernel
+get_optimized_kernel(const AcDSLTaskGraph graph, const int call_index, const bool filter_unnecessary_ones)
+{
+	auto kernel_calls = DSLTaskGraphKernels[graph];
+	VertexBufferArray vba{};
+	const auto loader = get_loader(graph,call_index);
+	ParamLoadingInfo p = {&vba.on_device.kernel_input_params, acGridGetDevice(), {}, {}, {}, kernel_calls[call_index]};
+    	loader(p);
+	const AcKernel optimized_kernel = acGetOptimizedKernel(kernel_calls[call_index],vba);
+	const auto info = get_kernel_analysis_info(acGridGetLocalMeshInfo(),optimized_kernel,vba.on_device.kernel_input_params);
+	if(filter_unnecessary_ones)
+	{
+		auto outputs = get_kernel_outputs(optimized_kernel,info);
+		if(outputs.fields.out.size() == 0 && outputs.profiles.write_out.size() == 0 && outputs.profiles.reduce_out.size() == 0 && outputs.reduce_outputs.out.size() == 0) 
+		{
+			return AC_NULL_KERNEL;
+		}
+	}
+	return optimized_kernel;
+}
 
 static std::vector<AcKernel>
 get_optimized_kernels(const AcDSLTaskGraph graph, const bool filter_unnecessary_ones)
@@ -307,22 +327,7 @@ get_optimized_kernels(const AcDSLTaskGraph graph, const bool filter_unnecessary_
 	std::vector<AcKernel> res{};
 	for(size_t call_index = 0; call_index < kernel_calls.size(); ++call_index)
 	{
-		VertexBufferArray vba{};
-		const auto loader = get_loader(graph,call_index);
-		ParamLoadingInfo p = {&vba.on_device.kernel_input_params, acGridGetDevice(), {}, {}, {}, kernel_calls[call_index]};
-    		loader(p);
-		const AcKernel optimized_kernel = acGetOptimizedKernel(kernel_calls[call_index],vba);
-		const auto info = get_kernel_analysis_info(acGridGetLocalMeshInfo(),optimized_kernel);
-		if(filter_unnecessary_ones)
-		{
-			auto outputs = get_kernel_outputs(optimized_kernel,info);
-			if(outputs.fields.out.size() == 0 && outputs.profiles.write_out.size() == 0 && outputs.profiles.reduce_out.size() == 0 && outputs.reduce_outputs.out.size() == 0) 
-			{
-				res.push_back(AC_NULL_KERNEL);
-				continue;
-			}
-		}
-		res.push_back(optimized_kernel);
+		res.push_back(get_optimized_kernel(graph,call_index,filter_unnecessary_ones));
 	}
 	return res;
 }
@@ -1023,10 +1028,22 @@ typedef struct
 } level_set;
 
 
+
 // Combine hash helper function
 template <typename T>
 void hash_combine(std::size_t &seed, const T& value) {
     seed ^= std::hash<T>{}(value) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+}
+
+void
+hash_kernel_analysis_info(std::size_t &seed, const KernelAnalysisInfo info)
+{
+	for(int field = 0; field < NUM_FIELDS; ++field)
+	{
+		hash_combine(seed,info.read_fields[field]);
+		hash_combine(seed,info.field_has_stencil_op[field]);
+		hash_combine(seed,info.written_fields[field]);
+	}
 }
 
 // Hash for a single vector
@@ -1039,10 +1056,12 @@ struct VectorHash {
         return seed;
     }
 };
-using KeyType = std::tuple<std::vector<AcKernel>,std::vector<AcKernel>,Volume,Volume,bool>;
+using KeyType = std::tuple<std::vector<AcKernel>,std::vector<AcKernel>,Volume,Volume,bool,std::vector<KernelAnalysisInfo>>;
+
+
 struct KeyHash {
     std::size_t operator()(const KeyType &key) const {
-        const auto &[vec1, vec2,start,end,bcs_everywhere] = key;
+        const auto &[vec1, vec2,start,end,bcs_everywhere,info] = key;
         std::size_t seed = 0;
         hash_combine(seed, VectorHash{}(vec1));
         hash_combine(seed, VectorHash{}(vec2));
@@ -1053,6 +1072,10 @@ struct KeyHash {
         hash_combine(seed, end.y);
         hash_combine(seed, end.z);
         hash_combine(seed, bcs_everywhere);
+	for(auto& elem : info)
+	{
+		hash_kernel_analysis_info(seed,elem);
+	}
         return seed;
     }
 };
@@ -1402,13 +1425,34 @@ get_field_ray_directions(const std::vector<AcKernel> kernels,const KernelAnalysi
 	return field_ray_directions;
 }
 
+std::vector<KernelAnalysisInfo>
+get_dynamic_info(const AcDSLTaskGraph graph)
+{
+	//TP: The point of this function is that e.g. which fields are written out of the kernels can depend on the inputs given to the kernels.
+	//    Take for example test/inplace_gaussian-test. There a user specified Field in an array of Fields is smoothed based on a *input* int
+	//    If we would get the info normally then the right field would not be seen as the output ---> wrong swapping of input and output buffers
+	const auto kernel_calls = DSLTaskGraphKernels[graph];
+	std::vector<KernelAnalysisInfo> info(NUM_KERNELS,KernelAnalysisInfo{});
+	for(size_t call_index = 0; call_index < kernel_calls.size(); ++call_index)
+	{
+		VertexBufferArray vba{};
+		const auto loader = get_loader(graph,call_index);
+		ParamLoadingInfo p = {&vba.on_device.kernel_input_params, acGridGetDevice(), {}, {}, {}, kernel_calls[call_index]};
+    		loader(p);
+		info[kernel_calls[call_index]] = get_kernel_analysis_info(acGridGetLocalMeshInfo(),kernel_calls[call_index],vba.on_device.kernel_input_params);
+	}
+	return info;
+}
+
 
 std::vector<AcTaskDefinition>
 acGetDSLTaskGraphOps(const AcDSLTaskGraph graph, const bool optimized, const bool no_communication, const AcDSLTaskGraph bc_graph)
 {
 	if(is_bc_taskgraph(graph))
 		return acGetDSLBCTaskGraphOps(graph,optimized);
-	const auto info = get_kernel_analysis_info(acGridGetLocalMeshInfo());
+
+
+	const auto info = get_dynamic_info(graph);
 	const FieldBCs  field_boundconds = get_field_boundconds(bc_graph,optimized,info.data());
 	std::vector<AcTaskDefinition> res{};
 	auto level_sets = get_level_sets(graph,optimized,info.data());	
@@ -1563,7 +1607,8 @@ acGetOptimizedDSLTaskGraphWithBounds(const AcDSLTaskGraph graph, const Volume st
 	ERRCHK_ALWAYS(to_int3(end) >= to_int3(start));
 	auto optimized_kernels = get_optimized_kernels(graph,false);
 	auto optimized_bcs      = get_optimized_kernels(bc_graph,false);
-	KeyType key = std::make_tuple(optimized_kernels,optimized_bcs,start,end,bcs_everywhere);
+	const auto info = get_dynamic_info(graph);
+	KeyType key = std::make_tuple(optimized_kernels,optimized_bcs,start,end,bcs_everywhere,info);
 	if(task_graphs.find(key) != task_graphs.end())
 		return task_graphs[key];
 
