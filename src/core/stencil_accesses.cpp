@@ -30,20 +30,34 @@ bool should_reduce_int[1000] = {false};
 #define AcComplex(x,y)   (AcComplex){x,y}
 #include "user_defines.h"
 #include <array>
-AcReal AC_INTERNAL_run_const_AcReal_array_here[2000]{};
-AcReal AC_INTERNAL_run_const_array_here[2000]{};
-bool   AC_INTERNAL_run_const_bool_array_here[2000]{};
-int    AC_INTERNAL_run_const_int_array_here[2000]{};
-float  AC_INTERNAL_run_const_float_array_here[2000]{};
-AcComplex    AC_INTERNAL_run_const_AcComplex_array_here[2000]{};
 
-AcReal*
+template<typename T>
+struct safe_array
+{
+	T val[1] ;
+
+        T&
+        operator[](const int index)
+        {
+		(void)index;
+		return val[0];
+        }
+};
+
+safe_array<AcReal>       AC_INTERNAL_run_const_AcReal_array_here{};
+safe_array<AcReal>       AC_INTERNAL_run_const_array_here{};
+safe_array<bool>         AC_INTERNAL_run_const_bool_array_here{};
+safe_array<int>          AC_INTERNAL_run_const_int_array_here{};
+safe_array<float>        AC_INTERNAL_run_const_float_array_here{};
+safe_array<AcComplex>    AC_INTERNAL_run_const_AcComplex_array_here{};
+
+safe_array<AcReal>
 RCONST(AcRealCompArrayParam)
 {
        return AC_INTERNAL_run_const_AcReal_array_here;
 }
 
-bool*
+safe_array<bool>
 RCONST(AcBoolCompArrayParam)
 {
        return AC_INTERNAL_run_const_bool_array_here;
@@ -708,13 +722,12 @@ previous_base(const Field& field)
 	return AcReal(1.0);
 }
 AcReal
-AC_INTERNAL_read_vtxbuf(const Field& field, const int x, const int y, const int z)
+AC_INTERNAL_read_vtxbuf(const int& field, const int x, const int y, const int z)
 {
 	//TP: this is possible in case of input fields for kernels and when array syntax is translated to a call of this
-	if constexpr(NUM_FIELDS != NUM_ALL_FIELDS)
-	{
-		if(field >= NUM_FIELDS) return AcReal(1.0);
-	}
+	//Or when the field comes from inputs but the inputs are not properly set
+	if(field >= NUM_FIELDS) return AcReal(1.0);
+	if(field < 0) return AcReal(1.0);
 	stencils_accessed[field][stencil_value_stencil] |= 
 							index_at_boundary(x,y,z) ? AC_IN_BOUNDS_READ : AC_OUT_OF_BOUNDS_READ;
 	return AcReal(1.0);
