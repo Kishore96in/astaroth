@@ -52,6 +52,7 @@ var general__operators_8h =
     [ "traceless_strain", "general__operators_8h.html#a22a1b48d476d493a1010afcebf88f33d", null ],
     [ "traceless_strain", "general__operators_8h.html#a76446daf7ead1c0411154b6c7385709d", null ],
     [ "u_dot_grad", "general__operators_8h.html#adab95be0eaa1b6a3ae70b7bb903f2cdf", null ],
+    [ "u_dot_grad", "general__operators_8h.html#a6c5808c4e16706ce94395292cc001584", null ],
     [ "u_dot_grad_alt", "general__operators_8h.html#aca3b17b5abb0972f226cc0128d85846f", null ],
     [ "u_dot_grad_mat", "general__operators_8h.html#ae5cddc980824fd6bec02ee0b0cddf07d", null ],
     [ "u_dot_grad_mat_upwd", "general__operators_8h.html#a757fb6983c9be147f8aa8a93bbff5dc7", null ],
