@@ -1159,12 +1159,11 @@ gen_level_sets(const AcDSLTaskGraph graph, const bool optimized, const KernelAna
 					computes_across_halos  |= (kernel_call_computes_profile_across_halos[i][j] != BOUNDARY_NONE);
 
 				call_level_set[i] = n_level_sets;
-				const int k = (int)kernel_calls[i];
 				for(size_t j = 0; j < NUM_FIELDS ; ++j)
 				{
 					for(int stencil = 0; stencil < NUM_STENCILS; ++stencil)
 					{
-						if(info[k].stencils_accessed[j][stencil])
+						if(info[i].stencils_accessed[j][stencil])
 						{
 							for(int x = min_x_id(); x <= max_x_id(); ++x)
 							{
@@ -1188,7 +1187,7 @@ gen_level_sets(const AcDSLTaskGraph graph, const bool optimized, const KernelAna
 							halo_types_level_set[j][n_level_sets] = max(halo_types_level_set[j][n_level_sets],get_stencil_halo_type(acGridGetLocalMeshInfo(), Stencil(stencil)));
 						}
 					}
-					if(info[k].read_fields[j] && computes_across_halos)
+					if(info[i].read_fields[j] && computes_across_halos)
 					{
 							for(int x = min_x_id(); x <= max_x_id(); ++x)
 								for(int y = min_y_id(); y <= max_y_id(); ++y)
@@ -1202,7 +1201,7 @@ gen_level_sets(const AcDSLTaskGraph graph, const bool optimized, const KernelAna
 					
 					for(int ray = 0; ray < NUM_RAYS; ++ray)
 					{
-						if(info[k].ray_accessed[j][ray])
+						if(info[i].ray_accessed[j][ray])
 						{
 							for(int x = min_x_id(); x <= max_x_id(); ++x)
 								for(int y = min_y_id(); y <= max_y_id(); ++y)
