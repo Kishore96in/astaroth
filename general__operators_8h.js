@@ -54,7 +54,7 @@ var general__operators_8h =
     [ "u_dot_grad", "general__operators_8h.html#adab95be0eaa1b6a3ae70b7bb903f2cdf", null ],
     [ "u_dot_grad", "general__operators_8h.html#a6c5808c4e16706ce94395292cc001584", null ],
     [ "u_dot_grad_alt", "general__operators_8h.html#aca3b17b5abb0972f226cc0128d85846f", null ],
-    [ "u_dot_grad_mat", "general__operators_8h.html#ae5cddc980824fd6bec02ee0b0cddf07d", null ],
+    [ "u_dot_grad_mat", "general__operators_8h.html#a9f5c67a98f894a685e0319d25873bf31", null ],
     [ "u_dot_grad_mat_upwd", "general__operators_8h.html#a757fb6983c9be147f8aa8a93bbff5dc7", null ],
     [ "ugrad_upw", "general__operators_8h.html#a2c9e1049d3cbc02ae0af0b6f7393004d", null ],
     [ "ugrad_upw", "general__operators_8h.html#a9556047df42d109a8a5864fcafb66c79", null ]
