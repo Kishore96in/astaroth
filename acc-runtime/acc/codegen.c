@@ -6342,7 +6342,11 @@ get_field_order(const ASTNode* node)
 		if(index == -1) continue;
 		if(int_vec_contains(tmp3,index))
 		{
-			fatal("Field_order index %d appears more than once in field ordering!\n",index);
+                        size_t first_index = 0;
+                        for(size_t j = 0; j < i; ++j) if (tmp3.data[j] == index) first_index = j;
+                        const char* first_name  = get_symbol_by_index(NODE_VARIABLE_ID,first_index,FIELD_STR)->identifier;
+                        const char* second_name = get_symbol_by_index(NODE_VARIABLE_ID,i,FIELD_STR)->identifier;
+                        fatal("Field_order index %d appears more than once in field ordering!\nAppears first time in the %s and second time in %s!\n",index,first_name,second_name);
 		}
 		if(index < -1)
 		{
@@ -10822,7 +10826,6 @@ generate(const ASTNode* root_in, FILE* stream, const bool gen_mem_accesses, cons
   symboltable_reset();
   reset_dfunc_cache = true;
   ASTNode* root = astnode_dup(root_in,NULL);
-  get_field_order(root);
   check_uniquenes(root,NODE_DFUNCTION,"function");
   check_uniquenes(root,NODE_KFUNCTION,"kernel");
   check_uniquenes(root,NODE_STENCIL,"stencil");
@@ -10844,6 +10847,7 @@ generate(const ASTNode* root_in, FILE* stream, const bool gen_mem_accesses, cons
   	params.do_checks = true;
   	traverse_base(root, 0, NULL, params);
   }
+  get_field_order(root);
   gen_reduce_info(root);
   gen_kernel_reduce_outputs();
 
