@@ -258,13 +258,13 @@ var NAVTREEINDEX =
 "mpi__utils_8h.html#a9f21f303ccbec9d886a84847b8771072",
 "namespacemembers_n.html",
 "poisson_8h.html#ab56859098b2a809dac87221f84b088b3",
-"smooth__max_8h.html#a4f71665ed87399a0f5898ea369aae813",
-"src_2core_2kernels_2kernels_8h.html#a47b4ab2949c94456efe0f013015abf79",
-"structAcMatrix.html",
-"structSymbol.html#ab1ed79e283a2348fb27b1d81eafe4a01",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3e29885c00054c68a9fc0d83e366c2d2",
-"task_8h.html#aa2553dac5f55a1e06f2d054faea2fd0ea94966d90747b97d1f0f206c98a8b1ac3",
-"variables_8h.html#a4557a17195341444e4bbb6f78d37fc8f"
+"smooth__max_8h.html#a492792cdc22e0d23f72ecb7479fa8cf4",
+"spherical__harmonics_8h.html",
+"structAcDimProductsInv.html#acd48915eb93b9e34de1cf75dbf4615e3",
+"structSOAVector.html#a43fe944427e535a2968d1a3c14808105",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a37ac2b6b54f49af43a82115e0d752f98",
+"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a0d690a31a5c0310cb92becac2a35becf",
+"variables_8h.html#a3247a338b2e0bea8653f60cc20d1ccd4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
