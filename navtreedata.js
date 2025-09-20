@@ -258,13 +258,13 @@ var NAVTREEINDEX =
 "mpi__utils_8h.html#a9f21f303ccbec9d886a84847b8771072",
 "namespacemembers_n.html",
 "poisson_8h.html#ab56859098b2a809dac87221f84b088b3",
-"smooth__max_8h.html#a492792cdc22e0d23f72ecb7479fa8cf4",
-"spherical__harmonics_8h.html",
-"structAcDimProductsInv.html#acd48915eb93b9e34de1cf75dbf4615e3",
-"structSOAVector.html#a43fe944427e535a2968d1a3c14808105",
+"smooth__max_8h.html#a4bcfb3af37c73a4ffb3fa46b8344dd5c",
+"spherical__harmonics_8h_source.html",
+"structAcGridInfo.html",
+"structSOAVector.html#ace916416c347ac8c8edfef955851a761",
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a37ac2b6b54f49af43a82115e0d752f98",
-"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a0d690a31a5c0310cb92becac2a35becf",
-"variables_8h.html#a3247a338b2e0bea8653f60cc20d1ccd4"
+"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a1182ffae3c196b98daf984443b6c4722",
+"variables_8h.html#a327e7c6eacf5ffdd96f1caddb2a7d8c7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
