@@ -118,91 +118,93 @@ $(document).ready(function(){initNavTree('built-in_2intrinsics_8h_source.html','
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>real intrinsic floor(real)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>real intrinsic round(real)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">bool</span> intrinsic isnan(real)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>intrinsic <a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>intrinsic <a class="code hl_define" href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#aeb10c6e3cff2806eb0d09509d652bffa">broadcast_scalar</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#a2b4b3b26df825be894b1555c283b4fa6">broadcast_scalar_2d</a></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>intrinsic broadcast_scalar_3d</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>intrinsic broadcast_scalar_4d</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#ad3958f5c6a84cb7d19dc5719ed9f37da">broadcast_scalar_to_vec</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>intrinsic <a class="code hl_function" href="helpers_8cc.html#a3204f9ae82e8fce4799e39edab39c770">ceil</a></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>real intrinsic <a class="code hl_define" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>real intrinsic atomicAdd</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>intrinsic output_value</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>intrinsic multm2_sym</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>intrinsic diagonal</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><a class="code hl_struct" href="structAcDimProducts.html">AcDimProducts</a> intrinsic ac_get_dim_products(<a class="code hl_struct" href="structint3.html">int3</a>)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_struct" href="structAcDimProductsInv.html">AcDimProductsInv</a> intrinsic ac_get_dim_products_inv(<a class="code hl_struct" href="structAcDimProducts.html">AcDimProducts</a>)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>intrinsic write_base</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>intrinsic write_complex_base</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>intrinsic write_at_point</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>intrinsic write_profile_x</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>intrinsic write_profile_y</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>intrinsic write_profile_z</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>intrinsic write_profile_xy</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>intrinsic write_profile_xz</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>intrinsic write_profile_yx</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>intrinsic write_profile_yz</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>intrinsic write_profile_zx</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>intrinsic write_profile_zy</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>real intrinsic value_profile_x(Profile&lt;X&gt;)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>real intrinsic value_profile_y(Profile&lt;Y&gt;)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>real intrinsic value_profile_z(Profile&lt;Z&gt;)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>real intrinsic value_profile_xy(Profile&lt;XY&gt;)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>real intrinsic value_profile_xz(Profile&lt;XZ&gt;)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>real intrinsic value_profile_yx(Profile&lt;YZ&gt;)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>real intrinsic value_profile_yz(Profile&lt;YZ&gt;)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>real intrinsic value_profile_zx(Profile&lt;ZX&gt;)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>real intrinsic value_profile_zy(Profile&lt;ZY&gt;)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_struct" href="structcomplex.html">complex</a> intrinsic value_complex(ComplexField)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>intrinsic reduce_min_real</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>intrinsic reduce_max_real</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>intrinsic reduce_sum_real</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>intrinsic reduce_sum_real_x</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>intrinsic reduce_sum_real_y</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>intrinsic reduce_sum_real_z</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>intrinsic reduce_sum_real_xy</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>intrinsic reduce_sum_real_xz</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>intrinsic reduce_sum_real_yx</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>intrinsic reduce_sum_real_yz</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>intrinsic reduce_sum_real_zx</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>intrinsic reduce_sum_real_zy</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>intrinsic reduce_min_int</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>intrinsic reduce_max_int</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>intrinsic reduce_sum_int</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>intrinsic reduce_min_float</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>intrinsic reduce_max_float</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>intrinsic reduce_sum_float</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#a2e9b5197dc67cc9454b52b94437b2b9a">matmul_arr</a></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>real intrinsic previous_base(Field)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>intrinsic <a class="code hl_namespace" href="namespaceprint.html">print</a></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>intrinsic fprintf</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>intrinsic len</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1">size</a></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a690f8ad21232a5ea0bfb62b8887d46f0">error_message</a></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>intrinsic ac_is_loaded</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>intrinsic ac_get_process_decomposition</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><a class="code hl_struct" href="structint3.html">int3</a> intrinsic ac_get_field_halos(Field)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#ab268fe60ce97fe0e274765a3e2e31940">copy_arr</a></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a355892c8f5184273bc352d99c4b036f7">postprocess_reduce_result</a></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#acd0ca30d79fdc8e3109df5bc7ccf7b68">ac_dummy_write</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>intrinsic <a class="code hl_function" href="acc__runtime_8cu.html#a88d8f3315dcf15f29fabb056d0bff0c7">safe_access</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">bool</span> intrinsic isfinite(real)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">bool</span> intrinsic isinf(real)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>intrinsic <a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>intrinsic <a class="code hl_define" href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#aeb10c6e3cff2806eb0d09509d652bffa">broadcast_scalar</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#a2b4b3b26df825be894b1555c283b4fa6">broadcast_scalar_2d</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>intrinsic broadcast_scalar_3d</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>intrinsic broadcast_scalar_4d</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#ad3958f5c6a84cb7d19dc5719ed9f37da">broadcast_scalar_to_vec</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>intrinsic <a class="code hl_function" href="helpers_8cc.html#a3204f9ae82e8fce4799e39edab39c770">ceil</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>real intrinsic <a class="code hl_define" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>real intrinsic atomicAdd</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>intrinsic output_value</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>intrinsic multm2_sym</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>intrinsic diagonal</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_struct" href="structAcDimProducts.html">AcDimProducts</a> intrinsic ac_get_dim_products(<a class="code hl_struct" href="structint3.html">int3</a>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_struct" href="structAcDimProductsInv.html">AcDimProductsInv</a> intrinsic ac_get_dim_products_inv(<a class="code hl_struct" href="structAcDimProducts.html">AcDimProducts</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>intrinsic write_base</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>intrinsic write_complex_base</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>intrinsic write_at_point</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>intrinsic write_profile_x</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>intrinsic write_profile_y</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>intrinsic write_profile_z</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>intrinsic write_profile_xy</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>intrinsic write_profile_xz</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>intrinsic write_profile_yx</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>intrinsic write_profile_yz</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>intrinsic write_profile_zx</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>intrinsic write_profile_zy</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>real intrinsic value_profile_x(Profile&lt;X&gt;)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>real intrinsic value_profile_y(Profile&lt;Y&gt;)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>real intrinsic value_profile_z(Profile&lt;Z&gt;)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>real intrinsic value_profile_xy(Profile&lt;XY&gt;)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>real intrinsic value_profile_xz(Profile&lt;XZ&gt;)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>real intrinsic value_profile_yx(Profile&lt;YZ&gt;)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>real intrinsic value_profile_yz(Profile&lt;YZ&gt;)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>real intrinsic value_profile_zx(Profile&lt;ZX&gt;)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>real intrinsic value_profile_zy(Profile&lt;ZY&gt;)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_struct" href="structcomplex.html">complex</a> intrinsic value_complex(ComplexField)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>intrinsic reduce_min_real</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>intrinsic reduce_max_real</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>intrinsic reduce_sum_real</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>intrinsic reduce_sum_real_x</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>intrinsic reduce_sum_real_y</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>intrinsic reduce_sum_real_z</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>intrinsic reduce_sum_real_xy</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>intrinsic reduce_sum_real_xz</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>intrinsic reduce_sum_real_yx</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>intrinsic reduce_sum_real_yz</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>intrinsic reduce_sum_real_zx</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>intrinsic reduce_sum_real_zy</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>intrinsic reduce_min_int</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>intrinsic reduce_max_int</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>intrinsic reduce_sum_int</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>intrinsic reduce_min_float</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>intrinsic reduce_max_float</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>intrinsic reduce_sum_float</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#a2e9b5197dc67cc9454b52b94437b2b9a">matmul_arr</a></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>real intrinsic previous_base(Field)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>intrinsic <a class="code hl_namespace" href="namespaceprint.html">print</a></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>intrinsic fprintf</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>intrinsic len</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1">size</a></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a690f8ad21232a5ea0bfb62b8887d46f0">error_message</a></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>intrinsic ac_is_loaded</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>intrinsic ac_get_process_decomposition</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><a class="code hl_struct" href="structint3.html">int3</a> intrinsic ac_get_field_halos(Field)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>intrinsic <a class="code hl_function" href="acc-runtime_2api_2math__utils_8h.html#ab268fe60ce97fe0e274765a3e2e31940">copy_arr</a></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#a355892c8f5184273bc352d99c4b036f7">postprocess_reduce_result</a></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>intrinsic <a class="code hl_define" href="acc__runtime_8cu.html#acd0ca30d79fdc8e3109df5bc7ccf7b68">ac_dummy_write</a></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>intrinsic <a class="code hl_function" href="acc__runtime_8cu.html#a88d8f3315dcf15f29fabb056d0bff0c7">safe_access</a></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_a0cb8046c9ac52516329d57a440a7e60a"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div><div class="ttdeci">#define sin(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:41</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_a2b4b3b26df825be894b1555c283b4fa6"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#a2b4b3b26df825be894b1555c283b4fa6">broadcast_scalar_2d</a></div><div class="ttdeci">HOST_DEVICE_INLINE void broadcast_scalar_2d(AcReal(&amp;arr)[N1][N2], const AcReal &amp;val)</div><div class="ttdef"><b>Definition</b> math_utils.h:1055</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_a2e9b5197dc67cc9454b52b94437b2b9a"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#a2e9b5197dc67cc9454b52b94437b2b9a">matmul_arr</a></div><div class="ttdeci">HOST_DEVICE_INLINE AcReal3 matmul_arr(const AcReal *m, const AcReal3 &amp;v)</div><div class="ttdef"><b>Definition</b> math_utils.h:1014</div></div>
