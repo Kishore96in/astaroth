@@ -23,6 +23,5 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "logging.c", "logging_8c.html", "logging_8c" ],
     [ "node.cc", "node_8cc.html", "node_8cc" ],
     [ "task.cc", "task_8cc.html", null ],
-    [ "task.h", "task_8h.html", "task_8h" ],
-    [ "update_params.cc", "update__params_8cc.html", "update__params_8cc" ]
+    [ "task.h", "task_8h.html", "task_8h" ]
 ];

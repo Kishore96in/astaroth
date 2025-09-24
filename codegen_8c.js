@@ -397,6 +397,7 @@ var codegen_8c =
     [ "turn_inline_function_calls_to_assignments_in_statement", "codegen_8c.html#a43ecc55d78ba54d59adb4fb5b982bdbc", null ],
     [ "type_output", "codegen_8c.html#a8afc61463a6fb12a116ad50159f354e1", null ],
     [ "write_dfunc_bc_kernel", "codegen_8c.html#ad4f067567f0f46948498b36942d6f005", null ],
+    [ "AC_IS_LOADED_STR", "codegen_8c.html#a28d4bd529fbc5b997f417d9acc140d11", null ],
     [ "AEQ_STR", "codegen_8c.html#a4ee25dcbc9956725619d935df25f616d", null ],
     [ "AND_STR", "codegen_8c.html#a09a016d5fdd2c408e5e0ddf77c64d8ad", null ],
     [ "AUXILIARY_STR", "codegen_8c.html#a3d638d989fb36c0137b929fe9557eb01", null ],
