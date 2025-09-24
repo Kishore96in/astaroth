@@ -93,12 +93,12 @@ $(document).ready(function(){initNavTree('md_deprecated_2acc-2_84_2README.html',
   <div class="headertitle"><div class="title">ACC - Astaroth Code Compiler</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md116"></a> ACC is a source-to-source compiler for generating CUDA kernels from programs written in Astaroth Code (AC). This document focuses on how to build and run the compiler. For detailed description of code generation and compilation phases, we refer the reader to <a href="http://urn.fi/URN:NBN:fi:aalto-201906233993">J. Pekkilä, Astaroth: A Library for Stencil Computations on Graphics Processing Units. 2019.</a>, Section 4.3. We refer the reader to <a class="el" href="md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html">Specification</a> for a detailed description of AC syntax.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md115"></a> ACC is a source-to-source compiler for generating CUDA kernels from programs written in Astaroth Code (AC). This document focuses on how to build and run the compiler. For detailed description of code generation and compilation phases, we refer the reader to <a href="http://urn.fi/URN:NBN:fi:aalto-201906233993">J. Pekkilä, Astaroth: A Library for Stencil Computations on Graphics Processing Units. 2019.</a>, Section 4.3. We refer the reader to <a class="el" href="md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html">Specification</a> for a detailed description of AC syntax.</p>
 <p>ACC is automatically compiled and invoked when compiling the Astaroth Library, user intervention is not needed. The instructions presented in this file are only for developers looking to debug the AC compiler.</p>
-<h1><a class="anchor" id="autotoc_md117"></a>
+<h1><a class="anchor" id="autotoc_md116"></a>
 Dependencies</h1>
 <p><code>gcc flex bison</code></p>
-<h1><a class="anchor" id="autotoc_md118"></a>
+<h1><a class="anchor" id="autotoc_md117"></a>
 Building</h1>
 <ol type="1">
 <li><code>mkdir build</code></li>
@@ -106,7 +106,7 @@ Building</h1>
 <li><code>cmake ..</code></li>
 <li><code>make -j</code></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md119"></a>
+<h1><a class="anchor" id="autotoc_md118"></a>
 Usage</h1>
 <p>Script <code>compile_acc_module.sh</code> executes all compilation stages from preprocessing to linking AC standard libraries. The resulting cuda headers are placed in the current working directory. The script should be invoked as follows.</p>
 <blockquote class="doxtable">

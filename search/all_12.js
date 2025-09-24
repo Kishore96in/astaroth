@@ -54,15 +54,15 @@ var searchData=
   ['hashmap_5fuint64_5ft_51',['hashmap_uint64_t',['../hashtable_8h.html#adb4f5f1c89ab27db75ffc115682573a3',1,'hashtable.h']]],
   ['hashmap_5fuint8_5ft_52',['hashmap_uint8_t',['../hashtable_8h.html#ad81d2b7bbda6afa3690af5090b098a44',1,'hashtable.h']]],
   ['hashtable_2eh_53',['hashtable.h',['../hashtable_8h.html',1,'']]],
-  ['having_20copies_54',['having copies',['../md_acc-runtime_2LICENCE.html#autotoc_md21',1,'9. Acceptance Not Required for Having Copies.'],['../md_LICENCE.html#autotoc_md158',1,'9. Acceptance Not Required for Having Copies.']]],
-  ['header_20example_3a_55',['Header example:',['../md_CONTRIBUTING.html#autotoc_md112',1,'']]],
+  ['having_20copies_54',['having copies',['../md_acc-runtime_2LICENCE.html#autotoc_md21',1,'9. Acceptance Not Required for Having Copies.'],['../md_LICENCE.html#autotoc_md157',1,'9. Acceptance Not Required for Having Copies.']]],
+  ['header_20example_3a_55',['Header example:',['../md_CONTRIBUTING.html#autotoc_md111',1,'']]],
   ['heat_5fconduction_5fkramers_56',['heat_conduction_kramers',['../heat__conduction__kramers_8h.html#aa976d70b9a583b757b4ddaa9683ba3f7',1,'heat_conduction_kramers.h']]],
   ['heat_5fconduction_5fkramers_2eh_57',['heat_conduction_kramers.h',['../heat__conduction__kramers_8h.html',1,'']]],
   ['helical_5fforcing_5fe_5fgenerator_58',['helical_forcing_e_generator',['../astaroth__forcing_8cc.html#aabce2b039eef6c49a111101c7e3b75ed',1,'astaroth_forcing.cc']]],
   ['helical_5fforcing_5fk_5fgenerator_59',['helical_forcing_k_generator',['../astaroth__forcing_8cc.html#acc56385bbd7e928169a6c5db4943a9cc',1,'astaroth_forcing.cc']]],
   ['helical_5fforcing_5fspecial_5fvector_60',['helical_forcing_special_vector',['../astaroth__forcing_8cc.html#a449782ef7762d00fc8119e96d2efd957',1,'astaroth_forcing.cc']]],
-  ['helper_20functions_61',['Initialization, Quitting and Helper Functions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md125',1,'']]],
-  ['helper_20scripts_62',['Helper scripts',['../md_pilot_2README.html#autotoc_md172',1,'']]],
+  ['helper_20functions_61',['Initialization, Quitting and Helper Functions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md124',1,'']]],
+  ['helper_20scripts_62',['Helper scripts',['../md_pilot_2README.html#autotoc_md171',1,'']]],
   ['helpers_2ecc_63',['helpers.cc',['../helpers_8cc.html',1,'']]],
   ['hessian_64',['hessian',['../operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1',1,'hessian(Field v):&#160;operators.h'],['../stdderiv_8h.html#a45ee5dd62177633176f2f315ce88d9b7',1,'hessian(in ScalarField vertex):&#160;stdderiv.h'],['../general__operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1',1,'hessian(Field v):&#160;general_operators.h']]],
   ['hierarchical_65',['hierarchical',['../namespaceac_1_1mpi.html#a53b8cce88eac80d9ae00150190937b20a2c95b1531c95e0730d65f40da3b31778',1,'ac::mpi']]],
@@ -86,5 +86,5 @@ var searchData=
   ['hostbuffer_83',['HostBuffer',['../acc-comm_2acm_2detail_2datatypes_8h.html#aa13ded694295bdcd348154b70d963b78',1,'datatypes.h']]],
   ['hostpointer_84',['HostPointer',['../acc-comm_2acm_2detail_2datatypes_8h.html#af27c008b4ed78a7aa7534923ea6016ae',1,'datatypes.h']]],
   ['hosttodevicebufferexchangetask_85',['HostToDeviceBufferExchangeTask',['../buffer__exchange_8h.html#a422fd82f6018b2bb488c31d5034cc534',1,'buffer_exchange.h']]],
-  ['how_20to_20apply_20these_20terms_20to_20your_20new_20programs_86',['how to apply these terms to your new programs',['../md_acc-runtime_2LICENCE.html#autotoc_md30',1,'How to Apply These Terms to Your New Programs'],['../md_LICENCE.html#autotoc_md167',1,'How to Apply These Terms to Your New Programs']]]
+  ['how_20to_20apply_20these_20terms_20to_20your_20new_20programs_86',['how to apply these terms to your new programs',['../md_acc-runtime_2LICENCE.html#autotoc_md30',1,'How to Apply These Terms to Your New Programs'],['../md_LICENCE.html#autotoc_md166',1,'How to Apply These Terms to Your New Programs']]]
 ];

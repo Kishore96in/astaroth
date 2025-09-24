@@ -38,9 +38,9 @@ var searchData=
   ['kernelconfig_35',['KernelConfig',['../structKernelConfig.html',1,'']]],
   ['kernelparameters_36',['KernelParameters',['../structKernelParameters.html',1,'']]],
   ['kernelreduceoutput_37',['kernelreduceoutput',['../acc__runtime_8h.html#ab0641d8f8018b1e669acf2f1796dd448',1,'KernelReduceOutput:&#160;acc_runtime.h'],['../structKernelReduceOutput.html',1,'KernelReduceOutput']]],
-  ['kernels_38',['kernels',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md139',1,'Kernels'],['../md_acc-runtime_2README.html#autotoc_md53',1,'Kernels']]],
+  ['kernels_38',['kernels',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md138',1,'Kernels'],['../md_acc-runtime_2README.html#autotoc_md52',1,'Kernels']]],
   ['kernels_2ecu_39',['kernels.cu',['../kernels_8cu.html',1,'']]],
-  ['kernels_2eh_40',['kernels.h',['../acc-runtime_2built-in_2kernels_8h.html',1,'(Global Namespace)'],['../src_2core_2kernels_2kernels_8h.html',1,'(Global Namespace)'],['../acc-runtime_2stdlib_2utils_2kernels_8h.html',1,'(Global Namespace)']]],
+  ['kernels_2eh_40',['kernels.h',['../src_2core_2kernels_2kernels_8h.html',1,'(Global Namespace)'],['../acc-runtime_2stdlib_2utils_2kernels_8h.html',1,'(Global Namespace)'],['../acc-runtime_2built-in_2kernels_8h.html',1,'(Global Namespace)']]],
   ['kernels_5fwith_5finput_5fparams_41',['kernels_with_input_params',['../structcombinatorial__params__info.html#a78238cff38a44824b94c3f3276a0c08d',1,'combinatorial_params_info']]],
   ['key_42',['key',['../structhashmap__element__s.html#a9285188fdcfd10f600c523b30e0c12db',1,'hashmap_element_s']]],
   ['key_5flen_43',['key_len',['../structhashmap__element__s.html#afe57b47c01ca7ecace981282bc019339',1,'hashmap_element_s']]],
@@ -71,7 +71,7 @@ var searchData=
   ['kiss_5ffft_5fscalar_68',['kiss_fft_scalar',['../kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337',1,'kiss_fft.h']]],
   ['kiss_5ffft_5fsin_69',['KISS_FFT_SIN',['../__kiss__fft__guts_8h.html#a2d4fc93cde15512f1946f364d5271dd3',1,'_kiss_fft_guts.h']]],
   ['kiss_5ffft_5fstate_70',['kiss_fft_state',['../structkiss__fft__state.html',1,'']]],
-  ['kiss_5ffft_5fstride_71',['kiss_fft_stride',['../kiss__fft_8c.html#aec345dab68815f4c5c2904978626d877',1,'kiss_fft_stride(kiss_fft_cfg st, const kiss_fft_cpx *fin, kiss_fft_cpx *fout, int in_stride):&#160;kiss_fft.c'],['../kiss__fft_8h.html#add8218d5f9262e975a513657d6646311',1,'kiss_fft_stride(kiss_fft_cfg cfg, const kiss_fft_cpx *fin, kiss_fft_cpx *fout, int fin_stride):&#160;kiss_fft.c']]],
+  ['kiss_5ffft_5fstride_71',['kiss_fft_stride',['../kiss__fft_8h.html#add8218d5f9262e975a513657d6646311',1,'kiss_fft_stride(kiss_fft_cfg cfg, const kiss_fft_cpx *fin, kiss_fft_cpx *fout, int fin_stride):&#160;kiss_fft.c'],['../kiss__fft_8c.html#aec345dab68815f4c5c2904978626d877',1,'kiss_fft_stride(kiss_fft_cfg st, const kiss_fft_cpx *fin, kiss_fft_cpx *fout, int in_stride):&#160;kiss_fft.c']]],
   ['kiss_5ffft_5ftmp_5falloc_72',['KISS_FFT_TMP_ALLOC',['../__kiss__fft__guts_8h.html#abd992e9886fb74f97bf0b6e057fe08a5',1,'_kiss_fft_guts.h']]],
   ['kiss_5ffft_5ftmp_5ffree_73',['KISS_FFT_TMP_FREE',['../__kiss__fft__guts_8h.html#ab915c572fe96a51a3528b7419248b655',1,'_kiss_fft_guts.h']]],
   ['kiss_5ffft_5fwarning_74',['KISS_FFT_WARNING',['../kiss__fft__log_8h.html#addd25ea9fae9773ad7dbce914b29c94e',1,'kiss_fft_log.h']]],
@@ -82,6 +82,5 @@ var searchData=
   ['kiss_5ffftnd_5fcfg_79',['kiss_fftnd_cfg',['../kiss__fftnd_8h.html#ae5cdf6777f8f50604da48808be9ab836',1,'kiss_fftnd.h']]],
   ['kiss_5ffftnd_5fstate_80',['kiss_fftnd_state',['../structkiss__fftnd__state.html',1,'']]],
   ['kiss_5ffftr_5fnext_5ffast_5fsize_5freal_81',['kiss_fftr_next_fast_size_real',['../kiss__fft_8h.html#ad5d759d8e80434375e61c6a7de9aee79',1,'kiss_fft.h']]],
-  ['know_5fall_5ftypes_82',['know_all_types',['../codegen_8c.html#a89d8b9a7ac6f8bf6ea0e7607a6b692e9',1,'codegen.c']]],
-  ['known_20issues_83',['Known issues',['../md_acc-runtime_2README.html#autotoc_md33',1,'']]]
+  ['know_5fall_5ftypes_82',['know_all_types',['../codegen_8c.html#a89d8b9a7ac6f8bf6ea0e7607a6b692e9',1,'codegen.c']]]
 ];
