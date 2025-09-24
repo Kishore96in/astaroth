@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"astaroth__analysis__helpers_8h.html#a5dd468577303fd69065f0f39b087cfa6":[21,0,6,4,0],
 "astaroth__analysis__helpers_8h.html#a636c1fae341e34e15e0cd84964ca0b8a":[21,0,6,4,19],
 "astaroth__analysis__helpers_8h.html#a6b5e4e7e7eb3dfdfa0c70dcb7f65de9f":[21,0,6,4,22],
 "astaroth__analysis__helpers_8h.html#a751afcfd08b2450a1b3aaa81a5dbb887":[21,0,6,4,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "astaroth__grid_8h.html":[21,0,6,10],
 "astaroth__grid_8h.html#addf5ec070e9499d36b7f2009ce736076":[21,0,6,10,0],
 "astaroth__grid_8h_source.html":[21,0,6,10],
-"astaroth__helpers_8h.html":[21,0,6,11],
-"astaroth__helpers_8h.html#a0137535945ad81ba9697ae1d4a12ab0f":[21,0,6,11,2]
+"astaroth__helpers_8h.html":[21,0,6,11]
 };
