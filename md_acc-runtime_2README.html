@@ -623,6 +623,7 @@ Additional physics-specific API functions</h2>
 <h2><a class="anchor" id="autotoc_md67"></a>
 Stencil order</h2>
 <p>The stencil order can be set by the user by <code>hostdefine STENCIL_ORDER (x)</code>, where <code>x</code> is the total number of cells on both sides of the center point per axis. For example, a simple von Neumann stencil is of order 2.</p>
+<p>Alternatively it can be set via CMAKE with <code>-DAC_STENCIL_ORDER=N</code>.</p>
 <blockquote class="doxtable">
 <p>&zwj;Note: The size of the halo surrounding the computational domain depends on <code>STENCIL_ORDER</code>. </p>
 </blockquote>
