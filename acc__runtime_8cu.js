@@ -28,7 +28,6 @@ var acc__runtime_8cu =
     [ "PROFILE_X_Y_OR_Z_INDEX", "acc__runtime_8cu.html#a3da0af7daef0c6dfd45419b1d1b8a1ff", null ],
     [ "PROFILE_Y_X_OR_Z_INDEX", "acc__runtime_8cu.html#aa610d08b605a90c588f229b87cb050a2", null ],
     [ "PROFILE_Z_X_OR_Y_INDEX", "acc__runtime_8cu.html#ac14850b77a445a19da0ac40273ff571d", null ],
-    [ "READ_ONLY_LOAD", "acc__runtime_8cu.html#ac65ca2bb1926db94c8eede385bf8829a", null ],
     [ "RESET", "acc__runtime_8cu.html#ab702106cf3b3e96750b6845ded4e0299", null ],
     [ "size", "acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1", null ],
     [ "suppress_unused_warning", "acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9", null ],
