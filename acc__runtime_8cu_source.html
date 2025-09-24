@@ -627,7 +627,7 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="preprocessor">#if AC_CPU_BUILD</span></div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="preprocessor">#define READ_ONLY_LOAD(expr) expr</span></div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#ac65ca2bb1926db94c8eede385bf8829a">  496</a></span><span class="preprocessor">#define READ_ONLY_LOAD(expr) __ldg(&amp;##expr##)</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#ac65ca2bb1926db94c8eede385bf8829a">  496</a></span><span class="preprocessor">#define READ_ONLY_LOAD(expr) __ldg(&amp;expr)</span></div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="preprocessor">#include &quot;user_kernels.h&quot;</span></div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="preprocessor">#undef size</span></div>
