@@ -916,6 +916,12 @@ Functions</h2></td></tr>
 <tr class="separator:a24c9e20c1ca71ad938c45a40fd369bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd4590316a19a25f1cd8e4aefc29313" id="r_aacd4590316a19a25f1cd8e4aefc29313"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#aacd4590316a19a25f1cd8e4aefc29313">generate_executed_nodes</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, bool gen_mem_accesses, FILE *stream)</td></tr>
 <tr class="separator:aacd4590316a19a25f1cd8e4aefc29313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486cbe2b4ecffd952b14f212df7fb174" id="r_a486cbe2b4ecffd952b14f212df7fb174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a486cbe2b4ecffd952b14f212df7fb174">is_for_iteration_statement</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
+<tr class="separator:a486cbe2b4ecffd952b14f212df7fb174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ceff2f712bf3f60b7c641bd7247cce" id="r_a75ceff2f712bf3f60b7c641bd7247cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a75ceff2f712bf3f60b7c641bd7247cce">replace_variable_with_constant_int</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const char *old, const char *new)</td></tr>
+<tr class="separator:a75ceff2f712bf3f60b7c641bd7247cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec69391b2ef24987e2375329bcf1d7c" id="r_abec69391b2ef24987e2375329bcf1d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#abec69391b2ef24987e2375329bcf1d7c">unroll_constant_loops</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
+<tr class="separator:abec69391b2ef24987e2375329bcf1d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8280db1b8c25249d9c6571976b645b" id="r_a7c8280db1b8c25249d9c6571976b645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7c8280db1b8c25249d9c6571976b645b">generate</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *root_in, FILE *stream, const bool gen_mem_accesses, const bool ELIMINATE_CONDITIONALS, const bool runtime_compilation)</td></tr>
 <tr class="separator:a7c8280db1b8c25249d9c6571976b645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8ac36dd202a505abd273049e2bc20f" id="r_a7e8ac36dd202a505abd273049e2bc20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7e8ac36dd202a505abd273049e2bc20f">compile_helper</a> (const bool log)</td></tr>
@@ -8276,6 +8282,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a486cbe2b4ecffd952b14f212df7fb174" name="a486cbe2b4ecffd952b14f212df7fb174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486cbe2b4ecffd952b14f212df7fb174">&#9670;&#160;</a></span>is_for_iteration_statement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_for_iteration_statement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adae43d8e54a6028098459548fc460a31" name="adae43d8e54a6028098459548fc460a31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adae43d8e54a6028098459548fc460a31">&#9670;&#160;</a></span>is_output_type()</h2>
 
@@ -9891,6 +9915,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a75ceff2f712bf3f60b7c641bd7247cce" name="a75ceff2f712bf3f60b7c641bd7247cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ceff2f712bf3f60b7c641bd7247cce">&#9670;&#160;</a></span>replace_variable_with_constant_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void replace_variable_with_constant_int </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>new</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18c70af3866a306b679c0bcd78ee0bed" name="a18c70af3866a306b679c0bcd78ee0bed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18c70af3866a306b679c0bcd78ee0bed">&#9670;&#160;</a></span>replace_write_calls()</h2>
 
@@ -10530,6 +10588,24 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abec69391b2ef24987e2375329bcf1d7c" name="abec69391b2ef24987e2375329bcf1d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec69391b2ef24987e2375329bcf1d7c">&#9670;&#160;</a></span>unroll_constant_loops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unroll_constant_loops </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
