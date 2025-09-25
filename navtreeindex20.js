@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a":[20,0,12,0],
+"structAcDeviceTmpBuffer.html#af5f97bc385ba721ba952ef70b3ac3b6c":[20,0,12,1],
+"structAcDimProducts.html":[20,0,13],
+"structAcDimProducts.html#a19f253ddee38ba921cff1768b94727fe":[20,0,13,3],
+"structAcDimProducts.html#aa9bb310a2393cd8390dd08ae6e11daff":[20,0,13,1],
+"structAcDimProducts.html#ad3df604fbe3f2323791b341e881d0582":[20,0,13,2],
 "structAcDimProducts.html#ae9489531d533d1cc48fbb6066873a750":[20,0,13,0],
 "structAcDimProductsInv.html":[20,0,14],
 "structAcDimProductsInv.html#a2c330002adb4b91e287baea9399ccc60":[20,0,14,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "structRegion.html#ad884a1819a01e9e92badb602e6f958f4":[20,0,100,8],
 "structRegion.html#ad9cae47647baf2094d952ad1dea94e30":[20,0,100,4],
 "structRegion.html#ae60f195a8658a11354454ca132e88f10":[20,0,100,12],
-"structRegion.html#afea81f2171eb2ea11c5440ed173760a4":[20,0,100,16],
-"structRegionMemory.html":[20,0,101],
-"structRegionMemory.html#a7ee06514cf17659d0962ceca641b0fe0":[20,0,101,1],
-"structRegionMemory.html#adeb680296c50945984d1840c1492a4d9":[20,0,101,0],
-"structRegionMemory.html#ae78a3dba4747c922ddfe219428eb9175":[20,0,101,2],
-"structRegionMemoryInputParams.html":[20,0,102],
-"structRegionMemoryInputParams.html#a2c257dcdc4eb553d2a3ec9d7d05e408b":[20,0,102,4]
+"structRegion.html#afea81f2171eb2ea11c5440ed173760a4":[20,0,100,16]
 };

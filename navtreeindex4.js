@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"astaroth__grid_8h_source.html":[21,0,6,10],
+"astaroth__helpers_8h.html":[21,0,6,11],
+"astaroth__helpers_8h.html#a0137535945ad81ba9697ae1d4a12ab0f":[21,0,6,11,2],
 "astaroth__helpers_8h.html#a0bb890b1f9749415ac81479ec25ed342":[21,0,6,11,13],
 "astaroth__helpers_8h.html#a1385210b7f14dd76bd612251ad036547":[21,0,6,11,17],
 "astaroth__helpers_8h.html#a24644b8d1d7d2f5faaf49a540146395a":[21,0,6,11,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "classBufferExchangeTask.html#a87c846a6e0e4225c41bcbe811be4071f":[20,0,39,6],
 "classBufferExchangeTask.html#aa7b615e392511a8619b4929dd2fb4586":[20,0,39,1],
 "classBufferExchangeTask.html#af2627d3a25059ae9e800b0dce91f1997":[20,0,39,2],
-"classBufferExchangeTask.html#af4e6af2712f6a53aa50feb74afd94e14":[20,0,39,4],
-"classBufferExchangeTask.html#aff3a6f7f94c541754283ca228094aab7":[20,0,39,0],
-"classComputeTask.html":[20,0,44],
-"classComputeTask.html#a24c696cd4577531a0113ad84347c26d2":[20,0,44,9]
+"classBufferExchangeTask.html#af4e6af2712f6a53aa50feb74afd94e14":[20,0,39,4]
 };

@@ -9,6 +9,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "fft-shift-test", "dir_4faaa223621b9e521571117a006fb5fd.html", "dir_4faaa223621b9e521571117a006fb5fd" ],
     [ "fft-test", "dir_13d890c3dac2330adb52106b7dbde26d.html", "dir_13d890c3dac2330adb52106b7dbde26d" ],
     [ "field-arr-test", "dir_95ca0d741c7c6d1e517fb0fb4b50f18b.html", "dir_95ca0d741c7c6d1e517fb0fb4b50f18b" ],
+    [ "inplace_gaussian-test", "dir_317c70699cc419b36a91f7215ba6cf5b.html", "dir_317c70699cc419b36a91f7215ba6cf5b" ],
     [ "kernel-fusion-test", "dir_93a9aaf9f49ea001ee4e93d9599f668b.html", "dir_93a9aaf9f49ea001ee4e93d9599f668b" ],
     [ "mpi-profile-reduce", "dir_af4ef7e228b7a8d75f276e8df7701bc2.html", "dir_af4ef7e228b7a8d75f276e8df7701bc2" ],
     [ "planetest", "dir_e170e328381ca64137c0386df1a56bb4.html", "dir_e170e328381ca64137c0386df1a56bb4" ],
