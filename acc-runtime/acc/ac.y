@@ -104,6 +104,7 @@ ASTNode* root = NULL;
 
 extern FILE* yyin;
 extern char* yytext;
+extern int yylineno;
 
 int yylex();
 int yyparse();
@@ -509,9 +510,11 @@ int code_generation_pass(const char* stage0, const char* stage1, const char* sta
 	//    A better way would to take away the the struct logic out of the lexer and to a separate pass,
 	//    but this works for now.
 
-        //while (yylex() != 0) {
-	//}
-	//rewind(yyin);
+        const int linenum_save = yylineno;
+        while (yylex() != 0) {
+	}
+	rewind(yyin);
+	yylineno = linenum_save;
 
         int error = yyparse();
         if (error) {
