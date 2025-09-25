@@ -328,6 +328,7 @@ var codegen_8c =
     [ "mark_first_declarations_in_funcs", "codegen_8c.html#a5f119c0f8ee873aeef802470aba24875", null ],
     [ "mark_kernel_inputs", "codegen_8c.html#a952ea7e768157589a812655d62a3fabd", null ],
     [ "monomorphize_kernel_calls", "codegen_8c.html#a187e61ce2584212eca472860aa493ca1", null ],
+    [ "only_ints", "codegen_8c.html#aa7bb89d0e261455bafe7f149e86674f0", null ],
     [ "output_array_info", "codegen_8c.html#a19db8e14f7e87825d35e140d7cc493ca", null ],
     [ "output_specifier", "codegen_8c.html#a6f104e8eae301ef7f317528240754dd4", null ],
     [ "populate_array_var_dims_info", "codegen_8c.html#a4d62e036d73633de83675b245bf1fd60", null ],
