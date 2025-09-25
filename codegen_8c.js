@@ -116,6 +116,7 @@ var codegen_8c =
     [ "flow_type_info", "codegen_8c.html#ada11967b7542306d13d3dbc7d81968e1", null ],
     [ "flow_type_info_base", "codegen_8c.html#aad863e459e8991d03a7cf77ee28d3f14", null ],
     [ "flow_type_info_in_func", "codegen_8c.html#af5580bb3ca3b60d73149586fba2efa2b", null ],
+    [ "fold_const_int_addition", "codegen_8c.html#a7ee6fb2dda98c1ad67cb36ce28b88e4a", null ],
     [ "fread_errchk", "codegen_8c.html#a72b45f92def16bde4dda253417e8ae6e", null ],
     [ "free_combinatorial_params_info", "codegen_8c.html#a754333bea36e5d3f17bbc4367e634354", null ],
     [ "free_func_params_info", "codegen_8c.html#a48748e45719b2ce1e9652b9afebd1e9d", null ],

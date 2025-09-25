@@ -920,6 +920,8 @@ Functions</h2></td></tr>
 <tr class="separator:a486cbe2b4ecffd952b14f212df7fb174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ceff2f712bf3f60b7c641bd7247cce" id="r_a75ceff2f712bf3f60b7c641bd7247cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a75ceff2f712bf3f60b7c641bd7247cce">replace_variable_with_constant_int</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const char *old, const char *new)</td></tr>
 <tr class="separator:a75ceff2f712bf3f60b7c641bd7247cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee6fb2dda98c1ad67cb36ce28b88e4a" id="r_a7ee6fb2dda98c1ad67cb36ce28b88e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7ee6fb2dda98c1ad67cb36ce28b88e4a">fold_const_int_addition</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
+<tr class="separator:a7ee6fb2dda98c1ad67cb36ce28b88e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec69391b2ef24987e2375329bcf1d7c" id="r_abec69391b2ef24987e2375329bcf1d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#abec69391b2ef24987e2375329bcf1d7c">unroll_constant_loops</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
 <tr class="separator:abec69391b2ef24987e2375329bcf1d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8280db1b8c25249d9c6571976b645b" id="r_a7c8280db1b8c25249d9c6571976b645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7c8280db1b8c25249d9c6571976b645b">generate</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *root_in, FILE *stream, const bool gen_mem_accesses, const bool ELIMINATE_CONDITIONALS, const bool runtime_compilation)</td></tr>
@@ -3335,6 +3337,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>printf("WRONG DOES NOT MATCH\n"); printf("%s %s\n",node-&gt;expr_type,type); printf("VAR: %s\n",var_name); printf("In: %s\n",in_func_name); exit(EXIT_FAILURE);</p>
+
+</div>
+</div>
+<a id="a7ee6fb2dda98c1ad67cb36ce28b88e4a" name="a7ee6fb2dda98c1ad67cb36ce28b88e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee6fb2dda98c1ad67cb36ce28b88e4a">&#9670;&#160;</a></span>fold_const_int_addition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fold_const_int_addition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
