@@ -51,6 +51,7 @@ var codegen_8c =
     [ "TRAVERSE_PREAMBLE", "codegen_8c.html#a96fc2f902306a866a3cdafe804b5006b", null ],
     [ "TRAVERSE_PREAMBLE_PARAMS", "codegen_8c.html#a6470baabeeca0d9875411a068437816d", null ],
     [ "add_all_identifiers", "codegen_8c.html#a3cf4b5a7776dd13b48aadad9232bbdd2", null ],
+    [ "add_assignment", "codegen_8c.html#a27a9fc8bceaeca6016ecd4dcd69ad97f", null ],
     [ "add_auto", "codegen_8c.html#aaa014acc127a616aea96fb5dad6d17ea", null ],
     [ "add_casts", "codegen_8c.html#aaed83b46f533a33f006158cf4b2d5594", null ],
     [ "add_index_to_arrays", "codegen_8c.html#ac2841e6bb43adabb744a597ecfcc6d5f", null ],

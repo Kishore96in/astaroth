@@ -130,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a510bd4fdeee37b8b585db08f63e38057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f7d282db55f475fd89fce8f0ad94dc" id="r_ac0f7d282db55f475fd89fce8f0ad94dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReduceTask.html#ac0f7d282db55f475fd89fce8f0ad94dc">test</a> ()</td></tr>
 <tr class="separator:ac0f7d282db55f475fd89fce8f0ad94dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa499ac085954c58ae9d6c457b98f083d" id="r_aa499ac085954c58ae9d6c457b98f083d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReduceTask.html#aa499ac085954c58ae9d6c457b98f083d">transfer_to_host</a> ()</td></tr>
+<tr class="separator:aa499ac085954c58ae9d6c457b98f083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836785a65a959f062ea2bf8716bfc863" id="r_a836785a65a959f062ea2bf8716bfc863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReduceTask.html#a836785a65a959f062ea2bf8716bfc863">transfer_to_device</a> ()</td></tr>
+<tr class="separator:a836785a65a959f062ea2bf8716bfc863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTask"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTask')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTask.html">Task</a></td></tr>
 <tr class="memitem:a14bf6d41b4307bb7aa7a1f59c2dab0e6 inherit pub_methods_classTask" id="r_a14bf6d41b4307bb7aa7a1f59c2dab0e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTask.html#a14bf6d41b4307bb7aa7a1f59c2dab0e6">Task</a> (int order_, std::vector&lt; <a class="el" href="structRegion.html">Region</a> &gt; input_regions_, <a class="el" href="structRegion.html">Region</a> <a class="el" href="classTask.html#a90d9243f554ec70b7767629680937cb1">output_region</a>, AcTaskDefinition op, <a class="el" href="ac__helpers_8h.html#a1dfe2d9de2ccb7457d6db278f84acbb7">Device</a> device_, std::array&lt; bool, NUM_VTXBUF_HANDLES+NUM_PROFILES &gt; swap_offset_)</td></tr>
 <tr class="separator:a14bf6d41b4307bb7aa7a1f59c2dab0e6 inherit pub_methods_classTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -480,6 +484,44 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classTask.html#a4b31bbc41d871c3e46815bcabef0d48c">Task</a>.</p>
+
+</div>
+</div>
+<a id="a836785a65a959f062ea2bf8716bfc863" name="a836785a65a959f062ea2bf8716bfc863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836785a65a959f062ea2bf8716bfc863">&#9670;&#160;</a></span>transfer_to_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classReduceTask.html">ReduceTask</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;::transfer_to_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa499ac085954c58ae9d6c457b98f083d" name="aa499ac085954c58ae9d6c457b98f083d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa499ac085954c58ae9d6c457b98f083d">&#9670;&#160;</a></span>transfer_to_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classReduceTask.html">ReduceTask</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;::transfer_to_host </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -224,6 +224,8 @@ Variables</h2></td></tr>
 <tr class="separator:a96ac4bcf2dfc800f8ccaf48c2989ef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26c263f283551dc7fa9f43b071ae0f1" id="r_aa26c263f283551dc7fa9f43b071ae0f1"><td class="memItemLeft" align="right" valign="top">run_const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#aa26c263f283551dc7fa9f43b071ae0f1">AC_use_cuda_aware_mpi</a> = true</td></tr>
 <tr class="separator:aa26c263f283551dc7fa9f43b071ae0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcc57935ad7014ac85fba68f58a4d3a" id="r_a7dcc57935ad7014ac85fba68f58a4d3a"><td class="memItemLeft" align="right" valign="top">run_const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a7dcc57935ad7014ac85fba68f58a4d3a">AC_use_cuda_aware_mpi_for_profile_reductions</a> = false</td></tr>
+<tr class="separator:a7dcc57935ad7014ac85fba68f58a4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3edda77578e3a4fccf211b9b286421f" id="r_ae3edda77578e3a4fccf211b9b286421f"><td class="memItemLeft" align="right" valign="top">input real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#ae3edda77578e3a4fccf211b9b286421f">AC_shear_delta_y</a></td></tr>
 <tr class="separator:ae3edda77578e3a4fccf211b9b286421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218c3859ebce0edf3553c7285def2c52" id="r_a218c3859ebce0edf3553c7285def2c52"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structint3.html">int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a218c3859ebce0edf3553c7285def2c52">AC_raytracing_block_factors</a> = (<a class="el" href="structint3.html">int3</a>){1,1,1}</td></tr>
@@ -1268,7 +1270,22 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Whether the box is a shearing box or not. Option to use GPUDirect RDMA for direct GPU-GPU communication instead of routing communication through host memory </p>
+<p>Option to use GPUDirect RDMA for direct GPU-GPU communication instead of routing communication through host memory </p>
+
+</div>
+</div>
+<a id="a7dcc57935ad7014ac85fba68f58a4d3a" name="a7dcc57935ad7014ac85fba68f58a4d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcc57935ad7014ac85fba68f58a4d3a">&#9670;&#160;</a></span>AC_use_cuda_aware_mpi_for_profile_reductions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">run_const bool AC_use_cuda_aware_mpi_for_profile_reductions = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Option to use GPUDirect RDMA for direct GPU-GPU communication instead of routing communication through host memory for profile reductions (all reduce). Different flag from the normal one since MPI_Iallreduce seems to break at larger data sizes! That is also why it is false by default </p>
 
 </div>
 </div>

@@ -7,6 +7,8 @@ var rocfft_8cc =
     [ "KeyType", "rocfft_8cc.html#a5444bd5aee82aa5e9c70f9d6cb73572b", null ],
     [ "acFFTBackwardTransformC2C", "rocfft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33", null ],
     [ "acFFTBackwardTransformC2R", "rocfft_8cc.html#abf0ae99bfae26402473c4e9bd6404b86", null ],
+    [ "acFFTBackwardTransformPlanar", "rocfft_8cc.html#a926deef438c416201730ba57523824aa", null ],
+    [ "acFFTBackwardTransformPlanar2R", "rocfft_8cc.html#aa92e994bfdfcec5b62ed9f44cbfd1125", null ],
     [ "acFFTBackwardTransformSymmetricC2R", "rocfft_8cc.html#abe5b2a77d2aaebbb4486cfff39e36d6f", null ],
     [ "acFFTForwardTransformC2C", "rocfft_8cc.html#a177bfe09122ac9cafccaf67e1c947194", null ],
     [ "acFFTForwardTransformPlanar", "rocfft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0", null ],

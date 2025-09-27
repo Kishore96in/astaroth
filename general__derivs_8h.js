@@ -84,5 +84,6 @@ var general__derivs_8h =
     [ "DERX_3", "general__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b", null ],
     [ "deryx", "general__derivs_8h.html#a8e311b6014f7ec47b8e2e16fd17fc7ae", null ],
     [ "derzx", "general__derivs_8h.html#adeb7d278881e867957b2adb22d74bc51", null ],
-    [ "derzy", "general__derivs_8h.html#abf301d26cd161bb012330204f090d834", null ]
+    [ "derzy", "general__derivs_8h.html#abf301d26cd161bb012330204f090d834", null ],
+    [ "AC_GENERAL_DERIVS_ENABLED", "general__derivs_8h.html#a3201a41317d722ae05bcfc7a66a2f68b", null ]
 ];

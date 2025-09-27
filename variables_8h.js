@@ -65,6 +65,7 @@ var variables_8h =
     [ "AC_sparse_autotuning", "variables_8h.html#a7b19b317e086d5556521aa7ea4075205", null ],
     [ "AC_thread_block_loop_factors", "variables_8h.html#ac424a82f88e29fbcd6351bfc0350d65d", null ],
     [ "AC_use_cuda_aware_mpi", "variables_8h.html#aa26c263f283551dc7fa9f43b071ae0f1", null ],
+    [ "AC_use_cuda_aware_mpi_for_profile_reductions", "variables_8h.html#a7dcc57935ad7014ac85fba68f58a4d3a", null ],
     [ "AC_x_ray_shared_mem_block_size", "variables_8h.html#abad5433c0c7f8af1b476dacc81945e24", null ],
     [ "AC_z_ray_shared_mem_block_size", "variables_8h.html#a4c0539d4f36565e8126d1894f20d4b53", null ]
 ];

@@ -4,6 +4,7 @@ var astaroth_8cc =
     [ "acBoundcondStepGBC", "astaroth_8cc.html#a06b26a3b442bfab0645a57844cceeea5", null ],
     [ "acCheckDeviceAvailability", "astaroth_8cc.html#aef4e17cb67ef5ec0e4f84119b03fc227", null ],
     [ "acGetFieldHandle", "astaroth_8cc.html#ab491336a243e24951b7511fcc9057739", null ],
+    [ "acGetFieldName", "astaroth_8cc.html#af75184cc77327be7497c02d6ec859cd7", null ],
     [ "acGetGridMaxNN", "astaroth_8cc.html#a9a0a4a3472a1d08bdc07972c173dc25e", null ],
     [ "acGetGridMM", "astaroth_8cc.html#a9912cd95418ccd1c721dcd4c4b0c587e", null ],
     [ "acGetGridNN", "astaroth_8cc.html#a3a17509b7b743d7358275b9f5139d939", null ],

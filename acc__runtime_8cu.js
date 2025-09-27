@@ -24,7 +24,7 @@ var acc__runtime_8cu =
     [ "LOCAL_COMPDOMAIN_IDX", "acc__runtime_8cu.html#ad8692c7f802633cb0f769dc39b06efcb", null ],
     [ "longlong", "acc__runtime_8cu.html#af25d1911ed951caf594252e1a419b4f3", null ],
     [ "postprocess_reduce_result", "acc__runtime_8cu.html#a355892c8f5184273bc352d99c4b036f7", null ],
-    [ "print", "acc__runtime_8cu.html#ad80e161a93ca0d69575846ad8432b4f9", null ],
+    [ "print", "acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92", null ],
     [ "PROFILE_X_Y_OR_Z_INDEX", "acc__runtime_8cu.html#a3da0af7daef0c6dfd45419b1d1b8a1ff", null ],
     [ "PROFILE_Y_X_OR_Z_INDEX", "acc__runtime_8cu.html#aa610d08b605a90c588f229b87cb050a2", null ],
     [ "PROFILE_Z_X_OR_Y_INDEX", "acc__runtime_8cu.html#ac14850b77a445a19da0ac40273ff571d", null ],

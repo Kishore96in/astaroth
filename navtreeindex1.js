@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"acc-runtime_2api_2hip_8h.html#a06ddf2af6fa78b2d581bf47528a9d193":[21,0,2,1,13,41],
+"acc-runtime_2api_2hip_8h.html#a0a87c1d891812c773254b2c73cb42da2":[21,0,2,1,13,26],
 "acc-runtime_2api_2hip_8h.html#a0bb4ca0bbde27cb7a543afe5f79e8091":[21,0,2,1,13,44],
 "acc-runtime_2api_2hip_8h.html#a10874ab0aab74a3963b52e1df9855c20":[21,0,2,1,13,23],
 "acc-runtime_2api_2hip_8h.html#a14a4174d7263c3d9253f41d4f1b1858f":[21,0,2,1,13,40],
@@ -130,6 +132,7 @@ var NAVTREEINDEX1 =
 "acc__runtime_8cu.html#a093ce2c4ce550e56f60cba1f43039dc8":[21,0,2,1,0,5],
 "acc__runtime_8cu.html#a0baf75cac0faabd47a7ae119a78ad544":[21,0,2,1,0,66],
 "acc__runtime_8cu.html#a0bb02bb65a5c61caf56c1cc5d9d7298f":[21,0,2,1,0,35],
+"acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92":[21,0,2,1,0,24],
 "acc__runtime_8cu.html#a13a064ec9960d625af89d4ac72d6ee68":[21,0,2,1,0,7],
 "acc__runtime_8cu.html#a16f854e012454851d7b73c01acfc9b23":[21,0,2,1,0,51],
 "acc__runtime_8cu.html#a1842622dd5252ac35d4f87e616526fff":[21,0,2,1,0,13],
@@ -187,7 +190,6 @@ var NAVTREEINDEX1 =
 "acc__runtime_8cu.html#acfeb2710ecd0f04792ba00d19a1aa986":[21,0,2,1,0,17],
 "acc__runtime_8cu.html#ad4b6d48df7eec8afb094c9cfa066ccd0":[21,0,2,1,0,46],
 "acc__runtime_8cu.html#ad79c9df3421c2bf87ae7060a706408b1":[21,0,2,1,0,57],
-"acc__runtime_8cu.html#ad80e161a93ca0d69575846ad8432b4f9":[21,0,2,1,0,24],
 "acc__runtime_8cu.html#ad8692c7f802633cb0f769dc39b06efcb":[21,0,2,1,0,21],
 "acc__runtime_8cu.html#adb11b936e6ba7fb80d89da9df6ef6b5b":[21,0,2,1,0,12],
 "acc__runtime_8cu.html#adb76139e81584fdf93eee336ccfc650f":[21,0,2,1,0,47],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "acc__runtime_8h.html#ac6d54490b138fb63b1e90236896bd9de":[21,0,2,1,1,40],
 "acc__runtime_8h.html#acaa06fbc27c59926a41e7575667e5280":[21,0,2,1,1,21],
 "acc__runtime_8h.html#ad433993ee8cbe972c886c465dba4031b":[21,0,2,1,1,26],
-"acc__runtime_8h.html#ad4c627216e1c5e32b6dd8e79d92e08a8":[21,0,2,1,1,70],
-"acc__runtime_8h.html#add738453ca233fa9a21ec46f6b3380b4":[21,0,2,1,1,23],
-"acc__runtime_8h.html#addbf10c9ad33b3d7f9c056909b9022a9":[21,0,2,1,1,57]
+"acc__runtime_8h.html#ad4c627216e1c5e32b6dd8e79d92e08a8":[21,0,2,1,1,70]
 };

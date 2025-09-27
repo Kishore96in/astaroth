@@ -14,6 +14,8 @@ var device_8cc =
     [ "acDeviceBenchmarkKernel", "device_8cc.html#aff3caab89cb357f9da73b93d508f829d", null ],
     [ "acDeviceCreate", "device_8cc.html#aea660f13ce7342a1e6b8f3f4575c0f3b", null ],
     [ "acDeviceDestroy", "device_8cc.html#aa77564256cfd9da95dc7726f9addd352", null ],
+    [ "acDeviceFFTBackwardTransformPlanar", "device_8cc.html#a8f13a329f8293a936203cf922a87f4e9", null ],
+    [ "acDeviceFFTBackwardTransformPlanar2R", "device_8cc.html#a21fcaab16c506ef3b4a3cf28974effb5", null ],
     [ "acDeviceFFTC2R", "device_8cc.html#a90f549da5c60207c30bf484bbba2d2f4", null ],
     [ "acDeviceFFTC2RXY", "device_8cc.html#a298980a01244588688f8cd216aac48c9", null ],
     [ "acDeviceFFTPlanar", "device_8cc.html#a58cafd42791e1242a8b4e2af9b4fbc16", null ],

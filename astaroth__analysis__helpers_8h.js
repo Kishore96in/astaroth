@@ -4,7 +4,6 @@ var astaroth__analysis__helpers_8h =
     [ "get_fields_kernel_depends_on_boundaries", "astaroth__analysis__helpers_8h.html#a930bd51e2f6b77fa8aab190eec8188e0", null ],
     [ "get_kernel_analysis_info", "astaroth__analysis__helpers_8h.html#a12fc801c70d40f811131fe56fc093111", null ],
     [ "get_kernel_analysis_info", "astaroth__analysis__helpers_8h.html#a91d1359f24d91ff49bce6020cf7d0aae", null ],
-    [ "get_kernel_analysis_info", "astaroth__analysis__helpers_8h.html#ac3fb6c744f37f85db8ca0210687ffe7e", null ],
     [ "get_kernel_depends_on_boundaries", "astaroth__analysis__helpers_8h.html#afbfb61d65b8a8a419f038665b3bbc5ba", null ],
     [ "get_kernel_depends_on_boundaries", "astaroth__analysis__helpers_8h.html#a31d4977c33e4fd5a1e9e67c2fb4d560e", null ],
     [ "get_kernel_radius", "astaroth__analysis__helpers_8h.html#acf556968bf8eb38cc7827568c09befca", null ],

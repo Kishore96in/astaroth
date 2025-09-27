@@ -53,6 +53,7 @@ var task_8h =
     [ "ReduceState", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263", [
       [ "Waiting", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a5706de961fb376d701be6e7762d8b09c", null ],
       [ "Reducing", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a2dea36117c96eeb8891d36b424fecfc8", null ],
+      [ "Transferring", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a9244f0a34fd81da60fa38383138864a5", null ],
       [ "Communicating", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263aeebb983d809918455d164604bb200561", null ],
       [ "Loading", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a16bfbf9c462762cf1cba4134ec53c504", null ]
     ] ],
