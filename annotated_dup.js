@@ -135,6 +135,7 @@ var annotated_dup =
     [ "RegionMemoryInputParams", "structRegionMemoryInputParams.html", "structRegionMemoryInputParams" ],
     [ "size_t2", "structsize__t2.html", "structsize__t2" ],
     [ "size_t2Hash", "structsize__t2Hash.html", "structsize__t2Hash" ],
+    [ "sld_fluxes", "structsld__fluxes.html", "structsld__fluxes" ],
     [ "SOAVector", "structSOAVector.html", "structSOAVector" ],
     [ "state", "structstate.html", "structstate" ],
     [ "string_vec", "structstring__vec.html", "structstring__vec" ],

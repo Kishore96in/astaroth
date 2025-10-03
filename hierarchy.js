@@ -126,6 +126,7 @@ var hierarchy =
     [ "ac::segment", "structac_1_1segment.html", null ],
     [ "size_t2", "structsize__t2.html", null ],
     [ "size_t2Hash", "structsize__t2Hash.html", null ],
+    [ "sld_fluxes", "structsld__fluxes.html", null ],
     [ "SOAVector", "structSOAVector.html", null ],
     [ "state", "structstate.html", null ],
     [ "ac::static_ntuple< T, N >", "classac_1_1static__ntuple.html", null ],
