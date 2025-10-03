@@ -564,7 +564,7 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="preprocessor">    ((coord.x) + (coord.y) * VAL(AC_nlocal).x + (coord.z) * VAL(AC_nlocal_products).xy)</span></div>
 </div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">  437</a></span><span class="preprocessor">#define print(...) {if(!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__)} </span><span class="comment">//TODO is this a good idea?</span></div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">  437</a></span><span class="preprocessor">#define print(...) {if(!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__);} </span><span class="comment">//TODO is this a good idea?</span></div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="comment">// passes an array into a device function and then calls len (need to modify</span></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="comment">// the compiler to always pass arrays to functions as references before</span></div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span><span class="comment">// re-enabling)</span></div>
