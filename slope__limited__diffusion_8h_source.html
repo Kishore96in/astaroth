@@ -700,54 +700,55 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        heat_z_update *= <a class="code hl_define" href="general__derivs_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__derivs_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    }</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    heat += heat_z_update</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>}</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>get_slope_limited_divergence_and_heat(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>{</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    div = get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="keywordflow">return</span> </div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        <a class="code hl_struct" href="structreal2.html">real2</a>(</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                div,</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                heat</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>             )</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>get_slope_limited_all(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>{</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    div = get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    <span class="keywordflow">return</span> </div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        <a class="code hl_struct" href="structreal5.html">real5</a>(</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                div,</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a38c69621e6ed8178cbb21063084299e1">x</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a38c69621e6ed8178cbb21063084299e1">x</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ab8058dc6c93531a08859bbb82eb89c0e">y</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ab8058dc6c93531a08859bbb82eb89c0e">y</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ac5b134b871ead937db0dbd0a8dcad9d2">z</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ac5b134b871ead937db0dbd0a8dcad9d2">z</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                heat</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>             )</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>}</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed, real w_alfven, <a class="code hl_struct" href="structreal3.html">real3</a> bb, real lnrho, real mu) </div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>{ </div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    inv_rho = <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(-lnrho)</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    inv_mu  = 1.0/mu</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    alfven_speed = <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(<a class="code hl_function" href="namespaceac.html#acd484af875cfee7fee80622e5ad687bb">dot</a>(bb,bb)*inv_rho*inv_mu)</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed + w_alfven*alfven_speed</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>}</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed) </div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>{ </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>}</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>{</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>}</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <span class="keywordflow">return</span> heat</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>}</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>get_slope_limited_divergence_and_heat(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>{</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    div = get_slope_limited_divergence(fluxes)</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    <span class="keywordflow">return</span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <a class="code hl_struct" href="structreal2.html">real2</a>(</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                div,</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>                heat</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>             )</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>}</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>get_slope_limited_all(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>{</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    div = get_slope_limited_divergence(fluxes)</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <span class="keywordflow">return</span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <a class="code hl_struct" href="structreal5.html">real5</a>(</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                div,</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a38c69621e6ed8178cbb21063084299e1">x</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a38c69621e6ed8178cbb21063084299e1">x</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ab8058dc6c93531a08859bbb82eb89c0e">y</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ab8058dc6c93531a08859bbb82eb89c0e">y</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ac5b134b871ead937db0dbd0a8dcad9d2">z</a>.<a class="code hl_variable" href="structreal2.html#aa738620d4e5de8f72fc898fed36c4c41">x</a> + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#ac5b134b871ead937db0dbd0a8dcad9d2">z</a>.<a class="code hl_variable" href="structreal2.html#a0cf664158efc2e684eb1dc8fa9fcd53d">y</a>),</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                heat</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>             )</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>}</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed, real w_alfven, <a class="code hl_struct" href="structreal3.html">real3</a> bb, real lnrho, real mu) </div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>{ </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    inv_rho = <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(-lnrho)</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    inv_mu  = 1.0/mu</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    alfven_speed = <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(<a class="code hl_function" href="namespaceac.html#acd484af875cfee7fee80622e5ad687bb">dot</a>(bb,bb)*inv_rho*inv_mu)</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed + w_alfven*alfven_speed</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>}</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed) </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>{ </div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>}</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>{</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>}</div>
 <div class="ttc" id="aacc-runtime_2acc_2ast_8h_html_a7b50077bef75e0e1697a39b905253930"><div class="ttname"><a href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a></div><div class="ttdeci">if(node-&gt;rhs) change_qualifier(node -&gt; rhs, old_qualifier, new_qualifier)</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_afd8bf2ee8004f952446a6df0cbec3dc4"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a></div><div class="ttdeci">#define exp(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:40</div></div>
