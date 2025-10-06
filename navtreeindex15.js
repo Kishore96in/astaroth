@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"mpi__utils_8h.html#a0b9ea8b16ed7229e8c1e4ae8cbab6d5e":[21,0,1,0,0,24,13],
 "mpi__utils_8h.html#a0c35b85c76d71a5594964a7c14435033":[21,0,1,0,0,24,24],
 "mpi__utils_8h.html#a20a9ddd74b13bd6d9e4bdf3c065b45fe":[21,0,1,0,0,24,35],
 "mpi__utils_8h.html#a2d574dc9e6ec9f8c21da263e86647d5c":[21,0,1,0,0,24,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "namespacematplotlibcpp.html#adaa29542f05e1acb0850b7e4619a9359":[19,0,2,87],
 "namespacematplotlibcpp.html#adea4113b0ff7f393e18f1a99eb7e1718":[19,0,2,15],
 "namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a":[19,0,2,28],
-"namespacematplotlibcpp.html#ae32c097d32b89445a995727d05446843":[19,0,2,42]
+"namespacematplotlibcpp.html#ae32c097d32b89445a995727d05446843":[19,0,2,42],
+"namespacematplotlibcpp.html#ae3c91bdfbe011133346dcc4f31ec5932":[19,0,2,70]
 };
