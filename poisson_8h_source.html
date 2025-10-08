@@ -152,23 +152,28 @@ $(document).ready(function(){initNavTree('poisson_8h_source.html',''); initResiz
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    return (<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>-Ax)/coef</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>poisson_sor_red_black_extended(<span class="keywordtype">int</span> color, real density, Field potential, real omega, real laplace_sign)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>poisson_jacobi_update_extended(real <a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a> , Field x_prev)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    res = (1-omega)*potential+omega*poisson_jacobi_update_extended(density,potential,laplace_sign)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span>((globalVertexIdx.x + globalVertexIdx.y + globalVertexIdx.z) %2 == color)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        write(potential,res)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        write(potential,potential)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>poisson_sor_red_black_extended(<span class="keywordtype">int</span> color, real density, Field potential, real omega)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    poisson_sor_red_black_extended(color,density,potential,omega,1.0)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    poisson_jacobi_update_extended(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>,x_prev,1.0)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>poisson_sor_red_black_extended(<span class="keywordtype">int</span> color, real density, Field potential, real omega, real laplace_sign)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    res = (1-omega)*potential+omega*poisson_jacobi_update_extended(density,potential,laplace_sign)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span>((globalVertexIdx.x + globalVertexIdx.y + globalVertexIdx.z) %2 == color)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        write(potential,res)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        write(potential,potential)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>poisson_sor_red_black_extended(<span class="keywordtype">int</span> color, real density, Field potential, real omega)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    poisson_sor_red_black_extended(color,density,potential,omega,1.0)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ageneral__operators_8h_html_a5ac842275e205707c4838bd2a5d8183f"><div class="ttname"><a href="general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f">laplace_neighbours</a></div><div class="ttdeci">laplace_neighbours(Field s)</div><div class="ttdef"><b>Definition</b> general_operators.h:455</div></div>
 <div class="ttc" id="ageneral__operators_8h_html_ab9dbc33ae169cb403127c1f223d2c207"><div class="ttname"><a href="general__operators_8h.html#ab9dbc33ae169cb403127c1f223d2c207">laplace_central_coeff</a></div><div class="ttdeci">laplace_central_coeff()</div><div class="ttdef"><b>Definition</b> general_operators.h:483</div></div>
 <div class="ttc" id="ageneral__operators_8h_html_aba535ee8b060f5fea51b70e499d8d977"><div class="ttname"><a href="general__operators_8h.html#aba535ee8b060f5fea51b70e499d8d977">laplace_central_coeff_extended</a></div><div class="ttdeci">laplace_central_coeff_extended()</div><div class="ttdef"><b>Definition</b> general_operators.h:487</div></div>
