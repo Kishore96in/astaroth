@@ -107,10 +107,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abaee67ab5c5654380389a6d4f970f21a" id="r_abaee67ab5c5654380389a6d4f970f21a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="poisson_8h.html#a3f2434bd46403d5b00c4b32e0c258532">SOR_STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#abaee67ab5c5654380389a6d4f970f21a">poisson_jacobi_update</a> (Field density, Field potential)</td></tr>
-<tr class="separator:abaee67ab5c5654380389a6d4f970f21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56859098b2a809dac87221f84b088b3" id="r_ab56859098b2a809dac87221f84b088b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#ab56859098b2a809dac87221f84b088b3">poisson_sor_red_black</a> (int color, Field density, Field potential, real omega)</td></tr>
-<tr class="separator:ab56859098b2a809dac87221f84b088b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755f11566b222ed1e8bac8b8f29e2203" id="r_a755f11566b222ed1e8bac8b8f29e2203"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="poisson_8h.html#a3f2434bd46403d5b00c4b32e0c258532">SOR_STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#a755f11566b222ed1e8bac8b8f29e2203">poisson_jacobi_update</a> (real <a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, Field x_prev, real laplace_sign)</td></tr>
+<tr class="separator:a755f11566b222ed1e8bac8b8f29e2203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc7b98263f0ab2ecd51560a119060dd" id="r_adbc7b98263f0ab2ecd51560a119060dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#adbc7b98263f0ab2ecd51560a119060dd">poisson_jacobi_update</a> (real <a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, potential)</td></tr>
+<tr class="separator:adbc7b98263f0ab2ecd51560a119060dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7135eef156202e40a8c605a7d022249" id="r_ab7135eef156202e40a8c605a7d022249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#ab7135eef156202e40a8c605a7d022249">poisson_sor_red_black</a> (int color, real density, Field potential, real omega, real laplace_sign)</td></tr>
+<tr class="separator:ab7135eef156202e40a8c605a7d022249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b19b589a46b78f0b3788972202d96b4" id="r_a5b19b589a46b78f0b3788972202d96b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poisson_8h.html#a5b19b589a46b78f0b3788972202d96b4">poisson_sor_red_black</a> (int color, real density, Field potential, real omega)</td></tr>
+<tr class="separator:a5b19b589a46b78f0b3788972202d96b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -135,8 +139,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abaee67ab5c5654380389a6d4f970f21a" name="abaee67ab5c5654380389a6d4f970f21a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaee67ab5c5654380389a6d4f970f21a">&#9670;&#160;</a></span>poisson_jacobi_update()</h2>
+<a id="a755f11566b222ed1e8bac8b8f29e2203" name="a755f11566b222ed1e8bac8b8f29e2203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755f11566b222ed1e8bac8b8f29e2203">&#9670;&#160;</a></span>poisson_jacobi_update() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,14 +148,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">enum <a class="el" href="poisson_8h.html#a3f2434bd46403d5b00c4b32e0c258532">SOR_STEP</a> poisson_jacobi_update </td>
           <td>(</td>
-          <td class="paramtype">Field&#160;</td>
-          <td class="paramname"><em>density</em>, </td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Field&#160;</td>
-          <td class="paramname"><em>potential</em>&#160;</td>
+          <td class="paramname"><em>x_prev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>laplace_sign</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,8 +173,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab56859098b2a809dac87221f84b088b3" name="ab56859098b2a809dac87221f84b088b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab56859098b2a809dac87221f84b088b3">&#9670;&#160;</a></span>poisson_sor_red_black()</h2>
+<a id="adbc7b98263f0ab2ecd51560a119060dd" name="adbc7b98263f0ab2ecd51560a119060dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc7b98263f0ab2ecd51560a119060dd">&#9670;&#160;</a></span>poisson_jacobi_update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">poisson_jacobi_update </td>
+          <td>(</td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">potential&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b19b589a46b78f0b3788972202d96b4" name="a5b19b589a46b78f0b3788972202d96b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b19b589a46b78f0b3788972202d96b4">&#9670;&#160;</a></span>poisson_sor_red_black() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +216,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Field&#160;</td>
+          <td class="paramtype">real&#160;</td>
           <td class="paramname"><em>density</em>, </td>
         </tr>
         <tr>
@@ -192,6 +230,52 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">real&#160;</td>
           <td class="paramname"><em>omega</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7135eef156202e40a8c605a7d022249" name="ab7135eef156202e40a8c605a7d022249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7135eef156202e40a8c605a7d022249">&#9670;&#160;</a></span>poisson_sor_red_black() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">poisson_sor_red_black </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>potential</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>omega</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>laplace_sign</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

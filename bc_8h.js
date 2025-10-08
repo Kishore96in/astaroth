@@ -5,6 +5,7 @@ var bc_8h =
     [ "ac_bc_sym", "bc_8h.html#a4bbe10e4c4bedcd24b5860525b3f2291", null ],
     [ "ac_bc_sym", "bc_8h.html#a08d3df5333453f7a9a99f2e7c9d91c96", null ],
     [ "ac_const_bc", "bc_8h.html#af03fe4bf60a9d77e7cc85dcc046cb91a", null ],
+    [ "ac_const_bc", "bc_8h.html#aeaeae2a18b8414714bedf004876cfef8", null ],
     [ "ac_fixed_bc", "bc_8h.html#a3c08ae5aa274f6edfbae37cc3667b306", null ],
     [ "ac_fixed_bc", "bc_8h.html#a32877ae0bb70d7f9060cf6d979c4aff1", null ],
     [ "ac_flow_bc", "bc_8h.html#ae81d3b67fdaef7950d3803bdb882c20c", null ],
