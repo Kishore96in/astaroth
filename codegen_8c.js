@@ -372,7 +372,7 @@ var codegen_8c =
     [ "replace_boolean_dconsts_in_optimized", "codegen_8c.html#adbb4d803073abd62915a2c83fa9f61f6", null ],
     [ "replace_return_nodes", "codegen_8c.html#aa9fd7b565ac8d979b76a2383e50686ce", null ],
     [ "replace_substrings", "codegen_8c.html#a56c9f0d13c08154783dbb15e613fc3b7", null ],
-    [ "replace_variable_with", "codegen_8c.html#a61cc385860b1055c8a908b5bb1ea0b84", null ],
+    [ "replace_variable_with", "codegen_8c.html#ae390cfd9067beb09e83eb122d7152f16", null ],
     [ "replace_variable_with_constant_int", "codegen_8c.html#a75ceff2f712bf3f60b7c641bd7247cce", null ],
     [ "replace_write_calls", "codegen_8c.html#a18c70af3866a306b679c0bcd78ee0bed", null ],
     [ "reset_expr_types", "codegen_8c.html#ab353dfc8d65618114a928f1cbbffea10", null ],

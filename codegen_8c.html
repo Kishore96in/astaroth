@@ -658,8 +658,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa9fd7b565ac8d979b76a2383e50686ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67263f682761a3b02d1e77f3a3d15db" id="r_ac67263f682761a3b02d1e77f3a3d15db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ac67263f682761a3b02d1e77f3a3d15db">should_be_reference</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
 <tr class="separator:ac67263f682761a3b02d1e77f3a3d15db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61cc385860b1055c8a908b5bb1ea0b84" id="r_a61cc385860b1055c8a908b5bb1ea0b84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a61cc385860b1055c8a908b5bb1ea0b84">replace_variable_with</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const char *old, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *new)</td></tr>
-<tr class="separator:a61cc385860b1055c8a908b5bb1ea0b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae390cfd9067beb09e83eb122d7152f16" id="r_ae390cfd9067beb09e83eb122d7152f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ae390cfd9067beb09e83eb122d7152f16">replace_variable_with</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const char *old, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *new, const char *new_str)</td></tr>
+<tr class="separator:ae390cfd9067beb09e83eb122d7152f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ce24975ed72fdfec9e871926fc127e" id="r_aa5ce24975ed72fdfec9e871926fc127e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#aa5ce24975ed72fdfec9e871926fc127e">inline_returning_function</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, int <a class="el" href="string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786">counter</a>)</td></tr>
 <tr class="separator:aa5ce24975ed72fdfec9e871926fc127e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa3e06440e90f2e0a20f7a4ba9b57f9" id="r_a5aa3e06440e90f2e0a20f7a4ba9b57f9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a5aa3e06440e90f2e0a20f7a4ba9b57f9">get_return_node</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
@@ -10003,8 +10003,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a61cc385860b1055c8a908b5bb1ea0b84" name="a61cc385860b1055c8a908b5bb1ea0b84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61cc385860b1055c8a908b5bb1ea0b84">&#9670;&#160;</a></span>replace_variable_with()</h2>
+<a id="ae390cfd9067beb09e83eb122d7152f16" name="ae390cfd9067beb09e83eb122d7152f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae390cfd9067beb09e83eb122d7152f16">&#9670;&#160;</a></span>replace_variable_with()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10025,7 +10025,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
-          <td class="paramname"><em>new</em>&#160;</td>
+          <td class="paramname"><em>new</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>new_str</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
