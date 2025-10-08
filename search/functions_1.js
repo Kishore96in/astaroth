@@ -38,7 +38,7 @@ var searchData=
   ['ac_5ffree_5fscratchpad_5ffloat_35',['ac_free_scratchpad_float',['../acc__runtime_8h.html#a676ca7965fd89f07724d3c2b3f6f09b3',1,'acc_runtime.h']]],
   ['ac_5ffree_5fscratchpad_5fint_36',['ac_free_scratchpad_int',['../acc__runtime_8h.html#a50a7681ba6b6e63015c11f9166b85dfd',1,'acc_runtime.h']]],
   ['ac_5ffree_5fscratchpad_5freal_37',['ac_free_scratchpad_real',['../acc__runtime_8h.html#a09a998fe22b9f11b7c7596c60661159d',1,'acc_runtime.h']]],
-  ['ac_5fgeneral_5fderivs_5fenabled_38',['AC_GENERAL_DERIVS_ENABLED',['../general__derivs_8h.html#a3201a41317d722ae05bcfc7a66a2f68b',1,'general_derivs.h']]],
+  ['ac_5fgeneral_5fderivs_5fenabled_38',['AC_GENERAL_DERIVS_ENABLED',['../general__derivs_8h.html#a8158f6e79d2afdb43c5555864ad28003',1,'general_derivs.h']]],
   ['ac_5fget_5farray_5flen_39',['AC_get_array_len',['../acc-runtime_2api_2math__utils_8h.html#a76d6bc47b4e987b95a6448b228c475b2',1,'math_utils.h']]],
   ['ac_5fget_5fcos_5fphi_5fvec_40',['ac_get_cos_phi_vec',['../grid_8h.html#a031538878cffc0784ebcbcd71de6f046',1,'grid.h']]],
   ['ac_5fget_5fcos_5ftheta_41',['ac_get_cos_theta',['../grid_8h.html#af33e6bb55163a65e98951ff42e7ba026',1,'grid.h']]],

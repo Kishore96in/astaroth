@@ -1,7 +1,5 @@
 var general__derivs_8h =
 [
-    [ "AC_COT", "general__derivs_8h.html#ac66db4faf28a7a4fc2120e88b21d006d", null ],
-    [ "AC_COT_extended", "general__derivs_8h.html#abb91c18abeb712602f8bfb82e313716e", null ],
     [ "AC_GEN_DER_ZZ", "general__derivs_8h.html#a44d5eb3988b66874d981958b66449542", null ],
     [ "AC_GEN_DER_ZZ_WITH_EXTENSION", "general__derivs_8h.html#ab21a1fff7c8a3e90474427fb4568c5ca", null ],
     [ "AC_GEN_DERX", "general__derivs_8h.html#aab9d4c79dc7f711d7b653937933a63d7", null ],
@@ -15,24 +13,6 @@ var general__derivs_8h =
     [ "AC_GEN_DERZ", "general__derivs_8h.html#a4adf17893af8036fe3157fb8e3a7d260", null ],
     [ "AC_GEN_DERZ_WITH_EXTENSION", "general__derivs_8h.html#a2e7d12a093e1f05d4831d605441a2431", null ],
     [ "AC_GENERAL_DERIVS_H", "general__derivs_8h.html#aa09cbbd8e493ab66477713d56c43413b", null ],
-    [ "AC_INV_CYL_R", "general__derivs_8h.html#af7f5445879c2ebe7fc7de7bfcb487a26", null ],
-    [ "AC_INV_CYL_R_extended", "general__derivs_8h.html#a126fdda902bde36e8960bfbdbbfb395c", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_X", "general__derivs_8h.html#a6d790d747653dcfe201ac61548a553c1", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_X_extended", "general__derivs_8h.html#a5ff0e313732c28e5a6af2da397491146", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_Y", "general__derivs_8h.html#a2ca0f4f14e791972af43a26fbab89026", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_Y_extended", "general__derivs_8h.html#a68522c359f70a02d0a876268fccbda51", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_Z", "general__derivs_8h.html#acd13b4e8c8252dcc3ba2ca1228060b05", null ],
-    [ "AC_INV_MAPPING_FUNC_DER_Z_extended", "general__derivs_8h.html#a11e9662663c951bfac76d648344d63b5", null ],
-    [ "AC_INV_R", "general__derivs_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e", null ],
-    [ "AC_INV_R_extended", "general__derivs_8h.html#a2672e2ed4c779a8b2098fcc1f95ae94b", null ],
-    [ "AC_INV_SIN_THETA", "general__derivs_8h.html#a9aed76740874ab960b6840640d068b38", null ],
-    [ "AC_INV_SIN_THETA_extended", "general__derivs_8h.html#ab1da353e637c03bee3b9fc607f789c5d", null ],
-    [ "AC_MAPPING_FUNC_TILDE_X", "general__derivs_8h.html#abf360c591494de2d207a664e147735f3", null ],
-    [ "AC_MAPPING_FUNC_TILDE_X_extended", "general__derivs_8h.html#a2c66b8f0f109d370179e6a06e9fc50f2", null ],
-    [ "AC_MAPPING_FUNC_TILDE_Y", "general__derivs_8h.html#ad18fc072249673308db0aedef2fcccb9", null ],
-    [ "AC_MAPPING_FUNC_TILDE_Y_extended", "general__derivs_8h.html#a35ced9958e35342bc0a030d6d54fb14f", null ],
-    [ "AC_MAPPING_FUNC_TILDE_Z", "general__derivs_8h.html#af46c31ff7745eb7ac2512c0d18d34c73", null ],
-    [ "AC_MAPPING_FUNC_TILDE_Z_extended", "general__derivs_8h.html#abef5f7a52bee2ed744f2d1fffef576d6", null ],
     [ "DER1_1", "general__derivs_8h.html#ae7757a44dbeb76b0d368b7b1c7e5c5cc", null ],
     [ "DER1_2", "general__derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba", null ],
     [ "DER1_2nd_1", "general__derivs_8h.html#ace89494f5c67bf08d59086c0414af934", null ],
@@ -85,5 +65,5 @@ var general__derivs_8h =
     [ "deryx", "general__derivs_8h.html#a8e311b6014f7ec47b8e2e16fd17fc7ae", null ],
     [ "derzx", "general__derivs_8h.html#adeb7d278881e867957b2adb22d74bc51", null ],
     [ "derzy", "general__derivs_8h.html#abf301d26cd161bb012330204f090d834", null ],
-    [ "AC_GENERAL_DERIVS_ENABLED", "general__derivs_8h.html#a3201a41317d722ae05bcfc7a66a2f68b", null ]
+    [ "AC_GENERAL_DERIVS_ENABLED", "general__derivs_8h.html#a8158f6e79d2afdb43c5555864ad28003", null ]
 ];
