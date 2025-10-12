@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00":[20,0,74,2],
 "structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[20,0,74,1],
 "structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[20,0,74,0],
 "structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[20,0,74,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "structkiss__fftnd__state.html#aaee291ed294623109b48370942332a88":[20,0,79,0],
 "structload__all__arrays__uniform.html":[20,0,80],
 "structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714":[20,0,80,0],
-"structload__all__arrays__uniform.html#ad86954aa1aec2ee70a53cae089fcd431":[20,0,80,1],
-"structload__all__scalars__uniform.html":[20,0,81]
+"structload__all__arrays__uniform.html#ad86954aa1aec2ee70a53cae089fcd431":[20,0,80,1]
 };

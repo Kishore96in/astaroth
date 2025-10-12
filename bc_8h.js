@@ -10,6 +10,7 @@ var bc_8h =
     [ "ac_fixed_bc", "bc_8h.html#a32877ae0bb70d7f9060cf6d979c4aff1", null ],
     [ "ac_flow_bc", "bc_8h.html#ae81d3b67fdaef7950d3803bdb882c20c", null ],
     [ "ac_prescribed_derivative", "bc_8h.html#a6bbc8a2860cee2e0425bba4de78606c7", null ],
+    [ "ac_set_ghosts_for_onesided_derivs", "bc_8h.html#aa674c0683634918abdef05b49844f2cc", null ],
     [ "BOUNDCOND_A2", "bc_8h.html#a2ce1985096909617b9298d2575f64276", null ],
     [ "BOUNDCOND_ANTISYMMETRIC", "bc_8h.html#a82ae0c0209d47f12ae6e6fbf8bdb9038", null ],
     [ "BOUNDCOND_CONST", "bc_8h.html#affccdf014a9e3044017f5277cd06e804", null ],
