@@ -1,15 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00":[20,0,74,2],
-"structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[20,0,74,1],
-"structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[20,0,74,0],
-"structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[20,0,74,3],
-"structKeyEqual.html":[20,0,75],
-"structKeyEqual.html#aea9225579b4758b26fb207b5cec9a81e":[20,0,75,0],
-"structKeyHash.html":[20,0,76],
-"structKeyHash.html#af289f229b17fada870ba234c91cc8dd9":[20,0,76,0],
-"structLoadKernelParamsFunc.html":[20,0,86],
-"structLoadKernelParamsFunc.html#a68b2264dbc8b1384650d1a0bffcb3399":[20,0,86,0],
 "structProfileBufferArray.html":[20,0,93],
 "structProfileBufferArray.html#a39a6580c56488486a1e3fdf7b5a5d60d":[20,0,93,1],
 "structProfileBufferArray.html#a717616119b2018b994c6f780ea3622e0":[20,0,93,0],
@@ -249,5 +239,15 @@ var NAVTREEINDEX21 =
 "structkiss__fftnd__state.html#aaee291ed294623109b48370942332a88":[20,0,79,0],
 "structload__all__arrays__uniform.html":[20,0,80],
 "structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714":[20,0,80,0],
-"structload__all__arrays__uniform.html#ad86954aa1aec2ee70a53cae089fcd431":[20,0,80,1]
+"structload__all__arrays__uniform.html#ad86954aa1aec2ee70a53cae089fcd431":[20,0,80,1],
+"structload__all__scalars__uniform.html":[20,0,81],
+"structload__all__scalars__uniform.html#a61aa5e626600b85af46e2efc36a13407":[20,0,81,1],
+"structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a":[20,0,81,0],
+"structload__arrays.html":[20,0,82],
+"structload__arrays.html#a5788617e9e04724117796b0efb453bb2":[20,0,82,0],
+"structload__comp__arrays.html":[20,0,83],
+"structload__comp__arrays.html#a29d089528084a1a81923e04fa946394f":[20,0,83,0],
+"structload__comp__scalars.html":[20,0,84],
+"structload__comp__scalars.html#a242ea8d48da1f78058b55316f95d0cff":[20,0,84,0],
+"structload__scalars.html":[20,0,85]
 };

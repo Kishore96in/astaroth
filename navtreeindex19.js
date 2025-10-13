@@ -1,15 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"smooth__max_8h.html#add4c3949249afc6800ba76e5dcbc4a85":[21,0,2,5,20,335],
-"smooth__max_8h.html#addbb710d6ecd86db0d1c5072159a6f1e":[21,0,2,5,20,131],
-"smooth__max_8h.html#ade8be6c03d0430a97928f7ef0fa918db":[21,0,2,5,20,271],
-"smooth__max_8h.html#adeb2d462750f6e664756fbd16525a93b":[21,0,2,5,20,100],
-"smooth__max_8h.html#adfab411d8059df1fae15565fcd9b58d4":[21,0,2,5,20,257],
-"smooth__max_8h.html#ae098f4eb1e7093660b0b24a64173a0a8":[21,0,2,5,20,117],
-"smooth__max_8h.html#ae1b2165f108e541e32a8c1a5e98f68d7":[21,0,2,5,20,65],
-"smooth__max_8h.html#ae1e1c5b5bf421c3f44f3319b05078ef4":[21,0,2,5,20,29],
-"smooth__max_8h.html#ae29237128cfa4c3a87e606d5df3c65de":[21,0,2,5,20,140],
-"smooth__max_8h.html#ae3004d0243fc1d11c850895e7856c181":[21,0,2,5,20,241],
 "smooth__max_8h.html#ae3008e9e13df6ee340fb43625a978fcd":[21,0,2,5,20,275],
 "smooth__max_8h.html#ae508f00ae0deb5eef75c17d1c3b7907e":[21,0,2,5,20,62],
 "smooth__max_8h.html#ae5176682d3d7a66899513ece2a051d86":[21,0,2,5,20,25],
@@ -249,5 +239,15 @@ var NAVTREEINDEX19 =
 "stencils_8h_source.html":[21,0,2,5,2,4],
 "string__vec_8h.html":[21,0,2,0,15],
 "string__vec_8h.html#a03cbd7543ad334167af12654f70f567e":[21,0,2,0,15,2],
-"string__vec_8h.html#a0ebdedf6fe29baf22d7a0dd42578a23c":[21,0,2,0,15,5]
+"string__vec_8h.html#a0ebdedf6fe29baf22d7a0dd42578a23c":[21,0,2,0,15,5],
+"string__vec_8h.html#a21e15f8aeaee9432808967b358dc2c49":[21,0,2,0,15,7],
+"string__vec_8h.html#a6d574f3bbd7bbcb2515d234be74beaa4":[21,0,2,0,15,8],
+"string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786":[21,0,2,0,15,6],
+"string__vec_8h.html#a8f3b91283882c14a45d415b3025adada":[21,0,2,0,15,3],
+"string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07":[21,0,2,0,15,4],
+"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1],
+"string__vec_8h_source.html":[21,0,2,0,15],
+"structAcAutotuneMeasurement.html":[20,0,3],
+"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[20,0,3,1],
+"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[20,0,3,0]
 };
