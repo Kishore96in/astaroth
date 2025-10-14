@@ -1,5 +1,7 @@
 var helpers_8cc =
 [
+    [ "ac_restore_floating_point_exceptions", "helpers_8cc.html#a19f3229f04326d2099866276eae57111", null ],
+    [ "ac_unset_floating_point_exceptions", "helpers_8cc.html#a6deb305065f97cd74dec1550a130cc16", null ],
     [ "acGetAmountOfDeviceMemoryFree", "helpers_8cc.html#a582d9cd602d04eed4a2c8e5f4a26d0e7", null ],
     [ "acGetMeshOrderForProfile", "helpers_8cc.html#af35e60c7d377b80af7dc1b82b06b6fc4", null ],
     [ "acGetSizeFromDim", "helpers_8cc.html#a517e102efe89bcf16684d54bce34897b", null ],
