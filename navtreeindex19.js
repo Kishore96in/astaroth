@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"smooth__max_8h.html#ae1b2165f108e541e32a8c1a5e98f68d7":[21,0,2,5,20,65],
+"smooth__max_8h.html#ae1e1c5b5bf421c3f44f3319b05078ef4":[21,0,2,5,20,29],
 "smooth__max_8h.html#ae29237128cfa4c3a87e606d5df3c65de":[21,0,2,5,20,140],
 "smooth__max_8h.html#ae3004d0243fc1d11c850895e7856c181":[21,0,2,5,20,241],
 "smooth__max_8h.html#ae3008e9e13df6ee340fb43625a978fcd":[21,0,2,5,20,275],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786":[21,0,2,0,15,6],
 "string__vec_8h.html#a8f3b91283882c14a45d415b3025adada":[21,0,2,0,15,3],
 "string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07":[21,0,2,0,15,4],
-"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1],
-"string__vec_8h_source.html":[21,0,2,0,15],
-"structAcAutotuneMeasurement.html":[20,0,3]
+"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1]
 };
