@@ -60,6 +60,8 @@ var acc__runtime_8cu =
     [ "acStoreStencil", "acc__runtime_8cu.html#ad79c9df3421c2bf87ae7060a706408b1", null ],
     [ "acStoreUniform", "acc__runtime_8cu.html#a01a33a8a5fe05937593daf0d14284814", null ],
     [ "acVerifyMeshInfo", "acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6", null ],
+    [ "catch_previous_errors", "acc__runtime_8cu.html#a1e6fde6d3728763a12a2e9696dc34476", null ],
+    [ "catch_previous_errors_debug", "acc__runtime_8cu.html#a28d2305fd9b59fa39eeda3538c527813", null ],
     [ "get_smem", "acc__runtime_8cu.html#a0111b3813ecf8f66cbe9e1c3e5d478d3", null ],
     [ "logAutotuningStatus", "acc__runtime_8cu.html#a07093fd5ec5bbfc64b4995ca0c625cfd", null ],
     [ "make_vtxbuf_input_params_safe", "acc__runtime_8cu.html#a99f3f8e3dea4acfa12dfab9fe1a75364", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"astaroth__fortran_8h.html#ad5283f0fade60dc47b7eae95ebbc3068":[21,0,8,0,9,2],
+"astaroth__fortran_8h.html#ae721a4fc23bd61f25c303bae8bdf2bf6":[21,0,8,0,9,12],
 "astaroth__fortran_8h.html#ae9b4d5b9a4f43537f762a9bd5cb9d475":[21,0,8,0,9,8],
 "astaroth__fortran_8h.html#aff01171f79fd49df06f59ac6abe1a736":[21,0,8,0,9,3],
 "astaroth__fortran_8h_source.html":[21,0,8,0,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "cg-test_2main_8cc.html":[21,0,10,5,0],
 "cg-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,5,0,0],
 "cg_8h.html":[21,0,2,5,6],
-"cg_8h.html#a5bc7a8cb59dbebcdae38dc05556b599a":[21,0,2,5,6,0],
-"cg_8h.html#a8b1ed4612d5607d53f3e9bc2711e01f3":[21,0,2,5,6,2],
-"cg_8h.html#ad6d71e38fd0036e2d427e9b1b3d91d25":[21,0,2,5,6,1]
+"cg_8h.html#a5bc7a8cb59dbebcdae38dc05556b599a":[21,0,2,5,6,0]
 };
