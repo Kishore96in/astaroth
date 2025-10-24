@@ -1,5 +1,10 @@
 var NAVTREEINDEX20 =
 {
+"string__vec_8h.html#a0ebdedf6fe29baf22d7a0dd42578a23c":[21,0,2,0,15,5],
+"string__vec_8h.html#a21e15f8aeaee9432808967b358dc2c49":[21,0,2,0,15,7],
+"string__vec_8h.html#a6d574f3bbd7bbcb2515d234be74beaa4":[21,0,2,0,15,8],
+"string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786":[21,0,2,0,15,6],
+"string__vec_8h.html#a8f3b91283882c14a45d415b3025adada":[21,0,2,0,15,3],
 "string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07":[21,0,2,0,15,4],
 "string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1],
 "string__vec_8h_source.html":[21,0,2,0,15],
@@ -244,10 +249,5 @@ var NAVTREEINDEX20 =
 "structKernelParameters.html#abc092903c583994a2ba3b74dbb2096a7":[20,0,73,2],
 "structKernelParameters.html#ada0397b9daed906a5471a13356613508":[20,0,73,4],
 "structKernelParameters.html#af5fa2275c17cfd1cad4f086f2482027f":[20,0,73,3],
-"structKernelReduceOutput.html":[20,0,74],
-"structKernelReduceOutput.html#a377fc4b473305ec86f43d4ab32396cfa":[20,0,74,4],
-"structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00":[20,0,74,2],
-"structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[20,0,74,1],
-"structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[20,0,74,0],
-"structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[20,0,74,3]
+"structKernelReduceOutput.html":[20,0,74]
 };

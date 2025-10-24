@@ -1,5 +1,6 @@
 var cuda_8cc =
 [
+    [ "ERRCHK_CUDA", "cuda_8cc.html#a56407ccff4b16ec3ae793b2968f9ce4e", null ],
     [ "acDeviceGetAttribute", "cuda_8cc.html#a7110d6f4149571c0e5969b6c350b1d0d", null ],
     [ "acDeviceGetPCIBusId", "cuda_8cc.html#ab873252b9b914e56ab31c60b2385ce33", null ],
     [ "acDeviceGetStreamPriorityRange", "cuda_8cc.html#aa6b25a2dab6aefda7b34b021e9f84566", null ],
@@ -12,6 +13,7 @@ var cuda_8cc =
     [ "acEventRecord", "cuda_8cc.html#a84d4dac3a9f94fb905082c1d3228a488", null ],
     [ "acEventSynchronize", "cuda_8cc.html#af3a91f511021875823834bca4510538c", null ],
     [ "acFree", "cuda_8cc.html#abc4e654a8d80f622c61ad23ac342299e", null ],
+    [ "acFreeHost", "cuda_8cc.html#a021a00cdbf993bbc7a9026bac0b3bb78", null ],
     [ "acGetDevice", "cuda_8cc.html#a01ea7ccbbdeeebbae73f5fbc819aa0af", null ],
     [ "acGetDeviceCount", "cuda_8cc.html#aac3c99e29ff196252655430c02c615a0", null ],
     [ "acGetDeviceProperties", "cuda_8cc.html#abcd71579e67a7e6151cb2a6b8799e477", null ],

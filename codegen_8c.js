@@ -295,6 +295,7 @@ var codegen_8c =
     [ "has_optimization_info", "codegen_8c.html#aa73a0aa665c0baaee40e9b830f05e812", null ],
     [ "has_profile_reductions", "codegen_8c.html#aa19e16f23f4343b10fa210e52c06026a", null ],
     [ "has_stencil_ops", "codegen_8c.html#a47e609069dded45e4a79c3f651b53802", null ],
+    [ "identifier_in_nodes", "codegen_8c.html#a32531990c61af7c93b4f47a4712574b9", null ],
     [ "init_populate_calls", "codegen_8c.html#a2f36674893e29de41de5445feb9e72ae", null ],
     [ "init_populate_in_func", "codegen_8c.html#a33b02a39b2640c464f8b14a5aa60e134", null ],
     [ "init_populate_names", "codegen_8c.html#a3d1eae444b3590689d07d889ef45bd65", null ],

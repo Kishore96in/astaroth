@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['errchk_0',['errchk',['../test__acm__error_8c.html#ab0b5813975a4aae7f1f690640c8bf3ba',1,'ERRCHK:&#160;test_acm_error.c'],['../acc-comm_2acm_2detail_2errchk_8h.html#ab0b5813975a4aae7f1f690640c8bf3ba',1,'ERRCHK:&#160;errchk.h'],['../acc-runtime_2api_2errchk_8h.html#ab57fe7c09c24580f991171eb6030bb7b',1,'ERRCHK:&#160;errchk.h']]],
+  ['errchk_0',['errchk',['../test__acm__error_8c.html#ab0b5813975a4aae7f1f690640c8bf3ba',1,'ERRCHK:&#160;test_acm_error.c'],['../acc-runtime_2api_2errchk_8h.html#ab57fe7c09c24580f991171eb6030bb7b',1,'ERRCHK:&#160;errchk.h'],['../acc-comm_2acm_2detail_2errchk_8h.html#ab0b5813975a4aae7f1f690640c8bf3ba',1,'ERRCHK:&#160;errchk.h']]],
   ['errchk_5facm_1',['ERRCHK_ACM',['../test__acm_8c.html#a897bc6331b42e8d5dc84f199b40d3309',1,'test_acm.c']]],
   ['errchk_5falways_2',['ERRCHK_ALWAYS',['../acc-runtime_2api_2errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698',1,'errchk.h']]],
-  ['errchk_5fcuda_3',['ERRCHK_CUDA',['../acc-runtime_2api_2errchk_8h.html#a56407ccff4b16ec3ae793b2968f9ce4e',1,'errchk.h']]],
+  ['errchk_5fcuda_3',['errchk_cuda',['../acc-runtime_2api_2errchk_8h.html#a56407ccff4b16ec3ae793b2968f9ce4e',1,'ERRCHK_CUDA:&#160;errchk.h'],['../cuda_8cc.html#a56407ccff4b16ec3ae793b2968f9ce4e',1,'ERRCHK_CUDA:&#160;cuda.cc']]],
   ['errchk_5fcuda_5falways_4',['ERRCHK_CUDA_ALWAYS',['../acc-runtime_2api_2errchk_8h.html#aacc2999a0b262af663f89af1c50bd9ee',1,'errchk.h']]],
   ['errchk_5fcuda_5fapi_5',['ERRCHK_CUDA_API',['../errchk__cuda_8h.html#a4b72817e766c3cc1b5382d7b54ca8c83',1,'errchk_cuda.h']]],
   ['errchk_5fcuda_5fkernel_6',['errchk_cuda_kernel',['../errchk__cuda_8h.html#a989344a6ffee89d48309fea92999e6cd',1,'ERRCHK_CUDA_KERNEL:&#160;errchk_cuda.h'],['../acc-runtime_2api_2errchk_8h.html#a989344a6ffee89d48309fea92999e6cd',1,'ERRCHK_CUDA_KERNEL:&#160;errchk.h']]],
@@ -12,7 +12,7 @@ var searchData=
   ['errchk_5fmpi_9',['ERRCHK_MPI',['../errchk__mpi_8h.html#abb747582006cc3daa7704175ee07921b',1,'errchk_mpi.h']]],
   ['errchk_5fmpi_5fapi_10',['errchk_mpi_api',['../errchk__mpi_8h.html#acea19d8ba8649503756ae3c4aa1ac753',1,'ERRCHK_MPI_API:&#160;errchk_mpi.h'],['../test__async__mpi__io__simple_8cc.html#acea19d8ba8649503756ae3c4aa1ac753',1,'ERRCHK_MPI_API:&#160;test_async_mpi_io_simple.cc']]],
   ['errchk_5fmpi_5fexpr_5fdesc_11',['ERRCHK_MPI_EXPR_DESC',['../errchk__mpi_8h.html#ac4a5b4152388b02401018c352e01ef9c',1,'errchk_mpi.h']]],
-  ['error_12',['error',['../kiss__fft__log_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5',1,'ERROR:&#160;kiss_fft_log.h'],['../acc-runtime_2api_2errchk_8h.html#a39b3cc118c8339855e5578335a0b2417',1,'ERROR:&#160;errchk.h'],['../errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303',1,'ERROR:&#160;errchk_print.h']]],
+  ['error_12',['error',['../errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303',1,'ERROR:&#160;errchk_print.h'],['../kiss__fft__log_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5',1,'ERROR:&#160;kiss_fft_log.h'],['../acc-runtime_2api_2errchk_8h.html#a39b3cc118c8339855e5578335a0b2417',1,'ERROR:&#160;errchk.h']]],
   ['error_5fdesc_13',['ERROR_DESC',['../errchk__print_8h.html#adc64a308ed3cbf54e9dfabd45e0ced35',1,'errchk_print.h']]],
   ['error_5fexpr_14',['ERROR_EXPR',['../errchk__print_8h.html#aebae474a532823e6904d0d8185d2e6e9',1,'errchk_print.h']]],
   ['error_5fmessage_15',['error_message',['../acc__runtime_8cu.html#a690f8ad21232a5ea0bfb62b8887d46f0',1,'acc_runtime.cu']]],

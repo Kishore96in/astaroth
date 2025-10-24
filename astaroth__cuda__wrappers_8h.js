@@ -10,6 +10,7 @@ var astaroth__cuda__wrappers_8h =
     [ "acEventRecord", "astaroth__cuda__wrappers_8h.html#a84d4dac3a9f94fb905082c1d3228a488", null ],
     [ "acEventSynchronize", "astaroth__cuda__wrappers_8h.html#af3a91f511021875823834bca4510538c", null ],
     [ "acFree", "astaroth__cuda__wrappers_8h.html#abc4e654a8d80f622c61ad23ac342299e", null ],
+    [ "acFreeHost", "astaroth__cuda__wrappers_8h.html#a021a00cdbf993bbc7a9026bac0b3bb78", null ],
     [ "acGetDevice", "astaroth__cuda__wrappers_8h.html#a01ea7ccbbdeeebbae73f5fbc819aa0af", null ],
     [ "acGetDeviceCount", "astaroth__cuda__wrappers_8h.html#aac3c99e29ff196252655430c02c615a0", null ],
     [ "acGetErrorName", "astaroth__cuda__wrappers_8h.html#a9381cb78234657a9677a767b3066382c", null ],

@@ -12,6 +12,7 @@ var cpu_8cc =
     [ "acEventRecord", "cpu_8cc.html#a8f4d9d3d8cf43fa7bdafe7793b11f724", null ],
     [ "acEventSynchronize", "cpu_8cc.html#aa0ff347ff654ca826256b4117fbfd56e", null ],
     [ "acFree", "cpu_8cc.html#abc4e654a8d80f622c61ad23ac342299e", null ],
+    [ "acFreeHost", "cpu_8cc.html#a021a00cdbf993bbc7a9026bac0b3bb78", null ],
     [ "acGetDevice", "cpu_8cc.html#a01ea7ccbbdeeebbae73f5fbc819aa0af", null ],
     [ "acGetDeviceCount", "cpu_8cc.html#aac3c99e29ff196252655430c02c615a0", null ],
     [ "acGetDeviceProperties", "cpu_8cc.html#a82902ce5cbd257e65b4ccda55109842d", null ],
