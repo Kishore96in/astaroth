@@ -3,6 +3,7 @@ var classComputeTask =
     [ "ComputeTask", "classComputeTask.html#adae886b2c38c22af025268416ab93e49", null ],
     [ "ComputeTask", "classComputeTask.html#aea568de614843be7eda5bdd3f922ee51", null ],
     [ "ComputeTask", "classComputeTask.html#a8b98ee78eaf9450c2750088192f312a7", null ],
+    [ "~ComputeTask", "classComputeTask.html#a39634a7772963a0ab8e588d051ace52e", null ],
     [ "ComputeTask", "classComputeTask.html#acb1e3f0971eb112cd73440e254d2d446", null ],
     [ "advance", "classComputeTask.html#af1f8d58738203ba6d62e95a227d09e93", null ],
     [ "compute", "classComputeTask.html#ac1e82fd6d173d28af2edf2bf5ecf5383", null ],
