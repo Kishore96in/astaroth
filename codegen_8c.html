@@ -612,8 +612,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1ec6b157f7c409c6e706c78daec70728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b42ab0e1c0632a696b03e5049c433eb" id="r_a3b42ab0e1c0632a696b03e5049c433eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a3b42ab0e1c0632a696b03e5049c433eb">is_builtin_constant</a> (const char *name)</td></tr>
 <tr class="separator:a3b42ab0e1c0632a696b03e5049c433eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc3c5ea3521d18d12efa0505a029ca3" id="r_a5dc3c5ea3521d18d12efa0505a029ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a5dc3c5ea3521d18d12efa0505a029ca3">print_const_array</a> (FILE *fp, const char *datatype_scalar, const char *name, const int num_of_elems, const char *assignment_val, const char *static_str)</td></tr>
-<tr class="separator:a5dc3c5ea3521d18d12efa0505a029ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178863abfc41a7a0c323460ff9ed3722" id="r_a178863abfc41a7a0c323460ff9ed3722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a178863abfc41a7a0c323460ff9ed3722">print_const_array</a> (FILE *fp, const char *datatype_scalar, const char *name, int num_of_elems, const char *assignment_val, const char *static_str)</td></tr>
+<tr class="separator:a178863abfc41a7a0c323460ff9ed3722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d352aeb0f01fe82ddacd8c1e2a7c43b" id="r_a8d352aeb0f01fe82ddacd8c1e2a7c43b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a8d352aeb0f01fe82ddacd8c1e2a7c43b">gen_const_def</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *def, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *tspec, FILE *fp, FILE *fp_builtin, FILE *fp_non_scalar_constants, FILE *fp_non_scalar_builtin, const bool static_definitions)</td></tr>
 <tr class="separator:a8d352aeb0f01fe82ddacd8c1e2a7c43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64423f219c3a83ac0ddc38859ea48cd9" id="r_a64423f219c3a83ac0ddc38859ea48cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a64423f219c3a83ac0ddc38859ea48cd9">gen_var_loader</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *assignment, FILE *fp)</td></tr>
@@ -9098,8 +9098,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5dc3c5ea3521d18d12efa0505a029ca3" name="a5dc3c5ea3521d18d12efa0505a029ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dc3c5ea3521d18d12efa0505a029ca3">&#9670;&#160;</a></span>print_const_array()</h2>
+<a id="a178863abfc41a7a0c323460ff9ed3722" name="a178863abfc41a7a0c323460ff9ed3722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178863abfc41a7a0c323460ff9ed3722">&#9670;&#160;</a></span>print_const_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9125,7 +9125,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_of_elems</em>, </td>
         </tr>
         <tr>
