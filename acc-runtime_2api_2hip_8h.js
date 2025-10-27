@@ -27,6 +27,7 @@ var acc_runtime_2api_2hip_8h =
     [ "cudaEventRecord", "acc-runtime_2api_2hip_8h.html#a36a320ff35868c17db14650e8315ab22", null ],
     [ "cudaEventSynchronize", "acc-runtime_2api_2hip_8h.html#a8f1bbf630b95f304b26f09effac58085", null ],
     [ "cudaFree", "acc-runtime_2api_2hip_8h.html#a0a87c1d891812c773254b2c73cb42da2", null ],
+    [ "cudaFreeHost", "acc-runtime_2api_2hip_8h.html#ae1411b5f96c19b759240a08ff5ba6b50", null ],
     [ "cudaFuncCachePreferL1", "acc-runtime_2api_2hip_8h.html#a272553e9240245dd6d6a186b3510d362", null ],
     [ "cudaFuncCachePreferShared", "acc-runtime_2api_2hip_8h.html#aac0caa599f4aea6c7163fae8c3d90a2e", null ],
     [ "cudaFuncSetSharedMemConfig", "acc-runtime_2api_2hip_8h.html#ab0486f5f30bfb545f712c42a3a0b041c", null ],
