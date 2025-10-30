@@ -1390,12 +1390,12 @@ $(document).ready(function(){initNavTree('astaroth_8h_source.html',''); initResi
 <div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>  <span class="keywordtype">void</span></div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>  acPushToConfig(<a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a>&amp; config, P param, V val)</div>
 <div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>  {</div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(IsCompParam&lt;decltype(param)&gt;())</div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(IsCompParam&lt;P&gt;())</div>
 <div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>      {</div>
 <div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>          config.<a class="code hl_variable" href="structAcMeshInfo.html#a8411944366b0d3be19f2b469e4fb95c9">run_consts</a>.<a class="code hl_variable" href="structAcCompInfo.html#abda070c6a900af7006d05595f0ea4694">config</a>[param] = val;</div>
 <div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>          config.<a class="code hl_variable" href="structAcMeshInfo.html#a8411944366b0d3be19f2b469e4fb95c9">run_consts</a>.<a class="code hl_variable" href="structAcCompInfo.html#ad005c91dfde5106d6dd2052868d255cb">is_loaded</a>[param] = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span>      }</div>
-<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(IsParam&lt;decltype(param)&gt;())</div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(IsParam&lt;P&gt;())</div>
 <div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span>      {</div>
 <div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>          config[param] = val;</div>
 <div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>          config.<a class="code hl_variable" href="structAcMeshInfo.html#abd7fc33a74349fa320000f6a84740015">is_loaded</a>[param] = <span class="keyword">true</span>;</div>
