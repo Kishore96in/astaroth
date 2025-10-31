@@ -1,5 +1,8 @@
 var NAVTREEINDEX11 =
 {
+"functions_func_d.html":[20,3,1,3],
+"functions_func_e.html":[20,3,1,4],
+"functions_func_f.html":[20,3,1,5],
 "functions_func_g.html":[20,3,1,6],
 "functions_func_h.html":[20,3,1,7],
 "functions_func_i.html":[20,3,1,8],
@@ -65,8 +68,8 @@ var NAVTREEINDEX11 =
 "general__derivs_8h.html":[21,0,2,5,8],
 "general__derivs_8h.html#a06e40482f31a63e2ce66b2d036e9b005":[21,0,2,5,8,23],
 "general__derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[21,0,2,5,8,14],
-"general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[21,0,2,5,8,49],
 "general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[21,0,2,5,8,50],
+"general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[21,0,2,5,8,49],
 "general__derivs_8h.html#a08a153103580544909f8a020f9603608":[21,0,2,5,8,19],
 "general__derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[21,0,2,5,8,59],
 "general__derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[21,0,2,5,8,28],
@@ -246,8 +249,5 @@ var NAVTREEINDEX11 =
 "globals_defs_s.html":[21,1,6,17],
 "globals_defs_t.html":[21,1,6,18],
 "globals_defs_u.html":[21,1,6,19],
-"globals_defs_v.html":[21,1,6,20],
-"globals_defs_w.html":[21,1,6,21],
-"globals_defs_x.html":[21,1,6,22],
-"globals_defs_y.html":[21,1,6,23]
+"globals_defs_v.html":[21,1,6,20]
 };

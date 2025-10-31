@@ -942,6 +942,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7ee6fb2dda98c1ad67cb36ce28b88e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec69391b2ef24987e2375329bcf1d7c" id="r_abec69391b2ef24987e2375329bcf1d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#abec69391b2ef24987e2375329bcf1d7c">unroll_constant_loops</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
 <tr class="separator:abec69391b2ef24987e2375329bcf1d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea92418f038abf0d699cbd0a6a33ad0" id="r_a9ea92418f038abf0d699cbd0a6a33ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a9ea92418f038abf0d699cbd0a6a33ad0">generate_fields_info</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>)</td></tr>
+<tr class="separator:a9ea92418f038abf0d699cbd0a6a33ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0aec1d50907507f79eaafac86b24554" id="r_aa0aec1d50907507f79eaafac86b24554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#aa0aec1d50907507f79eaafac86b24554">gen_array_infos</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, const bool gen_mem_accesses)</td></tr>
+<tr class="separator:aa0aec1d50907507f79eaafac86b24554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37efcd58bff4f741091defe1ceb325c5" id="r_a37efcd58bff4f741091defe1ceb325c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a37efcd58bff4f741091defe1ceb325c5">generate_minimized_code</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, const bool gen_mem_accesses)</td></tr>
+<tr class="separator:a37efcd58bff4f741091defe1ceb325c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8280db1b8c25249d9c6571976b645b" id="r_a7c8280db1b8c25249d9c6571976b645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7c8280db1b8c25249d9c6571976b645b">generate</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *root_in, FILE *stream, const bool gen_mem_accesses, const bool ELIMINATE_CONDITIONALS, const bool runtime_compilation)</td></tr>
 <tr class="separator:a7c8280db1b8c25249d9c6571976b645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8ac36dd202a505abd273049e2bc20f" id="r_a7e8ac36dd202a505abd273049e2bc20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7e8ac36dd202a505abd273049e2bc20f">compile_helper</a> (const bool log)</td></tr>
@@ -3906,6 +3912,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa0aec1d50907507f79eaafac86b24554" name="aa0aec1d50907507f79eaafac86b24554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0aec1d50907507f79eaafac86b24554">&#9670;&#160;</a></span>gen_array_infos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_array_infos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>gen_mem_accesses</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a62b4b3d9af8e6df723ba8d4adde27a82" name="a62b4b3d9af8e6df723ba8d4adde27a82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62b4b3d9af8e6df723ba8d4adde27a82">&#9670;&#160;</a></span>gen_array_qualifiers()</h2>
 
@@ -6082,6 +6116,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ea92418f038abf0d699cbd0a6a33ad0" name="a9ea92418f038abf0d699cbd0a6a33ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea92418f038abf0d699cbd0a6a33ad0">&#9670;&#160;</a></span>generate_fields_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generate_fields_info </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aec386ebc54b3a34fcddfa3bd63adcaec" name="aec386ebc54b3a34fcddfa3bd63adcaec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec386ebc54b3a34fcddfa3bd63adcaec">&#9670;&#160;</a></span>generate_mem_accesses()</h2>
 
@@ -6094,6 +6146,34 @@ Variables</h2></td></tr>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37efcd58bff4f741091defe1ceb325c5" name="a37efcd58bff4f741091defe1ceb325c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37efcd58bff4f741091defe1ceb325c5">&#9670;&#160;</a></span>generate_minimized_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generate_minimized_code </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>gen_mem_accesses</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

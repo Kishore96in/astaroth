@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"structAcCompInfo.html#abda070c6a900af7006d05595f0ea4694":[20,0,5,0],
+"structAcCompInfo.html#ad005c91dfde5106d6dd2052868d255cb":[20,0,5,2],
+"structAcCompInfo.html#af82061ec921c343056095a0618985d28":[20,0,5,1],
 "structAcCompInfoConfig.html":[20,0,6],
 "structAcCompInfoHasDefaultValue.html":[20,0,7],
 "structAcCompInfoLoaded.html":[20,0,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "structProfileBufferArray.html#a717616119b2018b994c6f780ea3622e0":[20,0,93,0],
 "structRegion.html":[20,0,100],
 "structRegion.html#a09fffa294ced002e96b40a0a8fc71676":[20,0,100,7],
-"structRegion.html#a0b31025174a7e0cebc5f2bbee4086a9e":[20,0,100,5],
-"structRegion.html#a1679e4e3266f0d2fd215c3348647ef1e":[20,0,100,17],
-"structRegion.html#a220d9fccc497ee299a991f38a96fc742":[20,0,100,10],
-"structRegion.html#a4de2e9722abd1918d9894005fdc560ca":[20,0,100,15]
+"structRegion.html#a0b31025174a7e0cebc5f2bbee4086a9e":[20,0,100,5]
 };
