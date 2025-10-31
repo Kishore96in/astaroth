@@ -30,6 +30,7 @@ var codegen_8c =
     [ "max", "codegen_8c.html#affe776513b24d84b39af8ab0930fef7f", null ],
     [ "MAX_ARRAY_RANK", "codegen_8c.html#a3974b3b7c33ab109d7db3c4b88d233ca", null ],
     [ "MAX_COMBINATIONS", "codegen_8c.html#ac042adea9c48f6ffab3791ea53cb9e77", null ],
+    [ "MAX_FIELDS", "codegen_8c.html#a679dffecfb16ab6f5832ddf756b5fabd", null ],
     [ "MAX_FUNCS", "codegen_8c.html#aaebb1e5a1a96d407cf9f2164c7a050ac", null ],
     [ "MAX_ID_LEN", "codegen_8c.html#acfc3ef13b0eb501f6f6a5411406c9cd7", null ],
     [ "MAX_KERNELS", "codegen_8c.html#a15caf78435042ae8ffb3be82a1699e5b", null ],
