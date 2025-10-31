@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"structAcDecompositionInfo.html#a84acf206e222ecd73a2122146a920aa2":[20,0,10,0],
+"structAcDecompositionInfo.html#a8f2f19a7a1173f6745d4a2bc5b58d212":[20,0,10,1],
 "structAcDecompositionInfo.html#aa46463b0f2d8fc9f56e730c554e824d8":[20,0,10,5],
 "structAcDecompositionInfo.html#aeecb7b8b17cfc3da322c5642a9b501ba":[20,0,10,3],
 "structAcDeviceKernelOutput.html":[20,0,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "structRegion.html#a9a80004ffd4eb1cf2ef5920675e396e2":[20,0,100,3],
 "structRegion.html#a9ac6875a00dc8c208ad1ca4e9de4a82f":[20,0,100,6],
 "structRegion.html#a9ba1b56f0333bb5d1dbda8c1d46e26aa":[20,0,100,0],
-"structRegion.html#ab2819df990a997f846e481c5b64449be":[20,0,100,11],
-"structRegion.html#ad2d4b194aafb91973b7d1d48c120c9ff":[20,0,100,13],
-"structRegion.html#ad55230cb63286d508615b70d1e7b1d8b":[20,0,100,2]
+"structRegion.html#ab2819df990a997f846e481c5b64449be":[20,0,100,11]
 };

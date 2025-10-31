@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"pointer_8h.html#a5c33e72ee91d19b43fb4ba9840c935b8":[21,0,1,0,0,33,2],
+"pointer_8h.html#a63f79806f1f25a3cd372c663132c00f4":[21,0,1,0,0,33,4],
 "pointer_8h.html#a6dc4e90454ab0029ca48b8ec70073f79":[21,0,1,0,0,33,1],
 "pointer_8h_source.html":[21,0,1,0,0,33],
 "poisson-test_2main_8cc.html":[21,0,10,13,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "smooth__max_8h.html#a383a76a2a89175a1e5c20760c9c541af":[21,0,2,5,20,99],
 "smooth__max_8h.html#a385f88f9a00a7ce9a72b866f9198e01b":[21,0,2,5,20,174],
 "smooth__max_8h.html#a38a5f8834a449e65f25ba7bc50ba4dd3":[21,0,2,5,20,133],
-"smooth__max_8h.html#a3977c1d703a3c6ffddfe4b2e6f18bd10":[21,0,2,5,20,109],
-"smooth__max_8h.html#a3a086405c87dc1ebbf97dc74abef3981":[21,0,2,5,20,125],
-"smooth__max_8h.html#a3aa34a54da4f0b30971bd52c8a18362e":[21,0,2,5,20,318]
+"smooth__max_8h.html#a3977c1d703a3c6ffddfe4b2e6f18bd10":[21,0,2,5,20,109]
 };

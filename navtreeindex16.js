@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"namespacematplotlibcpp.html#aff32a9a7a3507d867dab947db66d7352":[19,0,2,48],
+"namespacematplotlibcpp_1_1detail.html":[19,0,2,0],
 "namespacematplotlibcpp_1_1detail.html#ab78ea1d46cdefdf8037d2a2c0bcfaedb":[19,0,2,0,9],
 "namespacematplotlibcpp_1_1detail.html#ad711caf78c271008983e97009c6d314c":[19,0,2,0,8],
 "namespacemembers.html":[19,1,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "planetest_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,12,0,0],
 "pointer_8h.html":[21,0,1,0,0,33],
 "pointer_8h.html#a2e5cf214a31608d1c68aa5d473371383":[21,0,1,0,0,33,3],
-"pointer_8h.html#a3a06d2b85f1262fdd71f7bc0294ea586":[21,0,1,0,0,33,5],
-"pointer_8h.html#a5c33e72ee91d19b43fb4ba9840c935b8":[21,0,1,0,0,33,2],
-"pointer_8h.html#a63f79806f1f25a3cd372c663132c00f4":[21,0,1,0,0,33,4]
+"pointer_8h.html#a3a06d2b85f1262fdd71f7bc0294ea586":[21,0,1,0,0,33,5]
 };

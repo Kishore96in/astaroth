@@ -258,6 +258,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac22b324da2090386bf886ff5abc7ffd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad48de13e877a20d46f7bff0af11587c2" id="r_ad48de13e877a20d46f7bff0af11587c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstring__vec.html">string_vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ad48de13e877a20d46f7bff0af11587c2">get_allocating_types</a> ()</td></tr>
 <tr class="separator:ad48de13e877a20d46f7bff0af11587c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47c66cb88a8d4b4d7bac1bcfe281aa3" id="r_ad47c66cb88a8d4b4d7bac1bcfe281aa3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ad47c66cb88a8d4b4d7bac1bcfe281aa3">remove_substring_intern</a> (const char *src, const char *to_remove)</td></tr>
+<tr class="separator:ad47c66cb88a8d4b4d7bac1bcfe281aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d37243688332c04ab49c759fcd4c15" id="r_a77d37243688332c04ab49c759fcd4c15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a77d37243688332c04ab49c759fcd4c15">is_allocating_type</a> (const char *type)</td></tr>
 <tr class="separator:a77d37243688332c04ab49c759fcd4c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fb81cd2e728b33bdfafa979a5d77b1" id="r_ad8fb81cd2e728b33bdfafa979a5d77b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ad8fb81cd2e728b33bdfafa979a5d77b1">free_structs_info</a> (<a class="el" href="structstructs__info.html">structs_info</a> *info)</td></tr>
@@ -336,6 +338,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3ae874fb98fcfeb2c09f89df5b5f52d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade58052844b78c215d2b4c7c60112c78" id="r_ade58052844b78c215d2b4c7c60112c78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ade58052844b78c215d2b4c7c60112c78">create_struct_tspec</a> (const char *datatype)</td></tr>
 <tr class="separator:ade58052844b78c215d2b4c7c60112c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7966d57301e963a5a22d2fb95682c1fa" id="r_a7966d57301e963a5a22d2fb95682c1fa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7966d57301e963a5a22d2fb95682c1fa">intern_and_free</a> (char *tmp)</td></tr>
+<tr class="separator:a7966d57301e963a5a22d2fb95682c1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a4b0ca03080ab9e70d11e9d4518b53a" id="r_a1a4b0ca03080ab9e70d11e9d4518b53a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a1a4b0ca03080ab9e70d11e9d4518b53a">get_array_elem_type</a> (const char *arr_type_in)</td></tr>
 <tr class="separator:a1a4b0ca03080ab9e70d11e9d4518b53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2997a4124882a90e6118f91e2d5d3a1" id="r_ac2997a4124882a90e6118f91e2d5d3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#ac2997a4124882a90e6118f91e2d5d3a1">preprocess_array_reads_base</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, const <a class="el" href="structstring__vec.html">string_vec</a> datatype_scalars, const <a class="el" href="structstring__vec.html">string_vec</a> datatypes, const bool gen_mem_accesses)</td></tr>
@@ -8204,6 +8208,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7966d57301e963a5a22d2fb95682c1fa" name="a7966d57301e963a5a22d2fb95682c1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7966d57301e963a5a22d2fb95682c1fa">&#9670;&#160;</a></span>intern_and_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * intern_and_free </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tmp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a77d37243688332c04ab49c759fcd4c15" name="a77d37243688332c04ab49c759fcd4c15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77d37243688332c04ab49c759fcd4c15">&#9670;&#160;</a></span>is_allocating_type()</h2>
 
@@ -9629,6 +9651,34 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad47c66cb88a8d4b4d7bac1bcfe281aa3" name="ad47c66cb88a8d4b4d7bac1bcfe281aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47c66cb88a8d4b4d7bac1bcfe281aa3">&#9670;&#160;</a></span>remove_substring_intern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * remove_substring_intern </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>to_remove</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

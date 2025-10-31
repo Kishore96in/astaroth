@@ -970,7 +970,7 @@ $(document).ready(function(){initNavTree('acc-runtime_2acc_2ast_8h_source.html',
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; nodes.<a class="code hl_variable" href="structnode__vec.html#a942658fad0ddf363aa69c941172238f4">size</a>; ++i)</div>
 <div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    {</div>
 <div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        list_head = astnode_create(<a class="code hl_enumvalue" href="acc-runtime_2acc_2ast_8h.html#acac9cbaeea226ed297804c012dc12b16af61b72eeff33bbe0201392e0261c5df1">NODE_UNKNOWN</a>,list_head, astnode_dup(nodes.<a class="code hl_variable" href="structnode__vec.html#acd5cf1a54685ad6a857b141fcdca874b">data</a>[i],NULL));</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        list_head-&gt;<a class="code hl_variable" href="structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab">buffer</a> = strdup(separator);</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        list_head-&gt;<a class="code hl_variable" href="structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab">buffer</a> = intern(separator);</div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    }</div>
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    <span class="keywordflow">return</span> list_head;</div>
 <div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>}</div>
