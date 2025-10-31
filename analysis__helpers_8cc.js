@@ -5,6 +5,7 @@ var analysis__helpers_8cc =
     [ "get_fields_kernel_depends_on_boundaries", "analysis__helpers_8cc.html#a930bd51e2f6b77fa8aab190eec8188e0", null ],
     [ "get_kernel_analysis_info", "analysis__helpers_8cc.html#a0cf92eb2e4a1338d73df5322a2b2d4be", null ],
     [ "get_kernel_analysis_info", "analysis__helpers_8cc.html#ae5a189bfd04c2726d8e7c9eb841d099b", null ],
+    [ "get_kernel_analysis_info", "analysis__helpers_8cc.html#a94fa5c0dff798a14bb048cb3c6e5955e", null ],
     [ "get_kernel_depends_on_boundaries", "analysis__helpers_8cc.html#afbfb61d65b8a8a419f038665b3bbc5ba", null ],
     [ "get_kernel_depends_on_boundaries", "analysis__helpers_8cc.html#a31d4977c33e4fd5a1e9e67c2fb4d560e", null ],
     [ "get_kernel_radius", "analysis__helpers_8cc.html#acf556968bf8eb38cc7827568c09befca", null ],

@@ -46,6 +46,7 @@ var astaroth_8h =
     [ "FUNC_DEFINE", "astaroth_8h.html#abfbfb0268690e48122012b52d5b31308", null ],
     [ "FUNC_DEFINE", "astaroth_8h.html#a099c7c697bd9f6d5c9c78c26496850c5", null ],
     [ "FUNC_DEFINE", "astaroth_8h.html#ab9103d55229560aabcfec7ee0955dc4f", null ],
+    [ "FUNC_DEFINE", "astaroth_8h.html#ac09b7187cfcce5201919f6dfecf9ed4f", null ],
     [ "FUNC_DEFINE", "astaroth_8h.html#ab68fa9b736c2205f5f4d9b8cdb489639", null ],
     [ "FUNC_DEFINE", "astaroth_8h.html#a73766c19a1d14ae543ea8d5aff726212", null ],
     [ "FUNC_DEFINE", "astaroth_8h.html#a0bb890b1f9749415ac81479ec25ed342", null ],
