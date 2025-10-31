@@ -158,10 +158,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6b5e4e7e7eb3dfdfa0c70dcb7f65de9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83cc83793a0d96f04e6902361998ad0" id="r_ae83cc83793a0d96f04e6902361998ad0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#ae83cc83793a0d96f04e6902361998ad0">kernel_only_writes_profile</a> (const AcKernel <a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, const <a class="el" href="stencilgen_8c.html#ab40314f722f618913ce8af1992cbfa88">AcProfileType</a> prof_type, const <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> *info)</td></tr>
 <tr class="separator:ae83cc83793a0d96f04e6902361998ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f0cf8ac8005dffd411b21f6d9f62fcb" id="r_a5f0cf8ac8005dffd411b21f6d9f62fcb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; <a class="el" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696da">AcBoundary</a>, NUM_PROFILES+1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#a5f0cf8ac8005dffd411b21f6d9f62fcb">compute_kernel_call_computes_profile_across_halos_static</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> config, const std::vector&lt; AcKernel &gt; &amp;calls, const std::vector&lt; <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> &gt; &amp;info)</td></tr>
-<tr class="separator:a5f0cf8ac8005dffd411b21f6d9f62fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff3dcbc60bf1f1784a67a1d0ee6ae87" id="r_a9ff3dcbc60bf1f1784a67a1d0ee6ae87"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; <a class="el" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696da">AcBoundary</a>, NUM_PROFILES+1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#a9ff3dcbc60bf1f1784a67a1d0ee6ae87">compute_kernel_call_computes_profile_across_halos</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> config, const std::vector&lt; AcKernel &gt; &amp;calls, const std::vector&lt; <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> &gt; &amp;info)</td></tr>
-<tr class="separator:a9ff3dcbc60bf1f1784a67a1d0ee6ae87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd468577303fd69065f0f39b087cfa6" id="r_a5dd468577303fd69065f0f39b087cfa6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; <a class="el" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696da">AcBoundary</a>, NUM_PROFILES+1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#a5dd468577303fd69065f0f39b087cfa6">compute_kernel_call_computes_profile_across_halos</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> config, const std::vector&lt; AcKernel &gt; &amp;calls, const <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> *info)</td></tr>
+<tr class="separator:a5dd468577303fd69065f0f39b087cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ecc14ff25878b9cf3887623052198e7" id="r_a7ecc14ff25878b9cf3887623052198e7"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="structint3.html">int3</a>, <a class="el" href="structint3.html">int3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#a7ecc14ff25878b9cf3887623052198e7">get_stencil_dims</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> info, const Stencil stencil)</td></tr>
 <tr class="separator:a7ecc14ff25878b9cf3887623052198e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a826d6ee4098f47e979f06a29e0c33158" id="r_a826d6ee4098f47e979f06a29e0c33158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="analysis__helpers_8cc.html#a826d6ee4098f47e979f06a29e0c33158">get_stencil_halo_type</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> info, const Stencil stencil)</td></tr>
@@ -209,8 +207,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ff3dcbc60bf1f1784a67a1d0ee6ae87" name="a9ff3dcbc60bf1f1784a67a1d0ee6ae87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff3dcbc60bf1f1784a67a1d0ee6ae87">&#9670;&#160;</a></span>compute_kernel_call_computes_profile_across_halos()</h2>
+<a id="a5dd468577303fd69065f0f39b087cfa6" name="a5dd468577303fd69065f0f39b087cfa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd468577303fd69065f0f39b087cfa6">&#9670;&#160;</a></span>compute_kernel_call_computes_profile_across_halos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,41 +228,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f0cf8ac8005dffd411b21f6d9f62fcb" name="a5f0cf8ac8005dffd411b21f6d9f62fcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f0cf8ac8005dffd411b21f6d9f62fcb">&#9670;&#160;</a></span>compute_kernel_call_computes_profile_across_halos_static()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::array&lt; <a class="el" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696da">AcBoundary</a>, NUM_PROFILES+1 &gt; &gt; compute_kernel_call_computes_profile_across_halos_static </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a>&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; AcKernel &gt; &amp;&#160;</td>
-          <td class="paramname"><em>calls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structKernelAnalysisInfo.html">KernelAnalysisInfo</a> *&#160;</td>
           <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"pc__derivs_8h_source.html":[21,0,2,5,15],
-"pcstyleforcing_8h.html":[21,0,2,4,2,0],
 "pcstyleforcing_8h.html#a94bead3fb1314abed3f3aa9860347640":[21,0,2,4,2,0,0],
 "pcstyleforcing_8h_source.html":[21,0,2,4,2,0],
 "planetest_2main_8cc.html":[21,0,10,13,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX17 =
 "smooth__max_8h.html#a3373e5cf6671f4f3ba001646c850f767":[21,0,2,5,20,115],
 "smooth__max_8h.html#a33ad6b12ea018a7eb5a1b4dcc29247f8":[21,0,2,5,20,265],
 "smooth__max_8h.html#a345f1998275866af0ee1fdb7a2850eaa":[21,0,2,5,20,44],
-"smooth__max_8h.html#a34c921ca1bc73234e68bf617384f3f0d":[21,0,2,5,20,43]
+"smooth__max_8h.html#a34c921ca1bc73234e68bf617384f3f0d":[21,0,2,5,20,43],
+"smooth__max_8h.html#a35a0e85e4ad69185efb573e74f72b222":[21,0,2,5,20,80],
+"smooth__max_8h.html#a3636d58a18686d6023dbbd8eea976785":[21,0,2,5,20,170]
 };

@@ -1,8 +1,7 @@
 var analysis__helpers_8cc =
 [
     [ "acAnalysisGetKernelInfo", "analysis__helpers_8cc.html#a960d332d9434ac701dadea6b7600524f", null ],
-    [ "compute_kernel_call_computes_profile_across_halos", "analysis__helpers_8cc.html#a9ff3dcbc60bf1f1784a67a1d0ee6ae87", null ],
-    [ "compute_kernel_call_computes_profile_across_halos_static", "analysis__helpers_8cc.html#a5f0cf8ac8005dffd411b21f6d9f62fcb", null ],
+    [ "compute_kernel_call_computes_profile_across_halos", "analysis__helpers_8cc.html#a5dd468577303fd69065f0f39b087cfa6", null ],
     [ "get_fields_kernel_depends_on_boundaries", "analysis__helpers_8cc.html#a930bd51e2f6b77fa8aab190eec8188e0", null ],
     [ "get_kernel_analysis_info", "analysis__helpers_8cc.html#a0cf92eb2e4a1338d73df5322a2b2d4be", null ],
     [ "get_kernel_analysis_info", "analysis__helpers_8cc.html#ae5a189bfd04c2726d8e7c9eb841d099b", null ],

@@ -1,7 +1,6 @@
 var astaroth__analysis__helpers_8h =
 [
-    [ "compute_kernel_call_computes_profile_across_halos", "astaroth__analysis__helpers_8h.html#a9ff3dcbc60bf1f1784a67a1d0ee6ae87", null ],
-    [ "compute_kernel_call_computes_profile_across_halos_static", "astaroth__analysis__helpers_8h.html#a5f0cf8ac8005dffd411b21f6d9f62fcb", null ],
+    [ "compute_kernel_call_computes_profile_across_halos", "astaroth__analysis__helpers_8h.html#a5dd468577303fd69065f0f39b087cfa6", null ],
     [ "get_fields_kernel_depends_on_boundaries", "astaroth__analysis__helpers_8h.html#a930bd51e2f6b77fa8aab190eec8188e0", null ],
     [ "get_kernel_analysis_info", "astaroth__analysis__helpers_8h.html#a12fc801c70d40f811131fe56fc093111", null ],
     [ "get_kernel_analysis_info", "astaroth__analysis__helpers_8h.html#a91d1359f24d91ff49bce6020cf7d0aae", null ],
