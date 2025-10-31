@@ -365,6 +365,7 @@ var codegen_8c =
     [ "remove_implicit_loop", "codegen_8c.html#a78983c1c8e1eda557c999d1b39602323", null ],
     [ "remove_substring_intern", "codegen_8c.html#ad47c66cb88a8d4b4d7bac1bcfe281aa3", null ],
     [ "remove_suffix", "codegen_8c.html#af1b8d607d1e21db969115ea0995f3d7f", null ],
+    [ "remove_suffix_intern", "codegen_8c.html#ada3368fdc620a4f919789d34eb6bf070", null ],
     [ "remove_unnecessary_assignments", "codegen_8c.html#ac511eac26c014d1a37c08691d04008ae", null ],
     [ "rename_identifiers", "codegen_8c.html#ae59e9c9d430133efb119d8b42c6c2fe2", null ],
     [ "rename_kernels", "codegen_8c.html#af19588dc6182b36e5e994b62139808f1", null ],
