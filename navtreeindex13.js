@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"host__datatypes_8h.html#a64764d6386cd906ee06bcd5e4c000a95a5e32ce8a9bed04ef62416aad49c6adf0":[21,0,2,1,14,20,3],
 "host__datatypes_8h.html#a64764d6386cd906ee06bcd5e4c000a95adb3866bc643932f773582218a4ba4f6a":[21,0,2,1,14,20,1],
 "host__datatypes_8h.html#a82fa9f1c919bef6677d8695e2a5d3a7d":[21,0,2,1,14,6],
 "host__datatypes_8h.html#ab05911eb069642c037eddbcbbfedb9da":[21,0,2,1,14,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "matplotlibcpp_8h.html#a928fb4c83f29554b1b37aeea7af9bb73":[21,0,10,24,0,1,36],
 "matplotlibcpp_8h.html#a92c59dd37fb3f355514d88e364ddfde9":[21,0,10,24,0,1,63],
 "matplotlibcpp_8h.html#a93e96cce1779c757a9ac754639c80878":[21,0,10,24,0,1,93],
-"matplotlibcpp_8h.html#a9482856fd165f21001420e712d0d2312":[21,0,10,24,0,1,50],
-"matplotlibcpp_8h.html#a961b7390cd3b4148651519f164c1af14":[21,0,10,24,0,1,57]
+"matplotlibcpp_8h.html#a9482856fd165f21001420e712d0d2312":[21,0,10,24,0,1,50]
 };

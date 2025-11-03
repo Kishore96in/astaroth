@@ -45,6 +45,7 @@ var general__operators_8h =
     [ "laplace_central_coeff", "general__operators_8h.html#ab9dbc33ae169cb403127c1f223d2c207", null ],
     [ "laplace_central_coeff", "general__operators_8h.html#a60a73468964b3382c40322ada92953e9", null ],
     [ "laplace_central_coeff_extended", "general__operators_8h.html#aba535ee8b060f5fea51b70e499d8d977", null ],
+    [ "laplace_central_coeff_extended", "general__operators_8h.html#aee7761baae7737f4a43d12923abc164f", null ],
     [ "laplace_neighbours", "general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f", null ],
     [ "laplace_neighbours", "general__operators_8h.html#a225d555c01d8a54a67cf1e567c695cae", null ],
     [ "length", "general__operators_8h.html#a6110d779b697e31435033dbed7d508e8", null ],

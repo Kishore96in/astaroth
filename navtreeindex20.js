@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1],
 "string__vec_8h_source.html":[21,0,2,0,15],
 "structAcAutotuneMeasurement.html":[20,0,3],
 "structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[20,0,3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[20,0,74,1],
 "structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[20,0,74,0],
 "structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[20,0,74,3],
-"structKeyEqual.html":[20,0,75],
-"structKeyEqual.html#aea9225579b4758b26fb207b5cec9a81e":[20,0,75,0]
+"structKeyEqual.html":[20,0,75]
 };
