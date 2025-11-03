@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"smooth__max_8h.html#ae1b2165f108e541e32a8c1a5e98f68d7":[21,0,2,5,20,65],
+"smooth__max_8h.html#ae1e1c5b5bf421c3f44f3319b05078ef4":[21,0,2,5,20,29],
+"smooth__max_8h.html#ae29237128cfa4c3a87e606d5df3c65de":[21,0,2,5,20,140],
+"smooth__max_8h.html#ae3004d0243fc1d11c850895e7856c181":[21,0,2,5,20,241],
+"smooth__max_8h.html#ae3008e9e13df6ee340fb43625a978fcd":[21,0,2,5,20,275],
+"smooth__max_8h.html#ae508f00ae0deb5eef75c17d1c3b7907e":[21,0,2,5,20,62],
+"smooth__max_8h.html#ae5176682d3d7a66899513ece2a051d86":[21,0,2,5,20,25],
+"smooth__max_8h.html#ae687d8d2a1d0d69698aba5af8f54deb0":[21,0,2,5,20,120],
 "smooth__max_8h.html#ae6aed7ca3816e7ab06b4ff1ad23593d8":[21,0,2,5,20,311],
 "smooth__max_8h.html#ae700ac55d6f7afa0a7443ecebb4ffac9":[21,0,2,5,20,59],
 "smooth__max_8h.html#ae7cc02eb9ecacd4f7d06e061228644d0":[21,0,2,5,20,172],
@@ -76,8 +84,8 @@ var NAVTREEINDEX19 =
 "static__analysis_8h_source.html":[21,0,2,1,21],
 "stdderiv_8h.html":[21,0,4,0,1,0],
 "stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b":[21,0,4,0,1,0,13],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,1],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,0],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,1],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[21,0,4,0,1,0,2],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[21,0,4,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[21,0,4,0,1,0,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786":[21,0,2,0,15,6],
 "string__vec_8h.html#a8f3b91283882c14a45d415b3025adada":[21,0,2,0,15,3],
 "string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07":[21,0,2,0,15,4],
-"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1],
-"string__vec_8h_source.html":[21,0,2,0,15],
-"structAcAutotuneMeasurement.html":[20,0,3],
-"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[20,0,3,1],
-"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[20,0,3,0],
-"structAcBuffer.html":[20,0,4],
-"structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[20,0,4,2],
-"structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2":[20,0,4,0],
-"structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[20,0,4,1]
+"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[21,0,2,0,15,1]
 };

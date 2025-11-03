@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"string__vec_8h_source.html":[21,0,2,0,15],
+"structAcAutotuneMeasurement.html":[20,0,3],
+"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[20,0,3,1],
+"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[20,0,3,0],
+"structAcBuffer.html":[20,0,4],
+"structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[20,0,4,2],
+"structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2":[20,0,4,0],
+"structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[20,0,4,1],
 "structAcBuffer.html#ae17f78dcfb357a8321e940dc32fb4010":[20,0,4,3],
 "structAcCompInfo.html":[20,0,5],
 "structAcCompInfo.html#abda070c6a900af7006d05595f0ea4694":[20,0,5,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[20,0,74,0],
 "structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[20,0,74,3],
 "structKeyEqual.html":[20,0,75],
-"structKeyEqual.html#aea9225579b4758b26fb207b5cec9a81e":[20,0,75,0],
-"structKeyHash.html":[20,0,76],
-"structKeyHash.html#af289f229b17fada870ba234c91cc8dd9":[20,0,76,0],
-"structLoadKernelParamsFunc.html":[20,0,86],
-"structLoadKernelParamsFunc.html#a68b2264dbc8b1384650d1a0bffcb3399":[20,0,86,0],
-"structProfileBufferArray.html":[20,0,93],
-"structProfileBufferArray.html#a39a6580c56488486a1e3fdf7b5a5d60d":[20,0,93,1],
-"structProfileBufferArray.html#a717616119b2018b994c6f780ea3622e0":[20,0,93,0],
-"structRegion.html":[20,0,100]
+"structKeyEqual.html#aea9225579b4758b26fb207b5cec9a81e":[20,0,75,0]
 };
