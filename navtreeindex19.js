@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"smooth__max_8h.html#ae6aed7ca3816e7ab06b4ff1ad23593d8":[21,0,2,5,20,311],
 "smooth__max_8h.html#ae700ac55d6f7afa0a7443ecebb4ffac9":[21,0,2,5,20,59],
 "smooth__max_8h.html#ae7cc02eb9ecacd4f7d06e061228644d0":[21,0,2,5,20,172],
 "smooth__max_8h.html#ae7f0d14093676784f156e15cbedaf830":[21,0,2,5,20,251],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structAcBuffer.html":[20,0,4],
 "structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[20,0,4,2],
 "structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2":[20,0,4,0],
-"structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[20,0,4,1],
-"structAcBuffer.html#ae17f78dcfb357a8321e940dc32fb4010":[20,0,4,3]
+"structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[20,0,4,1]
 };

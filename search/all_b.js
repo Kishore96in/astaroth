@@ -10,7 +10,7 @@ var searchData=
   ['aay_7',['AAY',['../fields_8h.html#a2c04511ecb7fc887e4898cf67e0d8dab',1,'fields.h']]],
   ['abort_8',['abort',['../namespaceac_1_1mpi.html#a8dde406edd091b96a810b5d3eed8254e',1,'ac::mpi']]],
   ['about_20branches_20in_20general_9',['About branches in general',['../md_CONTRIBUTING.html#autotoc_md114',1,'']]],
-  ['abs_10',['abs',['../math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338',1,'funcs.h']]],
+  ['abs_10',['abs',['../math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338',1,'abs(real x):&#160;funcs.h'],['../math_2funcs_8h.html#ab639bd99da067c66501e1b45bcad0f88',1,'abs(int x):&#160;funcs.h']]],
   ['abs_5ferror_11',['abs_error',['../structError.html#a7511e7cddbfb8cbe0db1853308cdad80',1,'Error']]],
   ['ac_12',['ac',['../namespaceac.html',1,'']]],
   ['ac_3a_3acomm_13',['comm',['../namespaceac_1_1comm.html',1,'ac']]],

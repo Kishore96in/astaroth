@@ -1,5 +1,6 @@
 var math_2funcs_8h =
 [
+    [ "abs", "math_2funcs_8h.html#ab639bd99da067c66501e1b45bcad0f88", null ],
     [ "abs", "math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338", null ],
     [ "epsilon", "math_2funcs_8h.html#a8b38e7c4f777696a520fe8cfbdf207ab", null ],
     [ "matmul_transpose", "math_2funcs_8h.html#a1448914cd9ec962dec3e9e1ad0c203a7", null ],
