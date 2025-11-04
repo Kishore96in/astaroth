@@ -36,6 +36,7 @@ var general__operators_8h =
     [ "gradient_upwd", "general__operators_8h.html#a5decb719e2e4b3523af606941f5f06ed", null ],
     [ "hessian", "general__operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1", null ],
     [ "laplace", "general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95", null ],
+    [ "laplace", "general__operators_8h.html#a2cfa0f3a4d8fe59fd04779a3d83e70cd", null ],
     [ "laplace", "general__operators_8h.html#a6ee9ede448e54f964f570a645246878b", null ],
     [ "laplace_2nd", "general__operators_8h.html#ae092bf324bd790cfa0d7b162c544fd4a", null ],
     [ "laplace_2nd_central_coeff", "general__operators_8h.html#a229acd5eb0834ee135441880a830980f", null ],

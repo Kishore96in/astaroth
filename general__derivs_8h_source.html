@@ -2350,7 +2350,7 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span> </div>
 <div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span>derxx_central_coeff()</div>
 <div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span>{</div>
-<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span>    <span class="keywordflow">return</span> derxx_central_coeff_helper(<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>,AC_inv_ds_2.x,AC_nonequidistantt_grid.x ? <a class="code hl_define" href="general__grid_2vars_8h.html#a6d790d747653dcfe201ac61548a553c1">AC_INV_MAPPING_FUNC_DER_X</a> : 0.0)</div>
+<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span>    <span class="keywordflow">return</span> derxx_central_coeff_helper(<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>,AC_inv_ds_2.x,<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a> ? <a class="code hl_define" href="general__grid_2vars_8h.html#a6d790d747653dcfe201ac61548a553c1">AC_INV_MAPPING_FUNC_DER_X</a> : 0.0)</div>
 <div class="line"><a id="l02252" name="l02252"></a><span class="lineno"> 2252</span>}</div>
 <div class="line"><a id="l02253" name="l02253"></a><span class="lineno"> 2253</span> </div>
 <div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span>derxx_central_coeff(real inv_spacing_2)</div>
@@ -2447,12 +2447,12 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="line"><a id="l02345" name="l02345"></a><span class="lineno"> 2345</span> </div>
 <div class="line"><a id="l02346" name="l02346"></a><span class="lineno"> 2346</span>deryy_central_coeff()</div>
 <div class="line"><a id="l02347" name="l02347"></a><span class="lineno"> 2347</span>{</div>
-<div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span>    deryy_central_coeff_helper(AC_inv_ds_2.y,<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>)</div>
+<div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span>    <span class="keywordflow">return</span> deryy_central_coeff_helper(AC_inv_ds_2.y,<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>)</div>
 <div class="line"><a id="l02349" name="l02349"></a><span class="lineno"> 2349</span>}</div>
 <div class="line"><a id="l02350" name="l02350"></a><span class="lineno"> 2350</span> </div>
 <div class="line"><a id="l02351" name="l02351"></a><span class="lineno"> 2351</span>deryy_central_coeff(real inv_spacing2)</div>
 <div class="line"><a id="l02352" name="l02352"></a><span class="lineno"> 2352</span>{</div>
-<div class="line"><a id="l02353" name="l02353"></a><span class="lineno"> 2353</span>    deryy_central_coeff_helper(inv_spacing2,<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>)</div>
+<div class="line"><a id="l02353" name="l02353"></a><span class="lineno"> 2353</span>    <span class="keywordflow">return</span> deryy_central_coeff_helper(inv_spacing2,<a class="code hl_define" href="general__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840">DER2_0</a>)</div>
 <div class="line"><a id="l02354" name="l02354"></a><span class="lineno"> 2354</span>}</div>
 <div class="line"><a id="l02355" name="l02355"></a><span class="lineno"> 2355</span> </div>
 <div class="line"><a id="l02356" name="l02356"></a><span class="lineno"> 2356</span>deryy_central_coeff_extended()</div>
