@@ -1,7 +1,5 @@
 var general__derivs_8h =
 [
-    [ "AC_GEN_DER_ZZ", "general__derivs_8h.html#a44d5eb3988b66874d981958b66449542", null ],
-    [ "AC_GEN_DER_ZZ_WITH_EXTENSION", "general__derivs_8h.html#ab21a1fff7c8a3e90474427fb4568c5ca", null ],
     [ "AC_GEN_DERX", "general__derivs_8h.html#aab9d4c79dc7f711d7b653937933a63d7", null ],
     [ "AC_GEN_DERX_WITH_EXTENSION", "general__derivs_8h.html#a6d6e3d6edcb53f6be48a658d5ec78d87", null ],
     [ "AC_GEN_DERXX", "general__derivs_8h.html#aef7ac50f8507bd16c3fd211f27cad3ab", null ],
@@ -12,6 +10,8 @@ var general__derivs_8h =
     [ "AC_GEN_DERYY_WITH_EXTENSION", "general__derivs_8h.html#a4eef0d354e507dc6fb8fe8e479ed514b", null ],
     [ "AC_GEN_DERZ", "general__derivs_8h.html#a4adf17893af8036fe3157fb8e3a7d260", null ],
     [ "AC_GEN_DERZ_WITH_EXTENSION", "general__derivs_8h.html#a2e7d12a093e1f05d4831d605441a2431", null ],
+    [ "AC_GEN_DERZZ", "general__derivs_8h.html#a54923398c0d2825649a41f79e2388dbd", null ],
+    [ "AC_GEN_DERZZ_WITH_EXTENSION", "general__derivs_8h.html#a7233fe047cb92b14cd56d71e5cbd3547", null ],
     [ "AC_GENERAL_DERIVS_H", "general__derivs_8h.html#aa09cbbd8e493ab66477713d56c43413b", null ],
     [ "DER1_1", "general__derivs_8h.html#ae7757a44dbeb76b0d368b7b1c7e5c5cc", null ],
     [ "DER1_2", "general__derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba", null ],
