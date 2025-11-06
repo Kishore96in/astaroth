@@ -10,7 +10,7 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "derivs.h", "derivs_8h.html", "derivs_8h" ],
     [ "general_derivs.h", "general__derivs_8h.html", "general__derivs_8h" ],
     [ "general_operators.h", "general__operators_8h.html", "general__operators_8h" ],
-    [ "geometric_multigrid.h", "geometric__multigrid_8h.html", null ],
+    [ "geometric_multigrid.h", "acc-runtime_2stdlib_2geometric__multigrid_8h.html", null ],
     [ "grid_extension.h", "grid__extension_8h.html", "grid__extension_8h" ],
     [ "grid_transfer_functions.h", "grid__transfer__functions_8h.html", "grid__transfer__functions_8h" ],
     [ "integrators.h", "integrators_8h.html", null ],

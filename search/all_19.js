@@ -97,7 +97,7 @@ var searchData=
   ['print_5fbutterfly_5fiteration_94',['print_butterfly_iteration',['../stencilgen_8c.html#ad50967b44f8a0c2ba098f4e5ccbb7548',1,'stencilgen.c']]],
   ['print_5fbutterfly_5fwarp_5freduce_95',['print_butterfly_warp_reduce',['../stencilgen_8c.html#a68215e27fed8e96d1659b2cba947f84d',1,'stencilgen.c']]],
   ['print_5fconst_5farray_96',['print_const_array',['../codegen_8c.html#a178863abfc41a7a0c323460ff9ed3722',1,'codegen.c']]],
-  ['print_5fdebug_97',['print_debug',['../print__debug_8h.html#a1ecdc75b8a22a992103f6aed6417940e',1,'print_debug(const std::string &amp;label, const T &amp;value):&#160;print_debug.h'],['../print__debug_8h.html#a616b5adeba8d29b7e73539a7841fcd1d',1,'PRINT_DEBUG:&#160;print_debug.h']]],
+  ['print_5fdebug_97',['print_debug',['../print__debug_8h.html#a616b5adeba8d29b7e73539a7841fcd1d',1,'PRINT_DEBUG:&#160;print_debug.h'],['../print__debug_8h.html#a1ecdc75b8a22a992103f6aed6417940e',1,'print_debug(const std::string &amp;label, const T &amp;value):&#160;print_debug.h']]],
   ['print_5fdebug_2eh_98',['print_debug.h',['../print__debug_8h.html',1,'']]],
   ['print_5fdebug_5farray_99',['print_debug_array',['../print__debug_8h.html#a0eef7640c18e9d4899a5415ff6779c5d',1,'PRINT_DEBUG_ARRAY:&#160;print_debug.h'],['../print__debug_8h.html#a7c321a9fc7ed24a253f5cd1f7ea31999',1,'print_debug_array(const std::string &amp;label, const size_t count, const T *arr):&#160;print_debug.h']]],
   ['print_5fdebug_5fmpi_100',['PRINT_DEBUG_MPI',['../mpi__utils_8h.html#afed7c6704a1f007dec2f55bab05248c9',1,'mpi_utils.h']]],

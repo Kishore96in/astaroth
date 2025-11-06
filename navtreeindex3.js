@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"astaroth_8h.html#af7ae8f4b298756a542c2edefdc837c5c":[21,0,6,3,20],
+"astaroth_8h.html#af8608222814cdeac195746b92552743a":[21,0,6,3,58],
 "astaroth_8h_source.html":[21,0,6,3],
 "astaroth__analysis_8h.html":[21,0,2,1,4],
 "astaroth__analysis_8h_source.html":[21,0,2,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "astaroth__fortran_8cc.html#ae9b4d5b9a4f43537f762a9bd5cb9d475":[21,0,8,0,8,8],
 "astaroth__fortran_8cc.html#aff01171f79fd49df06f59ac6abe1a736":[21,0,8,0,8,3],
 "astaroth__fortran_8h.html":[21,0,8,0,9],
-"astaroth__fortran_8h.html#a0c99af0954d01d64c1c6d2a4d7a042d8":[21,0,8,0,9,0],
-"astaroth__fortran_8h.html#a12074e988421e258f7c5b31c74fc0e9d":[21,0,8,0,9,6],
-"astaroth__fortran_8h.html#a2a49c7bcc7386e0f7c50b3c12fba3bf5":[21,0,8,0,9,1]
+"astaroth__fortran_8h.html#a0c99af0954d01d64c1c6d2a4d7a042d8":[21,0,8,0,9,0]
 };
