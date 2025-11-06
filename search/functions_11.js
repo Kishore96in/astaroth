@@ -61,6 +61,7 @@ var searchData=
   ['resolve_5foverloaded_5fcalls_58',['resolve_overloaded_calls',['../codegen_8c.html#a606a08be35d8b77c8c8c7efad11148bc',1,'codegen.c']]],
   ['resolve_5foverloaded_5fcalls_5fbase_59',['resolve_overloaded_calls_base',['../codegen_8c.html#a0d4bc2e27de9810b528b1eb8563a5240',1,'codegen.c']]],
   ['resolve_5fprofile_5fstencils_60',['resolve_profile_stencils',['../codegen_8c.html#a8d66ba88b0e233c0522642287ff650d8',1,'codegen.c']]],
-  ['return_5fown_5fmeasurement_61',['return_own_measurement',['../acc__runtime_8cu.html#a81ccc119393bc165be939e95a1ac2d90',1,'acc_runtime.cu']]],
-  ['row_62',['row',['../structAcMatrix.html#a1e54078d4ea2681c419e2b54db19061c',1,'AcMatrix']]]
+  ['restrict_5ffull_5fweighting_61',['restrict_full_weighting',['../grid__transfer__functions_8h.html#a02c81d51d82e7b3903869a4efccfeb9d',1,'grid_transfer_functions.h']]],
+  ['return_5fown_5fmeasurement_62',['return_own_measurement',['../acc__runtime_8cu.html#a81ccc119393bc165be939e95a1ac2d90',1,'acc_runtime.cu']]],
+  ['row_63',['row',['../structAcMatrix.html#a1e54078d4ea2681c419e2b54db19061c',1,'AcMatrix']]]
 ];

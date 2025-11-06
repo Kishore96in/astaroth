@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"structKernelParameters.html#abc092903c583994a2ba3b74dbb2096a7":[20,0,73,2],
+"structKernelParameters.html#ada0397b9daed906a5471a13356613508":[20,0,73,4],
+"structKernelParameters.html#af5fa2275c17cfd1cad4f086f2482027f":[20,0,73,3],
+"structKernelReduceOutput.html":[20,0,74],
 "structKernelReduceOutput.html#a377fc4b473305ec86f43d4ab32396cfa":[20,0,74,4],
 "structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00":[20,0,74,2],
 "structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[20,0,74,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX21 =
 "structkiss__fftnd__state.html":[20,0,79],
 "structkiss__fftnd__state.html#a0cb5ed1a3d72940d6a274a768f39011a":[20,0,79,3],
 "structkiss__fftnd__state.html#a4d2c3adb6a9a4a70c0fb5b29d4297819":[20,0,79,2],
-"structkiss__fftnd__state.html#a5a2fbe494c8e53174cb9050fd2888edd":[20,0,79,4],
-"structkiss__fftnd__state.html#aa16a0dfb68479f947784dd38dc5db33a":[20,0,79,1],
-"structkiss__fftnd__state.html#aaee291ed294623109b48370942332a88":[20,0,79,0],
-"structload__all__arrays__uniform.html":[20,0,80],
-"structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714":[20,0,80,0]
+"structkiss__fftnd__state.html#a5a2fbe494c8e53174cb9050fd2888edd":[20,0,79,4]
 };
