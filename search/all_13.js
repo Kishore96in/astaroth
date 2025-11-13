@@ -25,7 +25,7 @@ var searchData=
   ['incoming_5fray_5flength_22',['incoming_ray_length',['../radiation__ray_8h.html#a10b1bfc93b61eeb2ececf41fba52b3ad',1,'radiation_ray.h']]],
   ['increment_5ftag_23',['increment_tag',['../namespaceac_1_1mpi.html#ad5d2063032d2dd129b8cd2108167e13b',1,'ac::mpi']]],
   ['index_24',['index',['../namespaceac.html#a82c98058e028c57d3663734c793b66cf',1,'ac::index'],['../namespaceac_1_1mpi_1_1mpi.html#a4913ca164c8e3b39885dc4ff726579c6',1,'ac::mpi::mpi::index']]],
-  ['index_20offsets_25',['Throughout this file we use the following notation and names for various index offsets',['../node_8cc.html#autotoc_md184',1,'']]],
+  ['index_20offsets_25',['Throughout this file we use the following notation and names for various index offsets',['../node_8cc.html#autotoc_md185',1,'']]],
   ['index_5ft_26',['index_t',['../transform_8cu.html#a53362f4d24fd69d7da9362b5b6a0fdcc',1,'index_t:&#160;transform.cu'],['../algorithm_8cu.html#a53362f4d24fd69d7da9362b5b6a0fdcc',1,'index_t:&#160;algorithm.cu']]],
   ['indirect_5ferrchk_5falways_27',['INDIRECT_ERRCHK_ALWAYS',['../acc-runtime_2api_2errchk_8h.html#ae91660239419ccde6d6ace940b10bdf3',1,'errchk.h']]],
   ['indirect_5ferror_28',['INDIRECT_ERROR',['../acc-runtime_2api_2errchk_8h.html#a57b2b0dd30399b40a15f556fa4059a8f',1,'errchk.h']]],
@@ -53,7 +53,7 @@ var searchData=
   ['input_5fregions_50',['input_regions',['../classTask.html#abe5cba4e6b47922e6e4e2ffbe180fc54',1,'Task']]],
   ['input_5fstr_51',['INPUT_STR',['../codegen_8c.html#a4bf864039d66d4a265c1fa4aa792cabf',1,'codegen.c']]],
   ['inside_5fconditional_5fscope_52',['inside_conditional_scope',['../codegen_8c.html#ae735339eb4dc83a1c3f3444329969794',1,'codegen.c']]],
-  ['installation_53',['Installation',['../md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md191',1,'']]],
+  ['installation_53',['Installation',['../md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md192',1,'']]],
   ['instructions_54',['Pilot run notes and instructions',['../md_pilot_2README.html',1,'']]],
   ['int3_55',['int3',['../stencilgen_8c.html#a21d942232c0a6fe2b0e51f8f74d0f397',1,'int3:&#160;stencilgen.c'],['../structint3.html',1,'int3']]],
   ['int3_5fstr_56',['INT3_STR',['../codegen_8c.html#ae10ae2291a0b1233cffdbe5ed599445e',1,'codegen.c']]],
@@ -65,7 +65,7 @@ var searchData=
   ['integration_20reductions_20and_20boundary_20conditions_62',['Integration, Reductions and Boundary Conditions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md126',1,'']]],
   ['integrators_2eh_63',['integrators.h',['../integrators_8h.html',1,'']]],
   ['interaction_20with_20the_20astaroth_20core_20and_20utils_20libraries_64',['Interaction with the Astaroth Core and Utils libraries',['../md_acc-runtime_2README.html#autotoc_md63',1,'']]],
-  ['interface_65',['interface',['../index.html#autotoc_md182',1,'Interface'],['../task_8h.html#autotoc_md186',1,'Task interface']]],
+  ['interface_65',['interface',['../index.html#autotoc_md183',1,'Interface'],['../task_8h.html#autotoc_md187',1,'Task interface']]],
   ['interkeeper_66',['interkeeper',['../structmatplotlibcpp_1_1detail_1_1__interpreter.html#a32cb66eeebd22a4b8477aa682163ec2b',1,'matplotlibcpp::detail::_interpreter']]],
   ['intern_5fand_5ffree_67',['intern_and_free',['../codegen_8c.html#a7966d57301e963a5a22d2fb95682c1fa',1,'codegen.c']]],
   ['internal_5fdevice_5ffuncs_2eh_68',['internal_device_funcs.h',['../internal__device__funcs_8h.html',1,'']]],
@@ -117,5 +117,5 @@ var searchData=
   ['ishaloexchangetask_114',['ishaloexchangetask',['../classHaloExchangeTask.html#aaa66c64c1d704b4919af2dd46f22b8f5',1,'HaloExchangeTask::isHaloExchangeTask()'],['../classTask.html#a7af00bb39c2b8af8ef3066cd8ca8e997',1,'Task::isHaloExchangeTask()']]],
   ['isprerequisiteto_115',['isPrerequisiteTo',['../classTask.html#a79d9215be4cbf215ac3157387b5281a8',1,'Task']]],
   ['issues_116',['Issues',['../md_pilot_2README.html#autotoc_md169',1,'']]],
-  ['issues_20wishlist_117',['Todo/Issues/Wishlist',['../md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md196',1,'']]]
+  ['issues_20wishlist_117',['Todo/Issues/Wishlist',['../md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md197',1,'']]]
 ];

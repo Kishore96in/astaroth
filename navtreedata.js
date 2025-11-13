@@ -187,18 +187,18 @@ var NAVTREE =
       [ "Helper scripts", "md_pilot_2README.html#autotoc_md171", null ]
     ] ],
     [ "contrib/", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html", [
-      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md188", [
-        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md189", null ]
+      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md189", [
+        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md190", null ]
       ] ]
     ] ],
     [ "matplotlib-cpp", "md_test_2walker-test_2matplotlib-cpp_2README.html", [
-      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md190", null ],
-      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md191", null ],
-      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md192", null ],
-      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md193", null ],
-      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md194", [
-        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md195", null ],
-        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md196", null ]
+      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md191", null ],
+      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md192", null ],
+      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md193", null ],
+      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md194", null ],
+      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md195", [
+        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md196", null ],
+        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md197", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -253,17 +253,17 @@ var NAVTREEINDEX =
 "functions_func.html",
 "globals_defs_l.html",
 "host__datatypes_8h.html#a4fbe89db7871cf2ab32327a60eb4520f",
-"matplotlibcpp_8h.html#a90ba2143110bba254f163102a6ab450b",
-"mpi__utils_8cc.html#a94ffd2e1bfed432b026f8cbeb5ce38aa",
-"namespacematplotlibcpp.html#aa895bc53f99e3630b8c0adb41880b485",
-"pc__derivs_8h.html#abb9ed2f8f4b7ed735feb823cd4d5ef4e",
-"smooth__max_8h.html#a28a9347d0593a9b756c24a8932ce88d7",
-"smooth__max_8h.html#ada373c9d02d59fcecf5f787bdbbf2f20",
-"stencilgen_8c.html#ae2a0c36d88656619c8ff56bd9ba9e930",
-"structKernelAnalysisInfo.html#af464f5fdded35124c64474f6f57c6bd2",
-"structkiss__fft__cpx.html",
-"structstructs__info.html#a7f6d1bbd36fb6b55a274cda8ed79941e",
-"typedefs_8h.html#a6b1305c8b347b12540cc391a175696daaa18f0eca3c2e78a0d88b06f3dc56c9ec"
+"matplotlibcpp_8h.html#a80475bf6042c6ded104aad3e05e12d47",
+"mpi__utils_8cc.html#a94ef1c12af0f7cbac5b33b743f7d55ae",
+"namespacematplotlibcpp.html#aa5bc4092c9e2acbb2c6ec4efd024cf2f",
+"pc__derivs_8h.html#aab9d4c79dc7f711d7b653937933a63d7",
+"smooth__max_8h.html#a28a2b19d91d7f90d324b80cd99f643e5",
+"smooth__max_8h.html#ad9722c5e3042d817f04e9af1bd83dbfb",
+"stencilgen_8c.html#ad75168be5e148f5027a96ca06de224bd",
+"structKernelAnalysisInfo.html#ae0cd112e3a05a4765fe28b4ebc6c8ee1",
+"structint__vec.html#ade201138f89452df1dde5972e8e5a70f",
+"structstructs__info.html",
+"typedefs_8h.html#a6b1305c8b347b12540cc391a175696daaa1897d5ed0e559e7b8707ae97d68ee2e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -64,8 +64,9 @@ var NAVTREEINDEX13 =
 "index.html#autotoc_md179":[0,6,0],
 "index.html#autotoc_md180":[0,7],
 "index.html#autotoc_md181":[0,8],
-"index.html#autotoc_md182":[0,9],
-"index.html#autotoc_md183":[0,10],
+"index.html#autotoc_md182":[0,8,0],
+"index.html#autotoc_md183":[0,9],
+"index.html#autotoc_md184":[0,10],
 "inplace__gaussian-test_2main_8cc.html":[21,0,10,10,0],
 "inplace__gaussian-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,10,0,0],
 "integrators_8h.html":[21,0,2,5,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "matplotlibcpp_8h.html#a74ced83539862d0a6456935b507e9864":[21,0,10,25,0,1,19],
 "matplotlibcpp_8h.html#a78f4b6d50e52d1782d52df692232f4e1":[21,0,10,25,0,1,84],
 "matplotlibcpp_8h.html#a7a90e7d9dda953455e23c296906c093a":[21,0,10,25,0,1,99],
-"matplotlibcpp_8h.html#a7c176020a3312c69b4af6fa80113e53b":[21,0,10,25,0,1,18],
-"matplotlibcpp_8h.html#a80475bf6042c6ded104aad3e05e12d47":[21,0,10,25,0,1,86]
+"matplotlibcpp_8h.html#a7c176020a3312c69b4af6fa80113e53b":[21,0,10,25,0,1,18]
 };

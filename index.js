@@ -10,7 +10,9 @@ var index =
       [ "MPI", "index.html#autotoc_md179", null ]
     ] ],
     [ "CMake Options", "index.html#autotoc_md180", null ],
-    [ "Standalone Module", "index.html#autotoc_md181", null ],
-    [ "Interface", "index.html#autotoc_md182", null ],
-    [ "FAQ", "index.html#autotoc_md183", null ]
+    [ "Standalone Module", "index.html#autotoc_md181", [
+      [ "Restarting from distributed snapshots", "index.html#autotoc_md182", null ]
+    ] ],
+    [ "Interface", "index.html#autotoc_md183", null ],
+    [ "FAQ", "index.html#autotoc_md184", null ]
 ];
