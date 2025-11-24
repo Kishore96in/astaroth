@@ -950,6 +950,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa0aec1d50907507f79eaafac86b24554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37efcd58bff4f741091defe1ceb325c5" id="r_a37efcd58bff4f741091defe1ceb325c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a37efcd58bff4f741091defe1ceb325c5">generate_minimized_code</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, const bool gen_mem_accesses)</td></tr>
 <tr class="separator:a37efcd58bff4f741091defe1ceb325c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c78c8f31b93c836bce686b27f975fc" id="r_aa4c78c8f31b93c836bce686b27f975fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#aa4c78c8f31b93c836bce686b27f975fc">empty_non_optimized_kernels</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const <a class="el" href="structparam__combinations.html">param_combinations</a> combinations, const <a class="el" href="structstring__vec.html">string_vec</a> user_kernels_with_input_params, <a class="el" href="structstring__vec.html">string_vec</a> *user_kernel_combinatorial_params)</td></tr>
+<tr class="separator:aa4c78c8f31b93c836bce686b27f975fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8280db1b8c25249d9c6571976b645b" id="r_a7c8280db1b8c25249d9c6571976b645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7c8280db1b8c25249d9c6571976b645b">generate</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *root_in, FILE *stream, const bool gen_mem_accesses, const bool ELIMINATE_CONDITIONALS, const bool runtime_compilation)</td></tr>
 <tr class="separator:a7c8280db1b8c25249d9c6571976b645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8ac36dd202a505abd273049e2bc20f" id="r_a7e8ac36dd202a505abd273049e2bc20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a7e8ac36dd202a505abd273049e2bc20f">compile_helper</a> (const bool log)</td></tr>
@@ -3060,6 +3062,46 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>if_counter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4c78c8f31b93c836bce686b27f975fc" name="aa4c78c8f31b93c836bce686b27f975fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c78c8f31b93c836bce686b27f975fc">&#9670;&#160;</a></span>empty_non_optimized_kernels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void empty_non_optimized_kernels </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structparam__combinations.html">param_combinations</a>&#160;</td>
+          <td class="paramname"><em>combinations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstring__vec.html">string_vec</a>&#160;</td>
+          <td class="paramname"><em>user_kernels_with_input_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structstring__vec.html">string_vec</a> *&#160;</td>
+          <td class="paramname"><em>user_kernel_combinatorial_params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6078,6 +6120,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>If we are only using the optimized kernels we might as well empty the bodies of the original functions to speedup the compilation</p>
 
 </div>
 </div>

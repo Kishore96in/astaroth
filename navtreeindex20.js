@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"stencilgen_8c.html#ad50967b44f8a0c2ba098f4e5ccbb7548":[21,0,2,0,14,47],
 "stencilgen_8c.html#ad75168be5e148f5027a96ca06de224bd":[21,0,2,0,14,55],
 "stencilgen_8c.html#ae2a0c36d88656619c8ff56bd9ba9e930":[21,0,2,0,14,14],
 "stencilgen_8c.html#ae5a0e59bac2f8bd39a169c01090499e7":[21,0,2,0,14,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structKernelAnalysisInfo.html#a931a2bd5f190bec748291ba38417521d":[20,0,71,3],
 "structKernelAnalysisInfo.html#aa33f8fd8992c0464e8b4ad12a9efbe05":[20,0,71,8],
 "structKernelAnalysisInfo.html#ab0702a43e0b53fbbaffb855ee583d6c6":[20,0,71,1],
-"structKernelAnalysisInfo.html#ab9af027c0f27d582bbaa5b22880b4c20":[20,0,71,12],
-"structKernelAnalysisInfo.html#ac18d977e81d7c26f26e14c562d27761c":[20,0,71,7]
+"structKernelAnalysisInfo.html#ab9af027c0f27d582bbaa5b22880b4c20":[20,0,71,12]
 };

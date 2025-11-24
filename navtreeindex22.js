@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"structint__vec.html#ad1222df8b56a25d48e339b2faafd505d":[20,0,70,2],
 "structint__vec.html#ade201138f89452df1dde5972e8e5a70f":[20,0,70,0],
 "structkiss__fft__cpx.html":[20,0,77],
 "structkiss__fft__cpx.html#a686b6187e3e885de316908319c71ea8f":[20,0,77,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "structstate.html#af025aa9e47a1c241a760a0112ecf3af3":[20,0,107,5],
 "structstring__vec.html":[20,0,108],
 "structstring__vec.html#adaea9b844e2848a33492f28b82d4f802":[20,0,108,2],
-"structstring__vec.html#ae09c7cd04a58b2cfadd575ef1f789a9d":[20,0,108,1],
-"structstring__vec.html#aec09d69eba5353ab27801d2f72089d86":[20,0,108,0]
+"structstring__vec.html#ae09c7cd04a58b2cfadd575ef1f789a9d":[20,0,108,1]
 };

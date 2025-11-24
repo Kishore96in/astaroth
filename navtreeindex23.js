@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"structstring__vec.html#aec09d69eba5353ab27801d2f72089d86":[20,0,108,0],
 "structstructs__info.html":[20,0,109],
 "structstructs__info.html#a7f6d1bbd36fb6b55a274cda8ed79941e":[20,0,109,0],
 "structstructs__info.html#ac1d06d51c7c7dc4920ce669e0cc9b918":[20,0,109,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa93f0244fd13e0964a9825a40476f94ba":[21,0,2,2,3,16,13],
 "typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa9403c167a11625a0c482d30a3475eeca":[21,0,2,2,3,16,4],
 "typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa94718c4c97fef3e5e7dedb276fc89729":[21,0,2,2,3,16,6],
-"typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa9ea66cd994cf5d3e0993af4dc6799537":[21,0,2,2,3,16,34],
-"typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa9fcc3201b139b32c37ec6e6e03290b47":[21,0,2,2,3,16,7]
+"typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa9ea66cd994cf5d3e0993af4dc6799537":[21,0,2,2,3,16,34]
 };

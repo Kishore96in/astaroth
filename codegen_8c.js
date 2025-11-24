@@ -107,6 +107,7 @@ var codegen_8c =
     [ "do_not_rename", "codegen_8c.html#a53948420e80a6dc7d803653718e9fc50", null ],
     [ "eliminate_conditionals", "codegen_8c.html#a90ffae4d28036dd78e6691cca9f46148", null ],
     [ "eliminate_conditionals_base", "codegen_8c.html#ab3ebbddad78910e787de00b609efb813", null ],
+    [ "empty_non_optimized_kernels", "codegen_8c.html#aa4c78c8f31b93c836bce686b27f975fc", null ],
     [ "eval_ands", "codegen_8c.html#aad5eb3edd24b5ec5617ea64bb8cbfea9", null ],
     [ "eval_comparisons", "codegen_8c.html#a93fc5861aaf256331f15e8dff4d790e7", null ],
     [ "eval_conditionals", "codegen_8c.html#a4b65cec66ffa8daee670b7febd5d0f87", null ],
