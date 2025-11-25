@@ -209,6 +209,12 @@ Functions</h2></td></tr>
 <tr class="separator:a43fd1aed639d9849d4c0464a14c1ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e842d92bbd620a358eb24072076e3b" id="r_ae6e842d92bbd620a358eb24072076e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#ae6e842d92bbd620a358eb24072076e3b">gen_raytracing_sliding_loops</a> (const int curr_kernel)</td></tr>
 <tr class="separator:ae6e842d92bbd620a358eb24072076e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fb8b00d4591032df6db8ca45f779a7" id="r_af2fb8b00d4591032df6db8ca45f779a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#af2fb8b00d4591032df6db8ca45f779a7">gen_warp_id</a> ()</td></tr>
+<tr class="separator:af2fb8b00d4591032df6db8ca45f779a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f3341bde5e71f7b516af3f2778ec7e" id="r_aa4f3341bde5e71f7b516af3f2778ec7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#aa4f3341bde5e71f7b516af3f2778ec7e">gen_lane_id</a> ()</td></tr>
+<tr class="separator:aa4f3341bde5e71f7b516af3f2778ec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4474221d162701a725928d4968d92141" id="r_a4474221d162701a725928d4968d92141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a4474221d162701a725928d4968d92141">gen_warp_out_index</a> ()</td></tr>
+<tr class="separator:a4474221d162701a725928d4968d92141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d52efba621fc13a5bcc2cba7756e7b" id="r_a37d52efba621fc13a5bcc2cba7756e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a37d52efba621fc13a5bcc2cba7756e7b">gen_kernel_block_loops</a> (const int curr_kernel)</td></tr>
 <tr class="separator:a37d52efba621fc13a5bcc2cba7756e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ed16e2f6590d50c9e6860d319b1eff" id="r_a25ed16e2f6590d50c9e6860d319b1eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a25ed16e2f6590d50c9e6860d319b1eff">gen_kernel_common_prefix</a> ()</td></tr>
@@ -783,6 +789,23 @@ CS view:
 
 </div>
 </div>
+<a id="aa4f3341bde5e71f7b516af3f2778ec7e" name="aa4f3341bde5e71f7b516af3f2778ec7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f3341bde5e71f7b516af3f2778ec7e">&#9670;&#160;</a></span>gen_lane_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_lane_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae7625c5024a927196828dbbd6421144f" name="ae7625c5024a927196828dbbd6421144f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7625c5024a927196828dbbd6421144f">&#9670;&#160;</a></span>gen_profile_funcs()</h2>
 
@@ -885,6 +908,40 @@ CS view:
           <td class="memname">void gen_stencil_definitions </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2fb8b00d4591032df6db8ca45f779a7" name="af2fb8b00d4591032df6db8ca45f779a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fb8b00d4591032df6db8ca45f779a7">&#9670;&#160;</a></span>gen_warp_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_warp_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4474221d162701a725928d4968d92141" name="a4474221d162701a725928d4968d92141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4474221d162701a725928d4968d92141">&#9670;&#160;</a></span>gen_warp_out_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_warp_out_index </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
