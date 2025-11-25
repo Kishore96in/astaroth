@@ -44,7 +44,7 @@ var acc__runtime_8cu =
     [ "acGetRealScratchpadSize", "acc__runtime_8cu.html#a5db6ebddb3447b11be2c0b0ca7839747", null ],
     [ "acKernelLaunchGetLastTPB", "acc__runtime_8cu.html#a4bfef942621753f6046122510328bbd1", null ],
     [ "acLaunchKernel", "acc__runtime_8cu.html#af3491b9ac664c04c396dafd55a49fbf8", null ],
-    [ "acLaunchKernelBase", "acc__runtime_8cu.html#a5aca3614c448a7553ae713a0c6bb3561", null ],
+    [ "acLaunchKernelBase", "acc__runtime_8cu.html#af3fa28437ed9f01064dfb8abcfec8339", null ],
     [ "acLaunchKernelCommon", "acc__runtime_8cu.html#a26527996809366c7f47d20fd7d84d177", null ],
     [ "acLaunchKernelWithTPB", "acc__runtime_8cu.html#ad4b6d48df7eec8afb094c9cfa066ccd0", null ],
     [ "acLoadIntReduceRes", "acc__runtime_8cu.html#adb76139e81584fdf93eee336ccfc650f", null ],
