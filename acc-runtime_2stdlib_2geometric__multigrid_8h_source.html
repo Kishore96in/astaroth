@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>hostdefine AC_GMG_ENABLED (1)</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_0 = <a class="code hl_variable" href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_1 = ((AC_nlocal_gmg_level_0+1)/2)-1</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_2 = ((AC_nlocal_gmg_level_1+1)/2)-1</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_3 = ((AC_nlocal_gmg_level_2+1)/2)-1</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_4 = ((AC_nlocal_gmg_level_3+1)/2)-1</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_1 = AC_nlocal_gmg_level_0/2</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_2 = AC_nlocal_gmg_level_1/2</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_3 = AC_nlocal_gmg_level_2/2</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_struct" href="structint3.html">int3</a> AC_nlocal_gmg_level_4 = AC_nlocal_gmg_level_3/2</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="code hl_struct" href="structint3.html">int3</a> AC_mlocal_gmg_level_0 = AC_nlocal_gmg_level_0 + 2*NGHOST</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><a class="code hl_struct" href="structint3.html">int3</a> AC_mlocal_gmg_level_1 = AC_nlocal_gmg_level_1 + 2*NGHOST</div>
