@@ -49,7 +49,7 @@ var searchData=
   ['check_5fglobal_5farray_5fdimensions_46',['check_global_array_dimensions',['../codegen_8c.html#a568adf8d8e3f996d2aef79e466d58c8d',1,'codegen.c']]],
   ['check_5fnull_47',['CHECK_NULL',['../tinyexpr_8c.html#a46c928e351562d938ce6532dd69582c4',1,'tinyexpr.c']]],
   ['check_5foverflow_5fop_48',['CHECK_OVERFLOW_OP',['../__kiss__fft__guts_8h.html#a664c056b2a7093f88391d7db3558aa24',1,'_kiss_fft_guts.h']]],
-  ['check_5frocfft_5fstatus_49',['check_rocfft_status',['../rocfft_8cc.html#abdddfa443331c3bc31e3c14d535f03d7',1,'rocfft.cc']]],
+  ['check_5frocfft_5fstatus_49',['check_rocfft_status',['../rocfft_8cc.html#a4be724aa613834884349799aa00cd8d8',1,'rocfft.cc']]],
   ['check_5fstatus_50',['check_status',['../codegen_8c.html#a57602150a79f816ee7339396c23d5636',1,'codegen.c']]],
   ['check_5fsymbol_51',['check_symbol',['../codegen_8c.html#a6d0b80534bdccda278fe62ea8069d348',1,'codegen.c']]],
   ['check_5fsymbol_5findex_52',['check_symbol_index',['../codegen_8c.html#a816a08e3f04644f78a604e33df6d3b3b',1,'codegen.c']]],

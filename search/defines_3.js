@@ -9,7 +9,7 @@ var searchData=
   ['c_5fsubfrom_6',['C_SUBFROM',['../__kiss__fft__guts_8h.html#aa3f448e1963492dfc145fc391cbedd27',1,'_kiss_fft_guts.h']]],
   ['check_5fnull_7',['CHECK_NULL',['../tinyexpr_8c.html#a46c928e351562d938ce6532dd69582c4',1,'tinyexpr.c']]],
   ['check_5foverflow_5fop_8',['CHECK_OVERFLOW_OP',['../__kiss__fft__guts_8h.html#a664c056b2a7093f88391d7db3558aa24',1,'_kiss_fft_guts.h']]],
-  ['check_5frocfft_5fstatus_9',['check_rocfft_status',['../rocfft_8cc.html#abdddfa443331c3bc31e3c14d535f03d7',1,'rocfft.cc']]],
+  ['check_5frocfft_5fstatus_9',['check_rocfft_status',['../rocfft_8cc.html#a4be724aa613834884349799aa00cd8d8',1,'rocfft.cc']]],
   ['chi_10',['chi',['../samples_2conv-slab_2PC__modulepardecs_8h.html#a92286de75fdd3d75889360b4e91a5d1a',1,'chi:&#160;PC_modulepardecs.h'],['../samples_2test_2PC__modulepardecs_8h.html#a92286de75fdd3d75889360b4e91a5d1a',1,'chi:&#160;PC_modulepardecs.h']]],
   ['colorize_11',['COLORIZE',['../acc__runtime_8cu.html#ae00d3b0b281b9f53aed9b776a9b4e2b4',1,'acc_runtime.cu']]],
   ['complex_5fdefined_12',['complex_defined',['../acc-runtime_2api_2datatypes_8h.html#a1851ad014f38dea6872af4197d919431',1,'COMPLEX_DEFINED:&#160;datatypes.h'],['../host__datatypes_8h.html#a1851ad014f38dea6872af4197d919431',1,'COMPLEX_DEFINED:&#160;host_datatypes.h']]],

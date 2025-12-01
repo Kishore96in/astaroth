@@ -236,7 +236,7 @@ var searchData=
   ['get_5freduce_5ftype_233',['get_reduce_type',['../codegen_8c.html#a6cbdd37a30929f40dc39bacf43049d71',1,'codegen.c']]],
   ['get_5freturn_5fnode_234',['get_return_node',['../codegen_8c.html#a5aa3e06440e90f2e0a20f7a4ba9b57f9',1,'codegen.c']]],
   ['get_5frng_235',['get_rng',['../astaroth__random_8h.html#ae96433a5a2da84eff2e2402ad609b92b',1,'get_rng():&#160;astaroth_random.cc'],['../astaroth__random_8cc.html#ae96433a5a2da84eff2e2402ad609b92b',1,'get_rng():&#160;astaroth_random.cc']]],
-  ['get_5frocfft_5ffield_236',['get_rocfft_field',['../rocfft_8cc.html#a17094ddfeaa6e1b86daef2b895c33845',1,'rocfft.cc']]],
+  ['get_5frocfft_5ffield_236',['get_rocfft_field',['../rocfft_8cc.html#a607d0ca4436f031fd7688992fc72044b',1,'rocfft.cc']]],
   ['get_5fsize_237',['get_size',['../namespaceac_1_1mpi.html#ad4b652339a35006516234d82903ea3f8',1,'ac::mpi']]],
   ['get_5fsmem_238',['get_smem',['../acc__runtime_8cu.html#a0111b3813ecf8f66cbe9e1c3e5d478d3',1,'acc_runtime.cu']]],
   ['get_5fstencil_5fboundaries_239',['get_stencil_boundaries',['../astaroth__analysis__helpers_8h.html#ab8307bd9712c7fc91ec1db53533a0404',1,'astaroth_analysis_helpers.h']]],
