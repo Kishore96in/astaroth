@@ -7,5 +7,6 @@ var nofft_8cc =
     [ "acFFTForwardTransformPlanar", "nofft_8cc.html#acad1e4ae582c898e53dee70f675a2271", null ],
     [ "acFFTForwardTransformR2C", "nofft_8cc.html#abb2b9d1dd3190c72c40735210234b159", null ],
     [ "acFFTForwardTransformR2Planar", "nofft_8cc.html#aa43ffc9e078a843e3ea0e695043c77f3", null ],
-    [ "acFFTForwardTransformSymmetricR2C", "nofft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ]
+    [ "acFFTForwardTransformSymmetricR2C", "nofft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ],
+    [ "acFFTInit", "nofft_8cc.html#a97681548ba06e615fd819e4a768b0d18", null ]
 ];

@@ -142,6 +142,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a3a9619b5056d27652cf219935bd049e9" id="r_a3a9619b5056d27652cf219935bd049e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a> (rocfft_status status)</td></tr>
 <tr class="separator:a3a9619b5056d27652cf219935bd049e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17094ddfeaa6e1b86daef2b895c33845" id="r_a17094ddfeaa6e1b86daef2b895c33845"><td class="memItemLeft" align="right" valign="top">rocfft_field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a17094ddfeaa6e1b86daef2b895c33845">get_rocfft_field</a> (const <a class="el" href="structVolume.html">Volume</a> domain_size)</td></tr>
+<tr class="separator:a17094ddfeaa6e1b86daef2b895c33845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c" id="r_ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#ac10a65714e4702c8c46a49cb0cb1fa8c">hash_combine</a> (std::size_t &amp;seed, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>)</td></tr>
 <tr class="separator:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +167,8 @@ Functions</h2></td></tr>
 <tr class="separator:a926deef438c416201730ba57523824aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92e994bfdfcec5b62ed9f44cbfd1125" id="r_aa92e994bfdfcec5b62ed9f44cbfd1125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#aa92e994bfdfcec5b62ed9f44cbfd1125">acFFTBackwardTransformPlanar2R</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *real_src, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *imag_src, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *dst)</td></tr>
 <tr class="separator:aa92e994bfdfcec5b62ed9f44cbfd1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97681548ba06e615fd819e4a768b0d18" id="r_a97681548ba06e615fd819e4a768b0d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a97681548ba06e615fd819e4a768b0d18">acFFTInit</a> ()</td></tr>
+<tr class="separator:a97681548ba06e615fd819e4a768b0d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -712,6 +716,42 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97681548ba06e615fd819e4a768b0d18" name="a97681548ba06e615fd819e4a768b0d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97681548ba06e615fd819e4a768b0d18">&#9670;&#160;</a></span>acFFTInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acFFTInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17094ddfeaa6e1b86daef2b895c33845" name="a17094ddfeaa6e1b86daef2b895c33845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17094ddfeaa6e1b86daef2b895c33845">&#9670;&#160;</a></span>get_rocfft_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rocfft_field get_rocfft_field </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>domain_size</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
