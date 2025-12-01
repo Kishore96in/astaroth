@@ -4,6 +4,7 @@ var hierarchy =
     [ "acAnalysisBCInfo", "structacAnalysisBCInfo.html", null ],
     [ "AcAutotuneMeasurement", "structAcAutotuneMeasurement.html", null ],
     [ "AcBuffer", "structAcBuffer.html", null ],
+    [ "AcCommunicator", "structAcCommunicator.html", null ],
     [ "AcCompInfo", "structAcCompInfo.html", null ],
     [ "AcCompInfoConfig", "structAcCompInfoConfig.html", null ],
     [ "AcCompInfoHasDefaultValue", "structAcCompInfoHasDefaultValue.html", null ],

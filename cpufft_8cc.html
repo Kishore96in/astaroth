@@ -134,8 +134,8 @@ Functions</h2></td></tr>
 <tr class="separator:a926deef438c416201730ba57523824aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92e994bfdfcec5b62ed9f44cbfd1125" id="r_aa92e994bfdfcec5b62ed9f44cbfd1125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpufft_8cc.html#aa92e994bfdfcec5b62ed9f44cbfd1125">acFFTBackwardTransformPlanar2R</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *real_src, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *imag_src, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *dst)</td></tr>
 <tr class="separator:aa92e994bfdfcec5b62ed9f44cbfd1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97681548ba06e615fd819e4a768b0d18" id="r_a97681548ba06e615fd819e4a768b0d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpufft_8cc.html#a97681548ba06e615fd819e4a768b0d18">acFFTInit</a> ()</td></tr>
-<tr class="separator:a97681548ba06e615fd819e4a768b0d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230cf6f596266b47aa5351443e72cbfb" id="r_a230cf6f596266b47aa5351443e72cbfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpufft_8cc.html#a230cf6f596266b47aa5351443e72cbfb">acFFTInit</a> (const <a class="el" href="structAcCommunicator.html">AcCommunicator</a> *, const int *)</td></tr>
+<tr class="separator:a230cf6f596266b47aa5351443e72cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5533a4e4ab7dc6cf5230063f6643fe33" name="a5533a4e4ab7dc6cf5230063f6643fe33"></a>
@@ -634,8 +634,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a97681548ba06e615fd819e4a768b0d18" name="a97681548ba06e615fd819e4a768b0d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97681548ba06e615fd819e4a768b0d18">&#9670;&#160;</a></span>acFFTInit()</h2>
+<a id="a230cf6f596266b47aa5351443e72cbfb" name="a230cf6f596266b47aa5351443e72cbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230cf6f596266b47aa5351443e72cbfb">&#9670;&#160;</a></span>acFFTInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,9 +643,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acFFTInit </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structAcCommunicator.html">AcCommunicator</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>global_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

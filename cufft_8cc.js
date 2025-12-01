@@ -13,6 +13,6 @@ var cufft_8cc =
     [ "acFFTForwardTransformR2C", "cufft_8cc.html#a4a2c38a3c895e671102a9af8712e208f", null ],
     [ "acFFTForwardTransformR2Planar", "cufft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "cufft_8cc.html#a60ac7badd6a8e10bd158609f3af30614", null ],
-    [ "acFFTInit", "cufft_8cc.html#a97681548ba06e615fd819e4a768b0d18", null ],
+    [ "acFFTInit", "cufft_8cc.html#a230cf6f596266b47aa5351443e72cbfb", null ],
     [ "acFFTTransformC2C", "cufft_8cc.html#a549caa8bfd789addd51cc565279c1ade", null ]
 ];
