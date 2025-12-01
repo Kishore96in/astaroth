@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"stencilgen_8c.html#ab40314f722f618913ce8af1992cbfa88ac4978dfeda8fcc48a84988716f21fbef":[21,0,2,0,14,7,7],
+"stencilgen_8c.html#ab40314f722f618913ce8af1992cbfa88aee8a0882d65eb4975d96e824b9dde33d":[21,0,2,0,14,7,0],
 "stencilgen_8c.html#abb2683da9f0cd0372efcd4ea0243f3e1":[21,0,2,0,14,9],
 "stencilgen_8c.html#ac0936afc55e496b4835d9a141bb31ac0":[21,0,2,0,14,59],
 "stencilgen_8c.html#ac2b00e3633ccc1a0e7b9106a928a54df":[21,0,2,0,14,47],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "structHaloMessageSwapChain.html#aee5dc51abda8d85e5f5bdb3fb9f615da":[20,0,64,5],
 "structInt3Hash.html":[20,0,69],
 "structInt3Hash.html#a2872c50a011ae87c3b0c7057ea915d2d":[20,0,69,0],
-"structKernelAnalysisInfo.html":[20,0,71],
-"structKernelAnalysisInfo.html#a2bc20690403e6324f4272cfa222afb4a":[20,0,71,10],
-"structKernelAnalysisInfo.html#a45d0b96abee16af67bb6ffc5ba12b41d":[20,0,71,4]
+"structKernelAnalysisInfo.html":[20,0,71]
 };

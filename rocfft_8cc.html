@@ -130,6 +130,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a4dd3485c2ad80497a38703c3c05b37bd" id="r_a4dd3485c2ad80497a38703c3c05b37bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a4dd3485c2ad80497a38703c3c05b37bd">AC_FFT_PRECISION</a>&#160;&#160;&#160;rocfft_precision_single</td></tr>
 <tr class="separator:a4dd3485c2ad80497a38703c3c05b37bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdddfa443331c3bc31e3c14d535f03d7" id="r_abdddfa443331c3bc31e3c14d535f03d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#abdddfa443331c3bc31e3c14d535f03d7">check_rocfft_status</a>(status)&#160;&#160;&#160;{<a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(status); <a class="el" href="acc-runtime_2api_2errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(status == rocfft_status_success); }</td></tr>
+<tr class="separator:abdddfa443331c3bc31e3c14d535f03d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -138,6 +140,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3a9619b5056d27652cf219935bd049e9" id="r_a3a9619b5056d27652cf219935bd049e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a> (rocfft_status status)</td></tr>
+<tr class="separator:a3a9619b5056d27652cf219935bd049e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c" id="r_ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#ac10a65714e4702c8c46a49cb0cb1fa8c">hash_combine</a> (std::size_t &amp;seed, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>)</td></tr>
 <tr class="separator:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +182,24 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define AC_FFT_PRECISION&#160;&#160;&#160;rocfft_precision_single</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdddfa443331c3bc31e3c14d535f03d7" name="abdddfa443331c3bc31e3c14d535f03d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdddfa443331c3bc31e3c14d535f03d7">&#9670;&#160;</a></span>check_rocfft_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define check_rocfft_status</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">status</td><td>)</td>
+          <td>&#160;&#160;&#160;{<a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(status); <a class="el" href="acc-runtime_2api_2errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(status == rocfft_status_success); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -720,6 +742,24 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a9619b5056d27652cf219935bd049e9" name="a3a9619b5056d27652cf219935bd049e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9619b5056d27652cf219935bd049e9">&#9670;&#160;</a></span>print_rocfft_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_rocfft_error </td>
+          <td>(</td>
+          <td class="paramtype">rocfft_status&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

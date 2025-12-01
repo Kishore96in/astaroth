@@ -4,6 +4,7 @@ var rocfft_8cc =
     [ "KeyHash", "structKeyHash.html", "structKeyHash" ],
     [ "KeyEqual", "structKeyEqual.html", "structKeyEqual" ],
     [ "AC_FFT_PRECISION", "rocfft_8cc.html#a4dd3485c2ad80497a38703c3c05b37bd", null ],
+    [ "check_rocfft_status", "rocfft_8cc.html#abdddfa443331c3bc31e3c14d535f03d7", null ],
     [ "KeyType", "rocfft_8cc.html#a5444bd5aee82aa5e9c70f9d6cb73572b", null ],
     [ "acFFTBackwardTransformC2C", "rocfft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33", null ],
     [ "acFFTBackwardTransformC2R", "rocfft_8cc.html#abf0ae99bfae26402473c4e9bd6404b86", null ],
@@ -16,6 +17,7 @@ var rocfft_8cc =
     [ "acFFTForwardTransformR2Planar", "rocfft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "rocfft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ],
     [ "hash_combine", "rocfft_8cc.html#ac10a65714e4702c8c46a49cb0cb1fa8c", null ],
+    [ "print_rocfft_error", "rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9", null ],
     [ "data_layouts", "rocfft_8cc.html#a33aad6469f85a23bfc62fa7a91bb1783", null ],
     [ "tmp_buffers", "rocfft_8cc.html#ab9cc93ae72dba31729719484e53b3c27", null ]
 ];
