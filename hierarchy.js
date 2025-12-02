@@ -10,6 +10,7 @@ var hierarchy =
     [ "AcCompInfoHasDefaultValue", "structAcCompInfoHasDefaultValue.html", null ],
     [ "AcCompInfoLoaded", "structAcCompInfoLoaded.html", null ],
     [ "AcComplex", "structAcComplex.html", null ],
+    [ "AcComplexInAndOut", "structAcComplexInAndOut.html", null ],
     [ "AcDecompositionInfo", "structAcDecompositionInfo.html", null ],
     [ "AcDeviceKernelOutput", "structAcDeviceKernelOutput.html", null ],
     [ "AcDeviceTmpBuffer", "structAcDeviceTmpBuffer.html", null ],

@@ -41,6 +41,7 @@ var annotated_dup =
     [ "AcCompInfoHasDefaultValue", "structAcCompInfoHasDefaultValue.html", null ],
     [ "AcCompInfoLoaded", "structAcCompInfoLoaded.html", null ],
     [ "AcComplex", "structAcComplex.html", "structAcComplex" ],
+    [ "AcComplexInAndOut", "structAcComplexInAndOut.html", "structAcComplexInAndOut" ],
     [ "AcDecompositionInfo", "structAcDecompositionInfo.html", "structAcDecompositionInfo" ],
     [ "AcDeviceKernelOutput", "structAcDeviceKernelOutput.html", null ],
     [ "AcDeviceTmpBuffer", "structAcDeviceTmpBuffer.html", "structAcDeviceTmpBuffer" ],
