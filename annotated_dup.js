@@ -35,7 +35,7 @@ var annotated_dup =
     [ "acAnalysisBCInfo", "structacAnalysisBCInfo.html", "structacAnalysisBCInfo" ],
     [ "AcAutotuneMeasurement", "structAcAutotuneMeasurement.html", "structAcAutotuneMeasurement" ],
     [ "AcBuffer", "structAcBuffer.html", "structAcBuffer" ],
-    [ "AcCommunicator", "structAcCommunicator.html", null ],
+    [ "AcCommunicator", "structAcCommunicator.html", "structAcCommunicator" ],
     [ "AcCompInfo", "structAcCompInfo.html", "structAcCompInfo" ],
     [ "AcCompInfoConfig", "structAcCompInfoConfig.html", null ],
     [ "AcCompInfoHasDefaultValue", "structAcCompInfoHasDefaultValue.html", null ],
