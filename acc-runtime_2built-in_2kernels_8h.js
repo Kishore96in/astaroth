@@ -13,6 +13,7 @@ var acc_runtime_2built_in_2kernels_8h =
     [ "AC_PLANAR_TO_COMPLEX", "acc-runtime_2built-in_2kernels_8h.html#ad7eef89aa8afdac0bb93a39bae632ab5", null ],
     [ "AC_REAL_TO_COMPLEX", "acc-runtime_2built-in_2kernels_8h.html#aa27f9960d3e50c902a5a0857878e7942", null ],
     [ "AC_VOLUME_COPY", "acc-runtime_2built-in_2kernels_8h.html#a87a3365a60373dab121579211fba9b00", null ],
+    [ "AC_VOLUME_COPY_COMPLEX", "acc-runtime_2built-in_2kernels_8h.html#ac0a1153d589582d70e536fb225dcd9d6", null ],
     [ "BOUNDCOND_PERIODIC", "acc-runtime_2built-in_2kernels_8h.html#a30006e056b1a6abc2cc2bfca46b1a690", null ],
     [ "BOUNDCOND_PERIODIC_DEVICE", "acc-runtime_2built-in_2kernels_8h.html#a0ea1d682291942c5823d364bd374d83e", null ]
 ];

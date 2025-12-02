@@ -110,6 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0ea1d682291942c5823d364bd374d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a3365a60373dab121579211fba9b00" id="r_a87a3365a60373dab121579211fba9b00"><td class="memItemLeft" align="right" valign="top">utility <a class="el" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2built-in_2kernels_8h.html#a87a3365a60373dab121579211fba9b00">AC_VOLUME_COPY</a> (const real[] src, <a class="el" href="structVolume.html">Volume</a> in_offset, <a class="el" href="structVolume.html">Volume</a> in_volume, real[] out, <a class="el" href="structVolume.html">Volume</a> out_offset, <a class="el" href="structVolume.html">Volume</a> out_volume)</td></tr>
 <tr class="separator:a87a3365a60373dab121579211fba9b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a1153d589582d70e536fb225dcd9d6" id="r_ac0a1153d589582d70e536fb225dcd9d6"><td class="memItemLeft" align="right" valign="top">utility <a class="el" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2built-in_2kernels_8h.html#ac0a1153d589582d70e536fb225dcd9d6">AC_VOLUME_COPY_COMPLEX</a> (const <a class="el" href="structcomplex.html">complex</a>[] src, <a class="el" href="structVolume.html">Volume</a> in_offset, <a class="el" href="structVolume.html">Volume</a> in_volume, <a class="el" href="structcomplex.html">complex</a>[] out, <a class="el" href="structVolume.html">Volume</a> out_offset, <a class="el" href="structVolume.html">Volume</a> out_volume)</td></tr>
+<tr class="separator:ac0a1153d589582d70e536fb225dcd9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c81ba411d403d8dc93e438370b9749e" id="r_a1c81ba411d403d8dc93e438370b9749e"><td class="memItemLeft" align="right" valign="top">utility <a class="el" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2built-in_2kernels_8h.html#a1c81ba411d403d8dc93e438370b9749e">AC_FLUSH_REAL</a> (real[] dst, real val)</td></tr>
 <tr class="separator:a1c81ba411d403d8dc93e438370b9749e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd107e9bd7f664bc8e749107e7e7b9a4" id="r_acd107e9bd7f664bc8e749107e7e7b9a4"><td class="memItemLeft" align="right" valign="top">utility <a class="el" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2built-in_2kernels_8h.html#acd107e9bd7f664bc8e749107e7e7b9a4">AC_FLUSH_FLOAT</a> (float[] dst, float val)</td></tr>
@@ -486,6 +488,58 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real[]&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>out_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>out_volume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0a1153d589582d70e536fb225dcd9d6" name="ac0a1153d589582d70e536fb225dcd9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a1153d589582d70e536fb225dcd9d6">&#9670;&#160;</a></span>AC_VOLUME_COPY_COMPLEX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">utility <a class="el" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> AC_VOLUME_COPY_COMPLEX </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex.html">complex</a>[]&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>in_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>in_volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a>[]&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>

@@ -14,7 +14,6 @@ var src_2core_2kernels_2kernels_8h =
     [ "acKernelsClean", "src_2core_2kernels_2kernels_8h.html#a33ea05b8ab6d864ba8166952e23517e4", null ],
     [ "acKernelShearUnpackData", "src_2core_2kernels_2kernels_8h.html#a892978f52f6fc57c140ce82f696962fb", null ],
     [ "acKernelUnpackData", "src_2core_2kernels_2kernels_8h.html#a3c6cb6c88223f7888961d61a220d8783", null ],
-    [ "acKernelVolumeCopy", "src_2core_2kernels_2kernels_8h.html#a633e1251da123722c96a21f54269f72c", null ],
     [ "acReduceClean", "src_2core_2kernels_2kernels_8h.html#ae2597b7ff038a9185da174774f045e5b", null ],
     [ "acReduceInt", "src_2core_2kernels_2kernels_8h.html#a3eb7e1a23a79ff2ce47bb7b630edd958", null ],
     [ "acReduceProfile", "src_2core_2kernels_2kernels_8h.html#a0434e387f38177be4ca6b2c1fac1e5cd", null ],
