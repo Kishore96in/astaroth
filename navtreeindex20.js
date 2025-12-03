@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"stencilgen_8c.html#a43fd1aed639d9849d4c0464a14c1ad55":[21,0,2,0,14,31],
+"stencilgen_8c.html#a4474221d162701a725928d4968d92141":[21,0,2,0,14,35],
+"stencilgen_8c.html#a6063f613e59372acc5d82d803b4596e6":[21,0,2,0,14,16],
+"stencilgen_8c.html#a60dfb829da47a58eaed924fdbffd9122":[21,0,2,0,14,60],
+"stencilgen_8c.html#a65df2da2b79ad39d57c41934c73e0bdd":[21,0,2,0,14,45],
+"stencilgen_8c.html#a68215e27fed8e96d1659b2cba947f84d":[21,0,2,0,14,51],
 "stencilgen_8c.html#a6939ad2a45a0946f0edc6e26a435e287":[21,0,2,0,14,38],
 "stencilgen_8c.html#a6e3913980459a4395199ec24d54337d7":[21,0,2,0,14,36],
 "stencilgen_8c.html#a7586f4047e4b43c4e8ffbed9097956d9":[21,0,2,0,14,26],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "structForcingParams.html#a25cd3b1615e3a162f47f01a1ec8acba8":[20,0,57,0],
 "structForcingParams.html#a38aadee66912b36aea8429fe88172c08":[20,0,57,1],
 "structForcingParams.html#abbe9fa0f6bf03fdd0c080dd2c571c1a6":[20,0,57,5],
-"structForcingParams.html#afaa8e7f287ab0d18abad9bc556230cfc":[20,0,57,2],
-"structGpuVtxBufHandles.html":[20,0,62],
-"structGpuVtxBufHandles.html#a4cc0e23506b13d5f816a55e902b8e629":[20,0,62,0],
-"structGridDims.html":[20,0,63],
-"structGridDims.html#a21efdd6e712ca67005f17d514901cbc6":[20,0,63,0],
-"structGridDims.html#a820d9d37fa8dd5c12642f484c06000db":[20,0,63,1],
-"structHaloMessage.html":[20,0,65]
+"structForcingParams.html#afaa8e7f287ab0d18abad9bc556230cfc":[20,0,57,2]
 };

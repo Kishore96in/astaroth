@@ -8,5 +8,6 @@ var ac__fft_8h =
     [ "acFFTForwardTransformR2C", "ac__fft_8h.html#a4a2c38a3c895e671102a9af8712e208f", null ],
     [ "acFFTForwardTransformR2Planar", "ac__fft_8h.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "ac__fft_8h.html#a60ac7badd6a8e10bd158609f3af30614", null ],
-    [ "acFFTInit", "ac__fft_8h.html#a19f0bfeb129911fbc1090727f011a98e", null ]
+    [ "acFFTInit", "ac__fft_8h.html#a19f0bfeb129911fbc1090727f011a98e", null ],
+    [ "acFFTQuit", "ac__fft_8h.html#abd575c60198344f9c50fd0df51fe2392", null ]
 ];

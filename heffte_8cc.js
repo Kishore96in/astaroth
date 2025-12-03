@@ -13,5 +13,6 @@ var heffte_8cc =
     [ "acFFTForwardTransformR2Planar", "heffte_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "heffte_8cc.html#a60ac7badd6a8e10bd158609f3af30614", null ],
     [ "acFFTInit", "heffte_8cc.html#a673332a536d85c3450c8c7ed9b799102", null ],
+    [ "acFFTQuit", "heffte_8cc.html#abd575c60198344f9c50fd0df51fe2392", null ],
     [ "acFFTTransformC2C", "heffte_8cc.html#a549caa8bfd789addd51cc565279c1ade", null ]
 ];

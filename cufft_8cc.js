@@ -14,5 +14,6 @@ var cufft_8cc =
     [ "acFFTForwardTransformR2Planar", "cufft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "cufft_8cc.html#a60ac7badd6a8e10bd158609f3af30614", null ],
     [ "acFFTInit", "cufft_8cc.html#a230cf6f596266b47aa5351443e72cbfb", null ],
+    [ "acFFTQuit", "cufft_8cc.html#abd575c60198344f9c50fd0df51fe2392", null ],
     [ "acFFTTransformC2C", "cufft_8cc.html#a549caa8bfd789addd51cc565279c1ade", null ]
 ];

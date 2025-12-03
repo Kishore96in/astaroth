@@ -10,5 +10,6 @@ var cpufft_8cc =
     [ "acFFTForwardTransformR2C", "cpufft_8cc.html#a4a2c38a3c895e671102a9af8712e208f", null ],
     [ "acFFTForwardTransformR2Planar", "cpufft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformSymmetricR2C", "cpufft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ],
-    [ "acFFTInit", "cpufft_8cc.html#a230cf6f596266b47aa5351443e72cbfb", null ]
+    [ "acFFTInit", "cpufft_8cc.html#a230cf6f596266b47aa5351443e72cbfb", null ],
+    [ "acFFTQuit", "cpufft_8cc.html#abd575c60198344f9c50fd0df51fe2392", null ]
 ];
