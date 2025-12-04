@@ -79,6 +79,7 @@ var hierarchy =
     [ "hashmap_element_s", "structhashmap__element__s.html", null ],
     [ "hashmap_s", "structhashmap__s.html", null ],
     [ "ac::mr::host_allocator", "structac_1_1mr_1_1host__allocator.html", null ],
+    [ "in_and_out_indexes", "structin__and__out__indexes.html", null ],
     [ "int3", "structint3.html", null ],
     [ "Int3Hash", "structInt3Hash.html", null ],
     [ "int_vec", "structint__vec.html", null ],

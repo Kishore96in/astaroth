@@ -1,5 +1,6 @@
 var typedefs_8h =
 [
+    [ "in_and_out_indexes", "structin__and__out__indexes.html", "structin__and__out__indexes" ],
     [ "int3", "structint3.html", "structint3" ],
     [ "real2", "structreal2.html", "structreal2" ],
     [ "real3", "structreal3.html", "structreal3" ],

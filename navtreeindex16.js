@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"namespacematplotlibcpp.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[19,0,2,21],
 "namespacematplotlibcpp.html#a4645651772918e2dad7d36d9eeaeaefa":[19,0,2,89],
 "namespacematplotlibcpp.html#a468096a42e46d0a26e8a237ffb24caca":[19,0,2,36],
 "namespacematplotlibcpp.html#a4854fc237468144bd46809ea7ce8f2a0":[19,0,2,2],
@@ -74,8 +75,8 @@ var NAVTREEINDEX16 =
 "namespacematplotlibcpp_1_1detail.html":[19,0,2,0],
 "namespacematplotlibcpp_1_1detail.html#ab78ea1d46cdefdf8037d2a2c0bcfaedb":[19,0,2,0,9],
 "namespacematplotlibcpp_1_1detail.html#ad711caf78c271008983e97009c6d314c":[19,0,2,0,8],
-"namespacemembers.html":[19,1,0,0],
 "namespacemembers.html":[19,1,0],
+"namespacemembers.html":[19,1,0,0],
 "namespacemembers_b.html":[19,1,0,1],
 "namespacemembers_c.html":[19,1,0,2],
 "namespacemembers_d.html":[19,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "packing_8cuh_source.html":[21,0,8,0,3,9],
 "pages.html":[],
 "partition_8cc.html":[21,0,1,0,0,31],
-"partition_8cc.html#a10331c7d60683305a0408b7284f01bc6":[21,0,1,0,0,31,0],
-"partition_8h.html":[21,0,1,0,0,32]
+"partition_8cc.html#a10331c7d60683305a0408b7284f01bc6":[21,0,1,0,0,31,0]
 };

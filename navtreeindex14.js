@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"matplotlibcpp_8h.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[21,0,10,25,0,1,83],
 "matplotlibcpp_8h.html#a0638f54cec7e104c8a2aae0e60bc01f4":[21,0,10,25,0,1,29],
 "matplotlibcpp_8h.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b":[21,0,10,25,0,1,61],
 "matplotlibcpp_8h.html#a107bbc57e93a929c75baf1c60a712d8b":[21,0,10,25,0,1,65],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "memory_8cc.html#a3a91e3991fc635e43804e620369d3681":[21,0,8,1,4,1],
 "memory_8cc.html#a6583343680a3adac59f699c59203febb":[21,0,8,1,4,4],
 "memory_8cc.html#a782ea40b49021cc811d36300fd301741":[21,0,8,1,4,3],
-"memory_8cc.html#a90ea8d5a74a0fced46a8ceb1ad996381":[21,0,8,1,4,0],
-"memory_8cc.html#a9aebdb79a53d9fd1c740f86a5c3cfe90":[21,0,8,1,4,2]
+"memory_8cc.html#a90ea8d5a74a0fced46a8ceb1ad996381":[21,0,8,1,4,0]
 };

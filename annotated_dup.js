@@ -100,6 +100,7 @@ var annotated_dup =
     [ "hashmap_create_options_s", "structhashmap__create__options__s.html", "structhashmap__create__options__s" ],
     [ "hashmap_element_s", "structhashmap__element__s.html", "structhashmap__element__s" ],
     [ "hashmap_s", "structhashmap__s.html", "structhashmap__s" ],
+    [ "in_and_out_indexes", "structin__and__out__indexes.html", "structin__and__out__indexes" ],
     [ "int3", "structint3.html", "structint3" ],
     [ "Int3Hash", "structInt3Hash.html", "structInt3Hash" ],
     [ "int_vec", "structint__vec.html", "structint__vec" ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"heffte_8cc.html#abf0ae99bfae26402473c4e9bd6404b86":[21,0,8,0,3,4,3],
 "helpers_2device_8cc.html":[21,0,8,0,2,1],
 "helpers_2device_8cc.html#a2efdcdea6932a5848ec7953e889a9fd9":[21,0,8,0,2,1,3],
 "helpers_2device_8cc.html#a3f8f539d2593b8026218429c5de3fad0":[21,0,8,0,2,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "math__utils__base_8h_source.html":[21,0,2,1,17],
 "matplotlibcpp_8h.html":[21,0,10,25,0,1],
 "matplotlibcpp_8h.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[21,0,10,25,0,1,37],
-"matplotlibcpp_8h.html#a00a57926330764f8490142b3ce06bd2e":[21,0,10,25,0,1,35],
-"matplotlibcpp_8h.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[21,0,10,25,0,1,83]
+"matplotlibcpp_8h.html#a00a57926330764f8490142b3ce06bd2e":[21,0,10,25,0,1,35]
 };
