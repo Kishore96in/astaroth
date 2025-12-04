@@ -194,7 +194,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa3d647afc858cee909da3f17d6835ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8692c7f802633cb0f769dc39b06efcb" id="r_ad8692c7f802633cb0f769dc39b06efcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc__runtime_8cu.html#ad8692c7f802633cb0f769dc39b06efcb">LOCAL_COMPDOMAIN_IDX</a>(coord)&#160;&#160;&#160;	((coord.x) + (coord.y) * VAL(<a class="el" href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a>).x + (coord.z) * VAL(<a class="el" href="variables_8h.html#a642e5ebefbd96a0eae88a0772230205f">AC_nlocal_products</a>).xy)</td></tr>
 <tr class="separator:ad8692c7f802633cb0f769dc39b06efcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eabd5db583e036746080f1d4f74cc92" id="r_a0eabd5db583e036746080f1d4f74cc92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(...)&#160;&#160;&#160;{<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>(!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__);}</td></tr>
+<tr class="memitem:a0eabd5db583e036746080f1d4f74cc92" id="r_a0eabd5db583e036746080f1d4f74cc92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(...)&#160;&#160;&#160;{<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a> (!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__);}</td></tr>
 <tr class="separator:a0eabd5db583e036746080f1d4f74cc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38715da958262eb3d7b9768e2b85dea9" id="r_a38715da958262eb3d7b9768e2b85dea9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a>(X)&#160;&#160;&#160;(void)X</td></tr>
 <tr class="separator:a38715da958262eb3d7b9768e2b85dea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -842,7 +842,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;{<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a>(!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__);}</td>
+          <td>&#160;&#160;&#160;{<a class="el" href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a> (!DCONST(AC_autotuning_at_work)) printf(__VA_ARGS__);}</td>
         </tr>
       </table>
 </div><div class="memdoc">
