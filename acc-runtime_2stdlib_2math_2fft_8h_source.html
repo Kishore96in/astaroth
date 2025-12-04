@@ -166,53 +166,44 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2math_2fft_8h_sour
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> real k2dt = dt*k2</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> real decay = <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(-diffusion_coeff*k2dt)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        res  = decay*<a class="code hl_struct" href="structcomplex.html">complex</a>(real_src[vertexIdx.x][vertexIdx.y][vertexIdx.z], imag_src[vertexIdx.x][vertexIdx.y][vertexIdx.z])</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">if</span>(vertexIdx == (<a class="code hl_struct" href="structint3.html">int3</a>){8,8,8})</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_define" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(<span class="stringliteral">&quot;Real input: %.14e\n&quot;</span>,real_src[vertexIdx.x][vertexIdx.y][vertexIdx.z])</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_define" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(<span class="stringliteral">&quot;Imag input: %.14e\n&quot;</span>,imag_src[vertexIdx.x][vertexIdx.y][vertexIdx.z])</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_define" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(<span class="stringliteral">&quot;Real res: %.14e\n&quot;</span>,res.x)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_define" href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a>(<span class="stringliteral">&quot;Imag res: %.14e\n&quot;</span>,res.y)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        write(real_dst,res.x)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        write(imag_dst,res.y)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        write(real_dst,res.x)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        write(imag_dst,res.y)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">   67</a></span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a>(<span class="keywordtype">int</span> real_dst, <span class="keywordtype">int</span> imag_dst, <span class="keywordtype">int</span> real_src, <span class="keywordtype">int</span> imag_src, real dt, real diffusion_coeff)</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#af1e0cc2667dad07387198407fa937402">split_diffusion_update</a>(Field(real_dst),Field(imag_dst),Field(real_src),Field(imag_src),dt,diffusion_coeff)</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">   60</a></span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a>(<span class="keywordtype">int</span> real_dst, <span class="keywordtype">int</span> imag_dst, <span class="keywordtype">int</span> real_src, <span class="keywordtype">int</span> imag_src, real dt, real diffusion_coeff)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#af1e0cc2667dad07387198407fa937402">split_diffusion_update</a>(Field(real_dst),Field(imag_dst),Field(real_src),Field(imag_src),dt,diffusion_coeff)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>input <span class="keywordtype">int</span>  AC_FFT_REAL_SRC</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>input <span class="keywordtype">int</span>  AC_FFT_IMAG_SRC</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>input <span class="keywordtype">int</span>  AC_FFT_REAL_DST</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>input <span class="keywordtype">int</span>  AC_FFT_IMAG_DST</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>input real AC_FFT_SPLIT_DIFFUSION_UPDATE_DT</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>input real AC_FFT_SPLIT_DIFFUSION_UPDATE_DIFFUSION_COEFF</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>BoundConds ac_fft_bcs</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    periodic(<a class="code hl_enumvalue" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa93f0244fd13e0964a9825a40476f94ba">BOUNDARY_XYZ</a>)</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>ComputeSteps AC_fft_split_diffusion_update_step(ac_fft_bcs)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a>(AC_FFT_REAL_DST,AC_FFT_IMAG_DST,AC_FFT_REAL_SRC,AC_FFT_IMAG_SRC,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                      AC_FFT_SPLIT_DIFFUSION_UPDATE_DT, AC_FFT_SPLIT_DIFFUSION_UPDATE_DIFFUSION_COEFF)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>input <span class="keywordtype">int</span>  AC_FFT_REAL_SRC</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>input <span class="keywordtype">int</span>  AC_FFT_IMAG_SRC</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>input <span class="keywordtype">int</span>  AC_FFT_REAL_DST</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>input <span class="keywordtype">int</span>  AC_FFT_IMAG_DST</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>input real AC_FFT_SPLIT_DIFFUSION_UPDATE_DT</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>input real AC_FFT_SPLIT_DIFFUSION_UPDATE_DIFFUSION_COEFF</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>BoundConds ac_fft_bcs</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    periodic(<a class="code hl_enumvalue" href="typedefs_8h.html#a6b1305c8b347b12540cc391a175696daa93f0244fd13e0964a9825a40476f94ba">BOUNDARY_XYZ</a>)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>ComputeSteps AC_fft_split_diffusion_update_step(ac_fft_bcs)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a>(AC_FFT_REAL_DST,AC_FFT_IMAG_DST,AC_FFT_REAL_SRC,AC_FFT_IMAG_SRC,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                      AC_FFT_SPLIT_DIFFUSION_UPDATE_DT, AC_FFT_SPLIT_DIFFUSION_UPDATE_DIFFUSION_COEFF)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_afd8bf2ee8004f952446a6df0cbec3dc4"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a></div><div class="ttdeci">#define exp(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:40</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a1817df411acf70df622971e220b7084a"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a1817df411acf70df622971e220b7084a">get_wavevector_y</a></div><div class="ttdeci">get_wavevector_y()</div><div class="ttdef"><b>Definition</b> fft.h:10</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a27564c035b06449fc725f453e4546299"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a27564c035b06449fc725f453e4546299">AC_MATH_FFT_INCLUDED</a></div><div class="ttdeci">hostdefine AC_MATH_FFT_INCLUDED(1) get_wavevector_x()</div><div class="ttdef"><b>Definition</b> fft.h:2</div></div>
-<div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a50e067197449d5c2bd33c5ba3f953e11"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a></div><div class="ttdeci">Kernel split_diffusion_update_kernel(int real_dst, int imag_dst, int real_src, int imag_src, real dt, real diffusion_coeff)</div><div class="ttdef"><b>Definition</b> fft.h:67</div></div>
+<div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a50e067197449d5c2bd33c5ba3f953e11"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a50e067197449d5c2bd33c5ba3f953e11">split_diffusion_update_kernel</a></div><div class="ttdeci">Kernel split_diffusion_update_kernel(int real_dst, int imag_dst, int real_src, int imag_src, real dt, real diffusion_coeff)</div><div class="ttdef"><b>Definition</b> fft.h:60</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a6d8c519caf992a227cb6f35d4c548d43"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a6d8c519caf992a227cb6f35d4c548d43">get_wavevector_z</a></div><div class="ttdeci">get_wavevector_z()</div><div class="ttdef"><b>Definition</b> fft.h:15</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a96db176b8e3cc3501f5c62143fb75396"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a96db176b8e3cc3501f5c62143fb75396">poisson_fft_solve</a></div><div class="ttdeci">poisson_fft_solve(Field real_dst, Field imag_dst, Field real_src, Field imag_src)</div><div class="ttdef"><b>Definition</b> fft.h:30</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_a992268ee2bc03bcaa6d3a6bbcc47fe90"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#a992268ee2bc03bcaa6d3a6bbcc47fe90">get_wavevector</a></div><div class="ttdeci">get_wavevector()</div><div class="ttdef"><b>Definition</b> fft.h:20</div></div>
 <div class="ttc" id="aacc-runtime_2stdlib_2math_2fft_8h_html_af1e0cc2667dad07387198407fa937402"><div class="ttname"><a href="acc-runtime_2stdlib_2math_2fft_8h.html#af1e0cc2667dad07387198407fa937402">split_diffusion_update</a></div><div class="ttdeci">split_diffusion_update(Field real_dst, Field imag_dst, Field real_src, Field imag_src, real dt, real diffusion_coeff)</div><div class="ttdef"><b>Definition</b> fft.h:49</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_a0eabd5db583e036746080f1d4f74cc92"><div class="ttname"><a href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a></div><div class="ttdeci">#define print(...)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:454</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a98666be13c8e67196b9560ba9eeff819"><div class="ttname"><a href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div><div class="ttdeci">void(* Kernel)(const int3, const int3, DeviceVertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:27</div></div>
 <div class="ttc" id="astructcomplex_html"><div class="ttname"><a href="structcomplex.html">complex</a></div><div class="ttdef"><b>Definition</b> typedefs.h:49</div></div>
-<div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
 <div class="ttc" id="astructint3_html_a0a4ad50a155a35fa938ce6f16930affa"><div class="ttname"><a href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">int3::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5cd5a3c388fa28814e3496ef07c39360"><div class="ttname"><a href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">int3::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5d95e23491677d61019f0354b16adca9"><div class="ttname"><a href="structint3.html#a5d95e23491677d61019f0354b16adca9">int3::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
