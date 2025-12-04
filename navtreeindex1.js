@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"acc-runtime_2api_2errchk_8h.html#ae91660239419ccde6d6ace940b10bdf3":[21,0,2,1,10,8],
 "acc-runtime_2api_2errchk_8h_source.html":[21,0,2,1,10],
 "acc-runtime_2api_2hip_8h.html":[21,0,2,1,13],
 "acc-runtime_2api_2hip_8h.html#a003dbfc6e0d6d52d5e8b4f40d9a989a0":[21,0,2,1,13,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "acc__runtime_8h.html#a68aa75eb5204d66671e976eb1d565af5":[21,0,2,1,1,69],
 "acc__runtime_8h.html#a6c7c0cd5d17ffdb104d309b24808af4f":[21,0,2,1,1,65],
 "acc__runtime_8h.html#a72a77196216ce3e681f9bea29ee6092d":[21,0,2,1,1,59],
-"acc__runtime_8h.html#a8390b4865f16f944d33ba367ddb278fc":[21,0,2,1,1,27],
-"acc__runtime_8h.html#a86514ff01a179d72566c37a0cb1c5e2b":[21,0,2,1,1,71]
+"acc__runtime_8h.html#a8390b4865f16f944d33ba367ddb278fc":[21,0,2,1,1,27]
 };

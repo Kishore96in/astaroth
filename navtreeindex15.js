@@ -1,5 +1,11 @@
 var NAVTREEINDEX15 =
 {
+"modelreduce_8cc.html#a95bcc5f260df5ce993730008a1dcb45a":[21,0,8,1,5,1],
+"modelreduce_8cc.html#aa0d6c0a8364ff36423e7d927e658e8cb":[21,0,8,1,5,9],
+"modelreduce_8cc.html#aa8418f27fe28830a7fb62322463f15e0":[21,0,8,1,5,2],
+"modelreduce_8cc.html#af9a3d1b78005c766d557fc94f2fe32e7":[21,0,8,1,5,6],
+"modelsolver-legacy-do-not-modify_8c.html":[21,0,8,1,6],
+"modelsolver-legacy-do-not-modify_8c.html#ad5991be9890435175b9f00f6b2e02a38":[21,0,8,1,6,0],
 "modelsolver_8cc.html":[21,0,8,1,7],
 "modelsolver_8cc.html#ad5991be9890435175b9f00f6b2e02a38":[21,0,8,1,7,0],
 "mpi-profile-reduce_2main_8cc.html":[21,0,10,12,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX15 =
 "namespacematplotlibcpp.html#a4dce9b4c1c16c1dab0cffd11588d4db8":[19,0,2,64],
 "namespacematplotlibcpp.html#a529c059f3fca364b9fcb3b2e09cce36b":[19,0,2,43],
 "namespacematplotlibcpp.html#a57af9838664a40f0d7aabd3b184ec860":[19,0,2,61],
-"namespacematplotlibcpp.html#a5da5568ee4a63f144e4541c6c84ed0ce":[19,0,2,3],
-"namespacematplotlibcpp.html#a6111e7efdb413c79258daeb584c6c715":[19,0,2,90],
-"namespacematplotlibcpp.html#a61bc8aab0ceca9c4df59dbbccc8ffb3f":[19,0,2,30],
-"namespacematplotlibcpp.html#a61e468c9ffbf0eb5f85bbe69d9f5ecd2":[19,0,2,10],
-"namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447":[19,0,2,16],
-"namespacematplotlibcpp.html#a63173b57d788807c1c6860dbc7961e40":[19,0,2,22],
-"namespacematplotlibcpp.html#a6461c03041d9947a0e3b3593b5b72c95":[19,0,2,40]
+"namespacematplotlibcpp.html#a5da5568ee4a63f144e4541c6c84ed0ce":[19,0,2,3]
 };
