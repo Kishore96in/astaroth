@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"astaroth__forcing_8h.html#ae4981083f0d124c6112f44e1525773b9":[21,0,6,9,1],
 "astaroth__forcing_8h_source.html":[21,0,6,9],
 "astaroth__fortran_8cc.html":[21,0,8,0,8],
 "astaroth__fortran_8cc.html#a0c99af0954d01d64c1c6d2a4d7a042d8":[21,0,8,0,8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "bwtest-benchmark_8cu.html#ab6600ee6a42e77bf2bb4d03f124c53f7":[21,0,10,4,0,3],
 "bwtest-io_8cu.html":[21,0,10,4,1],
 "bwtest-io_8cu.html#a840291bc02cba5474a4cb46a9b9566fe":[21,0,10,4,1,0],
-"bwtest-stencil_8cu.html":[21,0,10,4,2],
-"bwtest-stencil_8cu.html#a1d294a0f182b65e74172cc6e7d816147":[21,0,10,4,2,5]
+"bwtest-stencil_8cu.html":[21,0,10,4,2]
 };

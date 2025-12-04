@@ -1,5 +1,8 @@
 var NAVTREEINDEX22 =
 {
+"structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9":[20,0,39,0],
+"structbool3.html#a6c1aee22778f595647cacedd6ab333eb":[20,0,39,1],
+"structbool3.html#a9302d1f8d65a441e2afa647c7a956265":[20,0,39,2],
 "structcombinatorial__params.html":[20,0,43],
 "structcombinatorial__params.html#a84b97fb85ff3b3b9e7604cec94a51644":[20,0,43,0],
 "structcombinatorial__params.html#a89e5f76ef2837ea519e92145276df160":[20,0,43,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX22 =
 "structnode__vec.html":[20,0,91],
 "structnode__vec.html#a2e934adddb32b254caec46134218f5e8":[20,0,91,0],
 "structnode__vec.html#a942658fad0ddf363aa69c941172238f4":[20,0,91,2],
-"structnode__vec.html#acd5cf1a54685ad6a857b141fcdca874b":[20,0,91,1],
-"structop__vec.html":[20,0,92],
-"structop__vec.html#a4178cff7e32d8d1844db60199ae43976":[20,0,92,1],
-"structop__vec.html#a6c424746cd76239dfa2aff238fef3235":[20,0,92,2]
+"structnode__vec.html#acd5cf1a54685ad6a857b141fcdca874b":[20,0,91,1]
 };
