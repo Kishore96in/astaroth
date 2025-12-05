@@ -10,6 +10,7 @@ var ntuple_8h =
     [ "concat", "ntuple_8h.html#a40c34b60b9d555b6cbd8590c35afeac3", null ],
     [ "dot", "ntuple_8h.html#acd484af875cfee7fee80622e5ad687bb", null ],
     [ "dot", "ntuple_8h.html#a2f78a450d9175329f2dda2662ebc2a84", null ],
+    [ "intersect_box", "ntuple_8h.html#a21d78011c71e1c23d696768a24e5b3c5", null ],
     [ "make_direction", "ntuple_8h.html#a7137be6c3c61d44b69978ecdab973728", null ],
     [ "make_index", "ntuple_8h.html#ab5db1899650d3153da2e671c03c29bec", null ],
     [ "make_ntuple", "ntuple_8h.html#abca241658ab4c195afd1e9d9676caecd", null ],

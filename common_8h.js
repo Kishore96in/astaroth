@@ -1,4 +1,4 @@
 var common_8h =
 [
-    [ "Array", "structArray.html", "structArray" ]
+    [ "Array< N >", "structArray.html", "structArray" ]
 ];

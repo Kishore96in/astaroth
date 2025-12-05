@@ -6,6 +6,8 @@ var mpi__utils_8h =
     [ "RankReorderMethod", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20", [
       [ "no", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20a7fa3b767c460b54a2be4d49030b349c7", null ],
       [ "default_mpi", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20ad3ae1867c62d6331fb528ff755f54c6d", null ],
+      [ "no_custom_decomp", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20aac739249ba06af6055df0e1d9cecdbad", null ],
+      [ "default_custom_decomp", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20a3d067857bc1c37ab951d8d22e9c5d8e1", null ],
       [ "hierarchical", "mpi__utils_8h.html#a53b8cce88eac80d9ae00150190937b20a2c95b1531c95e0730d65f40da3b31778", null ]
     ] ],
     [ "abort", "mpi__utils_8h.html#a8dde406edd091b96a810b5d3eed8254e", null ],

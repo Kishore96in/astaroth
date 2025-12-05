@@ -1,5 +1,6 @@
 var classac_1_1buffer =
 [
+    [ "value_type", "classac_1_1buffer.html#aff2c5f8491380a24c86671cd6e5cd139", null ],
     [ "buffer", "classac_1_1buffer.html#a1ba778cbe6005b4a6dc855ae3761bee4", null ],
     [ "buffer", "classac_1_1buffer.html#af2264f1e398f9335c8a7e22ea0ade675", null ],
     [ "begin", "classac_1_1buffer.html#ae5fac043ff3328a3d21910604633e9d5", null ],
@@ -10,8 +11,8 @@ var classac_1_1buffer =
     [ "display", "classac_1_1buffer.html#ac5f41b860d92d3c0838341e76dec8302", null ],
     [ "end", "classac_1_1buffer.html#a072cc81c605ecef6671b9a4b4474a029", null ],
     [ "end", "classac_1_1buffer.html#a5993d4daea653dc78818c038ab6673cc", null ],
-    [ "get", "classac_1_1buffer.html#ae7816b9d4fa89566371aaf605b85fee8", null ],
-    [ "get", "classac_1_1buffer.html#ac34205d8db4ef3511085cd5fa7de6c51", null ],
+    [ "get", "classac_1_1buffer.html#a18f98c9e7deb01965dd6432a71bf0d32", null ],
+    [ "get", "classac_1_1buffer.html#a817b953e05d2e6659a5e82293df002e7", null ],
     [ "operator[]", "classac_1_1buffer.html#a6d3f8ad59ffafb4db48252f1c4775206", null ],
     [ "operator[]", "classac_1_1buffer.html#a9e0bd6b0f31800633628877ada4d2b42", null ],
     [ "size", "classac_1_1buffer.html#a7b49c784dcf13ceb3fdb049a51961881", null ],

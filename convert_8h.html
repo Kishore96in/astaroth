@@ -96,13 +96,21 @@ $(document).ready(function(){initNavTree('convert_8h.html',''); initResizable();
   <div class="headertitle"><div class="title">convert.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for convert.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="convert_8h__incl.svg" width="174" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="convert_8h__incl.svg" width="184" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="convert_8h__dep__incl.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="convert_8h_source.html">Go to the source code of this file.</a></p>
@@ -114,12 +122,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afcd7e0903d0662213dfefb7f50b494c7" id="r_afcd7e0903d0662213dfefb7f50b494c7"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
-<tr class="memitem:afcd7e0903d0662213dfefb7f50b494c7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#afcd7e0903d0662213dfefb7f50b494c7">ac::unwrap</a> (const Container &amp;in)</td></tr>
-<tr class="separator:afcd7e0903d0662213dfefb7f50b494c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac42896ef2699de7f77a0fcc2c1acc5d" id="r_aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
-<tr class="memitem:aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aac42896ef2699de7f77a0fcc2c1acc5d">ac::unwrap</a> (Container &amp;in)</td></tr>
-<tr class="separator:aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfc44ba8b99f9d93184ba75af4ac3af" id="r_aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
+<tr class="memitem:aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aabfc44ba8b99f9d93184ba75af4ac3af">ac::unwrap_data</a> (const Container &amp;in)</td></tr>
+<tr class="separator:aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3650eb244d316ddc737b15e1ca1ea9e6" id="r_a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
+<tr class="memitem:a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3650eb244d316ddc737b15e1ca1ea9e6">ac::unwrap_data</a> (Container &amp;in)</td></tr>
+<tr class="separator:a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c8acad0a5049d6d9ba6029e331b75f" id="r_ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac5c8acad0a5049d6d9ba6029e331b75f">ac::unwrap_get</a> (const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f353db19d2caa8103de584773f8f3f8" id="r_a6f353db19d2caa8103de584773f8f3f8"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a6f353db19d2caa8103de584773f8f3f8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a6f353db19d2caa8103de584773f8f3f8">ac::unwrap_get</a> (std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:a6f353db19d2caa8103de584773f8f3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad191b7eb3de43cb53daf01d021d91145" id="r_ad191b7eb3de43cb53daf01d021d91145"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:ad191b7eb3de43cb53daf01d021d91145"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ad191b7eb3de43cb53daf01d021d91145">ac::unwrap_ptr_get</a> (const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:ad191b7eb3de43cb53daf01d021d91145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b05fedeebdd7a733c22cad911170e85" id="r_a3b05fedeebdd7a733c22cad911170e85"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a3b05fedeebdd7a733c22cad911170e85"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3b05fedeebdd7a733c22cad911170e85">ac::unwrap_ptr_get</a> (std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:a3b05fedeebdd7a733c22cad911170e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

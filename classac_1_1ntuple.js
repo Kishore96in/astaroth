@@ -1,5 +1,6 @@
 var classac_1_1ntuple =
 [
+    [ "ntuple", "classac_1_1ntuple.html#a8c22f9701c3f754c8f499ac92b3124ac", null ],
     [ "ntuple", "classac_1_1ntuple.html#a4c7011d6cd0a0f098969fb7f61959bce", null ],
     [ "ntuple", "classac_1_1ntuple.html#a2d5f0d3552700ffd462aa7cc25ac5abf", null ],
     [ "ntuple", "classac_1_1ntuple.html#af3341705754cf14eb6136c8e96feae7b", null ],

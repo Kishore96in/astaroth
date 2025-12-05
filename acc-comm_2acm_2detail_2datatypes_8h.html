@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('acc-comm_2acm_2detail_2datatypes_8h.ht
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="buffer_8h_source.html">buffer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ntuple_8h_source.html">ntuple.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pointer_8h_source.html">pointer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="view_8h_source.html">view.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for datatypes.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,10 +122,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4b7190d61cf69f92afa94053ea3d5d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab945ded14bebcfbefdc68b4883b3a8a9" id="r_ab945ded14bebcfbefdc68b4883b3a8a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#ab945ded14bebcfbefdc68b4883b3a8a9">Dims</a> = <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
 <tr class="separator:ab945ded14bebcfbefdc68b4883b3a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27c008b4ed78a7aa7534923ea6016ae" id="r_af27c008b4ed78a7aa7534923ea6016ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#af27c008b4ed78a7aa7534923ea6016ae">HostPointer</a> = <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
-<tr class="separator:af27c008b4ed78a7aa7534923ea6016ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f7773f19c9283fca7715154390b932" id="r_af8f7773f19c9283fca7715154390b932"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#af8f7773f19c9283fca7715154390b932">DevicePointer</a> = <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
-<tr class="separator:af8f7773f19c9283fca7715154390b932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ede666183557246d88fcb0210275916" id="r_a0ede666183557246d88fcb0210275916"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a0ede666183557246d88fcb0210275916">HostPointer</a> = <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
+<tr class="separator:a0ede666183557246d88fcb0210275916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705fb26ff15514256ee87714692d9df4" id="r_a705fb26ff15514256ee87714692d9df4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a705fb26ff15514256ee87714692d9df4">DevicePointer</a> = <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
+<tr class="separator:a705fb26ff15514256ee87714692d9df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98d32abe5b2d1e5eec78f6dcdfd76c2b" id="r_a98d32abe5b2d1e5eec78f6dcdfd76c2b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a98d32abe5b2d1e5eec78f6dcdfd76c2b">DeviceBuffer</a> = <a class="el" href="namespaceac.html#a8b5a60c978342ee872c7819466023c9e">ac::device_buffer</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
 <tr class="separator:a98d32abe5b2d1e5eec78f6dcdfd76c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13ded694295bdcd348154b70d963b78" id="r_aa13ded694295bdcd348154b70d963b78"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#aa13ded694295bdcd348154b70d963b78">HostBuffer</a> = <a class="el" href="namespaceac.html#a6e19a655735ea11c2ddbe4d6f770d426">ac::host_buffer</a>&lt; <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a> &gt;</td></tr>
@@ -155,14 +155,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af8f7773f19c9283fca7715154390b932" name="af8f7773f19c9283fca7715154390b932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8f7773f19c9283fca7715154390b932">&#9670;&#160;</a></span>DevicePointer</h2>
+<a id="a705fb26ff15514256ee87714692d9df4" name="a705fb26ff15514256ee87714692d9df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705fb26ff15514256ee87714692d9df4">&#9670;&#160;</a></span>DevicePointer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#af8f7773f19c9283fca7715154390b932">DevicePointer</a> =  <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt;<a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a>&gt;</td>
+          <td class="memname">using <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a705fb26ff15514256ee87714692d9df4">DevicePointer</a> =  <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt;<a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,14 +197,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af27c008b4ed78a7aa7534923ea6016ae" name="af27c008b4ed78a7aa7534923ea6016ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af27c008b4ed78a7aa7534923ea6016ae">&#9670;&#160;</a></span>HostPointer</h2>
+<a id="a0ede666183557246d88fcb0210275916" name="a0ede666183557246d88fcb0210275916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ede666183557246d88fcb0210275916">&#9670;&#160;</a></span>HostPointer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#af27c008b4ed78a7aa7534923ea6016ae">HostPointer</a> =  <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt;<a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a>&gt;</td>
+          <td class="memname">using <a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a0ede666183557246d88fcb0210275916">HostPointer</a> =  <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt;<a class="el" href="acc-comm_2acm_2detail_2datatypes_8h.html#a4b7190d61cf69f92afa94053ea3d5d65">UserDatatype</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

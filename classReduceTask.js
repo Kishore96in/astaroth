@@ -6,7 +6,7 @@ var classReduceTask =
     [ "communicate", "classReduceTask.html#a9ff8683aa6c9a7998fc9f6f2bc4be59a", null ],
     [ "load_outputs", "classReduceTask.html#a14c19188d3ddac32ae356b3dc28af667", null ],
     [ "reduce", "classReduceTask.html#a03e68de1f439ab51fb080332e136564d", null ],
-    [ "reduce", "classReduceTask.html#a68203b15845285b2ffda86176d8dcfad", null ],
+    [ "reduce", "classReduceTask.html#af0a26f113de063f1392425a16ee2b8f9", null ],
     [ "test", "classReduceTask.html#ac0f7d282db55f475fd89fce8f0ad94dc", null ],
     [ "transfer_to_device", "classReduceTask.html#a836785a65a959f062ea2bf8716bfc863", null ],
     [ "transfer_to_host", "classReduceTask.html#aa499ac085954c58ae9d6c457b98f083d", null ]

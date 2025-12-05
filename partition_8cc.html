@@ -108,6 +108,8 @@ $(document).ready(function(){initNavTree('partition_8cc.html',''); initResizable
 Functions</h2></td></tr>
 <tr class="memitem:a10331c7d60683305a0408b7284f01bc6" id="r_a10331c7d60683305a0408b7284f01bc6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structac_1_1segment.html">ac::segment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partition_8cc.html#a10331c7d60683305a0408b7284f01bc6">partition</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;nn_offset)</td></tr>
 <tr class="separator:a10331c7d60683305a0408b7284f01bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d21546cf4eff771262d36f48a0c0f7" id="r_a35d21546cf4eff771262d36f48a0c0f7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structac_1_1segment.html">ac::segment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partition_8cc.html#a35d21546cf4eff771262d36f48a0c0f7">prune</a> (const std::vector&lt; <a class="el" href="structac_1_1segment.html">ac::segment</a> &gt; &amp;segments, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;rr, const bool invert_selection)</td></tr>
+<tr class="separator:a35d21546cf4eff771262d36f48a0c0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a10331c7d60683305a0408b7284f01bc6" name="a10331c7d60683305a0408b7284f01bc6"></a>
@@ -142,6 +144,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Partition the domain mm into segments that surround the halo-less domain nn offset by nn_offset </p>
+
+</div>
+</div>
+<a id="a35d21546cf4eff771262d36f48a0c0f7" name="a35d21546cf4eff771262d36f48a0c0f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d21546cf4eff771262d36f48a0c0f7">&#9670;&#160;</a></span>prune()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structac_1_1segment.html">ac::segment</a> &gt; prune </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structac_1_1segment.html">ac::segment</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>segments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;&#160;</td>
+          <td class="paramname"><em>rr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>invert_selection</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prune segments inside or outside the bounding box of size nn at offset rr. If the <code>invert_selection</code> flag is false (default), prunes segments that fall inside the bounding box. If the <code>invert_selection</code> flag is true, prunes segments that fall outside the bounding box.</p>
+<p>Raises an exception if there is a segment that expands beyond the boundaries.</p>
+<p>Visualization: x marks the area of pruned segments. Segments marked with o are returned.</p>
+<p><code>invert_selection</code> flag false (default) n |-&mdash;| |o|xxxx|o| ^ r</p>
+<p><code>invert_selection</code> flag true n |-&mdash;| |x|oooo|x| ^ r </p>
 
 </div>
 </div>

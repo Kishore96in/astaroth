@@ -1,6 +1,6 @@
 var bwtest_8cu =
 [
-    [ "Array", "structArray.html", "structArray" ],
+    [ "Array< N >", "structArray.html", "structArray" ],
     [ "acArrayCreate", "bwtest_8cu.html#a1d294a0f182b65e74172cc6e7d816147", null ],
     [ "acArrayDestroy", "bwtest_8cu.html#ac3c3fdc996df77538ad54117cbf3edd6", null ],
     [ "acArraySet", "bwtest_8cu.html#ae74b05f872ff12f427756ca80f5b12ae", null ],

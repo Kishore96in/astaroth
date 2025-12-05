@@ -13,6 +13,7 @@ var typedefs_8h =
     [ "Field3", "structField3.html", "structField3" ],
     [ "Field4", "structField4.html", "structField4" ],
     [ "FieldSymmetricTensor", "structFieldSymmetricTensor.html", "structFieldSymmetricTensor" ],
+    [ "ProfileZ3", "structProfileZ3.html", "structProfileZ3" ],
     [ "AcDimProducts", "structAcDimProducts.html", "structAcDimProducts" ],
     [ "AcDimProductsInv", "structAcDimProductsInv.html", "structAcDimProductsInv" ],
     [ "VecZProfile", "structVecZProfile.html", null ],

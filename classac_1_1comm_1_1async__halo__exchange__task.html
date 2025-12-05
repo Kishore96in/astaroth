@@ -104,10 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91bd55b9f96f94bd97e7bfcc9e621712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2061056c2c1fdc022e6fc76b0b99d5" id="r_a0e2061056c2c1fdc022e6fc76b0b99d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#a0e2061056c2c1fdc022e6fc76b0b99d5">async_halo_exchange_task</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_nn, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;local_rr, const size_t n_aggregate_buffers)</td></tr>
 <tr class="separator:a0e2061056c2c1fdc022e6fc76b0b99d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b46b6b82723080c408bb9b4ca48ef2f" id="r_a3b46b6b82723080c408bb9b4ca48ef2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#a3b46b6b82723080c408bb9b4ca48ef2f">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;inputs)</td></tr>
-<tr class="separator:a3b46b6b82723080c408bb9b4ca48ef2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c0e890823a9d4e36e723537a2324ddb" id="r_a3c0e890823a9d4e36e723537a2324ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#a3c0e890823a9d4e36e723537a2324ddb">wait</a> (std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; outputs)</td></tr>
-<tr class="separator:a3c0e890823a9d4e36e723537a2324ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af501fdd54366ab82488d1ce5e5761fdb" id="r_af501fdd54366ab82488d1ce5e5761fdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#af501fdd54366ab82488d1ce5e5761fdb">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;inputs)</td></tr>
+<tr class="separator:af501fdd54366ab82488d1ce5e5761fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40906bda07d7f7daebd3cc6d403e3f0e" id="r_a40906bda07d7f7daebd3cc6d403e3f0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#a40906bda07d7f7daebd3cc6d403e3f0e">wait</a> (std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; outputs)</td></tr>
+<tr class="separator:a40906bda07d7f7daebd3cc6d403e3f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fbd6a88e54bf1f5bfb672a7c18afbf" id="r_a39fbd6a88e54bf1f5bfb672a7c18afbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html#a39fbd6a88e54bf1f5bfb672a7c18afbf">complete</a> () const</td></tr>
 <tr class="separator:a39fbd6a88e54bf1f5bfb672a7c18afbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -217,8 +217,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a3b46b6b82723080c408bb9b4ca48ef2f" name="a3b46b6b82723080c408bb9b4ca48ef2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b46b6b82723080c408bb9b4ca48ef2f">&#9670;&#160;</a></span>launch()</h2>
+<a id="af501fdd54366ab82488d1ce5e5761fdb" name="af501fdd54366ab82488d1ce5e5761fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af501fdd54366ab82488d1ce5e5761fdb">&#9670;&#160;</a></span>launch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +237,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>&#160;</td>
         </tr>
         <tr>
@@ -255,8 +255,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a3c0e890823a9d4e36e723537a2324ddb" name="a3c0e890823a9d4e36e723537a2324ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c0e890823a9d4e36e723537a2324ddb">&#9670;&#160;</a></span>wait()</h2>
+<a id="a40906bda07d7f7daebd3cc6d403e3f0e" name="a40906bda07d7f7daebd3cc6d403e3f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40906bda07d7f7daebd3cc6d403e3f0e">&#9670;&#160;</a></span>wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void <a class="el" href="classac_1_1comm_1_1async__halo__exchange__task.html">ac::comm::async_halo_exchange_task</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt;::wait </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt;&#160;</td>
           <td class="paramname"><em>outputs</em></td><td>)</td>
           <td></td>
         </tr>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['print_0',['print',['../namespaceprint.html',1,'']]],
-  ['print_3a_3adebug_1',['debug',['../namespaceprint_1_1debug.html',1,'print']]]
+  ['matplotlibcpp_0',['matplotlibcpp',['../namespacematplotlibcpp.html',1,'']]],
+  ['matplotlibcpp_3a_3adetail_1',['detail',['../namespacematplotlibcpp_1_1detail.html',1,'matplotlibcpp']]]
 ];

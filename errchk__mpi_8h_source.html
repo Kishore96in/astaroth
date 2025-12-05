@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('errchk__mpi_8h_source.html',''); initR
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                           <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="string__vec_8h.html#a6d574f3bbd7bbcb2515d234be74beaa4">line</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* expression)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">char</span> description[MPI_MAX_ERROR_STRING];</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span> resultlen;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span>  resultlen;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    MPI_Error_string(errorcode, description, &amp;resultlen);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="errchk__print_8h.html#a147cf14b5bb14e341c0ae3c73eba5298">errchk_print_error</a>(function, <a class="code hl_variable" href="string__vec_8h.html#a21e15f8aeaee9432808967b358dc2c49">file</a>, <a class="code hl_variable" href="string__vec_8h.html#a6d574f3bbd7bbcb2515d234be74beaa4">line</a>, expression, description);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>

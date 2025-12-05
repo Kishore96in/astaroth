@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('decomp_8cc.html',''); initResizable();
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="acc-comm_2acm_2detail_2errchk_8h_source.html">errchk.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type__conversion_8h_source.html">type_conversion.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="print__debug_8h_source.html">acm/detail/print_debug.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for decomp.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -112,8 +113,8 @@ $(document).ready(function(){initNavTree('decomp_8cc.html',''); initResizable();
 Functions</h2></td></tr>
 <tr class="memitem:ab8a470fbbfa1386fad781a57e0898a4e" id="r_ab8a470fbbfa1386fad781a57e0898a4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decomp_8cc.html#ab8a470fbbfa1386fad781a57e0898a4e">decompose</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, uint64_t nprocs)</td></tr>
 <tr class="separator:ab8a470fbbfa1386fad781a57e0898a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63649b74e71ffc6e97a22399b902c26" id="r_ab63649b74e71ffc6e97a22399b902c26"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decomp_8cc.html#ab63649b74e71ffc6e97a22399b902c26">decompose_hierarchical</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const std::vector&lt; uint64_t &gt; &amp;nprocs_per_layer)</td></tr>
-<tr class="separator:ab63649b74e71ffc6e97a22399b902c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77256cdbb24552800ecf9b0ed6382c85" id="r_a77256cdbb24552800ecf9b0ed6382c85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decomp_8cc.html#a77256cdbb24552800ecf9b0ed6382c85">decompose_hierarchical</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const std::vector&lt; uint64_t &gt; &amp;nprocs_per_layer_fine_to_coarse)</td></tr>
+<tr class="separator:a77256cdbb24552800ecf9b0ed6382c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d1446332826a31c3b79398eb5fdfec3" id="r_a9d1446332826a31c3b79398eb5fdfec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decomp_8cc.html#a9d1446332826a31c3b79398eb5fdfec3">hierarchical_to_spatial</a> (const uint64_t index, const std::vector&lt; <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &gt; &amp;decompositions)</td></tr>
 <tr class="separator:a9d1446332826a31c3b79398eb5fdfec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd09f031e3b599b4eb0ce155d3e57597" id="r_abd09f031e3b599b4eb0ce155d3e57597"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decomp_8cc.html#abd09f031e3b599b4eb0ce155d3e57597">hierarchical_to_linear</a> (const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;coords, const std::vector&lt; <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &gt; &amp;decompositions)</td></tr>
@@ -151,8 +152,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab63649b74e71ffc6e97a22399b902c26" name="ab63649b74e71ffc6e97a22399b902c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63649b74e71ffc6e97a22399b902c26">&#9670;&#160;</a></span>decompose_hierarchical()</h2>
+<a id="a77256cdbb24552800ecf9b0ed6382c85" name="a77256cdbb24552800ecf9b0ed6382c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77256cdbb24552800ecf9b0ed6382c85">&#9670;&#160;</a></span>decompose_hierarchical()</h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -21,5 +21,6 @@ var searchData=
   ['acreduceop_18',['AcReduceOp',['../host__datatypes_8h.html#ab08beb09749de71a5db5954797656dad',1,'host_datatypes.h']]],
   ['acshearinterpolationcoeffs_19',['AcShearInterpolationCoeffs',['../src_2core_2kernels_2kernels_8h.html#ae8c1559adcafd9ffaa6b063f0558fe28',1,'kernels.h']]],
   ['actensor_20',['AcTensor',['../acc-runtime_2api_2math__utils_8h.html#ae10b0b0375962a9ca073a0825d7e4def',1,'math_utils.h']]],
-  ['astnode_21',['astnode',['../acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91',1,'ASTNode:&#160;ast.h'],['../deprecated_2acc-2_84_2src_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91',1,'ASTNode:&#160;ast.h']]]
+  ['array_5ft_21',['array_t',['../namespaceacm.html#a91a4c099b055e6e9bd9da597192581c5',1,'acm']]],
+  ['astnode_22',['astnode',['../acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91',1,'ASTNode:&#160;ast.h'],['../deprecated_2acc-2_84_2src_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91',1,'ASTNode:&#160;ast.h']]]
 ];

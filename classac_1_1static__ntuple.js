@@ -1,8 +1,9 @@
 var classac_1_1static__ntuple =
 [
+    [ "static_ntuple", "classac_1_1static__ntuple.html#a7903d94e4513593a5f256f983cd172a9", null ],
     [ "static_ntuple", "classac_1_1static__ntuple.html#a02c122689a4d0d81b5e244dd64632dc6", null ],
     [ "static_ntuple", "classac_1_1static__ntuple.html#a2995e4e7a4565ae74c910617ef909102", null ],
-    [ "static_ntuple", "classac_1_1static__ntuple.html#aa5cacb0629e14a2182831242e462884b", null ],
+    [ "static_ntuple", "classac_1_1static__ntuple.html#a723ef8304d13fa12d4d53d51b3a13875", null ],
     [ "begin", "classac_1_1static__ntuple.html#afd6270bdf3dcaf965cad73a3069db9c1", null ],
     [ "begin", "classac_1_1static__ntuple.html#ac5110f2580b0bbbede7d6e629b4af9a4", null ],
     [ "data", "classac_1_1static__ntuple.html#ab5e9b0168b49a468e98622f6c161aa8c", null ],

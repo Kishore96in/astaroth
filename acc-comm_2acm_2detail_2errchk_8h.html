@@ -204,7 +204,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
 <div class="line">        if (!(expr)) {                                                                             \</div>
-<div class="line">            errchk_print_error(__func__, __FILE__, __LINE__, #expr, <span class="stringliteral">&quot;&quot;</span>);                           \</div>
+<div class="line">            errchk_print_error(__func__, __FILE__, __LINE__, #expr, __VA_ARGS__);                  \</div>
 <div class="line">            errchk_print_stacktrace();                                                             \</div>
 <div class="line">            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Assertion &quot;</span> #expr <span class="stringliteral">&quot; failed&quot;</span>);                                \</div>
 <div class="line">        }                                                                                          \</div>

@@ -105,12 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4bc63060c15d0391de18183dbc2da101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ced912bddf4f05824c5e638e0a50d9" id="r_a58ced912bddf4f05824c5e638e0a50d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#a58ced912bddf4f05824c5e638e0a50d9">~packet</a> ()</td></tr>
 <tr class="separator:a58ced912bddf4f05824c5e638e0a50d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5786b6aa5bc909c1e49bcd1abf12a203" id="r_a5786b6aa5bc909c1e49bcd1abf12a203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#a5786b6aa5bc909c1e49bcd1abf12a203">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;inputs)</td></tr>
-<tr class="separator:a5786b6aa5bc909c1e49bcd1abf12a203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72eedc993e2986f1098875f3168321a" id="r_ac72eedc993e2986f1098875f3168321a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#ac72eedc993e2986f1098875f3168321a">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;inputs)</td></tr>
+<tr class="separator:ac72eedc993e2986f1098875f3168321a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ee73afa4b65c76aa408041abac415b" id="r_a52ee73afa4b65c76aa408041abac415b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#a52ee73afa4b65c76aa408041abac415b">ready</a> () const</td></tr>
 <tr class="separator:a52ee73afa4b65c76aa408041abac415b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab29b4e1b24163026705f14c3feac43" id="r_afab29b4e1b24163026705f14c3feac43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#afab29b4e1b24163026705f14c3feac43">wait</a> (std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;outputs)</td></tr>
-<tr class="separator:afab29b4e1b24163026705f14c3feac43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed72ddef637e7f64bb5e804ca7dee150" id="r_aed72ddef637e7f64bb5e804ca7dee150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#aed72ddef637e7f64bb5e804ca7dee150">wait</a> (std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;outputs)</td></tr>
+<tr class="separator:aed72ddef637e7f64bb5e804ca7dee150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06aed2850d23896c860fb1df9088b763" id="r_a06aed2850d23896c860fb1df9088b763"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#a06aed2850d23896c860fb1df9088b763">complete</a> () const</td></tr>
 <tr class="separator:a06aed2850d23896c860fb1df9088b763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466eb2153f6bd491cc18c449027fc1d2" id="r_a466eb2153f6bd491cc18c449027fc1d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1comm_1_1packet.html#a466eb2153f6bd491cc18c449027fc1d2">packet</a> (const <a class="el" href="classac_1_1comm_1_1packet.html">packet</a> &amp;)=delete</td></tr>
@@ -295,8 +295,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a5786b6aa5bc909c1e49bcd1abf12a203" name="a5786b6aa5bc909c1e49bcd1abf12a203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5786b6aa5bc909c1e49bcd1abf12a203">&#9670;&#160;</a></span>launch()</h2>
+<a id="ac72eedc993e2986f1098875f3168321a" name="ac72eedc993e2986f1098875f3168321a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72eedc993e2986f1098875f3168321a">&#9670;&#160;</a></span>launch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +315,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>&#160;</td>
         </tr>
         <tr>
@@ -416,8 +416,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="afab29b4e1b24163026705f14c3feac43" name="afab29b4e1b24163026705f14c3feac43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afab29b4e1b24163026705f14c3feac43">&#9670;&#160;</a></span>wait()</h2>
+<a id="aed72ddef637e7f64bb5e804ca7dee150" name="aed72ddef637e7f64bb5e804ca7dee150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed72ddef637e7f64bb5e804ca7dee150">&#9670;&#160;</a></span>wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,7 +430,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void <a class="el" href="classac_1_1comm_1_1packet.html">ac::comm::packet</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt;::wait </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>outputs</em></td><td>)</td>
           <td></td>
         </tr>

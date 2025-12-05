@@ -1,6 +1,6 @@
 var bwtest_stencil_8cu =
 [
-    [ "Array", "structArray.html", "structArray" ],
+    [ "Array< N >", "structArray.html", "structArray" ],
     [ "KernelConfig", "structKernelConfig.html", "structKernelConfig" ],
     [ "HALO", "bwtest-stencil_8cu.html#a506e3be0281e3c100aef41dd51e107af", null ],
     [ "MAX_SMEM", "bwtest-stencil_8cu.html#a5a5268b88fb8d2cb0feca886e2c07a14", null ],

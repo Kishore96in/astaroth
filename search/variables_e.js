@@ -2,7 +2,7 @@ var searchData=
 [
   ['offset_0',['offset',['../structac_1_1segment.html#ab6d2aca472ab3d68dfb9774af8959667',1,'ac::segment']]],
   ['old_5fqualifier_1',['old_qualifier',['../acc-runtime_2acc_2ast_8h.html#aedfcc3248ad933627f319b985f23ae9f',1,'ast.h']]],
-  ['on_5fdevice_2',['on_device',['../structVertexBufferArray.html#a04a36f61d471b67658a4eb18bd3782d4',1,'VertexBufferArray::on_device'],['../structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461',1,'AcBuffer::on_device'],['../structArray.html#a0f15f5298c9b26acfaa7347a9bd10538',1,'Array::on_device']]],
+  ['on_5fdevice_2',['on_device',['../structVertexBufferArray.html#a04a36f61d471b67658a4eb18bd3782d4',1,'VertexBufferArray::on_device'],['../structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461',1,'AcBuffer::on_device'],['../structArray.html#affff8f7a28bb4468ecec8574141b7c23',1,'Array::on_device']]],
   ['op_3',['op',['../structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc',1,'KernelReduceOutput']]],
   ['options_4',['options',['../structuser__enums__info.html#a2f8186ad918711d7547c00d27ff7d54b',1,'user_enums_info::options'],['../structcombinatorial__params.html#a89e5f76ef2837ea519e92145276df160',1,'combinatorial_params::options']]],
   ['order_5',['order',['../classTask.html#ad5897b98705092ab9361fe7c9ff85432',1,'Task']]],

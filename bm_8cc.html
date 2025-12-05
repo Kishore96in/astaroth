@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Astaroth: acc-comm/benchmarks/bm.cc File Reference</title>
+<title>Astaroth: acc-comm/acm/detail/experimental/bm.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,67 +91,38 @@ $(document).ready(function(){initNavTree('bm_8cc.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">bm.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="bm_8h_source.html">bm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="acc-comm_2acm_2detail_2math__utils_8h_source.html">acm/detail/math_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">acm/detail/timer.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for bm.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="bm_8cc__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="bm_8cc__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacebm" id="r_namespacebm"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebm.html">bm</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43e04e9758fab226ffb70c433558c99e" id="r_a43e04e9758fab226ffb70c433558c99e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bm_8cc.html#a43e04e9758fab226ffb70c433558c99e">benchmark</a> (const std::string label, const std::function&lt; void()&gt; &amp;init, const std::function&lt; void()&gt; &amp;bench)</td></tr>
-<tr class="separator:a43e04e9758fab226ffb70c433558c99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8f10d59a26eae64a1ab43691d541dd" id="r_a4b8f10d59a26eae64a1ab43691d541dd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::chrono::steady_clock::duration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebm.html#a4b8f10d59a26eae64a1ab43691d541dd">bm::benchmark</a> (const std::function&lt; void()&gt; &amp;init, const std::function&lt; void()&gt; &amp;bench, const std::function&lt; void()&gt; &amp;sync, const size_t nsamples)</td></tr>
+<tr class="separator:a4b8f10d59a26eae64a1ab43691d541dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a43e04e9758fab226ffb70c433558c99e" name="a43e04e9758fab226ffb70c433558c99e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43e04e9758fab226ffb70c433558c99e">&#9670;&#160;</a></span>benchmark()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double benchmark </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
-          <td class="paramname"><em>init</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
-          <td class="paramname"><em>bench</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the median running time in microseconds. init: function to initialize (e.g. randomizing the inputs) bench: function to benchmark </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4c33df070b12a6ae070af4a0154d4046.html">acc-comm</a></li><li class="navelem"><a class="el" href="dir_393cc6ac667ee1c393aa83e3fc7bc333.html">benchmarks</a></li><li class="navelem"><a class="el" href="bm_8cc.html">bm.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_4c33df070b12a6ae070af4a0154d4046.html">acc-comm</a></li><li class="navelem"><a class="el" href="dir_653045a86d18bf4677817213063ec2c3.html">acm</a></li><li class="navelem"><a class="el" href="dir_bd29323745e94ac54ec1efa2ebf676a6.html">detail</a></li><li class="navelem"><a class="el" href="dir_4d2a8b25b14bedcde945cc9a956786c9.html">experimental</a></li><li class="navelem"><a class="el" href="bm_8cc.html">bm.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

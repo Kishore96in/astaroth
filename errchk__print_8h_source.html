@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('errchk__print_8h_source.html',''); ini
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a37936be72ae0484e51a2bdfdc4f89b43">   19</a></span><span class="preprocessor">#define ACM_LOG_LEVEL_INFO (2)</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#adc833f59761417af5f8bdcc1155df0a5">   20</a></span><span class="preprocessor">#define ACM_LOG_LEVEL_DEBUG (3)</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a5d65790977467ebb8e6f0467322c252b">   21</a></span><span class="preprocessor">#define ACM_LOG_LEVEL_TRACE (4)</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a960a630d48b85304182521ce2e9b7d17">   22</a></span><span class="preprocessor">#define ACM_LOG_LEVEL (ACM_LOG_LEVEL_DEBUG)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a960a630d48b85304182521ce2e9b7d17">   22</a></span><span class="preprocessor">#define ACM_LOG_LEVEL (ACM_LOG_LEVEL_WARNING)</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a88b141a25d362560ac2058cc8b216b8c">   24</a></span><span class="preprocessor">#define PRINT_LOG_ERROR(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -129,14 +129,14 @@ $(document).ready(function(){initNavTree('errchk__print_8h_source.html',''); ini
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if ACM_LOG_LEVEL &gt;= ACM_LOG_LEVEL_INFO</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a99c5e2a8c16bcb30989da8749e19bfae">   36</a></span><span class="preprocessor">#define PRINT_LOG_INFO(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define PRINT_LOG_INFO(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define PRINT_LOG_INFO(...)</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define PRINT_LOG_DEBUG(...)</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a99c5e2a8c16bcb30989da8749e19bfae">   38</a></span><span class="preprocessor">#define PRINT_LOG_INFO(...)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a48bd1b64255bc68795501ecb34a1eb81">   39</a></span><span class="preprocessor">#define PRINT_LOG_DEBUG(...)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a5feac978a6c0ac4ba159cb05853813ed">   40</a></span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#if ACM_LOG_LEVEL &gt;= ACM_LOG_LEVEL_DEBUG</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a48bd1b64255bc68795501ecb34a1eb81">   43</a></span><span class="preprocessor">#define PRINT_LOG_DEBUG(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define PRINT_LOG_DEBUG(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#define PRINT_LOG_DEBUG(...)</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('errchk__print_8h_source.html',''); ini
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#if ACM_LOG_LEVEL &gt;= ACM_LOG_LEVEL_TRACE</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define PRINT_LOG_TRACE(...) (errchk_print_log(__func__, __LINE__, __VA_ARGS__))</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="errchk__print_8h.html#a5feac978a6c0ac4ba159cb05853813ed">   51</a></span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define PRINT_LOG_TRACE(...)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>

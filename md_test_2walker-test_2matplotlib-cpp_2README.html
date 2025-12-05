@@ -98,11 +98,11 @@ $(document).ready(function(){initNavTree('md_test_2walker-test_2matplotlib-cpp_2
 Usage</h1>
 <p>Complete minimal example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="matplotlibcpp_8h.html">matplotlibcpp.h</a>&quot;</span></div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    plt::plot({1,3,2,4});</div>
 <div class="line">    plt::show();</div>
 <div class="line">}</div>
-<div class="ttc" id="abm__pack_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> bm_pack.cc:97</div></div>
+<div class="ttc" id="abm__kernel__params_8cu_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> bm_kernel_params.cu:31</div></div>
 <div class="ttc" id="amatplotlibcpp_8h_html"><div class="ttname"><a href="matplotlibcpp_8h.html">matplotlibcpp.h</a></div></div>
 <div class="ttc" id="anamespacematplotlibcpp_html"><div class="ttname"><a href="namespacematplotlibcpp.html">matplotlibcpp</a></div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:43</div></div>
 </div><!-- fragment --><p> g++ minimal.cpp -std=c++11 -I/usr/include/python2.7 -lpython2.7</p>
@@ -113,7 +113,7 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Prepare data.</span></div>
 <div class="line">    <span class="keywordtype">int</span> n = 5000;</div>
@@ -151,7 +151,7 @@ Usage</h1>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Prepare data.</span></div>
 <div class="line">    <span class="keywordtype">int</span> n = 5000; <span class="comment">// number of data points</span></div>
@@ -182,7 +182,7 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    std::vector&lt;double&gt; t(1000);</div>
 <div class="line">    std::vector&lt;double&gt; x(t.size());</div>
 <div class="line"> </div>
@@ -203,7 +203,7 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// u and v are respectively the x and y components of the arrows we&#39;re plotting</span></div>
 <div class="line">    std::vector&lt;int&gt; x, y, u, v;</div>
@@ -226,7 +226,7 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>plt = <a class="code hl_namespace" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__pack_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="bm__kernel__params_8cu.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    std::vector&lt;std::vector&lt;double&gt;&gt; x, y, z;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = -5; i &lt;= 5;  i += 0.25) {</div>

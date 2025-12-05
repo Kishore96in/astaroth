@@ -9,5 +9,6 @@ var searchData=
   ['static_5fntuple_6',['static_ntuple',['../classac_1_1static__ntuple.html',1,'ac']]],
   ['string_5fvec_7',['string_vec',['../structstring__vec.html',1,'']]],
   ['structs_5finfo_8',['structs_info',['../structstructs__info.html',1,'']]],
-  ['symbol_9',['Symbol',['../structSymbol.html',1,'']]]
+  ['subarray_9',['subarray',['../classac_1_1mpi_1_1subarray.html',1,'ac::mpi']]],
+  ['symbol_10',['Symbol',['../structSymbol.html',1,'']]]
 ];

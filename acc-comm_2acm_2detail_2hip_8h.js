@@ -1,5 +1,6 @@
 var acc_comm_2acm_2detail_2hip_8h =
 [
+    [ "cudaDeviceEnablePeerAccess", "acc-comm_2acm_2detail_2hip_8h.html#a85a15113f30b3e9363cce361d618bcb6", null ],
     [ "cudaDeviceGetPCIBusId", "acc-comm_2acm_2detail_2hip_8h.html#aecf2575483cc5a1d45f6c9f821ecc502", null ],
     [ "cudaDeviceGetStreamPriorityRange", "acc-comm_2acm_2detail_2hip_8h.html#ac39706093bc32338cbc3e0520d0a2021", null ],
     [ "cudaDeviceProp", "acc-comm_2acm_2detail_2hip_8h.html#a96105a2e43b036236409e7d00e20ff57", null ],
@@ -39,6 +40,7 @@ var acc_comm_2acm_2detail_2hip_8h =
     [ "cudaMemcpyHostToDevice", "acc-comm_2acm_2detail_2hip_8h.html#a436143bca81d671a11aa0f481a4274b0", null ],
     [ "cudaMemcpyHostToHost", "acc-comm_2acm_2detail_2hip_8h.html#a7449bbae1f8dd5e3f576bbdb47ac20b4", null ],
     [ "cudaMemcpyKind", "acc-comm_2acm_2detail_2hip_8h.html#af319507e914f356729654a2251ed7843", null ],
+    [ "cudaMemcpyPeer", "acc-comm_2acm_2detail_2hip_8h.html#a47be395a5ca1dab21d5d4c803ec252ac", null ],
     [ "cudaMemcpyPeerAsync", "acc-comm_2acm_2detail_2hip_8h.html#a907e459d06acfe4a52f21b945a2ff665", null ],
     [ "cudaMemcpyToSymbol", "acc-comm_2acm_2detail_2hip_8h.html#ada7138d224fa0521c84ffa6f5420e42c", null ],
     [ "cudaMemcpyToSymbolAsync", "acc-comm_2acm_2detail_2hip_8h.html#a790ef41641e10e7c33050d449bc04e18", null ],

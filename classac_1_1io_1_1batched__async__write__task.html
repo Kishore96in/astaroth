@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a637dfd068039f5a98ca9904e187e1e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55ccf75934f33f065fa3839e6762c3d" id="r_aa55ccf75934f33f065fa3839e6762c3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1io_1_1batched__async__write__task.html#aa55ccf75934f33f065fa3839e6762c3d">batched_async_write_task</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;file_dims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;file_offset, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mesh_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mesh_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;mesh_offset, const size_t n_aggregate_buffers)</td></tr>
 <tr class="separator:aa55ccf75934f33f065fa3839e6762c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5cac885c66ab109eceb60d22ccf7466" id="r_ac5cac885c66ab109eceb60d22ccf7466"><td class="memTemplParams" colspan="2">template&lt;typename Allocator &gt; </td></tr>
-<tr class="memitem:ac5cac885c66ab109eceb60d22ccf7466"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classac_1_1io_1_1batched__async__write__task.html#ac5cac885c66ab109eceb60d22ccf7466">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;inputs, const std::vector&lt; std::string &gt; &amp;paths)</td></tr>
-<tr class="separator:ac5cac885c66ab109eceb60d22ccf7466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212b035d958ceef14c9dad564382ddd1" id="r_a212b035d958ceef14c9dad564382ddd1"><td class="memTemplParams" colspan="2">template&lt;typename Allocator &gt; </td></tr>
+<tr class="memitem:a212b035d958ceef14c9dad564382ddd1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classac_1_1io_1_1batched__async__write__task.html#a212b035d958ceef14c9dad564382ddd1">launch</a> (const MPI_Comm &amp;parent_comm, const std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;inputs, const std::vector&lt; std::string &gt; &amp;paths)</td></tr>
+<tr class="separator:a212b035d958ceef14c9dad564382ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2ebb0e0baae822220a9d08ad3fa5dfa" id="r_ad2ebb0e0baae822220a9d08ad3fa5dfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1io_1_1batched__async__write__task.html#ad2ebb0e0baae822220a9d08ad3fa5dfa">wait</a> ()</td></tr>
 <tr class="separator:ad2ebb0e0baae822220a9d08ad3fa5dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0339a077ea7343e39ea3cfbc79ad05ff" id="r_a0339a077ea7343e39ea3cfbc79ad05ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1io_1_1batched__async__write__task.html#a0339a077ea7343e39ea3cfbc79ad05ff">complete</a> () const</td></tr>
@@ -230,8 +230,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="ac5cac885c66ab109eceb60d22ccf7466" name="ac5cac885c66ab109eceb60d22ccf7466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5cac885c66ab109eceb60d22ccf7466">&#9670;&#160;</a></span>launch()</h2>
+<a id="a212b035d958ceef14c9dad564382ddd1" name="a212b035d958ceef14c9dad564382ddd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212b035d958ceef14c9dad564382ddd1">&#9670;&#160;</a></span>launch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ template&lt;typename Allocator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classac_1_1mr_1_1pointer.html">ac::mr::pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
         </tr>
         <tr>

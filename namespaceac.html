@@ -105,6 +105,10 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceac_1_1device" id="r_namespaceac_1_1device"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac_1_1device.html">device</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceac_1_1fmt" id="r_namespaceac_1_1fmt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac_1_1fmt.html">fmt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceac_1_1helical__forcing" id="r_namespaceac_1_1helical__forcing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac_1_1helical__forcing.html">helical_forcing</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceac_1_1io" id="r_namespaceac_1_1io"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac_1_1io.html">io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceac_1_1mpi" id="r_namespaceac_1_1mpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac_1_1mpi.html">mpi</a></td></tr>
@@ -114,7 +118,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1base__view.html">base_view</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1buffer.html">buffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1future.html">future</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structac_1_1ndbuffer.html">ndbuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +131,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structac_1_1segment.html">segment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1static__ntuple.html">static_ntuple</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1timer.html">timer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1timewriter.html">timewriter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1view.html">view</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -157,47 +171,95 @@ Typedefs</h2></td></tr>
 <tr class="separator:a2533a2f005b971feaa03366a8cd967ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a29a79ce5905a3182adfaa97bb49bb" id="r_ae3a29a79ce5905a3182adfaa97bb49bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ae3a29a79ce5905a3182adfaa97bb49bb">direction</a> = <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; int64_t &gt;</td></tr>
 <tr class="separator:ae3a29a79ce5905a3182adfaa97bb49bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af134f0901843e2745b054bd878381d98" id="r_af134f0901843e2745b054bd878381d98"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:af134f0901843e2745b054bd878381d98"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">host_view</a> = <a class="el" href="classac_1_1view.html">view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a> &gt;</td></tr>
+<tr class="separator:af134f0901843e2745b054bd878381d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add03cc54eea1ae1213c5e2755cc2a06b" id="r_add03cc54eea1ae1213c5e2755cc2a06b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:add03cc54eea1ae1213c5e2755cc2a06b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">device_view</a> = <a class="el" href="classac_1_1view.html">view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="namespaceac_1_1mr.html#acff34621cf92adb0bda722e632c11ab8">ac::mr::device_allocator</a> &gt;</td></tr>
+<tr class="separator:add03cc54eea1ae1213c5e2755cc2a06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6bf6a37c77c7c7770128c00666bb5341" id="r_a6bf6a37c77c7c7770128c00666bb5341"><td class="memTemplParams" colspan="2">template&lt;typename... Inputs&gt; </td></tr>
-<tr class="memitem:a6bf6a37c77c7c7770128c00666bb5341"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a6bf6a37c77c7c7770128c00666bb5341">same_size</a> (const Inputs &amp;... inputs)</td></tr>
-<tr class="separator:a6bf6a37c77c7c7770128c00666bb5341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82cabe5ed0ff8075cfb4422dbdb9ba9" id="r_ae82cabe5ed0ff8075cfb4422dbdb9ba9"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
-<tr class="memitem:ae82cabe5ed0ff8075cfb4422dbdb9ba9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ae82cabe5ed0ff8075cfb4422dbdb9ba9">transform</a> (const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const Function &amp;fn, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:ae82cabe5ed0ff8075cfb4422dbdb9ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f9132d178767e834bb432ecc2fb7af" id="r_a09f9132d178767e834bb432ecc2fb7af"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
-<tr class="memitem:a09f9132d178767e834bb432ecc2fb7af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a09f9132d178767e834bb432ecc2fb7af">transform</a> (const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const Function &amp;fn, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:a09f9132d178767e834bb432ecc2fb7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a18d11b864e92f98c5a5572f84dfeb0" id="r_a2a18d11b864e92f98c5a5572f84dfeb0"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
-<tr class="memitem:a2a18d11b864e92f98c5a5572f84dfeb0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a2a18d11b864e92f98c5a5572f84dfeb0">transform</a> (const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;c, const Function &amp;fn, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:a2a18d11b864e92f98c5a5572f84dfeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6314c99977b504d190468b743a8be3cd" id="r_a6314c99977b504d190468b743a8be3cd"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
-<tr class="memitem:a6314c99977b504d190468b743a8be3cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a6314c99977b504d190468b743a8be3cd">transform</a> (const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;c, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;d, const Function &amp;fn, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:a6314c99977b504d190468b743a8be3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1290c7ee5b694de7cfb6184694dace2" id="r_ac1290c7ee5b694de7cfb6184694dace2"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
-<tr class="memitem:ac1290c7ee5b694de7cfb6184694dace2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac1290c7ee5b694de7cfb6184694dace2">segmented_reduce</a> (const size_t num_segments, const size_t stride, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const Function &amp;fn, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;initial_value, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:ac1290c7ee5b694de7cfb6184694dace2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d74d478d669ef8db8d94132bc60916b" id="r_a3d74d478d669ef8db8d94132bc60916b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a3d74d478d669ef8db8d94132bc60916b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3d74d478d669ef8db8d94132bc60916b">xcorr</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:a3d74d478d669ef8db8d94132bc60916b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd7e0903d0662213dfefb7f50b494c7" id="r_afcd7e0903d0662213dfefb7f50b494c7"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
-<tr class="memitem:afcd7e0903d0662213dfefb7f50b494c7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#afcd7e0903d0662213dfefb7f50b494c7">unwrap</a> (const Container &amp;in)</td></tr>
-<tr class="separator:afcd7e0903d0662213dfefb7f50b494c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac42896ef2699de7f77a0fcc2c1acc5d" id="r_aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
-<tr class="memitem:aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aac42896ef2699de7f77a0fcc2c1acc5d">unwrap</a> (Container &amp;in)</td></tr>
-<tr class="separator:aac42896ef2699de7f77a0fcc2c1acc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4371af20e3a439265a035ff590e760bb" id="r_a4371af20e3a439265a035ff590e760bb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
+<tr class="memitem:a4371af20e3a439265a035ff590e760bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a4371af20e3a439265a035ff590e760bb">transform</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const Function &amp;<a class="el" href="bm__kernel__params_8cu.html#a330be6b81dff4a95d68c9eefcf8283e3">fn</a>, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:a4371af20e3a439265a035ff590e760bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7afa384b82dda18c23f8f4cabafed6" id="r_afc7afa384b82dda18c23f8f4cabafed6"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
+<tr class="memitem:afc7afa384b82dda18c23f8f4cabafed6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#afc7afa384b82dda18c23f8f4cabafed6">transform</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const Function &amp;<a class="el" href="bm__kernel__params_8cu.html#a330be6b81dff4a95d68c9eefcf8283e3">fn</a>, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:afc7afa384b82dda18c23f8f4cabafed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9e591941e90ab25546418d8e32e575" id="r_a8a9e591941e90ab25546418d8e32e575"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
+<tr class="memitem:a8a9e591941e90ab25546418d8e32e575"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a8a9e591941e90ab25546418d8e32e575">transform</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;c, const Function &amp;<a class="el" href="bm__kernel__params_8cu.html#a330be6b81dff4a95d68c9eefcf8283e3">fn</a>, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:a8a9e591941e90ab25546418d8e32e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd78e38d0d9e673e1a4d58f7033c4a27" id="r_afd78e38d0d9e673e1a4d58f7033c4a27"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
+<tr class="memitem:afd78e38d0d9e673e1a4d58f7033c4a27"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#afd78e38d0d9e673e1a4d58f7033c4a27">transform</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;c, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;d, const Function &amp;<a class="el" href="bm__kernel__params_8cu.html#a330be6b81dff4a95d68c9eefcf8283e3">fn</a>, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:afd78e38d0d9e673e1a4d58f7033c4a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962af00233f14a05559e517074731a5e" id="r_a962af00233f14a05559e517074731a5e"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Function &gt; </td></tr>
+<tr class="memitem:a962af00233f14a05559e517074731a5e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a962af00233f14a05559e517074731a5e">segmented_reduce</a> (const size_t num_segments, const size_t stride, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const Function &amp;<a class="el" href="bm__kernel__params_8cu.html#a330be6b81dff4a95d68c9eefcf8283e3">fn</a>, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;initial_value, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:a962af00233f14a05559e517074731a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d3a305a99aadf448c3eff4f816d634" id="r_a07d3a305a99aadf448c3eff4f816d634"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a07d3a305a99aadf448c3eff4f816d634"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a07d3a305a99aadf448c3eff4f816d634">xcorr</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:a07d3a305a99aadf448c3eff4f816d634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b048ed23e90ce09c32436bb134ea3f" id="r_a63b048ed23e90ce09c32436bb134ea3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a63b048ed23e90ce09c32436bb134ea3f">parse_key_value_pairs</a> (const std::vector&lt; std::string &gt; &amp;args)</td></tr>
+<tr class="separator:a63b048ed23e90ce09c32436bb134ea3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac636604d27b29f7aaca987e0a6a321c2" id="r_ac636604d27b29f7aaca987e0a6a321c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac636604d27b29f7aaca987e0a6a321c2">tokenize</a> (const std::string &amp;input, const char delimiter)</td></tr>
+<tr class="separator:ac636604d27b29f7aaca987e0a6a321c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79902655d7bdc2deb327339f0263caa" id="r_ae79902655d7bdc2deb327339f0263caa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ae79902655d7bdc2deb327339f0263caa">parse_shape</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:ae79902655d7bdc2deb327339f0263caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfc44ba8b99f9d93184ba75af4ac3af" id="r_aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
+<tr class="memitem:aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aabfc44ba8b99f9d93184ba75af4ac3af">unwrap_data</a> (const Container &amp;in)</td></tr>
+<tr class="separator:aabfc44ba8b99f9d93184ba75af4ac3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3650eb244d316ddc737b15e1ca1ea9e6" id="r_a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </td></tr>
+<tr class="memitem:a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3650eb244d316ddc737b15e1ca1ea9e6">unwrap_data</a> (Container &amp;in)</td></tr>
+<tr class="separator:a3650eb244d316ddc737b15e1ca1ea9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c8acad0a5049d6d9ba6029e331b75f" id="r_ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac5c8acad0a5049d6d9ba6029e331b75f">unwrap_get</a> (const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:ac5c8acad0a5049d6d9ba6029e331b75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f353db19d2caa8103de584773f8f3f8" id="r_a6f353db19d2caa8103de584773f8f3f8"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a6f353db19d2caa8103de584773f8f3f8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a6f353db19d2caa8103de584773f8f3f8">unwrap_get</a> (std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:a6f353db19d2caa8103de584773f8f3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad191b7eb3de43cb53daf01d021d91145" id="r_ad191b7eb3de43cb53daf01d021d91145"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:ad191b7eb3de43cb53daf01d021d91145"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ad191b7eb3de43cb53daf01d021d91145">unwrap_ptr_get</a> (const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:ad191b7eb3de43cb53daf01d021d91145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b05fedeebdd7a733c22cad911170e85" id="r_a3b05fedeebdd7a733c22cad911170e85"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a3b05fedeebdd7a733c22cad911170e85"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3b05fedeebdd7a733c22cad911170e85">unwrap_ptr_get</a> (std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in)</td></tr>
+<tr class="separator:a3b05fedeebdd7a733c22cad911170e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f70260bf7e067f7fa7345f6050de9dd" id="r_a4f70260bf7e067f7fa7345f6050de9dd"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </td></tr>
+<tr class="memitem:a4f70260bf7e067f7fa7345f6050de9dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a4f70260bf7e067f7fa7345f6050de9dd">bit_cast</a> (const U &amp;in)</td></tr>
+<tr class="separator:a4f70260bf7e067f7fa7345f6050de9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63946c77a996c342c3d074d12bae551" id="r_ad63946c77a996c342c3d074d12bae551"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:ad63946c77a996c342c3d074d12bae551"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ad63946c77a996c342c3d074d12bae551">to_global_iota</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;global_nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;global_nn_offset, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_nn, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;local_rr, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; ptr, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;initial_value=0)</td></tr>
+<tr class="separator:ad63946c77a996c342c3d074d12bae551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704c13d4c9575fb6d6ff6dd7810a6097" id="r_a704c13d4c9575fb6d6ff6dd7810a6097"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a704c13d4c9575fb6d6ff6dd7810a6097"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a704c13d4c9575fb6d6ff6dd7810a6097">verify_global_iota</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;global_nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;global_nn_offset, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;local_nn, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;local_rr, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;ptr, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;initial_value=0)</td></tr>
+<tr class="separator:a704c13d4c9575fb6d6ff6dd7810a6097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d260f41859a47fb989aa23c441ec3f" id="r_ac0d260f41859a47fb989aa23c441ec3f"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator , typename U &gt; </td></tr>
+<tr class="memitem:ac0d260f41859a47fb989aa23c441ec3f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="structac_1_1segment.html">ac::segment</a> &amp;<a class="el" href="structac_1_1segment.html">segment</a>, <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; ptr, const U &amp;fill_value=0)</td></tr>
+<tr class="separator:ac0d260f41859a47fb989aa23c441ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a48c450cc5b15240bfc4b886aa555e" id="r_a86a48c450cc5b15240bfc4b886aa555e"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator , typename U &gt; </td></tr>
+<tr class="memitem:a86a48c450cc5b15240bfc4b886aa555e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a86a48c450cc5b15240bfc4b886aa555e">fill_iota</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="structac_1_1segment.html">ac::segment</a> &amp;<a class="el" href="structac_1_1segment.html">segment</a>, <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; ptr, const U &amp;initial_value=0)</td></tr>
+<tr class="separator:a86a48c450cc5b15240bfc4b886aa555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13c62eb4c58a17e6375d4404483a8b3" id="r_aa13c62eb4c58a17e6375d4404483a8b3"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </td></tr>
+<tr class="memitem:aa13c62eb4c58a17e6375d4404483a8b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aa13c62eb4c58a17e6375d4404483a8b3">copy</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt; out)</td></tr>
+<tr class="separator:aa13c62eb4c58a17e6375d4404483a8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d817d921dfa1e52918d649c5b1d2e87" id="r_a7d817d921dfa1e52918d649c5b1d2e87"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </td></tr>
+<tr class="memitem:a7d817d921dfa1e52918d649c5b1d2e87"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a7d817d921dfa1e52918d649c5b1d2e87">copy_async</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in, <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt; out)</td></tr>
+<tr class="separator:a7d817d921dfa1e52918d649c5b1d2e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68db64737b96e3082b181e63c3d1274c" id="r_a68db64737b96e3082b181e63c3d1274c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </td></tr>
+<tr class="memitem:a68db64737b96e3082b181e63c3d1274c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a68db64737b96e3082b181e63c3d1274c">equals</a> (const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>)</td></tr>
+<tr class="separator:a68db64737b96e3082b181e63c3d1274c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab0af8e0161dee983e1f3763bcb92e9" id="r_a4ab0af8e0161dee983e1f3763bcb92e9"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a4ab0af8e0161dee983e1f3763bcb92e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a4ab0af8e0161dee983e1f3763bcb92e9">fill</a> (<a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; <a class="el" href="classac_1_1view.html">view</a>, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>)</td></tr>
+<tr class="separator:a4ab0af8e0161dee983e1f3763bcb92e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33702f52f4ba56f2460829a271245fa2" id="r_a33702f52f4ba56f2460829a271245fa2"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a33702f52f4ba56f2460829a271245fa2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a33702f52f4ba56f2460829a271245fa2">fill</a> (const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;fill_value, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;offset, <a class="el" href="structac_1_1ndbuffer.html">ac::ndbuffer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a> &gt; &amp;ndbuf)</td></tr>
+<tr class="memitem:a33702f52f4ba56f2460829a271245fa2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a33702f52f4ba56f2460829a271245fa2">fill</a> (const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;offset, <a class="el" href="structac_1_1ndbuffer.html">ac::ndbuffer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a> &gt; &amp;ndbuf)</td></tr>
 <tr class="separator:a33702f52f4ba56f2460829a271245fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5db1899650d3153da2e671c03c29bec" id="r_ab5db1899650d3153da2e671c03c29bec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ab5db1899650d3153da2e671c03c29bec">make_index</a> (const size_t count, const uint64_t &amp;fill_value)</td></tr>
+<tr class="memitem:ab5db1899650d3153da2e671c03c29bec" id="r_ab5db1899650d3153da2e671c03c29bec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ab5db1899650d3153da2e671c03c29bec">make_index</a> (const size_t count, const uint64_t &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>)</td></tr>
 <tr class="separator:ab5db1899650d3153da2e671c03c29bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51397630f48d2d2c9cbee56a940f22da" id="r_a51397630f48d2d2c9cbee56a940f22da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a51397630f48d2d2c9cbee56a940f22da">make_shape</a> (const size_t count, const uint64_t &amp;fill_value)</td></tr>
+<tr class="memitem:a51397630f48d2d2c9cbee56a940f22da" id="r_a51397630f48d2d2c9cbee56a940f22da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a51397630f48d2d2c9cbee56a940f22da">make_shape</a> (const size_t count, const uint64_t &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>)</td></tr>
 <tr class="separator:a51397630f48d2d2c9cbee56a940f22da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7137be6c3c61d44b69978ecdab973728" id="r_a7137be6c3c61d44b69978ecdab973728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#ae3a29a79ce5905a3182adfaa97bb49bb">ac::direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a7137be6c3c61d44b69978ecdab973728">make_direction</a> (const size_t count, const int64_t &amp;fill_value)</td></tr>
+<tr class="memitem:a7137be6c3c61d44b69978ecdab973728" id="r_a7137be6c3c61d44b69978ecdab973728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceac.html#ae3a29a79ce5905a3182adfaa97bb49bb">ac::direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a7137be6c3c61d44b69978ecdab973728">make_direction</a> (const size_t count, const int64_t &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>)</td></tr>
 <tr class="separator:a7137be6c3c61d44b69978ecdab973728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca241658ab4c195afd1e9d9676caecd" id="r_abca241658ab4c195afd1e9d9676caecd"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:abca241658ab4c195afd1e9d9676caecd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#abca241658ab4c195afd1e9d9676caecd">make_ntuple</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;fill_value)</td></tr>
+<tr class="memitem:abca241658ab4c195afd1e9d9676caecd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#abca241658ab4c195afd1e9d9676caecd">make_ntuple</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>)</td></tr>
 <tr class="separator:abca241658ab4c195afd1e9d9676caecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1e163b761190886b5b094d8b9cf4a5" id="r_a6d1e163b761190886b5b094d8b9cf4a5"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:a6d1e163b761190886b5b094d8b9cf4a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a6d1e163b761190886b5b094d8b9cf4a5">make_ntuple_from_ptr</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> *data)</td></tr>
@@ -223,6 +285,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a877fa8937d5c800e7362a966ce0b2aa7" id="r_a877fa8937d5c800e7362a966ce0b2aa7"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:a877fa8937d5c800e7362a966ce0b2aa7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a877fa8937d5c800e7362a966ce0b2aa7">within_box</a> (const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;coords, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_dims, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_offset)</td></tr>
 <tr class="separator:a877fa8937d5c800e7362a966ce0b2aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d78011c71e1c23d696768a24e5b3c5" id="r_a21d78011c71e1c23d696768a24e5b3c5"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a21d78011c71e1c23d696768a24e5b3c5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a21d78011c71e1c23d696768a24e5b3c5">intersect_box</a> (const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_dims_a, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_offset_a, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_dims_b, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;box_offset_b)</td></tr>
+<tr class="separator:a21d78011c71e1c23d696768a24e5b3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51cbdc131a2a7c69c03fe9aec1229b61" id="r_a51cbdc131a2a7c69c03fe9aec1229b61"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:a51cbdc131a2a7c69c03fe9aec1229b61"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a51cbdc131a2a7c69c03fe9aec1229b61">concat</a> (const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;a, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>)</td></tr>
 <tr class="separator:a51cbdc131a2a7c69c03fe9aec1229b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,7 +298,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a40c34b60b9d555b6cbd8590c35afeac3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a40c34b60b9d555b6cbd8590c35afeac3">concat</a> (const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;a, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;<a class="el" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>)</td></tr>
 <tr class="separator:a40c34b60b9d555b6cbd8590c35afeac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753d76739e8a342ec81ad5e5e9b3c468" id="r_a753d76739e8a342ec81ad5e5e9b3c468"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , size_t N&gt; </td></tr>
-<tr class="memitem:a753d76739e8a342ec81ad5e5e9b3c468"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a753d76739e8a342ec81ad5e5e9b3c468">make_static_ntuple</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;fill_value)</td></tr>
+<tr class="memitem:a753d76739e8a342ec81ad5e5e9b3c468"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a753d76739e8a342ec81ad5e5e9b3c468">make_static_ntuple</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="namespaceac.html#ac0d260f41859a47fb989aa23c441ec3f">fill_value</a>)</td></tr>
 <tr class="separator:a753d76739e8a342ec81ad5e5e9b3c468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d45d00e5814c6c4bd2ae027f6d645c" id="r_af0d45d00e5814c6c4bd2ae027f6d645c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , size_t N&gt; </td></tr>
 <tr class="memitem:af0d45d00e5814c6c4bd2ae027f6d645c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#af0d45d00e5814c6c4bd2ae027f6d645c">make_static_ntuple_from_ptr</a> (const size_t count, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> *data)</td></tr>
@@ -259,36 +324,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a7219d132e676f7f326a32577d0e5597e" id="r_a7219d132e676f7f326a32577d0e5597e"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , size_t N&gt; </td></tr>
 <tr class="memitem:a7219d132e676f7f326a32577d0e5597e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a7219d132e676f7f326a32577d0e5597e">within_box</a> (const <a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt; &amp;coords, const <a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt; &amp;box_dims, const <a class="el" href="classac_1_1static__ntuple.html">ac::static_ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, N &gt; &amp;box_offset)</td></tr>
 <tr class="separator:a7219d132e676f7f326a32577d0e5597e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2800b6a2a2a76b817d393d9a74b3f387" id="r_a2800b6a2a2a76b817d393d9a74b3f387"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a2800b6a2a2a76b817d393d9a74b3f387"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a2800b6a2a2a76b817d393d9a74b3f387">xcorr</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;in_mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;in_nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;in_nn_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in_input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;in_nk, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;in_kernel, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; in_output)</td></tr>
-<tr class="separator:a2800b6a2a2a76b817d393d9a74b3f387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76816eb14d1d1d567acb57994a7e60f5" id="r_a76816eb14d1d1d567acb57994a7e60f5"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a76816eb14d1d1d567acb57994a7e60f5">xcorr&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; output)</td></tr>
-<tr class="separator:a76816eb14d1d1d567acb57994a7e60f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa697b26aefb8678cd52971a9faa67010" id="r_aa697b26aefb8678cd52971a9faa67010"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#aa697b26aefb8678cd52971a9faa67010">xcorr&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; output)</td></tr>
-<tr class="separator:aa697b26aefb8678cd52971a9faa67010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53bed7fa58ea478acecd29876e6150ae" id="r_a53bed7fa58ea478acecd29876e6150ae"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a53bed7fa58ea478acecd29876e6150ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a53bed7fa58ea478acecd29876e6150ae">segmented_reduce</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;inputs, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:a53bed7fa58ea478acecd29876e6150ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db25fb81ed844e45087a6d473f8a7c3" id="r_a2db25fb81ed844e45087a6d473f8a7c3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a2db25fb81ed844e45087a6d473f8a7c3">segmented_reduce&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &gt; &amp;inputs, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; output)</td></tr>
-<tr class="separator:a2db25fb81ed844e45087a6d473f8a7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d489709b1abbe7266428368d019326" id="r_a46d489709b1abbe7266428368d019326"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a46d489709b1abbe7266428368d019326">segmented_reduce&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &gt; &amp;inputs, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; output)</td></tr>
-<tr class="separator:a46d489709b1abbe7266428368d019326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f0e45dde50e1f24db9c03f760c7b87" id="r_aa7f0e45dde50e1f24db9c03f760c7b87"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:aa7f0e45dde50e1f24db9c03f760c7b87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#aa7f0e45dde50e1f24db9c03f760c7b87">segmented_reduce</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;inputs, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
-<tr class="separator:aa7f0e45dde50e1f24db9c03f760c7b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba4e0d420244ba052837b7f19a974fd" id="r_a3ba4e0d420244ba052837b7f19a974fd"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a3ba4e0d420244ba052837b7f19a974fd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a3ba4e0d420244ba052837b7f19a974fd">transform</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; in, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; out)</td></tr>
-<tr class="separator:a3ba4e0d420244ba052837b7f19a974fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a365083fdf0c00093e8e5b89ac55a62d8" id="r_a365083fdf0c00093e8e5b89ac55a62d8"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a365083fdf0c00093e8e5b89ac55a62d8">transform&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; in, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; out)</td></tr>
-<tr class="separator:a365083fdf0c00093e8e5b89ac55a62d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a513fa7730871221f1fc18f629bcc64a8" id="r_a513fa7730871221f1fc18f629bcc64a8"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a513fa7730871221f1fc18f629bcc64a8">transform&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; in, <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; out)</td></tr>
-<tr class="separator:a513fa7730871221f1fc18f629bcc64a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38318383adacd9fa910ed8851c7c684" id="r_ac38318383adacd9fa910ed8851c7c684"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator &gt; </td></tr>
+<tr class="memitem:ac38318383adacd9fa910ed8851c7c684"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac38318383adacd9fa910ed8851c7c684">make_view</a> (const size_t count, const size_t offset, const <a class="el" href="classac_1_1view.html">view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &amp;<a class="el" href="classac_1_1view.html">view</a>)</td></tr>
+<tr class="separator:ac38318383adacd9fa910ed8851c7c684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4162d5336f333549b0bafddb2a6b30bb" id="r_a4162d5336f333549b0bafddb2a6b30bb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U , typename A_in , typename A_out , typename B_in , typename B_out &gt; </td></tr>
+<tr class="memitem:a4162d5336f333549b0bafddb2a6b30bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a4162d5336f333549b0bafddb2a6b30bb">bidirectional_copy</a> (const <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, A_in &gt; &amp;a_in, const <a class="el" href="classac_1_1view.html">ac::view</a>&lt; U, B_in &gt; &amp;b_in, <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, A_out &gt; a_out, <a class="el" href="classac_1_1view.html">ac::view</a>&lt; U, B_out &gt; b_out)</td></tr>
+<tr class="separator:a4162d5336f333549b0bafddb2a6b30bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fb76df5ac3f557e3dd510a756225e3" id="r_ac6fb76df5ac3f557e3dd510a756225e3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ac6fb76df5ac3f557e3dd510a756225e3">xcorr&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; output)</td></tr>
+<tr class="separator:ac6fb76df5ac3f557e3dd510a756225e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef390cd30772cfe999723fdecb6db93" id="r_abef390cd30772cfe999723fdecb6db93"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#abef390cd30772cfe999723fdecb6db93">xcorr&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;mm, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nn_offset, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &amp;input, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;nk, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &amp;<a class="el" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; output)</td></tr>
+<tr class="separator:abef390cd30772cfe999723fdecb6db93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c71dbaf3600757a449e36745666d160" id="r_a2c71dbaf3600757a449e36745666d160"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a2c71dbaf3600757a449e36745666d160"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a2c71dbaf3600757a449e36745666d160">segmented_reduce</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;inputs, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; output)</td></tr>
+<tr class="separator:a2c71dbaf3600757a449e36745666d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a8454ed85a9ab96a86462e062c7077" id="r_ab5a8454ed85a9ab96a86462e062c7077"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#ab5a8454ed85a9ab96a86462e062c7077">segmented_reduce&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &gt; &amp;inputs, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; output)</td></tr>
+<tr class="separator:ab5a8454ed85a9ab96a86462e062c7077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f21c4fb0dad46ed6c31df7754f243f" id="r_a41f21c4fb0dad46ed6c31df7754f243f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a41f21c4fb0dad46ed6c31df7754f243f">segmented_reduce&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;offset, const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &gt; &amp;inputs, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; output)</td></tr>
+<tr class="separator:a41f21c4fb0dad46ed6c31df7754f243f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441976fe8281f221f2b4847729556b8e" id="r_a441976fe8281f221f2b4847729556b8e"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
+<tr class="memitem:a441976fe8281f221f2b4847729556b8e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a441976fe8281f221f2b4847729556b8e">transform</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; in, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; out)</td></tr>
+<tr class="separator:a441976fe8281f221f2b4847729556b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad09f344bc7e8c576ffeccd659cb470" id="r_a1ad09f344bc7e8c576ffeccd659cb470"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a1ad09f344bc7e8c576ffeccd659cb470">transform&lt; double &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; in, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; out)</td></tr>
+<tr class="separator:a1ad09f344bc7e8c576ffeccd659cb470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2155c88da586264c2caa3c6cc714a9d3" id="r_a2155c88da586264c2caa3c6cc714a9d3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceac.html#a2155c88da586264c2caa3c6cc714a9d3">transform&lt; uint64_t &gt;</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> in_subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> in_offset, const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; in, <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; out)</td></tr>
+<tr class="separator:a2155c88da586264c2caa3c6cc714a9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dd29b382990ec1b38f0bbd11f32e74" id="r_a65dd29b382990ec1b38f0bbd11f32e74"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:a65dd29b382990ec1b38f0bbd11f32e74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a65dd29b382990ec1b38f0bbd11f32e74">transform</a> (const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; uint64_t &gt; dims, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; uint64_t &gt; subdims, const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; uint64_t &gt; offset, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> *in, <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> *out)</td></tr>
 <tr class="separator:a65dd29b382990ec1b38f0bbd11f32e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453b2221152d303a8e94ebba3529fb62" id="r_a453b2221152d303a8e94ebba3529fb62"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:a453b2221152d303a8e94ebba3529fb62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a453b2221152d303a8e94ebba3529fb62">transform</a> (const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> dims, const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> subdims, const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> offset, const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; in, <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; out)</td></tr>
-<tr class="separator:a453b2221152d303a8e94ebba3529fb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d2033ab76d5b15e87a5938d4c7f92c" id="r_a34d2033ab76d5b15e87a5938d4c7f92c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
 <tr class="memitem:a34d2033ab76d5b15e87a5938d4c7f92c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceac.html#a34d2033ab76d5b15e87a5938d4c7f92c">print_recursive</a> (const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; uint64_t &gt; &amp;<a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">shape</a>, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> *data)</td></tr>
 <tr class="separator:a34d2033ab76d5b15e87a5938d4c7f92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,6 +385,22 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceac.html#a26faed6c98dc0915743beba97a6a96ab">ac::device_ndbuffer</a> = typedef <a class="el" href="structac_1_1ndbuffer.html">ndbuffer</a>&lt;<a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="namespaceac_1_1mr.html#acff34621cf92adb0bda722e632c11ab8">ac::mr::device_allocator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add03cc54eea1ae1213c5e2755cc2a06b" name="add03cc54eea1ae1213c5e2755cc2a06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add03cc54eea1ae1213c5e2755cc2a06b">&#9670;&#160;</a></span>device_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a> = typedef <a class="el" href="classac_1_1view.html">view</a>&lt;<a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="namespaceac_1_1mr.html#acff34621cf92adb0bda722e632c11ab8">ac::mr::device_allocator</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -369,6 +447,22 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceac.html#afbc4e3122e5a31d5c943b320828249d0">ac::host_ndbuffer</a> = typedef <a class="el" href="structac_1_1ndbuffer.html">ndbuffer</a>&lt;<a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af134f0901843e2745b054bd878381d98" name="af134f0901843e2745b054bd878381d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af134f0901843e2745b054bd878381d98">&#9670;&#160;</a></span>host_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a> = typedef <a class="el" href="classac_1_1view.html">view</a>&lt;<a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -468,6 +562,68 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4162d5336f333549b0bafddb2a6b30bb" name="a4162d5336f333549b0bafddb2a6b30bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4162d5336f333549b0bafddb2a6b30bb">&#9670;&#160;</a></span>bidirectional_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U , typename A_in , typename A_out , typename B_in , typename B_out &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::bidirectional_copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, A_in &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1view.html">ac::view</a>&lt; U, B_in &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, A_out &gt;&#160;</td>
+          <td class="paramname"><em>a_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classac_1_1view.html">ac::view</a>&lt; U, B_out &gt;&#160;</td>
+          <td class="paramname"><em>b_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f70260bf7e067f7fa7345f6050de9dd" name="a4f70260bf7e067f7fa7345f6050de9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f70260bf7e067f7fa7345f6050de9dd">&#9670;&#160;</a></span>bit_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> ac::bit_cast </td>
+          <td>(</td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a51cbdc131a2a7c69c03fe9aec1229b61" name="a51cbdc131a2a7c69c03fe9aec1229b61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51cbdc131a2a7c69c03fe9aec1229b61">&#9670;&#160;</a></span>concat() <span class="overload">[1/3]</span></h2>
 
@@ -558,6 +714,66 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
+<a id="aa13c62eb4c58a17e6375d4404483a8b3" name="aa13c62eb4c58a17e6375d4404483a8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13c62eb4c58a17e6375d4404483a8b3">&#9670;&#160;</a></span>copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d817d921dfa1e52918d649c5b1d2e87" name="a7d817d921dfa1e52918d649c5b1d2e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d817d921dfa1e52918d649c5b1d2e87">&#9670;&#160;</a></span>copy_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::copy_async </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acd484af875cfee7fee80622e5ad687bb" name="acd484af875cfee7fee80622e5ad687bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd484af875cfee7fee80622e5ad687bb">&#9670;&#160;</a></span>dot() <span class="overload">[1/2]</span></h2>
 
@@ -618,8 +834,68 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
+<a id="a68db64737b96e3082b181e63c3d1274c" name="a68db64737b96e3082b181e63c3d1274c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68db64737b96e3082b181e63c3d1274c">&#9670;&#160;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ac::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ab0af8e0161dee983e1f3763bcb92e9" name="a4ab0af8e0161dee983e1f3763bcb92e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab0af8e0161dee983e1f3763bcb92e9">&#9670;&#160;</a></span>fill() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33702f52f4ba56f2460829a271245fa2" name="a33702f52f4ba56f2460829a271245fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33702f52f4ba56f2460829a271245fa2">&#9670;&#160;</a></span>fill()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33702f52f4ba56f2460829a271245fa2">&#9670;&#160;</a></span>fill() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -649,6 +925,132 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
           <td></td>
           <td class="paramtype"><a class="el" href="structac_1_1ndbuffer.html">ac::ndbuffer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, <a class="el" href="structac_1_1mr_1_1host__allocator.html">ac::mr::host_allocator</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>ndbuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86a48c450cc5b15240bfc4b886aa555e" name="a86a48c450cc5b15240bfc4b886aa555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a48c450cc5b15240bfc4b886aa555e">&#9670;&#160;</a></span>fill_iota()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::fill_iota </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structac_1_1segment.html">ac::segment</a> &amp;&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt;&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>initial_value</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0d260f41859a47fb989aa23c441ec3f" name="ac0d260f41859a47fb989aa23c441ec3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d260f41859a47fb989aa23c441ec3f">&#9670;&#160;</a></span>fill_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::fill_value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structac_1_1segment.html">ac::segment</a> &amp;&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classac_1_1view.html">ac::view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt;&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>fill_value</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21d78011c71e1c23d696768a24e5b3c5" name="a21d78011c71e1c23d696768a24e5b3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d78011c71e1c23d696768a24e5b3c5">&#9670;&#160;</a></span>intersect_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ac::intersect_box </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>box_dims_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>box_offset_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>box_dims_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1ntuple.html">ac::ntuple</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>box_offset_b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -864,6 +1266,42 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
+<a id="ac38318383adacd9fa910ed8851c7c684" name="ac38318383adacd9fa910ed8851c7c684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38318383adacd9fa910ed8851c7c684">&#9670;&#160;</a></span>make_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> , typename Allocator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::make_view </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1view.html">view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>, Allocator &gt; &amp;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a592617fb47421ff39b1b83005137a6a5" name="a592617fb47421ff39b1b83005137a6a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a592617fb47421ff39b1b83005137a6a5">&#9670;&#160;</a></span>mul() <span class="overload">[1/2]</span></h2>
 
@@ -923,6 +1361,44 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
       </table>
 </div><div class="memdoc">
 <p>Element-wise multiplication of static_ntuples a and b </p>
+
+</div>
+</div>
+<a id="a63b048ed23e90ce09c32436bb134ea3f" name="a63b048ed23e90ce09c32436bb134ea3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b048ed23e90ce09c32436bb134ea3f">&#9670;&#160;</a></span>parse_key_value_pairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::string &gt; ac::parse_key_value_pairs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses arguments into a map. Arguments can be accessed by map.at("key"). </p>
+
+</div>
+</div>
+<a id="ae79902655d7bdc2deb327339f0263caa" name="ae79902655d7bdc2deb327339f0263caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79902655d7bdc2deb327339f0263caa">&#9670;&#160;</a></span>parse_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> ac::parse_shape </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses a string representation "a,b,c,..." into <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>. </p>
 
 </div>
 </div>
@@ -1032,28 +1508,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a6bf6a37c77c7c7770128c00666bb5341" name="a6bf6a37c77c7c7770128c00666bb5341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf6a37c77c7c7770128c00666bb5341">&#9670;&#160;</a></span>same_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Inputs&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ac::same_size </td>
-          <td>(</td>
-          <td class="paramtype">const Inputs &amp;...&#160;</td>
-          <td class="paramname"><em>inputs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a53bed7fa58ea478acecd29876e6150ae" name="a53bed7fa58ea478acecd29876e6150ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53bed7fa58ea478acecd29876e6150ae">&#9670;&#160;</a></span>segmented_reduce() <span class="overload">[1/3]</span></h2>
+<a id="a2c71dbaf3600757a449e36745666d160" name="a2c71dbaf3600757a449e36745666d160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c71dbaf3600757a449e36745666d160">&#9670;&#160;</a></span>segmented_reduce() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1081,13 +1537,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1100,56 +1556,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="aa7f0e45dde50e1f24db9c03f760c7b87" name="aa7f0e45dde50e1f24db9c03f760c7b87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f0e45dde50e1f24db9c03f760c7b87">&#9670;&#160;</a></span>segmented_reduce() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void ac::segmented_reduce </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>dims</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>subdims</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>inputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac1290c7ee5b694de7cfb6184694dace2" name="ac1290c7ee5b694de7cfb6184694dace2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1290c7ee5b694de7cfb6184694dace2">&#9670;&#160;</a></span>segmented_reduce() <span class="overload">[3/3]</span></h2>
+<a id="a962af00233f14a05559e517074731a5e" name="a962af00233f14a05559e517074731a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962af00233f14a05559e517074731a5e">&#9670;&#160;</a></span>segmented_reduce() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1171,7 +1579,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -1189,7 +1597,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1202,14 +1610,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a2db25fb81ed844e45087a6d473f8a7c3" name="a2db25fb81ed844e45087a6d473f8a7c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2db25fb81ed844e45087a6d473f8a7c3">&#9670;&#160;</a></span>segmented_reduce&lt; double &gt;()</h2>
+<a id="ab5a8454ed85a9ab96a86462e062c7077" name="ab5a8454ed85a9ab96a86462e062c7077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a8454ed85a9ab96a86462e062c7077">&#9670;&#160;</a></span>segmented_reduce&lt; double &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#ac1290c7ee5b694de7cfb6184694dace2">ac::segmented_reduce</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a962af00233f14a05559e517074731a5e">ac::segmented_reduce</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
           <td class="paramname"><em>dims</em>, </td>
@@ -1229,13 +1637,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1248,14 +1656,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a46d489709b1abbe7266428368d019326" name="a46d489709b1abbe7266428368d019326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46d489709b1abbe7266428368d019326">&#9670;&#160;</a></span>segmented_reduce&lt; uint64_t &gt;()</h2>
+<a id="a41f21c4fb0dad46ed6c31df7754f243f" name="a41f21c4fb0dad46ed6c31df7754f243f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f21c4fb0dad46ed6c31df7754f243f">&#9670;&#160;</a></span>segmented_reduce&lt; uint64_t &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#ac1290c7ee5b694de7cfb6184694dace2">ac::segmented_reduce</a>&lt; uint64_t &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a962af00233f14a05559e517074731a5e">ac::segmented_reduce</a>&lt; uint64_t &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
           <td class="paramname"><em>dims</em>, </td>
@@ -1275,13 +1683,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1363,6 +1771,67 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad63946c77a996c342c3d074d12bae551" name="ad63946c77a996c342c3d074d12bae551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63946c77a996c342c3d074d12bae551">&#9670;&#160;</a></span>to_global_iota()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::to_global_iota </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>global_nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>global_nn_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_rr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>initial_value</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initializes the local mesh to global iota </p>
 
 </div>
 </div>
@@ -1486,8 +1955,37 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a6314c99977b504d190468b743a8be3cd" name="a6314c99977b504d190468b743a8be3cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6314c99977b504d190468b743a8be3cd">&#9670;&#160;</a></span>transform() <span class="overload">[1/7]</span></h2>
+<a id="ac636604d27b29f7aaca987e0a6a321c2" name="ac636604d27b29f7aaca987e0a6a321c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac636604d27b29f7aaca987e0a6a321c2">&#9670;&#160;</a></span>tokenize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; ac::tokenize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>delimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Splits the input string into tokens delimited by delimiter. </p>
+
+</div>
+</div>
+<a id="afd78e38d0d9e673e1a4d58f7033c4a27" name="afd78e38d0d9e673e1a4d58f7033c4a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd78e38d0d9e673e1a4d58f7033c4a27">&#9670;&#160;</a></span>transform() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1497,25 +1995,25 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void ac::transform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -1527,7 +2025,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1540,8 +2038,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a2a18d11b864e92f98c5a5572f84dfeb0" name="a2a18d11b864e92f98c5a5572f84dfeb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a18d11b864e92f98c5a5572f84dfeb0">&#9670;&#160;</a></span>transform() <span class="overload">[2/7]</span></h2>
+<a id="a8a9e591941e90ab25546418d8e32e575" name="a8a9e591941e90ab25546418d8e32e575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9e591941e90ab25546418d8e32e575">&#9670;&#160;</a></span>transform() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1551,19 +2049,19 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void ac::transform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
@@ -1575,7 +2073,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1588,8 +2086,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a09f9132d178767e834bb432ecc2fb7af" name="a09f9132d178767e834bb432ecc2fb7af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09f9132d178767e834bb432ecc2fb7af">&#9670;&#160;</a></span>transform() <span class="overload">[3/7]</span></h2>
+<a id="afc7afa384b82dda18c23f8f4cabafed6" name="afc7afa384b82dda18c23f8f4cabafed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7afa384b82dda18c23f8f4cabafed6">&#9670;&#160;</a></span>transform() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1599,13 +2097,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void ac::transform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -1617,7 +2115,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1630,8 +2128,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="ae82cabe5ed0ff8075cfb4422dbdb9ba9" name="ae82cabe5ed0ff8075cfb4422dbdb9ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82cabe5ed0ff8075cfb4422dbdb9ba9">&#9670;&#160;</a></span>transform() <span class="overload">[4/7]</span></h2>
+<a id="a4371af20e3a439265a035ff590e760bb" name="a4371af20e3a439265a035ff590e760bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4371af20e3a439265a035ff590e760bb">&#9670;&#160;</a></span>transform() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1641,7 +2139,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="memname">void ac::transform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -1653,7 +2151,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -1667,7 +2165,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 </div>
 </div>
 <a id="a65dd29b382990ec1b38f0bbd11f32e74" name="a65dd29b382990ec1b38f0bbd11f32e74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65dd29b382990ec1b38f0bbd11f32e74">&#9670;&#160;</a></span>transform() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dd29b382990ec1b38f0bbd11f32e74">&#9670;&#160;</a></span>transform() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1714,56 +2212,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a453b2221152d303a8e94ebba3529fb62" name="a453b2221152d303a8e94ebba3529fb62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453b2221152d303a8e94ebba3529fb62">&#9670;&#160;</a></span>transform() <span class="overload">[6/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void ac::transform </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td>
-          <td class="paramname"><em>dims</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td>
-          <td class="paramname"><em>subdims</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a>&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3ba4e0d420244ba052837b7f19a974fd" name="a3ba4e0d420244ba052837b7f19a974fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ba4e0d420244ba052837b7f19a974fd">&#9670;&#160;</a></span>transform() <span class="overload">[7/7]</span></h2>
+<a id="a441976fe8281f221f2b4847729556b8e" name="a441976fe8281f221f2b4847729556b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441976fe8281f221f2b4847729556b8e">&#9670;&#160;</a></span>transform() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1791,13 +2241,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -1810,14 +2260,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a365083fdf0c00093e8e5b89ac55a62d8" name="a365083fdf0c00093e8e5b89ac55a62d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a365083fdf0c00093e8e5b89ac55a62d8">&#9670;&#160;</a></span>transform&lt; double &gt;()</h2>
+<a id="a1ad09f344bc7e8c576ffeccd659cb470" name="a1ad09f344bc7e8c576ffeccd659cb470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad09f344bc7e8c576ffeccd659cb470">&#9670;&#160;</a></span>transform&lt; double &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#ae82cabe5ed0ff8075cfb4422dbdb9ba9">ac::transform</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a4371af20e3a439265a035ff590e760bb">ac::transform</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td>
           <td class="paramname"><em>in_dims</em>, </td>
@@ -1837,13 +2287,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt;&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -1856,14 +2306,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a513fa7730871221f1fc18f629bcc64a8" name="a513fa7730871221f1fc18f629bcc64a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513fa7730871221f1fc18f629bcc64a8">&#9670;&#160;</a></span>transform&lt; uint64_t &gt;()</h2>
+<a id="a2155c88da586264c2caa3c6cc714a9d3" name="a2155c88da586264c2caa3c6cc714a9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2155c88da586264c2caa3c6cc714a9d3">&#9670;&#160;</a></span>transform&lt; uint64_t &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#ae82cabe5ed0ff8075cfb4422dbdb9ba9">ac::transform</a>&lt; uint64_t &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a4371af20e3a439265a035ff590e760bb">ac::transform</a>&lt; uint64_t &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a>&#160;</td>
           <td class="paramname"><em>in_dims</em>, </td>
@@ -1883,13 +2333,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt;&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -1902,8 +2352,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="afcd7e0903d0662213dfefb7f50b494c7" name="afcd7e0903d0662213dfefb7f50b494c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcd7e0903d0662213dfefb7f50b494c7">&#9670;&#160;</a></span>unwrap() <span class="overload">[1/2]</span></h2>
+<a id="aabfc44ba8b99f9d93184ba75af4ac3af" name="aabfc44ba8b99f9d93184ba75af4ac3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfc44ba8b99f9d93184ba75af4ac3af">&#9670;&#160;</a></span>unwrap_data() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1911,7 +2361,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto ac::unwrap </td>
+          <td class="memname">auto ac::unwrap_data </td>
           <td>(</td>
           <td class="paramtype">const Container &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
@@ -1922,8 +2372,8 @@ template&lt;typename Container , typename <a class="el" href="test__async__mpi_8
 
 </div>
 </div>
-<a id="aac42896ef2699de7f77a0fcc2c1acc5d" name="aac42896ef2699de7f77a0fcc2c1acc5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac42896ef2699de7f77a0fcc2c1acc5d">&#9670;&#160;</a></span>unwrap() <span class="overload">[2/2]</span></h2>
+<a id="a3650eb244d316ddc737b15e1ca1ea9e6" name="a3650eb244d316ddc737b15e1ca1ea9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3650eb244d316ddc737b15e1ca1ea9e6">&#9670;&#160;</a></span>unwrap_data() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1931,7 +2381,7 @@ template&lt;typename Container , typename <a class="el" href="test__async__mpi_8
 template&lt;typename Container , typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a>  = typename Container::value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto ac::unwrap </td>
+          <td class="memname">auto ac::unwrap_data </td>
           <td>(</td>
           <td class="paramtype">Container &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
@@ -1939,6 +2389,147 @@ template&lt;typename Container , typename <a class="el" href="test__async__mpi_8
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5c8acad0a5049d6d9ba6029e331b75f" name="ac5c8acad0a5049d6d9ba6029e331b75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c8acad0a5049d6d9ba6029e331b75f">&#9670;&#160;</a></span>unwrap_get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::unwrap_get </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f353db19d2caa8103de584773f8f3f8" name="a6f353db19d2caa8103de584773f8f3f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f353db19d2caa8103de584773f8f3f8">&#9670;&#160;</a></span>unwrap_get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::unwrap_get </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad191b7eb3de43cb53daf01d021d91145" name="ad191b7eb3de43cb53daf01d021d91145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad191b7eb3de43cb53daf01d021d91145">&#9670;&#160;</a></span>unwrap_ptr_get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::unwrap_ptr_get </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b05fedeebdd7a733c22cad911170e85" name="a3b05fedeebdd7a733c22cad911170e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b05fedeebdd7a733c22cad911170e85">&#9670;&#160;</a></span>unwrap_ptr_get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ac::unwrap_ptr_get </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a704c13d4c9575fb6d6ff6dd7810a6097" name="a704c13d4c9575fb6d6ff6dd7810a6097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704c13d4c9575fb6d6ff6dd7810a6097">&#9670;&#160;</a></span>verify_global_iota()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ac::verify_global_iota </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>global_nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>global_nn_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#a82c98058e028c57d3663734c793b66cf">ac::index</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_rr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>initial_value</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verify that each cell in the local mesh corresponds to its global index. Throws an exception in the case of a failure. </p>
 
 </div>
 </div>
@@ -1975,6 +2566,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return true if coords are in range [box_offset, box_offset + box_dims) </p>
 
 </div>
 </div>
@@ -2014,68 +2606,8 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a2800b6a2a2a76b817d393d9a74b3f387" name="a2800b6a2a2a76b817d393d9a74b3f387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2800b6a2a2a76b817d393d9a74b3f387">&#9670;&#160;</a></span>xcorr() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void ac::xcorr </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>in_mm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>in_nn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>in_nn_offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in_input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
-          <td class="paramname"><em>in_nk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in_kernel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
-          <td class="paramname"><em>in_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d74d478d669ef8db8d94132bc60916b" name="a3d74d478d669ef8db8d94132bc60916b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d74d478d669ef8db8d94132bc60916b">&#9670;&#160;</a></span>xcorr() <span class="overload">[2/2]</span></h2>
+<a id="a07d3a305a99aadf448c3eff4f816d634" name="a07d3a305a99aadf448c3eff4f816d634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d3a305a99aadf448c3eff4f816d634">&#9670;&#160;</a></span>xcorr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2103,7 +2635,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -2115,13 +2647,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>kernel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a5c33e72ee91d19b43fb4ba9840c935b8">ac::mr::host_pointer</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#af134f0901843e2745b054bd878381d98">ac::host_view</a>&lt; <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -2134,14 +2666,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="a76816eb14d1d1d567acb57994a7e60f5" name="a76816eb14d1d1d567acb57994a7e60f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76816eb14d1d1d567acb57994a7e60f5">&#9670;&#160;</a></span>xcorr&lt; double &gt;()</h2>
+<a id="ac6fb76df5ac3f557e3dd510a756225e3" name="ac6fb76df5ac3f557e3dd510a756225e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fb76df5ac3f557e3dd510a756225e3">&#9670;&#160;</a></span>xcorr&lt; double &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#a3d74d478d669ef8db8d94132bc60916b">ac::xcorr</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a07d3a305a99aadf448c3eff4f816d634">ac::xcorr</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
           <td class="paramname"><em>mm</em>, </td>
@@ -2161,7 +2693,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -2173,13 +2705,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>kernel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; double &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; double &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -2192,14 +2724,14 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
 
 </div>
 </div>
-<a id="aa697b26aefb8678cd52971a9faa67010" name="aa697b26aefb8678cd52971a9faa67010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa697b26aefb8678cd52971a9faa67010">&#9670;&#160;</a></span>xcorr&lt; uint64_t &gt;()</h2>
+<a id="abef390cd30772cfe999723fdecb6db93" name="abef390cd30772cfe999723fdecb6db93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef390cd30772cfe999723fdecb6db93">&#9670;&#160;</a></span>xcorr&lt; uint64_t &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="namespaceac.html#a3d74d478d669ef8db8d94132bc60916b">ac::xcorr</a>&lt; uint64_t &gt; </td>
+          <td class="memname">template void <a class="el" href="namespaceac.html#a07d3a305a99aadf448c3eff4f816d634">ac::xcorr</a>&lt; uint64_t &gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceac.html#a2533a2f005b971feaa03366a8cd967ee">ac::shape</a> &amp;&#160;</td>
           <td class="paramname"><em>mm</em>, </td>
@@ -2219,7 +2751,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -2231,13 +2763,13 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>kernel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceac_1_1mr.html#a6dc4e90454ab0029ca48b8ec70073f79">ac::mr::device_pointer</a>&lt; uint64_t &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceac.html#add03cc54eea1ae1213c5e2755cc2a06b">ac::device_view</a>&lt; uint64_t &gt;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>

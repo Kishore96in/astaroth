@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['device_0',['device',['../namespacedevice.html',1,'']]]
+  ['bm_0',['bm',['../namespacebm.html',1,'']]]
 ];
