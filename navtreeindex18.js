@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"namespacematplotlibcpp.html#a107bbc57e93a929c75baf1c60a712d8b":[19,0,4,54],
+"namespacematplotlibcpp.html#a12ac5a7fc96a03d27b3249fc6a54974f":[19,0,4,83],
 "namespacematplotlibcpp.html#a14e2b6e595e057f553ef7b14ddcda82a":[19,0,4,79],
 "namespacematplotlibcpp.html#a19804a8cbd413b15c8d07848d7a5890e":[19,0,4,53],
 "namespacematplotlibcpp.html#a1f9102b1c7b0be41471bc65c20f38b95":[19,0,4,60],
@@ -86,16 +88,16 @@ var NAVTREEINDEX18 =
 "namespacematplotlibcpp_1_1detail.html":[19,0,4,0],
 "namespacematplotlibcpp_1_1detail.html#ab78ea1d46cdefdf8037d2a2c0bcfaedb":[19,0,4,0,9],
 "namespacematplotlibcpp_1_1detail.html#ad711caf78c271008983e97009c6d314c":[19,0,4,0,8],
-"namespacemembers.html":[19,1,0],
 "namespacemembers.html":[19,1,0,0],
+"namespacemembers.html":[19,1,0],
 "namespacemembers_b.html":[19,1,0,1],
 "namespacemembers_c.html":[19,1,0,2],
 "namespacemembers_d.html":[19,1,0,3],
 "namespacemembers_e.html":[19,1,0,4],
 "namespacemembers_enum.html":[19,1,4],
 "namespacemembers_f.html":[19,1,0,5],
-"namespacemembers_func.html":[19,1,1],
 "namespacemembers_func.html":[19,1,1,0],
+"namespacemembers_func.html":[19,1,1],
 "namespacemembers_func_b.html":[19,1,1,1],
 "namespacemembers_func_c.html":[19,1,1,2],
 "namespacemembers_func_d.html":[19,1,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "operators_8h.html#aa527ad2d83d272b13378a6cbff710530":[21,0,2,5,15,17],
 "operators_8h.html#ab05b8a3b42fe7904a913b221974c290c":[21,0,2,5,15,10],
 "operators_8h.html#ab3404a1a74e87bd7854d00b518275725":[21,0,2,5,15,21],
-"operators_8h.html#ab4f816569fedccb3105273632c7b8283":[21,0,2,5,15,8],
-"operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc":[21,0,2,5,15,20],
-"operators_8h.html#ac4cc00ec4feeafe5a3203d8e39fae988":[21,0,2,5,15,2]
+"operators_8h.html#ab4f816569fedccb3105273632c7b8283":[21,0,2,5,15,8]
 };
