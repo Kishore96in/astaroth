@@ -14,6 +14,7 @@ var rocfft_8cc =
     [ "acFFTForwardTransformC2C", "rocfft_8cc.html#a177bfe09122ac9cafccaf67e1c947194", null ],
     [ "acFFTForwardTransformPlanar", "rocfft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0", null ],
     [ "acFFTForwardTransformR2C", "rocfft_8cc.html#a4a2c38a3c895e671102a9af8712e208f", null ],
+    [ "acFFTForwardTransformR2HermitianPlanarBatched", "rocfft_8cc.html#afaae509b335347ed98de23de6a54fbf8", null ],
     [ "acFFTForwardTransformR2Planar", "rocfft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160", null ],
     [ "acFFTForwardTransformR2PlanarBatched", "rocfft_8cc.html#a6c9d84848b85fda694e6537a8da7d105", null ],
     [ "acFFTForwardTransformSymmetricR2C", "rocfft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ],

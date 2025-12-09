@@ -95,11 +95,19 @@ $(document).ready(function(){initNavTree('ac__fft_8h.html',''); initResizable();
   <div class="headertitle"><div class="title">ac_fft.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &quot;<a class="el" href="device__headers_8h_source.html">device_headers.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ac_fft.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ac__fft_8h__incl.svg" width="162" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="ac__fft_8h__dep__incl.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
@@ -123,6 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5b6e24381dd03553e89c1aa8fb441160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9d84848b85fda694e6537a8da7d105" id="r_a6c9d84848b85fda694e6537a8da7d105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ac__fft_8h.html#a6c9d84848b85fda694e6537a8da7d105">acFFTForwardTransformR2PlanarBatched</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *src, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *real_dst, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *imag_dst, const int batch_size)</td></tr>
 <tr class="separator:a6c9d84848b85fda694e6537a8da7d105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaae509b335347ed98de23de6a54fbf8" id="r_afaae509b335347ed98de23de6a54fbf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ac__fft_8h.html#afaae509b335347ed98de23de6a54fbf8">acFFTForwardTransformR2HermitianPlanarBatched</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *src, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *real_dst, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *imag_dst, const int batch_size, <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream)</td></tr>
+<tr class="separator:afaae509b335347ed98de23de6a54fbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0ae99bfae26402473c4e9bd6404b86" id="r_abf0ae99bfae26402473c4e9bd6404b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ac__fft_8h.html#abf0ae99bfae26402473c4e9bd6404b86">acFFTBackwardTransformC2R</a> (const <a class="el" href="structAcComplex.html">AcComplex</a> *transformed_in, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *buffer)</td></tr>
 <tr class="separator:abf0ae99bfae26402473c4e9bd6404b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f0bfeb129911fbc1090727f011a98e" id="r_a19f0bfeb129911fbc1090727f011a98e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ac__fft_8h.html#a19f0bfeb129911fbc1090727f011a98e">acFFTInit</a> (const <a class="el" href="structAcCommunicator.html">AcCommunicator</a> *comm, const int *global_offset)</td></tr>
@@ -426,6 +436,70 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="structAcComplex.html">AcComplex</a> *&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaae509b335347ed98de23de6a54fbf8" name="afaae509b335347ed98de23de6a54fbf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaae509b335347ed98de23de6a54fbf8">&#9670;&#160;</a></span>acFFTForwardTransformR2HermitianPlanarBatched()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acFFTForwardTransformR2HermitianPlanarBatched </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>domain_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>subdomain_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>starting_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>real_dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>imag_dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>batch_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

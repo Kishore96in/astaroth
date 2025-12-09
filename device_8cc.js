@@ -21,6 +21,7 @@ var device_8cc =
     [ "acDeviceFFTPlanar", "device_8cc.html#a58cafd42791e1242a8b4e2af9b4fbc16", null ],
     [ "acDeviceFFTR2C", "device_8cc.html#ab4a10dddb06650304edb7830166e4c31", null ],
     [ "acDeviceFFTR2CXY", "device_8cc.html#a2774ab5c04bee0deaeef567d5c67763e", null ],
+    [ "acDeviceFFTR2HermitianPlanarBatched", "device_8cc.html#a99c5c3278fc52b77f9de8a884f580b0c", null ],
     [ "acDeviceFFTR2Planar", "device_8cc.html#a3e7a9d73c3460e3d1a99daa0cf8d9de8", null ],
     [ "acDeviceFFTR2PlanarBatched", "device_8cc.html#a4dc9c41fce6fa22dd01ff6955b5b7909", null ],
     [ "acDeviceFlushOutputBuffers", "device_8cc.html#a2c195aac4a5841ad5e2a094ff1137bdd", null ],

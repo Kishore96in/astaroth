@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"astaroth__helpers_8h.html#a73766c19a1d14ae543ea8d5aff726212":[19,0,5,11,12],
+"astaroth__helpers_8h.html#a76d4105ebcd1dea3434d60eb6e979304":[19,0,5,11,14],
 "astaroth__helpers_8h.html#a7989b218ea9fdc11c47f971682b3919e":[19,0,5,11,3],
 "astaroth__helpers_8h.html#a79edb93646ae44dbbd6289cb8928a710":[19,0,5,11,10],
 "astaroth__helpers_8h.html#a7a325ffe44e7b78a63f1b6c043e883f2":[19,0,5,11,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classHaloExchangeTask.html#ac564a31700789e53674ab27d88cdd027":[18,0,62,22],
 "classHaloExchangeTask.html#acd2594f272c4418a57f8947ae59aa3b6":[18,0,62,2],
 "classHaloExchangeTask.html#adf7a3be34b3516a328446fe12b592e03":[18,0,62,13],
-"classHaloExchangeTask.html#ae34aace24986189d75e3ab97eec35118":[18,0,62,21],
-"classHaloExchangeTask.html#ae39eafa85a5fb3121e0033f67ca354e9":[18,0,62,20],
-"classMPIScanTask.html":[18,0,88]
+"classHaloExchangeTask.html#ae34aace24986189d75e3ab97eec35118":[18,0,62,21]
 };
