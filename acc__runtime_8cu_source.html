@@ -1351,7 +1351,7 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>  <span class="comment">//Previous failures should not affect autotuning. Up to the user do they fix the warnings or not</span></div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>  <a class="code hl_function" href="acc__runtime_8cu.html#a1e6fde6d3728763a12a2e9696dc34476">catch_previous_errors</a>(<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>,<span class="stringliteral">&quot;starting autotuning&quot;</span>);</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> firstprint=<span class="keyword">true</span>;</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>  <span class="keywordflow">if</span> (firstprint &amp;&amp; grid_pid == 0)</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>  <span class="keywordflow">if</span> (log &amp;&amp;  firstprint &amp;&amp; grid_pid == 0)</div>
 <div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>  {</div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    fprintf(stderr,<span class="stringliteral">&quot;\nStarted autotuning: watch progress in ac_autotuning.log\n&quot;</span>);</div>
 <div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>    firstprint=<span class="keyword">false</span>;</div>
