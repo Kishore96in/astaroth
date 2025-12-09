@@ -348,7 +348,7 @@ var searchData=
   ['smooth_5fxp3_5fyp3_5fzp2_345',['SMOOTH_XP3_YP3_ZP2',['../smooth__max_8h.html#a8a41135f67e33b0d81ddfdeb8f3d6a6b',1,'smooth_max.h']]],
   ['smooth_5fxp3_5fyp3_5fzp3_346',['SMOOTH_XP3_YP3_ZP3',['../smooth__max_8h.html#a320c34ee55fbc2e75ad4643d82ec02bc',1,'smooth_max.h']]],
   ['sqrt_347',['sqrt',['../math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac',1,'sqrt:&#160;math_utils.h'],['../modelreduce_8cc.html#aa8418f27fe28830a7fb62322463f15e0',1,'sqrt:&#160;modelreduce.cc']]],
-  ['stencil_5forder_348',['stencil_order',['../stencil__defines_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;stencil_defines.h'],['../stdderiv_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;stdderiv.h'],['../user_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;user.h']]],
+  ['stencil_5forder_348',['STENCIL_ORDER',['../stdderiv_8h.html#a39c132057559a2390b35efbb766e105d',1,'stdderiv.h']]],
   ['stencilacc_5fexec_349',['STENCILACC_EXEC',['../codegen_8c.html#a95cc9d4a326611cb1fc2119eb9d729ff',1,'codegen.c']]],
   ['stencilacc_5fsrc_350',['STENCILACC_SRC',['../codegen_8c.html#a1852c762d57a483acf9b63aeb9e76ab3',1,'codegen.c']]],
   ['stencilgen_5fexec_351',['STENCILGEN_EXEC',['../codegen_8c.html#a15f881a7beab3b6e972d4d1133b03fb4',1,'codegen.c']]],

@@ -22,6 +22,5 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "device_detail.h", "device__detail_8h.html", "device__detail_8h" ],
     [ "func_define.h", "func__define_8h.html", "func__define_8h" ],
     [ "grid_detail.h", "grid__detail_8h.html", null ],
-    [ "timer_hires.h", "timer__hires_8h.html", "timer__hires_8h" ],
-    [ "user.h", "user_8h.html", "user_8h" ]
+    [ "timer_hires.h", "timer__hires_8h.html", "timer__hires_8h" ]
 ];
