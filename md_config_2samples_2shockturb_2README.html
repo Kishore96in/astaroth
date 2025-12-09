@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('md_config_2samples_2shockturb_2README.
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Created by <em>Miikka Väisälä</em>, at 2021/10 Added Puhti and Mahti options by <em>Frederick Gent</em>, at 2024/05</p>
-<h1><a class="anchor" id="autotoc_md81"></a>
+<h1><a class="anchor" id="autotoc_md72"></a>
 Purpose of this simulation setup</h1>
 <p>This simulation was made to test that mpi, shock viscosity and task scheduling system work together with periodic boundary conditions. The simulation runs forced isothermal MHD turbulence in conditions where shocks are produced.</p>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md73"></a>
 What is a successful test</h1>
 <p>A succesful test is that <code>standalone_mpi</code> runs properly on multiple GPUs without the system crashing due to unnatural reasons, and results looks sensible without numerical garbage. <b>Please note that this is not a physics test, but a test to see that the code is working as expected.</b></p>
-<h1><a class="anchor" id="autotoc_md83"></a>
+<h1><a class="anchor" id="autotoc_md74"></a>
 Required LSWITCHES</h1>
 <p>It is convenient to identify the Astaroth parent directory for running the code externally to the source files in a local run directory by executing the following command, which could also be added to your .bashrc export AC_HOME=/path/to/astaroth/parent/directory/ or by using <code>source sourceme.sh</code> in the Astaroth parent directory.</p>
 <p>The provided my_cmake.sh will then copy the files from $AC_HOME/acc-runtime/samples/mhd_modular/ to a new directory ../DSL relative to the run directory and edit the default settings in mhdsolver.ac to the following as required for the shocktest.</p>
@@ -114,13 +114,13 @@ Required LSWITCHES</h1>
 <div class="line">LSINK (0)</div>
 <div class="line">LBFIELD (1)</div>
 <div class="line">LSHOCK (1)</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md84"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md75"></a>
 Setting up and compiling.</h1>
 <p>Run <code>./my_cmake.sh</code> Cases of successful application of the samples are included for puhti.csc.fi and tiara.sinica.edu.tw</p>
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md76"></a>
 Running the simulation.</h1>
 <p>Run e.g. <code>mpirun -np 4 ./ac_run_mpi --config astaroth.conf --init-condition ShockTurb</code> or however your particular system runs MPI.</p>
-<h1><a class="anchor" id="autotoc_md86"></a>
+<h1><a class="anchor" id="autotoc_md77"></a>
 Troubleshooting</h1>
 <p>On PUHTI currently working with</p>
 <p>1) cmake/3.23.1 2) gcc/11.3.0 3) openmpi/4.1.4-cuda 4) cuda/11.7.0</p>

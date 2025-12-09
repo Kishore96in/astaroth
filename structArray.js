@@ -1,8 +1,7 @@
 var structArray =
 [
-    [ "count", "structArray.html#a5264a3942ccc3a5c433ad56d12949028", null ],
-    [ "data", "structArray.html#a37f31c9447539939d99d68c0694d7473", null ],
-    [ "data", "structArray.html#ac6c2d69421f790ded1414970d0b7572b", null ],
-    [ "data", "structArray.html#a617b5e312aec8b0d23c5b9e240f311a4", null ],
-    [ "on_device", "structArray.html#affff8f7a28bb4468ecec8574141b7c23", null ]
+    [ "count", "structArray.html#ae3949cbd948b89d7f6e7b2688ece7984", null ],
+    [ "data", "structArray.html#a0a7fadb90bbb9f351b68f376927053e2", null ],
+    [ "data", "structArray.html#adc91bd5ca50f0940fafe9c0a71eb989a", null ],
+    [ "on_device", "structArray.html#a0f15f5298c9b26acfaa7347a9bd10538", null ]
 ];

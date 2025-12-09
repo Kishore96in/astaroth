@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('random_8cuh.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4113356a2e4968780156d946abcdbb59" id="r_a4113356a2e4968780156d946abcdbb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a>()&#160;&#160;&#160;<a class="el" href="acc-comm_2acm_2detail_2hip_8h.html#a81997ae07d427e6164daf439b17cae32">curand_uniform</a>(&amp;rand_states[local_compdomain_idx])</td></tr>
+<tr class="memitem:a4113356a2e4968780156d946abcdbb59" id="r_a4113356a2e4968780156d946abcdbb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a>()&#160;&#160;&#160;<a class="el" href="hip_8h.html#a81997ae07d427e6164daf439b17cae32">curand_uniform</a>(&amp;rand_states[local_compdomain_idx])</td></tr>
 <tr class="separator:a4113356a2e4968780156d946abcdbb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae68bf4d330b6693422b11ef68767a65f" id="r_ae68bf4d330b6693422b11ef68767a65f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acc-comm_2acm_2detail_2hip_8h.html#a574d56297809b764cee61bb99df8e543">curandStateXORWOW_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#ae68bf4d330b6693422b11ef68767a65f">acRandState</a></td></tr>
+<tr class="memitem:ae68bf4d330b6693422b11ef68767a65f" id="r_ae68bf4d330b6693422b11ef68767a65f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="hip_8h.html#a574d56297809b764cee61bb99df8e543">curandStateXORWOW_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#ae68bf4d330b6693422b11ef68767a65f">acRandState</a></td></tr>
 <tr class="separator:ae68bf4d330b6693422b11ef68767a65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad6ea2fd2e242ee00b407f244e8d00ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22cf856d289b680a38aecef937f1f61c" id="r_a22cf856d289b680a38aecef937f1f61c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#a22cf856d289b680a38aecef937f1f61c">acRandQuit</a> (void)</td></tr>
 <tr class="separator:a22cf856d289b680a38aecef937f1f61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6acc73ce0204c1e21b3e1fd3e9f0e688" id="r_a6acc73ce0204c1e21b3e1fd3e9f0e688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda__utils_8h.html#ad54e07d96efd9a36dfca1a9f27776d62">__device__</a> __forceinline__ <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#a6acc73ce0204c1e21b3e1fd3e9f0e688">random_uniform</a> (const size_t idx)</td></tr>
+<tr class="memitem:a6acc73ce0204c1e21b3e1fd3e9f0e688" id="r_a6acc73ce0204c1e21b3e1fd3e9f0e688"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cuh.html#a6acc73ce0204c1e21b3e1fd3e9f0e688">random_uniform</a> (const size_t idx)</td></tr>
 <tr class="separator:a6acc73ce0204c1e21b3e1fd3e9f0e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
           <td class="memname">#define rand_uniform</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="acc-comm_2acm_2detail_2hip_8h.html#a81997ae07d427e6164daf439b17cae32">curand_uniform</a>(&amp;rand_states[local_compdomain_idx])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="hip_8h.html#a81997ae07d427e6164daf439b17cae32">curand_uniform</a>(&amp;rand_states[local_compdomain_idx])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="acc-comm_2acm_2detail_2hip_8h.html#a574d56297809b764cee61bb99df8e543">curandStateXORWOW_t</a> <a class="el" href="random_8cuh.html#ae68bf4d330b6693422b11ef68767a65f">acRandState</a></td>
+          <td class="memname">typedef <a class="el" href="hip_8h.html#a574d56297809b764cee61bb99df8e543">curandStateXORWOW_t</a> <a class="el" href="random_8cuh.html#ae68bf4d330b6693422b11ef68767a65f">acRandState</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -250,7 +250,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="cuda__utils_8h.html#ad54e07d96efd9a36dfca1a9f27776d62">__device__</a> __forceinline__ <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> random_uniform </td>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> random_uniform </td>
           <td>(</td>
           <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>idx</em></td><td>)</td>

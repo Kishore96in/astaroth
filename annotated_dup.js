@@ -1,62 +1,5 @@
 var annotated_dup =
 [
-    [ "ac", "namespaceac.html", [
-      [ "comm", "namespaceac_1_1comm.html", [
-        [ "async_halo_exchange_task", "classac_1_1comm_1_1async__halo__exchange__task.html", "classac_1_1comm_1_1async__halo__exchange__task" ],
-        [ "packet", "classac_1_1comm_1_1packet.html", "classac_1_1comm_1_1packet" ]
-      ] ],
-      [ "fmt", "namespaceac_1_1fmt.html", [
-        [ "human_readable", "structac_1_1fmt_1_1human__readable.html", null ],
-        [ "lossless", "structac_1_1fmt_1_1lossless.html", null ]
-      ] ],
-      [ "io", "namespaceac_1_1io.html", [
-        [ "async_write_task", "classac_1_1io_1_1async__write__task.html", "classac_1_1io_1_1async__write__task" ],
-        [ "batched_async_write_task", "classac_1_1io_1_1batched__async__write__task.html", "classac_1_1io_1_1batched__async__write__task" ]
-      ] ],
-      [ "mpi", "namespaceac_1_1mpi.html", [
-        [ "decoupled", "namespaceac_1_1mpi_1_1decoupled.html", [
-          [ "halo_exchange", "classac_1_1mpi_1_1decoupled_1_1halo__exchange.html", "classac_1_1mpi_1_1decoupled_1_1halo__exchange" ],
-          [ "packet", "classac_1_1mpi_1_1decoupled_1_1packet.html", "classac_1_1mpi_1_1decoupled_1_1packet" ]
-        ] ],
-        [ "hindexed", "namespaceac_1_1mpi_1_1hindexed.html", [
-          [ "halo_exchange", "classac_1_1mpi_1_1hindexed_1_1halo__exchange.html", "classac_1_1mpi_1_1hindexed_1_1halo__exchange" ],
-          [ "packet", "classac_1_1mpi_1_1hindexed_1_1packet.html", "classac_1_1mpi_1_1hindexed_1_1packet" ]
-        ] ],
-        [ "buffered_iallreduce", "classac_1_1mpi_1_1buffered__iallreduce.html", "classac_1_1mpi_1_1buffered__iallreduce" ],
-        [ "buffered_isend", "classac_1_1mpi_1_1buffered__isend.html", "classac_1_1mpi_1_1buffered__isend" ],
-        [ "cart_comm", "classac_1_1mpi_1_1cart__comm.html", "classac_1_1mpi_1_1cart__comm" ],
-        [ "comm", "classac_1_1mpi_1_1comm.html", "classac_1_1mpi_1_1comm" ],
-        [ "datatype", "classac_1_1mpi_1_1datatype.html", "classac_1_1mpi_1_1datatype" ],
-        [ "halo_exchange", "classac_1_1mpi_1_1halo__exchange.html", "classac_1_1mpi_1_1halo__exchange" ],
-        [ "halo_exchange_batched", "classac_1_1mpi_1_1halo__exchange__batched.html", "classac_1_1mpi_1_1halo__exchange__batched" ],
-        [ "hindexed_block", "classac_1_1mpi_1_1hindexed__block.html", "classac_1_1mpi_1_1hindexed__block" ],
-        [ "packet", "classac_1_1mpi_1_1packet.html", "classac_1_1mpi_1_1packet" ],
-        [ "request", "classac_1_1mpi_1_1request.html", "classac_1_1mpi_1_1request" ],
-        [ "subarray", "classac_1_1mpi_1_1subarray.html", "classac_1_1mpi_1_1subarray" ],
-        [ "twoway_buffered_iallreduce", "classac_1_1mpi_1_1twoway__buffered__iallreduce.html", "classac_1_1mpi_1_1twoway__buffered__iallreduce" ]
-      ] ],
-      [ "mr", "namespaceac_1_1mr.html", [
-        [ "host_allocator", "structac_1_1mr_1_1host__allocator.html", null ]
-      ] ],
-      [ "base_view", "classac_1_1base__view.html", "classac_1_1base__view" ],
-      [ "buffer", "classac_1_1buffer.html", "classac_1_1buffer" ],
-      [ "future", "classac_1_1future.html", "classac_1_1future" ],
-      [ "ndbuffer", "structac_1_1ndbuffer.html", "structac_1_1ndbuffer" ],
-      [ "ntuple", "classac_1_1ntuple.html", "classac_1_1ntuple" ],
-      [ "segment", "structac_1_1segment.html", "structac_1_1segment" ],
-      [ "static_ntuple", "classac_1_1static__ntuple.html", "classac_1_1static__ntuple" ],
-      [ "timer", "classac_1_1timer.html", "classac_1_1timer" ],
-      [ "timewriter", "classac_1_1timewriter.html", "classac_1_1timewriter" ],
-      [ "view", "classac_1_1view.html", "classac_1_1view" ]
-    ] ],
-    [ "acm", "namespaceacm.html", [
-      [ "rev", "namespaceacm_1_1rev.html", [
-        [ "halo_exchange", "classacm_1_1rev_1_1halo__exchange.html", "classacm_1_1rev_1_1halo__exchange" ],
-        [ "packet", "classacm_1_1rev_1_1packet.html", "classacm_1_1rev_1_1packet" ]
-      ] ],
-      [ "halo_exchange", "classacm_1_1halo__exchange.html", "classacm_1_1halo__exchange" ],
-      [ "packet", "classacm_1_1packet.html", "classacm_1_1packet" ]
-    ] ],
     [ "matplotlibcpp", "namespacematplotlibcpp.html", [
       [ "detail", "namespacematplotlibcpp_1_1detail.html", [
         [ "_interpreter", "structmatplotlibcpp_1_1detail_1_1__interpreter.html", "structmatplotlibcpp_1_1detail_1_1__interpreter" ],
@@ -88,12 +31,6 @@ var annotated_dup =
     [ "AcGridInfo", "structAcGridInfo.html", "structAcGridInfo" ],
     [ "AcGridMappingFunction", "structAcGridMappingFunction.html", "structAcGridMappingFunction" ],
     [ "AcInputs", "structAcInputs.html", null ],
-    [ "acm_pack_strategy", "classacm__pack__strategy.html", "classacm__pack__strategy" ],
-    [ "acm_pack_strategy_batched", "classacm__pack__strategy__batched.html", "classacm__pack__strategy__batched" ],
-    [ "acm_pack_strategy_grouped", "classacm__pack__strategy__grouped.html", "classacm__pack__strategy__grouped" ],
-    [ "acm_pack_strategy_grouped_batched", "classacm__pack__strategy__grouped__batched.html", "classacm__pack__strategy__grouped__batched" ],
-    [ "acm_pack_strategy_packed", "classacm__pack__strategy__packed.html", "classacm__pack__strategy__packed" ],
-    [ "acm_pack_strategy_packed_batched", "classacm__pack__strategy__packed__batched.html", "classacm__pack__strategy__packed__batched" ],
     [ "AcMatrix", "structAcMatrix.html", "structAcMatrix" ],
     [ "AcMesh", "structAcMesh.html", "structAcMesh" ],
     [ "AcMeshDims", "structAcMeshDims.html", "structAcMeshDims" ],
@@ -115,14 +52,12 @@ var annotated_dup =
     [ "bc_fields", "structbc__fields.html", "structbc__fields" ],
     [ "bool3", "structbool3.html", "structbool3" ],
     [ "BoundaryConditionTask", "classBoundaryConditionTask.html", "classBoundaryConditionTask" ],
-    [ "BufferExchangeTask", "classBufferExchangeTask.html", "classBufferExchangeTask" ],
     [ "CodeGenInput", "structCodeGenInput.html", "structCodeGenInput" ],
     [ "combinatorial_params", "structcombinatorial__params.html", "structcombinatorial__params" ],
     [ "combinatorial_params_info", "structcombinatorial__params__info.html", "structcombinatorial__params__info" ],
     [ "complex", "structcomplex.html", "structcomplex" ],
     [ "ComputeTask", "classComputeTask.html", "classComputeTask" ],
     [ "CrossProductInputs", "structCrossProductInputs.html", "structCrossProductInputs" ],
-    [ "CustomArguments", "structCustomArguments.html", "structCustomArguments" ],
     [ "device_s", "structdevice__s.html", "structdevice__s" ],
     [ "DeviceConfiguration", "structDeviceConfiguration.html", "structDeviceConfiguration" ],
     [ "DeviceVertexBufferArray", "structDeviceVertexBufferArray.html", "structDeviceVertexBufferArray" ],
@@ -165,11 +100,6 @@ var annotated_dup =
     [ "load_comp_scalars", "structload__comp__scalars.html", "structload__comp__scalars" ],
     [ "load_scalars", "structload__scalars.html", "structload__scalars" ],
     [ "LoadKernelParamsFunc", "structLoadKernelParamsFunc.html", "structLoadKernelParamsFunc" ],
-    [ "mpi_pack_strategy", "classmpi__pack__strategy.html", "classmpi__pack__strategy" ],
-    [ "mpi_pack_strategy_batched", "classmpi__pack__strategy__batched.html", "classmpi__pack__strategy__batched" ],
-    [ "mpi_pack_strategy_hindexed", "classmpi__pack__strategy__hindexed.html", "classmpi__pack__strategy__hindexed" ],
-    [ "mpi_pack_strategy_hindexed_batched", "classmpi__pack__strategy__hindexed__batched.html", "classmpi__pack__strategy__hindexed__batched" ],
-    [ "mpi_pack_strategy_packed", "classmpi__pack__strategy__packed.html", "classmpi__pack__strategy__packed" ],
     [ "MPIScanTask", "classMPIScanTask.html", "classMPIScanTask" ],
     [ "node_s", "structnode__s.html", "structnode__s" ],
     [ "node_vec", "structnode__vec.html", "structnode__vec" ],

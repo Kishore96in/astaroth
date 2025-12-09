@@ -1,21 +1,15 @@
 var searchData=
 [
-  ['main_2ecc_0',['main.cc',['../walker-test_2main_8cc.html',1,'(Global Namespace)'],['../ray-mpi-test_2main_8cc.html',1,'(Global Namespace)'],['../poisson-test_2main_8cc.html',1,'(Global Namespace)'],['../planetest_2main_8cc.html',1,'(Global Namespace)'],['../multigrid-test_2main_8cc.html',1,'(Global Namespace)'],['../mpi-profile-reduce_2main_8cc.html',1,'(Global Namespace)'],['../kernel-fusion-test_2main_8cc.html',1,'(Global Namespace)'],['../inplace__gaussian-test_2main_8cc.html',1,'(Global Namespace)'],['../field-arr-test_2main_8cc.html',1,'(Global Namespace)'],['../fft-test_2main_8cc.html',1,'(Global Namespace)'],['../constant-values_2main_8cc.html',1,'(Global Namespace)'],['../cg-test_2main_8cc.html',1,'(Global Namespace)'],['../average-stencil_2main_8cc.html',1,'(Global Namespace)'],['../arr-test_2main_8cc.html',1,'(Global Namespace)'],['../2d-test_2main_8cc.html',1,'(Global Namespace)'],['../1d-test_2main_8cc.html',1,'(Global Namespace)'],['../ray-test_2main_8cc.html',1,'(Global Namespace)'],['../reduce-test_2main_8cc.html',1,'(Global Namespace)'],['../small-grid-test_2main_8cc.html',1,'(Global Namespace)'],['../sor-test_2main_8cc.html',1,'(Global Namespace)'],['../stencil-accesses-fail-test_2main_8cc.html',1,'(Global Namespace)'],['../stencil-accesses-ok-test_2main_8cc.html',1,'(Global Namespace)'],['../use-scalar-reduce_2main_8cc.html',1,'(Global Namespace)'],['../variable-dims_2main_8cc.html',1,'(Global Namespace)']]],
+  ['main_2ecc_0',['main.cc',['../average-stencil_2main_8cc.html',1,'(Global Namespace)'],['../reduce-test_2main_8cc.html',1,'(Global Namespace)'],['../ray-test_2main_8cc.html',1,'(Global Namespace)'],['../ray-mpi-test_2main_8cc.html',1,'(Global Namespace)'],['../poisson-test_2main_8cc.html',1,'(Global Namespace)'],['../planetest_2main_8cc.html',1,'(Global Namespace)'],['../multigrid-test_2main_8cc.html',1,'(Global Namespace)'],['../mpi-profile-reduce_2main_8cc.html',1,'(Global Namespace)'],['../kernel-fusion-test_2main_8cc.html',1,'(Global Namespace)'],['../inplace__gaussian-test_2main_8cc.html',1,'(Global Namespace)'],['../field-arr-test_2main_8cc.html',1,'(Global Namespace)'],['../fft-test_2main_8cc.html',1,'(Global Namespace)'],['../constant-values_2main_8cc.html',1,'(Global Namespace)'],['../cg-test_2main_8cc.html',1,'(Global Namespace)'],['../arr-test_2main_8cc.html',1,'(Global Namespace)'],['../2d-test_2main_8cc.html',1,'(Global Namespace)'],['../1d-test_2main_8cc.html',1,'(Global Namespace)'],['../small-grid-test_2main_8cc.html',1,'(Global Namespace)'],['../sor-test_2main_8cc.html',1,'(Global Namespace)'],['../stencil-accesses-fail-test_2main_8cc.html',1,'(Global Namespace)'],['../stencil-accesses-ok-test_2main_8cc.html',1,'(Global Namespace)'],['../use-scalar-reduce_2main_8cc.html',1,'(Global Namespace)'],['../variable-dims_2main_8cc.html',1,'(Global Namespace)'],['../walker-test_2main_8cc.html',1,'(Global Namespace)']]],
   ['main_2ecu_1',['main.cu',['../main_8cu.html',1,'']]],
   ['map_2eh_2',['map.h',['../map_8h.html',1,'']]],
   ['mapreduce_2ecuh_3',['mapreduce.cuh',['../mapreduce_8cuh.html',1,'']]],
-  ['math_5futils_2ecc_4',['math_utils.cc',['../math__utils_8cc.html',1,'']]],
-  ['math_5futils_2eh_5',['math_utils.h',['../acc-runtime_2api_2math__utils_8h.html',1,'(Global Namespace)'],['../acc-comm_2acm_2detail_2math__utils_8h.html',1,'(Global Namespace)']]],
-  ['math_5futils_5fbase_2eh_6',['math_utils_base.h',['../math__utils__base_8h.html',1,'']]],
-  ['matplotlibcpp_2eh_7',['matplotlibcpp.h',['../matplotlibcpp_8h.html',1,'']]],
-  ['mem_5faccess_5fhelper_5ffuncs_2eh_8',['mem_access_helper_funcs.h',['../mem__access__helper__funcs_8h.html',1,'']]],
-  ['memory_2ecc_9',['memory.cc',['../memory_8cc.html',1,'']]],
-  ['memory_2eh_10',['memory.h',['../memory_8h.html',1,'']]],
-  ['modelreduce_2ecc_11',['modelreduce.cc',['../modelreduce_8cc.html',1,'']]],
-  ['modelsolver_2dlegacy_2ddo_2dnot_2dmodify_2ec_12',['modelsolver-legacy-do-not-modify.c',['../modelsolver-legacy-do-not-modify_8c.html',1,'']]],
-  ['modelsolver_2ecc_13',['modelsolver.cc',['../modelsolver_8cc.html',1,'']]],
-  ['mpi_5futils_2ecc_14',['mpi_utils.cc',['../mpi__utils_8cc.html',1,'']]],
-  ['mpi_5futils_2eh_15',['mpi_utils.h',['../mpi__utils_8h.html',1,'']]],
-  ['mpi_5futils_5fexperimental_2ecc_16',['mpi_utils_experimental.cc',['../mpi__utils__experimental_8cc.html',1,'']]],
-  ['mpi_5futils_5fexperimental_2eh_17',['mpi_utils_experimental.h',['../mpi__utils__experimental_8h.html',1,'']]]
+  ['math_5futils_2eh_4',['math_utils.h',['../math__utils_8h.html',1,'']]],
+  ['math_5futils_5fbase_2eh_5',['math_utils_base.h',['../math__utils__base_8h.html',1,'']]],
+  ['matplotlibcpp_2eh_6',['matplotlibcpp.h',['../matplotlibcpp_8h.html',1,'']]],
+  ['mem_5faccess_5fhelper_5ffuncs_2eh_7',['mem_access_helper_funcs.h',['../mem__access__helper__funcs_8h.html',1,'']]],
+  ['memory_2ecc_8',['memory.cc',['../memory_8cc.html',1,'']]],
+  ['modelreduce_2ecc_9',['modelreduce.cc',['../modelreduce_8cc.html',1,'']]],
+  ['modelsolver_2dlegacy_2ddo_2dnot_2dmodify_2ec_10',['modelsolver-legacy-do-not-modify.c',['../modelsolver-legacy-do-not-modify_8c.html',1,'']]],
+  ['modelsolver_2ecc_11',['modelsolver.cc',['../modelsolver_8cc.html',1,'']]]
 ];

@@ -12,12 +12,10 @@ var searchData=
   ['config_5fhelpers_2eh_9',['config_helpers.h',['../config__helpers_8h.html',1,'']]],
   ['config_5floader_2ecc_10',['config_loader.cc',['../config__loader_8cc.html',1,'']]],
   ['contributing_2emd_11',['CONTRIBUTING.md',['../CONTRIBUTING_8md.html',1,'']]],
-  ['convert_2eh_12',['convert.h',['../convert_8h.html',1,'']]],
-  ['cpu_2ecc_13',['cpu.cc',['../cpu_8cc.html',1,'']]],
-  ['cpufft_2ecc_14',['cpufft.cc',['../cpufft_8cc.html',1,'']]],
-  ['create_5fnode_2eh_15',['create_node.h',['../create__node_8h.html',1,'']]],
-  ['create_5fnode_5fdecl_2eh_16',['create_node_decl.h',['../create__node__decl_8h.html',1,'']]],
-  ['cuda_2ecc_17',['cuda.cc',['../cuda_8cc.html',1,'']]],
-  ['cuda_5futils_2eh_18',['cuda_utils.h',['../cuda__utils_8h.html',1,'']]],
-  ['cufft_2ecc_19',['cufft.cc',['../cufft_8cc.html',1,'']]]
+  ['cpu_2ecc_12',['cpu.cc',['../cpu_8cc.html',1,'']]],
+  ['cpufft_2ecc_13',['cpufft.cc',['../cpufft_8cc.html',1,'']]],
+  ['create_5fnode_2eh_14',['create_node.h',['../create__node_8h.html',1,'']]],
+  ['create_5fnode_5fdecl_2eh_15',['create_node_decl.h',['../create__node__decl_8h.html',1,'']]],
+  ['cuda_2ecc_16',['cuda.cc',['../cuda_8cc.html',1,'']]],
+  ['cufft_2ecc_17',['cufft.cc',['../cufft_8cc.html',1,'']]]
 ];

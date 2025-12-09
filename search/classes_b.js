@@ -6,6 +6,5 @@ var searchData=
   ['load_5fcomp_5farrays_3',['load_comp_arrays',['../structload__comp__arrays.html',1,'']]],
   ['load_5fcomp_5fscalars_4',['load_comp_scalars',['../structload__comp__scalars.html',1,'']]],
   ['load_5fscalars_5',['load_scalars',['../structload__scalars.html',1,'']]],
-  ['loadkernelparamsfunc_6',['LoadKernelParamsFunc',['../structLoadKernelParamsFunc.html',1,'']]],
-  ['lossless_7',['lossless',['../structac_1_1fmt_1_1lossless.html',1,'ac::fmt']]]
+  ['loadkernelparamsfunc_6',['LoadKernelParamsFunc',['../structLoadKernelParamsFunc.html',1,'']]]
 ];

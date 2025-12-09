@@ -517,7 +517,7 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    {</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        res.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a> *= <a class="code hl_define" href="general__grid_2vars_8h.html#af7f5445879c2ebe7fc7de7bfcb487a26">AC_INV_CYL_R</a></div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    }</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="reduce_8cu.html#a26fff899180e6c348dc9565f49ff47bea1d623b89683f9ce4e074de1676d12416">sum</a>(res)</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keywordflow">return</span> sum(res)</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>}</div>
 </div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
@@ -837,7 +837,7 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
 <div class="foldopen" id="foldopen00692" data-start="{" data-end="}">
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno"><a class="line" href="general__operators_8h.html#a6110d779b697e31435033dbed7d508e8">  692</a></span><a class="code hl_function" href="general__operators_8h.html#a6110d779b697e31435033dbed7d508e8">length</a>(v) {</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>( <a class="code hl_function" href="general__operators_8h.html#a2ddaf4d9a185c0db61d05ff66c6448d7">norm2</a>(v) )</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>( <a class="code hl_function" href="general__operators_8h.html#a2ddaf4d9a185c0db61d05ff66c6448d7">norm2</a>(v) )</div>
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>}</div>
 </div>
 <div class="foldopen" id="foldopen00695" data-start="{" data-end="}">
@@ -908,7 +908,6 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>}</div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacc-runtime_2acc_2ast_8h_html_a7b50077bef75e0e1697a39b905253930"><div class="ttname"><a href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a></div><div class="ttdeci">if(node-&gt;rhs) change_qualifier(node -&gt; rhs, old_qualifier, new_qualifier)</div></div>
-<div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:461</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:465</div></div>
 <div class="ttc" id="aderivs_8h_html_a05964817d7b8bdacbbb705c0738e54b3"><div class="ttname"><a href="derivs_8h.html#a05964817d7b8bdacbbb705c0738e54b3">dery_upwd</a></div><div class="ttdeci">#define dery_upwd</div></div>
@@ -965,7 +964,7 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="ttc" id="ageneral__operators_8h_html_afa7494e07febfb0eea6d155b1ba033ea"><div class="ttname"><a href="general__operators_8h.html#afa7494e07febfb0eea6d155b1ba033ea">del2fi_dxjk</a></div><div class="ttdeci">del2fi_dxjk(Field3 v)</div><div class="ttdef"><b>Definition</b> general_operators.h:204</div></div>
 <div class="ttc" id="ageneral__operators_8h_html_afade80b5099ad85e65911670b5541e8c"><div class="ttname"><a href="general__operators_8h.html#afade80b5099ad85e65911670b5541e8c">divergence</a></div><div class="ttdeci">divergence(Field3 v)</div><div class="ttdef"><b>Definition</b> general_operators.h:100</div></div>
 <div class="ttc" id="amath_2funcs_8h_html_a9eebae7aba8e1b5fe3e77c3bdd5a8338"><div class="ttname"><a href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a></div><div class="ttdeci">elemental abs(real x)</div><div class="ttdef"><b>Definition</b> funcs.h:7</div></div>
-<div class="ttc" id="areduce_8cu_html_a26fff899180e6c348dc9565f49ff47bea1d623b89683f9ce4e074de1676d12416"><div class="ttname"><a href="reduce_8cu.html#a26fff899180e6c348dc9565f49ff47bea1d623b89683f9ce4e074de1676d12416">ReduceType::sum</a></div><div class="ttdeci">@ sum</div></div>
+<div class="ttc" id="amath__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
 <div class="ttc" id="areindex_8cu_html_a805fa490e79f7a5aa6484f94206e39eb"><div class="ttname"><a href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a></div><div class="ttdeci">static __host__ __device__ constexpr AcIndex const AcIndex &amp; b</div><div class="ttdef"><b>Definition</b> reindex.cu:19</div></div>
 <div class="ttc" id="astdderiv_8h_html_a00bc8e8e8fa119f80ad306d187909b3b"><div class="ttname"><a href="stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b">deryz</a></div><div class="ttdeci">Scalar deryz(int3 vertexIdx, in ScalarField arr)</div><div class="ttdef"><b>Definition</b> stdderiv.h:174</div></div>
 <div class="ttc" id="astdderiv_8h_html_a10564839083b4c35031b7af19017f0cf"><div class="ttname"><a href="stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf">dery</a></div><div class="ttdeci">Scalar dery(int3 vertexIdx, in ScalarField arr)</div><div class="ttdef"><b>Definition</b> stdderiv.h:150</div></div>

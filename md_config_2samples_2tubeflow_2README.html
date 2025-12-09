@@ -94,15 +94,15 @@ $(document).ready(function(){initNavTree('md_config_2samples_2tubeflow_2README.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Created by <em>Miikka Väisälä</em>, at 2023/5</p>
-<h1><a class="anchor" id="autotoc_md99"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 Purpose of this simulation setup</h1>
 <p>Purpose if this simualtion sample was to play with more complicate multiple boundary conditions. Heat flux enters from the bottom boundary on y direction of the system and matter can exit from the other end.</p>
-<h1><a class="anchor" id="autotoc_md100"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 What is a successful test</h1>
 <p>This is a boundary condition example. By default setting the simulation crashed when run for longer. However, it serves as an example of how to set up boure complicated boundary conditions via customizable taskgraph. <br  />
 </p>
 <p><b>Please note that this is not a physics test, but a test to see that the code is working as expected.</b></p>
-<h1><a class="anchor" id="autotoc_md101"></a>
+<h1><a class="anchor" id="autotoc_md92"></a>
 Required LSWITCHES</h1>
 <p>At the moment you need to set the switches manually. Default master branch configuration will have different LSWITCHES.</p>
 <ul>
@@ -118,16 +118,16 @@ Required LSWITCHES</h1>
 <div class="line">LSINK (0)</div>
 <div class="line">LBFIELD (0)</div>
 <div class="line">LSHOCK (0)</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md102"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md93"></a>
 TaskGraph</h1>
 <p>This run uses the TaskGraph <code>Hydro_Heatduct_Solve</code> as listed in <code>samples/standalone_mpi/simulation_taskgraphs.h</code>. At the moment of writing this documentation, if you want to set up your own special boundary condition, make a TaskGraph and call it following the examples int he code.</p>
-<h1><a class="anchor" id="autotoc_md103"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 Setting up and compiling.</h1>
 <p>Run <code>./my_cmake.sh</code> or customize it to your system specific.</p>
-<h1><a class="anchor" id="autotoc_md104"></a>
+<h1><a class="anchor" id="autotoc_md95"></a>
 Running the simulation.</h1>
 <p>Run e.g. <code>mpirun -n 4 ./ac_run_mpi --config astaroth.conf --init-condition HeatDuct</code> or however your particular system runs MPI.</p>
-<h1><a class="anchor" id="autotoc_md105"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 Troubleshooting</h1>
 <p>On TIARA currently working on</p>
 <p>1) cuda/11.3 2) gcc/9.1.0 3) mpich/3.3 4) cmake/3.22.1</p>

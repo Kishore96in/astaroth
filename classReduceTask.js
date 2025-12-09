@@ -1,13 +1,11 @@
 var classReduceTask =
 [
-    [ "ReduceTask", "classReduceTask.html#af270b3a49c3e55698570057184c6b5c3", null ],
-    [ "ReduceTask", "classReduceTask.html#ac3db07f723282d305ff402a479b4a1d0", null ],
-    [ "advance", "classReduceTask.html#a510bd4fdeee37b8b585db08f63e38057", null ],
-    [ "communicate", "classReduceTask.html#a9ff8683aa6c9a7998fc9f6f2bc4be59a", null ],
-    [ "load_outputs", "classReduceTask.html#a14c19188d3ddac32ae356b3dc28af667", null ],
-    [ "reduce", "classReduceTask.html#a03e68de1f439ab51fb080332e136564d", null ],
-    [ "reduce", "classReduceTask.html#af0a26f113de063f1392425a16ee2b8f9", null ],
-    [ "test", "classReduceTask.html#ac0f7d282db55f475fd89fce8f0ad94dc", null ],
-    [ "transfer_to_device", "classReduceTask.html#a836785a65a959f062ea2bf8716bfc863", null ],
-    [ "transfer_to_host", "classReduceTask.html#aa499ac085954c58ae9d6c457b98f083d", null ]
+    [ "ReduceTask", "classReduceTask.html#a08317a35e8b3a4772fc075fb0f3defed", null ],
+    [ "advance", "classReduceTask.html#abb01db063f7740c5443c63e8db7bb7dd", null ],
+    [ "communicate", "classReduceTask.html#a16c7d15c11208c9e131b8d981287f14c", null ],
+    [ "load_outputs", "classReduceTask.html#a468982a6292e32ef29e2e283de82e3e8", null ],
+    [ "reduce", "classReduceTask.html#a6a597778f12b4d0a03deb8712ee548d9", null ],
+    [ "test", "classReduceTask.html#a740913fe24a9efd8a9c4e079c114ca7b", null ],
+    [ "transfer_to_device", "classReduceTask.html#ad2976567905b489552c7539ccf8f89e3", null ],
+    [ "transfer_to_host", "classReduceTask.html#a9d0b44a8fcd5b4ddc885f96e36397455", null ]
 ];

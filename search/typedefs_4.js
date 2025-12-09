@@ -10,11 +10,5 @@ var searchData=
   ['hashmap_5ft_7',['hashmap_t',['../hashtable_8h.html#a5448dbf692dd2b3e95f7943b6e029478',1,'hashtable.h']]],
   ['hashmap_5fuint32_5ft_8',['hashmap_uint32_t',['../hashtable_8h.html#ad051e8698dcb05b7cc6dfcd563dbeb59',1,'hashtable.h']]],
   ['hashmap_5fuint64_5ft_9',['hashmap_uint64_t',['../hashtable_8h.html#adb4f5f1c89ab27db75ffc115682573a3',1,'hashtable.h']]],
-  ['hashmap_5fuint8_5ft_10',['hashmap_uint8_t',['../hashtable_8h.html#ad81d2b7bbda6afa3690af5090b098a44',1,'hashtable.h']]],
-  ['host_5fbuffer_11',['host_buffer',['../namespaceac.html#a6e19a655735ea11c2ddbe4d6f770d426',1,'ac']]],
-  ['host_5fndbuffer_12',['host_ndbuffer',['../namespaceac.html#afbc4e3122e5a31d5c943b320828249d0',1,'ac']]],
-  ['host_5fview_13',['host_view',['../namespaceac.html#af134f0901843e2745b054bd878381d98',1,'ac']]],
-  ['hostbuffer_14',['HostBuffer',['../acc-comm_2acm_2detail_2datatypes_8h.html#aa13ded694295bdcd348154b70d963b78',1,'datatypes.h']]],
-  ['hostpointer_15',['HostPointer',['../acc-comm_2acm_2detail_2datatypes_8h.html#a0ede666183557246d88fcb0210275916',1,'datatypes.h']]],
-  ['hosttodevicebufferexchangetask_16',['HostToDeviceBufferExchangeTask',['../buffer__exchange_8h.html#a422fd82f6018b2bb488c31d5034cc534',1,'buffer_exchange.h']]]
+  ['hashmap_5fuint8_5ft_10',['hashmap_uint8_t',['../hashtable_8h.html#ad81d2b7bbda6afa3690af5090b098a44',1,'hashtable.h']]]
 ];

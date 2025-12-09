@@ -8,6 +8,5 @@ var searchData=
   ['forcingparams_5',['ForcingParams',['../structForcingParams.html',1,'']]],
   ['free_5farrays_6',['free_arrays',['../structfree__arrays.html',1,'']]],
   ['func_5fparams_5finfo_7',['func_params_info',['../structfunc__params__info.html',1,'']]],
-  ['funcs_5fcalling_5finfo_8',['funcs_calling_info',['../structfuncs__calling__info.html',1,'']]],
-  ['future_9',['future',['../classac_1_1future.html',1,'ac']]]
+  ['funcs_5fcalling_5finfo_8',['funcs_calling_info',['../structfuncs__calling__info.html',1,'']]]
 ];

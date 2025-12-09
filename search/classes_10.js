@@ -8,6 +8,5 @@ var searchData=
   ['reducetask_5',['ReduceTask',['../classReduceTask.html',1,'']]],
   ['region_6',['Region',['../structRegion.html',1,'']]],
   ['regionmemory_7',['RegionMemory',['../structRegionMemory.html',1,'']]],
-  ['regionmemoryinputparams_8',['RegionMemoryInputParams',['../structRegionMemoryInputParams.html',1,'']]],
-  ['request_9',['request',['../classac_1_1mpi_1_1request.html',1,'ac::mpi']]]
+  ['regionmemoryinputparams_8',['RegionMemoryInputParams',['../structRegionMemoryInputParams.html',1,'']]]
 ];

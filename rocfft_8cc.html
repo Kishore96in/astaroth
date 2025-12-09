@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('rocfft_8cc.html',''); initResizable();
 <div class="textblock"><code>#include &quot;<a class="el" href="host__datatypes_8h_source.html">host_datatypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ac__fft_8h_source.html">ac_fft.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="astaroth__cuda__wrappers_8h_source.html">astaroth_cuda_wrappers.h</a>&quot;</code><br />
-<code>#include &quot;errchk.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="errchk_8h_source.html">errchk.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ac__helpers_8h_source.html">ac_helpers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="common__kernels_8h_source.html">common_kernels.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -130,7 +130,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a4dd3485c2ad80497a38703c3c05b37bd" id="r_a4dd3485c2ad80497a38703c3c05b37bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a4dd3485c2ad80497a38703c3c05b37bd">AC_FFT_PRECISION</a>&#160;&#160;&#160;rocfft_precision_single</td></tr>
 <tr class="separator:a4dd3485c2ad80497a38703c3c05b37bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be724aa613834884349799aa00cd8d8" id="r_a4be724aa613834884349799aa00cd8d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a4be724aa613834884349799aa00cd8d8">check_rocfft_status</a>(expression)&#160;&#160;&#160;{ const auto _status_ = expression; <a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(_status_); <a class="el" href="acc-runtime_2api_2errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(_status_ == rocfft_status_success); }</td></tr>
+<tr class="memitem:a4be724aa613834884349799aa00cd8d8" id="r_a4be724aa613834884349799aa00cd8d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a4be724aa613834884349799aa00cd8d8">check_rocfft_status</a>(expression)&#160;&#160;&#160;{ const auto _status_ = expression; <a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(_status_); <a class="el" href="errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(_status_ == rocfft_status_success); }</td></tr>
 <tr class="separator:a4be724aa613834884349799aa00cd8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -146,8 +146,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3a9619b5056d27652cf219935bd049e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607d0ca4436f031fd7688992fc72044b" id="r_a607d0ca4436f031fd7688992fc72044b"><td class="memItemLeft" align="right" valign="top">rocfft_field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a607d0ca4436f031fd7688992fc72044b">get_rocfft_field</a> (const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size)</td></tr>
 <tr class="separator:a607d0ca4436f031fd7688992fc72044b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c" id="r_ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </td></tr>
-<tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#ac10a65714e4702c8c46a49cb0cb1fa8c">hash_combine</a> (std::size_t &amp;seed, const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;<a class="el" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>)</td></tr>
+<tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c" id="r_ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#ac10a65714e4702c8c46a49cb0cb1fa8c">hash_combine</a> (std::size_t &amp;seed, const T &amp;<a class="el" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>)</td></tr>
 <tr class="separator:ac10a65714e4702c8c46a49cb0cb1fa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177bfe09122ac9cafccaf67e1c947194" id="r_a177bfe09122ac9cafccaf67e1c947194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rocfft_8cc.html#a177bfe09122ac9cafccaf67e1c947194">acFFTForwardTransformC2C</a> (const <a class="el" href="structAcComplex.html">AcComplex</a> *src, const <a class="el" href="structVolume.html">Volume</a> domain_size, const <a class="el" href="structVolume.html">Volume</a> subdomain_size, const <a class="el" href="structVolume.html">Volume</a> starting_point, <a class="el" href="structAcComplex.html">AcComplex</a> *dst)</td></tr>
 <tr class="separator:a177bfe09122ac9cafccaf67e1c947194"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,7 +209,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">expression</td><td>)</td>
-          <td>&#160;&#160;&#160;{ const auto _status_ = expression; <a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(_status_); <a class="el" href="acc-runtime_2api_2errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(_status_ == rocfft_status_success); }</td>
+          <td>&#160;&#160;&#160;{ const auto _status_ = expression; <a class="el" href="rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9">print_rocfft_error</a>(_status_); <a class="el" href="errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(_status_ == rocfft_status_success); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -882,7 +882,7 @@ Variables</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void hash_combine </td>
@@ -893,7 +893,7 @@ template&lt;typename <a class="el" href="test__async__mpi_8cc.html#ad627111799fd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="test__async__mpi_8cc.html#ad627111799fd1f8f5713cb9faf3e5af2">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_acc-runtime_2README.html',''); init
   <div class="headertitle"><div class="title">Building ACC runtime (incl. DSL files)</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md31"></a> The DSL source files should have a postfix <code>*.ac</code> and by default there should be only one <code>*.ac</code> file per directory. Optionally you can give the <code>*.ac</code> file to be compiled. </p><pre class="fragment">* `mkdir build`
+<div class="textblock"><p><a class="anchor" id="autotoc_md22"></a> The DSL source files should have a postfix <code>*.ac</code> and by default there should be only one <code>*.ac</code> file per directory. Optionally you can give the <code>*.ac</code> file to be compiled. </p><pre class="fragment">* `mkdir build`
 
 * `cd build`
 
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('md_acc-runtime_2README.html',''); init
          [-DSL_MODULE_FILE=&lt;you can optionally give the file in DSL_MODULE_DIR to be compiled&gt;] ..`
 
 * `make -j`
-</pre><h1><a class="anchor" id="autotoc_md32"></a>
+</pre><h1><a class="anchor" id="autotoc_md23"></a>
 Debugging</h1>
 <p>As ACC is in active development, compiler bugs and cryptic error messages are expected. In case of issues, please check the following files in <code>acc-runtime/api</code> in the build directory.</p>
 <p>Intermediate files:</p>
@@ -116,21 +116,21 @@ Debugging</h1>
 <li><code>user_kernels.h</code>. The generated CUDA kernels.</li>
 </ol>
 <p>To make inspecting the code easier, we recommend using an autoformatting tool, for example, <code>clang-format</code> or GNU <code>indent</code>.</p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 The Astaroth Domain-Specific Language</h1>
 <p>The Astaroth Domain-Specific Language (DSL) is a high-level general-purpose(GP)GPU language designed for improved productivity and performance in stencil computations. The Astaroth DSL compiler (&lt; build dir &gt;/acc-runtime/acc) is a source-to-source compiler, which converts DSL kernels into CUDA/HIP kernels. The generated kernels provide performance that is on-par with hand-tuned low-level GPGPU code in stencil computations. Special care has been taken to ensure efficient code generation in use cases encountered in computational physics, where there are multiple coupled fields, which makes manual caching notoriously difficult.</p>
 <p>The Astaroth DSL is based on the stream processing model, where an array of instructions is executed on streams of data in parallel. A kernel is a small GPU program, which defines the operations performed on a number of data streams. In our case, data streams correspond to vertices in a grid, similar to how vertex shaders operate in graphics shading languages.</p>
 <p>Since the language is still an active development user recommendations/requests for new features are <b>highly desirable</b>. To make a recommendation/request for a new feature make pull request where you outline the new feature and the use case it would be needed in.</p>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Comments and preprocessor directives</h2>
 <p>The Astaroth preprocessor works similar to the C preprocessor (gcc) with one exception:</p>
 <p>By default include files are searched relative to DSL_MODULE_DIR.</p>
 <p>With two extensions: </p><div class="fragment"><div class="line">hostdefine ONE  (1) // Macro definition visible in both device and host code</div>
 <div class="line">#include ../stdlib/math //Includes all files and directories in ../stdlib/math</div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md35"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md26"></a>
 Datatypes</h2>
 <p>The Astaroth DSL language is statically typed. All global variables require an explicit datatype declaration. Otherwise explicit typing is allowed but not required, with the exception of the parameters of overloaded functions. Some advanced features also require an explicit type declaration. By default we use C++ type inference rules (<code>auto</code>) with extensions where they would be ambiguous.</p>
-<h3><a class="anchor" id="autotoc_md36"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 Fields</h3>
 <p>A <code>Field</code> is a scalar array that can be used in conjuction with <code>Stencil</code> operations and for operations involving only the current vertex point. The array containing the values of a <code>Field</code> is size of the local subdomain with the halos included so in other terms the array is of size <code>[AC_mlocal.x][AC_mlocal.y][AC_mlocal.z]</code> A vector field can be constructed either by combining three scalar <code>Fields</code> into a <code><a class="el" href="structField3.html">Field3</a></code> structure or one declaring a <code><a class="el" href="structField3.html">Field3</a></code> structure on its own.</p>
 <p>To get the value of a <code>Field</code> at the current vertex use the built-in function <code>value</code>. A <code>Field</code> can be used directly in unary expressions and binary arithmetic expressions (<code>+</code>, <code>-</code>, <code>/</code>,<code>*</code>) which is equivalent to calling <code>value</code> on the <code>Field</code>. Also, calling a built-in math functions with <code>Field</code> is equivalent to first calling <code>value</code> on the <code>Field</code>. The same applies for <code><a class="el" href="structField3.html">Field3</a></code> and for arrays of them (<code>Field[]</code> and <code><a class="el" href="structField3.html">Field3</a>[]</code>).</p>
@@ -149,7 +149,7 @@ Fields</h3>
 <div class="line">    species_val = value(chemistry[i])</div>
 <div class="line">    ...</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md28"></a>
 Primitive types</h3>
 <p>The following primitive C++ types are usable:</p><ul>
 <li><code>int</code></li>
@@ -163,7 +163,7 @@ Primitive types</h3>
 <blockquote class="doxtable">
 <p>&zwj;Note: Whenever possible one should prefer using bools compared to e.g. integers which only have the values 0 and 1, since using bools gives the DSL compiler more information, which it can use to perform optimizations. </p>
 </blockquote>
-<h3><a class="anchor" id="autotoc_md38"></a>
+<h3><a class="anchor" id="autotoc_md29"></a>
 Additional built-in types</h3>
 <ul>
 <li><code>complex</code></li>
@@ -174,9 +174,9 @@ Additional built-in types</h3>
 <li><code>Matrix</code> (3x3 matrix of reals)</li>
 </ul>
 <p>We support <code>Matrix*real3</code>,<code>real*Matrix</code> and <code>-Matrix</code>.</p>
-<h3><a class="anchor" id="autotoc_md39"></a>
+<h3><a class="anchor" id="autotoc_md30"></a>
 User-defined types</h3>
-<h4><a class="anchor" id="autotoc_md40"></a>
+<h4><a class="anchor" id="autotoc_md31"></a>
 Structures</h4>
 <p>Structures can be defined similar to the C syntax: </p><div class="fragment"><div class="line">struct your_struct</div>
 <div class="line">{</div>
@@ -193,9 +193,9 @@ Structures</h4>
 <blockquote class="doxtable">
 <p>&zwj;Note: Currently, declaring multiple members from a single type specifier is not allowed. </p>
 </blockquote>
-<p><a class="anchor" id="autotoc_md41"></a> </p><h5>Operators</h5>
+<p><a class="anchor" id="autotoc_md32"></a> </p><h5>Operators</h5>
 <p>If all of the members of the structure are <code>real</code> we provide member-wise arithmetic operators (<code>+</code>, <code>-</code>, <code>/</code>, <code>*</code>) with <code>real</code> scalars. Additionally <code>+</code> and <code>-</code> are supported between structures of the same type, all of the members of which are <code>real</code> or <code>int</code>. For all operators the corresponding compound assignment operator is also supported.</p>
-<h4><a class="anchor" id="autotoc_md42"></a>
+<h4><a class="anchor" id="autotoc_md33"></a>
 Enums</h4>
 <p>Enums are declared in the C syntax </p><div class="fragment"><div class="line">enum Characters</div>
 <div class="line">{</div>
@@ -206,9 +206,9 @@ Enums</h4>
 </div><!-- fragment --> <blockquote class="doxtable">
 <p>&zwj;Note: Whenever possible one should prefer using enums compared to e.g. named integers, since using enums gives the DSL compiler more information which it can use to perform optimizations. </p>
 </blockquote>
-<p><a class="anchor" id="autotoc_md43"></a> </p><h5>Built-in enums</h5>
+<p><a class="anchor" id="autotoc_md34"></a> </p><h5>Built-in enums</h5>
 <p><a href="https://toxpuro.github.io/astaroth/typedefs_8h.html">See here</a> </p>
-<h3><a class="anchor" id="autotoc_md44"></a>
+<h3><a class="anchor" id="autotoc_md35"></a>
 Type qualifiers</h3>
 <ul>
 <li><code>const</code> Effectively the same as C++ constexpr i.e. a compile-time constant.</li>
@@ -219,7 +219,7 @@ Type qualifiers</h3>
 <ul>
 <li><code>run_const</code> Variables that are constant during the execution context of Astaroth (e.g. during a timeloop in a simulation). By default the same as dconst, but with RUNTIME_COMPILATION=ON they will be effectively const in the compiled kernels.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md45"></a>
+<h3><a class="anchor" id="autotoc_md36"></a>
 Advanced</h3>
 <ul>
 <li><code>communicated</code> The implicit qualifier for <code>Fields</code> if no qualifiers are defined, their halos are updated.</li>
@@ -245,10 +245,10 @@ Advanced</h3>
 <li><code>fixed_boundary</code> Tells the compiler that in <code>ComputeSteps</code> before the kernel boundary values inside the local subdomain should not be updated via boundary conditions. Rather the values on the boundaries should be carried over from before, i.e. the boundary values stay fixed from previous <code>Kernel</code> calls.</li>
 <li><code>boundary_condition</code> Tells the compiler that this kernel is supposed to be used as a boundary condition. As of now the only effect for boundary condition kernels is that all vertices in the computational subdomain (i.e. not halo regions) are skipped. So for example you can calculate periodic boundary conditions in all directions on a single device by launching BOUNDCOND_PERIODIC_DEVICE on the whole subdomain with halos included.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 Variables</h2>
 <p>Variable declaration and naming conventions follow C, except shadowing is not allowed: all identifiers within a scope must be unique.</p>
-<h3><a class="anchor" id="autotoc_md47"></a>
+<h3><a class="anchor" id="autotoc_md38"></a>
 Arrays</h3>
 <p>Instead of <code>{</code> <code>}</code> initializer of C++ we use <code>[</code> <code>]</code> </p><div class="fragment"><div class="line">int arr0 = [1, 2, 3] </div>
 <div class="line">arr1 = [1.0, 2.0, 3.0] //type real is inferred</div>
@@ -269,12 +269,12 @@ Arrays</h3>
 <div class="line">    binary_expr = -ux*2.0*uz  // is equivalent to -value(ux)*2.0*value(uz)</div>
 <div class="line">    exp_val     = exp(uz)     // is equivalent to exp(value(uz))</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md48"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md39"></a>
 Casting</h3>
 <p>One can use C and C++ casting. </p><div class="fragment"><div class="line">var7 = real(1)        // Cast</div>
 <div class="line">vec0 = real3(1, 2, 3) // Cast</div>
 <div class="line">complex_val = (complex){real_val,imag_val} // Cast</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md49"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md40"></a>
 Looping</h2>
 <p>Loops follow the Python style </p><div class="fragment"><div class="line">int arr = [1, 2, 3]</div>
 <div class="line">for var in arr {</div>
@@ -289,7 +289,7 @@ Looping</h2>
 <div class="line">for i in 0:10 { // Note: 10 is exclusive</div>
 <div class="line">  print(&quot;%d&quot;, i)</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md50"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
 Functions</h2>
 <p>Functions follow the C declaration syntax.</p>
 <p>For functions which have take in a <code>real</code> parameter one can also provide a <code>Field</code> expression in the function call, with the expression being automatically converted to <code>real</code> by calling <code>value</code> with the value of the expression. The same is also true for <code><a class="el" href="structField3.html">Field3</a>,<a class="el" href="structreal3.html">real3</a></code>,<code>Field[],real[]</code> and <code><a class="el" href="structField3.html">Field3</a>[],<a class="el" href="structreal3.html">real3</a>[]</code>.</p>
@@ -357,11 +357,11 @@ Functions</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md51"></a>
+<h3><a class="anchor" id="autotoc_md42"></a>
 Printing</h3>
 <div class="fragment"><div class="line">// print is the same as `printf` in the C programming language</div>
 <div class="line">print(&quot;Hello from thread (%d, %d, %d)\n&quot;, vertexIdx.x, vertexIdx.y, vertexIdx.z)</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md52"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md43"></a>
 Kernels</h3>
 <p>Kernels are functions visible outside of the DSL code, called by the host. Calling kernels is the only way to execute DSL code.</p>
 <blockquote class="doxtable">
@@ -377,7 +377,7 @@ Kernels</h3>
 </div><!-- fragment --> <blockquote class="doxtable">
 <p>&zwj;Note: In the example of func4 the input param <code>ptr</code> is functionally a pointer to GPU allocated memory. The correctness of the pointer is not checked by Astaroth and is responsibility of the user. </p>
 </blockquote>
-<h3><a class="anchor" id="autotoc_md53"></a>
+<h3><a class="anchor" id="autotoc_md44"></a>
 Stencils</h3>
 <p>Stencils are functions that take in a <code>Field</code> input parameter and have an unique syntax and semantics. <b>Importantly</b>, they are the only way to access values of a <code>Field</code> on other vertexes than at the current one. A stencil operation multiplies all points of the stencil by their corresponding coefficients and performs a binary reduction operation (<code>Sum</code> or <code>Max</code>) over these values. Because Stencils act uniformly on the input parameter it is not declared. </p><div class="fragment"><div class="line">// Format</div>
 <div class="line">&lt;Optional reduction operation&gt; Stencil &lt;identifier&gt; {</div>
@@ -441,7 +441,7 @@ Stencils</h3>
 <blockquote class="doxtable">
 <p>&zwj;Note: To reduce redundant communication or to enable larger stencils, the stencil order can be changed by declaring <code>#DEFINE STENCIL\_ORDER (YOUR VALUE)</code> in DSL. Modifying the stencil order with the DSL is currently not supported. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md45"></a>
 Built-in variables, functions and constants</h2>
 <div class="fragment"><div class="line">// Variables</div>
 <div class="line">int3 vertexIdx       // The vertex index that is iterated over, within the subdomain of the current device</div>
@@ -472,16 +472,16 @@ Built-in variables, functions and constants</h2>
 <div class="line">int  ceil(real)</div>
 <div class="line">real random_uniform()</div>
 </div><!-- fragment --><p> Advanced functions (should avoid, dangerous) </p><div class="fragment"><div class="line">real previous(Field) // Returns the value in the output buffer. Call after write() results in undefined behaviour.</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md55"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md46"></a>
 Built-in constants</h3>
 <div class="fragment"><div class="line">real AC_REAL_PI // Value of pi using the same precision as `real`</div>
 <div class="line">real AC_REAL_MAX // Either DBL_MAX or FLT_MAX base on precision of `real`</div>
 <div class="line">real AC_REAL_MIN // Either DBL_MIN or FLT_MIN base on precision of `real`</div>
 <div class="line">real AC_REAL_EPSILON // Either DBL_EPSILON or FLT_EPSILON base on precision of `real`</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md56"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md47"></a>
 Built-in variables</h3>
 <p><a href="https://toxpuro.github.io/astaroth/variables_8h.html">See built-in variables here</a></p>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 Advanced features</h2>
 <p>If OPTIMIZE_FIELDS=ON, the DSL compiler will identify unused <code>Fields</code> and will not allocate them on the GPU. To still enable a loop across all allocated <code>Fields</code> non-allocated <code>Fields</code> are not counted in <code>NUM_FIELDS</code> and their numerical index is higher than <code>NUM_FIELDS</code>.</p>
 <p><b>Important</b> If you use runtime-compilation this can mean that the index value of the main application that calls Astaroth and the index value inside it might not match. To get the correct indexes, use API functions acGet&lt; Field name &gt;.</p>
@@ -502,7 +502,7 @@ Advanced features</h2>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;Note: Accessing field elements this way is suboptimal compared to accessing then using a <code>Stencil</code> or calling <code>value</code> since the reads are not cached. Only access field elements this way if otherwise not possible. </p>
 </blockquote>
-<h3><a class="anchor" id="autotoc_md58"></a>
+<h3><a class="anchor" id="autotoc_md49"></a>
 Profiles</h3>
 <p><code>Profiles</code> are either one- or two-dimensional arrays of <code>reals</code> that have extents equal to the side lengths of the local subdomain, with halos included. Thus there 9 different possible types of <code>Profiles</code>:</p>
 <ul>
@@ -517,7 +517,7 @@ Profiles</h3>
 <li><code>Profile&lt;ZY&gt;</code></li>
 </ul>
 <p>One can get the value of a <code>Profile</code> that corresponds to the local vertex by calling <code>value</code> on it. For example the value of a <code>Profile&lt;X&gt;</code> would depend only on the x-coordinate of the vertex where as for a <code>Profile&lt;XY&gt;</code> it would depend on both the x- and y-coordinates. The same rules about inserting automatic <code>value</code> calls hold for <code>Profiles</code> as for <code>Fields</code>.</p>
-<h3><a class="anchor" id="autotoc_md59"></a>
+<h3><a class="anchor" id="autotoc_md50"></a>
 Allocating declarations</h3>
 <p><code>Field</code> and <code>Profile</code> types are special types compared to other types because they imply allocations on the global memory, for which the sizes are inferable from the types. <br  />
  Thus naturally aggregates, arrays and structures, that consist only of <code>Fields</code> and <code>Profiles</code> and other aggregates of them, also imply memory allocations. A perfect example is <code><a class="el" href="structField3.html">Field3</a></code>. It is a structure that consists of three <code>Field</code> members and thus <code><a class="el" href="structField3.html">Field3</a></code> declaration implies the same memory allocations that three separate <code>Field</code> declarations would imply. Another common example are <code>Field[]</code> variables. One can consider declarations of such aggregate varibles as syntactic sugar for recursively declaring the base <code>Fields</code> or <code>Profiles</code> and combining them together in the right structures. </p><div class="fragment"><div class="line">Field3 field_vecs[3] \\This can be considered syntactic sugar for the following:</div>
@@ -532,7 +532,7 @@ Allocating declarations</h3>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;Note: Here it helps to understand that <code>Fields</code> and <code>Profiles</code> are handles to memory, not memory themselves, and thus it is clear that the const assignments do not imply memory allocations but simple grouping of handles. </p>
 </blockquote>
-<h3><a class="anchor" id="autotoc_md60"></a>
+<h3><a class="anchor" id="autotoc_md51"></a>
 Reductions</h3>
 <p>For reductions the kernel has to be invoked at each vertex point of the domain. </p><div class="fragment"><div class="line">output real max_derux</div>
 <div class="line">Field ux,f</div>
@@ -557,7 +557,7 @@ Reductions</h3>
 <p>After executing the kernels reductions are finalized by the taskgraph behind the scenes. One can access the reduced value on the DSL similar to other varibles as in the example above.</p>
 <p>The reduced scalar values can be accessed with <code>acDeviceGetOutput</code> or for <code>Profiles</code> with the corresponding API functions.</p>
 <p>When the result of the reduction is a <code>Profile</code> finalization is automatically included in the execution of the <code>TaskGraph</code>. For a simple end-to-end test see <code>test/use-scalar-reduce</code> and <code>test/reduce-test</code></p>
-<h3><a class="anchor" id="autotoc_md61"></a>
+<h3><a class="anchor" id="autotoc_md52"></a>
 ComputeSteps</h3>
 <p>This feature that only works if MPI is enabled</p>
 <p>The <code>BoundConds</code> construct is used to declare how to calculate the values of <code>Field</code>s when the boundary conditions are to be imposed. </p><div class="fragment"><div class="line">BoundConds boundconds</div>
@@ -596,22 +596,22 @@ ComputeSteps</h3>
 <div class="line">}</div>
 </div><!-- fragment --><p><code>ComputeSteps</code> take in a parameter of <code>BoundConds</code>, from which it knows which boundary conditions to impose. In case required boundary conditions are not declared, the compilation will fail. You can access the generated <code>TaskGraph</code> with <code>acGetDSLTaskGraph</code>.</p>
 <p>To pass input values from the host side call <code>acDeviceSetInput</code>. With the example above to pass <code>2.0</code> to the first parameter of <code>kernel_call_1</code> one should call <code>acDeviceSetInput(device,ac_input_val,2.0)</code></p>
-<h3><a class="anchor" id="autotoc_md62"></a>
+<h3><a class="anchor" id="autotoc_md53"></a>
 2D-setups</h3>
 <p>By setting <code>2D=ON</code> one can build Astaroth specifically for a two-dimensional setup. Currently the missing dimension is always the z-dimension. The main difference between setting <code>AC_nzgrid=1</code> and an explicit two-dimensional setup is that in the latter no halo regions are allocated in the z-dimension, which is an considerable memory saving. <code>Stencils</code> work the same as usual, expect when declaring them one uses only the x and y -offsets. Some API functions that previously took three-dimensional arrays or three parameters related to the spatial dimensions now take two-dimensional arrays and only two parameters. Additionally those built-in variables related to the z spatial dimension (e.g. <code>AC_nz</code>) are suppressed. When using <code>BoundConds</code> one does not need to declare boundary conditions on the z-boundaries and if they are they will be skipped. One can find in <code>acc-runtime/samples/2d/2d-test.ac</code> and <code><a class="el" href="2d-test_2main_8cc.html">test/2d-test/main.cc</a></code> a simple two-dimensional test setup.</p>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md54"></a>
 Interaction with the Astaroth Core and Utils libraries</h1>
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md55"></a>
 Loading and storing stencil coefficients at runtime</h2>
 <p>The Astaroth Runtime API provides the functions <code>acLoadStencil</code> and <code>acStoreStencil</code> for loading/storing stencil coefficients at runtime. This is useful for, say, for setting the coefficients programmatically if too cumbersome by hand. We however highly recommend to use device constant variables in the stencil coefficients instead of separately loading stencil coefficients at runtime , since it eliminates coding errors where the actual stencil coefficients are calculated separately from the stencil declarations.</p>
 <p>See also the functions <code>acDeviceLoadStencil</code>, <code>acDeviceStoreStencil</code>, <code>acGridLoadStencil</code>, and <code>acGridStoreStencil</code> provided by the Astaroth Core library.</p>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 Additional physics-specific API functions</h2>
 <p>To enable additional API functions in the Astaroth Core library for integration (<code>acIntegrate</code> function family) and MHD-specific tasks (automated testing, MHD samples), one must set <code>hostdefine AC_INTEGRATION_ENABLED (1)</code> in the DSL file. Note that if used in the DSL code, the hostdefine must not define anything that is not visible at compile-time. For example, <code>hostdefine R_PI (M_PI)</code>, where <code>M_PI</code> is defined is some host header, <code>M_PI</code> will not be visible in the DSL code and will result in a compilation error. Additionally, code such as <code>#if M_PI</code> will be always false in the DSL source if <code>M_PI</code> is not visible in the DSL file.</p>
 <blockquote class="doxtable">
 <p>&zwj;Note: The extended API depends on several hardcoded fields and device constants. It is not recommended to enable it unless you work on the MHD sample case (<code>acc-runtime/samples/mhd</code>) or its derivatives. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 Stencil order</h2>
 <p>The stencil order can be set by the user by <code>hostdefine STENCIL_ORDER (x)</code>, where <code>x</code> is the total number of cells on both sides of the center point per axis. For example, a simple von Neumann stencil is of order 2.</p>
 <p>Alternatively it can be set via CMAKE with <code>-DAC_STENCIL_ORDER=N</code>.</p>

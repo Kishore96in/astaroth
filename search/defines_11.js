@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s_5fmul_0',['S_MUL',['../__kiss__fft__guts_8h.html#a944e08f3916c56a9697bbfed458eaa94',1,'_kiss_fft_guts.h']]],
-  ['sin_1',['sin',['../acc-runtime_2api_2math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a',1,'math_utils.h']]],
+  ['sin_1',['sin',['../math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a',1,'math_utils.h']]],
   ['size_2',['size',['../acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1',1,'acc_runtime.cu']]],
   ['size_5ft_5fstr_3',['SIZE_T_STR',['../codegen_8c.html#a12d7dadf8cb255cde07ce9d6230ec6c2',1,'codegen.c']]],
   ['smooth_5fxc0_5fyc0_5fzc0_4',['SMOOTH_XC0_YC0_ZC0',['../smooth__max_8h.html#a204a623fbe2b66d4cc154c209e656b76',1,'smooth_max.h']]],
@@ -347,7 +347,7 @@ var searchData=
   ['smooth_5fxp3_5fyp3_5fzp1_344',['SMOOTH_XP3_YP3_ZP1',['../smooth__max_8h.html#ac0671fe9d70692da9f2961aa09e22877',1,'smooth_max.h']]],
   ['smooth_5fxp3_5fyp3_5fzp2_345',['SMOOTH_XP3_YP3_ZP2',['../smooth__max_8h.html#a8a41135f67e33b0d81ddfdeb8f3d6a6b',1,'smooth_max.h']]],
   ['smooth_5fxp3_5fyp3_5fzp3_346',['SMOOTH_XP3_YP3_ZP3',['../smooth__max_8h.html#a320c34ee55fbc2e75ad4643d82ec02bc',1,'smooth_max.h']]],
-  ['sqrt_347',['sqrt',['../acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac',1,'sqrt:&#160;math_utils.h'],['../modelreduce_8cc.html#aa8418f27fe28830a7fb62322463f15e0',1,'sqrt:&#160;modelreduce.cc']]],
+  ['sqrt_347',['sqrt',['../math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac',1,'sqrt:&#160;math_utils.h'],['../modelreduce_8cc.html#aa8418f27fe28830a7fb62322463f15e0',1,'sqrt:&#160;modelreduce.cc']]],
   ['stencil_5forder_348',['stencil_order',['../stencil__defines_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;stencil_defines.h'],['../stdderiv_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;stdderiv.h'],['../user_8h.html#a39c132057559a2390b35efbb766e105d',1,'STENCIL_ORDER:&#160;user.h']]],
   ['stencilacc_5fexec_349',['STENCILACC_EXEC',['../codegen_8c.html#a95cc9d4a326611cb1fc2119eb9d729ff',1,'codegen.c']]],
   ['stencilacc_5fsrc_350',['STENCILACC_SRC',['../codegen_8c.html#a1852c762d57a483acf9b63aeb9e76ab3',1,'codegen.c']]],

@@ -21,16 +21,15 @@ var searchData=
   ['computational_5fdims_18',['computational_dims',['../structVertexBufferArray.html#ac1d2bc9794f6175d41a8179bdf597fa4',1,'VertexBufferArray']]],
   ['config_19',['config',['../structAcCompInfo.html#abda070c6a900af7006d05595f0ea4694',1,'AcCompInfo::config'],['../structnode__s.html#ad977e90fc48ab44245e265a9603fcc3a',1,'node_s::config']]],
   ['const_5fdims_5fstr_20',['CONST_DIMS_STR',['../codegen_8c.html#a3d11d310bbbec69860df1970d9e988cb',1,'codegen.c']]],
-  ['const_5fint_5fvalues_21',['const_int_values',['../structCodeGenInput.html#af38b3ae11c0a01cf669e2ee112e6c7eb',1,'CodeGenInput::const_int_values'],['../codegen_8c.html#ab21e800823e8e2cc1add8b3d6afdf8f5',1,'const_int_values:&#160;codegen.c']]],
-  ['const_5fints_22',['const_ints',['../codegen_8c.html#ade2349eef579b8adfcbeb9476ce7aafa',1,'const_ints:&#160;codegen.c'],['../structCodeGenInput.html#a4de3e1772e45946249fa668b5ceca120',1,'CodeGenInput::const_ints']]],
+  ['const_5fint_5fvalues_21',['const_int_values',['../codegen_8c.html#ab21e800823e8e2cc1add8b3d6afdf8f5',1,'const_int_values:&#160;codegen.c'],['../structCodeGenInput.html#af38b3ae11c0a01cf669e2ee112e6c7eb',1,'CodeGenInput::const_int_values']]],
+  ['const_5fints_22',['const_ints',['../structCodeGenInput.html#a4de3e1772e45946249fa668b5ceca120',1,'CodeGenInput::const_ints'],['../codegen_8c.html#ade2349eef579b8adfcbeb9476ce7aafa',1,'const_ints:&#160;codegen.c']]],
   ['const_5fstr_23',['CONST_STR',['../codegen_8c.html#a445ac875ef89972110c54cbf431a5e65',1,'codegen.c']]],
   ['constexpr_5fstr_24',['CONSTEXPR_STR',['../codegen_8c.html#a96e6484e4d5e8a8ce80683f63ce34929',1,'codegen.c']]],
   ['context_25',['context',['../structte__variable.html#a61e2ec3703bb3cd8519a4068b92399af',1,'te_variable::context'],['../structstate.html#a0102e66dd6da652109b7f9e23d2b9898',1,'state::context']]],
-  ['count_26',['count',['../structArray.html#a5264a3942ccc3a5c433ad56d12949028',1,'Array::count'],['../structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2',1,'AcBuffer::count']]],
+  ['count_26',['count',['../structArray.html#ae3949cbd948b89d7f6e7b2688ece7984',1,'Array::count'],['../structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2',1,'AcBuffer::count']]],
   ['counter_27',['counter',['../string__vec_8h.html#a7828c081e3540e4630d3462a4a4d4786',1,'string_vec.h']]],
   ['counterpart_5franks_28',['counterpart_ranks',['../structHaloMessage.html#a1e64b07a7060b239e5e525d768155e48',1,'HaloMessage']]],
-  ['counts_29',['counts',['../classTask.html#a9a3c14e221f760f7af8836d719667d31',1,'Task::counts'],['../structVertexBufferArray.html#aacb033ad00c514818e5f986bc9941fc4',1,'VertexBufferArray::counts'],['../structoverloaded__dfuncs.html#a77365ec83c92dfcd764a0d7577371876',1,'overloaded_dfuncs::counts']]],
+  ['counts_29',['counts',['../structoverloaded__dfuncs.html#a77365ec83c92dfcd764a0d7577371876',1,'overloaded_dfuncs::counts'],['../structVertexBufferArray.html#aacb033ad00c514818e5f986bc9941fc4',1,'VertexBufferArray::counts'],['../classTask.html#a9a3c14e221f760f7af8836d719667d31',1,'Task::counts']]],
   ['cub_5ftmp_30',['cub_tmp',['../structAcReduceBuffer.html#abc58b9c57a916b5a957f52f42f51f4d4',1,'AcReduceBuffer']]],
-  ['cub_5ftmp_5fsize_31',['cub_tmp_size',['../structAcReduceBuffer.html#aecb927b0a24d609b682e67e94cefa888',1,'AcReduceBuffer']]],
-  ['cudastreamdefault_32',['cudaStreamDefault',['../buffer__exchange_8h.html#a3fe3241e35c4a8d41f3592c4f399fd09',1,'buffer_exchange.h']]]
+  ['cub_5ftmp_5fsize_31',['cub_tmp_size',['../structAcReduceBuffer.html#aecb927b0a24d609b682e67e94cefa888',1,'AcReduceBuffer']]]
 ];

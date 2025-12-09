@@ -1,20 +1,9 @@
 var searchData=
 [
   ['bc_2eh_0',['bc.h',['../bc_8h.html',1,'']]],
-  ['bm_2ecc_1',['bm.cc',['../bm_8cc.html',1,'']]],
-  ['bm_2eh_2',['bm.h',['../bm_8h.html',1,'']]],
-  ['bm_5fcollective_5fcomm_2ecc_3',['bm_collective_comm.cc',['../bm__collective__comm_8cc.html',1,'']]],
-  ['bm_5fkernel_5fparams_2ecu_4',['bm_kernel_params.cu',['../bm__kernel__params_8cu.html',1,'']]],
-  ['bm_5fpack_2ecc_5',['bm_pack.cc',['../bm__pack_8cc.html',1,'']]],
-  ['bm_5frank_5freordering_2ecc_6',['bm_rank_reordering.cc',['../bm__rank__reordering_8cc.html',1,'']]],
-  ['bm_5fscaling_2ecc_7',['bm_scaling.cc',['../bm__scaling_8cc.html',1,'']]],
-  ['bm_5ftopology_2ecc_8',['bm_topology.cc',['../bm__topology_8cc.html',1,'']]],
-  ['bm_5ftopology_5fv2_2ecc_9',['bm_topology_v2.cc',['../bm__topology__v2_8cc.html',1,'']]],
-  ['buffer_2ecc_10',['buffer.cc',['../buffer_8cc.html',1,'']]],
-  ['buffer_2eh_11',['buffer.h',['../buffer_8h.html',1,'']]],
-  ['buffer_5fexchange_2eh_12',['buffer_exchange.h',['../buffer__exchange_8h.html',1,'']]],
-  ['bwtest_2dbenchmark_2ecu_13',['bwtest-benchmark.cu',['../bwtest-benchmark_8cu.html',1,'']]],
-  ['bwtest_2dio_2ecu_14',['bwtest-io.cu',['../bwtest-io_8cu.html',1,'']]],
-  ['bwtest_2dstencil_2ecu_15',['bwtest-stencil.cu',['../bwtest-stencil_8cu.html',1,'']]],
-  ['bwtest_2ecu_16',['bwtest.cu',['../bwtest_8cu.html',1,'']]]
+  ['buffer_2ecc_1',['buffer.cc',['../buffer_8cc.html',1,'']]],
+  ['bwtest_2dbenchmark_2ecu_2',['bwtest-benchmark.cu',['../bwtest-benchmark_8cu.html',1,'']]],
+  ['bwtest_2dio_2ecu_3',['bwtest-io.cu',['../bwtest-io_8cu.html',1,'']]],
+  ['bwtest_2dstencil_2ecu_4',['bwtest-stencil.cu',['../bwtest-stencil_8cu.html',1,'']]],
+  ['bwtest_2ecu_5',['bwtest.cu',['../bwtest_8cu.html',1,'']]]
 ];

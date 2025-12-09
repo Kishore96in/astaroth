@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="mainpage"></a> <a href="https://toxpuro.github.io/astaroth">Docs</a> | <a class="el" href="md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html">API specification</a> | <a class="el" href="md_acc-runtime_2README.html">Astaroth DSL</a> | <a class="el" href="md_CONTRIBUTING.html">Contributing</a> | <a class="el" href="md_LICENCE.html">Licence</a> | <a href="https://bitbucket.org/jpekkila/astaroth">Repository</a> | <a href="https://bitbucket.org/jpekkila/astaroth/issues?status=new&amp;status=open">Issue Tracker</a> | <a href="https://bitbucket.org/jpekkila/astaroth/wiki/Home">Wiki</a></p>
 <p>Astaroth is a multi-GPU library designed for high-order stencil computations with a special focus on the requirements of multiphysics applications on modern HPC systems. It provides a multi-GPU and single-GPU APIs, a domain-specific language for expressing stencil codes in a high-level syntax, and an optimizing compiler that translates DSL sources into CUDA/HIP subroutines that exhibit near handtuned performance.</p>
 <p>Astaroth is licenced under the terms of the GNU General Public Licence, version 3, or later (see <a class="el" href="md_LICENCE.html">LICENCE.txt</a>). For contributing guidelines, see <a class="el" href="md_CONTRIBUTING.html">Contributing</a>.</p>
-<h1><a class="anchor" id="autotoc_md172"></a>
+<h1><a class="anchor" id="autotoc_md163"></a>
 Getting started</h1>
 <ul>
 <li>For a hello world example for physical simulations see <code>samples/advection-example</code> </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md173"></a>
+<h1><a class="anchor" id="autotoc_md164"></a>
 System Requirements</h1>
 <ul>
 <li>An NVIDIA GPU with support for compute capability 3.0 or higher (Kepler architecture or newer)</li>
@@ -110,16 +110,16 @@ System Requirements</h1>
 <ul>
 <li>an AMD GPU that has HIP support</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md174"></a>
+<h1><a class="anchor" id="autotoc_md165"></a>
 Dependencies</h1>
 <p>Relative recent versions of</p>
 <p><code>gcc cmake flex bison</code></p>
 <p>and either <code>nvcc</code> (NVIDIA) or <code>hipcc</code> (AMD). The library is built for NVIDIA by default, but AMD support can be enabled by passing <code>-DUSE_HIP=ON</code> to CMake.</p>
-<h1><a class="anchor" id="autotoc_md175"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 Choosing a branch</h1>
 <p><code>master</code> is a tested, stable branch. We recommend to use this branch in production</p>
 <p><code>develop</code> is the main development branch.</p>
-<h1><a class="anchor" id="autotoc_md176"></a>
+<h1><a class="anchor" id="autotoc_md167"></a>
 Building</h1>
 <p>In the base directory, run</p>
 <ol type="1">
@@ -137,11 +137,11 @@ Building</h1>
 <blockquote class="doxtable">
 <p>&zwj;<b>Note:</b> CMake will inform you if there are missing dependencies. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md177"></a>
+<h1><a class="anchor" id="autotoc_md168"></a>
 Simple example template</h1>
 <p>If you need a functioning and documented example of how to run Astaroth in standalone more out of the box,</p>
 <p><a class="el" href="md_config_2samples_2shockturb_2README.html">please see this shock turbulence run example</a> in the directory <code>config/samples/shockturb/</code>.</p>
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="autotoc_md169"></a>
 Running on clusters (Slurm)</h1>
 <ol type="1">
 <li>Load the modules required for building: <code>module load gcc/8.3.0 cuda/10.1.168 cmake openmpi/4.0.3-cuda</code></li>
@@ -158,7 +158,7 @@ Running on clusters (Slurm)</h1>
 <blockquote class="doxtable">
 <p>&zwj;<b>Tip:</b> For more information on running the code on Puhti, see <a href="https://docs.csc.fi/computing/overview/">Puhti docs</a>. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md179"></a>
+<h2><a class="anchor" id="autotoc_md170"></a>
 MPI</h2>
 <p>Getting the modules and slurm commands right can be tricky because they vary system by system. See a list of systems and commands that have been tested to work below.</p>
 <div class="fragment"><div class="line"># CSC Puhti (2024-03-15)</div>
@@ -205,7 +205,7 @@ MPI</h2>
 <div class="line">srun -p gpu-amd -t 00:05:00 --pty /bin/bash # Currently need to build on the gpu-amd partition, otherwise hipcc is not available</div>
 <div class="line">cmake -DBUILD_SHARED_LIBS=ON .. &amp;&amp; make -j  # Hangs with the hip compiler on Triton if BUILD_SHARED_LIBS=OFF due linker failure (note: BUILD_SHARED_LIBS deprecated on 2025-01-07)</div>
 <div class="line">./devicetest                                # Check that everything works</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md180"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md171"></a>
 CMake Options</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -253,7 +253,7 @@ CMake Options</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">FFT_ENABLED   </td><td class="markdownTableBodyNone">"Whether to enable FFT API functions"   </td><td class="markdownTableBodyNone">OFF   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md181"></a>
+<h1><a class="anchor" id="autotoc_md172"></a>
 Standalone Module</h1>
 <div class="fragment"><div class="line">Usage: ./ac_run [options]</div>
 <div class="line">         --help | -h: Prints this help.</div>
@@ -265,18 +265,18 @@ Standalone Module</h1>
 </div><!-- fragment --><div class="fragment"><div class="line">Usage: ./ac_run_mpi [options]</div>
 <div class="line">         --help | -h: Prints the input parameters</div>
 </div><!-- fragment --><p>See <code>analysis/python/</code> directory of existing data visualization and analysis scripts.</p>
-<h2><a class="anchor" id="autotoc_md182"></a>
+<h2><a class="anchor" id="autotoc_md173"></a>
 Restarting from distributed snapshots</h2>
 <div class="fragment"><div class="line">cmake ~/astaroth -DOPTIMIZE_MEM_ACCESSES=ON -DMPI_ENABLED=ON &amp;&amp; cmake --build . --parallel &amp;&amp; $SRUN4 ./ac_run_mpi --from-snapshot &lt;snapshot directory&gt;</div>
 </div><!-- fragment --><p>See also config parameter <code>AC_num_snapshots</code> for more control over how many snapshots are written out.</p>
-<h1><a class="anchor" id="autotoc_md183"></a>
+<h1><a class="anchor" id="autotoc_md174"></a>
 Interface</h1>
 <ul>
 <li><code><a class="el" href="astaroth_8h.html">astaroth/include/astaroth.h</a></code>: Astaroth main header. Contains the interface for accessing single- and multi-GPU layers.</li>
 <li><code><a class="el" href="astaroth__utils_8h.html" title="Functions for loading and updating AcMeshInfo.">astaroth/include/astaroth_utils.h</a></code>: Utility library header. Provides functions for performing common tasks on host, such as allocating and verifying meshes.</li>
 <li><code><a class="el" href="acc__runtime_8h.html">acc-runtime/api/acc_runtime.h</a></code>: Low-level single-GPU library for running kernels generated from user-defined DSL files.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md184"></a>
+<h1><a class="anchor" id="autotoc_md175"></a>
 FAQ</h1>
 <p>Can I use the code even if I don't make my changes public?</p>
 <blockquote class="doxtable">

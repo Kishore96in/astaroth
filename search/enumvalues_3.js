@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['default_5fcustom_5fdecomp_0',['default_custom_decomp',['../namespaceac_1_1mpi.html#a53b8cce88eac80d9ae00150190937b20a3d067857bc1c37ab951d8d22e9c5d8e1',1,'ac::mpi']]],
-  ['default_5fmpi_1',['default_mpi',['../namespaceac_1_1mpi.html#a53b8cce88eac80d9ae00150190937b20ad3ae1867c62d6331fb528ff755f54c6d',1,'ac::mpi']]]
+  ['exchange_5finput_0',['Exchange_input',['../task_8h.html#a68645f369252eb31bc1d60eceaad6c44a1182ffae3c196b98daf984443b6c4722',1,'task.h']]],
+  ['exchange_5foutput_1',['Exchange_output',['../task_8h.html#a68645f369252eb31bc1d60eceaad6c44a0d690a31a5c0310cb92becac2a35becf',1,'task.h']]],
+  ['exchanging_2',['Exchanging',['../task_8h.html#ae06a32b9b155c134f986e0cc50f7e144affbf937dd4f4e05df63ab5891384b14d',1,'task.h']]]
 ];

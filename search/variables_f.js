@@ -16,13 +16,12 @@ var searchData=
   ['prefix_13',['prefix',['../structastnode__s.html#a2f3aaa681405419ffe3b962ece6260ce',1,'astnode_s::prefix'],['../structastnode__s.html#a06df24b1175aaabfde0ea348e6add307',1,'astnode_s::prefix']]],
   ['prim_14',['prim',['../structAcGridMappingFunction.html#acac903d2b2ccef935791f3814d3d8316',1,'AcGridMappingFunction']]],
   ['prim2_15',['prim2',['../structAcGridMappingFunction.html#ada5428cec6af5a2e8901aa7fb960206e',1,'AcGridMappingFunction']]],
-  ['problem_5fsize_16',['problem_size',['../bm__topology_8cc.html#a7e427112504f687c45955d62e45cc03b',1,'bm_topology.cc']]],
-  ['profile_17',['profile',['../structAcMesh.html#a8fa6c1cc686df0f2a096fcc0b13e003a',1,'AcMesh']]],
-  ['profile_5fcount_18',['profile_count',['../structVertexBufferArray.html#a20f785fee36cb2d78836f722143b39e5',1,'VertexBufferArray']]],
-  ['profile_5fcounts_19',['profile_counts',['../structVertexBufferArray.html#a1da7caed50469a734097241d63b7498d',1,'VertexBufferArray']]],
-  ['profile_5fdims_20',['profile_dims',['../structVertexBufferArray.html#a88819d76238bfef598a53f0fc95a03e3',1,'VertexBufferArray']]],
-  ['profile_5fhas_5fstencil_5fop_21',['profile_has_stencil_op',['../structKernelAnalysisInfo.html#a931a2bd5f190bec748291ba38417521d',1,'KernelAnalysisInfo']]],
-  ['profile_5freduce_5fbuffers_22',['profile_reduce_buffers',['../structVertexBufferArray.html#ab1225b9bf0b7e6b73ab88dd1bafde5d3',1,'VertexBufferArray']]],
-  ['profile_5fstr_23',['PROFILE_STR',['../codegen_8c.html#a2e0aa300f6a0cc299841ef8675c01b95',1,'codegen.c']]],
-  ['profiles_24',['profiles',['../structDeviceVertexBufferArray.html#ab80259610f6b73def3555b565f28c5bd',1,'DeviceVertexBufferArray::profiles'],['../structRegionMemory.html#a7ee06514cf17659d0962ceca641b0fe0',1,'RegionMemory::profiles'],['../structRegionMemoryInputParams.html#a5f86ae66852f04419059b4418219ebdc',1,'RegionMemoryInputParams::profiles']]]
+  ['profile_16',['profile',['../structAcMesh.html#a8fa6c1cc686df0f2a096fcc0b13e003a',1,'AcMesh']]],
+  ['profile_5fcount_17',['profile_count',['../structVertexBufferArray.html#a20f785fee36cb2d78836f722143b39e5',1,'VertexBufferArray']]],
+  ['profile_5fcounts_18',['profile_counts',['../structVertexBufferArray.html#a1da7caed50469a734097241d63b7498d',1,'VertexBufferArray']]],
+  ['profile_5fdims_19',['profile_dims',['../structVertexBufferArray.html#a88819d76238bfef598a53f0fc95a03e3',1,'VertexBufferArray']]],
+  ['profile_5fhas_5fstencil_5fop_20',['profile_has_stencil_op',['../structKernelAnalysisInfo.html#a931a2bd5f190bec748291ba38417521d',1,'KernelAnalysisInfo']]],
+  ['profile_5freduce_5fbuffers_21',['profile_reduce_buffers',['../structVertexBufferArray.html#ab1225b9bf0b7e6b73ab88dd1bafde5d3',1,'VertexBufferArray']]],
+  ['profile_5fstr_22',['PROFILE_STR',['../codegen_8c.html#a2e0aa300f6a0cc299841ef8675c01b95',1,'codegen.c']]],
+  ['profiles_23',['profiles',['../structDeviceVertexBufferArray.html#ab80259610f6b73def3555b565f28c5bd',1,'DeviceVertexBufferArray::profiles'],['../structRegionMemory.html#a7ee06514cf17659d0962ceca641b0fe0',1,'RegionMemory::profiles'],['../structRegionMemoryInputParams.html#a5f86ae66852f04419059b4418219ebdc',1,'RegionMemoryInputParams::profiles']]]
 ];

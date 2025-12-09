@@ -368,12 +368,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>             )</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>}</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">/*--------------------------------------------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>rkf4_update(real df, <span class="keywordtype">int</span> step_num, real dt, Field <a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>, Field BETA, Field F, reduce_dst, real maximum_error, real dt_ratio, real dt_epsi)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>rkf4_update(real df, <span class="keywordtype">int</span> step_num, real dt, Field <a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>, Field BETA, Field F, reduce_dst, real maximum_error, real dt_ratio, real dt_epsi)</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>{</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> = rkf4_error(df,step_num,dt)</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">if</span>(step_num != 0)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> += <a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> += <a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    }</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">if</span>(step_num == 0)</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        {</div>
@@ -391,12 +391,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">if</span> (step_num  == 0)</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    {</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>          write(F,rkf4_alpha(F,df,step_num,dt))</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>          write(<a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    }</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (step_num != 4)</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    {</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>          write(F,rkf4_alpha(BETA,df,step_num,dt))</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>          write(<a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    {</div>
@@ -409,12 +409,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    return 0.0;</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">/*--------------------------------------------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>rkf4_update(<a class="code hl_struct" href="structreal3.html">real3</a> df, <span class="keywordtype">int</span> step_num, real dt, <a class="code hl_struct" href="structField3.html">Field3</a> <a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>, <a class="code hl_struct" href="structField3.html">Field3</a> BETA, <a class="code hl_struct" href="structField3.html">Field3</a> F, reduce_dst_x, reduce_dst_y,reduce_dst_z,real maximum_error, real dt_ratio, real dt_epsi)</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>rkf4_update(<a class="code hl_struct" href="structreal3.html">real3</a> df, <span class="keywordtype">int</span> step_num, real dt, <a class="code hl_struct" href="structField3.html">Field3</a> <a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>, <a class="code hl_struct" href="structField3.html">Field3</a> BETA, <a class="code hl_struct" href="structField3.html">Field3</a> F, reduce_dst_x, reduce_dst_y,reduce_dst_z,real maximum_error, real dt_ratio, real dt_epsi)</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>{</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> = rkf4_error(df,step_num,dt)</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">if</span>(step_num != 0)</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    {</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> += <a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a> += <a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a></div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    }</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">if</span>(step_num == 0)</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        {</div>
@@ -433,12 +433,12 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span> (step_num == 0)</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    {</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>          write(F,rkf4_alpha(F,df,step_num,dt))</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>          write(<a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    }</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (step_num != 4)</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    {</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>          write(F,rkf4_alpha(BETA,df,step_num,dt))</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>          write(<a class="code hl_define" href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>          write(<a class="code hl_define" href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a>,<a class="code hl_variable" href="vecs_8h.html#ab70064e6ae258de4a1d0811824412152">error</a>)</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    {</div>
@@ -605,7 +605,7 @@ $(document).ready(function(){initNavTree('optimized__integrators_8h_source.html'
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:461</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:465</div></div>
 <div class="ttc" id="acodegen_8c_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition</b> codegen.c:2080</div></div>
-<div class="ttc" id="aerrchk__print_8h_html_a1c30afe07b0fd602eb1a0bf04f932303"><div class="ttname"><a href="errchk__print_8h.html#a1c30afe07b0fd602eb1a0bf04f932303">ERROR</a></div><div class="ttdeci">#define ERROR(expr,...)</div><div class="ttdef"><b>Definition</b> errchk_print.h:13</div></div>
+<div class="ttc" id="aerrchk_8h_html_a39b3cc118c8339855e5578335a0b2417"><div class="ttname"><a href="errchk_8h.html#a39b3cc118c8339855e5578335a0b2417">ERROR</a></div><div class="ttdeci">#define ERROR(str)</div><div class="ttdef"><b>Definition</b> errchk.h:46</div></div>
 <div class="ttc" id="amath_2funcs_8h_html_a9eebae7aba8e1b5fe3e77c3bdd5a8338"><div class="ttname"><a href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a></div><div class="ttdeci">elemental abs(real x)</div><div class="ttdef"><b>Definition</b> funcs.h:7</div></div>
 <div class="ttc" id="astdderiv_8h_html_a19558133ffcf07b3e0757a2c7787baa7"><div class="ttname"><a href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a></div><div class="ttdeci">Preprocessed Scalar value(in ScalarField vertex)</div><div class="ttdef"><b>Definition</b> stdderiv.h:218</div></div>
 <div class="ttc" id="astructField3_html"><div class="ttname"><a href="structField3.html">Field3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:74</div></div>

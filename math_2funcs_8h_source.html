@@ -103,13 +103,13 @@ $(document).ready(function(){initNavTree('math_2funcs_8h_source.html',''); initR
 <div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">    3</a></span><a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(<a class="code hl_struct" href="structreal3.html">real3</a> vec)</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(dot(vec,vec))</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(dot(vec,vec))</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
 </div>
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">    7</a></span>elemental <a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(real x)</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(x)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="math__utils_8h.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(x)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('math_2funcs_8h_source.html',''); initR
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    a_max = <a class="code hl_define" href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(a)) + <a class="code hl_define" href="acreal_8h.html#a4f628d9fa3e98b599e4925cd8404abbe">AC_REAL_EPSILON</a></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    a_scaled = a/a_max</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a> = dot(a_scaled,a_scaled)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> a_max*<a class="code hl_define" href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> a_max*<a class="code hl_define" href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 </div>
 <div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
@@ -224,8 +224,6 @@ $(document).ready(function(){initNavTree('math_2funcs_8h_source.html',''); initR
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="math_2funcs_8h.html#aa643a55989445c8a4a01452be394ded5">quintic_step</a>(x,x0,width,0.0)</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 </div>
-<div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
-<div class="ttc" id="aacc-runtime_2api_2math__utils_8h_html_ac6bbb05594dd33c967d0dc98e8ac8c93"><div class="ttname"><a href="acc-runtime_2api_2math__utils_8h.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a></div><div class="ttdeci">#define fabs(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:44</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a0eabd5db583e036746080f1d4f74cc92"><div class="ttname"><a href="acc__runtime_8cu.html#a0eabd5db583e036746080f1d4f74cc92">print</a></div><div class="ttdeci">#define print(...)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:454</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:461</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:465</div></div>
@@ -249,6 +247,8 @@ $(document).ready(function(){initNavTree('math_2funcs_8h_source.html',''); initR
 <div class="ttc" id="amath_2funcs_8h_html_ab83506f6082639efff7d4d175915e2e0"><div class="ttname"><a href="math_2funcs_8h.html#ab83506f6082639efff7d4d175915e2e0">set_min_val</a></div><div class="ttdeci">set_min_val(real val, real min_val)</div><div class="ttdef"><b>Definition</b> funcs.h:16</div></div>
 <div class="ttc" id="amath_2funcs_8h_html_aba368c44f0395b30cb3ba893c5fa47cd"><div class="ttname"><a href="math_2funcs_8h.html#aba368c44f0395b30cb3ba893c5fa47cd">nint</a></div><div class="ttdeci">nint(real x)</div><div class="ttdef"><b>Definition</b> funcs.h:51</div></div>
 <div class="ttc" id="amath_2funcs_8h_html_add7451dc349c70b5278a1e17ae32f1e1"><div class="ttname"><a href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a></div><div class="ttdeci">norm(real3 vec)</div><div class="ttdef"><b>Definition</b> funcs.h:3</div></div>
+<div class="ttc" id="amath__utils_8h_html_ac4acb71b4114d72176466f9b52bf72ac"><div class="ttname"><a href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a></div><div class="ttdeci">#define sqrt(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:43</div></div>
+<div class="ttc" id="amath__utils_8h_html_ac6bbb05594dd33c967d0dc98e8ac8c93"><div class="ttname"><a href="math__utils_8h.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a></div><div class="ttdeci">#define fabs(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:44</div></div>
 <div class="ttc" id="areindex_8cu_html_a805fa490e79f7a5aa6484f94206e39eb"><div class="ttname"><a href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a></div><div class="ttdeci">static __host__ __device__ constexpr AcIndex const AcIndex &amp; b</div><div class="ttdef"><b>Definition</b> reindex.cu:19</div></div>
 <div class="ttc" id="astructreal3_html"><div class="ttname"><a href="structreal3.html">real3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->

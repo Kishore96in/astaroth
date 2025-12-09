@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('buffer_8cc.html',''); initResizable();
 <code>#include &quot;<a class="el" href="reindex_8h_source.html">reindex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ac__helpers_8h_source.html">ac_helpers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="astaroth__cuda__wrappers_8h_source.html">astaroth_cuda_wrappers.h</a>&quot;</code><br />
-<code>#include &quot;errchk.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="errchk_8h_source.html">errchk.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for buffer.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,11 +123,11 @@ Functions</h2></td></tr>
 <tr class="separator:a59a9a5f184a241bc841f69ca5d427c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619f8d3013b982f8e834dbab81031c50" id="r_a619f8d3013b982f8e834dbab81031c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#a619f8d3013b982f8e834dbab81031c50">acBufferCopy</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> in, const bool on_device)</td></tr>
 <tr class="separator:a619f8d3013b982f8e834dbab81031c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03104ae0168afb68a2629f77d936744e" id="r_a03104ae0168afb68a2629f77d936744e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#a03104ae0168afb68a2629f77d936744e">acBufferRemoveHalos</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> buffer_in, const <a class="el" href="structint3.html">int3</a> halo_sizes, const <a class="el" href="buffer__exchange_8h.html#a461c3b8eb7825320a4c736ffd5682686">cudaStream_t</a> stream)</td></tr>
+<tr class="memitem:a03104ae0168afb68a2629f77d936744e" id="r_a03104ae0168afb68a2629f77d936744e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#a03104ae0168afb68a2629f77d936744e">acBufferRemoveHalos</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> buffer_in, const <a class="el" href="structint3.html">int3</a> halo_sizes, const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream)</td></tr>
 <tr class="separator:a03104ae0168afb68a2629f77d936744e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb996ae74591d1f8fee6df4900f3f3a4" id="r_aeb996ae74591d1f8fee6df4900f3f3a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#aeb996ae74591d1f8fee6df4900f3f3a4">acBufferCreateTransposed</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> src, const <a class="el" href="host__datatypes_8h.html#ab7f22e223840964be4be3d48a9546fe1">AcMeshOrder</a> order)</td></tr>
 <tr class="separator:aeb996ae74591d1f8fee6df4900f3f3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abdbd8c6a29e717148cf90b5d36ea14" id="r_a0abdbd8c6a29e717148cf90b5d36ea14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#a0abdbd8c6a29e717148cf90b5d36ea14">acTransposeBuffer</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> src, const <a class="el" href="host__datatypes_8h.html#ab7f22e223840964be4be3d48a9546fe1">AcMeshOrder</a> order, const <a class="el" href="buffer__exchange_8h.html#a461c3b8eb7825320a4c736ffd5682686">cudaStream_t</a> stream)</td></tr>
+<tr class="memitem:a0abdbd8c6a29e717148cf90b5d36ea14" id="r_a0abdbd8c6a29e717148cf90b5d36ea14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcBuffer.html">AcBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8cc.html#a0abdbd8c6a29e717148cf90b5d36ea14">acTransposeBuffer</a> (const <a class="el" href="structAcBuffer.html">AcBuffer</a> src, const <a class="el" href="host__datatypes_8h.html#ab7f22e223840964be4be3d48a9546fe1">AcMeshOrder</a> order, const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream)</td></tr>
 <tr class="separator:a0abdbd8c6a29e717148cf90b5d36ea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="buffer__exchange_8h.html#a461c3b8eb7825320a4c736ffd5682686">cudaStream_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>&#160;</td>
           <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>
@@ -372,7 +372,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="buffer__exchange_8h.html#a461c3b8eb7825320a4c736ffd5682686">cudaStream_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>&#160;</td>
           <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>

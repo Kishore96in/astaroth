@@ -11,7 +11,7 @@ var task_8h =
     [ "HaloExchangeTask", "classHaloExchangeTask.html", "classHaloExchangeTask" ],
     [ "MPIScanTask", "classMPIScanTask.html", "classMPIScanTask" ],
     [ "BoundaryConditionTask", "classBoundaryConditionTask.html", "classBoundaryConditionTask" ],
-    [ "ReduceTask< T >", "classReduceTask.html", "classReduceTask" ],
+    [ "ReduceTask", "classReduceTask.html", "classReduceTask" ],
     [ "TraceFile", "structTraceFile.html", "structTraceFile" ],
     [ "AcTaskGraph", "structAcTaskGraph.html", "structAcTaskGraph" ],
     [ "LoadKernelParamsFunc", "structLoadKernelParamsFunc.html", "structLoadKernelParamsFunc" ],

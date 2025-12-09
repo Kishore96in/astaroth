@@ -23,13 +23,5 @@ var searchData=
   ['ac_5fsuccess_20',['AC_SUCCESS',['../host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf',1,'host_datatypes.h']]],
   ['ac_5ftop_21',['AC_TOP',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a45a6d8680445e247ecbf30f571553643',1,'astaroth_base.h']]],
   ['ac_5fxz_22',['AC_XZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a08bb143a0b28c4876ee060d4feb17a44',1,'astaroth_base.h']]],
-  ['ac_5fyz_23',['AC_YZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78aa47b9f1c0b9f0e52479034c4c43cc4c9',1,'astaroth_base.h']]],
-  ['acm_5ferrorcode_5fgeneric_5ffailure_24',['ACM_ERRORCODE_GENERIC_FAILURE',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca51067ac4ad055c1985737b6edd740ef8',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5finput_5ffailure_25',['ACM_ERRORCODE_INPUT_FAILURE',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca7d3313b807e43523b607d1ad6b949781',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5fmpi_5ffailure_26',['ACM_ERRORCODE_MPI_FAILURE',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca45fddda580d90fa4611ebb7b94834778',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5fnot_5fimplemented_27',['ACM_ERRORCODE_NOT_IMPLEMENTED',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca00e5919f94f7070853929fe29bba47ec',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5fsuccess_28',['ACM_ERRORCODE_SUCCESS',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca927fa12730dfaa7ca87d868490d90444',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5ftest_5ffailure_29',['ACM_ERRORCODE_TEST_FAILURE',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fca008ca6dc7391f6ec78acab6fbf9ace1b',1,'acm_error.h']]],
-  ['acm_5ferrorcode_5funsupported_5fndims_30',['ACM_ERRORCODE_UNSUPPORTED_NDIMS',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fcad62741bd08d90e9c5c4f118598a1951b',1,'acm_error.h']]],
-  ['acm_5fnum_5ferrorcodes_31',['ACM_NUM_ERRORCODES',['../acm__error_8h.html#af54daa41831bebb3374517fbe0a779fcad0ef13d3e6e3d350b2de4c75b825e4b0',1,'acm_error.h']]]
+  ['ac_5fyz_23',['AC_YZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78aa47b9f1c0b9f0e52479034c4c43cc4c9',1,'astaroth_base.h']]]
 ];

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('device_8cc.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="astaroth_8h_source.html">astaroth.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="acc-runtime_2api_2math__utils_8h_source.html">../../acc-runtime/api/math_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="math__utils_8h_source.html">../../acc-runtime/api/math_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="src_2core_2kernels_2kernels_8h_source.html">kernels/kernels.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ac__helpers_8h_source.html">ac_helpers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="astaroth__cuda__wrappers_8h_source.html">astaroth_cuda_wrappers.h</a>&quot;</code><br />
@@ -354,16 +354,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acDevice_##ID(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> <a class="code hl_namespace" href="namespacedevice.html">device</a>, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> start,             \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acDevice_##ID(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> device, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> start,             \</div>
 <div class="line">                           <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> end)                                                         \</div>
 <div class="line">    {                                                                                              \</div>
-<div class="line">        acSetDevice(<a class="code hl_namespace" href="namespacedevice.html">device</a>-&gt;id);                                                                 \</div>
-<div class="line">        <span class="keywordflow">return</span> acKernel_##ID(<a class="code hl_struct" href="structKernelParameters.html">KernelParameters</a>{<a class="code hl_namespace" href="namespacedevice.html">device</a>-&gt;streams[stream], 0, start, end},             \</div>
-<div class="line">                             <a class="code hl_namespace" href="namespacedevice.html">device</a>-&gt;vba);                                                         \</div>
+<div class="line">        acSetDevice(device-&gt;id);                                                                 \</div>
+<div class="line">        <span class="keywordflow">return</span> acKernel_##ID(<a class="code hl_struct" href="structKernelParameters.html">KernelParameters</a>{device-&gt;streams[stream], 0, start, end},             \</div>
+<div class="line">                             device-&gt;vba);                                                         \</div>
 <div class="line">    }</div>
 <div class="ttc" id="aastaroth__base_8h_html_a0b8b584f5fb32277059bc4e6b9bcd6f0"><div class="ttname"><a href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a></div><div class="ttdeci">Stream</div><div class="ttdef"><b>Definition</b> astaroth_base.h:73</div></div>
 <div class="ttc" id="ahost__datatypes_8h_html_a601254ccb5bcc54c209aeea4ac24e43d"><div class="ttname"><a href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a></div><div class="ttdeci">AcResult</div><div class="ttdef"><b>Definition</b> host_datatypes.h:32</div></div>
-<div class="ttc" id="anamespacedevice_html"><div class="ttname"><a href="namespacedevice.html">device</a></div><div class="ttdef"><b>Definition</b> transform.cu:10</div></div>
 <div class="ttc" id="astructKernelParameters_html"><div class="ttname"><a href="structKernelParameters.html">KernelParameters</a></div><div class="ttdef"><b>Definition</b> task.h:38</div></div>
 <div class="ttc" id="astructdevice__s_html"><div class="ttname"><a href="structdevice__s.html">device_s</a></div><div class="ttdef"><b>Definition</b> device.cc:40</div></div>
 <div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
@@ -402,13 +401,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    AcResult \</div>
-<div class="line">    acDeviceLoad##NAME_UPPER_CASE##<a class="code hl_struct" href="structArray.html">Array</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> <a class="code hl_namespace" href="namespacedevice.html">device</a>, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> host_info, <span class="keyword">const</span> PARAM_NAME array) \</div>
+<div class="line">    acDeviceLoad##NAME_UPPER_CASE##<a class="code hl_struct" href="structArray.html">Array</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> device, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> host_info, <span class="keyword">const</span> PARAM_NAME array) \</div>
 <div class="line">    { \</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code hl_function" href="device_8cc.html#a6a47b0dcaafe8a81a9b7c144665c432d">acDeviceLoadArray</a>(<a class="code hl_namespace" href="namespacedevice.html">device</a>,stream,host_info,array); \</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_function" href="device_8cc.html#a6a47b0dcaafe8a81a9b7c144665c432d">acDeviceLoadArray</a>(device,stream,host_info,array); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="adevice_8cc_html_a6a47b0dcaafe8a81a9b7c144665c432d"><div class="ttname"><a href="device_8cc.html#a6a47b0dcaafe8a81a9b7c144665c432d">acDeviceLoadArray</a></div><div class="ttdeci">AcResult acDeviceLoadArray(const Device device, const Stream stream, const AcMeshInfo host_info, const P array)</div><div class="ttdef"><b>Definition</b> device.cc:488</div></div>
 <div class="ttc" id="astructAcMeshInfo_html"><div class="ttname"><a href="structAcMeshInfo.html">AcMeshInfo</a></div><div class="ttdef"><b>Definition</b> acc_runtime.h:153</div></div>
-<div class="ttc" id="astructArray_html"><div class="ttname"><a href="structArray.html">Array</a></div><div class="ttdef"><b>Definition</b> bm_kernel_params.cu:12</div></div>
+<div class="ttc" id="astructArray_html"><div class="ttname"><a href="structArray.html">Array</a></div><div class="ttdef"><b>Definition</b> bwtest-stencil.cu:22</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,9 +443,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    AcResult \</div>
-<div class="line">    acDeviceLoad##VAL_TYPE_UPPER_CASE##Uniform(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> <a class="code hl_namespace" href="namespacedevice.html">device</a>, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, <span class="keyword">const</span> VAL_TYPE <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
+<div class="line">    acDeviceLoad##VAL_TYPE_UPPER_CASE##Uniform(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> device, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, <span class="keyword">const</span> VAL_TYPE <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
 <div class="line">    { \</div>
-<div class="line">        <span class="keywordflow">return</span> acDeviceLoadUniform(<a class="code hl_namespace" href="namespacedevice.html">device</a>,stream,param,<a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>); \</div>
+<div class="line">        <span class="keywordflow">return</span> acDeviceLoadUniform(device,stream,param,<a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="astdderiv_8h_html_a19558133ffcf07b3e0757a2c7787baa7"><div class="ttname"><a href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a></div><div class="ttdeci">Preprocessed Scalar value(in ScalarField vertex)</div><div class="ttdef"><b>Definition</b> stdderiv.h:218</div></div>
 </div><!-- fragment -->
@@ -484,9 +483,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    AcResult \</div>
-<div class="line">    acDeviceStore##VAL_TYPE_UPPER_CASE##<a class="code hl_struct" href="structArray.html">Array</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> <a class="code hl_namespace" href="namespacedevice.html">device</a>, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, VAL_TYPE* <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
+<div class="line">    acDeviceStore##VAL_TYPE_UPPER_CASE##<a class="code hl_struct" href="structArray.html">Array</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> device, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, VAL_TYPE* <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
 <div class="line">    { \</div>
-<div class="line">            <span class="keywordflow">return</span> acDeviceStoreUniform(<a class="code hl_namespace" href="namespacedevice.html">device</a>, stream, param, <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>);\</div>
+<div class="line">            <span class="keywordflow">return</span> acDeviceStoreUniform(device, stream, param, <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>);\</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -523,9 +522,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    AcResult \</div>
-<div class="line">    acDeviceStore##VAL_TYPE_UPPER_CASE##Uniform(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> <a class="code hl_namespace" href="namespacedevice.html">device</a>, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, VAL_TYPE* <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
+<div class="line">    acDeviceStore##VAL_TYPE_UPPER_CASE##Uniform(<span class="keyword">const</span> <a class="code hl_struct" href="structdevice__s.html">Device</a> device, <span class="keyword">const</span> <a class="code hl_enumeration" href="astaroth__base_8h.html#a0b8b584f5fb32277059bc4e6b9bcd6f0">Stream</a> stream, <span class="keyword">const</span> PARAM_TYPE param, VAL_TYPE* <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>) \</div>
 <div class="line">    { \</div>
-<div class="line">            <span class="keywordflow">return</span> acDeviceStoreUniform(<a class="code hl_namespace" href="namespacedevice.html">device</a>, stream, param, <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>);\</div>
+<div class="line">            <span class="keywordflow">return</span> acDeviceStoreUniform(device, stream, param, <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>);\</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
