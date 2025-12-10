@@ -23,7 +23,6 @@ static_assert(SWAP_CHAIN_LENGTH == 2);
     #define NUM_ACTIVE_SEGMENTS (18)
 #endif
 // clang-format on
-
 /**
  * Regions
  * -------
@@ -55,9 +54,7 @@ struct Region {
 
     RegionFamily family;
     int3 id;
-    size_t facet_class;
     int tag;
-
     static int id_to_tag(int3 _id)
     {
         return ((3 + _id.x) % 3) * 9 + ((3 + _id.y) % 3) * 3 + (3 + _id.z) % 3 - 1;
@@ -126,7 +123,6 @@ struct Region {
  * Task interface
  * --------------
  *
- * Each task is tied to an output region (and input regions, but they are not explicit members of
  * Task). Tasks may depend on other Tasks. The existence of dependency between two tasks is deduced
  * from their input and output regions. At the moment, this is done explicitly by comparing region
  * ids and happens in grid.cc:GridInit()
@@ -140,9 +136,7 @@ class Task {
     cudaStream_t stream;
     VertexBufferArray vba;
     int rank;
-
     int state;
-
     struct {
         size_t num_iters;
         size_t max_offset;
@@ -155,12 +149,8 @@ class Task {
         size_t end;
     } loop_cntr;
 
-    bool poll_stream();
-
-  public:
     Region* output_region;
     // std::string task_type;
-
     static const int wait_state = 0;
 
     virtual ~Task()

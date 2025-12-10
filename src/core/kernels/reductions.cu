@@ -153,7 +153,6 @@ acKernelReduceVec(const cudaStream_t stream, const AcReduction reduction, const 
     return result;
 }
 
-AcReal
 acKernelReduceVecScal(const cudaStream_t stream, const AcReduction reduction, const Volume start,
                       const Volume end, const Field4 vtxbufs,VertexBufferArray vba,
                       const int scratchpad_index)

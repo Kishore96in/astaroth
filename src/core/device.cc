@@ -1,7 +1,5 @@
 #include "astaroth.h"
-
 #include <string.h>
-
 #include "errchk.h"
 #include "math_utils.h"
 #include "timer_hires.h"
@@ -125,10 +123,7 @@ acDeviceCreate(const int id, const AcMeshInfo device_config, Device* device_hand
     device->local_config = device_config;
 #if AC_VERBOSE
     acDevicePrintInfo(device);
-#endif
-
 // Check that the code was compiled for the proper GPU architecture
-#if AC_VERBOSE
     printf("Trying to run a dummy kernel. If this fails, make sure that your\n"
            "device supports the CUDA architecture you are compiling for.\n");
 #endif
@@ -451,8 +446,6 @@ acDeviceReduceScal(const Device device, const Stream stream, const ReductionType
                                  device->vba.in[vtxbuf_handle], device->reduce_scratchpad,
                                  device->reduce_result);
     return AC_SUCCESS;
-}
-
 AcResult
 acDeviceReduceVec(const Device device, const Stream stream, const ReductionType rtype,
                   const VertexBufferHandle vtxbuf0, const VertexBufferHandle vtxbuf1,

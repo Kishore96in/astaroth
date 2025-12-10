@@ -29,12 +29,10 @@
 #include <cstring> //memcpy
 #include <mpi.h>
 #include <utility> //std::swap
-#include <vector>
 
 #include "decomposition.h" //getPid3D, morton3D
 #include "errchk.h"
 #include "math_utils.h"
-
 /* Internal interface to grid (a global variable)  */
 typedef struct Grid {
     Device device;
@@ -42,22 +40,16 @@ typedef struct Grid {
     uint3_64 decomposition;
     bool initialized;
     int3 nn;
-
     std::vector<HaloExchangeTask> halo_exchange_tasks;
-
     std::vector<HaloExchangeTask> face_exchange_tasks;
     std::vector<HaloExchangeTask> edge_exchange_tasks;
     std::vector<HaloExchangeTask> corner_exchange_tasks;
-
     std::vector<ComputeTask> compute_tasks;
     ComputeTask* inner_integration_task;
-
     MPI_Request* recv_reqs;
     MPI_Request* send_reqs;
-
     MPI_Request* curr_recv_reqs;
     MPI_Request* back_recv_reqs;
-
     MPI_Request* curr_send_reqs;
     MPI_Request* back_send_reqs;
 
@@ -123,7 +115,6 @@ acGridInit(const AcMeshInfo info)
            info.int_params[AC_nz]);
     fflush(stdout);
     MPI_Barrier(MPI_COMM_WORLD);
-
     ERRCHK_ALWAYS(info.int_params[AC_nx] % decomp.x == 0);
     ERRCHK_ALWAYS(info.int_params[AC_ny] % decomp.y == 0);
     ERRCHK_ALWAYS(info.int_params[AC_nz] % decomp.z == 0);
@@ -447,7 +438,6 @@ acGridStoreMesh(const Stream stream, AcMesh* host_mesh)
             for (int j = 0; j < mm.y; ++j) {
                 const int i     = 0;
                 const int count = mm.x;
-
                 if (pid != 0) {
                     // Send
                     const int src_idx = acVertexBufferIdx(i, j, k, grid.submesh.info);
@@ -471,10 +461,7 @@ acGridStoreMesh(const Stream stream, AcMesh* host_mesh)
             }
         }
     }
-
     return AC_SUCCESS;
-}
-
 #include <iostream>
 
 AcResult

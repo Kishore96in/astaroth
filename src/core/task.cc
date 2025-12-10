@@ -136,12 +136,9 @@ Task::notifyDependents()
 
 void
 Task::satisfyDependency(size_t iteration, size_t offset)
-{
     if (iteration + offset < dep_cntr.num_iters) {
         dep_cntr.counts[iteration + offset][offset]++;
     }
-}
-
 void
 Task::syncVBA()
 {
@@ -292,20 +289,17 @@ MessageBufferSwapChain::add_buffer(int3 dims, MPI_Request* req)
 
 HaloMessage*
 MessageBufferSwapChain::get_current_buffer()
-{
     return &buffers[buf_idx];
 }
 
 HaloMessage*
 MessageBufferSwapChain::get_fresh_buffer()
-{
     buf_idx          = (buf_idx + 1) % SWAP_CHAIN_LENGTH;
     MPI_Request* req = buffers[buf_idx].request;
     if (*req != MPI_REQUEST_NULL) {
         MPI_Wait(req, MPI_STATUS_IGNORE);
     }
     return &buffers[buf_idx];
-}
 
 // HaloExchangeTask
 HaloExchangeTask::HaloExchangeTask(const Device device_, const int halo_region_tag, const int3 nn,
@@ -347,7 +341,6 @@ HaloExchangeTask::HaloExchangeTask(const Device device_, const int halo_region_t
         receive();
     }
 }
-
 HaloExchangeTask::~HaloExchangeTask()
 {
     delete recv_buffers;
@@ -359,23 +352,16 @@ HaloExchangeTask::~HaloExchangeTask()
 
 void
 HaloExchangeTask::pack()
-{
     auto msg = send_buffers->get_fresh_buffer();
     acKernelPackData(stream, vba, outgoing_message_region->position, outgoing_message_region->dims,
                      msg->data);
-}
-
 void
 HaloExchangeTask::unpack()
-{
-
     auto msg = recv_buffers->get_current_buffer();
 #if !(USE_CUDA_AWARE_MPI)
     msg->unpin(device, stream);
 #endif
     acKernelUnpackData(stream, msg->data, output_region->position, output_region->dims, vba);
-}
-
 void
 HaloExchangeTask::sync()
 {
@@ -384,43 +370,28 @@ HaloExchangeTask::sync()
 
 void
 HaloExchangeTask::wait_recv()
-{
     auto msg = recv_buffers->get_current_buffer();
     MPI_Wait(msg->request, MPI_STATUS_IGNORE);
-}
-
 void
 HaloExchangeTask::wait_send()
-{
     auto msg = send_buffers->get_current_buffer();
     MPI_Wait(msg->request, MPI_STATUS_IGNORE);
-}
-
 void
 HaloExchangeTask::receiveDevice()
-{
     auto msg = recv_buffers->get_fresh_buffer();
     MPI_Irecv(msg->data, msg->length, AC_MPI_TYPE, counterpart_rank, recv_tag + HALO_TAG_OFFSET,
               MPI_COMM_WORLD, msg->request);
-}
-
 void
 HaloExchangeTask::sendDevice()
-{
     auto msg = send_buffers->get_current_buffer();
     sync();
     MPI_Isend(msg->data, msg->length, AC_MPI_TYPE, counterpart_rank, send_tag + HALO_TAG_OFFSET,
               MPI_COMM_WORLD, msg->request);
-}
-
 void
 HaloExchangeTask::exchangeDevice()
-{
     // cudaSetDevice(device->id);
     receiveDevice();
     sendDevice();
-}
-
 #if !(USE_CUDA_AWARE_MPI)
 void
 HaloExchangeTask::receiveHost()

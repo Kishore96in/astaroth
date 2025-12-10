@@ -255,15 +255,10 @@ acHostReduceVec(const AcMesh mesh, const AcReduction reduction, const VertexBuff
     }
 }
 
-AcReal
 acHostReduceVecScal(const AcMesh mesh, const AcReduction reduction, const VertexBufferHandle a,
                     const VertexBufferHandle b, const VertexBufferHandle c,
                     const VertexBufferHandle d)
 {
-    // AcReal (*reduce_initial)(AcReal, AcReal, AcReal);
-    ReduceInitialVecScalFunc reduce_initial;
-    ReduceFunc reduce;
-
 
 
     switch (reduction.map_vtxbuf_vec_scal)
@@ -299,7 +294,6 @@ acHostReduceVecScal(const AcMesh mesh, const AcReduction reduction, const Vertex
        default:
          ERROR("Unrecognized RTYPE");
     }
-
     const int initial_idx = get_initial_idx(mesh.info);
 
     long double res;
@@ -309,8 +303,6 @@ acHostReduceVecScal(const AcMesh mesh, const AcReduction reduction, const Vertex
                              (long double)mesh.vertex_buffer[c][initial_idx],
                              (long double)mesh.vertex_buffer[d][initial_idx]);
     else
-        res = 0;
-
     const Volume mins = acGetMinNN(mesh.info);
     const Volume maxs = acGetGridMaxNN(mesh.info);
     for (size_t k = mins.z; k < maxs.z; ++k) {
@@ -325,17 +317,12 @@ acHostReduceVecScal(const AcMesh mesh, const AcReduction reduction, const Vertex
                                                                 mesh.vertex_buffer[d][idx]);
                 res                        = reduce(res, curr_val);
             }
-        }
-    }
-
     if (reduction.post_processing_op) {
 	const long double inv_n = get_inv_n(mesh.info);
         return (AcReal) sqrtl(inv_n * res);
     }
-    else {
         return (AcReal) res;
     }
-}
 #else
 AcReal
 acHostReduceScal(const AcMesh , const AcReduction , const VertexBufferHandle
