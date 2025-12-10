@@ -1,0 +1,38 @@
+
+
+./acc-runtime/CMakeLists.txt:
+git shortlog --full-history --no-merges -s -n acc-runtime/CMakeLists.txt
+    29  jpekkila
+     3  ToxPuro
+     2  Matthias Rheinhardt
+     2  Touko Puro
+     2  purotouko
+     1  Miikka Väisälä
+     1  Puro Touko
+
+
+Inspecting logs: git log --author="Miikka Väisälä" --full-history --no-merges -p acc-runtime/CMakeLists.txt
+How addressed: Removed the line committed with 35087677fc155c6bed891d5fc4d02d1cd5e4ed1a.
+
+
+./acc-runtime/acc/codegen.c:
+git shortlog --full-history --no-merges -s -n acc-runtime/acc/codegen.c 
+   282  ToxPuro
+    97  Touko Puro
+    82  purotouko
+    79  jpekkila
+    46  Puro Touko
+     6  toxpuro
+     2  Pekkilä Johannes
+     1  Matthias Rheinhardt
+     1  Miikka Vaisala
+
+Inspecting logs: git log --author="Miikka Vaisala" --full-history --no-merges -p acc-runtime/acc/codegen.c
+How addressed: The committed line does not exist in the current version.
+
+Further files:
+(Addressed in contested_files_since.txt)
+./src/core/kernels/kernels.h: OK
+./src/core/device.cc: OK
+./src/core/task.cc: OK
+./src/core/grid.cc: OK

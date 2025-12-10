@@ -1,0 +1,6 @@
+./acc-runtime/CMakeLists.txt: OK
+./acc-runtime/acc/codegen.c: OK
+./src/core/kernels/kernels.h
+./src/core/device.cc
+./src/core/task.cc
+./src/core/grid.cc

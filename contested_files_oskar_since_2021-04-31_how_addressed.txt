@@ -1,0 +1,68 @@
+Last commit before 2021-04-31: 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/core/kernels/kernels.h:
+git shortlog --full-history --no-merges -s -n ./src/core/kernels/kernels.h
+    11  jpekkila
+     4  Miikka Vaisala
+     3  Oskar Lappi
+Inspecting logs: git log --author="Miikka Vaisala" --full-history --no-merges -p ./src/core/kernels/kernels.h
+git checkout 6c0cb5e88f316e3b76839a2cdeac0145488bd529^
+git shortlog --full-history --no-merges -s -n ./src/core/kernels/kernels.h
+     8  jpekkila
+How addressed: reverted file to 6c0cb5e88f316e3b76839a2cdeac0145488bd529^
+
+
+./src/core/kernels/packing.cuh:
+git shortlog --full-history --no-merges -s -n ./src/core/kernels/packing.cuh
+     7  jpekkila
+     2  Oskar Lappi
+
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/core/kernels/kernels.cu:
+git shortlog --full-history --no-merges -s -n ./src/core/kernels/kernels.cu
+    10  jpekkila
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/core/task.h:
+git shortlog --full-history --no-merges -s -n ./src/core/task.h
+    10  Oskar Lappi
+     1  jpekkila
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/core/CMakeLists.txt:
+git shortlog --full-history --no-merges -s -n ./src/core/CMakeLists.txt
+    48  jpekkila
+     1  Oskar Lappi
+git log --author="Oskar Lappi" --full-history --no-merges -p ./src/core/CMakeLists.txt
+How addressed: removed the added words.
+
+./src/core/device.cc:
+git shortlog --full-history --no-merges -s -n ./src/core/device.cc
+    97  jpekkila
+    11  Miikka Vaisala
+     7  Oskar Lappi
+     1  Johannes Pekkila
+Inspecting logs: git log --author="Miikka Vaisala" --full-history --no-merges -p ./src/core/device.cc
+How addressed: reverted to commit 94d1d053bc343108237f3c8f65e70dc0a595323d^, where only Aalto-affiliated modifications
+git shortlog --full-history --no-merges -s -n ./src/core/device.cc                  
+    88  jpekkila
+     5  Oskar Lappi
+     1  Johannes Pekkila
+
+./src/core/task.cc:
+git shortlog --full-history --no-merges -s -n ./src/core/task.cc
+    12  Oskar Lappi
+     1  jpekkila
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/core/grid.cc
+git shortlog --full-history --no-merges -s -n ./src/core/grid.cc
+    10  Oskar Lappi
+     5  jpekkila
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
+
+./src/utils/CMakeLists.txt
+git shortlog --full-history --no-merges -s -n ./src/utils/CMakeLists.txt
+    10  jpekkila
+How addressed: Only authors from Aalto affiliation: reverted file to commit 13c19d5d7e6944c7d16693c523738f99af1f633f
