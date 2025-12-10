@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"structAcReduceBuffer.html#a8a10ca099bd09f31e28137de38454650":[18,0,26,2],
+"structAcReduceBuffer.html#a9f8eb812bca05b78fb8ee54a1734b0fa":[18,0,26,3],
+"structAcReduceBuffer.html#abc58b9c57a916b5a957f52f42f51f4d4":[18,0,26,0],
+"structAcReduceBuffer.html#ad1e82adc51e7ca1eb0dca35a3b58d0ee":[18,0,26,4],
 "structAcReduceBuffer.html#aecb927b0a24d609b682e67e94cefa888":[18,0,26,1],
 "structAcReduction.html":[18,0,27],
 "structAcReduction.html#a29a3bf94741cd64340c6384374bd236c":[18,0,27,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "structVolume.html#a453d4413dce94f7dcd1aaa41072ae0c4":[18,0,127,1],
 "structVolume.html#ab38e2269b5373375c31a004c4d571013":[18,0,127,2],
 "structVolume.html#ac28a2e7065235a30502238898e5f22a7":[18,0,127,0],
-"structVolumeHash.html":[18,0,128],
-"structVolumeHash.html#a98e23339464e25dc9ae6f0a5984935aa":[18,0,128,0],
-"structacAnalysisBCInfo.html":[18,0,1],
-"structacAnalysisBCInfo.html#a7313ed75a2ca0b9d257fbd9ca26692c6":[18,0,1,0],
-"structacAnalysisBCInfo.html#abfa29e34f8c45d1b3de148bdf5ebfb63":[18,0,1,1]
+"structVolumeHash.html":[18,0,128]
 };
