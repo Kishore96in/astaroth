@@ -1,2 +1,0 @@
-add_executable(multikerneltest main.cc)
-target_link_libraries(multikerneltest astaroth_core)
