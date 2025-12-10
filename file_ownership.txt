@@ -7,7 +7,8 @@
 
 ./contested_files_oskar_since_2021-04-31_how_addressed.txt: jpekkila
 ./contested_files_how_addressed.txt: jpekkila
-./contested_files.txt: ./tools/collect-mesh.py: jpekkila
+./contested_files.txt: jpekkila
+./tools/collect-mesh.py: jpekkila
 ./requirements.txt: ToxPuro
 ./LICENCE.md: jpekkila
 ./Dockerfile: purotouko
@@ -15,7 +16,6 @@
 ./include/astaroth_forcing.h: jpekkila
 ./include/ac_fft.h: ToxPuro purotouko
 ./include/astaroth_runtime_compilation.h: Puro Touko Touko Puro ToxPuro toxpuro
-./include/astaroth_logging.h: Touko Puro
 ./include/astaroth_grid.h: Touko Puro ToxPuro jpekkila purotouko
 ./include/astaroth_lib.h: Matthias Rheinhardt ToxPuro
 ./include/astaroth_node.h: Matthias Rheinhardt ToxPuro jpekkila mrheinhardt
@@ -34,9 +34,10 @@
 ./contested_files_oskar_since_2021-04-31.txt: jpekkila
 ./runtime_compilation/CMakeLists.txt: Touko Puro ToxPuro purotouko
 ./runtime_compilation/compiler.cpp: Puro Touko Touko Puro ToxPuro purotouko toxpuro
-./file_ownership.txt: ./contested_file_names.txt: jpekkila
+./file_ownership.txt: jpekkila
+./contested_file_names.txt: jpekkila
 ./CMakePresets.json: jpekkila
-./acc-runtime/CMakeLists.txt: Matthias Rheinhardt Puro Touko Touko Puro ToxPuro jpekkila purotouko
+./acc-runtime/CMakeLists.txt: Matthias Rheinhardt Miikka Väisälä Puro Touko Touko Puro ToxPuro jpekkila purotouko
 ./acc-runtime/LICENCE.md: jpekkila
 ./acc-runtime/tests/3.ac: Touko Puro jpekkila
 ./acc-runtime/tests/2.ac: Touko Puro jpekkila
@@ -124,7 +125,7 @@
 ./acc-runtime/standalone_params.h: Touko Puro ToxPuro
 ./acc-runtime/Pencil/PC_modulepardecs.h: ./acc-runtime/Pencil/prerequisites.h: Matthias Rheinhardt
 ./acc-runtime/acc/implementation.c: jpekkila
-./acc-runtime/acc/codegen.c: Matthias Rheinhardt Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
+./acc-runtime/acc/codegen.c: Matthias Rheinhardt Miikka Vaisala Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
 ./acc-runtime/acc/ac.y: Matthias Rheinhardt Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
 ./acc-runtime/acc/CMakeLists.txt: Matthias Rheinhardt Puro Touko Touko Puro ToxPuro jpekkila purotouko
 ./acc-runtime/acc/ac.l: Matthias Rheinhardt Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
@@ -155,7 +156,7 @@
 ./src/core/kernels/CMakeLists.txt: Matthias Rheinhardt Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko
 ./src/core/kernels/nofft.cc: Touko Puro ToxPuro purotouko
 ./src/core/kernels/transpose.cc: purotouko
-./src/core/kernels/kernels.h: Matthias Rheinhardt Oskar Lappi Puro Touko Touko Puro ToxPuro jpekkila
+./src/core/kernels/kernels.h: Matthias Rheinhardt Miikka Vaisala Oskar Lappi Puro Touko Touko Puro ToxPuro jpekkila
 ./src/core/kernels/pack_unpack.cuh: Matthias Rheinhardt ToxPuro mrheinhardt
 ./src/core/kernels/packing.cuh: Oskar Lappi Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko
 ./src/core/kernels/empty.cc: Touko Puro
@@ -184,23 +185,21 @@
 ./src/core/cuda_wrappers/cuda.cc: Touko Puro ToxPuro purotouko toxpuro
 ./src/core/cuda_wrappers/cpu.cc: Touko Puro ToxPuro purotouko toxpuro
 ./src/core/empty.cc: ToxPuro
-./src/core/device.cc: Johannes Pekkila Matthias Rheinhardt Oskar Lappi Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila mrheinhardt purotouko
+./src/core/device.cc: Johannes Pekkila Matthias Rheinhardt Miikka Vaisala Oskar Lappi Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila mrheinhardt purotouko
 ./src/core/astaroth_fortran.cc: Touko Puro jpekkila
-./src/core/task.cc: Oskar Lappi Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
-./src/core/grid.cc: Frederick Gent Matthias Rheinhardt Oskar Lappi Puro Touko Touko Puro ToxPuro fredagent jpekkila mrheinhardt purotouko toxpuro
+./src/core/task.cc: Miikka Vaisala Oskar Lappi Pekkilä Johannes Puro Touko Touko Puro ToxPuro jpekkila purotouko toxpuro
+./src/core/grid.cc: Frederick Gent Matthias Rheinhardt Miikka Vaisala Oskar Lappi Puro Touko Touko Puro ToxPuro fredagent jpekkila mrheinhardt purotouko toxpuro
 ./src/core/analysis_helpers.cc: Touko Puro ToxPuro purotouko
 ./src/core/decomposition.h: Matthias Rheinhardt Oskar Lappi Puro Touko Touko Puro ToxPuro jpekkila
 ./src/core/helpers/CMakeLists.txt: Touko Puro ToxPuro purotouko
 ./src/core/helpers/helpers.cc: Touko Puro ToxPuro purotouko
 ./src/core/helpers/buffer.cc: ToxPuro
 ./src/core/helpers/device.cc: Touko Puro ToxPuro
-./src/core/helpers/logging.c: ToxPuro
 ./src/core/decomposition/CMakeLists.txt: purotouko
 ./src/core/decomposition/decomposition.cc: purotouko
 ./src/core/decomposition/decomposition.h: purotouko
-./src/core/logging.c: ToxPuro
 ./src/config_helpers.h: Matthias Rheinhardt Touko Puro ToxPuro purotouko
-./src/utils/modelreduce.cc: Touko Puro ToxPuro
+./src/utils/modelreduce.cc: Touko Puro ToxPuro jpekkila
 ./src/utils/helical_forcing.cc: jpekkila
 ./src/utils/CMakeLists.txt: Oskar Lappi Puro Touko Touko Puro ToxPuro jpekkila
 ./src/utils/profiles.cc: ToxPuro
