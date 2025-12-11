@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"namespacematplotlibcpp.html#a7c176020a3312c69b4af6fa80113e53b":[17,0,1,8],
+"namespacematplotlibcpp.html#a80475bf6042c6ded104aad3e05e12d47":[17,0,1,75],
 "namespacematplotlibcpp.html#a90ba2143110bba254f163102a6ab450b":[17,0,1,45],
 "namespacematplotlibcpp.html#a9147bd13de56cbe3e3dfbb61713c144c":[17,0,1,41],
 "namespacematplotlibcpp.html#a916bb5a9dc5f6a24877cc027bf4ee624":[17,0,1,33],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "radiation__ray_8h.html":[19,0,0,5,19],
 "radiation__ray_8h.html#a10b1bfc93b61eeb2ececf41fba52b3ad":[19,0,0,5,19,1],
 "radiation__ray_8h.html#a2ff425c6e01d33123b2894f3dd755e6b":[19,0,0,5,19,4],
-"radiation__ray_8h.html#a4c16cd78a3c2941de8fb4d730809ad59":[19,0,0,5,19,9],
-"radiation__ray_8h.html#a5abe50ba229ee687a5bbcc50f750b446":[19,0,0,5,19,6],
-"radiation__ray_8h.html#a7f4f84d87feb91e7ceed39f496e62661":[19,0,0,5,19,8]
+"radiation__ray_8h.html#a4c16cd78a3c2941de8fb4d730809ad59":[19,0,0,5,19,9]
 };

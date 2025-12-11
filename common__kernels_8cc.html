@@ -139,6 +139,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa29b5546e17550334ceae79cab987330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46637b3aad3ef7f4fa7256f14f4c97ca" id="r_a46637b3aad3ef7f4fa7256f14f4c97ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__kernels_8cc.html#a46637b3aad3ef7f4fa7256f14f4c97ca">acKernelVolumeCopyRealToComplex</a> (const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *in, const <a class="el" href="structVolume.html">Volume</a> in_offset, const <a class="el" href="structVolume.html">Volume</a> in_volume, <a class="el" href="structAcComplex.html">AcComplex</a> *out, const <a class="el" href="structVolume.html">Volume</a> out_offset, const <a class="el" href="structVolume.html">Volume</a> out_volume)</td></tr>
 <tr class="separator:a46637b3aad3ef7f4fa7256f14f4c97ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432755f4a11dbc48ddad10d4e405d27d" id="r_a432755f4a11dbc48ddad10d4e405d27d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__kernels_8cc.html#a432755f4a11dbc48ddad10d4e405d27d">acKernelVolumeCopyComplexToReal</a> (const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream, const <a class="el" href="structAcComplex.html">AcComplex</a> *in, const <a class="el" href="structVolume.html">Volume</a> in_offset, const <a class="el" href="structVolume.html">Volume</a> in_volume, const <a class="el" href="structVolume.html">Volume</a> embemdded_in_volume, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *out, const <a class="el" href="structVolume.html">Volume</a> out_offset, const <a class="el" href="structVolume.html">Volume</a> out_volume, const <a class="el" href="structVolume.html">Volume</a> embemdded_out_volume)</td></tr>
+<tr class="separator:a432755f4a11dbc48ddad10d4e405d27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3622d94b63d124c465c24738aac1c98" id="r_aa3622d94b63d124c465c24738aac1c98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__kernels_8cc.html#aa3622d94b63d124c465c24738aac1c98">acKernelVolumeCopyComplexToPlanar</a> (const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream, const <a class="el" href="structAcComplex.html">AcComplex</a> *in, const <a class="el" href="structVolume.html">Volume</a> in_offset, const <a class="el" href="structVolume.html">Volume</a> in_volume, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *real_out, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *imag_out, const <a class="el" href="structVolume.html">Volume</a> out_offset, const <a class="el" href="structVolume.html">Volume</a> out_volume)</td></tr>
 <tr class="separator:aa3622d94b63d124c465c24738aac1c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea7320d2f4f089c793a5a9b89a4e2aa7" id="r_aea7320d2f4f089c793a5a9b89a4e2aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__kernels_8cc.html#aea7320d2f4f089c793a5a9b89a4e2aa7">acKernelVolumeCopyRealToComplexBatched</a> (const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *in, const <a class="el" href="structVolume.html">Volume</a> in_offset, const <a class="el" href="structVolume.html">Volume</a> in_volume, <a class="el" href="structAcComplex.html">AcComplex</a> *out, const <a class="el" href="structVolume.html">Volume</a> out_offset, const <a class="el" href="structVolume.html">Volume</a> out_volume, const int batch_size)</td></tr>
@@ -748,6 +750,76 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>batch_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a432755f4a11dbc48ddad10d4e405d27d" name="a432755f4a11dbc48ddad10d4e405d27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432755f4a11dbc48ddad10d4e405d27d">&#9670;&#160;</a></span>acKernelVolumeCopyComplexToReal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acKernelVolumeCopyComplexToReal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structAcComplex.html">AcComplex</a> *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>in_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>in_volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>embemdded_in_volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>out_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>out_volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>embemdded_out_volume</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"astaroth__helpers_8h.html#a4486ef0b22ffe2dfd5efd0d8c377632d":[19,0,4,11,18],
 "astaroth__helpers_8h.html#a538de24449a423968ecc020b986f78b8":[19,0,4,11,19],
 "astaroth__helpers_8h.html#a6902cad783cbaa7ac84aeae007ef5f96":[19,0,4,11,7],
 "astaroth__helpers_8h.html#a73766c19a1d14ae543ea8d5aff726212":[19,0,4,11,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classHaloExchangeTask.html#ab4e5ea767a8e4cace06055d9fc04797a":[18,0,62,6],
 "classHaloExchangeTask.html#ab6cc60ff76f57f2fb4910c4831e881a1":[18,0,62,3],
 "classHaloExchangeTask.html#ac2188cc822822f23931f09812d6de96f":[18,0,62,8],
-"classHaloExchangeTask.html#ac564a31700789e53674ab27d88cdd027":[18,0,62,22],
-"classHaloExchangeTask.html#acd2594f272c4418a57f8947ae59aa3b6":[18,0,62,2]
+"classHaloExchangeTask.html#ac564a31700789e53674ab27d88cdd027":[18,0,62,22]
 };

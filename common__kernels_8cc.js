@@ -13,6 +13,7 @@ var common__kernels_8cc =
     [ "acKernelVolumeCopyComplex", "common__kernels_8cc.html#aa29b5546e17550334ceae79cab987330", null ],
     [ "acKernelVolumeCopyComplexToPlanar", "common__kernels_8cc.html#aa3622d94b63d124c465c24738aac1c98", null ],
     [ "acKernelVolumeCopyComplexToPlanarBatched", "common__kernels_8cc.html#a1a275e7a84ba28d35f5f82c26595e8ce", null ],
+    [ "acKernelVolumeCopyComplexToReal", "common__kernels_8cc.html#a432755f4a11dbc48ddad10d4e405d27d", null ],
     [ "acKernelVolumeCopyRealToComplex", "common__kernels_8cc.html#a46637b3aad3ef7f4fa7256f14f4c97ca", null ],
     [ "acKernelVolumeCopyRealToComplexBatched", "common__kernels_8cc.html#aea7320d2f4f089c793a5a9b89a4e2aa7", null ],
     [ "acLaunchKernelVariadic1d", "common__kernels_8cc.html#a89935e61c66591be98526a708a563cdf", null ],
