@@ -2,10 +2,10 @@
 
 Best effort has been made to identify work originating from Aalto and non-Aalto affiliations. However, we want to note that mistakes are possible due to the necessity of human review of some of the files. To minimize the risk of accidental misattribution, we have chosen to remove the file from the copyright claim completely in any ambiguous cases.
 
-Astaroth (git@bitbucket.org:jpekkila/astaroth.git) was forked from Astaroth Code (git@bitbucket.org:miikkavaisala/astaroth-code.git) in 2019.
 
 ## Astaroth Code
 
+Astaroth (git@bitbucket.org:jpekkila/astaroth.git) was forked from Astaroth Code (git@bitbucket.org:miikkavaisala/astaroth-code.git) in 2019.
 The repository git@bitbucket.org:miikkavaisala/astaroth-code.git was reviewed by listing all authors that had contributed to a file with
 
 ```bash
@@ -116,7 +116,7 @@ The results are in: contested_files_miikka.txt
 
 How we addressed these files: contested_files_how_addressed.txt
 
-Files contributed to by Oskar Lappi after 2021-04-30 were identified with the same command.
+Files contributed to by Oskar Lappi after 2021-04-30 were identified with the same command with the additional `--since="2021-05-01"` flag and commenting out "Oskar.." and uncommenting "Miikka...".
 The results are in: contested_files_oskar_since_2021-04-31_how_addressed.txt
 How we reviewed and addressed the files: contested_files_oskar_since_2021-04-31_how_addressed.txt
 
