@@ -6,6 +6,7 @@ var nofft_8cc =
     [ "acFFTBackwardTransformSymmetricC2R", "nofft_8cc.html#abe5b2a77d2aaebbb4486cfff39e36d6f", null ],
     [ "acFFTForwardTransformPlanar", "nofft_8cc.html#acad1e4ae582c898e53dee70f675a2271", null ],
     [ "acFFTForwardTransformR2C", "nofft_8cc.html#abb2b9d1dd3190c72c40735210234b159", null ],
+    [ "acFFTForwardTransformR2HermitianPlanarBatched", "nofft_8cc.html#a9e81aa0c124fb0e5b26f9c9f99651b42", null ],
     [ "acFFTForwardTransformR2Planar", "nofft_8cc.html#aa43ffc9e078a843e3ea0e695043c77f3", null ],
     [ "acFFTForwardTransformR2PlanarBatched", "nofft_8cc.html#a9fc33d4dd1b13fc7d904a17b831ccef5", null ],
     [ "acFFTForwardTransformSymmetricR2C", "nofft_8cc.html#a21875adbe4cd1dce358298978b232b66", null ],

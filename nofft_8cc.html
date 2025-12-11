@@ -129,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="separator:a02560a4c1cdaa70337f18bb1975e837e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230cf6f596266b47aa5351443e72cbfb" id="r_a230cf6f596266b47aa5351443e72cbfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nofft_8cc.html#a230cf6f596266b47aa5351443e72cbfb">acFFTInit</a> (const <a class="el" href="structAcCommunicator.html">AcCommunicator</a> *, const int *)</td></tr>
 <tr class="separator:a230cf6f596266b47aa5351443e72cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e81aa0c124fb0e5b26f9c9f99651b42" id="r_a9e81aa0c124fb0e5b26f9c9f99651b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nofft_8cc.html#a9e81aa0c124fb0e5b26f9c9f99651b42">acFFTForwardTransformR2HermitianPlanarBatched</a> (const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *, const <a class="el" href="structVolume.html">Volume</a>, const <a class="el" href="structVolume.html">Volume</a>, const <a class="el" href="structVolume.html">Volume</a>, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *, <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *, const int, <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>)</td></tr>
+<tr class="separator:a9e81aa0c124fb0e5b26f9c9f99651b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd575c60198344f9c50fd0df51fe2392" id="r_abd575c60198344f9c50fd0df51fe2392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nofft_8cc.html#abd575c60198344f9c50fd0df51fe2392">acFFTQuit</a> ()</td></tr>
 <tr class="separator:abd575c60198344f9c50fd0df51fe2392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -428,6 +430,70 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="structAcComplex.html">AcComplex</a> *&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e81aa0c124fb0e5b26f9c9f99651b42" name="a9e81aa0c124fb0e5b26f9c9f99651b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e81aa0c124fb0e5b26f9c9f99651b42">&#9670;&#160;</a></span>acFFTForwardTransformR2HermitianPlanarBatched()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> acFFTForwardTransformR2HermitianPlanarBatched </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>domain_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>subdomain_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVolume.html">Volume</a>&#160;</td>
+          <td class="paramname"><em>starting_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>real_dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>imag_dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>batch_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
