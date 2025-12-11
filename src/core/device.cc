@@ -35,66 +35,6 @@
 #include <cuda.h> // CUDA driver API (needed if MPI_USE_CUDA_DRIVER_PINNING is set)
 
 AcResult
-acDevicePrintInfo(const Device device)
-{
-    const int device_id = device->id;
-
-    cudaDeviceProp props;
-    cudaGetDeviceProperties(&props, device_id);
-    printf("--------------------------------------------------\n");
-    printf("Device Number: %d\n", device_id);
-    const size_t bus_id_max_len = 128;
-    char bus_id[bus_id_max_len];
-    cudaDeviceGetPCIBusId(bus_id, bus_id_max_len, device_id);
-    printf("  PCI bus ID: %s\n", bus_id);
-    printf("    Device name: %s\n", props.name);
-    printf("    Compute capability: %d.%d\n", props.major, props.minor);
-
-    // Compute
-    printf("  Compute\n");
-    printf("    Clock rate (GHz): %g\n", props.clockRate / 1e6); // KHz -> GHz
-    printf("    Stream processors: %d\n", props.multiProcessorCount);
-    printf("    SP to DP flops performance ratio: %d:1\n", props.singleToDoublePrecisionPerfRatio);
-    printf(
-        "    Compute mode: %d\n",
-        (int)props
-            .computeMode); // https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html#group__CUDART__TYPES_1g7eb25f5413a962faad0956d92bae10d0
-    // Memory
-    printf("  Global memory\n");
-    printf("    Memory Clock Rate (MHz): %d\n", props.memoryClockRate / (1000));
-    printf("    Memory Bus Width (bits): %d\n", props.memoryBusWidth);
-    printf("    Peak Memory Bandwidth (GiB/s): %f\n",
-           2 * (props.memoryClockRate * 1e3) * props.memoryBusWidth / (8. * 1024. * 1024. * 1024.));
-    printf("    ECC enabled: %d\n", props.ECCEnabled);
-
-    // Memory usage
-    size_t free_bytes, total_bytes;
-    cudaMemGetInfo(&free_bytes, &total_bytes);
-    const size_t used_bytes = total_bytes - free_bytes;
-    printf("    Total global mem: %.2f GiB\n", props.totalGlobalMem / (1024.0 * 1024 * 1024));
-    printf("    Gmem used (GiB): %.2f\n", used_bytes / (1024.0 * 1024 * 1024));
-    printf("    Gmem memory free (GiB): %.2f\n", free_bytes / (1024.0 * 1024 * 1024));
-    printf("    Gmem memory total (GiB): %.2f\n", total_bytes / (1024.0 * 1024 * 1024));
-    printf("  Caches\n");
-    printf("    Local L1 cache supported: %d\n", props.localL1CacheSupported);
-    printf("    Global L1 cache supported: %d\n", props.globalL1CacheSupported);
-    printf("    L2 size: %d KiB\n", props.l2CacheSize / (1024));
-    // MV: props.totalConstMem and props.sharedMemPerBlock cause assembler error
-    // MV: while compiling in TIARA gp cluster. Therefore commeted out.
-    //!!    printf("    Total const mem: %ld KiB\n", props.totalConstMem / (1024));
-    //!!    printf("    Shared mem per block: %ld KiB\n", props.sharedMemPerBlock / (1024));
-    printf("  Other\n");
-    printf("    Warp size: %d\n", props.warpSize);
-    // printf("    Single to double perf. ratio: %dx\n",
-    // props.singleToDoublePrecisionPerfRatio); //Not supported with older CUDA
-    // versions
-    printf("    Stream priorities supported: %d\n", props.streamPrioritiesSupported);
-    printf("--------------------------------------------------\n");
-
-    return AC_SUCCESS;
-}
-
-AcResult
 acDeviceAutoOptimize(const Device device)
 {
     cudaSetDevice(device->id);
