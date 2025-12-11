@@ -44,7 +44,7 @@ var acc__runtime_8h =
     [ "ac_get_scratchpad_size_int", "acc__runtime_8h.html#a90c37298fa910d19b3c0116f6714659d", null ],
     [ "ac_get_scratchpad_size_real", "acc__runtime_8h.html#af45b1f0ed8e2fdf944b127b47208d8a1", null ],
     [ "ac_resize_scratchpad_real", "acc__runtime_8h.html#a5e990eec6f60e796d05342587844e37e", null ],
-    [ "FUNC_DEFINE", "acc__runtime_8h.html#a23d41df2815e43a0364f9204256cb88f", null ],
+    [ "FUNC_DEFINE", "acc__runtime_8h.html#a8e515769fe76ca4046e0cff860e38061", null ],
     [ "FUNC_DEFINE", "acc__runtime_8h.html#ae7940c0c2b39f18009535613dd1dcc82", null ],
     [ "FUNC_DEFINE", "acc__runtime_8h.html#ae232a3e3d8fb652b60e43b7a040f5bc8", null ],
     [ "FUNC_DEFINE", "acc__runtime_8h.html#a144c0ef5798a4fdccf7b586ac3f0dfac", null ],

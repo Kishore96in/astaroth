@@ -1500,124 +1500,123 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span> </div>
 <div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>AcKernel</div>
 <div class="foldopen" id="foldopen01324" data-start="{" data-end="}">
-<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#ab54aa2d7c124c3f5776c19d603f0b09c"> 1324</a></span><a class="code hl_function" href="acc__runtime_8cu.html#ab54aa2d7c124c3f5776c19d603f0b09c">acGetOptimizedKernel</a>(<span class="keyword">const</span> AcKernel kernel_enum, <span class="keyword">const</span> <a class="code hl_struct" href="structVertexBufferArray.html">VertexBufferArray</a> vba)</div>
+<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a30e6eb2603910e1bb7aecbfe58d628fd"> 1324</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a30e6eb2603910e1bb7aecbfe58d628fd">acGetOptimizedKernel</a>(<span class="keyword">const</span> AcKernel kernel_enum, <span class="keyword">const</span> acKernelInputParams kernel_input_params)</div>
 <div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>{</div>
 <div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span><span class="preprocessor">    #include &quot;user_kernels_ifs.h&quot;</span></div>
-<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>    <span class="comment">//silence unused warnings</span></div>
-<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    (void)vba;</div>
-<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    <span class="keywordflow">return</span> kernel_enum;</div>
-<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>    <span class="comment">//return kernels[(int) kernel_enum];</span></div>
-<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>}</div>
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>    (void)kernel_input_params;</div>
+<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    <span class="keywordflow">return</span> kernel_enum;</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    <span class="comment">//return kernels[(int) kernel_enum];</span></div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>}</div>
 </div>
-<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span> </div>
-<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="foldopen" id="foldopen01334" data-start="{" data-end="};">
-<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"><a class="line" href="structload__all__scalars__uniform.html"> 1334</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structload__all__scalars__uniform.html">load_all_scalars_uniform</a></div>
-<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>{</div>
-<div class="foldopen" id="foldopen01336" data-start="{" data-end="}">
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"><a class="line" href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a"> 1336</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a">operator()</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a>&amp; config)</div>
-<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>    {</div>
-<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>        <span class="keywordflow">for</span> (P i : get_params&lt;P&gt;())</div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>            acLoadUniform(0,  i, config[i]);</div>
-<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>    }</div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span> </div>
+<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P&gt;</div>
+<div class="foldopen" id="foldopen01333" data-start="{" data-end="};">
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"><a class="line" href="structload__all__scalars__uniform.html"> 1333</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structload__all__scalars__uniform.html">load_all_scalars_uniform</a></div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>{</div>
+<div class="foldopen" id="foldopen01335" data-start="{" data-end="}">
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"><a class="line" href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a"> 1335</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a">operator()</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a>&amp; config)</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>    {</div>
+<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>        <span class="keywordflow">for</span> (P i : get_params&lt;P&gt;())</div>
+<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>            acLoadUniform(0,  i, config[i]);</div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>    }</div>
 </div>
-<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>};</div>
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>};</div>
 </div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span> </div>
-<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="foldopen" id="foldopen01344" data-start="{" data-end="};">
-<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"><a class="line" href="structload__all__arrays__uniform.html"> 1344</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structload__all__arrays__uniform.html">load_all_arrays_uniform</a></div>
-<div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span>{</div>
-<div class="foldopen" id="foldopen01346" data-start="{" data-end="}">
-<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"><a class="line" href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714"> 1346</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714">operator()</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a>&amp; config)</div>
-<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>    {</div>
-<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> P array : get_params&lt;P&gt;())</div>
-<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>        {</div>
-<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>            <span class="keyword">auto</span> config_array = config[array];</div>
-<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>                <span class="keywordflow">if</span> (config_array != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>                acLoadArrayUniform(array,config_array, get_array_length(array,config));</div>
-<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>        }</div>
-<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>    }</div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span> </div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P&gt;</div>
+<div class="foldopen" id="foldopen01343" data-start="{" data-end="};">
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"><a class="line" href="structload__all__arrays__uniform.html"> 1343</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structload__all__arrays__uniform.html">load_all_arrays_uniform</a></div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>{</div>
+<div class="foldopen" id="foldopen01345" data-start="{" data-end="}">
+<div class="line"><a id="l01345" name="l01345"></a><span class="lineno"><a class="line" href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714"> 1345</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714">operator()</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a>&amp; config)</div>
+<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>    {</div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> P array : get_params&lt;P&gt;())</div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>        {</div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>            <span class="keyword">auto</span> config_array = config[array];</div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>                <span class="keywordflow">if</span> (config_array != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>                acLoadArrayUniform(array,config_array, get_array_length(array,config));</div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>        }</div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>    }</div>
 </div>
-<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>};</div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>};</div>
 </div>
-<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span> </div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span><a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a></div>
-<div class="foldopen" id="foldopen01358" data-start="{" data-end="}">
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539"> 1358</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539">acLoadMeshInfo</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> info, <span class="keyword">const</span> <a class="code hl_define" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>)</div>
-<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>{</div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>  <span class="comment">/* See note in acLoadStencil */</span></div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>  <a class="code hl_define" href="errchk_8h.html#a56407ccff4b16ec3ae793b2968f9ce4e">ERRCHK_CUDA</a>(<a class="code hl_function" href="astaroth__cuda__wrappers_8h.html#adf1682be1dd4cc0152de977c88b09adb">acDeviceSynchronize</a>());</div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>  <a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> retval = <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
-<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>  AcScalarTypes::run&lt;load_all_scalars_uniform&gt;(info);</div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>  AcArrayTypes::run&lt;load_all_arrays_uniform&gt;(info);</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>  <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>}</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span> </div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span><a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a></div>
+<div class="foldopen" id="foldopen01357" data-start="{" data-end="}">
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539"> 1357</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539">acLoadMeshInfo</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> info, <span class="keyword">const</span> <a class="code hl_define" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a>)</div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>{</div>
+<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>  <span class="comment">/* See note in acLoadStencil */</span></div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>  <a class="code hl_define" href="errchk_8h.html#a56407ccff4b16ec3ae793b2968f9ce4e">ERRCHK_CUDA</a>(<a class="code hl_function" href="astaroth__cuda__wrappers_8h.html#adf1682be1dd4cc0152de977c88b09adb">acDeviceSynchronize</a>());</div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>  <a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a> retval = <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>  AcScalarTypes::run&lt;load_all_scalars_uniform&gt;(info);</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>  AcArrayTypes::run&lt;load_all_arrays_uniform&gt;(info);</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>  <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>}</div>
 </div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span> </div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span><span class="preprocessor">#include &quot;load_ac_kernel_params.h&quot;</span></div>
-<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span><span class="keywordtype">int</span></div>
-<div class="foldopen" id="foldopen01371" data-start="{" data-end="}">
-<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6"> 1371</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6">acVerifyMeshInfo</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> info)</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>{</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>  <span class="keywordtype">int</span> retval = 0;</div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_INT_PARAMS; ++i) {</div>
-<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    <span class="keywordflow">if</span> (info.int_params[i] == INT_MIN) {</div>
-<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>      retval = -1;</div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
-<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>              intparam_names[i]);</div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    }</div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  }</div>
-<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_INT3_PARAMS; ++i) {</div>
-<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>    <span class="keywordflow">if</span> (info.int3_params[i].x == INT_MIN || info.int3_params[i].y == INT_MIN ||</div>
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>        info.int3_params[i].z == INT_MIN) {</div>
-<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>      retval = -1;</div>
-<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
-<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>              int3param_names[i]);</div>
-<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>    }</div>
-<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>  }</div>
-<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_REAL_PARAMS; ++i) {</div>
-<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>    <span class="keywordflow">if</span> (isnan(info.real_params[i])) {</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>      retval = -1;</div>
-<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
-<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>              realparam_names[i]);</div>
-<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>    }</div>
-<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>  }</div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_REAL3_PARAMS; ++i) {</div>
-<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <span class="keywordflow">if</span> (isnan(info.real3_params[i].x) || isnan(info.real3_params[i].y) ||</div>
-<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>        isnan(info.real3_params[i].z)) {</div>
-<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>      retval = -1;</div>
-<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
-<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>              real3param_names[i]);</div>
-<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>    }</div>
-<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>  }</div>
-<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>  <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>}</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span> </div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span><span class="preprocessor">#include &quot;load_ac_kernel_params.h&quot;</span></div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span> </div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span><span class="keywordtype">int</span></div>
+<div class="foldopen" id="foldopen01370" data-start="{" data-end="}">
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6"> 1370</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6">acVerifyMeshInfo</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structAcMeshInfo.html">AcMeshInfo</a> info)</div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>{</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>  <span class="keywordtype">int</span> retval = 0;</div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_INT_PARAMS; ++i) {</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    <span class="keywordflow">if</span> (info.int_params[i] == INT_MIN) {</div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>      retval = -1;</div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>              intparam_names[i]);</div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>    }</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>  }</div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_INT3_PARAMS; ++i) {</div>
+<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>    <span class="keywordflow">if</span> (info.int3_params[i].x == INT_MIN || info.int3_params[i].y == INT_MIN ||</div>
+<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>        info.int3_params[i].z == INT_MIN) {</div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>      retval = -1;</div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>              int3param_names[i]);</div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>    }</div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>  }</div>
+<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NUM_REAL_PARAMS; ++i) {</div>
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>    <span class="keywordflow">if</span> (isnan(info.real_params[i])) {</div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>      retval = -1;</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>              realparam_names[i]);</div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>    }</div>
+<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>  }</div>
+<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_REAL3_PARAMS; ++i) {</div>
+<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>    <span class="keywordflow">if</span> (isnan(info.real3_params[i].x) || isnan(info.real3_params[i].y) ||</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>        isnan(info.real3_params[i].z)) {</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>      retval = -1;</div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>      fprintf(stderr, <span class="stringliteral">&quot;--- Warning: [%s] uninitialized ---\n&quot;</span>,</div>
+<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>              real3param_names[i]);</div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>    }</div>
+<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>  }</div>
+<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>  <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>}</div>
 </div>
-<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span> </div>
-<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span><span class="keyword">const</span> AcKernel*</div>
-<div class="foldopen" id="foldopen01408" data-start="{" data-end="}">
-<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618"> 1408</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618">acGetKernels</a>()</div>
-<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>{</div>
-<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span>    <span class="keywordflow">return</span> kernel_enums;</div>
-<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>}</div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span> </div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span><span class="keyword">const</span> AcKernel*</div>
+<div class="foldopen" id="foldopen01407" data-start="{" data-end="}">
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618"> 1407</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618">acGetKernels</a>()</div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>{</div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>    <span class="keywordflow">return</span> kernel_enums;</div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span>}</div>
 </div>
-<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span><span class="comment">//TP: comes from src/core/kernels/reductions.cc</span></div>
-<div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span><a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a></div>
-<div class="foldopen" id="foldopen01414" data-start="{" data-end="}">
-<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327"> 1414</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327">acRuntimeQuit</a>()</div>
-<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>{</div>
-<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>    <a class="code hl_define" href="errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(initialized == <span class="keyword">true</span>);</div>
-<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    tbconfigs.clear();</div>
-<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a> = 0; <a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a> &lt; NUM_KERNELS; ++<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>)</div>
-<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>    {</div>
-<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>        <a class="code hl_variable" href="acc__runtime_8cu.html#a438c62c4d341b912d420d2bfee1e3dab">reduce_offsets</a>[<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>].clear();</div>
-<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>        <a class="code hl_variable" href="acc__runtime_8cu.html#a76181f18fcf24f32a590ed76d38e1acc">kernel_running_reduce_offsets</a>[<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>] = 0;</div>
-<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>    }</div>
-<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>    initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
-<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>}</div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span><span class="comment">//TP: comes from src/core/kernels/reductions.cc</span></div>
+<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span><a class="code hl_enumeration" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a></div>
+<div class="foldopen" id="foldopen01413" data-start="{" data-end="}">
+<div class="line"><a id="l01413" name="l01413"></a><span class="lineno"><a class="line" href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327"> 1413</a></span><a class="code hl_function" href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327">acRuntimeQuit</a>()</div>
+<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>{</div>
+<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>    <a class="code hl_define" href="errchk_8h.html#ac61a83f1e8c5a2ef1d6222d2ebd67698">ERRCHK_ALWAYS</a>(initialized == <span class="keyword">true</span>);</div>
+<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>    tbconfigs.clear();</div>
+<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a> = 0; <a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a> &lt; NUM_KERNELS; ++<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>)</div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>    {</div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>        <a class="code hl_variable" href="acc__runtime_8cu.html#a438c62c4d341b912d420d2bfee1e3dab">reduce_offsets</a>[<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>].clear();</div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>        <a class="code hl_variable" href="acc__runtime_8cu.html#a76181f18fcf24f32a590ed76d38e1acc">kernel_running_reduce_offsets</a>[<a class="code hl_function" href="bwtest-benchmark_8cu.html#a4d3b1889098503be634fe5d0f5470134">kernel</a>] = 0;</div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>    }</div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>    initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
+<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>}</div>
 </div>
 <div class="ttc" id="aac__helpers_8h_html_a9ac9bce33bde4dac4251aa9a17cd9712"><div class="ttname"><a href="ac__helpers_8h.html#a9ac9bce33bde4dac4251aa9a17cd9712">acGetNumOfWarps</a></div><div class="ttdeci">int acGetNumOfWarps(const dim3 bpg, const dim3 tpb)</div><div class="ttdef"><b>Definition</b> device.cc:134</div></div>
 <div class="ttc" id="aac__helpers_8h_html_af089f9dd18046fc92769165d99eec290"><div class="ttname"><a href="ac__helpers_8h.html#af089f9dd18046fc92769165d99eec290">acSupportsCooperativeLaunches</a></div><div class="ttdeci">bool acSupportsCooperativeLaunches()</div><div class="ttdef"><b>Definition</b> device.cc:152</div></div>
@@ -1625,16 +1624,17 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="ttc" id="aacc__runtime_8cu_html_a0111b3813ecf8f66cbe9e1c3e5d478d3"><div class="ttname"><a href="acc__runtime_8cu.html#a0111b3813ecf8f66cbe9e1c3e5d478d3">get_smem</a></div><div class="ttdeci">size_t get_smem(const AcKernel kernel, const Volume tpb, const size_t stencil_order, const size_t bytes_per_elem)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:314</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a01a33a8a5fe05937593daf0d14284814"><div class="ttname"><a href="acc__runtime_8cu.html#a01a33a8a5fe05937593daf0d14284814">acStoreUniform</a></div><div class="ttdeci">AcResult acStoreUniform(const P param, V *value)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:874</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a07093fd5ec5bbfc64b4995ca0c625cfd"><div class="ttname"><a href="acc__runtime_8cu.html#a07093fd5ec5bbfc64b4995ca0c625cfd">logAutotuningStatus</a></div><div class="ttdeci">void logAutotuningStatus(const size_t counter, const size_t num_samples, const AcKernel kernel, const float best_time)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:985</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_a075e79acbdcb9d2a6498391aeea5c327"><div class="ttname"><a href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327">acRuntimeQuit</a></div><div class="ttdeci">AcResult acRuntimeQuit()</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1414</div></div>
+<div class="ttc" id="aacc__runtime_8cu_html_a075e79acbdcb9d2a6498391aeea5c327"><div class="ttname"><a href="acc__runtime_8cu.html#a075e79acbdcb9d2a6498391aeea5c327">acRuntimeQuit</a></div><div class="ttdeci">AcResult acRuntimeQuit()</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1413</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a0bb02bb65a5c61caf56c1cc5d9d7298f"><div class="ttname"><a href="acc__runtime_8cu.html#a0bb02bb65a5c61caf56c1cc5d9d7298f">acBenchmarkKernel</a></div><div class="ttdeci">AcResult acBenchmarkKernel(AcKernel kernel, const int3 start, const int3 end, VertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:713</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a13a064ec9960d625af89d4ac72d6ee68"><div class="ttname"><a href="acc__runtime_8cu.html#a13a064ec9960d625af89d4ac72d6ee68">acMemcpyFromSymbolAsync</a></div><div class="ttdeci">#define acMemcpyFromSymbolAsync</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:111</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a16f854e012454851d7b73c01acfc9b23"><div class="ttname"><a href="acc__runtime_8cu.html#a16f854e012454851d7b73c01acfc9b23">acLoadStencils</a></div><div class="ttdeci">AcResult acLoadStencils(const cudaStream_t stream, const AcReal data[NUM_STENCILS][STENCIL_DEPTH][STENCIL_HEIGHT][STENCIL_WIDTH])</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:779</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_a1a39cd75e368b1abe128a101c9e32618"><div class="ttname"><a href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618">acGetKernels</a></div><div class="ttdeci">const AcKernel * acGetKernels()</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1408</div></div>
+<div class="ttc" id="aacc__runtime_8cu_html_a1a39cd75e368b1abe128a101c9e32618"><div class="ttname"><a href="acc__runtime_8cu.html#a1a39cd75e368b1abe128a101c9e32618">acGetKernels</a></div><div class="ttdeci">const AcKernel * acGetKernels()</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1407</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a1e6fde6d3728763a12a2e9696dc34476"><div class="ttname"><a href="acc__runtime_8cu.html#a1e6fde6d3728763a12a2e9696dc34476">catch_previous_errors</a></div><div class="ttdeci">void catch_previous_errors(const AcKernel kernel, const char *msg)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:64</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a1fcc4ebea90645c193f74db8d2e44ff1"><div class="ttname"><a href="acc__runtime_8cu.html#a1fcc4ebea90645c193f74db8d2e44ff1">acLoadRealReduceRes</a></div><div class="ttdeci">AcResult acLoadRealReduceRes(cudaStream_t stream, const AcRealOutputParam param, const AcReal *value)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:807</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a20221c26efd63e4dca7f69e5344fbb89"><div class="ttname"><a href="acc__runtime_8cu.html#a20221c26efd63e4dca7f69e5344fbb89">update_reduce_offsets_and_resize</a></div><div class="ttdeci">void update_reduce_offsets_and_resize(const AcKernel kernel, const int3 start, const dim3 tpb, const dim3 bpg, VertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:631</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a26527996809366c7f47d20fd7d84d177"><div class="ttname"><a href="acc__runtime_8cu.html#a26527996809366c7f47d20fd7d84d177">acLaunchKernelCommon</a></div><div class="ttdeci">AcResult acLaunchKernelCommon(AcKernel kernel, const cudaStream_t stream, const int3 start, const int3 end, VertexBufferArray vba, const dim3 tpb)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:663</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a28d2305fd9b59fa39eeda3538c527813"><div class="ttname"><a href="acc__runtime_8cu.html#a28d2305fd9b59fa39eeda3538c527813">catch_previous_errors_debug</a></div><div class="ttdeci">void catch_previous_errors_debug(const AcKernel kernel, const char *msg)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:74</div></div>
+<div class="ttc" id="aacc__runtime_8cu_html_a30e6eb2603910e1bb7aecbfe58d628fd"><div class="ttname"><a href="acc__runtime_8cu.html#a30e6eb2603910e1bb7aecbfe58d628fd">acGetOptimizedKernel</a></div><div class="ttdeci">AcKernel acGetOptimizedKernel(const AcKernel kernel_enum, const acKernelInputParams kernel_input_params)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1324</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a33f612e34c263dd6a6fda3b1cbd71e84"><div class="ttname"><a href="acc__runtime_8cu.html#a33f612e34c263dd6a6fda3b1cbd71e84">acGetKernelReduceScratchPadMinSize</a></div><div class="ttdeci">int acGetKernelReduceScratchPadMinSize()</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:157</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a3d7abfe0435364e9cf468893276e3a81"><div class="ttname"><a href="acc__runtime_8cu.html#a3d7abfe0435364e9cf468893276e3a81">SHARED_MEM_Z_RAYS</a></div><div class="ttdeci">const bool SHARED_MEM_Z_RAYS</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:312</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a438c62c4d341b912d420d2bfee1e3dab"><div class="ttname"><a href="acc__runtime_8cu.html#a438c62c4d341b912d420d2bfee1e3dab">reduce_offsets</a></div><div class="ttdeci">std::array&lt; std::unordered_map&lt; int3, int, Int3Hash &gt;, NUM_KERNELS &gt; reduce_offsets</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:125</div></div>
@@ -1644,7 +1644,7 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="ttc" id="aacc__runtime_8cu_html_a5db6ebddb3447b11be2c0b0ca7839747"><div class="ttname"><a href="acc__runtime_8cu.html#a5db6ebddb3447b11be2c0b0ca7839747">acGetRealScratchpadSize</a></div><div class="ttdeci">size_t acGetRealScratchpadSize(const size_t i)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:420</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a5f3ca0e1995c51d3172cad5610c7f2de"><div class="ttname"><a href="acc__runtime_8cu.html#a5f3ca0e1995c51d3172cad5610c7f2de">ac_resize_scratchpads_to_fit</a></div><div class="ttdeci">void ac_resize_scratchpads_to_fit(const size_t n_elems, VertexBufferArray vba, const AcKernel kernel)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:410</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a6a87d981d08725e4e5a82af7b5acf241"><div class="ttname"><a href="acc__runtime_8cu.html#a6a87d981d08725e4e5a82af7b5acf241">acGetKernelReduceScratchPadSize</a></div><div class="ttdeci">int acGetKernelReduceScratchPadSize(const AcKernel kernel)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:151</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_a716460abafee416c6ffa509d84e1b539"><div class="ttname"><a href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539">acLoadMeshInfo</a></div><div class="ttdeci">AcResult acLoadMeshInfo(const AcMeshInfo info, const cudaStream_t)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1358</div></div>
+<div class="ttc" id="aacc__runtime_8cu_html_a716460abafee416c6ffa509d84e1b539"><div class="ttname"><a href="acc__runtime_8cu.html#a716460abafee416c6ffa509d84e1b539">acLoadMeshInfo</a></div><div class="ttdeci">AcResult acLoadMeshInfo(const AcMeshInfo info, const cudaStream_t)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1357</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a7351009dde6267a3cddba6af83e6d757"><div class="ttname"><a href="acc__runtime_8cu.html#a7351009dde6267a3cddba6af83e6d757">acMemcpyFromSymbol</a></div><div class="ttdeci">#define acMemcpyFromSymbol</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:110</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a747ef411b005ecac299bd4991ff99f44"><div class="ttname"><a href="acc__runtime_8cu.html#a747ef411b005ecac299bd4991ff99f44">acStoreArrayUniform</a></div><div class="ttdeci">AcResult acStoreArrayUniform(const P array, V *values, const size_t length)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:889</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a76181f18fcf24f32a590ed76d38e1acc"><div class="ttname"><a href="acc__runtime_8cu.html#a76181f18fcf24f32a590ed76d38e1acc">kernel_running_reduce_offsets</a></div><div class="ttdeci">int kernel_running_reduce_offsets[NUM_KERNELS]</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:126</div></div>
@@ -1652,12 +1652,11 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="ttc" id="aacc__runtime_8cu_html_a7e1457dd1a68b86a53fa7ebbf156c2e5"><div class="ttname"><a href="acc__runtime_8cu.html#a7e1457dd1a68b86a53fa7ebbf156c2e5">useColor</a></div><div class="ttdeci">const bool useColor</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:51</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a81ccc119393bc165be939e95a1ac2d90"><div class="ttname"><a href="acc__runtime_8cu.html#a81ccc119393bc165be939e95a1ac2d90">return_own_measurement</a></div><div class="ttdeci">AcAutotuneMeasurement return_own_measurement(const AcAutotuneMeasurement local_measurement)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:129</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a88d8f3315dcf15f29fabb056d0bff0c7"><div class="ttname"><a href="acc__runtime_8cu.html#a88d8f3315dcf15f29fabb056d0bff0c7">safe_access</a></div><div class="ttdeci">__device__ AcReal safe_access(const AcReal *arr, const int dims, const int index, const char *name)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:470</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_a8c8be022c31af8d84f970bd12495f5d6"><div class="ttname"><a href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6">acVerifyMeshInfo</a></div><div class="ttdeci">int acVerifyMeshInfo(const AcMeshInfo info)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1371</div></div>
+<div class="ttc" id="aacc__runtime_8cu_html_a8c8be022c31af8d84f970bd12495f5d6"><div class="ttname"><a href="acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6">acVerifyMeshInfo</a></div><div class="ttdeci">int acVerifyMeshInfo(const AcMeshInfo info)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1370</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a975c1fa47195d8d9e0659ae5c983be9c"><div class="ttname"><a href="acc__runtime_8cu.html#a975c1fa47195d8d9e0659ae5c983be9c">acMemcpyToSymbol</a></div><div class="ttdeci">#define acMemcpyToSymbol</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:112</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a98666be13c8e67196b9560ba9eeff819"><div class="ttname"><a href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div><div class="ttdeci">void(* Kernel)(const int3, const int3, DeviceVertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:27</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a99f3f8e3dea4acfa12dfab9fe1a75364"><div class="ttname"><a href="acc__runtime_8cu.html#a99f3f8e3dea4acfa12dfab9fe1a75364">make_vtxbuf_input_params_safe</a></div><div class="ttdeci">void make_vtxbuf_input_params_safe(VertexBufferArray &amp;vba, const AcKernel)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1004</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aac3b233a2124137f1e9805c2366b298d"><div class="ttname"><a href="acc__runtime_8cu.html#aac3b233a2124137f1e9805c2366b298d">acGetOptimTPB</a></div><div class="ttdeci">int3 acGetOptimTPB(const AcKernel kernel, const Volume start, const Volume end)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1308</div></div>
-<div class="ttc" id="aacc__runtime_8cu_html_ab54aa2d7c124c3f5776c19d603f0b09c"><div class="ttname"><a href="acc__runtime_8cu.html#ab54aa2d7c124c3f5776c19d603f0b09c">acGetOptimizedKernel</a></div><div class="ttdeci">AcKernel acGetOptimizedKernel(const AcKernel kernel_enum, const VertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1324</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_ab9c9de13722260fdb73dc2e303d5a83a"><div class="ttname"><a href="acc__runtime_8cu.html#ab9c9de13722260fdb73dc2e303d5a83a">acLoadStencil</a></div><div class="ttdeci">AcResult acLoadStencil(const Stencil stencil, const cudaStream_t, const AcReal data[STENCIL_DEPTH][STENCIL_HEIGHT][STENCIL_WIDTH])</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:756</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aba13cf0f8fb627bca230fe24499996b9"><div class="ttname"><a href="acc__runtime_8cu.html#aba13cf0f8fb627bca230fe24499996b9">acMemcpyToSymbolAsync</a></div><div class="ttdeci">#define acMemcpyToSymbolAsync</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:113</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_abe573881d0168a5509f3837df08013e1"><div class="ttname"><a href="acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1">size</a></div><div class="ttdeci">#define size(arr)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:463</div></div>
@@ -1775,10 +1774,10 @@ $(document).ready(function(){initNavTree('acc__runtime_8cu_source.html',''); ini
 <div class="ttc" id="astructint3_html_a0a4ad50a155a35fa938ce6f16930affa"><div class="ttname"><a href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">int3::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5cd5a3c388fa28814e3496ef07c39360"><div class="ttname"><a href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">int3::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
 <div class="ttc" id="astructint3_html_a5d95e23491677d61019f0354b16adca9"><div class="ttname"><a href="structint3.html#a5d95e23491677d61019f0354b16adca9">int3::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> stencilgen.c:49</div></div>
-<div class="ttc" id="astructload__all__arrays__uniform_html"><div class="ttname"><a href="structload__all__arrays__uniform.html">load_all_arrays_uniform</a></div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1345</div></div>
-<div class="ttc" id="astructload__all__arrays__uniform_html_a8163ad1151fe496c231b7870d9da7714"><div class="ttname"><a href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714">load_all_arrays_uniform::operator()</a></div><div class="ttdeci">void operator()(const AcMeshInfo &amp;config)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1346</div></div>
-<div class="ttc" id="astructload__all__scalars__uniform_html"><div class="ttname"><a href="structload__all__scalars__uniform.html">load_all_scalars_uniform</a></div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1335</div></div>
-<div class="ttc" id="astructload__all__scalars__uniform_html_a7543ed31110e805178a818f5f6c1cc2a"><div class="ttname"><a href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a">load_all_scalars_uniform::operator()</a></div><div class="ttdeci">void operator()(const AcMeshInfo &amp;config)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1336</div></div>
+<div class="ttc" id="astructload__all__arrays__uniform_html"><div class="ttname"><a href="structload__all__arrays__uniform.html">load_all_arrays_uniform</a></div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1344</div></div>
+<div class="ttc" id="astructload__all__arrays__uniform_html_a8163ad1151fe496c231b7870d9da7714"><div class="ttname"><a href="structload__all__arrays__uniform.html#a8163ad1151fe496c231b7870d9da7714">load_all_arrays_uniform::operator()</a></div><div class="ttdeci">void operator()(const AcMeshInfo &amp;config)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1345</div></div>
+<div class="ttc" id="astructload__all__scalars__uniform_html"><div class="ttname"><a href="structload__all__scalars__uniform.html">load_all_scalars_uniform</a></div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1334</div></div>
+<div class="ttc" id="astructload__all__scalars__uniform_html_a7543ed31110e805178a818f5f6c1cc2a"><div class="ttname"><a href="structload__all__scalars__uniform.html#a7543ed31110e805178a818f5f6c1cc2a">load_all_scalars_uniform::operator()</a></div><div class="ttdeci">void operator()(const AcMeshInfo &amp;config)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:1335</div></div>
 <div class="ttc" id="astructstring__vec_html"><div class="ttname"><a href="structstring__vec.html">string_vec</a></div><div class="ttdef"><b>Definition</b> string_vec.h:4</div></div>
 <div class="ttc" id="astructstring__vec_html_adaea9b844e2848a33492f28b82d4f802"><div class="ttname"><a href="structstring__vec.html#adaea9b844e2848a33492f28b82d4f802">string_vec::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition</b> string_vec.h:6</div></div>
 <div class="ttc" id="astructstring__vec_html_ae09c7cd04a58b2cfadd575ef1f789a9d"><div class="ttname"><a href="structstring__vec.html#ae09c7cd04a58b2cfadd575ef1f789a9d">string_vec::data</a></div><div class="ttdeci">const char ** data</div><div class="ttdef"><b>Definition</b> string_vec.h:5</div></div>
