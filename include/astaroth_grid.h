@@ -122,15 +122,6 @@ FUNC_DEFINE(AcResult, acGridIntegrate,(const Stream stream, const AcReal dt));
 FUNC_DEFINE(AcResult, acGridSwapBuffers,(void));
 
 /** */
-/*   MV: Commented out for a while, but save for the future when standalone_MPI
-         works with periodic boundary conditions.
-AcResult
-acGridIntegrateNonperiodic(const Stream stream, const AcReal dt)
-
-AcResult acGridIntegrateNonperiodic(const Stream stream, const AcReal dt);
-*/
-
-/** */
 FUNC_DEFINE(AcResult, acGridHaloExchange,());
 
 /** */
