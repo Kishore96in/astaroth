@@ -320,10 +320,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  {                                                                            \</div>
 <div class="line">    time_t terr = 0;                                                           \</div>
 <div class="line">    time(&amp;terr);                                                               \</div>
-<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;\n\n\n\n┌──────────────────────── ERROR ───────────────────────────┐\n\n&quot;</span>); \</div>
+<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;\n\n\n\n                          ERROR                             \n\n&quot;</span>); \</div>
 <div class="line">    fprintf(stderr, <span class="stringliteral">&quot;%s&quot;</span>, ctime(&amp;terr));                                       \</div>
 <div class="line">    fprintf(stderr, <span class="stringliteral">&quot;Error in file %s line %d: %s\n&quot;</span>, __FILE__, __LINE__, str); \</div>
-<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;\n└──────────────────────── ERROR ───────────────────────────┘\n\n\n\n&quot;</span>); \</div>
+<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;\n                          ERROR                             \n\n\n\n&quot;</span>); \</div>
 <div class="line">    fflush(stderr);                                                            \</div>
 <div class="line">    abort();                                                                   \</div>
 <div class="line">  }</div>

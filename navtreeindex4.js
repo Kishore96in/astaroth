@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classHaloExchangeTask.html#ac2188cc822822f23931f09812d6de96f":[18,0,62,8],
+"classHaloExchangeTask.html#ac564a31700789e53674ab27d88cdd027":[18,0,62,22],
 "classHaloExchangeTask.html#acd2594f272c4418a57f8947ae59aa3b6":[18,0,62,2],
 "classHaloExchangeTask.html#adf7a3be34b3516a328446fe12b592e03":[18,0,62,13],
 "classHaloExchangeTask.html#ae34aace24986189d75e3ab97eec35118":[18,0,62,21],
@@ -67,12 +69,12 @@ var NAVTREEINDEX4 =
 "classes.html":[18,1],
 "classmatplotlibcpp_1_1Plot.html":[17,0,1,1],
 "classmatplotlibcpp_1_1Plot.html":[18,0,0,1],
-"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[18,0,0,1,3],
 "classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[17,0,1,1,3],
-"classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[17,0,1,1,0],
+"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[18,0,0,1,3],
 "classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[18,0,0,1,0],
-"classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[18,0,0,1,2],
+"classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[17,0,1,1,0],
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[17,0,1,1,2],
+"classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[18,0,0,1,2],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[17,0,1,1,1],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[18,0,0,1,1],
 "classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[17,0,1,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "codegen_8c.html#a56c9f0d13c08154783dbb15e613fc3b7":[19,0,0,0,2,381],
 "codegen_8c.html#a56e5c58afeb1616711a63ad280ce36fb":[19,0,0,0,2,192],
 "codegen_8c.html#a57602150a79f816ee7339396c23d5636":[19,0,0,0,2,86],
-"codegen_8c.html#a576113ca4898d9a6c014265b5ac59106":[19,0,0,0,2,130],
-"codegen_8c.html#a576467425d644112d795d0ed8b73059a":[19,0,0,0,2,346],
-"codegen_8c.html#a57790f31fb9ed66dd5116ca18ecc0fa7":[19,0,0,0,2,316]
+"codegen_8c.html#a576113ca4898d9a6c014265b5ac59106":[19,0,0,0,2,130]
 };

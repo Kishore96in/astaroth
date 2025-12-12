@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"structmatplotlibcpp_1_1detail_1_1is__callable.html":[17,0,1,0,1],
+"structmatplotlibcpp_1_1detail_1_1is__callable.html":[18,0,0,0,1],
+"structmatplotlibcpp_1_1detail_1_1is__callable.html#a75964f6079c7465f1c4b2dc2ce37a276":[18,0,0,0,1,0],
 "structmatplotlibcpp_1_1detail_1_1is__callable.html#a75964f6079c7465f1c4b2dc2ce37a276":[17,0,1,0,1,0],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl.html":[17,0,1,0,2],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl.html":[18,0,0,0,2],
@@ -19,8 +22,8 @@ var NAVTREEINDEX19 =
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Derived.html":[18,0,0,0,4,1],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Fallback.html":[18,0,0,0,4,2],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Fallback.html":[17,0,1,0,4,2],
-"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Fallback.html#ad72a88facc127249a3a171a462a7a95e":[18,0,0,0,4,2,0],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Fallback.html#ad72a88facc127249a3a171a462a7a95e":[17,0,1,0,4,2,0],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Fallback.html#ad72a88facc127249a3a171a462a7a95e":[18,0,0,0,4,2,0],
 "structmatplotlibcpp_1_1detail_1_1plot__impl.html":[17,0,1,0,5],
 "structmatplotlibcpp_1_1detail_1_1plot__impl.html":[18,0,0,0,5],
 "structmatplotlibcpp_1_1detail_1_1plot__impl_3_01std_1_1false__type_01_4.html":[17,0,1,0,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "transpose_8h.html#ab6b1bba12edd57fde5ac6a74bb869ea6":[19,0,6,0,3,16,1],
 "transpose_8h_source.html":[19,0,6,0,3,16],
 "typedefs_8h.html":[19,0,0,2,3],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991":[19,0,0,2,3,19],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02":[19,0,0,2,3,19,1],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce":[19,0,0,2,3,19,2],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991afb9acbcd0c57a9e5e6a58ce9b7e1524b":[19,0,0,2,3,19,0]
+"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991":[19,0,0,2,3,19]
 };
