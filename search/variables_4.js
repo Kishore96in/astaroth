@@ -22,10 +22,11 @@ var searchData=
   ['dimprod_19',['dimprod',['../structkiss__fftnd__state.html#aaee291ed294623109b48370942332a88',1,'kiss_fftnd_state']]],
   ['dims_20',['dims',['../structRegion.html#ab2819df990a997f846e481c5b64449be',1,'Region::dims'],['../structkiss__fftnd__state.html#aa16a0dfb68479f947784dd38dc5db33a',1,'kiss_fftnd_state::dims'],['../structVertexBufferArray.html#a39fa9c3ceedfab36ef281682fbfed2e8',1,'VertexBufferArray::dims'],['../structTBConfig.html#ad79eb9e8f9a96d19713fcae2dd7f8666',1,'TBConfig::dims'],['../structarray__info.html#a5759122e0c2e73744489216673819ed5',1,'array_info::dims']]],
   ['dims_5fstr_21',['DIMS_STR',['../codegen_8c.html#a7478621e3428e7953779f8696ecdbad8',1,'codegen.c']]],
-  ['div_5fstr_22',['DIV_STR',['../codegen_8c.html#a7fc854aa9aa7bb8dba1781f99ebdc5b6',1,'codegen.c']]],
-  ['do_5fchecks_23',['do_checks',['../structtraverse__base__params.html#a0e05dc21b7fe2ca0c938a6f666d56bb0',1,'traverse_base_params']]],
-  ['do_5fnot_5fadd_5fto_5fsymbol_5ftable_24',['do_not_add_to_symbol_table',['../structtraverse__base__params.html#a2587af8a453570c50562ccd67b53bb30',1,'traverse_base_params']]],
-  ['domain_5flength_25',['domain_length',['../structKernelConfig.html#ab8f393b0028bbd9eb74c68968cb3e6f3',1,'KernelConfig']]],
-  ['dot_5fstr_26',['DOT_STR',['../codegen_8c.html#a5d53f8f4b40e5035e4ecde72e48a1cc0',1,'codegen.c']]],
-  ['dynamic_5fstr_27',['DYNAMIC_STR',['../codegen_8c.html#a0fbe2fc1391a2daeddbf8aec6d9535b0',1,'codegen.c']]]
+  ['direction_22',['direction',['../radiation__ray_8h.html#ac2290dcc25d9620e6c4ae40a563b735a',1,'radiation_ray.h']]],
+  ['div_5fstr_23',['DIV_STR',['../codegen_8c.html#a7fc854aa9aa7bb8dba1781f99ebdc5b6',1,'codegen.c']]],
+  ['do_5fchecks_24',['do_checks',['../structtraverse__base__params.html#a0e05dc21b7fe2ca0c938a6f666d56bb0',1,'traverse_base_params']]],
+  ['do_5fnot_5fadd_5fto_5fsymbol_5ftable_25',['do_not_add_to_symbol_table',['../structtraverse__base__params.html#a2587af8a453570c50562ccd67b53bb30',1,'traverse_base_params']]],
+  ['domain_5flength_26',['domain_length',['../structKernelConfig.html#ab8f393b0028bbd9eb74c68968cb3e6f3',1,'KernelConfig']]],
+  ['dot_5fstr_27',['DOT_STR',['../codegen_8c.html#a5d53f8f4b40e5035e4ecde72e48a1cc0',1,'codegen.c']]],
+  ['dynamic_5fstr_28',['DYNAMIC_STR',['../codegen_8c.html#a0fbe2fc1391a2daeddbf8aec6d9535b0',1,'codegen.c']]]
 ];

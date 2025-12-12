@@ -56,7 +56,8 @@ var task_8h =
       [ "Waiting", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da5706de961fb376d701be6e7762d8b09c", null ],
       [ "Packing", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4dac46192253e8458f209a350a132cfc876", null ],
       [ "Communicating", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4daeebb983d809918455d164604bb200561", null ],
-      [ "Unpacking", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf", null ]
+      [ "Unpacking", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf", null ],
+      [ "Computing", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da28c02808d035abd3371299d909f5e0ad", null ]
     ] ],
     [ "ReduceState", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263", [
       [ "Waiting", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a5706de961fb376d701be6e7762d8b09c", null ],
