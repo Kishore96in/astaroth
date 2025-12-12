@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['scalar_0',['Scalar',['../profiles_8cc.html#a83ae106b82c2af1be29a327aa7a6bc9b',1,'profiles.cc']]],
-  ['size3_5ft_1',['size3_t',['../host__datatypes_8h.html#a4fbe89db7871cf2ab32327a60eb4520f',1,'host_datatypes.h']]],
-  ['state_2',['state',['../tinyexpr_8c.html#a99852dcb2cc193a859b86bef9805381f',1,'tinyexpr.c']]],
-  ['string_5fvec_3',['string_vec',['../string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07',1,'string_vec.h']]]
+  ['reducefunc_0',['ReduceFunc',['../modelreduce_8cc.html#a1e1e301aca5314403b0619bc9c39f081',1,'modelreduce.cc']]],
+  ['reduceinitialscalfunc_1',['ReduceInitialScalFunc',['../modelreduce_8cc.html#a55c6377e73cbae514eac27c3944a3893',1,'modelreduce.cc']]],
+  ['reduceinitialvecfunc_2',['ReduceInitialVecFunc',['../modelreduce_8cc.html#a0fdc4c8ee2681cfe62ae7a6eb3487cd1',1,'modelreduce.cc']]],
+  ['reduceinitialvecscalfunc_3',['ReduceInitialVecScalFunc',['../modelreduce_8cc.html#af9a3d1b78005c766d557fc94f2fe32e7',1,'modelreduce.cc']]],
+  ['reduceop_4',['reduceop',['../stencilgen_8c.html#af529ff78d887853c155bbd9e85ca6daa',1,'ReduceOp:&#160;stencilgen.c'],['../vecs_8h.html#af529ff78d887853c155bbd9e85ca6daa',1,'ReduceOp:&#160;vecs.h']]],
+  ['reducetask_5',['ReduceTask',['../task_8h.html#aa3e99d9c847fd8eddde97579aa1fbcff',1,'task.h']]]
 ];

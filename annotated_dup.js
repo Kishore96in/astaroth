@@ -106,6 +106,7 @@ var annotated_dup =
     [ "op_vec", "structop__vec.html", "structop__vec" ],
     [ "overloaded_dfuncs", "structoverloaded__dfuncs.html", "structoverloaded__dfuncs" ],
     [ "param_combinations", "structparam__combinations.html", "structparam__combinations" ],
+    [ "PeriodicRayTask", "classPeriodicRayTask.html", "classPeriodicRayTask" ],
     [ "ProfileBufferArray", "structProfileBufferArray.html", "structProfileBufferArray" ],
     [ "ProfileZ3", "structProfileZ3.html", "structProfileZ3" ],
     [ "real2", "structreal2.html", "structreal2" ],

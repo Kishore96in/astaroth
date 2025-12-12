@@ -10,6 +10,7 @@ var task_8h =
     [ "HaloMessageSwapChain", "structHaloMessageSwapChain.html", "structHaloMessageSwapChain" ],
     [ "HaloExchangeTask", "classHaloExchangeTask.html", "classHaloExchangeTask" ],
     [ "MPIScanTask", "classMPIScanTask.html", "classMPIScanTask" ],
+    [ "PeriodicRayTask", "classPeriodicRayTask.html", "classPeriodicRayTask" ],
     [ "BoundaryConditionTask", "classBoundaryConditionTask.html", "classBoundaryConditionTask" ],
     [ "ReduceTask", "classReduceTask.html", "classReduceTask" ],
     [ "TraceFile", "structTraceFile.html", "structTraceFile" ],
@@ -23,6 +24,7 @@ var task_8h =
     [ "HaloMessageSwapChain", "task_8h.html#a9f4fe74a008f3807f0b3e7087923410d", null ],
     [ "LoadKernelParamsFunc", "task_8h.html#ac2944870a54d36393fe59fc62e8ad19f", null ],
     [ "MPIScanTask", "task_8h.html#a44367f7e4789b2ff3d8156ac041967ff", null ],
+    [ "PeriodicRayTask", "task_8h.html#a23f7cc0e68725ac575b73efbf4fad072", null ],
     [ "ReduceTask", "task_8h.html#aa3e99d9c847fd8eddde97579aa1fbcff", null ],
     [ "Task", "task_8h.html#a12ea1a839334ba8ef947b61f8a8a0047", null ],
     [ "BoundaryConditionState", "task_8h.html#ab624ed55ed3692f5b77adcfd7511cf99", [
@@ -49,6 +51,12 @@ var task_8h =
       [ "Packing", "task_8h.html#a29eeaf568356aeef4c36b6f3150b7219ac46192253e8458f209a350a132cfc876", null ],
       [ "Communicating", "task_8h.html#a29eeaf568356aeef4c36b6f3150b7219aeebb983d809918455d164604bb200561", null ],
       [ "Unpacking", "task_8h.html#a29eeaf568356aeef4c36b6f3150b7219a9b87ab5a4e2e99d758991f06cad9c3bf", null ]
+    ] ],
+    [ "PeriodicRayTaskState", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4d", [
+      [ "Waiting", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da5706de961fb376d701be6e7762d8b09c", null ],
+      [ "Packing", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4dac46192253e8458f209a350a132cfc876", null ],
+      [ "Communicating", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4daeebb983d809918455d164604bb200561", null ],
+      [ "Unpacking", "task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf", null ]
     ] ],
     [ "ReduceState", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263", [
       [ "Waiting", "task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263a5706de961fb376d701be6e7762d8b09c", null ],

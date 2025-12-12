@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('structHaloMessage.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8455e6bca70a0bd5a5668e24606a619e" id="r_a8455e6bca70a0bd5a5668e24606a619e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHaloMessage.html#a8455e6bca70a0bd5a5668e24606a619e">HaloMessage</a> (<a class="el" href="structVolume.html">Volume</a> dims, size_t num_vars, const int tag0, const int <a class="el" href="structHaloMessage.html#a54b1da61cc78313909e7c34793a9b2cb">tag</a>, const std::vector&lt; int &gt; <a class="el" href="structHaloMessage.html#a1e64b07a7060b239e5e525d768155e48">counterpart_ranks</a>, const <a class="el" href="task_8h.html#aa2553dac5f55a1e06f2d054faea2fd0e">HaloMessageType</a> <a class="el" href="structHaloMessage.html#acfec68f192d4ac680ecf256ae55cb277">type</a>)</td></tr>
-<tr class="separator:a8455e6bca70a0bd5a5668e24606a619e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefc585e544580c00cc71a9caf850f94" id="r_aeefc585e544580c00cc71a9caf850f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHaloMessage.html#aeefc585e544580c00cc71a9caf850f94">HaloMessage</a> (size_t <a class="el" href="acc__runtime_8cu.html#abe573881d0168a5509f3837df08013e1">size</a>, const int tag0, const int <a class="el" href="structHaloMessage.html#a54b1da61cc78313909e7c34793a9b2cb">tag</a>, const std::vector&lt; int &gt; <a class="el" href="structHaloMessage.html#a1e64b07a7060b239e5e525d768155e48">counterpart_ranks</a>, const <a class="el" href="task_8h.html#aa2553dac5f55a1e06f2d054faea2fd0e">HaloMessageType</a> <a class="el" href="structHaloMessage.html#acfec68f192d4ac680ecf256ae55cb277">type</a>)</td></tr>
+<tr class="separator:aeefc585e544580c00cc71a9caf850f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a890b4a1a293f1f360a7660773e9367" id="r_a8a890b4a1a293f1f360a7660773e9367"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHaloMessage.html#a8a890b4a1a293f1f360a7660773e9367">~HaloMessage</a> ()</td></tr>
 <tr class="separator:a8a890b4a1a293f1f360a7660773e9367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab908fb8e00abbe2cfbbbe93fe124b469" id="r_ab908fb8e00abbe2cfbbbe93fe124b469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHaloMessage.html#ab908fb8e00abbe2cfbbbe93fe124b469">pin</a> (const <a class="el" href="ac__helpers_8h.html#a1dfe2d9de2ccb7457d6db278f84acbb7">Device</a> device, const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream)</td></tr>
@@ -134,8 +134,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a1e64b07a7060b239e5e525d768155e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8455e6bca70a0bd5a5668e24606a619e" name="a8455e6bca70a0bd5a5668e24606a619e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8455e6bca70a0bd5a5668e24606a619e">&#9670;&#160;</a></span>HaloMessage()</h2>
+<a id="aeefc585e544580c00cc71a9caf850f94" name="aeefc585e544580c00cc71a9caf850f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefc585e544580c00cc71a9caf850f94">&#9670;&#160;</a></span>HaloMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,14 +143,8 @@ Data Fields</h2></td></tr>
         <tr>
           <td class="memname">HaloMessage::HaloMessage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVolume.html">Volume</a>&#160;</td>
-          <td class="paramname"><em>dims</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_vars</em>, </td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

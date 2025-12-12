@@ -1,6 +1,6 @@
 var structHaloMessage =
 [
-    [ "HaloMessage", "structHaloMessage.html#a8455e6bca70a0bd5a5668e24606a619e", null ],
+    [ "HaloMessage", "structHaloMessage.html#aeefc585e544580c00cc71a9caf850f94", null ],
     [ "~HaloMessage", "structHaloMessage.html#a8a890b4a1a293f1f360a7660773e9367", null ],
     [ "pin", "structHaloMessage.html#ab908fb8e00abbe2cfbbbe93fe124b469", null ],
     [ "unpin", "structHaloMessage.html#ac132593c93c93f1f49e21bd06fc3ee30", null ],

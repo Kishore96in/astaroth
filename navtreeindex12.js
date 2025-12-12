@@ -1,5 +1,15 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a916bb5a9dc5f6a24877cc027bf4ee624":[19,0,8,26,0,1,44],
+"matplotlibcpp_8h.html#a91e91bcdcfc7632a917830bfe3f71ca3":[19,0,8,26,0,1,34],
+"matplotlibcpp_8h.html#a928fb4c83f29554b1b37aeea7af9bb73":[19,0,8,26,0,1,36],
+"matplotlibcpp_8h.html#a92c59dd37fb3f355514d88e364ddfde9":[19,0,8,26,0,1,63],
+"matplotlibcpp_8h.html#a93e96cce1779c757a9ac754639c80878":[19,0,8,26,0,1,93],
+"matplotlibcpp_8h.html#a9482856fd165f21001420e712d0d2312":[19,0,8,26,0,1,50],
+"matplotlibcpp_8h.html#a961b7390cd3b4148651519f164c1af14":[19,0,8,26,0,1,57],
+"matplotlibcpp_8h.html#a97d82f6044902f9120a16f55bfcbf7a0":[19,0,8,26,0,1,22],
+"matplotlibcpp_8h.html#a9b436f92bc261d6d938c60e626e13be9":[19,0,8,26,0,1,28],
+"matplotlibcpp_8h.html#a9bddb5276ddc48f4ff9c2b36b98db71a":[19,0,8,26,0,1,43],
 "matplotlibcpp_8h.html#a9ecea5f5240b0840556926e8c172952c":[19,0,8,26,0,1,27],
 "matplotlibcpp_8h.html#aa20e464f2c76edfb057997407a6f3fc4":[19,0,8,26,0,1,23],
 "matplotlibcpp_8h.html#aa3ccefcc977791fc66c1cff63d589d00":[19,0,8,26,0,1,24],
@@ -239,15 +249,5 @@ var NAVTREEINDEX12 =
 "namespacematplotlibcpp.html#a57af9838664a40f0d7aabd3b184ec860":[17,0,1,61],
 "namespacematplotlibcpp.html#a5da5568ee4a63f144e4541c6c84ed0ce":[17,0,1,3],
 "namespacematplotlibcpp.html#a6111e7efdb413c79258daeb584c6c715":[17,0,1,90],
-"namespacematplotlibcpp.html#a61bc8aab0ceca9c4df59dbbccc8ffb3f":[17,0,1,30],
-"namespacematplotlibcpp.html#a61e468c9ffbf0eb5f85bbe69d9f5ecd2":[17,0,1,10],
-"namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447":[17,0,1,16],
-"namespacematplotlibcpp.html#a63173b57d788807c1c6860dbc7961e40":[17,0,1,22],
-"namespacematplotlibcpp.html#a6461c03041d9947a0e3b3593b5b72c95":[17,0,1,40],
-"namespacematplotlibcpp.html#a6479afec926d90fdf3309cf2a88db030":[17,0,1,78],
-"namespacematplotlibcpp.html#a6975063d8a58339a374bc7d33e568090":[17,0,1,76],
-"namespacematplotlibcpp.html#a6cfa8cba00f52a2c4614fa7a8a0bcd2b":[17,0,1,35],
-"namespacematplotlibcpp.html#a6de552522cdfa4d42e1ab11364f34a18":[17,0,1,80],
-"namespacematplotlibcpp.html#a712cd34472b3687668048899bee4cdbf":[17,0,1,84],
-"namespacematplotlibcpp.html#a74882742dd5b2fa53cce6c2d4f5bbc2c":[17,0,1,6]
+"namespacematplotlibcpp.html#a61bc8aab0ceca9c4df59dbbccc8ffb3f":[17,0,1,30]
 };

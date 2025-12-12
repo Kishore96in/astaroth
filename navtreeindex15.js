@@ -1,5 +1,15 @@
 var NAVTREEINDEX15 =
 {
+"smooth__max_8h.html#a525c17e9a055cc828e5ca108d393d2e6":[19,0,0,5,22,183],
+"smooth__max_8h.html#a539b228f994bbf62fdf09a0630d4df8d":[19,0,0,5,22,68],
+"smooth__max_8h.html#a53dbcc03a267a818846a05d32dd1f2db":[19,0,0,5,22,307],
+"smooth__max_8h.html#a53e765f0b80937ee0beeef801279d302":[19,0,0,5,22,230],
+"smooth__max_8h.html#a555de0e7871be26b45ceaf071c87325b":[19,0,0,5,22,73],
+"smooth__max_8h.html#a559acead52be577549309163a10558cf":[19,0,0,5,22,301],
+"smooth__max_8h.html#a5660b16b807a422c5517b7b24c68f649":[19,0,0,5,22,128],
+"smooth__max_8h.html#a58756c927927f59c62ef4d6be1a5a4a2":[19,0,0,5,22,54],
+"smooth__max_8h.html#a59befb56aa96624ae20a4a91b7141101":[19,0,0,5,22,305],
+"smooth__max_8h.html#a5a419cd7cad059e465041dfb192560f0":[19,0,0,5,22,37],
 "smooth__max_8h.html#a5a7f2be927044db605471825b71f4dc8":[19,0,0,5,22,196],
 "smooth__max_8h.html#a5ad5f2211aeb50410b772ffed121cd27":[19,0,0,5,22,267],
 "smooth__max_8h.html#a5bb58f4e7d89b97358cbc4b61375832e":[19,0,0,5,22,290],
@@ -239,15 +249,5 @@ var NAVTREEINDEX15 =
 "src_2core_2kernels_2kernels_8h.html#a892978f52f6fc57c140ce82f696962fb":[19,0,6,0,3,6,12],
 "src_2core_2kernels_2kernels_8h.html#ab23040def925e3d1cf0dd370fe97e541":[19,0,6,0,3,6,19],
 "src_2core_2kernels_2kernels_8h.html#ab463afa53fe5c6a48c6b337292a0eae0":[19,0,6,0,3,6,5],
-"src_2core_2kernels_2kernels_8h.html#ab532549c38e084f0edc4f37e4e32dfb9":[19,0,6,0,3,6,17],
-"src_2core_2kernels_2kernels_8h.html#abf1332c19cfbe2f3bfd8cef07478f583":[19,0,6,0,3,6,1],
-"src_2core_2kernels_2kernels_8h.html#ad86ee529eb80726fe89352c845083ede":[19,0,6,0,3,6,9],
-"src_2core_2kernels_2kernels_8h.html#ae2597b7ff038a9185da174774f045e5b":[19,0,6,0,3,6,14],
-"src_2core_2kernels_2kernels_8h.html#ae8c1559adcafd9ffaa6b063f0558fe28":[19,0,6,0,3,6,2],
-"src_2core_2kernels_2kernels_8h.html#af817b3993995cc1e014f0a508a39ba6f":[19,0,6,0,3,6,4],
-"src_2core_2kernels_2kernels_8h_source.html":[19,0,6,0,3,6],
-"src_2utils_2empty_8c.html":[19,0,6,1,3],
-"standalone__params_8h.html":[19,0,0,6],
-"standalone__params_8h_source.html":[19,0,0,6],
-"static__analysis_8cc.html":[19,0,0,1,20]
+"src_2core_2kernels_2kernels_8h.html#ab532549c38e084f0edc4f37e4e32dfb9":[19,0,6,0,3,6,17]
 };

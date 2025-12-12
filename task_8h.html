@@ -141,6 +141,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPIScanTask.html">MPIScanTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodicRayTask.html">PeriodicRayTask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundaryConditionTask.html">BoundaryConditionTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReduceTask.html">ReduceTask</a></td></tr>
@@ -171,6 +173,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a7e2525a59aae9c503118f397dd95c8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44367f7e4789b2ff3d8156ac041967ff" id="r_a44367f7e4789b2ff3d8156ac041967ff"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classMPIScanTask.html">MPIScanTask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#a44367f7e4789b2ff3d8156ac041967ff">MPIScanTask</a></td></tr>
 <tr class="separator:a44367f7e4789b2ff3d8156ac041967ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f7cc0e68725ac575b73efbf4fad072" id="r_a23f7cc0e68725ac575b73efbf4fad072"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classPeriodicRayTask.html">PeriodicRayTask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#a23f7cc0e68725ac575b73efbf4fad072">PeriodicRayTask</a></td></tr>
+<tr class="separator:a23f7cc0e68725ac575b73efbf4fad072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad995100dcbb5ae70e26e47eed394b2b4" id="r_ad995100dcbb5ae70e26e47eed394b2b4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classBoundaryConditionTask.html">BoundaryConditionTask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#ad995100dcbb5ae70e26e47eed394b2b4">BoundaryConditionTask</a></td></tr>
 <tr class="separator:ad995100dcbb5ae70e26e47eed394b2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e99d9c847fd8eddde97579aa1fbcff" id="r_aa3e99d9c847fd8eddde97579aa1fbcff"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classReduceTask.html">ReduceTask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#aa3e99d9c847fd8eddde97579aa1fbcff">ReduceTask</a></td></tr>
@@ -214,6 +218,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="task_8h.html#a29eeaf568356aeef4c36b6f3150b7219a9b87ab5a4e2e99d758991f06cad9c3bf">Unpacking</a>
  }</td></tr>
 <tr class="separator:a29eeaf568356aeef4c36b6f3150b7219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d08741fcaeb095fbc3423bce5689b4d" id="r_a5d08741fcaeb095fbc3423bce5689b4d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4d">PeriodicRayTaskState</a> { <a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da5706de961fb376d701be6e7762d8b09c">Waiting</a> = Task::wait_state
+, <a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4dac46192253e8458f209a350a132cfc876">Packing</a>
+, <a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4daeebb983d809918455d164604bb200561">Communicating</a>
+, <a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf">Unpacking</a>
+ }</td></tr>
+<tr class="separator:a5d08741fcaeb095fbc3423bce5689b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab624ed55ed3692f5b77adcfd7511cf99" id="r_ab624ed55ed3692f5b77adcfd7511cf99"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_8h.html#ab624ed55ed3692f5b77adcfd7511cf99">BoundaryConditionState</a> { <a class="el" href="task_8h.html#ab624ed55ed3692f5b77adcfd7511cf99a5706de961fb376d701be6e7762d8b09c">Waiting</a> = Task::wait_state
 , <a class="el" href="task_8h.html#ab624ed55ed3692f5b77adcfd7511cf99a5bda814c4aedb126839228f1a3d92f09">Running</a>
  }</td></tr>
@@ -346,6 +356,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef  <a class="el" href="classMPIScanTask.html">MPIScanTask</a> <a class="el" href="classMPIScanTask.html">MPIScanTask</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23f7cc0e68725ac575b73efbf4fad072" name="a23f7cc0e68725ac575b73efbf4fad072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f7cc0e68725ac575b73efbf4fad072">&#9670;&#160;</a></span>PeriodicRayTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  <a class="el" href="classPeriodicRayTask.html">PeriodicRayTask</a> <a class="el" href="classPeriodicRayTask.html">PeriodicRayTask</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -515,6 +539,34 @@ Task interface</h2>
 <tr><td class="fieldname"><a id="a29eeaf568356aeef4c36b6f3150b7219ac46192253e8458f209a350a132cfc876" name="a29eeaf568356aeef4c36b6f3150b7219ac46192253e8458f209a350a132cfc876"></a>Packing&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a29eeaf568356aeef4c36b6f3150b7219aeebb983d809918455d164604bb200561" name="a29eeaf568356aeef4c36b6f3150b7219aeebb983d809918455d164604bb200561"></a>Communicating&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a29eeaf568356aeef4c36b6f3150b7219a9b87ab5a4e2e99d758991f06cad9c3bf" name="a29eeaf568356aeef4c36b6f3150b7219a9b87ab5a4e2e99d758991f06cad9c3bf"></a>Unpacking&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5d08741fcaeb095fbc3423bce5689b4d" name="a5d08741fcaeb095fbc3423bce5689b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d08741fcaeb095fbc3423bce5689b4d">&#9670;&#160;</a></span>PeriodicRayTaskState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="task_8h.html#a5d08741fcaeb095fbc3423bce5689b4d">PeriodicRayTaskState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d08741fcaeb095fbc3423bce5689b4da5706de961fb376d701be6e7762d8b09c" name="a5d08741fcaeb095fbc3423bce5689b4da5706de961fb376d701be6e7762d8b09c"></a>Waiting&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d08741fcaeb095fbc3423bce5689b4dac46192253e8458f209a350a132cfc876" name="a5d08741fcaeb095fbc3423bce5689b4dac46192253e8458f209a350a132cfc876"></a>Packing&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d08741fcaeb095fbc3423bce5689b4daeebb983d809918455d164604bb200561" name="a5d08741fcaeb095fbc3423bce5689b4daeebb983d809918455d164604bb200561"></a>Communicating&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf" name="a5d08741fcaeb095fbc3423bce5689b4da9b87ab5a4e2e99d758991f06cad9c3bf"></a>Unpacking&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

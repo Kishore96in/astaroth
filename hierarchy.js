@@ -128,6 +128,7 @@ var hierarchy =
       [ "ComputeTask", "classComputeTask.html", null ],
       [ "HaloExchangeTask", "classHaloExchangeTask.html", null ],
       [ "MPIScanTask", "classMPIScanTask.html", null ],
+      [ "PeriodicRayTask", "classPeriodicRayTask.html", null ],
       [ "ReduceTask", "classReduceTask.html", null ]
     ] ],
     [ "TBConfig", "structTBConfig.html", null ],

@@ -6,7 +6,7 @@ var searchData=
   ['operator_2a_3',['operator*',['../structAcMatrix.html#a5e1fc62911b0852d18e120d76d104a18',1,'AcMatrix']]],
   ['operator_2b_4',['operator+',['../reindex_8cu.html#af5058d006c997a098ab9243420fe05be',1,'reindex.cu']]],
   ['operator_2d_5',['operator-',['../structAcMatrix.html#a65403fbb1acfd8b970a48c14967e194b',1,'AcMatrix']]],
-  ['operator_3d_6',['operator=',['../structAcMatrix.html#acbc633bdb656c2bc8a186f644e5db31e',1,'AcMatrix::operator=()'],['../classMPIScanTask.html#a6d9aaa2c783ec3fe6e40ac8465c09a8c',1,'MPIScanTask::operator=()'],['../classHaloExchangeTask.html#a50b380e95000a2a4076b948afc063949',1,'HaloExchangeTask::operator=()'],['../classComputeTask.html#a7371e943795da5b7bfc3458f44fdfde7',1,'ComputeTask::operator=()']]],
+  ['operator_3d_6',['operator=',['../classComputeTask.html#a7371e943795da5b7bfc3458f44fdfde7',1,'ComputeTask::operator=()'],['../classPeriodicRayTask.html#a0182302927d9cfcf4befe686d1630833',1,'PeriodicRayTask::operator=()'],['../classMPIScanTask.html#a6d9aaa2c783ec3fe6e40ac8465c09a8c',1,'MPIScanTask::operator=()'],['../classHaloExchangeTask.html#a50b380e95000a2a4076b948afc063949',1,'HaloExchangeTask::operator=()'],['../structAcMatrix.html#acbc633bdb656c2bc8a186f644e5db31e',1,'AcMatrix::operator=()']]],
   ['outgoing_5fray_7',['outgoing_ray',['../radiation__ray_8h.html#acf60b2978af006e709cf5793edc2eeaa',1,'radiation_ray.h']]],
   ['outgoing_5fray_5flength_8',['outgoing_ray_length',['../radiation__ray_8h.html#a982fb04fcf6118f9846258a1c6029186',1,'radiation_ray.h']]],
   ['output_5farray_5finfo_9',['output_array_info',['../codegen_8c.html#a19db8e14f7e87825d35e140d7cc493ca',1,'codegen.c']]],
