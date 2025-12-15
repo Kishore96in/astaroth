@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('poisson_8h_source.html',''); initResiz
 <div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="poisson_8h.html#a0fb40789fabc4108975aa957a5897837">   60</a></span><a class="code hl_function" href="poisson_8h.html#ab7135eef156202e40a8c605a7d022249">poisson_sor_red_black</a>(<span class="keywordtype">int</span> color, real density, Field potential, real omega,<a class="code hl_struct" href="structreal3.html">real3</a> inv_spacings)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="poisson_8h.html#ab7135eef156202e40a8c605a7d022249">poisson_sor_red_black</a>(color,density,potential,omega,1.0,inv_spacings)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="poisson_8h.html#ab7135eef156202e40a8c605a7d022249">poisson_sor_red_black</a>(color,density,potential,omega,1.0,inv_spacings)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('poisson_8h_source.html',''); initResiz
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>poisson_jacobi_update_extended(real <a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a> , Field x_prev)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    poisson_jacobi_update_extended(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>,x_prev,1.0)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> poisson_jacobi_update_extended(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>,x_prev,1.0)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>poisson_jacobi_update_extended(real <a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a> , Field x_prev, real laplace_sign, <a class="code hl_struct" href="structreal3.html">real3</a> inv_spacings_2)</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('poisson_8h_source.html',''); initResiz
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>poisson_jacobi_update_extended(real <a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a> , Field x_prev, <a class="code hl_struct" href="structreal3.html">real3</a> inv_spacings)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    poisson_jacobi_update_extended(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>,x_prev,1.0,inv_spacings_2)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> poisson_jacobi_update_extended(<a class="code hl_variable" href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a>,x_prev,1.0,inv_spacings_2)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>poisson_sor_red_black_extended(<span class="keywordtype">int</span> color, real density, Field potential, real omega, real laplace_sign)</div>
