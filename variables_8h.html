@@ -228,6 +228,8 @@ Variables</h2></td></tr>
 <tr class="separator:a7dcc57935ad7014ac85fba68f58a4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3edda77578e3a4fccf211b9b286421f" id="r_ae3edda77578e3a4fccf211b9b286421f"><td class="memItemLeft" align="right" valign="top">input real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#ae3edda77578e3a4fccf211b9b286421f">AC_shear_delta_y</a></td></tr>
 <tr class="separator:ae3edda77578e3a4fccf211b9b286421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca916d17435b86b3906235c522253f9" id="r_a8ca916d17435b86b3906235c522253f9"><td class="memItemLeft" align="right" valign="top">input <a class="el" href="typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892d">AcRedBlackState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a8ca916d17435b86b3906235c522253f9">AC_red_black_halo_exchange</a></td></tr>
+<tr class="separator:a8ca916d17435b86b3906235c522253f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218c3859ebce0edf3553c7285def2c52" id="r_a218c3859ebce0edf3553c7285def2c52"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structint3.html">int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a218c3859ebce0edf3553c7285def2c52">AC_raytracing_block_factors</a> = (<a class="el" href="structint3.html">int3</a>){1,1,1}</td></tr>
 <tr class="separator:a218c3859ebce0edf3553c7285def2c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abad5433c0c7f8af1b476dacc81945e24" id="r_abad5433c0c7f8af1b476dacc81945e24"><td class="memItemLeft" align="right" valign="top">run_const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#abad5433c0c7f8af1b476dacc81945e24">AC_x_ray_shared_mem_block_size</a> = 32</td></tr>
@@ -1166,6 +1168,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>How to decompose the full 3d cube to smaller cubes for raytracing kernels. Needed for large subdomains since raytracing uses co-operative kernel launches, which require the full kernel launch to fit on the SMs at the same time. </p>
+
+</div>
+</div>
+<a id="a8ca916d17435b86b3906235c522253f9" name="a8ca916d17435b86b3906235c522253f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca916d17435b86b3906235c522253f9">&#9670;&#160;</a></span>AC_red_black_halo_exchange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">input <a class="el" href="typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892d">AcRedBlackState</a> AC_red_black_halo_exchange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the next halo exchange should be optimized to communicate only red or black or all values. Naturally by default all values are communicated </p>
 
 </div>
 </div>

@@ -18,10 +18,13 @@ var searchData=
   ['ac_5fproc_5fmapping_5fstrategy_5flinear_15',['AC_PROC_MAPPING_STRATEGY_LINEAR',['../typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61a4814ee29b0b65f94c164c468f009b733',1,'typedefs.h']]],
   ['ac_5fproc_5fmapping_5fstrategy_5fmorton_16',['AC_PROC_MAPPING_STRATEGY_MORTON',['../typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61aa61f3b548a9aa0018b40645bf923b920',1,'typedefs.h']]],
   ['ac_5fradial_5fwindow_5frms_17',['AC_RADIAL_WINDOW_RMS',['../typedefs_8h.html#a6e5c882953eef46d1945543099571189a5f8b60b0be8c1a29b92d6f6635eaaacf',1,'typedefs.h']]],
-  ['ac_5frms_18',['AC_RMS',['../typedefs_8h.html#a6e5c882953eef46d1945543099571189a6808798aff5115e511c7fe369f889bbd',1,'typedefs.h']]],
-  ['ac_5fspherical_5fcoordinates_19',['AC_SPHERICAL_COORDINATES',['../typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02',1,'typedefs.h']]],
-  ['ac_5fsuccess_20',['AC_SUCCESS',['../host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf',1,'host_datatypes.h']]],
-  ['ac_5ftop_21',['AC_TOP',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a45a6d8680445e247ecbf30f571553643',1,'astaroth_base.h']]],
-  ['ac_5fxz_22',['AC_XZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a08bb143a0b28c4876ee060d4feb17a44',1,'astaroth_base.h']]],
-  ['ac_5fyz_23',['AC_YZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78aa47b9f1c0b9f0e52479034c4c43cc4c9',1,'astaroth_base.h']]]
+  ['ac_5fred_5fblack_5fstate_5fblack_18',['AC_RED_BLACK_STATE_BLACK',['../typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da8ae088a1ffea6e2810ee16ff74f8dc36',1,'typedefs.h']]],
+  ['ac_5fred_5fblack_5fstate_5fnone_19',['AC_RED_BLACK_STATE_NONE',['../typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da1e37664936740c7a6aa01ba5d0156d7c',1,'typedefs.h']]],
+  ['ac_5fred_5fblack_5fstate_5fred_20',['AC_RED_BLACK_STATE_RED',['../typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da86617443e19e08cc415bb7d98605839c',1,'typedefs.h']]],
+  ['ac_5frms_21',['AC_RMS',['../typedefs_8h.html#a6e5c882953eef46d1945543099571189a6808798aff5115e511c7fe369f889bbd',1,'typedefs.h']]],
+  ['ac_5fspherical_5fcoordinates_22',['AC_SPHERICAL_COORDINATES',['../typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02',1,'typedefs.h']]],
+  ['ac_5fsuccess_23',['AC_SUCCESS',['../host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf',1,'host_datatypes.h']]],
+  ['ac_5ftop_24',['AC_TOP',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a45a6d8680445e247ecbf30f571553643',1,'astaroth_base.h']]],
+  ['ac_5fxz_25',['AC_XZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78a08bb143a0b28c4876ee060d4feb17a44',1,'astaroth_base.h']]],
+  ['ac_5fyz_26',['AC_YZ',['../astaroth__base_8h.html#a63f31c6e4874260362c8995061883c78aa47b9f1c0b9f0e52479034c4c43cc4c9',1,'astaroth_base.h']]]
 ];

@@ -12,6 +12,7 @@ var helpers_8cc =
     [ "acShapeSize", "helpers_8cc.html#a4f560e71c6c03f8ddf7e5ac5f1b10268", null ],
     [ "ceil", "helpers_8cc.html#a3204f9ae82e8fce4799e39edab39c770", null ],
     [ "ceil_div", "helpers_8cc.html#a24d94052a910dc4835ad35752434b4b2", null ],
+    [ "ceil_div", "helpers_8cc.html#a04b63a5a02c038ca65729f1a5ab6985e", null ],
     [ "ceil_div", "helpers_8cc.html#aa8dda59618cb1d51f7a3e45d7d8d9f51", null ],
     [ "ceil_div", "helpers_8cc.html#a1880238f758d1fc1ce0a10b4074de822", null ],
     [ "ceil_div", "helpers_8cc.html#ae9e138d63a6ffd5198cf9126760f9e97", null ],

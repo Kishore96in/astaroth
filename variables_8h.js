@@ -58,6 +58,7 @@ var variables_8h =
     [ "AC_periodic_grid", "variables_8h.html#a6ca93276d81ba80730554d4a68d36456", null ],
     [ "AC_proc_mapping_strategy", "variables_8h.html#aa96f23ee7c1b05a42481c76ecfd97a7b", null ],
     [ "AC_raytracing_block_factors", "variables_8h.html#a218c3859ebce0edf3553c7285def2c52", null ],
+    [ "AC_red_black_halo_exchange", "variables_8h.html#a8ca916d17435b86b3906235c522253f9", null ],
     [ "AC_reduction_tile_dimensions", "variables_8h.html#a3fd182fbc9f9742f765b6948d95a77ec", null ],
     [ "AC_shear", "variables_8h.html#a96ac4bcf2dfc800f8ccaf48c2989ef06", null ],
     [ "AC_shear_delta_y", "variables_8h.html#ae3edda77578e3a4fccf211b9b286421f", null ],

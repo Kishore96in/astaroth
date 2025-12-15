@@ -79,6 +79,11 @@ var typedefs_8h =
       [ "AC_PROC_MAPPING_STRATEGY_LINEAR", "typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61a4814ee29b0b65f94c164c468f009b733", null ],
       [ "AC_PROC_MAPPING_STRATEGY_HIERARCHICAL", "typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61a1c9a01d2c517f4da0d766724c3777e8b", null ]
     ] ],
+    [ "AcRedBlackState", "typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892d", [
+      [ "AC_RED_BLACK_STATE_NONE", "typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da1e37664936740c7a6aa01ba5d0156d7c", null ],
+      [ "AC_RED_BLACK_STATE_RED", "typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da86617443e19e08cc415bb7d98605839c", null ],
+      [ "AC_RED_BLACK_STATE_BLACK", "typedefs_8h.html#aa9740fdf8025036be1c655b9e66c892da8ae088a1ffea6e2810ee16ff74f8dc36", null ]
+    ] ],
     [ "AcReductionPostProcessingOp", "typedefs_8h.html#a6e5c882953eef46d1945543099571189", [
       [ "AC_NO_REDUCE_POST_PROCESSING", "typedefs_8h.html#a6e5c882953eef46d1945543099571189ad595c2d4b4cde82f10e07e4fd62091b4", null ],
       [ "AC_RMS", "typedefs_8h.html#a6e5c882953eef46d1945543099571189a6808798aff5115e511c7fe369f889bbd", null ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX15 =
 {
+"smooth__max_8h.html#a5106b881a84f379043113d62dad50a7c":[19,0,0,5,22,148],
+"smooth__max_8h.html#a5160f934184031807caf4865dd371861":[19,0,0,5,22,239],
+"smooth__max_8h.html#a51671834e2611c8ebac73179139da24c":[19,0,0,5,22,103],
 "smooth__max_8h.html#a51bc1048dc75fa4b124dc84e99b15829":[19,0,0,5,22,129],
 "smooth__max_8h.html#a51c7797d521d0159414ecce1bbfe1bc0":[19,0,0,5,22,286],
 "smooth__max_8h.html#a522844611a4d0ec314628dbb55ffbaeb":[19,0,0,5,22,199],
@@ -239,15 +242,12 @@ var NAVTREEINDEX15 =
 "spherical__harmonics_8h.html":[19,0,0,5,23],
 "spherical__harmonics_8h_source.html":[19,0,0,5,23],
 "src_2core_2kernels_2kernels_8h.html":[19,0,6,0,3,6],
-"src_2core_2kernels_2kernels_8h.html#a0434e387f38177be4ca6b2c1fac1e5cd":[19,0,6,0,3,6,16],
-"src_2core_2kernels_2kernels_8h.html#a08f80594de4c0830634a1a8247bf9b4a":[19,0,6,0,3,6,18],
+"src_2core_2kernels_2kernels_8h.html#a0434e387f38177be4ca6b2c1fac1e5cd":[19,0,6,0,3,6,18],
+"src_2core_2kernels_2kernels_8h.html#a08f80594de4c0830634a1a8247bf9b4a":[19,0,6,0,3,6,20],
 "src_2core_2kernels_2kernels_8h.html#a0c0608ac2b82c2246acca212683c7645":[19,0,6,0,3,6,3],
-"src_2core_2kernels_2kernels_8h.html#a33ea05b8ab6d864ba8166952e23517e4":[19,0,6,0,3,6,11],
-"src_2core_2kernels_2kernels_8h.html#a3c6cb6c88223f7888961d61a220d8783":[19,0,6,0,3,6,13],
-"src_2core_2kernels_2kernels_8h.html#a3eb7e1a23a79ff2ce47bb7b630edd958":[19,0,6,0,3,6,15],
-"src_2core_2kernels_2kernels_8h.html#a47b4ab2949c94456efe0f013015abf79":[19,0,6,0,3,6,7],
-"src_2core_2kernels_2kernels_8h.html#a5c71807723d0561cc67c781f849a588a":[19,0,6,0,3,6,8],
-"src_2core_2kernels_2kernels_8h.html#a5d6f15c2faba2515188fcd6a9431ab89":[19,0,6,0,3,6,10],
-"src_2core_2kernels_2kernels_8h.html#a6685c28051d259ea0b865af28e1c4d16":[19,0,6,0,3,6,6],
-"src_2core_2kernels_2kernels_8h.html#a892978f52f6fc57c140ce82f696962fb":[19,0,6,0,3,6,12]
+"src_2core_2kernels_2kernels_8h.html#a217d4ed2e313d629f6b436968a323a71":[19,0,6,0,3,6,15],
+"src_2core_2kernels_2kernels_8h.html#a33ea05b8ab6d864ba8166952e23517e4":[19,0,6,0,3,6,12],
+"src_2core_2kernels_2kernels_8h.html#a3c6cb6c88223f7888961d61a220d8783":[19,0,6,0,3,6,14],
+"src_2core_2kernels_2kernels_8h.html#a3eb7e1a23a79ff2ce47bb7b630edd958":[19,0,6,0,3,6,17],
+"src_2core_2kernels_2kernels_8h.html#a47b4ab2949c94456efe0f013015abf79":[19,0,6,0,3,6,8]
 };
