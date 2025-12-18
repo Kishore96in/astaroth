@@ -3403,10 +3403,10 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="line"><a id="l03301" name="l03301"></a><span class="lineno"> 3301</span>derx_upwind(Field f, real vec)</div>
 <div class="line"><a id="l03302" name="l03302"></a><span class="lineno"> 3302</span>{</div>
 <div class="line"><a id="l03303" name="l03303"></a><span class="lineno"> 3303</span>    <span class="comment">//TP: to get both stencil correctly generated we compute both always</span></div>
-<div class="line"><a id="l03304" name="l03304"></a><span class="lineno"> 3304</span>    left = derx_upwind_left(f)</div>
-<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>    right = derx_upwind_right(f)</div>
-<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>    <span class="keywordflow">if</span> (vec.x &gt; 0.0) left</div>
-<div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span>    <span class="keywordflow">return</span> right</div>
+<div class="line"><a id="l03304" name="l03304"></a><span class="lineno"> 3304</span>    <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> = derx_upwind_left(f)</div>
+<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>    <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a> = derx_upwind_right(f)</div>
+<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>    <span class="keywordflow">if</span> (vec.x &gt; 0.0) <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a></div>
+<div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
 <div class="line"><a id="l03308" name="l03308"></a><span class="lineno"> 3308</span>}</div>
 <div class="line"><a id="l03309" name="l03309"></a><span class="lineno"> 3309</span> </div>
 <div class="line"><a id="l03310" name="l03310"></a><span class="lineno"> 3310</span>dery_upwind(Field f, real vec)</div>
@@ -3550,6 +3550,8 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="ttc" id="ageneral__grid_2vars_8h_html_ad18fc072249673308db0aedef2fcccb9"><div class="ttname"><a href="general__grid_2vars_8h.html#ad18fc072249673308db0aedef2fcccb9">AC_MAPPING_FUNC_TILDE_Y</a></div><div class="ttdeci">#define AC_MAPPING_FUNC_TILDE_Y</div></div>
 <div class="ttc" id="ageneral__grid_2vars_8h_html_af46c31ff7745eb7ac2512c0d18d34c73"><div class="ttname"><a href="general__grid_2vars_8h.html#af46c31ff7745eb7ac2512c0d18d34c73">AC_MAPPING_FUNC_TILDE_Z</a></div><div class="ttdeci">#define AC_MAPPING_FUNC_TILDE_Z</div></div>
 <div class="ttc" id="ageneral__grid_2vars_8h_html_af7f5445879c2ebe7fc7de7bfcb487a26"><div class="ttname"><a href="general__grid_2vars_8h.html#af7f5445879c2ebe7fc7de7bfcb487a26">AC_INV_CYL_R</a></div><div class="ttdeci">#define AC_INV_CYL_R</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a5cc53ca45b4e6c162559423069c5e989"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div><div class="ttdeci">real right</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:12</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_ab5fd94dcb6ece8b551146d8557b24583"><div class="ttname"><a href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a></div><div class="ttdeci">struct sld_interface_values left</div></div>
 <div class="ttc" id="astdderiv_8h_html_a00bc8e8e8fa119f80ad306d187909b3b"><div class="ttname"><a href="stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b">deryz</a></div><div class="ttdeci">Scalar deryz(int3 vertexIdx, in ScalarField arr)</div><div class="ttdef"><b>Definition</b> stdderiv.h:174</div></div>
 <div class="ttc" id="astdderiv_8h_html_a10564839083b4c35031b7af19017f0cf"><div class="ttname"><a href="stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf">dery</a></div><div class="ttdeci">Scalar dery(int3 vertexIdx, in ScalarField arr)</div><div class="ttdef"><b>Definition</b> stdderiv.h:150</div></div>
 <div class="ttc" id="astdderiv_8h_html_a2153d5a23ca2af0ac1f7a4c47ae913da"><div class="ttname"><a href="stdderiv_8h.html#a2153d5a23ca2af0ac1f7a4c47ae913da">derxy</a></div><div class="ttdeci">Scalar derxy(int3 vertexIdx, in ScalarField arr)</div><div class="ttdef"><b>Definition</b> stdderiv.h:111</div></div>

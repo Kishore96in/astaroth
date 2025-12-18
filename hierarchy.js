@@ -115,6 +115,7 @@ var hierarchy =
     [ "size_t2", "structsize__t2.html", null ],
     [ "size_t2Hash", "structsize__t2Hash.html", null ],
     [ "sld_fluxes", "structsld__fluxes.html", null ],
+    [ "sld_interface_values", "structsld__interface__values.html", null ],
     [ "SOAVector", "structSOAVector.html", null ],
     [ "state", "structstate.html", null ],
     [ "string_vec", "structstring__vec.html", null ],

@@ -121,6 +121,7 @@ var annotated_dup =
     [ "size_t2", "structsize__t2.html", "structsize__t2" ],
     [ "size_t2Hash", "structsize__t2Hash.html", "structsize__t2Hash" ],
     [ "sld_fluxes", "structsld__fluxes.html", "structsld__fluxes" ],
+    [ "sld_interface_values", "structsld__interface__values.html", "structsld__interface__values" ],
     [ "SOAVector", "structSOAVector.html", "structSOAVector" ],
     [ "state", "structstate.html", "structstate" ],
     [ "string_vec", "structstring__vec.html", "structstring__vec" ],

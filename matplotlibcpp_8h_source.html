@@ -2230,13 +2230,13 @@ $(document).ready(function(){initNavTree('matplotlibcpp_8h_source.html',''); ini
 <div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span> </div>
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Numeric&gt;</div>
 <div class="foldopen" id="foldopen02029" data-start="{" data-end="}">
-<div class="line"><a id="l02029" name="l02029"></a><span class="lineno"><a class="line" href="namespacematplotlibcpp.html#a4645651772918e2dad7d36d9eeaeaefa"> 2029</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacematplotlibcpp.html#a7a90e7d9dda953455e23c296906c093a">ylim</a>(Numeric left, Numeric right)</div>
+<div class="line"><a id="l02029" name="l02029"></a><span class="lineno"><a class="line" href="namespacematplotlibcpp.html#a4645651772918e2dad7d36d9eeaeaefa"> 2029</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacematplotlibcpp.html#a7a90e7d9dda953455e23c296906c093a">ylim</a>(Numeric <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>, Numeric <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>)</div>
 <div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>{</div>
 <div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>    <a class="code hl_function" href="structmatplotlibcpp_1_1detail_1_1__interpreter.html#a46fa5e29f74065df085dd3a808fa4dc4">detail::_interpreter::get</a>();</div>
 <div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span> </div>
 <div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span>    PyObject* list = PyList_New(2);</div>
-<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>    PyList_SetItem(list, 0, PyFloat_FromDouble(left));</div>
-<div class="line"><a id="l02035" name="l02035"></a><span class="lineno"> 2035</span>    PyList_SetItem(list, 1, PyFloat_FromDouble(right));</div>
+<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>    PyList_SetItem(list, 0, PyFloat_FromDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>));</div>
+<div class="line"><a id="l02035" name="l02035"></a><span class="lineno"> 2035</span>    PyList_SetItem(list, 1, PyFloat_FromDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>));</div>
 <div class="line"><a id="l02036" name="l02036"></a><span class="lineno"> 2036</span> </div>
 <div class="line"><a id="l02037" name="l02037"></a><span class="lineno"> 2037</span>    PyObject* args = PyTuple_New(1);</div>
 <div class="line"><a id="l02038" name="l02038"></a><span class="lineno"> 2038</span>    PyTuple_SetItem(args, 0, list);</div>
@@ -2251,13 +2251,13 @@ $(document).ready(function(){initNavTree('matplotlibcpp_8h_source.html',''); ini
 <div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span> </div>
 <div class="line"><a id="l02047" name="l02047"></a><span class="lineno"> 2047</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Numeric&gt;</div>
 <div class="foldopen" id="foldopen02048" data-start="{" data-end="}">
-<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"><a class="line" href="namespacematplotlibcpp.html#a712cd34472b3687668048899bee4cdbf"> 2048</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacematplotlibcpp.html#a12ac5a7fc96a03d27b3249fc6a54974f">xlim</a>(Numeric left, Numeric right)</div>
+<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"><a class="line" href="namespacematplotlibcpp.html#a712cd34472b3687668048899bee4cdbf"> 2048</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacematplotlibcpp.html#a12ac5a7fc96a03d27b3249fc6a54974f">xlim</a>(Numeric <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>, Numeric <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>)</div>
 <div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span>{</div>
 <div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span>    <a class="code hl_function" href="structmatplotlibcpp_1_1detail_1_1__interpreter.html#a46fa5e29f74065df085dd3a808fa4dc4">detail::_interpreter::get</a>();</div>
 <div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span> </div>
 <div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>    PyObject* list = PyList_New(2);</div>
-<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>    PyList_SetItem(list, 0, PyFloat_FromDouble(left));</div>
-<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span>    PyList_SetItem(list, 1, PyFloat_FromDouble(right));</div>
+<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>    PyList_SetItem(list, 0, PyFloat_FromDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>));</div>
+<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span>    PyList_SetItem(list, 1, PyFloat_FromDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>));</div>
 <div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span> </div>
 <div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span>    PyObject* args = PyTuple_New(1);</div>
 <div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span>    PyTuple_SetItem(args, 0, list);</div>
@@ -2281,9 +2281,9 @@ $(document).ready(function(){initNavTree('matplotlibcpp_8h_source.html',''); ini
 <div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span> </div>
 <div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>    Py_DECREF(res);</div>
 <div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span> </div>
-<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    PyObject* left = PyTuple_GetItem(res,0);</div>
-<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    PyObject* right = PyTuple_GetItem(res,1);</div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>    <span class="keywordflow">return</span> { PyFloat_AsDouble(left), PyFloat_AsDouble(right) };</div>
+<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    PyObject* <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> = PyTuple_GetItem(res,0);</div>
+<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    PyObject* <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a> = PyTuple_GetItem(res,1);</div>
+<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>    <span class="keywordflow">return</span> { PyFloat_AsDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>), PyFloat_AsDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>) };</div>
 <div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>}</div>
 </div>
 <div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span> </div>
@@ -2298,9 +2298,9 @@ $(document).ready(function(){initNavTree('matplotlibcpp_8h_source.html',''); ini
 <div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span> </div>
 <div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span>    Py_DECREF(res);</div>
 <div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span> </div>
-<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>    PyObject* left = PyTuple_GetItem(res,0);</div>
-<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>    PyObject* right = PyTuple_GetItem(res,1);</div>
-<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>    <span class="keywordflow">return</span> { PyFloat_AsDouble(left), PyFloat_AsDouble(right) };</div>
+<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>    PyObject* <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> = PyTuple_GetItem(res,0);</div>
+<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>    PyObject* <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a> = PyTuple_GetItem(res,1);</div>
+<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>    <span class="keywordflow">return</span> { PyFloat_AsDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>), PyFloat_AsDouble(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>) };</div>
 <div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>}</div>
 </div>
 <div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span> </div>
@@ -3373,6 +3373,8 @@ $(document).ready(function(){initNavTree('matplotlibcpp_8h_source.html',''); ini
 <div class="ttc" id="anamespacematplotlibcpp_html_aeb9566045d6e782203d5a1a3fb28d953"><div class="ttname"><a href="namespacematplotlibcpp.html#aeb9566045d6e782203d5a1a3fb28d953">matplotlibcpp::quiver</a></div><div class="ttdeci">bool quiver(const std::vector&lt; NumericX &gt; &amp;x, const std::vector&lt; NumericY &gt; &amp;y, const std::vector&lt; NumericU &gt; &amp;u, const std::vector&lt; NumericW &gt; &amp;w, const std::map&lt; std::string, std::string &gt; &amp;keywords={})</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:1416</div></div>
 <div class="ttc" id="anamespacematplotlibcpp_html_af92a54960e14b533229719bb85f04ee0"><div class="ttname"><a href="namespacematplotlibcpp.html#af92a54960e14b533229719bb85f04ee0">matplotlibcpp::barh</a></div><div class="ttdeci">bool barh(const std::vector&lt; Numeric &gt; &amp;x, const std::vector&lt; Numeric &gt; &amp;y, std::string ec=&quot;black&quot;, std::string ls=&quot;-&quot;, double lw=1.0, const std::map&lt; std::string, std::string &gt; &amp;keywords={ })</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:1280</div></div>
 <div class="ttc" id="areindex_8cu_html_a805fa490e79f7a5aa6484f94206e39eb"><div class="ttname"><a href="reindex_8cu.html#a805fa490e79f7a5aa6484f94206e39eb">b</a></div><div class="ttdeci">static __host__ __device__ constexpr AcIndex const AcIndex &amp; b</div><div class="ttdef"><b>Definition</b> reindex.cu:19</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a5cc53ca45b4e6c162559423069c5e989"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div><div class="ttdeci">real right</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:12</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_ab5fd94dcb6ece8b551146d8557b24583"><div class="ttname"><a href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a></div><div class="ttdeci">struct sld_interface_values left</div></div>
 <div class="ttc" id="astdderiv_8h_html_a19558133ffcf07b3e0757a2c7787baa7"><div class="ttname"><a href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a></div><div class="ttdeci">Preprocessed Scalar value(in ScalarField vertex)</div><div class="ttdef"><b>Definition</b> stdderiv.h:218</div></div>
 <div class="ttc" id="astructmatplotlibcpp_1_1detail_1_1__interpreter_html"><div class="ttname"><a href="structmatplotlibcpp_1_1detail_1_1__interpreter.html">matplotlibcpp::detail::_interpreter</a></div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:48</div></div>
 <div class="ttc" id="astructmatplotlibcpp_1_1detail_1_1__interpreter_html_a02240576433a09106044a30dfb2ba4e9"><div class="ttname"><a href="structmatplotlibcpp_1_1detail_1_1__interpreter.html#a02240576433a09106044a30dfb2ba4e9">matplotlibcpp::detail::_interpreter::s_python_function_axhline</a></div><div class="ttdeci">PyObject * s_python_function_axhline</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:78</div></div>

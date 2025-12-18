@@ -1,6 +1,6 @@
 var structsld__fluxes =
 [
-    [ "x", "structsld__fluxes.html#a38c69621e6ed8178cbb21063084299e1", null ],
-    [ "y", "structsld__fluxes.html#ab8058dc6c93531a08859bbb82eb89c0e", null ],
-    [ "z", "structsld__fluxes.html#ac5b134b871ead937db0dbd0a8dcad9d2", null ]
+    [ "x", "structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245", null ],
+    [ "y", "structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1", null ],
+    [ "z", "structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b", null ]
 ];
