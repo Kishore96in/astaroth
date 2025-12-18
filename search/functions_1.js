@@ -83,7 +83,7 @@ var searchData=
   ['ac_5fmath_5ffft_5fincluded_80',['AC_MATH_FFT_INCLUDED',['../acc-runtime_2stdlib_2math_2fft_8h.html#a27564c035b06449fc725f453e4546299',1,'fft.h']]],
   ['ac_5fmultiply_5finplace_81',['AC_MULTIPLY_INPLACE',['../acc-runtime_2built-in_2kernels_8h.html#a21b63ea4d830011d5fc942a5264d21c9',1,'kernels.h']]],
   ['ac_5fmultiply_5finplace_5fcomplex_82',['AC_MULTIPLY_INPLACE_COMPLEX',['../acc-runtime_2built-in_2kernels_8h.html#a752912111fdd8821d1222278a4b8c770',1,'kernels.h']]],
-  ['ac_5fnull_5fkernel_83',['AC_NULL_KERNEL',['../acc-runtime_2built-in_2kernels_8h.html#ae3e9955b6e5fe3e85c02b5f42df63e1b',1,'kernels.h']]],
+  ['ac_5fnull_5fkernel_83',['AC_NULL_KERNEL',['../acc-runtime_2built-in_2kernels_8h.html#a11cb24db253e71a45437badb67cfe578',1,'kernels.h']]],
   ['ac_5fplanar_5fto_5fcomplex_84',['AC_PLANAR_TO_COMPLEX',['../acc-runtime_2built-in_2kernels_8h.html#ad7eef89aa8afdac0bb93a39bae632ab5',1,'kernels.h']]],
   ['ac_5fprescribed_5fderivative_85',['ac_prescribed_derivative',['../bc_8h.html#a6bbc8a2860cee2e0425bba4de78606c7',1,'bc.h']]],
   ['ac_5fradiation_5fray_5fincluded_86',['AC_RADIATION_RAY_INCLUDED',['../radiation__ray_8h.html#ac335b842c31175ed78eb860b8b248d5d',1,'radiation_ray.h']]],
