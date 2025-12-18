@@ -705,7 +705,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    f_m1 = sld_get_left(f)</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    f_p1 = sld_get_right(f)</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    heat_x_update = 0.5*(</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    heat_x = 0.5*(</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>              fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a6d790d747653dcfe201ac61548a553c1">AC_INV_MAPPING_FUNC_DER_X</a></div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>            + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_x[vertexIdx.x+1]</div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            )</div>
@@ -715,14 +715,14 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    f_m1 = sld_get_down(f)</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    f_p1 = sld_get_up(f)</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    heat_y_update = 0.5*(</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    heat_y = 0.5*(</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                  fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a2ca0f4f14e791972af43a26fbab89026">AC_INV_MAPPING_FUNC_DER_Y</a></div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_y[vertexIdx.y+1]</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                )</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    {</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        heat_y_update *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        heat_y *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    }</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    density_m1 = sld_get_back_exp(lnrho)</div>
@@ -730,15 +730,15 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    f_m1 = sld_get_back(f)</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    f_p1 = sld_get_front(f)</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    heat_z_update = 0.5*(</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    heat_z = 0.5*(</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                   fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#acd13b4e8c8252dcc3ba2ca1228060b05">AC_INV_MAPPING_FUNC_DER_Z</a></div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                 + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_y[vertexIdx.z+1]</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                 + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_z[vertexIdx.z+1]</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                )</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    {</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        heat_z_update *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        heat_z *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    }</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">return</span> heat_x_update + heat_y_update + heat_z_update</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">return</span> heat_x + heat_y + heat_z</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>}</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>get_slope_limited_divergence_and_heat(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
