@@ -98,30 +98,33 @@ $(document).ready(function(){initNavTree('grid_2funcs_8h_source.html',''); initR
   <div class="headertitle"><div class="title">funcs.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="grid_2funcs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="foldopen" id="foldopen00002" data-start="{" data-end="}">
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">    2</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">grid_position</a>() {</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//MR: generalize, using x,y,z?</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">return</span> ((globalVertexIdx - <a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a>)*<a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a>) + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
+<a href="grid_2funcs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef AC_GRID_FUNCS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define AC_GRID_FUNCS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">    4</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">grid_position</a>() {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//MR: generalize, using x,y,z?</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">return</span> ((globalVertexIdx - <a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a>)*<a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a>) + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138">    8</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">grid_position</a>(<a class="code hl_struct" href="structint3.html">int3</a> local_point) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    global_point = (local_point-<a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a>) + <a class="code hl_variable" href="variables_8h.html#aa3db23a95b2356bfb4aceff207e5198d">AC_multigpu_offset</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">return</span> global_point*<a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a> + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138">   10</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">grid_position</a>(<a class="code hl_struct" href="structint3.html">int3</a> local_point) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    global_point = (local_point-<a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a>) + <a class="code hl_variable" href="variables_8h.html#aa3db23a95b2356bfb4aceff207e5198d">AC_multigpu_offset</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">return</span> global_point*<a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a> + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#a85533b44a46b64ef911078c8de920f8c">   14</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a85533b44a46b64ef911078c8de920f8c">grid_center</a>() {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//MR: generalize, using x,y,z?</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> (0.5*<a class="code hl_variable" href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a>) + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="grid_2funcs_8h.html#a85533b44a46b64ef911078c8de920f8c">   16</a></span><a class="code hl_function" href="general__grid_2funcs_8h.html#a85533b44a46b64ef911078c8de920f8c">grid_center</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//MR: generalize, using x,y,z?</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//TP: implicitly assumes equidistant grid</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> (0.5*<a class="code hl_variable" href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a>) + <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ageneral__grid_2funcs_8h_html_a005f635a57cc3f2ac1f6bba568b9cb16"><div class="ttname"><a href="general__grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16">grid_position</a></div><div class="ttdeci">grid_position()</div><div class="ttdef"><b>Definition</b> funcs.h:10</div></div>
 <div class="ttc" id="ageneral__grid_2funcs_8h_html_a85533b44a46b64ef911078c8de920f8c"><div class="ttname"><a href="general__grid_2funcs_8h.html#a85533b44a46b64ef911078c8de920f8c">grid_center</a></div><div class="ttdeci">grid_center()</div><div class="ttdef"><b>Definition</b> funcs.h:144</div></div>
 <div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
