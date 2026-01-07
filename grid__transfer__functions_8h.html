@@ -106,12 +106,14 @@ Functions</h2></td></tr>
 <tr class="separator:a6fd10a49c1f12c3439884c36d4311c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae22b5361a88ab3caa728d5e8c893349f" id="r_ae22b5361a88ab3caa728d5e8c893349f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#ae22b5361a88ab3caa728d5e8c893349f">restrict_full_weighting_3d_odd</a> (Field fine_residual, Field coarse_residual)</td></tr>
 <tr class="separator:ae22b5361a88ab3caa728d5e8c893349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c81d51d82e7b3903869a4efccfeb9d" id="r_a02c81d51d82e7b3903869a4efccfeb9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#a02c81d51d82e7b3903869a4efccfeb9d">restrict_full_weighting</a> (Field fine_residual, Field coarse_residual)</td></tr>
-<tr class="separator:a02c81d51d82e7b3903869a4efccfeb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cab715643c75a38e089406b6904ee06" id="r_a1cab715643c75a38e089406b6904ee06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#a1cab715643c75a38e089406b6904ee06">restrict_full_weighting</a> (Field fine_residual, Field coarse_residual, <a class="el" href="structint3.html">int3</a> fine_dimensions)</td></tr>
+<tr class="separator:a1cab715643c75a38e089406b6904ee06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7641ff9fa2ad5034ac02922d0234d29" id="r_aa7641ff9fa2ad5034ac02922d0234d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#aa7641ff9fa2ad5034ac02922d0234d29">linear_prolongation</a> (Field coarse_residual)</td></tr>
 <tr class="separator:aa7641ff9fa2ad5034ac02922d0234d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8ed4dccad202826fc3b55ae53481c9" id="r_a0c8ed4dccad202826fc3b55ae53481c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#a0c8ed4dccad202826fc3b55ae53481c9">trilinear_prolongation_even</a> (Field coarse_residual)</td></tr>
 <tr class="separator:a0c8ed4dccad202826fc3b55ae53481c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa701f947dd08cf1fcdb2218b4afa934" id="r_afa701f947dd08cf1fcdb2218b4afa934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934">trilinear_prolongation_odd</a> (Field coarse_residual)</td></tr>
+<tr class="separator:afa701f947dd08cf1fcdb2218b4afa934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e94424c40bdce3d7b668f4cd91b9a92" id="r_a5e94424c40bdce3d7b668f4cd91b9a92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__transfer__functions_8h.html#a5e94424c40bdce3d7b668f4cd91b9a92">trilinear_prolongation</a> (Field coarse_residual)</td></tr>
 <tr class="separator:a5e94424c40bdce3d7b668f4cd91b9a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -134,8 +136,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a02c81d51d82e7b3903869a4efccfeb9d" name="a02c81d51d82e7b3903869a4efccfeb9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02c81d51d82e7b3903869a4efccfeb9d">&#9670;&#160;</a></span>restrict_full_weighting()</h2>
+<a id="a1cab715643c75a38e089406b6904ee06" name="a1cab715643c75a38e089406b6904ee06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cab715643c75a38e089406b6904ee06">&#9670;&#160;</a></span>restrict_full_weighting()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +152,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Field&#160;</td>
-          <td class="paramname"><em>coarse_residual</em>&#160;</td>
+          <td class="paramname"><em>coarse_residual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structint3.html">int3</a>&#160;</td>
+          <td class="paramname"><em>fine_dimensions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -272,6 +280,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">trilinear_prolongation_even </td>
+          <td>(</td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>coarse_residual</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa701f947dd08cf1fcdb2218b4afa934" name="afa701f947dd08cf1fcdb2218b4afa934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa701f947dd08cf1fcdb2218b4afa934">&#9670;&#160;</a></span>trilinear_prolongation_odd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">trilinear_prolongation_odd </td>
           <td>(</td>
           <td class="paramtype">Field&#160;</td>
           <td class="paramname"><em>coarse_residual</em></td><td>)</td>

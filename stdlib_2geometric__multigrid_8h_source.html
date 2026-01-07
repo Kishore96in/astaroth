@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('stdlib_2geometric__multigrid_8h_source
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                       <span class="comment">//</span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordflow">if</span>(level == max_level)</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    acGridExecuteTaskGraph(sor_graph,100);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    acGridExecuteTaskGraph(sor_graph,1000);</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  }</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  {</div>
@@ -351,21 +351,20 @@ $(document).ready(function(){initNavTree('stdlib_2geometric__multigrid_8h_source
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>          <span class="keyword">const</span> <a class="code hl_struct" href="structVolume.html">Volume</a> launch_end = launch_dims + launch_start;</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>          <span class="keyword">const</span> <span class="keyword">auto</span> restrict_graph = acGetOptimizedDSLTaskGraph(gmg_restrict_residual, launch_start, launch_end); </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>          acGridExecuteTaskGraph(restrict_graph,1); <span class="comment">//Restrict residual to the next level</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      acDeviceSetInput(acGridGetDevice(),AC_GMG_LEVEL,(GMG_LEVEL)level);</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      <a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#a6657e4441b06e7dc22be0b1c53f177a4">gmg_level_step</a>(level+1,max_level);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      acDeviceSetInput(acGridGetDevice(),AC_GMG_LEVEL,(GMG_LEVEL)level);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      acGridExecuteTaskGraph(acGetOptimizedDSLTaskGraph(gmg_get_correction_from_next_level),1); <span class="comment">//Prolong and add the solution from the next level</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      acGridExecuteTaskGraph(sor_graph,1); <span class="comment">//Post-smooth step</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#a6657e4441b06e7dc22be0b1c53f177a4">gmg_level_step</a>(level+1,max_level);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      acDeviceSetInput(acGridGetDevice(),AC_GMG_LEVEL,(GMG_LEVEL)level);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      acGridExecuteTaskGraph(acGetOptimizedDSLTaskGraph(gmg_get_correction_from_next_level),1); <span class="comment">//Prolong and add the solution from the next level</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      acGridExecuteTaskGraph(sor_graph,1); <span class="comment">//Post-smooth step</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>}</div>
 </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">  262</a></span><a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">gmg_v_cycle</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> max_level)</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>{</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#a6657e4441b06e7dc22be0b1c53f177a4">gmg_level_step</a>(0,max_level);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>}</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">  261</a></span><a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">gmg_v_cycle</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> max_level)</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>{</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <a class="code hl_function" href="stdlib_2geometric__multigrid_8h.html#a6657e4441b06e7dc22be0b1c53f177a4">gmg_level_step</a>(0,max_level);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}</div>
 </div>
 <div class="ttc" id="aacreal_8h_html_a682ddafb17af19aa8f6e413da6625de0"><div class="ttname"><a href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a></div><div class="ttdeci">float AcReal</div><div class="ttdef"><b>Definition</b> acreal.h:11</div></div>
 <div class="ttc" id="aastaroth_8cc_html_a7211b038dd8e6b02708feec332809f30"><div class="ttname"><a href="astaroth_8cc.html#a7211b038dd8e6b02708feec332809f30">acHostMeshCreate</a></div><div class="ttdeci">AcResult acHostMeshCreate(const AcMeshInfo info, AcMesh *mesh)</div><div class="ttdef"><b>Definition</b> astaroth.cc:292</div></div>
@@ -384,7 +383,7 @@ $(document).ready(function(){initNavTree('stdlib_2geometric__multigrid_8h_source
 <div class="ttc" id="astdlib_2geometric__multigrid_8h_html_a6657e4441b06e7dc22be0b1c53f177a4"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#a6657e4441b06e7dc22be0b1c53f177a4">gmg_level_step</a></div><div class="ttdeci">void gmg_level_step(const int level, const int max_level)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:229</div></div>
 <div class="ttc" id="astdlib_2geometric__multigrid_8h_html_a80f85e3438b9a41792fcb9337356cbdd"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#a80f85e3438b9a41792fcb9337356cbdd">gmg_store_and_prolong</a></div><div class="ttdeci">void gmg_store_and_prolong(AcMesh mesh, int level)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:29</div></div>
 <div class="ttc" id="astdlib_2geometric__multigrid_8h_html_a8bb46fe317ddc27b5b2d76aa45c5aeec"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#a8bb46fe317ddc27b5b2d76aa45c5aeec">get_galerkin_operators</a></div><div class="ttdeci">void get_galerkin_operators(AcMeshInfo *info)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:207</div></div>
-<div class="ttc" id="astdlib_2geometric__multigrid_8h_html_aa8a83a92fec709f707e5b01128369905"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">gmg_v_cycle</a></div><div class="ttdeci">void gmg_v_cycle(const int max_level)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:262</div></div>
+<div class="ttc" id="astdlib_2geometric__multigrid_8h_html_aa8a83a92fec709f707e5b01128369905"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#aa8a83a92fec709f707e5b01128369905">gmg_v_cycle</a></div><div class="ttdeci">void gmg_v_cycle(const int max_level)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:261</div></div>
 <div class="ttc" id="astdlib_2geometric__multigrid_8h_html_ab1d5c3c1675f25314544bb4963591eb8"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#ab1d5c3c1675f25314544bb4963591eb8">gmg_restrict_to_level</a></div><div class="ttdeci">void gmg_restrict_to_level(const int level)</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:11</div></div>
 <div class="ttc" id="astdlib_2geometric__multigrid_8h_html_aba2a73a8d93be9be04cd3aacc4220ec9"><div class="ttname"><a href="stdlib_2geometric__multigrid_8h.html#aba2a73a8d93be9be04cd3aacc4220ec9">level_dims</a></div><div class="ttdeci">const std::array&lt; AcInt3Param, 5 &gt; level_dims</div><div class="ttdef"><b>Definition</b> geometric_multigrid.h:2</div></div>
 <div class="ttc" id="astructAcMeshInfo_html"><div class="ttname"><a href="structAcMeshInfo.html">AcMeshInfo</a></div><div class="ttdef"><b>Definition</b> acc_runtime.h:153</div></div>
