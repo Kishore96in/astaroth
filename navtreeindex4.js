@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classHaloExchangeTask.html#ab6cc60ff76f57f2fb4910c4831e881a1":[18,0,62,3],
 "classHaloExchangeTask.html#ac2188cc822822f23931f09812d6de96f":[18,0,62,8],
 "classHaloExchangeTask.html#ac564a31700789e53674ab27d88cdd027":[18,0,62,22],
 "classHaloExchangeTask.html#acd2594f272c4418a57f8947ae59aa3b6":[18,0,62,2],
@@ -89,8 +88,8 @@ var NAVTREEINDEX4 =
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[17,0,1,1,2],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[18,0,0,1,1],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[17,0,1,1,1],
-"classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[17,0,1,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[18,0,0,1,5],
+"classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[17,0,1,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac78c9ebb89d13558046ea23eee188aea":[18,0,0,1,4],
 "classmatplotlibcpp_1_1Plot.html#ac78c9ebb89d13558046ea23eee188aea":[17,0,1,1,4],
 "code__generator_8c.html":[19,0,2,0,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "codegen_8c.html#a52813ca89bffb1ddd2ead123025be77d":[19,0,0,0,2,489],
 "codegen_8c.html#a52864e665b0431a3c8d8d9462191a0fd":[19,0,0,0,2,400],
 "codegen_8c.html#a52b127d6b50d33ea932e1ca5a6496698":[19,0,0,0,2,311],
-"codegen_8c.html#a52fe64d784306e15de790b5c2e25a7c0":[19,0,0,0,2,127]
+"codegen_8c.html#a52fe64d784306e15de790b5c2e25a7c0":[19,0,0,0,2,127],
+"codegen_8c.html#a53948420e80a6dc7d803653718e9fc50":[19,0,0,0,2,104]
 };
