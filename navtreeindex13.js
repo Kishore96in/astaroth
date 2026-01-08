@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"namespacematplotlibcpp.html#a40ac4e0d416fad21899637dcf8d281c6":[17,0,1,71],
 "namespacematplotlibcpp.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[17,0,1,21],
 "namespacematplotlibcpp.html#a4645651772918e2dad7d36d9eeaeaefa":[17,0,1,89],
 "namespacematplotlibcpp.html#a468096a42e46d0a26e8a237ffb24caca":[17,0,1,36],
@@ -180,8 +181,8 @@ var NAVTREEINDEX13 =
 "pc__derivs_8h.html":[19,0,0,5,18],
 "pc__derivs_8h.html#a06e40482f31a63e2ce66b2d036e9b005":[19,0,0,5,18,16],
 "pc__derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[19,0,0,5,18,8],
-"pc__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,18,42],
 "pc__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,18,43],
+"pc__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,18,42],
 "pc__derivs_8h.html#a08a153103580544909f8a020f9603608":[19,0,0,5,18,12],
 "pc__derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,18,53],
 "pc__derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,18,52],
@@ -191,8 +192,8 @@ var NAVTREEINDEX13 =
 "pc__derivs_8h.html#a24990b016a846112333af562a264df3a":[19,0,0,5,18,20],
 "pc__derivs_8h.html#a268b58af4d9e73a3c425e8421dfd8a58":[19,0,0,5,18,9],
 "pc__derivs_8h.html#a278d7078742df25af30cc9aef0f14320":[19,0,0,5,18,25],
-"pc__derivs_8h.html#a2fee51e8e7309b630d21910d1bdf1a6a":[19,0,0,5,18,41],
 "pc__derivs_8h.html#a2fee51e8e7309b630d21910d1bdf1a6a":[19,0,0,5,18,40],
+"pc__derivs_8h.html#a2fee51e8e7309b630d21910d1bdf1a6a":[19,0,0,5,18,41],
 "pc__derivs_8h.html#a33b959741452c28fe25fcb118e610601":[19,0,0,5,18,38],
 "pc__derivs_8h.html#a361195a4dc650ad7554f0b1f4f35cb87":[19,0,0,5,18,45],
 "pc__derivs_8h.html#a361195a4dc650ad7554f0b1f4f35cb87":[19,0,0,5,18,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "poisson-test_2main_8cc.html":[19,0,8,16,0],
 "poisson-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,16,0,0],
 "poisson_8h.html":[19,0,0,5,19],
-"poisson_8h.html#a09729caa633306bb6def793911265aa6":[19,0,0,5,19,10],
-"poisson_8h.html#a0fb40789fabc4108975aa957a5897837":[19,0,0,5,19,8]
+"poisson_8h.html#a09729caa633306bb6def793911265aa6":[19,0,0,5,19,10]
 };
