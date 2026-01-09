@@ -466,21 +466,21 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    gmg_prolong_solution_kernel(AC_GMG_LEVEL)</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_sor_red(GMG_LEVEL level)</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_sor_red(GMG_LEVEL level, real omega)</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>{</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    gmg_poisson_sor_red_black(<a class="code hl_variable" href="poisson_8h.html#a09729caa633306bb6def793911265aa6">SOR_RED</a>,level,AC_SOR_omega)</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    gmg_poisson_sor_red_black(<a class="code hl_variable" href="poisson_8h.html#a09729caa633306bb6def793911265aa6">SOR_RED</a>,level,omega)</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>}</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_sor_black(GMG_LEVEL level)</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_sor_black(GMG_LEVEL level, real omega)</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>{</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    gmg_poisson_sor_red_black(<a class="code hl_variable" href="poisson_8h.html#a49fd3f69c60e7fd153cdb642541e42a9">SOR_BLACK</a>,level,AC_SOR_omega)</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    gmg_poisson_sor_red_black(<a class="code hl_variable" href="poisson_8h.html#a49fd3f69c60e7fd153cdb642541e42a9">SOR_BLACK</a>,level,omega)</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>ComputeSteps</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>gmg_poisson_sor_red_black_step(gmg_boundconds)</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>{</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    gmg_sor_red(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    gmg_sor_black(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    gmg_sor_red(AC_GMG_LEVEL, AC_SOR_OMEGA)</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    gmg_sor_black(AC_GMG_LEVEL, AC_SOR_OMEGA)</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>}</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">//Optimized smoother across all of the 7-point stencils</span></div>
@@ -561,7 +561,7 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    gmg_write_del2_kernel()</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>}</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>output real AC_GMG_residual2</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>global output real AC_GMG_residual2</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel()</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>{</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <span class="keyword">const</span> real res = -<a class="code hl_function" href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a>(GMG_SOLUTIONS[0])</div>
