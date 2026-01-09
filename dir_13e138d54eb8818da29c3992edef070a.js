@@ -7,6 +7,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "boundary-halo-exchange-test", "dir_a979d92b74082d10500393f103dc7bb7.html", "dir_a979d92b74082d10500393f103dc7bb7" ],
     [ "bwtest", "dir_94e76f5234120c5e96dd4d571cafda0a.html", "dir_94e76f5234120c5e96dd4d571cafda0a" ],
     [ "cg-test", "dir_fbcaf52bd7555aaf2a169b3f553b0217.html", "dir_fbcaf52bd7555aaf2a169b3f553b0217" ],
+    [ "compact-poisson-test", "dir_dc701007c53290513dae67aba0792d11.html", "dir_dc701007c53290513dae67aba0792d11" ],
     [ "constant-values", "dir_5aa7fe2988c5b5fa40a7f58243104090.html", "dir_5aa7fe2988c5b5fa40a7f58243104090" ],
     [ "fft-shift-test", "dir_4faaa223621b9e521571117a006fb5fd.html", "dir_4faaa223621b9e521571117a006fb5fd" ],
     [ "fft-test", "dir_13d890c3dac2330adb52106b7dbde26d.html", "dir_13d890c3dac2330adb52106b7dbde26d" ],
@@ -26,6 +27,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "stencil-accesses-fail-test", "dir_4883b5fc47ccb2299fe4276080b3f4b0.html", "dir_4883b5fc47ccb2299fe4276080b3f4b0" ],
     [ "stencil-accesses-ok-test", "dir_82d7cbc3b300695d2e5aab527055e3fc.html", "dir_82d7cbc3b300695d2e5aab527055e3fc" ],
     [ "uneven-grid-test", "dir_c9e91ada693ee53198011d711ce39c43.html", "dir_c9e91ada693ee53198011d711ce39c43" ],
+    [ "uneven-sor-test", "dir_55bf73deb1927d3f28be95bba4cb1504.html", "dir_55bf73deb1927d3f28be95bba4cb1504" ],
     [ "use-scalar-reduce", "dir_ce0762aa15dd0aece41bf4b0189e9a0c.html", "dir_ce0762aa15dd0aece41bf4b0189e9a0c" ],
     [ "variable-dims", "dir_e3250dafe7ad06ff65d85d3f0837918b.html", "dir_e3250dafe7ad06ff65d85d3f0837918b" ],
     [ "walker-test", "dir_6a85564ead4481cc61a547d4bf79e1c2.html", "dir_6a85564ead4481cc61a547d4bf79e1c2" ]

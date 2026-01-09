@@ -65,5 +65,6 @@ var general__derivs_8h =
     [ "deryx", "general__derivs_8h.html#a8e311b6014f7ec47b8e2e16fd17fc7ae", null ],
     [ "derzx", "general__derivs_8h.html#adeb7d278881e867957b2adb22d74bc51", null ],
     [ "derzy", "general__derivs_8h.html#abf301d26cd161bb012330204f090d834", null ],
+    [ "UPWIND_FACTOR", "general__derivs_8h.html#aa3a448d6cd3f1aa8ccd54336fc5a1ce6", null ],
     [ "AC_GENERAL_DERIVS_ENABLED", "general__derivs_8h.html#a8158f6e79d2afdb43c5555864ad28003", null ]
 ];
