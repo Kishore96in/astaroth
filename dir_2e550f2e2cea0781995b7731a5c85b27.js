@@ -19,7 +19,7 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "operators.h", "operators_8h.html", "operators_8h" ],
     [ "optimized_integrators.h", "optimized__integrators_8h.html", null ],
     [ "pc_derivs.h", "pc__derivs_8h.html", "pc__derivs_8h" ],
-    [ "poisson.h", "poisson_8h.html", "poisson_8h" ],
+    [ "poisson.h", "poisson_8h.html", null ],
     [ "radiation_ray.h", "radiation__ray_8h.html", "radiation__ray_8h" ],
     [ "shock.h", "shock_8h.html", null ],
     [ "slope_limited_diffusion.h", "slope__limited__diffusion_8h.html", "slope__limited__diffusion_8h" ],

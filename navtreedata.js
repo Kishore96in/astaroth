@@ -241,13 +241,12 @@ var NAVTREEINDEX =
 "matplotlibcpp_8h.html#a6479afec926d90fdf3309cf2a88db030",
 "namespacematplotlibcpp.html#a3df1b1d037e54f3ae5d1d7c89342099a",
 "poisson-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe",
-"smooth__max_8h.html#a47c44c86839e68460c20d838604bdf7b",
-"smooth__max_8h.html#afe1499ec44e563ec32451d18f2c4e875",
-"structAcGridMappingFunction.html",
-"structSOAVector.html",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#ac2bda54e2d051328d7dcd62d825b2eac",
-"tinyexpr_8c.html#a46c928e351562d938ce6532dd69582c4",
-"warp__reduce_8h.html#ae7a20060faa4a18970bde799dda3c7d9"
+"smooth__max_8h.html#a4e8e0d7a2110979ac632e98a4640166e",
+"src_2core_2kernels_2kernels_8h.html#a33ea05b8ab6d864ba8166952e23517e4",
+"structAcMatrix.html#a65403fbb1acfd8b970a48c14967e194b",
+"structSymbol.html#adde81937b12ec8bfd0dcd473a3b53b51",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#ac94dda0fc02bf1c7c4af3759c46ea8d7",
+"tinyexpr_8c.html#a970221bb2a37eb202b772abbdb5603ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
