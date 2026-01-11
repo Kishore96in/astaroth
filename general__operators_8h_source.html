@@ -906,7 +906,18 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    }</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="keywordflow">return</span> del2f</div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>}</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">#if STENCIL_ORDER == 6</span></div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>compact_poisson_rhs(Field f)</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>{</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="comment">//Assumes equidistant grid</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    h2 = <a class="code hl_variable" href="variables_8h.html#a34e38683f3a22c3f59fcdc95a7c3017a">AC_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    h4 = <a class="code hl_variable" href="variables_8h.html#a4557a17195341444e4bbb6f78d37fc8f">AC_ds_4</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordflow">return</span> f + (h2/12.0)*<a class="code hl_function" href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a>(f) + (h4/360.0)*<a class="code hl_function" href="general__operators_8h.html#ae154a5a8144a09dcc142dd55d4394e00">del4</a>(f)</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>           + (h4/180.0)*(der2x2y(f) + der2y2z(f) + der2x2z(f))</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>}</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacc-runtime_2acc_2ast_8h_html_a7b50077bef75e0e1697a39b905253930"><div class="ttname"><a href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a></div><div class="ttdeci">if(node-&gt;rhs) change_qualifier(node -&gt; rhs, old_qualifier, new_qualifier)</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:462</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:466</div></div>
@@ -987,7 +998,9 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a></div><div class="ttdeci">@ AC_SPHERICAL_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:126</div></div>
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a></div><div class="ttdeci">@ AC_CYLINDRICAL_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:127</div></div>
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991afb9acbcd0c57a9e5e6a58ce9b7e1524b"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991afb9acbcd0c57a9e5e6a58ce9b7e1524b">AC_CARTESIAN_COORDINATES</a></div><div class="ttdeci">@ AC_CARTESIAN_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:125</div></div>
+<div class="ttc" id="avariables_8h_html_a34e38683f3a22c3f59fcdc95a7c3017a"><div class="ttname"><a href="variables_8h.html#a34e38683f3a22c3f59fcdc95a7c3017a">AC_ds_2</a></div><div class="ttdeci">run_const real3 AC_ds_2</div><div class="ttdef"><b>Definition</b> variables.h:199</div></div>
 <div class="ttc" id="avariables_8h_html_a3606c9eda2815c6786d6aadd82403203"><div class="ttname"><a href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a></div><div class="ttdeci">run_const AcCoordinateSystem AC_coordinate_system</div><div class="ttdef"><b>Definition</b> variables.h:313</div></div>
+<div class="ttc" id="avariables_8h_html_a4557a17195341444e4bbb6f78d37fc8f"><div class="ttname"><a href="variables_8h.html#a4557a17195341444e4bbb6f78d37fc8f">AC_ds_4</a></div><div class="ttdeci">run_const real3 AC_ds_4</div><div class="ttdef"><b>Definition</b> variables.h:207</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
