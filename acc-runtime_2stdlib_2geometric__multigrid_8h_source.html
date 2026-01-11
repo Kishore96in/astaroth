@@ -563,17 +563,17 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>}</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span> </div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>global output real AC_GMG_residual2</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel()</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel(GMG_LEVEL level)</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>{</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    <span class="keyword">const</span> real res = -<a class="code hl_function" href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a>(GMG_SOLUTIONS[0])</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    r = GMG_INITIAL_RHS - res</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    <span class="keyword">const</span> real res = -<a class="code hl_function" href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a>(GMG_SOLUTIONS[level])</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    r = GMG_RHS[level]- res</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    reduce_sum(r*r,AC_GMG_residual2)</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>}</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>ComputeSteps</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>gmg_get_residual_norm(gmg_boundconds)</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>{</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    gmg_get_residual_norm_kernel()</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    gmg_get_residual_norm_kernel(AC_GMG_LEVEL)</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>}</div>
 <div class="ttc" id="aacc__runtime_8cu_html_a98666be13c8e67196b9560ba9eeff819"><div class="ttname"><a href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div><div class="ttdeci">void(* Kernel)(const int3, const int3, DeviceVertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:27</div></div>
 <div class="ttc" id="ageneral__operators_8h_html_a1a22206bdf16bad4796ed0ad293f4a95"><div class="ttname"><a href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a></div><div class="ttdeci">laplace(Field s)</div><div class="ttdef"><b>Definition</b> general_operators.h:433</div></div>
