@@ -47,7 +47,7 @@ var searchData=
   ['transpose_5fxyz_5fto_5fzxy_44',['transpose_xyz_to_zxy',['../transpose_8cu.html#a5f9f2c7fc0fddf5a8c13c1f03f7206e9',1,'transpose.cu']]],
   ['transpose_5fxyz_5fto_5fzyx_45',['transpose_xyz_to_zyx',['../transpose_8cu.html#a3f5ce4277d520958a0efb0cf330acf9f',1,'transpose.cu']]],
   ['traverse_5fbase_46',['traverse_base',['../codegen_8c.html#a6e1f2478d5b48ffcfbdc9481cb8684d8',1,'codegen.c']]],
-  ['trilinear_5fprolongation_47',['trilinear_prolongation',['../grid__transfer__functions_8h.html#a5e94424c40bdce3d7b668f4cd91b9a92',1,'grid_transfer_functions.h']]],
+  ['trilinear_5fprolongation_47',['trilinear_prolongation',['../grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea',1,'grid_transfer_functions.h']]],
   ['trilinear_5fprolongation_5feven_48',['trilinear_prolongation_even',['../grid__transfer__functions_8h.html#a0c8ed4dccad202826fc3b55ae53481c9',1,'grid_transfer_functions.h']]],
   ['trilinear_5fprolongation_5fodd_49',['trilinear_prolongation_odd',['../grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934',1,'grid_transfer_functions.h']]],
   ['turn_5farray_5ftype_5fto_5fscalar_5ftype_50',['turn_array_type_to_scalar_type',['../codegen_8c.html#aa68fe664fd19548db7bfb365c12218df',1,'codegen.c']]],
