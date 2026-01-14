@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['u_5fdot_5fgrad_0',['u_dot_grad',['../general__operators_8h.html#a6c5808c4e16706ce94395292cc001584',1,'u_dot_grad(Matrix m, real3 v):&#160;general_operators.h'],['../general__operators_8h.html#adab95be0eaa1b6a3ae70b7bb903f2cdf',1,'u_dot_grad(Field3 f, Matrix m, real3 v):&#160;general_operators.h']]],
-  ['u_5fdot_5fgrad_5falt_1',['u_dot_grad_alt',['../general__operators_8h.html#aca3b17b5abb0972f226cc0128d85846f',1,'general_operators.h']]],
+  ['u_5fdot_5fgrad_0',['u_dot_grad',['../general__operators_8h.html#a6c5808c4e16706ce94395292cc001584',1,'u_dot_grad(Matrix m, real3 v):&#160;general_operators.h'],['../general__operators_8h.html#a9772fff5f2796aa84a9600a4f3857a4b',1,'u_dot_grad(Field3 f, Matrix m, real3 u):&#160;general_operators.h']]],
+  ['u_5fdot_5fgrad_5falt_1',['u_dot_grad_alt',['../general__operators_8h.html#abb2ad7db86f0a5a94a27a954f155fb15',1,'general_operators.h']]],
   ['u_5fdot_5fgrad_5fmat_2',['u_dot_grad_mat',['../general__operators_8h.html#a9f5c67a98f894a685e0319d25873bf31',1,'general_operators.h']]],
   ['u_5fdot_5fgrad_5fmat_5fupwd_3',['u_dot_grad_mat_upwd',['../general__operators_8h.html#a757fb6983c9be147f8aa8a93bbff5dc7',1,'general_operators.h']]],
   ['u_5fdot_5fgrad_5fvec_4',['u_dot_grad_vec',['../operators_8h.html#a656f5292f5902ccd30606f9480b00f94',1,'operators.h']]],

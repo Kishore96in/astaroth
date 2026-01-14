@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('general__operators_8h.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adab95be0eaa1b6a3ae70b7bb903f2cdf" id="r_adab95be0eaa1b6a3ae70b7bb903f2cdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#adab95be0eaa1b6a3ae70b7bb903f2cdf">u_dot_grad</a> (<a class="el" href="structField3.html">Field3</a> f, Matrix m, <a class="el" href="structreal3.html">real3</a> v)</td></tr>
-<tr class="separator:adab95be0eaa1b6a3ae70b7bb903f2cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9772fff5f2796aa84a9600a4f3857a4b" id="r_a9772fff5f2796aa84a9600a4f3857a4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#a9772fff5f2796aa84a9600a4f3857a4b">u_dot_grad</a> (<a class="el" href="structField3.html">Field3</a> f, Matrix m, <a class="el" href="structreal3.html">real3</a> u)</td></tr>
+<tr class="separator:a9772fff5f2796aa84a9600a4f3857a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5808c4e16706ce94395292cc001584" id="r_a6c5808c4e16706ce94395292cc001584"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#a6c5808c4e16706ce94395292cc001584">u_dot_grad</a> (Matrix m, <a class="el" href="structreal3.html">real3</a> v)</td></tr>
 <tr class="separator:a6c5808c4e16706ce94395292cc001584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3b17b5abb0972f226cc0128d85846f" id="r_aca3b17b5abb0972f226cc0128d85846f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#aca3b17b5abb0972f226cc0128d85846f">u_dot_grad_alt</a> (Field f, <a class="el" href="structreal3.html">real3</a> gradf, <a class="el" href="structreal3.html">real3</a> uu, int advec_type)</td></tr>
-<tr class="separator:aca3b17b5abb0972f226cc0128d85846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2ad7db86f0a5a94a27a954f155fb15" id="r_abb2ad7db86f0a5a94a27a954f155fb15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#abb2ad7db86f0a5a94a27a954f155fb15">u_dot_grad_alt</a> (Field f, <a class="el" href="structreal3.html">real3</a> gradf, <a class="el" href="structreal3.html">real3</a> u, int advec_type)</td></tr>
+<tr class="separator:abb2ad7db86f0a5a94a27a954f155fb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5c67a98f894a685e0319d25873bf31" id="r_a9f5c67a98f894a685e0319d25873bf31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#a9f5c67a98f894a685e0319d25873bf31">u_dot_grad_mat</a> (k, <a class="el" href="structAcTensor.html">AcTensor</a> c, <a class="el" href="structreal3.html">real3</a> uu)</td></tr>
 <tr class="separator:a9f5c67a98f894a685e0319d25873bf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757fb6983c9be147f8aa8a93bbff5dc7" id="r_a757fb6983c9be147f8aa8a93bbff5dc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="general__operators_8h.html#a757fb6983c9be147f8aa8a93bbff5dc7">u_dot_grad_mat_upwd</a> (k, c, uu)</td></tr>
@@ -239,6 +239,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the jacobian of b, where b = ∇ × v </p>
 
 </div>
 </div>
@@ -267,6 +268,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes A_ij.B_ij </p>
 
 </div>
 </div>
@@ -285,6 +287,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>∑a²_ij i.e. the Frobenius norm squared of the matrix </p>
 
 </div>
 </div>
@@ -313,6 +316,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇ × v, where m = ∇v. Works only in Cartesian. (TODO: why is this needed isn't the normal curl already covariant?) </p>
 
 </div>
 </div>
@@ -331,6 +335,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇ × v </p>
 
 </div>
 </div>
@@ -349,6 +354,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇ × v, where m = ∇v. Works only in Cartesian, see the other version for more general. </p>
 
 </div>
 </div>
@@ -377,6 +383,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇ × v, where m = ∇v. </p>
 
 </div>
 </div>
@@ -395,6 +402,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇ × (∇ × v) </p>
 
 </div>
 </div>
@@ -413,6 +421,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes M where M_ij = (∂^2/∂_i)v_j, and v is a vector field. </p>
 
 </div>
 </div>
@@ -431,6 +440,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes a 3x3x3 tensor T, where T_ijk = (∂^2/∂_j∂_k)v_i and v is a vector field. </p>
 
 </div>
 </div>
@@ -449,6 +459,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes (∇^4)s, where s is a scalar field. </p>
 
 </div>
 </div>
@@ -467,6 +478,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes (∇^6)s, where s is a scalar field. </p>
 
 </div>
 </div>
@@ -488,7 +500,7 @@ Functions</h2></td></tr>
 <p>TP: these are mainly for testing if one would actually want production performance for equidistant cartesian with this then one would combine all the coefficients off the different derivative stencils into one stencil and use that expression generated by Sympy der6x_exp(Field f) { return <a class="el" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp(f)</a>* ( +derx(f)*derx(f)*derx(f)*derx(f)*derx(f)*derx(f) +10*der3x(f)*der3x(f) +15*derxx(f)*derxx(f)*derxx(f) +6*derx(f)*der5x(f) +15*derx(f)*derx(f)*der4x(f) +15*derx(f)*derx(f)*derx(f)*derx(f)*derxx(f) +15*derxx(f)*der4x(f) +20*derx(f)*derx(f)*derx(f)*der3x(f) +45*derx(f)*derx(f)*derxx(f)*derxx(f) +60*derx(f)*derxx(f)*der3x(f) +der6x(f) )</p>
 <p>} der6y_exp(Field f) { return <a class="el" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp(f)</a>* ( +dery(f)*dery(f)*dery(f)*dery(f)*dery(f)*dery(f) +10*der3y(f)*der3y(f) +15*deryy(f)*deryy(f)*deryy(f) +6*dery(f)*der5y(f) +15*dery(f)*dery(f)*der4y(f) +15*dery(f)*dery(f)*dery(f)*dery(f)*deryy(f) +15*deryy(f)*der4y(f) +20*dery(f)*dery(f)*dery(f)*der3y(f) +45*dery(f)*dery(f)*deryy(f)*deryy(f) +60*dery(f)*deryy(f)*der3y(f) +der6y(f) )</p>
 <p>} der6z_exp(Field f) { return <a class="el" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp(f)</a>* ( +derz(f)*derz(f)*derz(f)*derz(f)*derz(f)*derz(f) +10*der3z(f)*der3z(f) +15*derzz(f)*derzz(f)*derzz(f) +6*derz(f)*der5z(f) +15*derz(f)*derz(f)*der4z(f) +15*derz(f)*derz(f)*derz(f)*derz(f)*derzz(f) +15*derzz(f)*der4z(f) +20*derz(f)*derz(f)*derz(f)*der3z(f) +45*derz(f)*derz(f)*derzz(f)*derzz(f) +60*derz(f)*derzz(f)*der3z(f) +der6z(f) )</p>
-<p>} </p>
+<p>} Computes (∇^6)<a class="el" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp(s)</a>, where s is a scalar field. </p>
 
 </div>
 </div>
@@ -517,6 +529,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes (∇^6)(s), where s is a scalar field and one of the directions is masked out </p>
 
 </div>
 </div>
@@ -535,6 +548,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes (∇^6)(s) in a 'strict' manner. Not implemented </p>
 
 </div>
 </div>
@@ -563,6 +577,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes v·(∇f), where v is a vector and f is a scalar field. </p>
 
 </div>
 </div>
@@ -591,6 +606,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the upwind correction to u·(∇f), where u is a vector and f a scalar field. </p>
 
 </div>
 </div>
@@ -619,6 +635,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the upwind correction to u·(∇f), where u and f are vector fields. </p>
 
 </div>
 </div>
@@ -653,6 +670,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes c(∇^k)(s), where c and k are chosen to achieve upwinding and depend on the order of the advective term s is a scalar field and one of the directions is masked out </p>
 
 </div>
 </div>
@@ -671,6 +689,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates ∇·v </p>
 
 </div>
 </div>
@@ -689,6 +708,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates (∇^2·v), where m = ∇(v). Only works in Cartesian </p>
 
 </div>
 </div>
@@ -717,6 +737,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates (∇^2·a), where m = ∇(v). </p>
 
 </div>
 </div>
@@ -735,6 +756,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates ∇^2·v </p>
 
 </div>
 </div>
@@ -753,6 +775,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes a 3x3x3 a contravariant tensor T, where T_ijk = (∇j∇k)v_i and v is a vector field. </p>
 
 </div>
 </div>
@@ -781,6 +804,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes a 3x3x3 a contravariant tensor T, where T_ijk = (∇j∇k)v_i, m = ∇v (not contravariant) and v is a vector field. </p>
 
 </div>
 </div>
@@ -799,6 +823,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes 3x3 tensor of 5th order derivatives of v. </p>
 
 </div>
 </div>
@@ -817,6 +842,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates ∇f ,where f is a scalar field </p>
 
 </div>
 </div>
@@ -835,6 +861,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates g, where g_i = (∂^2/∂_i)s </p>
 
 </div>
 </div>
@@ -854,7 +881,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>elemental gradient3(Field s) { return <a class="el" href="structreal3.html">real3</a>(derx(s), dery(s), derz(s)) }</p>
-<p>elemental gradient4(Field s) { return <a class="el" href="structreal3.html">real3</a>(derx(s), dery(s), derz(s)) } </p>
+<p>elemental gradient4(Field s) { return <a class="el" href="structreal3.html">real3</a>(derx(s), dery(s), derz(s)) } Calculates g, where g_i = (∂^5/∂_i)s </p>
 
 </div>
 </div>
@@ -873,6 +900,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates g, where g_i = c(∂^k/∂_i)s and c and k are chosen to achieve the effect of upwinding for the stencil employed for the advective term. </p>
 
 </div>
 </div>
@@ -891,6 +919,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇(∇·v), </p>
 
 </div>
 </div>
@@ -919,6 +948,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes ∇(∇·v), and m = ∇(v) </p>
 
 </div>
 </div>
@@ -937,6 +967,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates ∇v ,where v is a vector field </p>
 
 </div>
 </div>
@@ -955,6 +986,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates c(∇^k)v, to achieve the effect of upwinding. ,where v is a vector field. c and k depend on the order of stencil used for the advection term where upwinding is to be applied. </p>
 
 </div>
 </div>
@@ -973,6 +1005,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the Hessian of v, where v is a scalar field. </p>
 
 </div>
 </div>
@@ -991,6 +1024,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s. </p>
 
 </div>
 </div>
@@ -1019,6 +1053,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s given the squares of the inverse spacings. Most likely only correct in Cartesian. </p>
 
 </div>
 </div>
@@ -1037,6 +1072,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the vector Laplacian of s </p>
 
 </div>
 </div>
@@ -1055,6 +1091,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s with 2nd order discretization. </p>
 
 </div>
 </div>
@@ -1072,6 +1109,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian as discretized in 2nd order. </p>
 
 </div>
 </div>
@@ -1090,6 +1128,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian as discretized in 2nd order. </p>
 
 </div>
 </div>
@@ -1108,6 +1147,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s in 2nd order without the central point included. (Useful for Jacobi and SOR) </p>
 
 </div>
 </div>
@@ -1136,6 +1176,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s in 2nd order without the central point included. (Useful for Jacobi and SOR) Uses the given spacings. </p>
 
 </div>
 </div>
@@ -1153,6 +1194,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian. </p>
 
 </div>
 </div>
@@ -1171,6 +1213,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian. </p>
 
 </div>
 </div>
@@ -1188,6 +1231,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian. </p>
 
 </div>
 </div>
@@ -1206,6 +1250,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gives the coefficient for the central point of the Laplacian. </p>
 
 </div>
 </div>
@@ -1224,6 +1269,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s without the central point included. (Useful for Jacobi and SOR) </p>
 
 </div>
 </div>
@@ -1252,6 +1298,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates laplacian of s without the central point included. (Useful for Jacobi and SOR) Uses the given spacings. </p>
 
 </div>
 </div>
@@ -1270,6 +1317,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the Euclidean norm of the vector v </p>
 
 </div>
 </div>
@@ -1288,6 +1336,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the Euclidean norm of the vector v squared </p>
 
 </div>
 </div>
@@ -1306,6 +1355,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the rate-of-strain tensor, where v is the velocity. </p>
 
 </div>
 </div>
@@ -1334,6 +1384,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the rate-of-strain tensor, where uij is the Jacobian of the the velocity and divu is the divergence of it. Works only in Cartesian. </p>
 
 </div>
 </div>
@@ -1368,11 +1419,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the rate-of-strain tensor, where uu is the velocity, uij is the Jacobian of it, divu is the divergence. </p>
 
 </div>
 </div>
-<a id="adab95be0eaa1b6a3ae70b7bb903f2cdf" name="adab95be0eaa1b6a3ae70b7bb903f2cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adab95be0eaa1b6a3ae70b7bb903f2cdf">&#9670;&#160;</a></span>u_dot_grad() <span class="overload">[1/2]</span></h2>
+<a id="a9772fff5f2796aa84a9600a4f3857a4b" name="a9772fff5f2796aa84a9600a4f3857a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9772fff5f2796aa84a9600a4f3857a4b">&#9670;&#160;</a></span>u_dot_grad() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1393,7 +1445,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreal3.html">real3</a>&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramname"><em>u</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1402,6 +1454,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇f), where f and u are vector fields and m = ∇f. f is needed for corrections for curvilinear coordinates. </p>
 
 </div>
 </div>
@@ -1430,11 +1483,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇f), where f and u are vector fields and where m = ∇f. Works only in Cartesian. </p>
 
 </div>
 </div>
-<a id="aca3b17b5abb0972f226cc0128d85846f" name="aca3b17b5abb0972f226cc0128d85846f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3b17b5abb0972f226cc0128d85846f">&#9670;&#160;</a></span>u_dot_grad_alt()</h2>
+<a id="abb2ad7db86f0a5a94a27a954f155fb15" name="abb2ad7db86f0a5a94a27a954f155fb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2ad7db86f0a5a94a27a954f155fb15">&#9670;&#160;</a></span>u_dot_grad_alt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1455,7 +1509,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreal3.html">real3</a>&#160;</td>
-          <td class="paramname"><em>uu</em>, </td>
+          <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1470,6 +1524,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇f), with a special implementation based on the advection type where u is a vector field and f is a scalar field and gradf = ∇f. At the moment only normal advection implemented. </p>
 
 </div>
 </div>
@@ -1504,6 +1559,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇M), where u is a vector field, M is 3x3 tensor field and c = ∇M. (TODO: remove k since not used) </p>
 
 </div>
 </div>
@@ -1538,6 +1594,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇M), where u is a vector field, M is 3x3 tensor field and c = ∇M with an upwind correction. Not implemented </p>
 
 </div>
 </div>
@@ -1566,6 +1623,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇f) in a upwinded manner, where f is a scalar field and u is a vector field </p>
 
 </div>
 </div>
@@ -1594,6 +1652,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates u·(∇f) in a upwinded manner, where f and u are vector fields. </p>
 
 </div>
 </div>

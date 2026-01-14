@@ -61,7 +61,7 @@ var NAVTREE =
           [ "Allocating declarations", "md_acc-runtime_2README.html#autotoc_md50", null ],
           [ "Reductions", "md_acc-runtime_2README.html#autotoc_md51", null ],
           [ "ComputeSteps", "md_acc-runtime_2README.html#autotoc_md52", null ],
-          [ "2D-setups", "md_acc-runtime_2README.html#autotoc_md53", null ]
+          [ "1D and 2D setups.", "md_acc-runtime_2README.html#autotoc_md53", null ]
         ] ]
       ] ],
       [ "Interaction with the Astaroth Core and Utils libraries", "md_acc-runtime_2README.html#autotoc_md54", [
