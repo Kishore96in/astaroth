@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('md_config_2samples_2subsonic__forced__
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Created by <em>Miikka Väisälä</em>, at 2022/8</p>
-<h1><a class="anchor" id="autotoc_md78"></a>
+<h1><a class="anchor" id="autotoc_md79"></a>
 Purpose of this simulation setup</h1>
 <p>This is an example case of running a forced turbulence simulation with isothermal MHD. Similar to runs in Vaisala et al. (2021).</p>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md80"></a>
 What is a successful test</h1>
 <p>A succesful test is that <code>standalone_mpi</code> runs properly on multiple GPUs without the system crashing due to unnatural reasons, and results looks sensible without numerical garbage.</p>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 Required LSWITCHES</h1>
 <p>At the moment you need to set the switches manually. Default master branch configuration will have different LSWITCHES.</p>
 <ul>
@@ -116,13 +116,13 @@ Required LSWITCHES</h1>
 <div class="line">LSINK (0)</div>
 <div class="line">LBFIELD (1)</div>
 <div class="line">LSHOCK (0)</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md81"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md82"></a>
 Setting up and compiling.</h1>
 <p>Run <code>./my_cmake.sh</code></p>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md83"></a>
 Running the simulation.</h1>
 <p>Run e.g. <code>mpirun -np 4 ./ac_run_mpi --config astaroth.conf</code> or however your particular system runs MPI.</p>
-<h1><a class="anchor" id="autotoc_md83"></a>
+<h1><a class="anchor" id="autotoc_md84"></a>
 Troubleshooting</h1>
 <p>It the case you get strange MPI errors, it might be that your particular system On TIARA currently working on</p>
 <p>1) cuda/11.3 2) gcc/9.1.0 3) mpich/3.3 4) cmake/3.22.1</p>

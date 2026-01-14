@@ -53,8 +53,8 @@ var searchData=
   ['hashmap_5fuint64_5ft_50',['hashmap_uint64_t',['../hashtable_8h.html#adb4f5f1c89ab27db75ffc115682573a3',1,'hashtable.h']]],
   ['hashmap_5fuint8_5ft_51',['hashmap_uint8_t',['../hashtable_8h.html#ad81d2b7bbda6afa3690af5090b098a44',1,'hashtable.h']]],
   ['hashtable_2eh_52',['hashtable.h',['../hashtable_8h.html',1,'']]],
-  ['having_20copies_53',['having copies',['../md_acc-runtime_2LICENCE.html#autotoc_md12',1,'9. Acceptance Not Required for Having Copies.'],['../md_LICENCE.html#autotoc_md148',1,'9. Acceptance Not Required for Having Copies.']]],
-  ['header_20example_3a_54',['Header example:',['../md_CONTRIBUTING.html#autotoc_md102',1,'']]],
+  ['having_20copies_53',['having copies',['../md_acc-runtime_2LICENCE.html#autotoc_md12',1,'9. Acceptance Not Required for Having Copies.'],['../md_LICENCE.html#autotoc_md149',1,'9. Acceptance Not Required for Having Copies.']]],
+  ['header_20example_3a_54',['Header example:',['../md_CONTRIBUTING.html#autotoc_md103',1,'']]],
   ['heat_5fconduction_5fkramers_55',['heat_conduction_kramers',['../heat__conduction__kramers_8h.html#aa976d70b9a583b757b4ddaa9683ba3f7',1,'heat_conduction_kramers.h']]],
   ['heat_5fconduction_5fkramers_2eh_56',['heat_conduction_kramers.h',['../heat__conduction__kramers_8h.html',1,'']]],
   ['heffte_2ecc_57',['heffte.cc',['../heffte_8cc.html',1,'']]],
@@ -62,8 +62,8 @@ var searchData=
   ['helical_5fforcing_5fe_5fgenerator_59',['helical_forcing_e_generator',['../astaroth__forcing_8cc.html#aabce2b039eef6c49a111101c7e3b75ed',1,'astaroth_forcing.cc']]],
   ['helical_5fforcing_5fk_5fgenerator_60',['helical_forcing_k_generator',['../astaroth__forcing_8cc.html#acc56385bbd7e928169a6c5db4943a9cc',1,'astaroth_forcing.cc']]],
   ['helical_5fforcing_5fspecial_5fvector_61',['helical_forcing_special_vector',['../astaroth__forcing_8cc.html#a449782ef7762d00fc8119e96d2efd957',1,'astaroth_forcing.cc']]],
-  ['helper_20functions_62',['Initialization, Quitting and Helper Functions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md115',1,'']]],
-  ['helper_20scripts_63',['Helper scripts',['../md_pilot_2README.html#autotoc_md162',1,'']]],
+  ['helper_20functions_62',['Initialization, Quitting and Helper Functions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md116',1,'']]],
+  ['helper_20scripts_63',['Helper scripts',['../md_pilot_2README.html#autotoc_md163',1,'']]],
   ['helpers_2ecc_64',['helpers.cc',['../helpers_8cc.html',1,'']]],
   ['hessian_65',['hessian',['../stdderiv_8h.html#a45ee5dd62177633176f2f315ce88d9b7',1,'hessian(in ScalarField vertex):&#160;stdderiv.h'],['../general__operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1',1,'hessian(Field v):&#160;general_operators.h'],['../operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1',1,'hessian(Field v):&#160;operators.h']]],
   ['hierarchical_5fdecompose_66',['hierarchical_decompose',['../decomposition_8cc.html#abdd25806b12e8e29e0bd38f2fd40fab7',1,'hierarchical_decompose(const uint64_t target):&#160;decomposition.cc'],['../decomposition_2decomposition_8cc.html#abdd25806b12e8e29e0bd38f2fd40fab7',1,'hierarchical_decompose(const uint64_t target):&#160;decomposition.cc']]],
@@ -76,5 +76,5 @@ var searchData=
   ['host_5fdevice_73',['HOST_DEVICE',['../func__attributes_8h.html#a9e64b37aa76347c9bf88985c9dec78c9',1,'func_attributes.h']]],
   ['host_5fdevice_5finline_74',['HOST_DEVICE_INLINE',['../func__attributes_8h.html#a652a53d224ff3f9092f9f5e82a339ae9',1,'func_attributes.h']]],
   ['host_5finline_75',['HOST_INLINE',['../func__attributes_8h.html#a3ecbf5173855036dcf23e50973d5e275',1,'func_attributes.h']]],
-  ['how_20to_20apply_20these_20terms_20to_20your_20new_20programs_76',['how to apply these terms to your new programs',['../md_acc-runtime_2LICENCE.html#autotoc_md21',1,'How to Apply These Terms to Your New Programs'],['../md_LICENCE.html#autotoc_md157',1,'How to Apply These Terms to Your New Programs']]]
+  ['how_20to_20apply_20these_20terms_20to_20your_20new_20programs_76',['how to apply these terms to your new programs',['../md_acc-runtime_2LICENCE.html#autotoc_md21',1,'How to Apply These Terms to Your New Programs'],['../md_LICENCE.html#autotoc_md158',1,'How to Apply These Terms to Your New Programs']]]
 ];

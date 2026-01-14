@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"spherical__harmonics_8h_source.html":[19,0,0,5,24],
 "src_2core_2kernels_2kernels_8h.html":[19,0,6,0,3,6],
 "src_2core_2kernels_2kernels_8h.html#a0434e387f38177be4ca6b2c1fac1e5cd":[19,0,6,0,3,6,18],
 "src_2core_2kernels_2kernels_8h.html#a08f80594de4c0830634a1a8247bf9b4a":[19,0,6,0,3,6,20],
@@ -45,9 +46,9 @@ var NAVTREEINDEX16 =
 "static__analysis_8h_source.html":[19,0,0,1,21],
 "stdderiv_8h.html":[19,0,2,0,1,0],
 "stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b":[19,0,2,0,1,0,13],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,2],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[19,0,2,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[19,0,2,0,1,0,11],
 "stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[19,0,2,0,1,0,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structAcGridMappingFunction.html#acac903d2b2ccef935791f3814d3d8316":[18,0,17,0],
 "structAcGridMappingFunction.html#ada5428cec6af5a2e8901aa7fb960206e":[18,0,17,1],
 "structAcGridMappingFunction.html#ae2944347ebc58e898858e30dae1a8f8b":[18,0,17,2],
-"structAcInputs.html":[18,0,18],
-"structAcMatrix.html":[18,0,19]
+"structAcInputs.html":[18,0,18]
 };

@@ -536,12 +536,15 @@ Allocating declarations</h3>
 Reductions</h3>
 <p>For reductions the kernel has to be invoked at each vertex point of the domain. </p><div class="fragment"><div class="line">output real max_derux</div>
 <div class="line">Field ux,f</div>
-<div class="line">Profile&lt;X&gt; X_PROFILE</div>
+<div class="line">Profile&lt;X&gt;  X_PROFILE</div>
+<div class="line">Profile&lt;XY&gt; XY_PROFILE</div>
 <div class="line">Kernel reduce_kernel()</div>
 <div class="line">{</div>
-<div class="line">    reduce_max(true,derx(ux),max_derux) //scalar reduction</div>
-<div class="line">    reduce_sum(true,ux,X_PROFILE) //Reduction along y and z resulting in array that is x-dependent.</div>
+<div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction</div>
+<div class="line">    reduce_sum(ux,X_PROFILE) //Reduction along y and z resulting in array that is x-dependent.</div>
+<div class="line">    reduce_sum(ux,XY_PROFILE) //Reduction along z resulting in array that is xy-dependent.</div>
 <div class="line">}</div>
+<div class="line"> </div>
 <div class="line">Kernel read_output()</div>
 <div class="line">{</div>
 <div class="line">    write(ux,max_derux) //One can read directly the results of reductions in the DSL. The value of max_derux in this kernel would be the result of the reduction in the previous kernel.</div>
@@ -554,7 +557,7 @@ Reductions</h3>
 </ul>
 </li>
 </ul>
-<p>After executing the kernels reductions are finalized by the taskgraph behind the scenes. One can access the reduced value on the DSL similar to other varibles as in the example above.</p>
+<p>After executing the kernels reductions are finalized by the taskgraph behind the scenes. One can access the reduced value on the DSL similar to other varibles as in the example above. On the host side one can access the values with the appropriate API functions.</p>
 <p>The reduced scalar values can be accessed with <code>acDeviceGetOutput</code> or for <code>Profiles</code> with the corresponding API functions.</p>
 <p>When the result of the reduction is a <code>Profile</code> finalization is automatically included in the execution of the <code>TaskGraph</code>. For a simple end-to-end test see <code>test/use-scalar-reduce</code> and <code>test/reduce-test</code></p>
 <h3><a class="anchor" id="autotoc_md52"></a>
@@ -597,21 +600,59 @@ ComputeSteps</h3>
 </div><!-- fragment --><p><code>ComputeSteps</code> take in a parameter of <code>BoundConds</code>, from which it knows which boundary conditions to impose. In case required boundary conditions are not declared, the compilation will fail. You can access the generated <code>TaskGraph</code> with <code>acGetDSLTaskGraph</code>.</p>
 <p>To pass input values from the host side call <code>acDeviceSetInput</code>. With the example above to pass <code>2.0</code> to the first parameter of <code>kernel_call_1</code> one should call <code>acDeviceSetInput(device,ac_input_val,2.0)</code></p>
 <h3><a class="anchor" id="autotoc_md53"></a>
+Rays</h3>
+<p>Some computations of interest are not as embarrassingly parallel as applying stencils or reductions. For example integration of rays along integer directions have sequential dependencies along two-dimensional wavefronts. Take for example rays moving in the positive x-directions, to compute the update because of the moving ray at <code>(x,y,z)</code> the incoming value at <code>(x-1,y,z)</code> has to be computed and in more general for a ray moving in direction <code>(i,j,k)</code> one has to first compute the incoming value at <code>(x-i,y-j,z-k)</code>. When the incoming values at the boundaries of the local subdomain are set this has the effect that it is sufficient to have sequential dependency only in one of the cardinal directions and one thus has a slice of two-dimensional points for which the values can be computed in parallel. Rays are declared using the construct <code>Raytrace</code> and the direction in which the ray traverses. For example the following would declare rays moving in the positive x-direction and negative y-direction. </p><div class="fragment"><div class="line">Raytrace (+1,+0,+0) x_ray</div>
+<div class="line">Raytrace (+0,-1,+0) y_ray</div>
+</div><!-- fragment --><p> And the following would compute the sum of a <code>Field</code> along lines in the x-direction. </p><div class="fragment"><div class="line">Field f</div>
+<div class="line">Kernel sum_along_x_lines() {</div>
+<div class="line">    write(f,f + incoming_x_ray(f))</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> And the following along lines in the y-direction. </p><div class="fragment"><div class="line">Field f</div>
+<div class="line">Kernel sum_along_y_lines() {</div>
+<div class="line">    write(f,f + incoming_y_ray(f))</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> Notice an important details, these <code>Kernels</code> that have dependencies that are in different directions were separate. Understandable rays that have dependencies in different directions have to be in separate kernels. Rays that have the same dependencies can be naturally combined. The following is the maximal example of nine rays in a single kernel. </p><div class="fragment"><div class="line">Raytrace (+1,+1,+1) ppp_ray</div>
+<div class="line">Raytrace (+0,+1,+1) zpp_ray</div>
+<div class="line">Raytrace (-1,+1,+1) mpp_ray</div>
+<div class="line"> </div>
+<div class="line">Raytrace (+1,+0,+1) pzp_ray</div>
+<div class="line">Raytrace (+0,+0,+1) zzp_ray</div>
+<div class="line">Raytrace (-1,+0,+1) mzp_ray</div>
+<div class="line"> </div>
+<div class="line">Raytrace (+1,-1,+1) pmp_ray</div>
+<div class="line">Raytrace (+0,-1,+1) zmp_ray</div>
+<div class="line">Raytrace (-1,-1,+1) mmp_ray</div>
+<div class="line">Kernel nine_rays()</div>
+<div class="line">{</div>
+<div class="line">    write(Q_PPP,incoming_ppp_ray(Q_PPP)+1.0)</div>
+<div class="line">    write(Q_ZPP,incoming_zpp_ray(Q_ZPP)+1.0)</div>
+<div class="line">    write(Q_MPP,incoming_mpp_ray(Q_MPP)+1.0)</div>
+<div class="line"> </div>
+<div class="line">    write(Q_PZP,incoming_pzp_ray(Q_PZP)+1.0)</div>
+<div class="line">    write(Q_ZZP,incoming_zzp_ray(Q_ZZP)+1.0)</div>
+<div class="line">    write(Q_MZP,incoming_mzp_ray(Q_MZP)+1.0)</div>
+<div class="line"> </div>
+<div class="line">    write(Q_PMP,incoming_pmp_ray(Q_PMP)+1.0)</div>
+<div class="line">    write(Q_ZMP,incoming_zmp_ray(Q_ZMP)+1.0)</div>
+<div class="line">    write(Q_MMP,incoming_mmp_ray(Q_MMP)+1.0)</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> Since all the rays were moving in the positive z-direction they depend on the -z vertex before them. Thus there are 9 rays depending on -z,9 depending on +z,3 on -y, 3 on +y, 1 on -x and 1 on +x. We favour grouping rays in the z and y-directions since they are more performant since dependencies in the x-direction are less performant due to x being the fastest growing index. For a more expansive test case using rays see <code>test/ray-test</code>.</p>
+<h3><a class="anchor" id="autotoc_md54"></a>
 1D and 2D setups.</h3>
-<p>Dimensions can be set as inactive using the <code><a class="el" href="structbool3.html">bool3</a></code> variable <code>AC_dimension_inactive</code>. The operators in <code>stdlib</code> take the inactive dimensions correctly into account (namely derivatives across inactive dimensions are always unity). Additionally the ghost layers in the direction of inactive dimensions will not be allocated, which produces a memory saving of a times 7 in 2d.</p>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<p>Dimensions can be set as inactive using the <code><a class="el" href="structbool3.html">bool3</a></code> variable <code>AC_dimension_inactive</code>. The operators and derivative stencils in <code><a class="el" href="general__operators_8h.html">stdlib/general_operators.h</a></code> and <code><a class="el" href="general__derivs_8h.html">stdlib/general_derivs.h</a></code> take the inactive dimensions correctly into account (namely derivatives across inactive dimensions are always unity). Additionally the ghost layers in the direction of inactive dimensions will not be allocated, which produces a memory saving of a times 7 in 2d.</p>
+<h1><a class="anchor" id="autotoc_md55"></a>
 Interaction with the Astaroth Core and Utils libraries</h1>
-<h2><a class="anchor" id="autotoc_md55"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 Loading and storing stencil coefficients at runtime</h2>
 <p>The Astaroth Runtime API provides the functions <code>acLoadStencil</code> and <code>acStoreStencil</code> for loading/storing stencil coefficients at runtime. This is useful for, say, for setting the coefficients programmatically if too cumbersome by hand. We however highly recommend to use device constant variables in the stencil coefficients instead of separately loading stencil coefficients at runtime , since it eliminates coding errors where the actual stencil coefficients are calculated separately from the stencil declarations.</p>
 <p>See also the functions <code>acDeviceLoadStencil</code>, <code>acDeviceStoreStencil</code>, <code>acGridLoadStencil</code>, and <code>acGridStoreStencil</code> provided by the Astaroth Core library.</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 Additional physics-specific API functions</h2>
 <p>To enable additional API functions in the Astaroth Core library for integration (<code>acIntegrate</code> function family) and MHD-specific tasks (automated testing, MHD samples), one must set <code>hostdefine AC_INTEGRATION_ENABLED (1)</code> in the DSL file. Note that if used in the DSL code, the hostdefine must not define anything that is not visible at compile-time. For example, <code>hostdefine R_PI (M_PI)</code>, where <code>M_PI</code> is defined is some host header, <code>M_PI</code> will not be visible in the DSL code and will result in a compilation error. Additionally, code such as <code>#if M_PI</code> will be always false in the DSL source if <code>M_PI</code> is not visible in the DSL file.</p>
 <blockquote class="doxtable">
 <p>&zwj;Note: The extended API depends on several hardcoded fields and device constants. It is not recommended to enable it unless you work on the MHD sample case (<code>acc-runtime/samples/mhd</code>) or its derivatives. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md58"></a>
 Stencil order</h2>
 <p>The stencil order can be set by the user by <code>hostdefine STENCIL_ORDER (x)</code>, where <code>x</code> is the total number of cells on both sides of the center point per axis. For example, a simple von Neumann stencil is of order 2.</p>
 <p>Alternatively it can be set via CMAKE with <code>-DAC_STENCIL_ORDER=N</code>.</p>

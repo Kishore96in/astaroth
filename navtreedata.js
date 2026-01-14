@@ -61,133 +61,134 @@ var NAVTREE =
           [ "Allocating declarations", "md_acc-runtime_2README.html#autotoc_md50", null ],
           [ "Reductions", "md_acc-runtime_2README.html#autotoc_md51", null ],
           [ "ComputeSteps", "md_acc-runtime_2README.html#autotoc_md52", null ],
-          [ "1D and 2D setups.", "md_acc-runtime_2README.html#autotoc_md53", null ]
+          [ "Rays", "md_acc-runtime_2README.html#autotoc_md53", null ],
+          [ "1D and 2D setups.", "md_acc-runtime_2README.html#autotoc_md54", null ]
         ] ]
       ] ],
-      [ "Interaction with the Astaroth Core and Utils libraries", "md_acc-runtime_2README.html#autotoc_md54", [
-        [ "Loading and storing stencil coefficients at runtime", "md_acc-runtime_2README.html#autotoc_md55", null ],
-        [ "Additional physics-specific API functions", "md_acc-runtime_2README.html#autotoc_md56", null ],
-        [ "Stencil order", "md_acc-runtime_2README.html#autotoc_md57", null ]
+      [ "Interaction with the Astaroth Core and Utils libraries", "md_acc-runtime_2README.html#autotoc_md55", [
+        [ "Loading and storing stencil coefficients at runtime", "md_acc-runtime_2README.html#autotoc_md56", null ],
+        [ "Additional physics-specific API functions", "md_acc-runtime_2README.html#autotoc_md57", null ],
+        [ "Stencil order", "md_acc-runtime_2README.html#autotoc_md58", null ]
       ] ]
     ] ],
     [ "ROMIO directory - Tuning parameters for MPI IO", "md_config_2romio_2README.html", [
-      [ "Usage", "md_config_2romio_2README.html#autotoc_md59", null ]
+      [ "Usage", "md_config_2romio_2README.html#autotoc_md60", null ]
     ] ],
     [ "README", "md_config_2samples_2boundtest_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2boundtest_2README.html#autotoc_md60", null ],
-      [ "What is a successful test", "md_config_2samples_2boundtest_2README.html#autotoc_md61", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2boundtest_2README.html#autotoc_md62", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2boundtest_2README.html#autotoc_md63", null ],
-      [ "Running the simulation.", "md_config_2samples_2boundtest_2README.html#autotoc_md64", null ],
-      [ "Troubleshooting", "md_config_2samples_2boundtest_2README.html#autotoc_md65", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2boundtest_2README.html#autotoc_md61", null ],
+      [ "What is a successful test", "md_config_2samples_2boundtest_2README.html#autotoc_md62", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2boundtest_2README.html#autotoc_md63", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2boundtest_2README.html#autotoc_md64", null ],
+      [ "Running the simulation.", "md_config_2samples_2boundtest_2README.html#autotoc_md65", null ],
+      [ "Troubleshooting", "md_config_2samples_2boundtest_2README.html#autotoc_md66", null ]
     ] ],
     [ "README", "md_config_2samples_2haatouken_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2haatouken_2README.html#autotoc_md66", null ],
-      [ "What is a successful test", "md_config_2samples_2haatouken_2README.html#autotoc_md67", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2haatouken_2README.html#autotoc_md68", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2haatouken_2README.html#autotoc_md69", null ],
-      [ "Running the simulation.", "md_config_2samples_2haatouken_2README.html#autotoc_md70", null ],
-      [ "Troubleshooting", "md_config_2samples_2haatouken_2README.html#autotoc_md71", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2haatouken_2README.html#autotoc_md67", null ],
+      [ "What is a successful test", "md_config_2samples_2haatouken_2README.html#autotoc_md68", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2haatouken_2README.html#autotoc_md69", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2haatouken_2README.html#autotoc_md70", null ],
+      [ "Running the simulation.", "md_config_2samples_2haatouken_2README.html#autotoc_md71", null ],
+      [ "Troubleshooting", "md_config_2samples_2haatouken_2README.html#autotoc_md72", null ]
     ] ],
     [ "README", "md_config_2samples_2shockturb_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2shockturb_2README.html#autotoc_md72", null ],
-      [ "What is a successful test", "md_config_2samples_2shockturb_2README.html#autotoc_md73", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2shockturb_2README.html#autotoc_md74", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2shockturb_2README.html#autotoc_md75", null ],
-      [ "Running the simulation.", "md_config_2samples_2shockturb_2README.html#autotoc_md76", null ],
-      [ "Troubleshooting", "md_config_2samples_2shockturb_2README.html#autotoc_md77", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2shockturb_2README.html#autotoc_md73", null ],
+      [ "What is a successful test", "md_config_2samples_2shockturb_2README.html#autotoc_md74", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2shockturb_2README.html#autotoc_md75", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2shockturb_2README.html#autotoc_md76", null ],
+      [ "Running the simulation.", "md_config_2samples_2shockturb_2README.html#autotoc_md77", null ],
+      [ "Troubleshooting", "md_config_2samples_2shockturb_2README.html#autotoc_md78", null ]
     ] ],
     [ "README", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md78", null ],
-      [ "What is a successful test", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md79", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md80", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md81", null ],
-      [ "Running the simulation.", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md82", null ],
-      [ "Troubleshooting", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md83", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md79", null ],
+      [ "What is a successful test", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md80", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md81", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md82", null ],
+      [ "Running the simulation.", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md83", null ],
+      [ "Troubleshooting", "md_config_2samples_2subsonic__forced__nonhelical__turbulence_2README.html#autotoc_md84", null ]
     ] ],
     [ "README", "md_config_2samples_2subsonic__forced__turbulence_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md84", null ],
-      [ "What is a successful test", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md85", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md86", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md87", null ],
-      [ "Running the simulation.", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md88", null ],
-      [ "Troubleshooting", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md89", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md85", null ],
+      [ "What is a successful test", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md86", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md87", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md88", null ],
+      [ "Running the simulation.", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md89", null ],
+      [ "Troubleshooting", "md_config_2samples_2subsonic__forced__turbulence_2README.html#autotoc_md90", null ]
     ] ],
     [ "README", "md_config_2samples_2tubeflow_2README.html", [
-      [ "Purpose of this simulation setup", "md_config_2samples_2tubeflow_2README.html#autotoc_md90", null ],
-      [ "What is a successful test", "md_config_2samples_2tubeflow_2README.html#autotoc_md91", null ],
-      [ "Required LSWITCHES", "md_config_2samples_2tubeflow_2README.html#autotoc_md92", null ],
-      [ "TaskGraph", "md_config_2samples_2tubeflow_2README.html#autotoc_md93", null ],
-      [ "Setting up and compiling.", "md_config_2samples_2tubeflow_2README.html#autotoc_md94", null ],
-      [ "Running the simulation.", "md_config_2samples_2tubeflow_2README.html#autotoc_md95", null ],
-      [ "Troubleshooting", "md_config_2samples_2tubeflow_2README.html#autotoc_md96", null ]
+      [ "Purpose of this simulation setup", "md_config_2samples_2tubeflow_2README.html#autotoc_md91", null ],
+      [ "What is a successful test", "md_config_2samples_2tubeflow_2README.html#autotoc_md92", null ],
+      [ "Required LSWITCHES", "md_config_2samples_2tubeflow_2README.html#autotoc_md93", null ],
+      [ "TaskGraph", "md_config_2samples_2tubeflow_2README.html#autotoc_md94", null ],
+      [ "Setting up and compiling.", "md_config_2samples_2tubeflow_2README.html#autotoc_md95", null ],
+      [ "Running the simulation.", "md_config_2samples_2tubeflow_2README.html#autotoc_md96", null ],
+      [ "Troubleshooting", "md_config_2samples_2tubeflow_2README.html#autotoc_md97", null ]
     ] ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Basic workflow", "md_CONTRIBUTING.html#autotoc_md98", null ],
-      [ "Programming", "md_CONTRIBUTING.html#autotoc_md99", null ],
-      [ "Committing", "md_CONTRIBUTING.html#autotoc_md100", null ],
-      [ "Formatting", "md_CONTRIBUTING.html#autotoc_md101", null ],
-      [ "Header example:", "md_CONTRIBUTING.html#autotoc_md102", null ],
-      [ "Source example:", "md_CONTRIBUTING.html#autotoc_md103", null ],
-      [ "Managing feature branches", "md_CONTRIBUTING.html#autotoc_md104", null ],
-      [ "About branches in general", "md_CONTRIBUTING.html#autotoc_md105", null ]
+      [ "Basic workflow", "md_CONTRIBUTING.html#autotoc_md99", null ],
+      [ "Programming", "md_CONTRIBUTING.html#autotoc_md100", null ],
+      [ "Committing", "md_CONTRIBUTING.html#autotoc_md101", null ],
+      [ "Formatting", "md_CONTRIBUTING.html#autotoc_md102", null ],
+      [ "Header example:", "md_CONTRIBUTING.html#autotoc_md103", null ],
+      [ "Source example:", "md_CONTRIBUTING.html#autotoc_md104", null ],
+      [ "Managing feature branches", "md_CONTRIBUTING.html#autotoc_md105", null ],
+      [ "About branches in general", "md_CONTRIBUTING.html#autotoc_md106", null ]
     ] ],
     [ "ACC - Astaroth Code Compiler", "md_deprecated_2acc-2_84_2README.html", [
-      [ "Dependencies", "md_deprecated_2acc-2_84_2README.html#autotoc_md107", null ],
-      [ "Building", "md_deprecated_2acc-2_84_2README.html#autotoc_md108", null ],
-      [ "Usage", "md_deprecated_2acc-2_84_2README.html#autotoc_md109", null ]
+      [ "Dependencies", "md_deprecated_2acc-2_84_2README.html#autotoc_md108", null ],
+      [ "Building", "md_deprecated_2acc-2_84_2README.html#autotoc_md109", null ],
+      [ "Usage", "md_deprecated_2acc-2_84_2README.html#autotoc_md110", null ]
     ] ],
     [ "Astaroth Specification and User Manual", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html", [
-      [ "Introduction and Background", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md111", [
-        [ "Publications", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md112", null ]
+      [ "Introduction and Background", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md112", [
+        [ "Publications", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md113", null ]
       ] ],
-      [ "Astaroth API", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md113", [
-        [ "List of Astaroth API Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md114", [
-          [ "Initialization, Quitting and Helper Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md115", null ],
-          [ "Loading and Storing", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md116", null ],
-          [ "Integration, Reductions and Boundary Conditions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md117", null ]
+      [ "Astaroth API", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md114", [
+        [ "List of Astaroth API Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md115", [
+          [ "Initialization, Quitting and Helper Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md116", null ],
+          [ "Loading and Storing", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md117", null ],
+          [ "Integration, Reductions and Boundary Conditions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md118", null ]
         ] ],
-        [ "Stream Synchronization", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md118", null ],
-        [ "Data Synchronization", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md119", null ],
-        [ "Input and Output Buffers", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md120", null ],
-        [ "Devices", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md121", null ],
-        [ "Nodes", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md122", null ],
-        [ "Meshes", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md123", null ]
+        [ "Stream Synchronization", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md119", null ],
+        [ "Data Synchronization", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md120", null ],
+        [ "Input and Output Buffers", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md121", null ],
+        [ "Devices", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md122", null ],
+        [ "Nodes", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md123", null ],
+        [ "Meshes", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md124", null ]
       ] ],
-      [ "Astaroth Domain-Specific Language 2.0 (<strong>DEPRECATED</strong>. See acc-runtime/README.md for the Astaroth 3.0 DSL syntax)", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md124", [
-        [ "Overview", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md125", null ],
-        [ "Data Types", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md126", null ],
-        [ "Precision", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md127", null ],
-        [ "Control Flow", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md128", null ],
-        [ "Kernels", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md129", null ],
-        [ "Preprocessed Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md130", null ],
-        [ "Device Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md131", null ],
-        [ "Uniforms", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md132", null ],
-        [ "Standard Libraries", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md133", null ],
-        [ "Performance Considerations", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md134", null ],
-        [ "Notes on autotesting", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md135", null ]
+      [ "Astaroth Domain-Specific Language 2.0 (<strong>DEPRECATED</strong>. See acc-runtime/README.md for the Astaroth 3.0 DSL syntax)", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md125", [
+        [ "Overview", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md126", null ],
+        [ "Data Types", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md127", null ],
+        [ "Precision", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md128", null ],
+        [ "Control Flow", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md129", null ],
+        [ "Kernels", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md130", null ],
+        [ "Preprocessed Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md131", null ],
+        [ "Device Functions", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md132", null ],
+        [ "Uniforms", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md133", null ],
+        [ "Standard Libraries", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md134", null ],
+        [ "Performance Considerations", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md135", null ],
+        [ "Notes on autotesting", "md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md136", null ]
       ] ]
     ] ],
     [ "GNU GENERAL PUBLIC LICENSE", "md_LICENCE.html", null ],
     [ "Pilot run notes and instructions", "md_pilot_2README.html", [
-      [ "Important files:", "md_pilot_2README.html#autotoc_md159", null ],
-      [ "Issues", "md_pilot_2README.html#autotoc_md160", null ],
-      [ "Manual workflow without scripts (see <tt>scripts/gen_rundir.sh</tt> for automating parts of this)", "md_pilot_2README.html#autotoc_md161", null ],
-      [ "Helper scripts", "md_pilot_2README.html#autotoc_md162", null ]
+      [ "Important files:", "md_pilot_2README.html#autotoc_md160", null ],
+      [ "Issues", "md_pilot_2README.html#autotoc_md161", null ],
+      [ "Manual workflow without scripts (see <tt>scripts/gen_rundir.sh</tt> for automating parts of this)", "md_pilot_2README.html#autotoc_md162", null ],
+      [ "Helper scripts", "md_pilot_2README.html#autotoc_md163", null ]
     ] ],
     [ "contrib/", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html", [
-      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md180", [
-        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md181", null ]
+      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md181", [
+        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md182", null ]
       ] ]
     ] ],
     [ "matplotlib-cpp", "md_test_2walker-test_2matplotlib-cpp_2README.html", [
-      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md182", null ],
-      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md183", null ],
-      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md184", null ],
-      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md185", null ],
-      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md186", [
-        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md187", null ],
-        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md188", null ]
+      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md183", null ],
+      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md184", null ],
+      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md185", null ],
+      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md186", null ],
+      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md187", [
+        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md188", null ],
+        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md189", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -239,14 +240,14 @@ var NAVTREEINDEX =
 "grid_8h.html#a30aef59743ffae80d7c0217be41544ab",
 "host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d",
 "matplotlibcpp_8h.html#a61bc8aab0ceca9c4df59dbbccc8ffb3f",
-"namespacematplotlibcpp.html#a2ecd6145f724318bc69330df7044bb5b",
-"pcstyleforcing_8h.html#a94bead3fb1314abed3f3aa9860347640",
-"smooth__max_8h.html#a4c11e3a27017f200f30f155ea207caf3",
-"src_2core_2kernels_2kernels_8h.html",
-"structAcMatrix.html#a0b5a7d6f9abb013d4ea00526effc24b5",
-"structSymbol.html#a3ce38edb84950e88ca9a82d829536586",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#ac6fa438b0d62b785e060acbef77007b4",
-"tinyexpr_8c.html#a7c2f4f3ec7775f44ae8e98b7314ce570"
+"namespacematplotlibcpp.html#a2851ef02b92b32ee7d3dd8f8fd065ae3",
+"pcstyleforcing_8h.html",
+"smooth__max_8h.html#a4bcfb3af37c73a4ffb3fa46b8344dd5c",
+"spherical__harmonics_8h_source.html",
+"structAcMatrix.html",
+"structSymbol.html#a21bce1a3f292b72060ea2bb474897d1b",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#ac50e4c45e23217dacfbc7eb62f4e9dfe",
+"tinyexpr_8c.html#a7a661cdde5f28aee01c23dd044b7ac26"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
