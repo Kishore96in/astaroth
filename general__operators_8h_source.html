@@ -916,8 +916,14 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordflow">return</span> f + (h2/12.0)*<a class="code hl_function" href="general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95">laplace</a>(f) + (h4/360.0)*<a class="code hl_function" href="general__operators_8h.html#ae154a5a8144a09dcc142dd55d4394e00">del4</a>(f)</div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>           + (h4/180.0)*(der2x2y(f) + der2y2z(f) + der2x2z(f))</div>
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>}</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>compact_poisson_rhs(Field f)</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>{</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a>(<span class="keyword">true</span>,<span class="stringliteral">&quot;Compact stencils for Poisson exist only for sixth-order!\n&quot;</span>);</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keywordflow">return</span> 0.0</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>}</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacc-runtime_2acc_2ast_8h_html_a7b50077bef75e0e1697a39b905253930"><div class="ttname"><a href="acc-runtime_2acc_2ast_8h.html#a7b50077bef75e0e1697a39b905253930">if</a></div><div class="ttdeci">if(node-&gt;rhs) change_qualifier(node -&gt; rhs, old_qualifier, new_qualifier)</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:462</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:466</div></div>
