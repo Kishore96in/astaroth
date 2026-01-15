@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('sink__particle_8h_source.html',''); in
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">//Only flux at the inner radius goes to the central sink particle</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    flux_going_to_sink_particle  = (radial_velocity &lt; 0.0 &amp;&amp; globalVertexIdx.x == NGHOST)*momentum_flux</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">//Hack to increase the sink momentum instead of overwriting it</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    resum_particle_momentum = <a class="code hl_variable" href="variables_8h.html#ad6a03e633a2f733a3d263809f8dda5fd">AC_ngrid_products_inv</a>.<a class="code hl_variable" href="structAcDimProductsInv.html#a757b72242594a4960fc624043630c482">xyz</a>*AC_central_sink_particle_momentum</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    resum_particle_momentum = (vertexIdx == (<a class="code hl_struct" href="structint3.html">int3</a>){NGHOST,NGHOST,NGHOST})*AC_central_sink_particle_momentum</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    reduce_sum(resum_particle_momentum + flux_going_to_sink_particle,AC_central_sink_particle_momentum)</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
@@ -125,9 +125,8 @@ $(document).ready(function(){initNavTree('sink__particle_8h_source.html',''); in
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="amath__utils_8h_html_a0cb8046c9ac52516329d57a440a7e60a"><div class="ttname"><a href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div><div class="ttdeci">#define sin(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:41</div></div>
 <div class="ttc" id="anamespacematplotlibcpp_html_ae0bbf80e73099a91df28e4fb871b166a"><div class="ttname"><a href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">matplotlibcpp::grid</a></div><div class="ttdeci">void grid(bool flag)</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:2525</div></div>
-<div class="ttc" id="astructAcDimProductsInv_html_a757b72242594a4960fc624043630c482"><div class="ttname"><a href="structAcDimProductsInv.html#a757b72242594a4960fc624043630c482">AcDimProductsInv::xyz</a></div><div class="ttdeci">real xyz</div><div class="ttdef"><b>Definition</b> typedefs.h:120</div></div>
+<div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
 <div class="ttc" id="astructreal3_html"><div class="ttname"><a href="structreal3.html">real3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:21</div></div>
-<div class="ttc" id="avariables_8h_html_ad6a03e633a2f733a3d263809f8dda5fd"><div class="ttname"><a href="variables_8h.html#ad6a03e633a2f733a3d263809f8dda5fd">AC_ngrid_products_inv</a></div><div class="ttdeci">run_const AcDimProductsInv AC_ngrid_products_inv</div><div class="ttdef"><b>Definition</b> variables.h:94</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
