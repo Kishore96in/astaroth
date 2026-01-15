@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"structAcDeviceKernelOutput.html":[18,0,12],
+"structAcDeviceTmpBuffer.html":[18,0,13],
+"structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a":[18,0,13,0],
 "structAcDeviceTmpBuffer.html#af5f97bc385ba721ba952ef70b3ac3b6c":[18,0,13,1],
 "structAcDimProducts.html":[18,0,14],
 "structAcDimProducts.html#a19f253ddee38ba921cff1768b94727fe":[18,0,14,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "structRegion.html#a74bf5972f9496a429ea0700914ec0bf1":[18,0,103,14],
 "structRegion.html#a886faf9697cddfbb14844bb54f77129c":[18,0,103,9],
 "structRegion.html#a9a80004ffd4eb1cf2ef5920675e396e2":[18,0,103,3],
-"structRegion.html#a9ac6875a00dc8c208ad1ca4e9de4a82f":[18,0,103,6],
-"structRegion.html#ab2819df990a997f846e481c5b64449be":[18,0,103,11],
-"structRegion.html#ad2d4b194aafb91973b7d1d48c120c9ff":[18,0,103,13],
-"structRegion.html#ad55230cb63286d508615b70d1e7b1d8b":[18,0,103,2]
+"structRegion.html#a9ac6875a00dc8c208ad1ca4e9de4a82f":[18,0,103,6]
 };

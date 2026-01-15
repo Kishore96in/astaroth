@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classHaloExchangeTask.html#a7040db8b060e276a53785fb35237ff8b":[18,0,62,11],
+"classHaloExchangeTask.html#a72abceda9e5c17753a2691d94bcdfb60":[18,0,62,5],
 "classHaloExchangeTask.html#a7abf95ddbe1f5e34047f0091719c2f88":[18,0,62,10],
 "classHaloExchangeTask.html#a8a87ea5ce648b44dfaf39183ca99f5d5":[18,0,62,19],
 "classHaloExchangeTask.html#a952cf2ee977a4ffbd9a589f4cfa40c52":[18,0,62,0],
@@ -87,18 +89,18 @@ var NAVTREEINDEX4 =
 "classTask.html#ae849cdf6649025db897d4a0862e13677":[18,0,115,39],
 "classTask.html#af786e1a43c2a5d473edae78133a3cff2":[18,0,115,22],
 "classes.html":[18,1],
-"classmatplotlibcpp_1_1Plot.html":[18,0,0,1],
 "classmatplotlibcpp_1_1Plot.html":[17,0,1,1],
-"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[17,0,1,1,3],
+"classmatplotlibcpp_1_1Plot.html":[18,0,0,1],
 "classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[18,0,0,1,3],
+"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[17,0,1,1,3],
 "classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[17,0,1,1,0],
 "classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[18,0,0,1,0],
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[17,0,1,1,2],
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[18,0,0,1,2],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[17,0,1,1,1],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[18,0,0,1,1],
-"classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[18,0,0,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[17,0,1,1,5],
+"classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[18,0,0,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac78c9ebb89d13558046ea23eee188aea":[18,0,0,1,4],
 "classmatplotlibcpp_1_1Plot.html#ac78c9ebb89d13558046ea23eee188aea":[17,0,1,1,4],
 "code__generator_8c.html":[19,0,2,0,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "codegen_8c.html#a4bf864039d66d4a265c1fa4aa792cabf":[19,0,0,0,2,458],
 "codegen_8c.html#a4cbd6703f984a509c3d0339f35ced623":[19,0,0,0,2,295],
 "codegen_8c.html#a4d15cad6eadfdb42bc978ff7ef92a8d2":[19,0,0,0,2,66],
-"codegen_8c.html#a4d62e036d73633de83675b245bf1fd60":[19,0,0,0,2,340],
-"codegen_8c.html#a4e5d0c32aeb6e9904b9178631cd1595d":[19,0,0,0,2,488],
-"codegen_8c.html#a4e855b2e7f51a84e15f61ebe22abe420":[19,0,0,0,2,494]
+"codegen_8c.html#a4d62e036d73633de83675b245bf1fd60":[19,0,0,0,2,340]
 };

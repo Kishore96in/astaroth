@@ -4,6 +4,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "2d-test", "dir_246fe947b981ae18f85137fc843a196d.html", "dir_246fe947b981ae18f85137fc843a196d" ],
     [ "arr-test", "dir_b8b829702f5a145777230e76d70f4649.html", "dir_b8b829702f5a145777230e76d70f4649" ],
     [ "average-stencil", "dir_7f54174e502afbc0fcedac92192b957f.html", "dir_7f54174e502afbc0fcedac92192b957f" ],
+    [ "bicgstab-test", "dir_358e3aa7507f88a36765fd3c6ea0a19e.html", "dir_358e3aa7507f88a36765fd3c6ea0a19e" ],
     [ "boundary-halo-exchange-test", "dir_a979d92b74082d10500393f103dc7bb7.html", "dir_a979d92b74082d10500393f103dc7bb7" ],
     [ "bwtest", "dir_94e76f5234120c5e96dd4d571cafda0a.html", "dir_94e76f5234120c5e96dd4d571cafda0a" ],
     [ "cg-test", "dir_fbcaf52bd7555aaf2a169b3f553b0217.html", "dir_fbcaf52bd7555aaf2a169b3f553b0217" ],
