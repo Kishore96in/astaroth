@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a4854fc237468144bd46809ea7ce8f2a0":[19,0,8,31,0,1,12],
+"matplotlibcpp_8h.html#a4cc9d207ab565df55b663b264be9ce72":[19,0,8,31,0,1,41],
 "matplotlibcpp_8h.html#a4dce9b4c1c16c1dab0cffd11588d4db8":[19,0,8,31,0,1,75],
 "matplotlibcpp_8h.html#a529c059f3fca364b9fcb3b2e09cce36b":[19,0,8,31,0,1,54],
 "matplotlibcpp_8h.html#a57af9838664a40f0d7aabd3b184ec860":[19,0,8,31,0,1,72],
@@ -238,16 +240,14 @@ var NAVTREEINDEX12 =
 "modelsolver-legacy-do-not-modify_8c.html#ad5991be9890435175b9f00f6b2e02a38":[19,0,6,1,7,0],
 "modelsolver_8cc.html":[19,0,6,1,8],
 "modelsolver_8cc.html#ad5991be9890435175b9f00f6b2e02a38":[19,0,6,1,8,0],
-"mpi-profile-reduce_2main_8cc.html":[19,0,8,14,0],
-"mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,14,0,0],
-"multigrid-test_2main_8cc.html":[19,0,8,15,0],
-"multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,15,0,0],
+"mpi-profile-reduce_2main_8cc.html":[19,0,8,15,0],
+"mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,15,0,0],
+"multigrid-test_2main_8cc.html":[19,0,8,16,0],
+"multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,16,0,0],
 "namespaceac.html":[17,0,0],
 "namespaceac_1_1helical__forcing.html":[17,0,0,0],
 "namespacematplotlibcpp.html":[17,0,1],
 "namespacematplotlibcpp.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[17,0,1,27],
 "namespacematplotlibcpp.html#a00a57926330764f8490142b3ce06bd2e":[17,0,1,25],
-"namespacematplotlibcpp.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[17,0,1,72],
-"namespacematplotlibcpp.html#a0638f54cec7e104c8a2aae0e60bc01f4":[17,0,1,19],
-"namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b":[17,0,1,50]
+"namespacematplotlibcpp.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[17,0,1,72]
 };
