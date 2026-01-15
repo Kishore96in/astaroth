@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a468096a42e46d0a26e8a237ffb24caca":[19,0,8,31,0,1,47],
 "matplotlibcpp_8h.html#a4854fc237468144bd46809ea7ce8f2a0":[19,0,8,31,0,1,12],
 "matplotlibcpp_8h.html#a4cc9d207ab565df55b663b264be9ce72":[19,0,8,31,0,1,41],
 "matplotlibcpp_8h.html#a4dce9b4c1c16c1dab0cffd11588d4db8":[19,0,8,31,0,1,75],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "namespaceac_1_1helical__forcing.html":[17,0,0,0],
 "namespacematplotlibcpp.html":[17,0,1],
 "namespacematplotlibcpp.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[17,0,1,27],
-"namespacematplotlibcpp.html#a00a57926330764f8490142b3ce06bd2e":[17,0,1,25],
-"namespacematplotlibcpp.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[17,0,1,72]
+"namespacematplotlibcpp.html#a00a57926330764f8490142b3ce06bd2e":[17,0,1,25]
 };
