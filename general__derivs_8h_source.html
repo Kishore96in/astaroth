@@ -4153,7 +4153,7 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="line"><a id="l04051" name="l04051"></a><span class="lineno"> 4051</span><span class="comment">//</span></div>
 <div class="line"><a id="l04059" name="l04059"></a><span class="lineno"> 4059</span>Stencil compact_poisson_lhs</div>
 <div class="line"><a id="l04060" name="l04060"></a><span class="lineno"> 4060</span>{</div>
-<div class="line"><a id="l04061" name="l04061"></a><span class="lineno"> 4061</span>    [ 0][ 0][ 0]  = (-<a class="code hl_define" href="general__derivs_8h.html#a0f55b60c8d70e18ee53b317b81dd5c5d">COMPACT_POISSON_CENTRAL</a>)*AC_inv_ds_2.x,</div>
+<div class="line"><a id="l04061" name="l04061"></a><span class="lineno"> 4061</span>    [ 0][ 0][ 0]  = (<a class="code hl_define" href="general__derivs_8h.html#a0f55b60c8d70e18ee53b317b81dd5c5d">COMPACT_POISSON_CENTRAL</a>)*AC_inv_ds_2.x,</div>
 <div class="line"><a id="l04062" name="l04062"></a><span class="lineno"> 4062</span>    [ 0][ 0][ 1]  = (<a class="code hl_define" href="general__derivs_8h.html#aa0d30d14e865b8afdaffcda32918332a">COMPACT_POISSON_FACE</a>)*AC_inv_ds_2.x,</div>
 <div class="line"><a id="l04063" name="l04063"></a><span class="lineno"> 4063</span>    [ 0][ 0][-1]  = (<a class="code hl_define" href="general__derivs_8h.html#aa0d30d14e865b8afdaffcda32918332a">COMPACT_POISSON_FACE</a>)*AC_inv_ds_2.x,</div>
 <div class="line"><a id="l04064" name="l04064"></a><span class="lineno"> 4064</span>    [ 0][ 1][ 0]  = (<a class="code hl_define" href="general__derivs_8h.html#aa0d30d14e865b8afdaffcda32918332a">COMPACT_POISSON_FACE</a>)*AC_inv_ds_2.x,</div>
@@ -4222,7 +4222,7 @@ $(document).ready(function(){initNavTree('general__derivs_8h_source.html',''); i
 <div class="line"><a id="l04131" name="l04131"></a><span class="lineno"> 4131</span> </div>
 <div class="line"><a id="l04136" name="l04136"></a><span class="lineno"> 4136</span>compact_poisson_lhs_central_coeff()</div>
 <div class="line"><a id="l04137" name="l04137"></a><span class="lineno"> 4137</span>{</div>
-<div class="line"><a id="l04138" name="l04138"></a><span class="lineno"> 4138</span>    <span class="keywordflow">return</span> (-<a class="code hl_define" href="general__derivs_8h.html#a0f55b60c8d70e18ee53b317b81dd5c5d">COMPACT_POISSON_CENTRAL</a>)*AC_inv_ds_2.x</div>
+<div class="line"><a id="l04138" name="l04138"></a><span class="lineno"> 4138</span>    <span class="keywordflow">return</span> (<a class="code hl_define" href="general__derivs_8h.html#a0f55b60c8d70e18ee53b317b81dd5c5d">COMPACT_POISSON_CENTRAL</a>)*AC_inv_ds_2.x</div>
 <div class="line"><a id="l04139" name="l04139"></a><span class="lineno"> 4139</span>}</div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:462</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:466</div></div>
