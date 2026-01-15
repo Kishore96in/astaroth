@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"namespacematplotlibcpp.html#a107bbc57e93a929c75baf1c60a712d8b":[17,0,1,54],
+"namespacematplotlibcpp.html#a12ac5a7fc96a03d27b3249fc6a54974f":[17,0,1,83],
+"namespacematplotlibcpp.html#a14e2b6e595e057f553ef7b14ddcda82a":[17,0,1,79],
+"namespacematplotlibcpp.html#a19804a8cbd413b15c8d07848d7a5890e":[17,0,1,53],
 "namespacematplotlibcpp.html#a1f9102b1c7b0be41471bc65c20f38b95":[17,0,1,60],
 "namespacematplotlibcpp.html#a2851ef02b92b32ee7d3dd8f8fd065ae3":[17,0,1,38],
 "namespacematplotlibcpp.html#a2ecd6145f724318bc69330df7044bb5b":[17,0,1,58],
@@ -220,8 +224,8 @@ var NAVTREEINDEX13 =
 "pc__derivs_8h.html#a6ed734bf8a0d2264f7b4ac73167306d0":[19,0,0,5,18,19],
 "pc__derivs_8h.html#a76c8b5731ba1b2c7a1ca6fdaaf5cdf82":[19,0,0,5,18,28],
 "pc__derivs_8h.html#a77994b62c5a9c1279237ed9e549102a5":[19,0,0,5,18,5],
-"pc__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,18,46],
 "pc__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,18,47],
+"pc__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,18,46],
 "pc__derivs_8h.html#a7f16283d002374281a1909f53c65234a":[19,0,0,5,18,36],
 "pc__derivs_8h.html#a85b9790e5a836b4f7694032a9cf209a0":[19,0,0,5,18,31],
 "pc__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840":[19,0,0,5,18,10],
@@ -239,15 +243,11 @@ var NAVTREEINDEX13 =
 "pc__derivs_8h.html#ac6196442b533cffe767f6ff0f5c4c09c":[19,0,0,5,18,51],
 "pc__derivs_8h.html#ac972e08b9f66a38dad81989309aad37e":[19,0,0,5,18,27],
 "pc__derivs_8h.html#acb5b1b022534b29852f2d5935ef0e68a":[19,0,0,5,18,11],
-"pc__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[19,0,0,5,18,56],
 "pc__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[19,0,0,5,18,57],
+"pc__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[19,0,0,5,18,56],
 "pc__derivs_8h.html#ad2e66845873ee48a12f750051096e870":[19,0,0,5,18,50],
 "pc__derivs_8h.html#ad423177238bbaf3959b9f03b2cca1d7c":[19,0,0,5,18,13],
 "pc__derivs_8h.html#adeb7d278881e867957b2adb22d74bc51":[19,0,0,5,18,59],
 "pc__derivs_8h.html#ae0b28661228c8bd6a69abbed801d4b8f":[19,0,0,5,18,4],
-"pc__derivs_8h.html#ae7757a44dbeb76b0d368b7b1c7e5c5cc":[19,0,0,5,18,7],
-"pc__derivs_8h.html#aee56dddb642526bf346ca4838262fe1d":[19,0,0,5,18,34],
-"pc__derivs_8h.html#aef7ac50f8507bd16c3fd211f27cad3ab":[19,0,0,5,18,2],
-"pc__derivs_8h.html#af3a2f4b48aa57b990b6d2fe37ff6167d":[19,0,0,5,18,14],
-"pc__derivs_8h.html#afbb61efb334721d8246f04f5dcc3d344":[19,0,0,5,18,22]
+"pc__derivs_8h.html#ae7757a44dbeb76b0d368b7b1c7e5c5cc":[19,0,0,5,18,7]
 };
