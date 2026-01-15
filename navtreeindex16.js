@@ -1,6 +1,9 @@
 var NAVTREEINDEX16 =
 {
-"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,23,0,0],
+"smooth__max_8h.html#afe1499ec44e563ec32451d18f2c4e875":[19,0,0,5,24,207],
+"smooth__max_8h_source.html":[19,0,0,5,24],
+"sor-test_2main_8cc.html":[19,0,8,24,0],
+"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,24,0,0],
 "spherical__harmonics_8h.html":[19,0,0,5,25],
 "spherical__harmonics_8h_source.html":[19,0,0,5,25],
 "src_2core_2kernels_2kernels_8h.html":[19,0,6,0,3,6],
@@ -48,9 +51,9 @@ var NAVTREEINDEX16 =
 "static__analysis_8h_source.html":[19,0,0,1,21],
 "stdderiv_8h.html":[19,0,2,0,1,0],
 "stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b":[19,0,2,0,1,0,13],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,2],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[19,0,2,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[19,0,2,0,1,0,11],
 "stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[19,0,2,0,1,0,28],
@@ -100,10 +103,10 @@ var NAVTREEINDEX16 =
 "stdlib_2geometric__multigrid_8h_source.html":[19,0,7,1],
 "stdlib_2utils_2intrinsics_8h.html":[19,0,0,5,3,1],
 "stdlib_2utils_2intrinsics_8h_source.html":[19,0,0,5,3,1],
-"stencil-accesses-fail-test_2main_8cc.html":[19,0,8,24,0],
-"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,24,0,0],
-"stencil-accesses-ok-test_2main_8cc.html":[19,0,8,25,0],
-"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,25,0,0],
+"stencil-accesses-fail-test_2main_8cc.html":[19,0,8,25,0],
+"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,25,0,0],
+"stencil-accesses-ok-test_2main_8cc.html":[19,0,8,26,0],
+"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,26,0,0],
 "stencilgen_01copy_8c.html":[19,0,0,0,13],
 "stencilgen_01copy_8c.html#a398a80231cd6e902872ff7537a22ca38":[19,0,0,0,13,0],
 "stencilgen_01copy_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[19,0,0,0,13,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "structAcDimProductsInv.html#acd48915eb93b9e34de1cf75dbf4615e3":[18,0,15,2],
 "structAcGridInfo.html":[18,0,16],
 "structAcGridInfo.html#aa64b4a5ffc1f0602038d1ac0a4b01f71":[18,0,16,1],
-"structAcGridInfo.html#abb4e6ace4ec5c96bc874579dbaf3fd6e":[18,0,16,0],
-"structAcGridMappingFunction.html":[18,0,17],
-"structAcGridMappingFunction.html#acac903d2b2ccef935791f3814d3d8316":[18,0,17,0],
-"structAcGridMappingFunction.html#ada5428cec6af5a2e8901aa7fb960206e":[18,0,17,1]
+"structAcGridInfo.html#abb4e6ace4ec5c96bc874579dbaf3fd6e":[18,0,16,0]
 };
