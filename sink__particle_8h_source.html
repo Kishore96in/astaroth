@@ -120,9 +120,14 @@ $(document).ready(function(){initNavTree('sink__particle_8h_source.html',''); in
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            0.0</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            )</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>Sink particle <span class="keyword">requires</span> general <a class="code hl_function" href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">grid</a> vars <span class="keywordflow">for</span> <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>initialize_sink_particle(real initial_value)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    value_to_sum = (vertexIdx == (<a class="code hl_struct" href="structint3.html">int3</a>){NGHOST,NGHOST,NGHOST})*initial_value</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    reduce_sum(value_to_sum,AC_central_sink_particle_momentum)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>Sink particle <span class="keyword">requires</span> general <a class="code hl_function" href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">grid</a> vars <span class="keywordflow">for</span> <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="amath__utils_8h_html_a0cb8046c9ac52516329d57a440a7e60a"><div class="ttname"><a href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div><div class="ttdeci">#define sin(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:41</div></div>
 <div class="ttc" id="anamespacematplotlibcpp_html_ae0bbf80e73099a91df28e4fb871b166a"><div class="ttname"><a href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">matplotlibcpp::grid</a></div><div class="ttdeci">void grid(bool flag)</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:2525</div></div>
 <div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
