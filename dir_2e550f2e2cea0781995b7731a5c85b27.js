@@ -6,6 +6,7 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "utils", "dir_6d241aee15c29b5f7a34f1fc67e31eb9.html", "dir_6d241aee15c29b5f7a34f1fc67e31eb9" ],
     [ "average.h", "average_8h.html", null ],
     [ "bc.h", "bc_8h.html", "bc_8h" ],
+    [ "bicgstab.h", "bicgstab_8h.html", "bicgstab_8h" ],
     [ "cg.h", "cg_8h.html", "cg_8h" ],
     [ "derivs.h", "derivs_8h.html", "derivs_8h" ],
     [ "general_derivs.h", "general__derivs_8h.html", "general__derivs_8h" ],
