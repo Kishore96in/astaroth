@@ -22,6 +22,7 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "poisson.h", "poisson_8h.html", null ],
     [ "radiation_ray.h", "radiation__ray_8h.html", "radiation__ray_8h" ],
     [ "shock.h", "shock_8h.html", null ],
+    [ "sink_particle.h", "sink__particle_8h.html", null ],
     [ "slope_limited_diffusion.h", "slope__limited__diffusion_8h.html", "slope__limited__diffusion_8h" ],
     [ "smooth_max.h", "smooth__max_8h.html", "smooth__max_8h" ],
     [ "spherical_harmonics.h", "spherical__harmonics_8h.html", null ],
