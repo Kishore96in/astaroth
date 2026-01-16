@@ -1,12 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"smooth__max_8h.html#aecb1671e7ad283217161f57a1ff64d2c":[19,0,0,5,25,272],
-"smooth__max_8h.html#aedb4629bc15a9a43375f5c7e4664fc89":[19,0,0,5,25,217],
-"smooth__max_8h.html#aefd8848554edd7bcb5016169fc0ef419":[19,0,0,5,25,150],
-"smooth__max_8h.html#aeff0e17f4d454afdd994a212ba7cb950":[19,0,0,5,25,232],
-"smooth__max_8h.html#af203a9308bcfa57e5052021fe26451c1":[19,0,0,5,25,315],
-"smooth__max_8h.html#af21183435b35fff142d965ca104931de":[19,0,0,5,25,144],
-"smooth__max_8h.html#af26ad57f554188a5e2e5a3ada6db7fe7":[19,0,0,5,25,134],
 "smooth__max_8h.html#af44ce14b88192a65cc88f784f4454117":[19,0,0,5,25,124],
 "smooth__max_8h.html#af50b64c833971ca6d3ea0889d486c6f1":[19,0,0,5,25,91],
 "smooth__max_8h.html#af61a71ecdfd5c6b3b69c32d16eaafa04":[19,0,0,5,25,334],
@@ -68,9 +61,9 @@ var NAVTREEINDEX16 =
 "static__analysis_8h_source.html":[19,0,0,1,21],
 "stdderiv_8h.html":[19,0,2,0,1,0],
 "stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b":[19,0,2,0,1,0,13],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,2],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[19,0,2,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[19,0,2,0,1,0,11],
 "stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[19,0,2,0,1,0,28],
@@ -249,5 +242,12 @@ var NAVTREEINDEX16 =
 "structAcDecompositionInfo.html#a84acf206e222ecd73a2122146a920aa2":[18,0,11,0],
 "structAcDecompositionInfo.html#a8f2f19a7a1173f6745d4a2bc5b58d212":[18,0,11,1],
 "structAcDecompositionInfo.html#aa46463b0f2d8fc9f56e730c554e824d8":[18,0,11,5],
-"structAcDecompositionInfo.html#aeecb7b8b17cfc3da322c5642a9b501ba":[18,0,11,3]
+"structAcDecompositionInfo.html#aeecb7b8b17cfc3da322c5642a9b501ba":[18,0,11,3],
+"structAcDeviceKernelOutput.html":[18,0,12],
+"structAcDeviceTmpBuffer.html":[18,0,13],
+"structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a":[18,0,13,0],
+"structAcDeviceTmpBuffer.html#af5f97bc385ba721ba952ef70b3ac3b6c":[18,0,13,1],
+"structAcDimProducts.html":[18,0,14],
+"structAcDimProducts.html#a19f253ddee38ba921cff1768b94727fe":[18,0,14,3],
+"structAcDimProducts.html#aa9bb310a2393cd8390dd08ae6e11daff":[18,0,14,1]
 };

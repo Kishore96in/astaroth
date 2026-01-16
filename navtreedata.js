@@ -238,17 +238,17 @@ var NAVTREEINDEX =
 "device_8cc.html#af31ad2ea29dc2776ecfdfef651ad47fd",
 "general__derivs_8h.html#a6d6e3d6edcb53f6be48a658d5ec78d87",
 "globals_vars_z.html",
-"hip_8h.html#ad293c1287feaa31f95cf3f729cb3ae73",
-"matplotlibcpp_8h.html#a19804a8cbd413b15c8d07848d7a5890e",
-"modelsolver-legacy-do-not-modify_8c.html#ad5991be9890435175b9f00f6b2e02a38",
-"pc__derivs_8h.html#abf301d26cd161bb012330204f090d834",
-"smooth__max_8h.html#a37829a49e4df60535a467d62193c0fb7",
-"smooth__max_8h.html#aecb1671e7ad283217161f57a1ff64d2c",
-"structAcDeviceKernelOutput.html",
-"structRegion.html#ab2819df990a997f846e481c5b64449be",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a73bc4fbc6e14bf0df3dcde3554f7ac03",
-"task_8h.html#ad995100dcbb5ae70e26e47eed394b2b4",
-"vecs_8h_source.html"
+"hip_8h.html#aecf2575483cc5a1d45f6c9f821ecc502",
+"matplotlibcpp_8h.html#a3917f5113dcefbf8f6dc1f04e8196ca1",
+"namespaceac.html",
+"pc__derivs_8h.html#acb5b1b022534b29852f2d5935ef0e68a",
+"smooth__max_8h.html#a3c5690452767f05e451f3237a98fe607",
+"smooth__max_8h.html#af44ce14b88192a65cc88f784f4454117",
+"structAcDimProducts.html#ad3df604fbe3f2323791b341e881d0582",
+"structRegionMemory.html",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a787e6210abd44c1a0474ac5d9e98664f",
+"task_8h.html#ae5b5008315766bd9b7ac217894d38af2",
+"verification_8cc.html#abe46776aba297b74812d467bb2908052"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
