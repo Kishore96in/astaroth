@@ -238,17 +238,17 @@ var NAVTREEINDEX =
 "device_8cc.html#af31ad2ea29dc2776ecfdfef651ad47fd",
 "general__derivs_8h.html#a6d6e3d6edcb53f6be48a658d5ec78d87",
 "globals_vars_z.html",
-"hip_8h.html#aecacfcc80c89a863f60beb5efccc0cea",
-"matplotlibcpp_8h.html#a34e6ea8c8ee6779fe909ecac2ef945c8",
-"multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe",
-"pc__derivs_8h.html#ac972e08b9f66a38dad81989309aad37e",
-"smooth__max_8h.html#a3aa34a54da4f0b30971bd52c8a18362e",
-"smooth__max_8h.html#af26ad57f554188a5e2e5a3ada6db7fe7",
-"structAcDimProducts.html#aa9bb310a2393cd8390dd08ae6e11daff",
-"structRegion.html#afea81f2171eb2ea11c5440ed173760a4",
+"hip_8h.html#ae63ecf4f4d7a12ce44d6a72e6a9017c2",
+"matplotlibcpp_8h.html#a2fc05d3a606ce68e7a72c9e4ed7f3556",
+"multigrid-test_2main_8cc.html",
+"pc__derivs_8h.html#ac6196442b533cffe767f6ff0f5c4c09c",
+"smooth__max_8h.html#a3a086405c87dc1ebbf97dc74abef3981",
+"smooth__max_8h.html#af21183435b35fff142d965ca104931de",
+"structAcDimProducts.html#a19f253ddee38ba921cff1768b94727fe",
+"structRegion.html#ae60f195a8658a11354454ca132e88f10",
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a7630f4b6c75cb15e0979f94b9c84bc1e",
-"task_8h.html#ae06a32b9b155c134f986e0cc50f7e144affbf937dd4f4e05df63ab5891384b14d",
-"verification_8cc.html#a7658c8ba71d8dd3261ced859e90edf49"
+"task_8h.html#ae06a32b9b155c134f986e0cc50f7e144adefe967ad0373b2274fc298f19125ca7",
+"verification_8cc.html#a6805566dfb61774edf1e7919dcf0f493"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
