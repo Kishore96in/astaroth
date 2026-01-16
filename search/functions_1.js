@@ -26,7 +26,7 @@ var searchData=
   ['ac_5fcompute_5fspherical_5fharmonics_23',['ac_compute_spherical_harmonics',['../grid_8h.html#ae44cc569d60df36a118c03a125ed3d98',1,'grid.h']]],
   ['ac_5fcompute_5ftheta_24',['ac_compute_theta',['../grid_8h.html#a7f3442b8a8b2f5e9e27303cefd4c19b7',1,'grid.h']]],
   ['ac_5fcompute_5fy_25',['ac_compute_y',['../grid_8h.html#a93ed7b7e81edf26d737946f29d7ab052',1,'grid.h']]],
-  ['ac_5fcompute_5fz_26',['ac_compute_z',['../grid_8h.html#ab1ef5ead9e95149e049ac17f223d1c25',1,'grid.h']]],
+  ['ac_5fcompute_5fz_26',['ac_compute_z',['../grid_8h.html#afcc8aa6b4ca9c1feecfdb1e42028b381',1,'grid.h']]],
   ['ac_5fconst_5fbc_27',['ac_const_bc',['../bc_8h.html#aeaeae2a18b8414714bedf004876cfef8',1,'ac_const_bc(AcBoundary boundary, real const_val):&#160;bc.h'],['../bc_8h.html#af03fe4bf60a9d77e7cc85dcc046cb91a',1,'ac_const_bc(AcBoundary boundary, Field f, real const_val):&#160;bc.h']]],
   ['ac_5ffixed_5fbc_28',['ac_fixed_bc',['../bc_8h.html#a32877ae0bb70d7f9060cf6d979c4aff1',1,'ac_fixed_bc(AcBoundary boundary, Field f):&#160;bc.h'],['../bc_8h.html#a3c08ae5aa274f6edfbae37cc3667b306',1,'ac_fixed_bc(AcBoundary boundary):&#160;bc.h']]],
   ['ac_5fflow_5fbc_29',['ac_flow_bc',['../bc_8h.html#ae81d3b67fdaef7950d3803bdb882c20c',1,'bc.h']]],

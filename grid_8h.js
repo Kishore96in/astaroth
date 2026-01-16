@@ -19,7 +19,7 @@ var grid_8h =
     [ "ac_compute_spherical_harmonics", "grid_8h.html#ae44cc569d60df36a118c03a125ed3d98", null ],
     [ "ac_compute_theta", "grid_8h.html#a7f3442b8a8b2f5e9e27303cefd4c19b7", null ],
     [ "ac_compute_y", "grid_8h.html#a93ed7b7e81edf26d737946f29d7ab052", null ],
-    [ "ac_compute_z", "grid_8h.html#ab1ef5ead9e95149e049ac17f223d1c25", null ],
+    [ "ac_compute_z", "grid_8h.html#afcc8aa6b4ca9c1feecfdb1e42028b381", null ],
     [ "ac_get_cos_theta", "grid_8h.html#a76ee74ee02e14c39d52f1b057796f3da", null ],
     [ "ac_get_cos_theta", "grid_8h.html#af33e6bb55163a65e98951ff42e7ba026", null ],
     [ "ac_get_cot_theta", "grid_8h.html#a8d61e35391172a6e5f09e0ea2970df3c", null ],
