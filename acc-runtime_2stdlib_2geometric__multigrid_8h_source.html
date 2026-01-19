@@ -2497,21 +2497,21 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l02461" name="l02461"></a><span class="lineno"> 2461</span>    gmg_write_del2_kernel()</div>
 <div class="line"><a id="l02462" name="l02462"></a><span class="lineno"> 2462</span>}</div>
 <div class="line"><a id="l02463" name="l02463"></a><span class="lineno"> 2463</span> </div>
-<div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>global output real AC_GMG_residual2</div>
-<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span>global output real AC_GMG_rhs2</div>
+<div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>global output real AC_GMG_residual2[5]</div>
+<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span>global output real AC_GMG_rhs2[5]</div>
 <div class="line"><a id="l02466" name="l02466"></a><span class="lineno"> 2466</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel(GMG_LEVEL level)</div>
 <div class="line"><a id="l02467" name="l02467"></a><span class="lineno"> 2467</span>{</div>
 <div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
 <div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>    r = GMG_RHS[level]- res</div>
-<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span>    reduce_sum(r*r,AC_GMG_residual2)</div>
+<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span>    reduce_sum(r*r,AC_GMG_residual2[level])</div>
 <div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span>}</div>
 <div class="line"><a id="l02472" name="l02472"></a><span class="lineno"> 2472</span> </div>
 <div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_and_rhs_norms_kernel(GMG_LEVEL level)</div>
 <div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>{</div>
 <div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
 <div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span>    r = GMG_RHS[level]- res</div>
-<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>    reduce_sum(r*r,AC_GMG_residual2)</div>
-<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>    reduce_sum(GMG_RHS[level]*GMG_RHS[level],AC_GMG_rhs2)</div>
+<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>    reduce_sum(r*r,AC_GMG_residual2[level])</div>
+<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>    reduce_sum(GMG_RHS[level]*GMG_RHS[level],AC_GMG_rhs2[level])</div>
 <div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>}</div>
 <div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span> </div>
 <div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>ComputeSteps</div>
