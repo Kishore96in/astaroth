@@ -98,31 +98,32 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2utils_2kernels_8h
   <div class="headertitle"><div class="title">kernels.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="acc-runtime_2stdlib_2utils_2kernels_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="foldopen" id="foldopen00001" data-start="{" data-end="}">
-<div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">    1</a></span>utility <a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">randomize</a>() {</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// results in (-rng_scale, rng_scale] range</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    rng_scale = 1e-5</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">for</span> field in 0:NUM_VTXBUF_HANDLES{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        r = 2.0 * <a class="code hl_define" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a>() - 1.0</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        write(Field(field), rng_scale * r)</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    }</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<a href="acc-runtime_2stdlib_2utils_2kernels_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">    4</a></span>utility <a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">randomize</a>() {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// results in (-rng_scale, rng_scale] range</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    rng_scale = 1e-5</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">for</span> field in 0:NUM_VTXBUF_HANDLES{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        r = 2.0 * <a class="code hl_define" href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a>() - 1.0</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        write(Field(field), rng_scale * r)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">   12</a></span>utility <a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">constant</a>() {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    AC_value = 1.0</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">for</span> field in 0:NUM_FIELDS {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        write(Field(field), AC_value)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">   15</a></span>utility <a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> <a class="code hl_function" href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">constant</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    AC_value = 1.0</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">for</span> field in 0:NUM_FIELDS {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        write(Field(field), AC_value)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
-<div class="ttc" id="aacc-runtime_2stdlib_2utils_2kernels_8h_html_a914d4ded7c006fb78bed038af8df3356"><div class="ttname"><a href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">constant</a></div><div class="ttdeci">utility Kernel constant()</div><div class="ttdef"><b>Definition</b> kernels.h:12</div></div>
-<div class="ttc" id="aacc-runtime_2stdlib_2utils_2kernels_8h_html_aa8ef7a2f0b8fbdfffaeca3b53910916e"><div class="ttname"><a href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">randomize</a></div><div class="ttdeci">utility Kernel randomize()</div><div class="ttdef"><b>Definition</b> kernels.h:1</div></div>
+<div class="ttc" id="aacc-runtime_2stdlib_2utils_2kernels_8h_html_a914d4ded7c006fb78bed038af8df3356"><div class="ttname"><a href="acc-runtime_2stdlib_2utils_2kernels_8h.html#a914d4ded7c006fb78bed038af8df3356">constant</a></div><div class="ttdeci">utility Kernel constant()</div><div class="ttdef"><b>Definition</b> kernels.h:15</div></div>
+<div class="ttc" id="aacc-runtime_2stdlib_2utils_2kernels_8h_html_aa8ef7a2f0b8fbdfffaeca3b53910916e"><div class="ttname"><a href="acc-runtime_2stdlib_2utils_2kernels_8h.html#aa8ef7a2f0b8fbdfffaeca3b53910916e">randomize</a></div><div class="ttdeci">utility Kernel randomize()</div><div class="ttdef"><b>Definition</b> kernels.h:4</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a98666be13c8e67196b9560ba9eeff819"><div class="ttname"><a href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div><div class="ttdeci">void(* Kernel)(const int3, const int3, DeviceVertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:27</div></div>
 <div class="ttc" id="arandom_8cuh_html_a4113356a2e4968780156d946abcdbb59"><div class="ttname"><a href="random_8cuh.html#a4113356a2e4968780156d946abcdbb59">rand_uniform</a></div><div class="ttdeci">#define rand_uniform()</div><div class="ttdef"><b>Definition</b> random.cuh:201</div></div>
 </div><!-- fragment --></div><!-- contents -->

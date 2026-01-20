@@ -109,7 +109,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a9692203a62bb0fcd216bdc92efbc7b65" id="r_a9692203a62bb0fcd216bdc92efbc7b65"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsld__interface__values.html#a9692203a62bb0fcd216bdc92efbc7b65">right_right</a></td></tr>
 <tr class="separator:a9692203a62bb0fcd216bdc92efbc7b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file implements Slope-limited diffusion (SLD) which is a technique which adds enough diffusion to resolve steep slopes while trying to keep the added diffusion to a minimum. See <a href="https://indico.fysik.su.se/event/6870/sessions/1096/attachments/4557/5291/notes.pdf">https://indico.fysik.su.se/event/6870/sessions/1096/attachments/4557/5291/notes.pdf</a> for a good reference. This explanation is not from an expert so take it with a grain of salt, but SLD measures two jumps: one at a cell-faces and one over a cell. Unresolved slopes correspond to jumps where the jump over a cell-face is much larger than a jump over the cell. When such jumps are noticed extra diffusion is added to flatten then. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="a1f9d6a7d84d8fdf534fe0e4846df34ed" name="a1f9d6a7d84d8fdf534fe0e4846df34ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f9d6a7d84d8fdf534fe0e4846df34ed">&#9670;&#160;</a></span>left</h2>
 
