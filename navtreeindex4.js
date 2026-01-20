@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classHaloExchangeTask.html#a50b380e95000a2a4076b948afc063949":[18,0,62,9],
+"classHaloExchangeTask.html#a57319b4479dfc0e1865db37946120a31":[18,0,62,17],
 "classHaloExchangeTask.html#a7040db8b060e276a53785fb35237ff8b":[18,0,62,11],
 "classHaloExchangeTask.html#a72abceda9e5c17753a2691d94bcdfb60":[18,0,62,5],
 "classHaloExchangeTask.html#a7abf95ddbe1f5e34047f0091719c2f88":[18,0,62,10],
@@ -91,14 +93,14 @@ var NAVTREEINDEX4 =
 "classes.html":[18,1],
 "classmatplotlibcpp_1_1Plot.html":[18,0,0,1],
 "classmatplotlibcpp_1_1Plot.html":[17,0,1,1],
-"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[17,0,1,1,3],
 "classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[18,0,0,1,3],
+"classmatplotlibcpp_1_1Plot.html#a177f13fea5b50e991a373bdbea36fb59":[17,0,1,1,3],
 "classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[18,0,0,1,0],
 "classmatplotlibcpp_1_1Plot.html#a6ab809f4fc44d6e4eadb100cba5b519e":[17,0,1,1,0],
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[17,0,1,1,2],
 "classmatplotlibcpp_1_1Plot.html#a82d08055d06388b56feed10602d2208b":[18,0,0,1,2],
-"classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[17,0,1,1,1],
 "classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[18,0,0,1,1],
+"classmatplotlibcpp_1_1Plot.html#ab24b1e66f705495fda89621df753ed0b":[17,0,1,1,1],
 "classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[17,0,1,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac515760537365754e3437322e87cfc79":[18,0,0,1,5],
 "classmatplotlibcpp_1_1Plot.html#ac78c9ebb89d13558046ea23eee188aea":[18,0,0,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "codegen_8c.html#a4b65cec66ffa8daee670b7febd5d0f87":[19,0,0,0,2,110],
 "codegen_8c.html#a4bc9b7b8fc58aaaab0651b9838fe84b5":[19,0,0,0,2,463],
 "codegen_8c.html#a4bf864039d66d4a265c1fa4aa792cabf":[19,0,0,0,2,458],
-"codegen_8c.html#a4cbd6703f984a509c3d0339f35ced623":[19,0,0,0,2,295],
-"codegen_8c.html#a4d15cad6eadfdb42bc978ff7ef92a8d2":[19,0,0,0,2,66],
-"codegen_8c.html#a4d62e036d73633de83675b245bf1fd60":[19,0,0,0,2,340]
+"codegen_8c.html#a4cbd6703f984a509c3d0339f35ced623":[19,0,0,0,2,295]
 };
