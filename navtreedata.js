@@ -242,13 +242,13 @@ var NAVTREEINDEX =
 "matplotlibcpp_8h.html#a2ecd6145f724318bc69330df7044bb5b",
 "mpi-profile-reduce_2main_8cc.html",
 "pc__derivs_8h.html#ac55ae232e66f9e72d37487e984f8be17",
-"smooth__max_8h.html#a332a95ab6cb5cdaec819af68d1a4eee5",
-"smooth__max_8h.html#ae687d8d2a1d0d69698aba5af8f54deb0",
-"structAcComplexInAndOut.html",
-"structRegion.html#a220d9fccc497ee299a991f38a96fc742",
+"smooth__max_8h.html#a32fc186bf2e318702b7e7d95c4ebfea7",
+"smooth__max_8h.html#ae5176682d3d7a66899513ece2a051d86",
+"structAcComplex.html#a63967aecbab46a35b42df457992f38c9",
+"structRegion.html#a1679e4e3266f0d2fd215c3348647ef1e",
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a5d283724b9e24217b5f4aef9950789fa",
-"task_8h.html#a9f4fe74a008f3807f0b3e7087923410d",
-"vecs_8h.html#a1c3bc08749070d6f6b4702e44752d11fadb3866bc643932f773582218a4ba4f6a"
+"task_8h.html#a7e2525a59aae9c503118f397dd95c8c1",
+"vecs_8h.html#a1c3bc08749070d6f6b4702e44752d11fa5e32ce8a9bed04ef62416aad49c6adf0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
