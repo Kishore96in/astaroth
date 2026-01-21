@@ -52,7 +52,7 @@ var searchData=
   ['receivehost_49',['receiveHost',['../classHaloExchangeTask.html#adf7a3be34b3516a328446fe12b592e03',1,'HaloExchangeTask']]],
   ['recipients_50',['recipients',['../md_acc-runtime_2LICENCE.html#autotoc_md13',1,'10. Automatic Licensing of Downstream Recipients.'],['../md_LICENCE.html#autotoc_md150',1,'10. Automatic Licensing of Downstream Recipients.']]],
   ['reciprocal_5flen_51',['reciprocal_len',['../stdderiv_8h.html#a6eb33323f3c8ca28f0ef77e784f7000d',1,'stdderiv.h']]],
-  ['red_5fblack_5fis_5fof_5fcolor_52',['red_black_is_of_color',['../poisson_8h.html#ad0f2e7cd97d19ebc0d144c4e8a814aed',1,'poisson.h']]],
+  ['red_5fblack_5fis_5fof_5fcolor_52',['red_black_is_of_color',['../colors_8h.html#a356e7ccc57c034835dbeae4dd64c5c6b',1,'colors.h']]],
   ['reduce_53',['reduce',['../classReduceTask.html#a6a597778f12b4d0a03deb8712ee548d9',1,'ReduceTask']]],
   ['reduce_5finputs_54',['reduce_inputs',['../structKernelAnalysisInfo.html#ac18d977e81d7c26f26e14c562d27761c',1,'KernelAnalysisInfo']]],
   ['reduce_5fmax_55',['reduce_max',['../vecs_8h.html#a1c3bc08749070d6f6b4702e44752d11fa1c72e5bd0886194ac31d693e50294088',1,'REDUCE_MAX:&#160;vecs.h'],['../host__datatypes_8h.html#a64764d6386cd906ee06bcd5e4c000a95a1c72e5bd0886194ac31d693e50294088',1,'REDUCE_MAX:&#160;host_datatypes.h'],['../stencilgen_8c.html#a1c3bc08749070d6f6b4702e44752d11fa1c72e5bd0886194ac31d693e50294088',1,'REDUCE_MAX:&#160;stencilgen.c']]],

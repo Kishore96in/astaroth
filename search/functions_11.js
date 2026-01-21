@@ -19,7 +19,7 @@ var searchData=
   ['receivedevice_16',['receiveDevice',['../classHaloExchangeTask.html#aaf28fcc58a9b92e3e2e44970b2bddb83',1,'HaloExchangeTask']]],
   ['receivehost_17',['receiveHost',['../classHaloExchangeTask.html#adf7a3be34b3516a328446fe12b592e03',1,'HaloExchangeTask']]],
   ['reciprocal_5flen_18',['reciprocal_len',['../stdderiv_8h.html#a6eb33323f3c8ca28f0ef77e784f7000d',1,'stdderiv.h']]],
-  ['red_5fblack_5fis_5fof_5fcolor_19',['red_black_is_of_color',['../poisson_8h.html#ad0f2e7cd97d19ebc0d144c4e8a814aed',1,'poisson.h']]],
+  ['red_5fblack_5fis_5fof_5fcolor_19',['red_black_is_of_color',['../colors_8h.html#a356e7ccc57c034835dbeae4dd64c5c6b',1,'colors.h']]],
   ['reduce_20',['reduce',['../classReduceTask.html#a6a597778f12b4d0a03deb8712ee548d9',1,'ReduceTask']]],
   ['reduce_5fop_5fto_5fname_21',['reduce_op_to_name',['../warp__reduce_8h.html#a83c10bdbe8b9ae8d9d6f92cf7f2dd8b8',1,'warp_reduce.h']]],
   ['reducetask_22',['ReduceTask',['../classReduceTask.html#a08317a35e8b3a4772fc075fb0f3defed',1,'ReduceTask']]],
