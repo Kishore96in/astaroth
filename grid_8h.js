@@ -13,7 +13,6 @@ var grid_8h =
     [ "ac_compute_power_law_mapping_x", "grid_8h.html#af7bd89106184a3528da67c535dc45b86", null ],
     [ "ac_compute_power_law_mapping_x", "grid_8h.html#a102595226f731dc764466a622f802eca", null ],
     [ "ac_compute_r", "grid_8h.html#ac94106cb09236ba332dc0a4e18283029", null ],
-    [ "ac_compute_r_helper", "grid_8h.html#a26f8bba25e4c215d59f1b48eeb403fd4", null ],
     [ "ac_compute_sin_m_phis", "grid_8h.html#aca4c41c6f44b5c92d1292a8d7d3a5823", null ],
     [ "ac_compute_sin_phi", "grid_8h.html#af1e1cfc00015a51ed4552e2a515878df", null ],
     [ "ac_compute_sin_theta", "grid_8h.html#a898fd7fb50d13da48226ca2bd52a03a5", null ],

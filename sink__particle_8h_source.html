@@ -104,27 +104,34 @@ $(document).ready(function(){initNavTree('sink__particle_8h_source.html',''); in
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>calculate_sink_particle_rhs(real radial_velocity, real density)</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    r = AC_r[vertexIdx.x]</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    momentum_flux = density*radial_velocity*r*r*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(AC_sin_theta[vertexIdx.y])</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="comment">//Only flux at the inner radius goes to the central sink particle</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    flux_going_to_sink_particle  = (radial_velocity &lt; 0.0 &amp;&amp; globalVertexIdx.x == NGHOST)*momentum_flux</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    reduce_sum(flux_going_to_sink_particle,AC_central_sink_particle_rhs)</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>force_from_sink_particle(real G)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    r = AC_r[vertexIdx.x]*AC_r[vertexIdx.x]</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> -<a class="code hl_struct" href="structreal3.html">real3</a>(</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            (G*AC_central_sink_particle_mass)/(r*r),</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            0.0,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            0.0</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            )</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>Sink particle <span class="keyword">requires</span> general <a class="code hl_function" href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">grid</a> vars <span class="keywordflow">for</span> <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    velocity_going_to_center = <a class="code hl_define" href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a>(0.,-radial_velocity)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    dtheta = <a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    dphi = <a class="code hl_variable" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    dA = r*r*AC_sin_theta[vertexIdx.y]*dtheta*dphi</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    mass_flux = density*velocity_going_to_center*dA</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    mass_going_to_sink_particle  = (globalVertexIdx.x == NGHOST)*mass_flux</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    reduce_sum(mass_going_to_sink_particle,AC_central_sink_particle_rhs)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>force_from_sink_particle(real G)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    r = AC_r[vertexIdx.x]</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> -<a class="code hl_struct" href="structreal3.html">real3</a>(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            (G*AC_central_sink_particle_mass)/(r*r),</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            0.0,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            0.0</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            )</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>Sink particle <span class="keyword">requires</span> general <a class="code hl_function" href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">grid</a> vars <span class="keywordflow">for</span> <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acodegen_8c_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="codegen_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition</b> codegen.c:2081</div></div>
 <div class="ttc" id="amath__utils_8h_html_a0cb8046c9ac52516329d57a440a7e60a"><div class="ttname"><a href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div><div class="ttdeci">#define sin(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:41</div></div>
 <div class="ttc" id="anamespacematplotlibcpp_html_ae0bbf80e73099a91df28e4fb871b166a"><div class="ttname"><a href="namespacematplotlibcpp.html#ae0bbf80e73099a91df28e4fb871b166a">matplotlibcpp::grid</a></div><div class="ttdeci">void grid(bool flag)</div><div class="ttdef"><b>Definition</b> matplotlibcpp.h:2525</div></div>
 <div class="ttc" id="astructreal3_html"><div class="ttname"><a href="structreal3.html">real3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:21</div></div>
+<div class="ttc" id="astructreal3_html_aacff6d4f0bdb822c11bc4992bcfae747"><div class="ttname"><a href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">real3::y</a></div><div class="ttdeci">real y</div><div class="ttdef"><b>Definition</b> typedefs.h:23</div></div>
+<div class="ttc" id="astructreal3_html_ab483f52cb25a1314382d9170ac199173"><div class="ttname"><a href="structreal3.html#ab483f52cb25a1314382d9170ac199173">real3::z</a></div><div class="ttdeci">real z</div><div class="ttdef"><b>Definition</b> typedefs.h:24</div></div>
+<div class="ttc" id="avariables_8h_html_a3fe7c3092a9071218ce516146c938da3"><div class="ttname"><a href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></div><div class="ttdeci">run_const real3 AC_ds</div><div class="ttdef"><b>Definition</b> variables.h:132</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
