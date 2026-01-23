@@ -238,6 +238,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4c0539d4f36565e8126d1894f20d4b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9138d8deb2ab991f64f983a41657a97b" id="r_a9138d8deb2ab991f64f983a41657a97b"><td class="memItemLeft" align="right" valign="top">run_const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a9138d8deb2ab991f64f983a41657a97b">AC_bidiagonal_derij</a> = true</td></tr>
 <tr class="separator:a9138d8deb2ab991f64f983a41657a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682eb578680f721d1d233c36fcff3ed4" id="r_a682eb578680f721d1d233c36fcff3ed4"><td class="memItemLeft" align="right" valign="top">dconst <a class="el" href="structint3.html">int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a></td></tr>
+<tr class="separator:a682eb578680f721d1d233c36fcff3ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ab18b55dcc545e45516e71fae8ec1b459" name="ab18b55dcc545e45516e71fae8ec1b459"></a>
@@ -771,6 +773,46 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a682eb578680f721d1d233c36fcff3ed4" name="a682eb578680f721d1d233c36fcff3ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682eb578680f721d1d233c36fcff3ed4">&#9670;&#160;</a></span>AC_left_extended_halo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dconst <a class="el" href="structint3.html">int3</a> AC_left_extended_halo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= (<a class="code hl_struct" href="structint3.html">int3</a>){0,0,0}</div>
+<div class="line"> </div>
+<div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_right_extended_halo = (<a class="code hl_struct" href="structint3.html">int3</a>){0,0,0}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_extended_mlocal = <a class="code hl_variable" href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a> + <a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a> + AC_right_extended_halo</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">run_const <a class="code hl_struct" href="structreal3.html">real3</a> AC_first_gridpoint_extended = <a class="code hl_variable" href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">run_const <a class="code hl_struct" href="structreal3.html">real3</a> AC_len_extended = <a class="code hl_variable" href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a></div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">run_const <a class="code hl_struct" href="structint3.html">int3</a> AC_ngrid_extended  = <a class="code hl_variable" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>  + AC_right_extended_halo</div>
+<div class="line"> </div>
+<div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_extended_nlocal = <a class="code hl_variable" href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a> + <a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a> + AC_right_extended_halo</div>
+<div class="line"> </div>
+<div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_extended_nlocal_max = AC_extended_nlocal + <a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a></div>
+<div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
+<div class="ttc" id="avariables_8h_html_a21eb87bed253df213669b42484ff3599"><div class="ttname"><a href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a></div><div class="ttdeci">int3 AC_mlocal</div><div class="ttdef"><b>Definition</b> variables.h:47</div></div>
+<div class="ttc" id="avariables_8h_html_a43216bbfb79de0f28fd692021fdafceb"><div class="ttname"><a href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a></div><div class="ttdeci">int3 AC_nlocal</div><div class="ttdef"><b>Definition</b> variables.h:38</div></div>
+<div class="ttc" id="avariables_8h_html_a4506213c25cb0a4caa2d33ad0d36ec21"><div class="ttname"><a href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div><div class="ttdeci">run_const real3 AC_first_gridpoint</div><div class="ttdef"><b>Definition</b> variables.h:243</div></div>
+<div class="ttc" id="avariables_8h_html_a682eb578680f721d1d233c36fcff3ed4"><div class="ttname"><a href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a></div><div class="ttdeci">dconst int3 AC_left_extended_halo</div><div class="ttdef"><b>Definition</b> variables.h:383</div></div>
+<div class="ttc" id="avariables_8h_html_acac6c982059321e566cc7f5e8ece60f8"><div class="ttname"><a href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a></div><div class="ttdeci">int3 AC_nmin</div><div class="ttdef"><b>Definition</b> variables.h:4</div></div>
+</div><!-- fragment --><p>Specifies how many extra grid points the extended grid has to the left of the normal grid (left meaning they come before in indexing). By default no extended grid so zero points </p>
+
+</div>
+</div>
 <a id="a36de890d886cb1516a47b33772c2335f" name="a36de890d886cb1516a47b33772c2335f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36de890d886cb1516a47b33772c2335f">&#9670;&#160;</a></span>AC_len</h2>
 
@@ -1028,7 +1070,6 @@ Variables</h2></td></tr>
 <div class="line">            <a class="code hl_variable" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a>.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>/<a class="code hl_variable" href="variables_8h.html#a24036f230322b3427777133b190cb343">AC_domain_decomposition</a>.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>,</div>
 <div class="line">            <a class="code hl_variable" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a>.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>/<a class="code hl_variable" href="variables_8h.html#a24036f230322b3427777133b190cb343">AC_domain_decomposition</a>.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a></div>
 <div class="line">        }</div>
-<div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
 <div class="ttc" id="avariables_8h_html_a24036f230322b3427777133b190cb343"><div class="ttname"><a href="variables_8h.html#a24036f230322b3427777133b190cb343">AC_domain_decomposition</a></div><div class="ttdeci">run_const int3 AC_domain_decomposition</div><div class="ttdef"><b>Definition</b> variables.h:33</div></div>
 </div><!-- fragment --><p>Subdomain size (not incl. halos) </p>
 

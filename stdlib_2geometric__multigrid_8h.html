@@ -126,6 +126,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3d7e20b0e945c3cec3c44f0e73fb698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bb46fe317ddc27b5b2d76aa45c5aeec" id="r_a8bb46fe317ddc27b5b2d76aa45c5aeec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a8bb46fe317ddc27b5b2d76aa45c5aeec">get_galerkin_operators</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *info)</td></tr>
 <tr class="separator:a8bb46fe317ddc27b5b2d76aa45c5aeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebaf0b47fd5cb109fa48588d54f660a" id="r_abebaf0b47fd5cb109fa48588d54f660a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#abebaf0b47fd5cb109fa48588d54f660a">gmg_get_halo_exchange_operators</a> (const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> info)</td></tr>
+<tr class="separator:abebaf0b47fd5cb109fa48588d54f660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b084b0a43134ea36afd9eb3e718ba13" id="r_a4b084b0a43134ea36afd9eb3e718ba13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a4b084b0a43134ea36afd9eb3e718ba13">gmg_setup</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *info)</td></tr>
 <tr class="separator:a4b084b0a43134ea36afd9eb3e718ba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982001c00d7cd02c44d2bb66d06b0545" id="r_a982001c00d7cd02c44d2bb66d06b0545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a982001c00d7cd02c44d2bb66d06b0545">gmg_level_step</a> (const int level, const int number_of_levels, const <a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> relative_residual_tolerance)</td></tr>
@@ -139,6 +141,10 @@ Variables</h2></td></tr>
 <tr class="separator:a4ca23d473f99a5c70ebcc94484683fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2a73a8d93be9be04cd3aacc4220ec9" id="r_aba2a73a8d93be9be04cd3aacc4220ec9"><td class="memItemLeft" align="right" valign="top">const std::array&lt; AcInt3Param, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#aba2a73a8d93be9be04cd3aacc4220ec9">level_dims</a></td></tr>
 <tr class="separator:aba2a73a8d93be9be04cd3aacc4220ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1950581b2d1a9011a833c3f95aa728f5" id="r_a1950581b2d1a9011a833c3f95aa728f5"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a1950581b2d1a9011a833c3f95aa728f5">halo_exchange_residuals</a> {}</td></tr>
+<tr class="separator:a1950581b2d1a9011a833c3f95aa728f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec4e579e8138316d4254a5016250f48" id="r_a3ec4e579e8138316d4254a5016250f48"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a3ec4e579e8138316d4254a5016250f48">halo_exchange_solutions</a> {}</td></tr>
+<tr class="separator:a3ec4e579e8138316d4254a5016250f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a43c436c2644c0676c340802eae669189" name="a43c436c2644c0676c340802eae669189"></a>
@@ -180,6 +186,24 @@ Variables</h2></td></tr>
           <td class="memname">void get_galerkin_operators </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abebaf0b47fd5cb109fa48588d54f660a" name="abebaf0b47fd5cb109fa48588d54f660a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebaf0b47fd5cb109fa48588d54f660a">&#9670;&#160;</a></span>gmg_get_halo_exchange_operators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gmg_get_halo_exchange_operators </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a>&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
           <td></td>
         </tr>
@@ -341,6 +365,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> gmg_central_coeffs[5] {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1950581b2d1a9011a833c3f95aa728f5" name="a1950581b2d1a9011a833c3f95aa728f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1950581b2d1a9011a833c3f95aa728f5">&#9670;&#160;</a></span>halo_exchange_residuals</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>*,5&gt; halo_exchange_residuals {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ec4e579e8138316d4254a5016250f48" name="a3ec4e579e8138316d4254a5016250f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec4e579e8138316d4254a5016250f48">&#9670;&#160;</a></span>halo_exchange_solutions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>*,5&gt; halo_exchange_solutions {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
