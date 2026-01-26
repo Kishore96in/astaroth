@@ -160,34 +160,35 @@ $(document).ready(function(){initNavTree('general__grid_2vars_8h_source.html',''
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>gmem real AC_y12[<a class="code hl_variable" href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a>.y]</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>gmem real AC_sinth12[<a class="code hl_variable" href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a>.y]</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>gmem real AC_z12[<a class="code hl_variable" href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a>.z]</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define AC_INV_R         (AC_inv_r[vertexIdx.x-NGHOST])</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#define AC_INV_CYL_R     (AC_inv_cyl_r[vertexIdx.x-NGHOST])</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#define AC_INV_SIN_THETA (AC_inv_sin_theta[vertexIdx.y])</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#define AC_COT           (AC_cot_theta[vertexIdx.y])</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define AC_INV_R_extended AC_inv_r_extended[vertexIdx.x-NGHOST]</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define AC_INV_CYL_R_extended AC_inv_cyl_r_extended[vertexIdx.x-NGHOST]</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define AC_INV_SIN_THETA_extended AC_inv_sin_theta_extended[vertexIdx.y]</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define AC_COT_extended AC_cot_theta_extended[vertexIdx.y]</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_X (AC_inv_mapping_func_derivative_x[vertexIdx.x])</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Y (AC_inv_mapping_func_derivative_y[vertexIdx.y])</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Z (AC_inv_mapping_func_derivative_z[vertexIdx.z])</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_X_extended (AC_inv_mapping_func_derivative_x_extended[vertexIdx.x])</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Y_extended (AC_inv_mapping_func_derivative_y_extended[vertexIdx.y])</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Z_extended (AC_inv_mapping_func_derivative_z_extended[vertexIdx.z])</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_X  (AC_mapping_func_tilde_x[vertexIdx.x])</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Y  (AC_mapping_func_tilde_y[vertexIdx.y])</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Z  (AC_mapping_func_tilde_z[vertexIdx.z])</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_X_extended  (AC_mapping_func_tilde_x_extended[vertexIdx.x])</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Y_extended  (AC_mapping_func_tilde_y_extended[vertexIdx.y])</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Z_extended  (AC_mapping_func_tilde_z_extended[vertexIdx.z])</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>run_const real AC_power_law_mapping_exponent = 1.0</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#define AC_INV_R         (AC_inv_r[vertexIdx.x-NGHOST])</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#define AC_INV_CYL_R     (AC_inv_cyl_r[vertexIdx.x-NGHOST])</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#define AC_INV_SIN_THETA (AC_inv_sin_theta[vertexIdx.y])</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define AC_COT           (AC_cot_theta[vertexIdx.y])</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define AC_INV_R_extended AC_inv_r_extended[vertexIdx.x-NGHOST]</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define AC_INV_CYL_R_extended AC_inv_cyl_r_extended[vertexIdx.x-NGHOST]</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define AC_INV_SIN_THETA_extended AC_inv_sin_theta_extended[vertexIdx.y]</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define AC_COT_extended AC_cot_theta_extended[vertexIdx.y]</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_X (AC_inv_mapping_func_derivative_x[vertexIdx.x])</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Y (AC_inv_mapping_func_derivative_y[vertexIdx.y])</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Z (AC_inv_mapping_func_derivative_z[vertexIdx.z])</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_X_extended (AC_inv_mapping_func_derivative_x_extended[vertexIdx.x])</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Y_extended (AC_inv_mapping_func_derivative_y_extended[vertexIdx.y])</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define AC_INV_MAPPING_FUNC_DER_Z_extended (AC_inv_mapping_func_derivative_z_extended[vertexIdx.z])</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_X  (AC_mapping_func_tilde_x[vertexIdx.x])</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Y  (AC_mapping_func_tilde_y[vertexIdx.y])</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Z  (AC_mapping_func_tilde_z[vertexIdx.z])</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_X_extended  (AC_mapping_func_tilde_x_extended[vertexIdx.x])</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Y_extended  (AC_mapping_func_tilde_y_extended[vertexIdx.y])</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#define AC_MAPPING_FUNC_TILDE_Z_extended  (AC_mapping_func_tilde_z_extended[vertexIdx.z])</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="astructreal3_html"><div class="ttname"><a href="structreal3.html">real3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:21</div></div>
 <div class="ttc" id="avariables_8h_html_a21eb87bed253df213669b42484ff3599"><div class="ttname"><a href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a></div><div class="ttdeci">int3 AC_mlocal</div><div class="ttdef"><b>Definition</b> variables.h:47</div></div>
 <div class="ttc" id="avariables_8h_html_a36de890d886cb1516a47b33772c2335f"><div class="ttname"><a href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a></div><div class="ttdeci">run_const real3 AC_len</div><div class="ttdef"><b>Definition</b> variables.h:233</div></div>
