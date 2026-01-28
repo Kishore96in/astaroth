@@ -868,30 +868,47 @@ $(document).ready(function(){initNavTree('grid_8h_source.html',''); initResizabl
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
 <div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keyword">auto</span> a = A.colPivHouseholderQr().solve(rhs);</div>
 <div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = -info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x; x &lt;= NGHOST; ++x)</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    {</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> xi = x-NGHOST;</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_value = a(0) + a(1)*xi + a(2)*xi*xi + a(3)*xi*xi*xi + a(4)*xi*xi*xi*xi;</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der =  a(1) + 2*a(2)*xi + 3*a(3)*xi*xi + 4*a(4)*xi*xi*xi;</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der2 =   2*a(2)+ 6*a(3)*xi + 12*a(4)*xi*xi;</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        info[AC_r_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_value;</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        info[AC_mapping_func_derivative_x_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_der;</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        info[AC_mapping_func_2nd_derivative_x_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_der2;</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    }</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = 0; x &lt;= NGHOST; ++x)</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    {</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> xi = x-NGHOST;</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_value = a(0) + a(1)*xi + a(2)*xi*xi + a(3)*xi*xi*xi + a(4)*xi*xi*xi*xi;</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der =  a(1) + 2*a(2)*xi + 3*a(3)*xi*xi + 4*a(4)*xi*xi*xi;</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der2 =   2*a(2)+ 6*a(3)*xi + 12*a(4)*xi*xi;</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        info[AC_r][x] = polynomial_value;</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        info[AC_mapping_func_derivative_x][x] = polynomial_der;</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        info[AC_mapping_func_2nd_derivative_x][x] = polynomial_der2;</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    }</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>}</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> last_value = -<a class="code hl_define" href="acreal_8h.html#a1efb95df159b413320c7a780a559a650">AC_REAL_MAX</a>; </div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = -info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x; x &lt;= NGHOST; ++x)</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    {</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> xi = x-NGHOST;</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_value = a(0) + a(1)*xi + a(2)*xi*xi + a(3)*xi*xi*xi + a(4)*xi*xi*xi*xi;</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der =  a(1) + 2*a(2)*xi + 3*a(3)*xi*xi + 4*a(4)*xi*xi*xi;</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der2 =   2*a(2)+ 6*a(3)*xi + 12*a(4)*xi*xi;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        info[AC_r_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_value;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        <span class="keywordflow">if</span>(polynomial_value &lt;= last_value)</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        {</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>            fprintf(stderr,<span class="stringliteral">&quot;Astaroth fatal failure!\n&quot;</span>);</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>            fprintf(stderr,<span class="stringliteral">&quot;Mapping function was not monotonically increasing!\n&quot;</span>);</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>            fflush(stderr);</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>            exit(EXIT_FAILURE);</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        }</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        last_value = polynomial_value;</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        info[AC_mapping_func_derivative_x_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_der;</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keywordflow">if</span>(polynomial_der &lt; 0.0)</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>            fprintf(stderr,<span class="stringliteral">&quot;Astaroth fatal failure!\n&quot;</span>);</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>            fprintf(stderr,<span class="stringliteral">&quot;Mapping function was not monotonically increasing!\n&quot;</span>);</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>            fflush(stderr);</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>            exit(EXIT_FAILURE);</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        }</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        info[AC_mapping_func_2nd_derivative_x_extended][x + info[<a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>].x] = polynomial_der2;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    }</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = 0; x &lt;= NGHOST; ++x)</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    {</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> xi = x-NGHOST;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_value = a(0) + a(1)*xi + a(2)*xi*xi + a(3)*xi*xi*xi + a(4)*xi*xi*xi*xi;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der =  a(1) + 2*a(2)*xi + 3*a(3)*xi*xi + 4*a(4)*xi*xi*xi;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> polynomial_der2 =   2*a(2)+ 6*a(3)*xi + 12*a(4)*xi*xi;</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        info[AC_r][x] = polynomial_value;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        info[AC_mapping_func_derivative_x][x] = polynomial_der;</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        info[AC_mapping_func_2nd_derivative_x][x] = polynomial_der2;</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    }</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43da355a7d54573a78fac8fd20d5bc27badf">AC_SUCCESS</a>;</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>}</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aacreal_8h_html_a1efb95df159b413320c7a780a559a650"><div class="ttname"><a href="acreal_8h.html#a1efb95df159b413320c7a780a559a650">AC_REAL_MAX</a></div><div class="ttdeci">#define AC_REAL_MAX</div><div class="ttdef"><b>Definition</b> acreal.h:12</div></div>
 <div class="ttc" id="aacreal_8h_html_a682ddafb17af19aa8f6e413da6625de0"><div class="ttname"><a href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a></div><div class="ttdeci">float AcReal</div><div class="ttdef"><b>Definition</b> acreal.h:11</div></div>
 <div class="ttc" id="aacreal_8h_html_adddfc7958242c22f810d7bd7db47b956"><div class="ttname"><a href="acreal_8h.html#adddfc7958242c22f810d7bd7db47b956">AC_REAL_PI</a></div><div class="ttdeci">#define AC_REAL_PI</div><div class="ttdef"><b>Definition</b> acreal.h:20</div></div>
 <div class="ttc" id="agrid_8h_html_a5a356515da390a56ac5c044b92c67a44"><div class="ttname"><a href="grid_8h.html#a5a356515da390a56ac5c044b92c67a44">ac_global_vertex_idx</a></div><div class="ttdeci">int3 ac_global_vertex_idx(const int3 localVertexIdx, const AcMeshInfo config)</div><div class="ttdef"><b>Definition</b> grid.h:4</div></div>
