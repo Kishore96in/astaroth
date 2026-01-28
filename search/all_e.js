@@ -133,7 +133,7 @@ var searchData=
   ['dfunc_5fpossibilities_130',['dfunc_possibilities',['../structdfunc__possibilities.html',1,'']]],
   ['dfuncs_5fin_5ftopological_5forder_131',['dfuncs_in_topological_order',['../codegen_8c.html#a9ddd922b743ae9419c30bff3bbf2da43',1,'codegen.c']]],
   ['dimprod_132',['dimprod',['../structkiss__fftnd__state.html#aaee291ed294623109b48370942332a88',1,'kiss_fftnd_state']]],
-  ['dims_133',['dims',['../structTBConfig.html#ad79eb9e8f9a96d19713fcae2dd7f8666',1,'TBConfig::dims'],['../structVertexBufferArray.html#a39fa9c3ceedfab36ef281682fbfed2e8',1,'VertexBufferArray::dims'],['../structkiss__fftnd__state.html#aa16a0dfb68479f947784dd38dc5db33a',1,'kiss_fftnd_state::dims'],['../structarray__info.html#a5759122e0c2e73744489216673819ed5',1,'array_info::dims'],['../structRegion.html#ab2819df990a997f846e481c5b64449be',1,'Region::dims']]],
+  ['dims_133',['dims',['../bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930',1,'dims():&#160;bicgstab.h'],['../structTBConfig.html#ad79eb9e8f9a96d19713fcae2dd7f8666',1,'TBConfig::dims'],['../structVertexBufferArray.html#a39fa9c3ceedfab36ef281682fbfed2e8',1,'VertexBufferArray::dims'],['../structkiss__fftnd__state.html#aa16a0dfb68479f947784dd38dc5db33a',1,'kiss_fftnd_state::dims'],['../structarray__info.html#a5759122e0c2e73744489216673819ed5',1,'array_info::dims'],['../structRegion.html#ab2819df990a997f846e481c5b64449be',1,'Region::dims']]],
   ['dims_5fstr_134',['DIMS_STR',['../codegen_8c.html#a7478621e3428e7953779f8696ecdbad8',1,'codegen.c']]],
   ['direction_135',['direction',['../radiation__ray_8h.html#ac2290dcc25d9620e6c4ae40a563b735a',1,'radiation_ray.h']]],
   ['directives_136',['Comments and preprocessor directives',['../md_acc-runtime_2README.html#autotoc_md25',1,'']]],
