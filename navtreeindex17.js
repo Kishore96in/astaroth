@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structAcGridInfo.html":[18,0,16],
 "structAcGridInfo.html#aa64b4a5ffc1f0602038d1ac0a4b01f71":[18,0,16,1],
 "structAcGridInfo.html#abb4e6ace4ec5c96bc874579dbaf3fd6e":[18,0,16,0],
 "structAcInputs.html":[18,0,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structRegionMemoryInputParams.html#a5f86ae66852f04419059b4418219ebdc":[18,0,104,3],
 "structRegionMemoryInputParams.html#ac8ad665d2d44ac5576047437ece168eb":[18,0,104,0],
 "structRegionMemoryInputParams.html#adeac3ae9df31455d40b559d3126673eb":[18,0,104,1],
-"structSOAVector.html":[18,0,109],
-"structSOAVector.html#a43fe944427e535a2968d1a3c14808105":[18,0,109,2]
+"structSOAVector.html":[18,0,109]
 };

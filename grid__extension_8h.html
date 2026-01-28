@@ -100,6 +100,8 @@ $(document).ready(function(){initNavTree('grid__extension_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0bf7bfc4104f78d6a0705d94994f9897" id="r_a0bf7bfc4104f78d6a0705d94994f9897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__extension_8h.html#a0bf7bfc4104f78d6a0705d94994f9897">get_value_on_extended_grid</a> (Field src, <a class="el" href="structint3.html">int3</a> left_extended_halo, real padding_value)</td></tr>
+<tr class="separator:a0bf7bfc4104f78d6a0705d94994f9897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba1d4ec06b02253814edcf50cbc9dd13" id="r_aba1d4ec06b02253814edcf50cbc9dd13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__extension_8h.html#aba1d4ec06b02253814edcf50cbc9dd13">copy_to_extended_grid</a> (Field dst, Field src, <a class="el" href="structint3.html">int3</a> left_extended_halo, real padding_value)</td></tr>
 <tr class="separator:aba1d4ec06b02253814edcf50cbc9dd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad8ec63ab9a494c8542682f039b9e62" id="r_a4ad8ec63ab9a494c8542682f039b9e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid__extension_8h.html#a4ad8ec63ab9a494c8542682f039b9e62">copy_to_extended_grid</a> (Field dst, Field src, real padding_value)</td></tr>
@@ -279,7 +281,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This file has useful functions for working with extended grids. Copies a Field from the normal grid to the extended grid that has extended_halo around the original grid. Meant to be launched on the extended grid For values outside the original grid the padding value is used which can be unique at each grid point in the extended grid. </p>
+<p>Copies a Field from the normal grid to the extended grid that has extended_halo around the original grid. Meant to be launched on the extended grid For values outside the original grid the padding value is used which can be unique at each grid point in the extended grid. </p>
 
 </div>
 </div>
@@ -315,6 +317,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Uses the default AC_left_extended_halo param </p>
+
+</div>
+</div>
+<a id="a0bf7bfc4104f78d6a0705d94994f9897" name="a0bf7bfc4104f78d6a0705d94994f9897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf7bfc4104f78d6a0705d94994f9897">&#9670;&#160;</a></span>get_value_on_extended_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_value_on_extended_grid </td>
+          <td>(</td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structint3.html">int3</a>&#160;</td>
+          <td class="paramname"><em>left_extended_halo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&#160;</td>
+          <td class="paramname"><em>padding_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This file has useful functions for working with extended grids. Gives the value of the src on the subdomain of the extended grid that overlaps with the computational grid. Outside gives the padding value which can be unique at each point if wanted </p>
 
 </div>
 </div>
