@@ -1,14 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"cufft_8cc.html":[19,0,6,0,3,2],
-"cufft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0":[19,0,6,0,3,2,9],
-"cufft_8cc.html#a177bfe09122ac9cafccaf67e1c947194":[19,0,6,0,3,2,8],
-"cufft_8cc.html#a29f4ce60aeec9b59a5fc845ad7860ade":[19,0,6,0,3,2,0],
-"cufft_8cc.html#a35d9f7c69b0c58fefc44a47947b3f1b2":[19,0,6,0,3,2,1],
-"cufft_8cc.html#a4a2c38a3c895e671102a9af8712e208f":[19,0,6,0,3,2,10],
-"cufft_8cc.html#a4cfc9643cb41c7e5a9b84e0ee04fa3f8":[19,0,6,0,3,2,18],
-"cufft_8cc.html#a549caa8bfd789addd51cc565279c1ade":[19,0,6,0,3,2,17],
-"cufft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33":[19,0,6,0,3,2,3],
 "cufft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160":[19,0,6,0,3,2,12],
 "cufft_8cc.html#a60ac7badd6a8e10bd158609f3af30614":[19,0,6,0,3,2,14],
 "cufft_8cc.html#a6c9d84848b85fda694e6537a8da7d105":[19,0,6,0,3,2,13],
@@ -132,8 +123,8 @@ var NAVTREEINDEX7 =
 "derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[19,0,0,5,9,2],
 "derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,9,33],
 "derivs_8h.html#a08a153103580544909f8a020f9603608":[19,0,0,5,9,6],
-"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,9,36],
 "derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,9,37],
+"derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,9,36],
 "derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[19,0,0,5,9,13],
 "derivs_8h.html#a20a572dbe1ac8d4db589984d3828d7b6":[19,0,0,5,9,16],
 "derivs_8h.html#a24990b016a846112333af562a264df3a":[19,0,0,5,9,12],
@@ -249,5 +240,14 @@ var NAVTREEINDEX7 =
 "device_8cc.html#ab7ad307a052a65bc71a3ae170628e3f3":[19,0,6,0,15,60],
 "device_8cc.html#ab7f03364405548fe3ebb9e00299b0d2a":[19,0,6,0,15,66],
 "device_8cc.html#ac1eacbd20e35772396e3ac511fd1aa02":[19,0,6,0,15,54],
-"device_8cc.html#ac2b72cffdc48c4bb0e75beb4600aa15f":[19,0,6,0,15,64]
+"device_8cc.html#ac2b72cffdc48c4bb0e75beb4600aa15f":[19,0,6,0,15,64],
+"device_8cc.html#ac46e93d02dc53671b354b7ea985cfbc6":[19,0,6,0,15,61],
+"device_8cc.html#ac6c3c37bf5db17e7f52f35796711a024":[19,0,6,0,15,72],
+"device_8cc.html#ac8b592b7625728481233116382548951":[19,0,6,0,15,48],
+"device_8cc.html#acb2e963826cb26202acd8f047ec1903f":[19,0,6,0,15,42],
+"device_8cc.html#acf467511f478b384bf7111261e3e3505":[19,0,6,0,15,83],
+"device_8cc.html#acf88d16d2b13ca0d4403c28b62332625":[19,0,6,0,15,70],
+"device_8cc.html#ad3638bc514110d4f4e3106201f002c9f":[19,0,6,0,15,97],
+"device_8cc.html#ad487df15fe663acf1d5cb3b68ccd9324":[19,0,6,0,15,10],
+"device_8cc.html#ad78b99bd9fee6fa26f3a6cd29ae4cf15":[19,0,6,0,15,45]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"host__datatypes_8h.html#ab08beb09749de71a5db5954797656dad":[19,0,0,1,14,16],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88":[19,0,0,1,14,19],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88a0b92292bdfe9e60ab755e077bc589391":[19,0,0,1,14,19,9],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88a18412c03ee36f7cbcecc963fc75e363b":[19,0,0,1,14,19,0],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88a428951609f981ff5db5a0ef4ee1c9d9b":[19,0,0,1,14,19,6],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88a618c3d05df2893d887d66e94b05e3095":[19,0,0,1,14,19,5],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88a895e5c1a6c4f1f5b4421af1d945123df":[19,0,0,1,14,19,3],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88aaa2c0412d9da1e06b915191a589a1b25":[19,0,0,1,14,19,2],
-"host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88aabd40d231a3fb6818d77db0a54d53d9f":[19,0,0,1,14,19,7],
 "host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88ab5deb5ccef445a25ea74605b121bf78d":[19,0,0,1,14,19,4],
 "host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88ac4978dfeda8fcc48a84988716f21fbef":[19,0,0,1,14,19,8],
 "host__datatypes_8h.html#ab40314f722f618913ce8af1992cbfa88aee8a0882d65eb4975d96e824b9dde33d":[19,0,0,1,14,19,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX11 =
 "matplotlibcpp_8h.html#a6cfa8cba00f52a2c4614fa7a8a0bcd2b":[19,0,8,32,0,1,46],
 "matplotlibcpp_8h.html#a6de552522cdfa4d42e1ab11364f34a18":[19,0,8,32,0,1,91],
 "matplotlibcpp_8h.html#a712cd34472b3687668048899bee4cdbf":[19,0,8,32,0,1,95],
-"matplotlibcpp_8h.html#a74882742dd5b2fa53cce6c2d4f5bbc2c":[19,0,8,32,0,1,16]
+"matplotlibcpp_8h.html#a74882742dd5b2fa53cce6c2d4f5bbc2c":[19,0,8,32,0,1,16],
+"matplotlibcpp_8h.html#a74ced83539862d0a6456935b507e9864":[19,0,8,32,0,1,19],
+"matplotlibcpp_8h.html#a78f4b6d50e52d1782d52df692232f4e1":[19,0,8,32,0,1,84],
+"matplotlibcpp_8h.html#a7a90e7d9dda953455e23c296906c093a":[19,0,8,32,0,1,99],
+"matplotlibcpp_8h.html#a7c176020a3312c69b4af6fa80113e53b":[19,0,8,32,0,1,18],
+"matplotlibcpp_8h.html#a80475bf6042c6ded104aad3e05e12d47":[19,0,8,32,0,1,86],
+"matplotlibcpp_8h.html#a90ba2143110bba254f163102a6ab450b":[19,0,8,32,0,1,56],
+"matplotlibcpp_8h.html#a9147bd13de56cbe3e3dfbb61713c144c":[19,0,8,32,0,1,52],
+"matplotlibcpp_8h.html#a916bb5a9dc5f6a24877cc027bf4ee624":[19,0,8,32,0,1,44],
+"matplotlibcpp_8h.html#a91e91bcdcfc7632a917830bfe3f71ca3":[19,0,8,32,0,1,34]
 };
