@@ -49,6 +49,7 @@ var variables_8h =
     [ "AC_ngrid_max", "variables_8h.html#acf33b6434bf6342e9416c0b2c4a75432", null ],
     [ "AC_ngrid_products", "variables_8h.html#a7ddaf150d65a1a1cb5ad9688f7920b19", null ],
     [ "AC_ngrid_products_inv", "variables_8h.html#ad6a03e633a2f733a3d263809f8dda5fd", null ],
+    [ "AC_nintervals", "variables_8h.html#a47fa4965fdce786eb539e815807810e1", null ],
     [ "AC_nlocal", "variables_8h.html#a43216bbfb79de0f28fd692021fdafceb", null ],
     [ "AC_nlocal_inv", "variables_8h.html#a45c5264ec074c1814676c048cce41277", null ],
     [ "AC_nlocal_max", "variables_8h.html#aff573381cadf7a0710543ca2e5f25a1a", null ],

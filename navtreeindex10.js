@@ -2,8 +2,8 @@ var NAVTREEINDEX10 =
 {
 "globals_u.html":[19,1,0,20],
 "globals_v.html":[19,1,0,21],
-"globals_vars.html":[19,1,2,0],
 "globals_vars.html":[19,1,2],
+"globals_vars.html":[19,1,2,0],
 "globals_vars_b.html":[19,1,2,1],
 "globals_vars_c.html":[19,1,2,2],
 "globals_vars_d.html":[19,1,2,3],

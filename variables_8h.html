@@ -148,6 +148,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab18b55dcc545e45516e71fae8ec1b459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d7a8c5ee063bcb0fad6fbcd7ec1af01" id="r_a7d7a8c5ee063bcb0fad6fbcd7ec1af01"><td class="memItemLeft" align="right" valign="top">run_const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a7d7a8c5ee063bcb0fad6fbcd7ec1af01">AC_fully_periodic_grid</a> = AC_periodic_grid.x &amp;&amp; AC_periodic_grid.y &amp;&amp; AC_periodic_grid.z</td></tr>
 <tr class="separator:a7d7a8c5ee063bcb0fad6fbcd7ec1af01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fa4965fdce786eb539e815807810e1" id="r_a47fa4965fdce786eb539e815807810e1"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structint3.html">int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a47fa4965fdce786eb539e815807810e1">AC_nintervals</a> = <a class="el" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="el" href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a> -1</td></tr>
+<tr class="separator:a47fa4965fdce786eb539e815807810e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fe7c3092a9071218ce516146c938da3" id="r_a3fe7c3092a9071218ce516146c938da3"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structreal3.html">real3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></td></tr>
 <tr class="separator:a3fe7c3092a9071218ce516146c938da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d104842f632824f608880983dad22f" id="r_a91d104842f632824f608880983dad22f"><td class="memItemLeft" align="right" valign="top">run_const real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a91d104842f632824f608880983dad22f">AC_dsmin</a> = AC_dimension_inactive.z ? <a class="el" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(AC_ds.x,AC_ds.y) : <a class="el" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a>)</td></tr>
@@ -188,7 +190,7 @@ Variables</h2></td></tr>
 <tr class="separator:a523c6edf344c3db1274b146ffc4ca9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3247a338b2e0bea8653f60cc20d1ccd4" id="r_a3247a338b2e0bea8653f60cc20d1ccd4"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="typedefs_8h.html#acd4e979cd079d58934b078328811a06a">AcMPICommStrategy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a3247a338b2e0bea8653f60cc20d1ccd4">AC_MPI_comm_strategy</a> = <a class="el" href="typedefs_8h.html#acd4e979cd079d58934b078328811a06aaff8156af44e8bcad0bfc54a71ba8508b">AC_MPI_COMM_STRATEGY_DUP_WORLD</a></td></tr>
 <tr class="separator:a3247a338b2e0bea8653f60cc20d1ccd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36de890d886cb1516a47b33772c2335f" id="r_a36de890d886cb1516a47b33772c2335f"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structreal3.html">real3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a> = (<a class="el" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="el" href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a> - 1)*<a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></td></tr>
+<tr class="memitem:a36de890d886cb1516a47b33772c2335f" id="r_a36de890d886cb1516a47b33772c2335f"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structreal3.html">real3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a> = <a class="el" href="variables_8h.html#a47fa4965fdce786eb539e815807810e1">AC_nintervals</a>*<a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></td></tr>
 <tr class="separator:a36de890d886cb1516a47b33772c2335f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a6675f9db5849f441040decbae6b5c" id="r_ad4a6675f9db5849f441040decbae6b5c"><td class="memItemLeft" align="right" valign="top">run_const <a class="el" href="structreal3.html">real3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variables_8h.html#ad4a6675f9db5849f441040decbae6b5c">AC_frequency_spacing</a></td></tr>
 <tr class="separator:ad4a6675f9db5849f441040decbae6b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,7 +395,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructbool3_html_a0a487884cdc070d7f0de0f2c9ae83ad9"><div class="ttname"><a href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">bool3::x</a></div><div class="ttdeci">bool x</div><div class="ttdef"><b>Definition</b> typedefs.h:62</div></div>
 <div class="ttc" id="astructreal3_html"><div class="ttname"><a href="structreal3.html">real3</a></div><div class="ttdef"><b>Definition</b> typedefs.h:21</div></div>
 <div class="ttc" id="astructreal3_html_a05f5a19e28f82de9d31d16c98a0ab634"><div class="ttname"><a href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">real3::x</a></div><div class="ttdeci">real x</div><div class="ttdef"><b>Definition</b> typedefs.h:22</div></div>
-<div class="ttc" id="avariables_8h_html_a36de890d886cb1516a47b33772c2335f"><div class="ttname"><a href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a></div><div class="ttdeci">run_const real3 AC_len</div><div class="ttdef"><b>Definition</b> variables.h:233</div></div>
+<div class="ttc" id="avariables_8h_html_a36de890d886cb1516a47b33772c2335f"><div class="ttname"><a href="variables_8h.html#a36de890d886cb1516a47b33772c2335f">AC_len</a></div><div class="ttdeci">run_const real3 AC_len</div><div class="ttdef"><b>Definition</b> variables.h:237</div></div>
 <div class="ttc" id="avariables_8h_html_a6ca93276d81ba80730554d4a68d36456"><div class="ttname"><a href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a></div><div class="ttdeci">run_const bool3 AC_periodic_grid</div><div class="ttdef"><b>Definition</b> variables.h:117</div></div>
 </div><!-- fragment --><p>Grid spacings. If is not given and AC_len, AC_periodic_grid and AC_ngrid are, then by default calculated from them. Naturally these only make sense for equidistant Cartesian grids </p>
 
@@ -580,7 +582,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="keywordtype">bool</span> AC_sparse_autotuning=<span class="keyword">false</span></div>
 <div class="ttc" id="astructbool3_html_a6c1aee22778f595647cacedd6ab333eb"><div class="ttname"><a href="structbool3.html#a6c1aee22778f595647cacedd6ab333eb">bool3::y</a></div><div class="ttdeci">bool y</div><div class="ttdef"><b>Definition</b> typedefs.h:63</div></div>
 <div class="ttc" id="astructbool3_html_a9302d1f8d65a441e2afa647c7a956265"><div class="ttname"><a href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">bool3::z</a></div><div class="ttdeci">bool z</div><div class="ttdef"><b>Definition</b> typedefs.h:64</div></div>
-<div class="ttc" id="avariables_8h_html_a1ceced0c5c88cf7524974628429810cb"><div class="ttname"><a href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a></div><div class="ttdeci">run_const bool3 AC_nonequidistant_grid</div><div class="ttdef"><b>Definition</b> variables.h:317</div></div>
+<div class="ttc" id="avariables_8h_html_a1ceced0c5c88cf7524974628429810cb"><div class="ttname"><a href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a></div><div class="ttdeci">run_const bool3 AC_nonequidistant_grid</div><div class="ttdef"><b>Definition</b> variables.h:321</div></div>
 </div><!-- fragment --><p>Helper variable to know are we fully equidistant </p>
 
 </div>
@@ -603,7 +605,7 @@ Variables</h2></td></tr>
 <div class="line">                       }</div>
 <div class="ttc" id="astructreal3_html_aacff6d4f0bdb822c11bc4992bcfae747"><div class="ttname"><a href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">real3::y</a></div><div class="ttdeci">real y</div><div class="ttdef"><b>Definition</b> typedefs.h:23</div></div>
 <div class="ttc" id="astructreal3_html_ab483f52cb25a1314382d9170ac199173"><div class="ttname"><a href="structreal3.html#ab483f52cb25a1314382d9170ac199173">real3::z</a></div><div class="ttdeci">real z</div><div class="ttdef"><b>Definition</b> typedefs.h:24</div></div>
-<div class="ttc" id="avariables_8h_html_a3fe7c3092a9071218ce516146c938da3"><div class="ttname"><a href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></div><div class="ttdeci">run_const real3 AC_ds</div><div class="ttdef"><b>Definition</b> variables.h:132</div></div>
+<div class="ttc" id="avariables_8h_html_a3fe7c3092a9071218ce516146c938da3"><div class="ttname"><a href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></div><div class="ttdeci">run_const real3 AC_ds</div><div class="ttdef"><b>Definition</b> variables.h:136</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -693,7 +695,7 @@ Variables</h2></td></tr>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">run_const <a class="code hl_struct" href="structreal3.html">real3</a> AC_inv_ds_2 = <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>*<a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a></div>
-<div class="ttc" id="avariables_8h_html_a00644960a6aef0ae474c249e7bd04329"><div class="ttname"><a href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a></div><div class="ttdeci">run_const real3 AC_inv_ds</div><div class="ttdef"><b>Definition</b> variables.h:169</div></div>
+<div class="ttc" id="avariables_8h_html_a00644960a6aef0ae474c249e7bd04329"><div class="ttname"><a href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a></div><div class="ttdeci">run_const real3 AC_inv_ds</div><div class="ttdef"><b>Definition</b> variables.h:173</div></div>
 </div><!-- fragment --><p>Inverse of AC_ds. Makes sense only for equidistant Cartesian grids. </p>
 
 </div>
@@ -800,14 +802,16 @@ Variables</h2></td></tr>
 <div class="line"> </div>
 <div class="line">run_const <a class="code hl_struct" href="structint3.html">int3</a> AC_ngrid_extended  = <a class="code hl_variable" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a>  + AC_right_extended_halo</div>
 <div class="line"> </div>
+<div class="line">run_const <a class="code hl_struct" href="structint3.html">int3</a> AC_nintervals_extended  = AC_ngrid_extended + <a class="code hl_variable" href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a> - 1</div>
+<div class="line"> </div>
 <div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_extended_nlocal = <a class="code hl_variable" href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a> + <a class="code hl_variable" href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a> + AC_right_extended_halo</div>
 <div class="line"> </div>
 <div class="line">dconst <a class="code hl_struct" href="structint3.html">int3</a> AC_extended_nlocal_max = AC_extended_nlocal + <a class="code hl_variable" href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a></div>
 <div class="ttc" id="astructint3_html"><div class="ttname"><a href="structint3.html">int3</a></div><div class="ttdef"><b>Definition</b> stencilgen.c:48</div></div>
 <div class="ttc" id="avariables_8h_html_a21eb87bed253df213669b42484ff3599"><div class="ttname"><a href="variables_8h.html#a21eb87bed253df213669b42484ff3599">AC_mlocal</a></div><div class="ttdeci">int3 AC_mlocal</div><div class="ttdef"><b>Definition</b> variables.h:47</div></div>
 <div class="ttc" id="avariables_8h_html_a43216bbfb79de0f28fd692021fdafceb"><div class="ttname"><a href="variables_8h.html#a43216bbfb79de0f28fd692021fdafceb">AC_nlocal</a></div><div class="ttdeci">int3 AC_nlocal</div><div class="ttdef"><b>Definition</b> variables.h:38</div></div>
-<div class="ttc" id="avariables_8h_html_a4506213c25cb0a4caa2d33ad0d36ec21"><div class="ttname"><a href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div><div class="ttdeci">run_const real3 AC_first_gridpoint</div><div class="ttdef"><b>Definition</b> variables.h:243</div></div>
-<div class="ttc" id="avariables_8h_html_a682eb578680f721d1d233c36fcff3ed4"><div class="ttname"><a href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a></div><div class="ttdeci">dconst int3 AC_left_extended_halo</div><div class="ttdef"><b>Definition</b> variables.h:383</div></div>
+<div class="ttc" id="avariables_8h_html_a4506213c25cb0a4caa2d33ad0d36ec21"><div class="ttname"><a href="variables_8h.html#a4506213c25cb0a4caa2d33ad0d36ec21">AC_first_gridpoint</a></div><div class="ttdeci">run_const real3 AC_first_gridpoint</div><div class="ttdef"><b>Definition</b> variables.h:247</div></div>
+<div class="ttc" id="avariables_8h_html_a682eb578680f721d1d233c36fcff3ed4"><div class="ttname"><a href="variables_8h.html#a682eb578680f721d1d233c36fcff3ed4">AC_left_extended_halo</a></div><div class="ttdeci">dconst int3 AC_left_extended_halo</div><div class="ttdef"><b>Definition</b> variables.h:387</div></div>
 <div class="ttc" id="avariables_8h_html_acac6c982059321e566cc7f5e8ece60f8"><div class="ttname"><a href="variables_8h.html#acac6c982059321e566cc7f5e8ece60f8">AC_nmin</a></div><div class="ttdeci">int3 AC_nmin</div><div class="ttdef"><b>Definition</b> variables.h:4</div></div>
 </div><!-- fragment --><p>Specifies how many extra grid points the extended grid has to the left of the normal grid (left meaning they come before in indexing). By default no extended grid so zero points </p>
 
@@ -820,7 +824,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">run_const <a class="el" href="structreal3.html">real3</a> AC_len = (<a class="el" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="el" href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a> - 1)*<a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></td>
+          <td class="memname">run_const <a class="el" href="structreal3.html">real3</a> AC_len = <a class="el" href="variables_8h.html#a47fa4965fdce786eb539e815807810e1">AC_nintervals</a>*<a class="el" href="variables_8h.html#a3fe7c3092a9071218ce516146c938da3">AC_ds</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1050,6 +1054,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Inverses of AC_ngrid_products_inv </p>
+
+</div>
+</div>
+<a id="a47fa4965fdce786eb539e815807810e1" name="a47fa4965fdce786eb539e815807810e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fa4965fdce786eb539e815807810e1">&#9670;&#160;</a></span>AC_nintervals</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">run_const <a class="el" href="structint3.html">int3</a> AC_nintervals = <a class="el" href="variables_8h.html#a094181b89984fe7476ca04318c56b339">AC_ngrid</a> + <a class="el" href="variables_8h.html#a6ca93276d81ba80730554d4a68d36456">AC_periodic_grid</a> -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of intervals is not the same is ngrid - 1 if not periodic and ngrid if periodic </p>
 
 </div>
 </div>
