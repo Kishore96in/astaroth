@@ -279,8 +279,8 @@ var searchData=
   ['gradient2_276',['gradient2',['../general__operators_8h.html#a7722626067b25a7e070c6d57a8cf3cf6',1,'gradient2(Field s):&#160;general_operators.h'],['../operators_8h.html#a7722626067b25a7e070c6d57a8cf3cf6',1,'gradient2(Field s):&#160;operators.h']]],
   ['gradient5_277',['gradient5',['../general__operators_8h.html#ac7c335885a92da55706a457136b93411',1,'gradient5(Field s):&#160;general_operators.h'],['../operators_8h.html#ac7c335885a92da55706a457136b93411',1,'gradient5(Field s):&#160;operators.h']]],
   ['gradient6_5fupwd_278',['gradient6_upwd',['../general__operators_8h.html#a15b4114f629f46b0fafae5dac68354c1',1,'general_operators.h']]],
-  ['gradient_5fof_5fdivergence_279',['gradient_of_divergence',['../stdderiv_8h.html#a33753bf2d15ce49018abd97c6c7729d9',1,'gradient_of_divergence(in VectorField vec):&#160;stdderiv.h'],['../general__operators_8h.html#a8e2bc4cfcd244fc5e641aaeb3c6153f8',1,'gradient_of_divergence(Field3 v, Matrix m):&#160;general_operators.h'],['../general__operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc',1,'gradient_of_divergence(Field3 v):&#160;general_operators.h'],['../operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc',1,'gradient_of_divergence(Field3 v):&#160;operators.h']]],
-  ['gradient_5ftensor_280',['gradient_tensor',['../operators_8h.html#ab3404a1a74e87bd7854d00b518275725',1,'gradient_tensor(Field3 v):&#160;operators.h'],['../general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725',1,'gradient_tensor(Field3 v):&#160;general_operators.h']]],
+  ['gradient_5fof_5fdivergence_279',['gradient_of_divergence',['../general__operators_8h.html#a8e2bc4cfcd244fc5e641aaeb3c6153f8',1,'gradient_of_divergence(Field3 v, Matrix m):&#160;general_operators.h'],['../general__operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc',1,'gradient_of_divergence(Field3 v):&#160;general_operators.h'],['../operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc',1,'gradient_of_divergence(Field3 v):&#160;operators.h'],['../stdderiv_8h.html#a33753bf2d15ce49018abd97c6c7729d9',1,'gradient_of_divergence(in VectorField vec):&#160;stdderiv.h']]],
+  ['gradient_5ftensor_280',['gradient_tensor',['../general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725',1,'gradient_tensor(Field3 v):&#160;general_operators.h'],['../operators_8h.html#ab3404a1a74e87bd7854d00b518275725',1,'gradient_tensor(Field3 v):&#160;operators.h']]],
   ['gradient_5fupwd_281',['gradient_upwd',['../general__operators_8h.html#a5decb719e2e4b3523af606941f5f06ed',1,'gradient_upwd(Field s):&#160;general_operators.h'],['../operators_8h.html#a5decb719e2e4b3523af606941f5f06ed',1,'gradient_upwd(Field s):&#160;operators.h']]],
   ['gravz_5fzpencil_282',['gravz_zpencil',['../samples_2conv-slab_2PC__modulepardecs_8h.html#a72caeeafd2245dab1844bd5cdbb039d1',1,'PC_modulepardecs.h']]],
   ['greater_5fstr_283',['GREATER_STR',['../codegen_8c.html#a8b1734b0a8a4122a84f035436146a0cf',1,'codegen.c']]],
@@ -293,9 +293,11 @@ var searchData=
   ['grid_5fcommdata_5fbased_2ecc_290',['grid_commdata_based.cc',['../grid__commdata__based_8cc.html',1,'']]],
   ['grid_5fdetail_2eh_291',['grid_detail.h',['../grid__detail_8h.html',1,'']]],
   ['grid_5fextension_2eh_292',['grid_extension.h',['../grid__extension_8h.html',1,'']]],
-  ['grid_5fposition_293',['grid_position',['../grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138',1,'grid_position(int3 local_point):&#160;funcs.h'],['../grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16',1,'grid_position():&#160;funcs.h'],['../general__grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138',1,'grid_position(int3 local_point):&#160;funcs.h']]],
-  ['grid_5fposition_5fextended_294',['grid_position_extended',['../general__grid_2funcs_8h.html#ab48abf07bccfd288e1e774853d5eca56',1,'grid_position_extended():&#160;funcs.h'],['../general__grid_2funcs_8h.html#afa463f1bffc3c664297e226aa922cb18',1,'grid_position_extended(int3 local_point):&#160;funcs.h']]],
-  ['grid_5ftransfer_5ffunctions_2eh_295',['grid_transfer_functions.h',['../grid__transfer__functions_8h.html',1,'']]],
-  ['grid_5fxyz_296',['grid_xyz',['../general__grid_2funcs_8h.html#a1f6cfea056c078ae12250b7b36cecf69',1,'funcs.h']]],
-  ['griddims_297',['GridDims',['../structGridDims.html',1,'']]]
+  ['grid_5finv_5fspacing_293',['grid_inv_spacing',['../general__grid_2funcs_8h.html#ad38c5bf1b43952f41bab097c01a17d96',1,'funcs.h']]],
+  ['grid_5finv_5fspacing_5fextended_294',['grid_inv_spacing_extended',['../general__grid_2funcs_8h.html#a9b4a1895e093b434dbaf5e8768abf7b7',1,'funcs.h']]],
+  ['grid_5fposition_295',['grid_position',['../grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138',1,'grid_position(int3 local_point):&#160;funcs.h'],['../general__grid_2funcs_8h.html#af231c0bb17a145099ab5d2d60ebba138',1,'grid_position(int3 local_point):&#160;funcs.h'],['../grid_2funcs_8h.html#a005f635a57cc3f2ac1f6bba568b9cb16',1,'grid_position():&#160;funcs.h']]],
+  ['grid_5fposition_5fextended_296',['grid_position_extended',['../general__grid_2funcs_8h.html#ab48abf07bccfd288e1e774853d5eca56',1,'grid_position_extended():&#160;funcs.h'],['../general__grid_2funcs_8h.html#afa463f1bffc3c664297e226aa922cb18',1,'grid_position_extended(int3 local_point):&#160;funcs.h']]],
+  ['grid_5ftransfer_5ffunctions_2eh_297',['grid_transfer_functions.h',['../grid__transfer__functions_8h.html',1,'']]],
+  ['grid_5fxyz_298',['grid_xyz',['../general__grid_2funcs_8h.html#a1f6cfea056c078ae12250b7b36cecf69',1,'funcs.h']]],
+  ['griddims_299',['GridDims',['../structGridDims.html',1,'']]]
 ];
