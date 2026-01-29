@@ -32,6 +32,8 @@ var variables_8h =
     [ "AC_inv_ds_5", "variables_8h.html#a512bf142cdc0b3e4b7d8b21389729e8f", null ],
     [ "AC_inv_ds_6", "variables_8h.html#a8c720ba8f7b52331597d7f6d500cdece", null ],
     [ "AC_lagrangian_grid", "variables_8h.html#a02b7780a80d30b2ca3c65b9f09a05439", null ],
+    [ "AC_last_active_grid_point", "variables_8h.html#a373a7427d84ec77c2954eb464d49f63d", null ],
+    [ "AC_last_active_local_point", "variables_8h.html#ad14d4b3d5e8654357209617c5bf759d7", null ],
     [ "AC_left_extended_halo", "variables_8h.html#a682eb578680f721d1d233c36fcff3ed4", null ],
     [ "AC_len", "variables_8h.html#a36de890d886cb1516a47b33772c2335f", null ],
     [ "AC_max_tpb_for_reduce_kernels", "variables_8h.html#a18b6496279514e2ff3d9f2e72883e177", null ],
