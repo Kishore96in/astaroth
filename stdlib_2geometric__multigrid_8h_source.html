@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('stdlib_2geometric__multigrid_8h_source
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="structAcMesh.html">AcMesh</a> mesh{};</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="astaroth_8cc.html#a7211b038dd8e6b02708feec332809f30">acHostMeshCreate</a>(info,&amp;mesh);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="acreal_8h.html#a682ddafb17af19aa8f6e413da6625de0">AcReal</a> h2_inv = info[AC_inv_ds_2].x/std::pow(4,level);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> std::array&lt;Stencil,11&gt; galerkin_operator_stencils_r1 = </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> std::array&lt;Stencil,5&gt; galerkin_operator_stencils_r1 = </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        (Stencil)0,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        stencil_gmg_laplace_level_1_r1,</div>
