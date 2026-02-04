@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"namespaceac_1_1helical__forcing.html":[17,0,0,0],
+"namespacematplotlibcpp.html":[17,0,1],
+"namespacematplotlibcpp.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[17,0,1,27],
+"namespacematplotlibcpp.html#a00a57926330764f8490142b3ce06bd2e":[17,0,1,25],
 "namespacematplotlibcpp.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[17,0,1,72],
 "namespacematplotlibcpp.html#a0638f54cec7e104c8a2aae0e60bc01f4":[17,0,1,19],
 "namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b":[17,0,1,50],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "pc__derivs_8h.html#ac563861d5733c653e3e9587753872e71":[19,0,0,5,20,15],
 "pc__derivs_8h.html#ac6196442b533cffe767f6ff0f5c4c09c":[19,0,0,5,20,51],
 "pc__derivs_8h.html#ac972e08b9f66a38dad81989309aad37e":[19,0,0,5,20,27],
-"pc__derivs_8h.html#acb5b1b022534b29852f2d5935ef0e68a":[19,0,0,5,20,11],
-"pc__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[19,0,0,5,20,56],
-"pc__derivs_8h.html#ace14a62455d7cb0d089017d381fa6e3b":[19,0,0,5,20,57],
-"pc__derivs_8h.html#ad2e66845873ee48a12f750051096e870":[19,0,0,5,20,50],
-"pc__derivs_8h.html#ad423177238bbaf3959b9f03b2cca1d7c":[19,0,0,5,20,13]
+"pc__derivs_8h.html#acb5b1b022534b29852f2d5935ef0e68a":[19,0,0,5,20,11]
 };

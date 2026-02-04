@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a3df1b1d037e54f3ae5d1d7c89342099a":[19,0,8,34,0,1,73],
+"matplotlibcpp_8h.html#a40ac4e0d416fad21899637dcf8d281c6":[19,0,8,34,0,1,82],
+"matplotlibcpp_8h.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[19,0,8,34,0,1,31],
+"matplotlibcpp_8h.html#a4645651772918e2dad7d36d9eeaeaefa":[19,0,8,34,0,1,100],
 "matplotlibcpp_8h.html#a468096a42e46d0a26e8a237ffb24caca":[19,0,8,34,0,1,47],
 "matplotlibcpp_8h.html#a4854fc237468144bd46809ea7ce8f2a0":[19,0,8,34,0,1,12],
 "matplotlibcpp_8h.html#a4cc9d207ab565df55b663b264be9ce72":[19,0,8,34,0,1,41],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,18,0,0],
 "multigrid-test_2main_8cc.html":[19,0,8,19,0],
 "multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,19,0,0],
-"namespaceac.html":[17,0,0],
-"namespaceac_1_1helical__forcing.html":[17,0,0,0],
-"namespacematplotlibcpp.html":[17,0,1],
-"namespacematplotlibcpp.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[17,0,1,27],
-"namespacematplotlibcpp.html#a00a57926330764f8490142b3ce06bd2e":[17,0,1,25]
+"namespaceac.html":[17,0,0]
 };

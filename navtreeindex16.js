@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"smooth__max_8h.html#af203a9308bcfa57e5052021fe26451c1":[19,0,0,5,26,315],
+"smooth__max_8h.html#af21183435b35fff142d965ca104931de":[19,0,0,5,26,144],
+"smooth__max_8h.html#af26ad57f554188a5e2e5a3ada6db7fe7":[19,0,0,5,26,134],
+"smooth__max_8h.html#af44ce14b88192a65cc88f784f4454117":[19,0,0,5,26,124],
 "smooth__max_8h.html#af50b64c833971ca6d3ea0889d486c6f1":[19,0,0,5,26,91],
 "smooth__max_8h.html#af61a71ecdfd5c6b3b69c32d16eaafa04":[19,0,0,5,26,334],
 "smooth__max_8h.html#af75d865ace5fb624af65ef18891242f7":[19,0,0,5,26,240],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "structAcDecompositionInfo.html#a8f2f19a7a1173f6745d4a2bc5b58d212":[18,0,11,1],
 "structAcDecompositionInfo.html#aa46463b0f2d8fc9f56e730c554e824d8":[18,0,11,5],
 "structAcDecompositionInfo.html#aeecb7b8b17cfc3da322c5642a9b501ba":[18,0,11,3],
-"structAcDeviceKernelOutput.html":[18,0,12],
-"structAcDeviceTmpBuffer.html":[18,0,13],
-"structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a":[18,0,13,0],
-"structAcDeviceTmpBuffer.html#af5f97bc385ba721ba952ef70b3ac3b6c":[18,0,13,1],
-"structAcDimProducts.html":[18,0,14]
+"structAcDeviceKernelOutput.html":[18,0,12]
 };
