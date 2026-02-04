@@ -2,8 +2,8 @@ var searchData=
 [
   ['half_5fof_0',['HALF_OF',['../__kiss__fft__guts_8h.html#a0b812a30fdb0c530a90a18d1692fab6c',1,'_kiss_fft_guts.h']]],
   ['halo_1',['halo',['../bwtest-stencil_8cu.html#a506e3be0281e3c100aef41dd51e107af',1,'HALO:&#160;bwtest-stencil.cu'],['../structRegion.html#a74bf5972f9496a429ea0700914ec0bf1',1,'Region::halo']]],
-  ['halo_5fexchange_5fresiduals_2',['halo_exchange_residuals',['../stdlib_2geometric__multigrid_8h.html#a1950581b2d1a9011a833c3f95aa728f5',1,'geometric_multigrid.h']]],
-  ['halo_5fexchange_5fsolutions_3',['halo_exchange_solutions',['../stdlib_2geometric__multigrid_8h.html#a3ec4e579e8138316d4254a5016250f48',1,'geometric_multigrid.h']]],
+  ['halo_5fexchange_5fresiduals_2',['halo_exchange_residuals',['../stdlib_2geometric__multigrid_8h.html#ab2c3ff69aa9259af6a4e298e72ae7bf8',1,'geometric_multigrid.h']]],
+  ['halo_5fexchange_5fsolutions_3',['halo_exchange_solutions',['../stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb',1,'geometric_multigrid.h']]],
   ['halo_5fstr_4',['HALO_STR',['../codegen_8c.html#a8108cd5f844d5679c76f20d5333e7594',1,'codegen.c']]],
   ['halo_5ftasks_5',['halo_tasks',['../structAcTaskGraph.html#a1ec0bf72efcbd522abd9b926641825a2',1,'AcTaskGraph']]],
   ['haloexchangestate_6',['HaloExchangeState',['../task_8h.html#ae06a32b9b155c134f986e0cc50f7e144',1,'task.h']]],

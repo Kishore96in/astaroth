@@ -8,7 +8,7 @@ var searchData=
   ['lengths_5',['lengths',['../structAcGridInfo.html#abb4e6ace4ec5c96bc874579dbaf3fd6e',1,'AcGridInfo']]],
   ['leq_5fstr_6',['LEQ_STR',['../codegen_8c.html#a0ed432ad4cc98aceed3018f35229d301',1,'codegen.c']]],
   ['less_5fstr_7',['LESS_STR',['../codegen_8c.html#a4bc9b7b8fc58aaaab0651b9838fe84b5',1,'codegen.c']]],
-  ['level_5fdims_8',['level_dims',['../stdlib_2geometric__multigrid_8h.html#aba2a73a8d93be9be04cd3aacc4220ec9',1,'geometric_multigrid.h']]],
+  ['level_5fdims_8',['level_dims',['../stdlib_2geometric__multigrid_8h.html#a4f07557538cba67a86437433deb10266',1,'geometric_multigrid.h']]],
   ['level_5fdivisor_9',['level_divisor',['../geometric__multigrid__core_8h.html#ad4341623573ea5c6cd29d261ae667ea2',1,'geometric_multigrid_core.h']]],
   ['lhs_10',['lhs',['../structastnode__s.html#a3c1f8130dbb5b007e930ee12a69f3409',1,'astnode_s']]],
   ['line_11',['line',['../cuda_8cc.html#a93346abb21c5f2298d56b7e25479ce45',1,'line:&#160;cuda.cc'],['../string__vec_8h.html#a6d574f3bbd7bbcb2515d234be74beaa4',1,'line:&#160;string_vec.h']]],

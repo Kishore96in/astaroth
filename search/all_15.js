@@ -21,7 +21,7 @@ var searchData=
   ['lengths_18',['lengths',['../structAcGridInfo.html#abb4e6ace4ec5c96bc874579dbaf3fd6e',1,'AcGridInfo']]],
   ['leq_5fstr_19',['LEQ_STR',['../codegen_8c.html#a0ed432ad4cc98aceed3018f35229d301',1,'codegen.c']]],
   ['less_5fstr_20',['LESS_STR',['../codegen_8c.html#a4bc9b7b8fc58aaaab0651b9838fe84b5',1,'codegen.c']]],
-  ['level_5fdims_21',['level_dims',['../stdlib_2geometric__multigrid_8h.html#aba2a73a8d93be9be04cd3aacc4220ec9',1,'geometric_multigrid.h']]],
+  ['level_5fdims_21',['level_dims',['../stdlib_2geometric__multigrid_8h.html#a4f07557538cba67a86437433deb10266',1,'geometric_multigrid.h']]],
   ['level_5fdivisor_22',['level_divisor',['../geometric__multigrid__core_8h.html#ad4341623573ea5c6cd29d261ae667ea2',1,'geometric_multigrid_core.h']]],
   ['lhs_23',['lhs',['../structastnode__s.html#a3c1f8130dbb5b007e930ee12a69f3409',1,'astnode_s']]],
   ['liability_24',['liability',['../md_LICENCE.html#autotoc_md156',1,'16. Limitation of Liability.'],['../md_acc-runtime_2LICENCE.html#autotoc_md19',1,'16. Limitation of Liability.']]],

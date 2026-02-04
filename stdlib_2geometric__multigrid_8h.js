@@ -9,8 +9,8 @@ var stdlib_2geometric__multigrid_8h =
     [ "gmg_setup", "stdlib_2geometric__multigrid_8h.html#a4b084b0a43134ea36afd9eb3e718ba13", null ],
     [ "gmg_store_and_prolong", "stdlib_2geometric__multigrid_8h.html#a80f85e3438b9a41792fcb9337356cbdd", null ],
     [ "gmg_v_cycle", "stdlib_2geometric__multigrid_8h.html#ad1cfac260bde0217d59097d867454c0b", null ],
-    [ "gmg_central_coeffs", "stdlib_2geometric__multigrid_8h.html#a4ca23d473f99a5c70ebcc94484683fb9", null ],
-    [ "halo_exchange_residuals", "stdlib_2geometric__multigrid_8h.html#a1950581b2d1a9011a833c3f95aa728f5", null ],
-    [ "halo_exchange_solutions", "stdlib_2geometric__multigrid_8h.html#a3ec4e579e8138316d4254a5016250f48", null ],
-    [ "level_dims", "stdlib_2geometric__multigrid_8h.html#aba2a73a8d93be9be04cd3aacc4220ec9", null ]
+    [ "gmg_central_coeffs", "stdlib_2geometric__multigrid_8h.html#af39a61ef9b24b8b0fb11e31a5a72b2d5", null ],
+    [ "halo_exchange_residuals", "stdlib_2geometric__multigrid_8h.html#ab2c3ff69aa9259af6a4e298e72ae7bf8", null ],
+    [ "halo_exchange_solutions", "stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb", null ],
+    [ "level_dims", "stdlib_2geometric__multigrid_8h.html#a4f07557538cba67a86437433deb10266", null ]
 ];

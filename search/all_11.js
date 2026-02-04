@@ -263,7 +263,7 @@ var searchData=
   ['global_5fdims_260',['global_dims',['../structAcDecompositionInfo.html#a55426ec88a4f979822c51b9badff716a',1,'AcDecompositionInfo']]],
   ['global_5fmem_5fstr_261',['GLOBAL_MEM_STR',['../codegen_8c.html#afeb86a1c6a0f0c4c375dd428852dc2e3',1,'codegen.c']]],
   ['global_5fstr_262',['GLOBAL_STR',['../codegen_8c.html#af1d9fc6f093bedb318e3cf3701c03a88',1,'codegen.c']]],
-  ['gmg_5fcentral_5fcoeffs_263',['gmg_central_coeffs',['../stdlib_2geometric__multigrid_8h.html#a4ca23d473f99a5c70ebcc94484683fb9',1,'geometric_multigrid.h']]],
+  ['gmg_5fcentral_5fcoeffs_263',['gmg_central_coeffs',['../stdlib_2geometric__multigrid_8h.html#af39a61ef9b24b8b0fb11e31a5a72b2d5',1,'geometric_multigrid.h']]],
   ['gmg_5fget_5fhalo_5fexchange_5foperators_264',['gmg_get_halo_exchange_operators',['../stdlib_2geometric__multigrid_8h.html#abebaf0b47fd5cb109fa48588d54f660a',1,'geometric_multigrid.h']]],
   ['gmg_5flevel_5fstep_265',['gmg_level_step',['../stdlib_2geometric__multigrid_8h.html#a982001c00d7cd02c44d2bb66d06b0545',1,'geometric_multigrid.h']]],
   ['gmg_5fpopulate_5fcentral_5fcoeffients_266',['gmg_populate_central_coeffients',['../stdlib_2geometric__multigrid_8h.html#a3d7e20b0e945c3cec3c44f0e73fb698c',1,'geometric_multigrid.h']]],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['halo_0',['halo',['../structRegion.html#a74bf5972f9496a429ea0700914ec0bf1',1,'Region']]],
-  ['halo_5fexchange_5fresiduals_1',['halo_exchange_residuals',['../stdlib_2geometric__multigrid_8h.html#a1950581b2d1a9011a833c3f95aa728f5',1,'geometric_multigrid.h']]],
-  ['halo_5fexchange_5fsolutions_2',['halo_exchange_solutions',['../stdlib_2geometric__multigrid_8h.html#a3ec4e579e8138316d4254a5016250f48',1,'geometric_multigrid.h']]],
+  ['halo_5fexchange_5fresiduals_1',['halo_exchange_residuals',['../stdlib_2geometric__multigrid_8h.html#ab2c3ff69aa9259af6a4e298e72ae7bf8',1,'geometric_multigrid.h']]],
+  ['halo_5fexchange_5fsolutions_2',['halo_exchange_solutions',['../stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb',1,'geometric_multigrid.h']]],
   ['halo_5fstr_3',['HALO_STR',['../codegen_8c.html#a8108cd5f844d5679c76f20d5333e7594',1,'codegen.c']]],
   ['halo_5ftasks_4',['halo_tasks',['../structAcTaskGraph.html#a1ec0bf72efcbd522abd9b926641825a2',1,'AcTaskGraph']]],
   ['handle_5',['handle',['../structAcCommunicator.html#a35cbdd21df29a767ee8fa6900054c32a',1,'AcCommunicator']]],
