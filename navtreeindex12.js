@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a3917f5113dcefbf8f6dc1f04e8196ca1":[19,0,8,34,0,1,62],
 "matplotlibcpp_8h.html#a3df1b1d037e54f3ae5d1d7c89342099a":[19,0,8,34,0,1,73],
 "matplotlibcpp_8h.html#a40ac4e0d416fad21899637dcf8d281c6":[19,0,8,34,0,1,82],
 "matplotlibcpp_8h.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[19,0,8,34,0,1,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "mpi-profile-reduce_2main_8cc.html":[19,0,8,18,0],
 "mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,18,0,0],
 "multigrid-test_2main_8cc.html":[19,0,8,19,0],
-"multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,19,0,0],
-"namespaceac.html":[17,0,0]
+"multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,19,0,0]
 };

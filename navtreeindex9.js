@@ -9,8 +9,8 @@ var NAVTREEINDEX9 =
 "general__derivs_8h.html#a2fee51e8e7309b630d21910d1bdf1a6a":[19,0,0,5,10,56],
 "general__derivs_8h.html#a2fee51e8e7309b630d21910d1bdf1a6a":[19,0,0,5,10,55],
 "general__derivs_8h.html#a33b959741452c28fe25fcb118e610601":[19,0,0,5,10,53],
-"general__derivs_8h.html#a361195a4dc650ad7554f0b1f4f35cb87":[19,0,0,5,10,59],
 "general__derivs_8h.html#a361195a4dc650ad7554f0b1f4f35cb87":[19,0,0,5,10,60],
+"general__derivs_8h.html#a361195a4dc650ad7554f0b1f4f35cb87":[19,0,0,5,10,59],
 "general__derivs_8h.html#a3683b564f7135fd8c6443766b0f75aca":[19,0,0,5,10,41],
 "general__derivs_8h.html#a391743ddc291dc6010fcab48b92e7fc0":[19,0,0,5,10,32],
 "general__derivs_8h.html#a39d48d59e1e4777b167dc4367e2fcc31":[19,0,0,5,10,38],
@@ -29,8 +29,8 @@ var NAVTREEINDEX9 =
 "general__derivs_8h.html#a72b00498226f4799e54c5bb7088c23a8":[19,0,0,5,10,15],
 "general__derivs_8h.html#a76c8b5731ba1b2c7a1ca6fdaaf5cdf82":[19,0,0,5,10,43],
 "general__derivs_8h.html#a7c83b0f26c858a0efaafb6224f98435d":[19,0,0,5,10,19],
-"general__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,10,62],
 "general__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,10,61],
+"general__derivs_8h.html#a7ce60a283f472e27e9f9de5b0460732d":[19,0,0,5,10,62],
 "general__derivs_8h.html#a7f16283d002374281a1909f53c65234a":[19,0,0,5,10,51],
 "general__derivs_8h.html#a8158f6e79d2afdb43c5555864ad28003":[19,0,0,5,10,74],
 "general__derivs_8h.html#a85b9790e5a836b4f7694032a9cf209a0":[19,0,0,5,10,46],
@@ -167,7 +167,8 @@ var NAVTREEINDEX9 =
 "general__operators_8h.html#afade80b5099ad85e65911670b5541e8c":[19,0,0,5,11,19],
 "general__operators_8h_source.html":[19,0,0,5,11],
 "geometric__multigrid__core_8h.html":[19,0,0,5,13],
-"geometric__multigrid__core_8h.html#ad4341623573ea5c6cd29d261ae667ea2":[19,0,0,5,13,0],
+"geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4":[19,0,0,5,13,0],
+"geometric__multigrid__core_8h.html#ad4341623573ea5c6cd29d261ae667ea2":[19,0,0,5,13,1],
 "geometric__multigrid__core_8h_source.html":[19,0,0,5,13],
 "globals.html":[19,1,0],
 "globals.html":[19,1,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "globals_k.html":[19,1,0,10],
 "globals_l.html":[19,1,0,11],
 "globals_m.html":[19,1,0,12],
-"globals_n.html":[19,1,0,13],
-"globals_o.html":[19,1,0,14]
+"globals_n.html":[19,1,0,13]
 };
