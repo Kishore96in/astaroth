@@ -7,6 +7,7 @@ var stdlib_2geometric__multigrid_8h =
     [ "gmg_populate_central_coeffients", "stdlib_2geometric__multigrid_8h.html#a3d7e20b0e945c3cec3c44f0e73fb698c", null ],
     [ "gmg_restrict_to_level", "stdlib_2geometric__multigrid_8h.html#ab1d5c3c1675f25314544bb4963591eb8", null ],
     [ "gmg_setup", "stdlib_2geometric__multigrid_8h.html#a4b084b0a43134ea36afd9eb3e718ba13", null ],
+    [ "gmg_setup_parallel_grid_decomposition", "stdlib_2geometric__multigrid_8h.html#a49f917866bd9546eeb40c1eb11592266", null ],
     [ "gmg_store_and_prolong", "stdlib_2geometric__multigrid_8h.html#a80f85e3438b9a41792fcb9337356cbdd", null ],
     [ "gmg_v_cycle", "stdlib_2geometric__multigrid_8h.html#ad1cfac260bde0217d59097d867454c0b", null ],
     [ "gmg_central_coeffs", "stdlib_2geometric__multigrid_8h.html#af39a61ef9b24b8b0fb11e31a5a72b2d5", null ],
