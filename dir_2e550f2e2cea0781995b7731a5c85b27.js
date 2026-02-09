@@ -9,6 +9,7 @@ var dir_2e550f2e2cea0781995b7731a5c85b27 =
     [ "bicgstab.h", "bicgstab_8h.html", "bicgstab_8h" ],
     [ "cg.h", "cg_8h.html", "cg_8h" ],
     [ "colors.h", "colors_8h.html", "colors_8h" ],
+    [ "compact_operators.h", "compact__operators_8h.html", "compact__operators_8h" ],
     [ "derivs.h", "derivs_8h.html", "derivs_8h" ],
     [ "general_derivs.h", "general__derivs_8h.html", "general__derivs_8h" ],
     [ "general_operators.h", "general__operators_8h.html", "general__operators_8h" ],

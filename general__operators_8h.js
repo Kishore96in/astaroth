@@ -1,5 +1,6 @@
 var general__operators_8h =
 [
+    [ "biharmonic", "general__operators_8h.html#a07647cc9de36458027d0f0f6ef05fe0d", null ],
     [ "bij", "general__operators_8h.html#afa117e1d6901e6fd6dad92862371db19", null ],
     [ "contract", "general__operators_8h.html#a5b96ea3ffc80f632cc83a1d32614094b", null ],
     [ "contract", "general__operators_8h.html#ac4cc00ec4feeafe5a3203d8e39fae988", null ],
