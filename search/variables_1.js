@@ -80,7 +80,7 @@ var searchData=
   ['ac_5fnonequidistant_5fgrid_77',['AC_nonequidistant_grid',['../variables_8h.html#a1ceced0c5c88cf7524974628429810cb',1,'variables.h']]],
   ['ac_5fout_5fof_5fbounds_5fwrite_78',['AC_OUT_OF_BOUNDS_WRITE',['../analysis__helpers_8cc.html#a3164563ab54c925d8c01ed6d43d16170',1,'analysis_helpers.cc']]],
   ['ac_5fperiodic_5fgrid_79',['AC_periodic_grid',['../variables_8h.html#a6ca93276d81ba80730554d4a68d36456',1,'variables.h']]],
-  ['ac_5fpoisson_5fradius_5f1_80',['AC_poisson_radius_1',['../poisson_8h.html#a3ef33c93cb79c50fcec4081ee5b7a9bb',1,'poisson.h']]],
+  ['ac_5fpoisson_5forder_80',['AC_poisson_order',['../poisson_8h.html#a65a227f488f2a3e57fc2bb0d5058b235',1,'poisson.h']]],
   ['ac_5fproc_5fmapping_5fstrategy_81',['AC_proc_mapping_strategy',['../variables_8h.html#aa96f23ee7c1b05a42481c76ecfd97a7b',1,'variables.h']]],
   ['ac_5fraytracing_5fblock_5ffactors_82',['AC_raytracing_block_factors',['../variables_8h.html#a218c3859ebce0edf3553c7285def2c52',1,'variables.h']]],
   ['ac_5fred_5fblack_5fhalo_5fexchange_83',['AC_red_black_halo_exchange',['../variables_8h.html#a8ca916d17435b86b3906235c522253f9',1,'variables.h']]],

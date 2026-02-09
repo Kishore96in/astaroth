@@ -197,7 +197,7 @@ var searchData=
   ['ac_5fout_5fof_5fbounds_5fwrite_194',['AC_OUT_OF_BOUNDS_WRITE',['../analysis__helpers_8cc.html#a3164563ab54c925d8c01ed6d43d16170',1,'analysis_helpers.cc']]],
   ['ac_5fperiodic_5fgrid_195',['AC_periodic_grid',['../variables_8h.html#a6ca93276d81ba80730554d4a68d36456',1,'variables.h']]],
   ['ac_5fplanar_5fto_5fcomplex_196',['AC_PLANAR_TO_COMPLEX',['../acc-runtime_2built-in_2kernels_8h.html#ad7eef89aa8afdac0bb93a39bae632ab5',1,'kernels.h']]],
-  ['ac_5fpoisson_5fradius_5f1_197',['AC_poisson_radius_1',['../poisson_8h.html#a3ef33c93cb79c50fcec4081ee5b7a9bb',1,'poisson.h']]],
+  ['ac_5fpoisson_5forder_197',['AC_poisson_order',['../poisson_8h.html#a65a227f488f2a3e57fc2bb0d5058b235',1,'poisson.h']]],
   ['ac_5fpostprocess_5fsqrt_198',['AC_POSTPROCESS_SQRT',['../typedefs_8h.html#a6e5c882953eef46d1945543099571189aa7465ee9c50a4619987fe89dad764cb3',1,'typedefs.h']]],
   ['ac_5fprescribed_5fderivative_199',['ac_prescribed_derivative',['../bc_8h.html#a6bbc8a2860cee2e0425bba4de78606c7',1,'bc.h']]],
   ['ac_5fproc_5fmapping_5fstrategy_200',['AC_proc_mapping_strategy',['../variables_8h.html#aa96f23ee7c1b05a42481c76ecfd97a7b',1,'variables.h']]],
