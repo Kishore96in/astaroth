@@ -1,15 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"matplotlibcpp_8h.html#a34e6ea8c8ee6779fe909ecac2ef945c8":[19,0,8,31,0,1,33],
-"matplotlibcpp_8h.html#a3917f5113dcefbf8f6dc1f04e8196ca1":[19,0,8,31,0,1,62],
-"matplotlibcpp_8h.html#a3df1b1d037e54f3ae5d1d7c89342099a":[19,0,8,31,0,1,73],
-"matplotlibcpp_8h.html#a40ac4e0d416fad21899637dcf8d281c6":[19,0,8,31,0,1,82],
-"matplotlibcpp_8h.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[19,0,8,31,0,1,31],
-"matplotlibcpp_8h.html#a4645651772918e2dad7d36d9eeaeaefa":[19,0,8,31,0,1,100],
-"matplotlibcpp_8h.html#a468096a42e46d0a26e8a237ffb24caca":[19,0,8,31,0,1,47],
-"matplotlibcpp_8h.html#a4854fc237468144bd46809ea7ce8f2a0":[19,0,8,31,0,1,12],
-"matplotlibcpp_8h.html#a4cc9d207ab565df55b663b264be9ce72":[19,0,8,31,0,1,41],
-"matplotlibcpp_8h.html#a4dce9b4c1c16c1dab0cffd11588d4db8":[19,0,8,31,0,1,75],
 "matplotlibcpp_8h.html#a529c059f3fca364b9fcb3b2e09cce36b":[19,0,8,31,0,1,54],
 "matplotlibcpp_8h.html#a57af9838664a40f0d7aabd3b184ec860":[19,0,8,31,0,1,72],
 "matplotlibcpp_8h.html#a5da5568ee4a63f144e4541c6c84ed0ce":[19,0,8,31,0,1,13],
@@ -249,5 +239,15 @@ var NAVTREEINDEX12 =
 "modelsolver_8cc.html#ad5991be9890435175b9f00f6b2e02a38":[19,0,6,1,8,0],
 "mpi-profile-reduce_2main_8cc.html":[19,0,8,16,0],
 "mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,16,0,0],
-"multigrid-tests_2anisotropic-test_2main_8cc.html":[19,0,8,17,0,0]
+"multigrid-tests_2anisotropic-test_2main_8cc.html":[19,0,8,17,0,0],
+"multigrid-tests_2anisotropic-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,0,0,0],
+"multigrid-tests_2compact-stencil-multigrid-test_2main_8cc.html":[19,0,8,17,1,0],
+"multigrid-tests_2compact-stencil-multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,1,0,0],
+"multigrid-tests_2line-smoother-multigrid-test_2main_8cc.html":[19,0,8,17,2,0],
+"multigrid-tests_2line-smoother-multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,2,0,0],
+"multigrid-tests_2multigrid-test_2main_8cc.html":[19,0,8,17,3,0],
+"multigrid-tests_2multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,3,0,0],
+"multigrid-tests_2parallel-multigrid-test_2main_8cc.html":[19,0,8,17,4,0],
+"multigrid-tests_2parallel-multigrid-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,4,0,0],
+"namespaceac.html":[17,0,0]
 };
