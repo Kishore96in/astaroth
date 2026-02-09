@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"smooth__max_8h.html#aec7354ce800a1ca44b1dfc0c9d9c2782":[19,0,0,5,26,84],
+"smooth__max_8h.html#aecb1671e7ad283217161f57a1ff64d2c":[19,0,0,5,26,272],
+"smooth__max_8h.html#aedb4629bc15a9a43375f5c7e4664fc89":[19,0,0,5,26,217],
+"smooth__max_8h.html#aefd8848554edd7bcb5016169fc0ef419":[19,0,0,5,26,150],
 "smooth__max_8h.html#aeff0e17f4d454afdd994a212ba7cb950":[19,0,0,5,26,232],
 "smooth__max_8h.html#af203a9308bcfa57e5052021fe26451c1":[19,0,0,5,26,315],
 "smooth__max_8h.html#af21183435b35fff142d965ca104931de":[19,0,0,5,26,144],
@@ -16,8 +20,8 @@ var NAVTREEINDEX16 =
 "smooth__max_8h.html#afd0b2b460d9c39ab4650be821fb47dc3":[19,0,0,5,26,211],
 "smooth__max_8h.html#afe1499ec44e563ec32451d18f2c4e875":[19,0,0,5,26,207],
 "smooth__max_8h_source.html":[19,0,0,5,26],
-"sor-test_2main_8cc.html":[19,0,8,27,0],
-"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,27,0,0],
+"sor-test_2main_8cc.html":[19,0,8,24,0],
+"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,24,0,0],
 "spherical__harmonics_8h.html":[19,0,0,5,27],
 "spherical__harmonics_8h_source.html":[19,0,0,5,27],
 "src_2core_2kernels_2kernels_8h.html":[19,0,6,0,3,6],
@@ -121,10 +125,10 @@ var NAVTREEINDEX16 =
 "stdlib_2geometric__multigrid_8h_source.html":[19,0,7,1],
 "stdlib_2utils_2intrinsics_8h.html":[19,0,0,5,3,1],
 "stdlib_2utils_2intrinsics_8h_source.html":[19,0,0,5,3,1],
-"stencil-accesses-fail-test_2main_8cc.html":[19,0,8,28,0],
-"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,28,0,0],
-"stencil-accesses-ok-test_2main_8cc.html":[19,0,8,29,0],
-"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,29,0,0],
+"stencil-accesses-fail-test_2main_8cc.html":[19,0,8,25,0],
+"stencil-accesses-fail-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,25,0,0],
+"stencil-accesses-ok-test_2main_8cc.html":[19,0,8,26,0],
+"stencil-accesses-ok-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,26,0,0],
 "stencilgen_01copy_8c.html":[19,0,0,0,13],
 "stencilgen_01copy_8c.html#a398a80231cd6e902872ff7537a22ca38":[19,0,0,0,13,0],
 "stencilgen_01copy_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[19,0,0,0,13,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "structAcComplexInAndOut.html#a342859c8c4e6bcbd2ed7de2df95a8d3e":[18,0,10,0],
 "structAcComplexInAndOut.html#a66da07711fe6d29e45b90c86194c9ca1":[18,0,10,1],
 "structAcDecompositionInfo.html":[18,0,11],
-"structAcDecompositionInfo.html#a527d5e0539e1c10a0d3ba79218f334dd":[18,0,11,4],
-"structAcDecompositionInfo.html#a55426ec88a4f979822c51b9badff716a":[18,0,11,2],
-"structAcDecompositionInfo.html#a84acf206e222ecd73a2122146a920aa2":[18,0,11,0],
-"structAcDecompositionInfo.html#a8f2f19a7a1173f6745d4a2bc5b58d212":[18,0,11,1],
-"structAcDecompositionInfo.html#aa46463b0f2d8fc9f56e730c554e824d8":[18,0,11,5]
+"structAcDecompositionInfo.html#a527d5e0539e1c10a0d3ba79218f334dd":[18,0,11,4]
 };
