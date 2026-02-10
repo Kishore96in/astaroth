@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structAcCompInfoLoaded.html":[18,0,8],
 "structAcComplex.html":[18,0,9],
 "structAcComplex.html#a09b8e22a8450c3f7d7d34d63e1ad94bf":[18,0,9,1],
 "structAcComplex.html#a63967aecbab46a35b42df457992f38c9":[18,0,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structRegion.html":[18,0,102],
 "structRegion.html#a09fffa294ced002e96b40a0a8fc71676":[18,0,102,7],
 "structRegion.html#a0b31025174a7e0cebc5f2bbee4086a9e":[18,0,102,5],
-"structRegion.html#a1679e4e3266f0d2fd215c3348647ef1e":[18,0,102,17],
-"structRegion.html#a220d9fccc497ee299a991f38a96fc742":[18,0,102,10]
+"structRegion.html#a1679e4e3266f0d2fd215c3348647ef1e":[18,0,102,17]
 };

@@ -1,6 +1,7 @@
 var general__operators_8h =
 [
     [ "anisotropic_laplace", "general__operators_8h.html#ab2e0aa5a604c8abdf329bc9511f9879c", null ],
+    [ "anisotropic_laplace_central_coeff", "general__operators_8h.html#a14c85bbf3ba8a87b3a6307423708b3ef", null ],
     [ "biharmonic", "general__operators_8h.html#a07647cc9de36458027d0f0f6ef05fe0d", null ],
     [ "bij", "general__operators_8h.html#afa117e1d6901e6fd6dad92862371db19", null ],
     [ "contract", "general__operators_8h.html#a5b96ea3ffc80f632cc83a1d32614094b", null ],
