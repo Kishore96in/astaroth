@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a5d283724b9e24217b5f4aef9950789fa":[18,0,0,0,0,20],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a5d283724b9e24217b5f4aef9950789fa":[17,0,1,0,0,20],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a5e8d3c41f11d3c7c389f9b062f46f9f1":[18,0,0,0,0,23],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html#a5e8d3c41f11d3c7c389f9b062f46f9f1":[17,0,1,0,0,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "task_8h.html#a68645f369252eb31bc1d60eceaad6c44a1182ffae3c196b98daf984443b6c4722":[19,0,6,0,23,34,1],
 "task_8h.html#a68645f369252eb31bc1d60eceaad6c44a1702b15beb66e93862fd38aa1dddbef1":[19,0,6,0,23,34,3],
 "task_8h.html#a68645f369252eb31bc1d60eceaad6c44a6adf97f83acf6453d4a6a4b1070f3754":[19,0,6,0,23,34,4],
-"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a7b0820d38355b1c3c30ca78e542b9894":[19,0,6,0,23,34,2],
-"task_8h.html#a7e2525a59aae9c503118f397dd95c8c1":[19,0,6,0,23,19]
+"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a7b0820d38355b1c3c30ca78e542b9894":[19,0,6,0,23,34,2]
 };
