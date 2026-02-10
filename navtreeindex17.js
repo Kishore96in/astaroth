@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structAcCompInfoHasDefaultValue.html":[18,0,7],
 "structAcCompInfoLoaded.html":[18,0,8],
 "structAcComplex.html":[18,0,9],
 "structAcComplex.html#a09b8e22a8450c3f7d7d34d63e1ad94bf":[18,0,9,1],
@@ -125,6 +126,8 @@ var NAVTREEINDEX17 =
 "structDeviceConfiguration.html#af717a0dbaded38622d0954a1a6173377":[18,0,46,1],
 "structDeviceVertexBufferArray.html":[18,0,47],
 "structDeviceVertexBufferArray.html#a3ee06ccf6e4a50b859b2919cab6f3e71":[18,0,47,6],
+"structDeviceVertexBufferArray.html#a40c462cad27ad8eabdb61c89731dd85a":[18,0,47,8],
+"structDeviceVertexBufferArray.html#a42290a43bf8e6bbfd7de55c898943637":[18,0,47,7],
 "structDeviceVertexBufferArray.html#aa0702727fc7535b3fe221bf2ca5d3e53":[18,0,47,0],
 "structDeviceVertexBufferArray.html#ab437e01366748a0e8df8dd9340756c5b":[18,0,47,3],
 "structDeviceVertexBufferArray.html#ab80259610f6b73def3555b565f28c5bd":[18,0,47,5],
@@ -177,14 +180,15 @@ var NAVTREEINDEX17 =
 "structHaloMessage.html#a13b259deb542297c7d7a2dfe70e85e18":[18,0,62,9],
 "structHaloMessage.html#a1e64b07a7060b239e5e525d768155e48":[18,0,62,5],
 "structHaloMessage.html#a3c472ef89f69150055f2b5a0206a5d33":[18,0,62,7],
-"structHaloMessage.html#a54b1da61cc78313909e7c34793a9b2cb":[18,0,62,12],
+"structHaloMessage.html#a54b1da61cc78313909e7c34793a9b2cb":[18,0,62,13],
 "structHaloMessage.html#a58332b2e8834527e4cd0a95706fa9217":[18,0,62,11],
 "structHaloMessage.html#a8a890b4a1a293f1f360a7660773e9367":[18,0,62,1],
 "structHaloMessage.html#a8cce0dbcf7770194320cf6cf0da59568":[18,0,62,10],
 "structHaloMessage.html#ab908fb8e00abbe2cfbbbe93fe124b469":[18,0,62,2],
 "structHaloMessage.html#ac132593c93c93f1f49e21bd06fc3ee30":[18,0,62,3],
 "structHaloMessage.html#ac960b9252e2f49b116fc6571f97b6ca0":[18,0,62,6],
-"structHaloMessage.html#acfec68f192d4ac680ecf256ae55cb277":[18,0,62,13],
+"structHaloMessage.html#acfec68f192d4ac680ecf256ae55cb277":[18,0,62,14],
+"structHaloMessage.html#add2dc626bfcab51f58321a18e0a388ce":[18,0,62,12],
 "structHaloMessage.html#ade730b5c23de49c1aa78a5390be794d0":[18,0,62,8],
 "structHaloMessage.html#aeb9811e96ab6c2e05ee8ed48c39fbdb4":[18,0,62,4],
 "structHaloMessage.html#aeefc585e544580c00cc71a9caf850f94":[18,0,62,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "structProfileZ3.html":[18,0,95],
 "structProfileZ3.html#a6c990e8fdb23e880ba8af4bfd5f35108":[18,0,95,1],
 "structProfileZ3.html#a7a1074a7d810e7b9099c0e6aeb1bac1f":[18,0,95,0],
-"structProfileZ3.html#adc9a2912d7eb250aedba7971397be877":[18,0,95,2],
-"structRegion.html":[18,0,102],
-"structRegion.html#a09fffa294ced002e96b40a0a8fc71676":[18,0,102,7],
-"structRegion.html#a0b31025174a7e0cebc5f2bbee4086a9e":[18,0,102,5],
-"structRegion.html#a1679e4e3266f0d2fd215c3348647ef1e":[18,0,102,17]
+"structProfileZ3.html#adc9a2912d7eb250aedba7971397be877":[18,0,95,2]
 };

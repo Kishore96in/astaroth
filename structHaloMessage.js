@@ -12,6 +12,7 @@ var structHaloMessage =
     [ "non_namespaced_tag", "structHaloMessage.html#a13b259deb542297c7d7a2dfe70e85e18", null ],
     [ "pinned", "structHaloMessage.html#a8cce0dbcf7770194320cf6cf0da59568", null ],
     [ "requests", "structHaloMessage.html#a58332b2e8834527e4cd0a95706fa9217", null ],
+    [ "single_data", "structHaloMessage.html#add2dc626bfcab51f58321a18e0a388ce", null ],
     [ "tag", "structHaloMessage.html#a54b1da61cc78313909e7c34793a9b2cb", null ],
     [ "type", "structHaloMessage.html#acfec68f192d4ac680ecf256ae55cb277", null ]
 ];
