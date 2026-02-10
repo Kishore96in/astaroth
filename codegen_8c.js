@@ -451,7 +451,6 @@ var codegen_8c =
     [ "FIELD_PTR_STR", "codegen_8c.html#adb43f387edf1410f0c9a2bb4f937c041", null ],
     [ "FIELD_STR", "codegen_8c.html#aa0349de0ce11f957de9f013e7de4b67f", null ],
     [ "FIXED_BOUNDARY_STR", "codegen_8c.html#a1c0571a18c4ac8db2d44cf0c920bd65d", null ],
-    [ "FLOAT_FIELD_STR", "codegen_8c.html#ace95a72ddac66d3a2c99eafaac962c27", null ],
     [ "GEQ_STR", "codegen_8c.html#aca30cf3cd103128b9a2b40170df8b092", null ],
     [ "GLOBAL_MEM_STR", "codegen_8c.html#afeb86a1c6a0f0c4c375dd428852dc2e3", null ],
     [ "GLOBAL_STR", "codegen_8c.html#af1d9fc6f093bedb318e3cf3701c03a88", null ],
