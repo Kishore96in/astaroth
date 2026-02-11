@@ -177,6 +177,12 @@ Functions</h2></td></tr>
 <tr class="separator:a364465f1b79d56ffeae94ff640214440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0936afc55e496b4835d9a141bb31ac0" id="r_ac0936afc55e496b4835d9a141bb31ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#ac0936afc55e496b4835d9a141bb31ac0">raise_error</a> (const char *str)</td></tr>
 <tr class="separator:ac0936afc55e496b4835d9a141bb31ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2c962f45eecad48342c3cc97c19888" id="r_aea2c962f45eecad48342c3cc97c19888"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#aea2c962f45eecad48342c3cc97c19888">get_field_precision</a> (const int field)</td></tr>
+<tr class="separator:aea2c962f45eecad48342c3cc97c19888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bf9be34bb826a8b21f5c76b04fb25f" id="r_a51bf9be34bb826a8b21f5c76b04fb25f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a51bf9be34bb826a8b21f5c76b04fb25f">get_field_input_name</a> (const int field)</td></tr>
+<tr class="separator:a51bf9be34bb826a8b21f5c76b04fb25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e48f69e15e7f31df84159787e51bc24" id="r_a3e48f69e15e7f31df84159787e51bc24"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a3e48f69e15e7f31df84159787e51bc24">get_field_output_name</a> (const int field)</td></tr>
+<tr class="separator:a3e48f69e15e7f31df84159787e51bc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d40c63c477267fe61e005528c25af16" id="r_a3d40c63c477267fe61e005528c25af16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a3d40c63c477267fe61e005528c25af16">gen_stencil_definitions</a> (void)</td></tr>
 <tr class="separator:a3d40c63c477267fe61e005528c25af16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0711261159f3e2ec0da20ea05e4f8054" id="r_a0711261159f3e2ec0da20ea05e4f8054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stencilgen_8c.html#a0711261159f3e2ec0da20ea05e4f8054">z_block_loop_before_y</a> (const int curr_kernel)</td></tr>
@@ -943,6 +949,60 @@ CS view:
           <td class="memname">void gen_warp_out_index </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51bf9be34bb826a8b21f5c76b04fb25f" name="a51bf9be34bb826a8b21f5c76b04fb25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bf9be34bb826a8b21f5c76b04fb25f">&#9670;&#160;</a></span>get_field_input_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_field_input_name </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e48f69e15e7f31df84159787e51bc24" name="a3e48f69e15e7f31df84159787e51bc24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e48f69e15e7f31df84159787e51bc24">&#9670;&#160;</a></span>get_field_output_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_field_output_name </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2c962f45eecad48342c3cc97c19888" name="aea2c962f45eecad48342c3cc97c19888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2c962f45eecad48342c3cc97c19888">&#9670;&#160;</a></span>get_field_precision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_field_precision </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -236,19 +236,19 @@ var NAVTREEINDEX =
 "codegen_8c.html#ac2997a4124882a90e6118f91e2d5d3a1",
 "cpufft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33",
 "device_8cc.html#a898827f83ac417b8822d4e3079ecc168",
-"functions_vars_z.html",
-"globals_func_w.html",
-"hip_8h.html#ad1c0943fb9beef6cd8d4b75e1d46eb5d",
-"matplotlibcpp_8h.html#a14e2b6e595e057f553ef7b14ddcda82a",
-"modelsolver-legacy-do-not-modify_8c.html",
-"pc__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840",
-"smooth__max_8h.html#a32fc186bf2e318702b7e7d95c4ebfea7",
-"smooth__max_8h.html#ae5176682d3d7a66899513ece2a051d86",
-"structAcCompInfoHasDefaultValue.html",
-"structProfileZ3.html#a7a1074a7d810e7b9099c0e6aeb1bac1f",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a56892306d24918fbe5eaeade997bb611",
-"task_8h.html#a68645f369252eb31bc1d60eceaad6c44a0d690a31a5c0310cb92becac2a35becf",
-"vba_8cc.html#aa33edc580156ffb5583238de26e2add8"
+"functions_vars_y.html",
+"globals_func_v.html",
+"hip_8h.html#ad08e2e2e1ad195744274a4baa8f9aa1c",
+"matplotlibcpp_8h.html#a12ac5a7fc96a03d27b3249fc6a54974f",
+"modelreduce_8cc.html#af9a3d1b78005c766d557fc94f2fe32e7",
+"pc__derivs_8h.html#a85b9790e5a836b4f7694032a9cf209a0",
+"smooth__max_8h.html#a312574a7dd1b3953493ef09b9e36af3e",
+"smooth__max_8h.html#ae3004d0243fc1d11c850895e7856c181",
+"structAcCommunicator.html#a35cbdd21df29a767ee8fa6900054c32a",
+"structKeyHash.html#af289f229b17fada870ba234c91cc8dd9",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3e29885c00054c68a9fc0d83e366c2d2",
+"task_8h.html#a6258f3761fab0a3d29b7e6eae75aa263",
+"vba_8cc.html#a3b8d25afefa4a18a59b8bc4fef731a70"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
