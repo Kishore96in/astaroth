@@ -55,10 +55,10 @@ var searchData=
   ['resolve_5foverloaded_5fcalls_52',['resolve_overloaded_calls',['../codegen_8c.html#a606a08be35d8b77c8c8c7efad11148bc',1,'codegen.c']]],
   ['resolve_5foverloaded_5fcalls_5fbase_53',['resolve_overloaded_calls_base',['../codegen_8c.html#a0d4bc2e27de9810b528b1eb8563a5240',1,'codegen.c']]],
   ['resolve_5fprofile_5fstencils_54',['resolve_profile_stencils',['../codegen_8c.html#a8d66ba88b0e233c0522642287ff650d8',1,'codegen.c']]],
-  ['restrict_5ffull_5fweighting_55',['restrict_full_weighting',['../grid__transfer__functions_8h.html#a1cab715643c75a38e089406b6904ee06',1,'grid_transfer_functions.h']]],
-  ['restrict_5ffull_5fweighting_5f1d_56',['restrict_full_weighting_1d',['../grid__transfer__functions_8h.html#a6951b09f81fd4cce27d9132a746876f2',1,'grid_transfer_functions.h']]],
-  ['restrict_5ffull_5fweighting_5f3d_5feven_57',['restrict_full_weighting_3d_even',['../grid__transfer__functions_8h.html#a6fd10a49c1f12c3439884c36d4311c18',1,'grid_transfer_functions.h']]],
-  ['restrict_5ffull_5fweighting_5f3d_5fodd_58',['restrict_full_weighting_3d_odd',['../grid__transfer__functions_8h.html#ae22b5361a88ab3caa728d5e8c893349f',1,'grid_transfer_functions.h']]],
+  ['restrict_5ffull_5fweighting_55',['restrict_full_weighting',['../grid__transfer__functions_8h.html#a00a38698170dafe1c64e830312f91874',1,'grid_transfer_functions.h']]],
+  ['restrict_5ffull_5fweighting_5f1d_56',['restrict_full_weighting_1d',['../grid__transfer__functions_8h.html#af7aaa633113d7efe047433a207854cc2',1,'grid_transfer_functions.h']]],
+  ['restrict_5ffull_5fweighting_5f3d_5feven_57',['restrict_full_weighting_3d_even',['../grid__transfer__functions_8h.html#a553e689bcef4ca523864a824a8b9b196',1,'grid_transfer_functions.h']]],
+  ['restrict_5ffull_5fweighting_5f3d_5fodd_58',['restrict_full_weighting_3d_odd',['../grid__transfer__functions_8h.html#ae3975f392aaeeb377c0751fdaa607735',1,'grid_transfer_functions.h']]],
   ['return_5fown_5fmeasurement_59',['return_own_measurement',['../acc__runtime_8cu.html#a81ccc119393bc165be939e95a1ac2d90',1,'acc_runtime.cu']]],
   ['row_60',['row',['../structAcMatrix.html#a1e54078d4ea2681c419e2b54db19061c',1,'AcMatrix']]]
 ];
