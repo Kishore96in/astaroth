@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[18,0,3,1],
+"structAcBuffer.html#ae17f78dcfb357a8321e940dc32fb4010":[18,0,3,3],
+"structAcCommunicator.html":[18,0,4],
 "structAcCommunicator.html#a35cbdd21df29a767ee8fa6900054c32a":[18,0,4,0],
 "structAcCompInfo.html":[18,0,5],
 "structAcCompInfo.html#abda070c6a900af7006d05595f0ea4694":[18,0,5,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00":[18,0,74,2],
 "structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc":[18,0,74,1],
 "structKernelReduceOutput.html#a7ca3dc57ec396feeafad1cb103e28b8c":[18,0,74,0],
-"structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[18,0,74,3],
-"structKeyEqual.html":[18,0,75],
-"structKeyEqual.html#aea9225579b4758b26fb207b5cec9a81e":[18,0,75,0],
-"structKeyHash.html":[18,0,76]
+"structKernelReduceOutput.html#a7fd4212f8856e3c939dc49617c218d9e":[18,0,74,3]
 };

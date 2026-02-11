@@ -15,6 +15,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "field-arr-test", "dir_95ca0d741c7c6d1e517fb0fb4b50f18b.html", "dir_95ca0d741c7c6d1e517fb0fb4b50f18b" ],
     [ "grid-calculation", "dir_b08b0ffdd4cc6743ff452254931bb148.html", "dir_b08b0ffdd4cc6743ff452254931bb148" ],
     [ "inplace_gaussian-test", "dir_317c70699cc419b36a91f7215ba6cf5b.html", "dir_317c70699cc419b36a91f7215ba6cf5b" ],
+    [ "iterative-refinement-test", "dir_558f96a0f8f80419373eb6026d7c4fb2.html", "dir_558f96a0f8f80419373eb6026d7c4fb2" ],
     [ "kernel-fusion-test", "dir_93a9aaf9f49ea001ee4e93d9599f668b.html", "dir_93a9aaf9f49ea001ee4e93d9599f668b" ],
     [ "mpi-profile-reduce", "dir_af4ef7e228b7a8d75f276e8df7701bc2.html", "dir_af4ef7e228b7a8d75f276e8df7701bc2" ],
     [ "multigrid-tests", "dir_feb66a904c95b0525e2b760f133c1390.html", "dir_feb66a904c95b0525e2b760f133c1390" ],

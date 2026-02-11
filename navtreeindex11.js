@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"hip_8h.html#ace2b992d1816a4110034000e2b3a2ba4":[19,0,0,1,13,72],
 "hip_8h.html#ad08e2e2e1ad195744274a4baa8f9aa1c":[19,0,0,1,13,19],
 "hip_8h.html#ad1c0943fb9beef6cd8d4b75e1d46eb5d":[19,0,0,1,13,5],
 "hip_8h.html#ad293c1287feaa31f95cf3f729cb3ae73":[19,0,0,1,13,69],
@@ -102,8 +103,10 @@ var NAVTREEINDEX11 =
 "internal__device__funcs_8h_source.html":[19,0,6,0,19],
 "interpolation_8h.html":[19,0,0,5,2,3],
 "interpolation_8h_source.html":[19,0,0,5,2,3],
-"kernel-fusion-test_2main_8cc.html":[19,0,8,15,0],
-"kernel-fusion-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,15,0,0],
+"iterative-refinement-test_2main_8cc.html":[19,0,8,15,0],
+"iterative-refinement-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,15,0,0],
+"kernel-fusion-test_2main_8cc.html":[19,0,8,16,0],
+"kernel-fusion-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,16,0,0],
 "kernels_2empty_8cc.html":[19,0,6,0,3,3],
 "kernels_8cu.html":[19,0,6,0,3,5],
 "kernels_8cu.html#a0c0608ac2b82c2246acca212683c7645":[19,0,6,0,3,5,0],
@@ -243,11 +246,8 @@ var NAVTREEINDEX11 =
 "math__utils__base_8h.html":[19,0,0,1,17],
 "math__utils__base_8h.html#a5602a472f54f1ee3b87605f09d164cb3":[19,0,0,1,17,0],
 "math__utils__base_8h_source.html":[19,0,0,1,17],
-"matplotlibcpp_8h.html":[19,0,8,32,0,1],
-"matplotlibcpp_8h.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[19,0,8,32,0,1,37],
-"matplotlibcpp_8h.html#a00a57926330764f8490142b3ce06bd2e":[19,0,8,32,0,1,35],
-"matplotlibcpp_8h.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[19,0,8,32,0,1,83],
-"matplotlibcpp_8h.html#a0638f54cec7e104c8a2aae0e60bc01f4":[19,0,8,32,0,1,29],
-"matplotlibcpp_8h.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b":[19,0,8,32,0,1,61],
-"matplotlibcpp_8h.html#a107bbc57e93a929c75baf1c60a712d8b":[19,0,8,32,0,1,65]
+"matplotlibcpp_8h.html":[19,0,8,33,0,1],
+"matplotlibcpp_8h.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[19,0,8,33,0,1,37],
+"matplotlibcpp_8h.html#a00a57926330764f8490142b3ce06bd2e":[19,0,8,33,0,1,35],
+"matplotlibcpp_8h.html#a02a1939d1d0b7b61878bd7cf2d8cd7f3":[19,0,8,33,0,1,83]
 };
