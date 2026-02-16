@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['half_5fin_0',['half_in',['../structDeviceVertexBufferArray.html#ad0766019a3cda0fe2ed19578c69c6598',1,'DeviceVertexBufferArray']]],
+  ['half_5fin_0',['half_in',['../structDeviceVertexBufferArray.html#a7b8b1ac6345443d142a9c541c0d53f33',1,'DeviceVertexBufferArray']]],
   ['half_5fof_1',['HALF_OF',['../__kiss__fft__guts_8h.html#a0b812a30fdb0c530a90a18d1692fab6c',1,'_kiss_fft_guts.h']]],
-  ['half_5fout_2',['half_out',['../structDeviceVertexBufferArray.html#ac637e47afdaebdd86f7e2ff5fbfb7bd6',1,'DeviceVertexBufferArray']]],
+  ['half_5fout_2',['half_out',['../structDeviceVertexBufferArray.html#abe73ea86bc69d0a1521708d308972533',1,'DeviceVertexBufferArray']]],
   ['half_5fprecision_5fstr_3',['HALF_PRECISION_STR',['../codegen_8c.html#afaa4dacdb2a3fce8f9200f2885f8202b',1,'codegen.c']]],
   ['halo_4',['halo',['../structRegion.html#a74bf5972f9496a429ea0700914ec0bf1',1,'Region::halo'],['../bwtest-stencil_8cu.html#a506e3be0281e3c100aef41dd51e107af',1,'HALO:&#160;bwtest-stencil.cu']]],
   ['halo_5fexchange_5fresiduals_5',['halo_exchange_residuals',['../stdlib_2geometric__multigrid_8h.html#ab2c3ff69aa9259af6a4e298e72ae7bf8',1,'geometric_multigrid.h']]],

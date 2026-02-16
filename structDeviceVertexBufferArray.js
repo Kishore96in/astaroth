@@ -2,8 +2,8 @@ var structDeviceVertexBufferArray =
 [
     [ "block_factor", "structDeviceVertexBufferArray.html#aa0702727fc7535b3fe221bf2ca5d3e53", null ],
     [ "complex_in", "structDeviceVertexBufferArray.html#abc0acc90b45b9a3a6b47e681f915be58", null ],
-    [ "half_in", "structDeviceVertexBufferArray.html#ad0766019a3cda0fe2ed19578c69c6598", null ],
-    [ "half_out", "structDeviceVertexBufferArray.html#ac637e47afdaebdd86f7e2ff5fbfb7bd6", null ],
+    [ "half_in", "structDeviceVertexBufferArray.html#a7b8b1ac6345443d142a9c541c0d53f33", null ],
+    [ "half_out", "structDeviceVertexBufferArray.html#abe73ea86bc69d0a1521708d308972533", null ],
     [ "in", "structDeviceVertexBufferArray.html#acf8537e1e2d510da5ecb4b0c241d7bdb", null ],
     [ "kernel_input_params", "structDeviceVertexBufferArray.html#ab437e01366748a0e8df8dd9340756c5b", null ],
     [ "out", "structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b", null ],
