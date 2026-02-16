@@ -12,5 +12,5 @@ var searchData=
   ['buffer_9',['buffer',['../structastnode__s.html#adeff248cfbbf8772fd0d1c58cfa40bfc',1,'astnode_s::buffer'],['../structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab',1,'astnode_s::buffer']]],
   ['buffer_5ftoken_10',['buffer_token',['../structastnode__s.html#a4da56f9e60abd18a263a67af5f9f66aa',1,'astnode_s']]],
   ['buffers_11',['buffers',['../structHaloMessageSwapChain.html#acf233e8eacb5316e546f16cc6b816160',1,'HaloMessageSwapChain']]],
-  ['bytes_12',['bytes',['../structVertexBufferArray.html#a6d116468065bf5430379a3408cd983c1',1,'VertexBufferArray::bytes'],['../structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a',1,'AcDeviceTmpBuffer::bytes'],['../structHaloMessage.html#aeb9811e96ab6c2e05ee8ed48c39fbdb4',1,'HaloMessage::bytes']]]
+  ['bytes_12',['bytes',['../structVertexBufferArray.html#a6d116468065bf5430379a3408cd983c1',1,'VertexBufferArray::bytes'],['../structAcDeviceTmpBuffer.html#a89dcdc775690019306bd7a00205db25a',1,'AcDeviceTmpBuffer::bytes']]]
 ];
