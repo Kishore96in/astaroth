@@ -2608,375 +2608,374 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 <div class="line"><a id="l02512" name="l02512"></a><span class="lineno"> 2512</span>    <span class="keywordflow">if</span>(AC_poisson_radius_1)</div>
 <div class="line"><a id="l02513" name="l02513"></a><span class="lineno"> 2513</span>    {</div>
 <div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span>        <span class="keywordflow">if</span>(level == 0)  <span class="keywordflow">return</span> gmg_laplace_level_0_r1(f)</div>
-<div class="line"><a id="l02515" name="l02515"></a><span class="lineno"> 2515</span>        <span class="comment">//if(level == 0)  return gmg_get_fine_grid_operator(f)</span></div>
-<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span>        <span class="keywordflow">if</span>(level == 1)  <span class="keywordflow">return</span> gmg_laplace_level_1_r1(f)</div>
-<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span>        <span class="keywordflow">if</span>(level == 2)  <span class="keywordflow">return</span> gmg_laplace_level_2_r1(f)</div>
-<div class="line"><a id="l02518" name="l02518"></a><span class="lineno"> 2518</span>        <span class="keywordflow">if</span>(level == 3)  <span class="keywordflow">return</span> gmg_laplace_level_3_r1(f)</div>
-<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span>        <span class="keywordflow">if</span>(level == 4)  <span class="keywordflow">return</span> gmg_laplace_level_4_r1(f)</div>
-<div class="line"><a id="l02520" name="l02520"></a><span class="lineno"> 2520</span>        <span class="keywordflow">if</span>(level == 5)  <span class="keywordflow">return</span> gmg_laplace_level_5_r1(f)</div>
-<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span>        <span class="keywordflow">if</span>(level == 6)  <span class="keywordflow">return</span> gmg_laplace_level_6_r1(f)</div>
-<div class="line"><a id="l02522" name="l02522"></a><span class="lineno"> 2522</span>        <span class="keywordflow">if</span>(level == 7)  <span class="keywordflow">return</span> gmg_laplace_level_7_r1(f)</div>
-<div class="line"><a id="l02523" name="l02523"></a><span class="lineno"> 2523</span>        <span class="keywordflow">if</span>(level == 8)  <span class="keywordflow">return</span> gmg_laplace_level_8_r1(f)</div>
-<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span>        <span class="keywordflow">if</span>(level == 9)  <span class="keywordflow">return</span> gmg_laplace_level_9_r1(f)</div>
-<div class="line"><a id="l02525" name="l02525"></a><span class="lineno"> 2525</span>        <span class="keywordflow">if</span>(level == 10) <span class="keywordflow">return</span> gmg_laplace_level_10_r1(f)</div>
-<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span>    }</div>
-<div class="line"><a id="l02527" name="l02527"></a><span class="lineno"> 2527</span><span class="preprocessor">#if STENCIL_ORDER == 4</span></div>
-<div class="line"><a id="l02528" name="l02528"></a><span class="lineno"> 2528</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_level_1_r2(f)</div>
-<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_level_2_r2(f)</div>
-<div class="line"><a id="l02530" name="l02530"></a><span class="lineno"> 2530</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_level_3_r2(f)</div>
-<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_level_4_r2(f)</div>
-<div class="line"><a id="l02532" name="l02532"></a><span class="lineno"> 2532</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02533" name="l02533"></a><span class="lineno"> 2533</span><span class="preprocessor">#if STENCIL_ORDER == 6</span></div>
-<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_level_1_r3(f)</div>
-<div class="line"><a id="l02535" name="l02535"></a><span class="lineno"> 2535</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_level_2_r3(f)</div>
-<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_level_3_r3(f)</div>
-<div class="line"><a id="l02537" name="l02537"></a><span class="lineno"> 2537</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_level_4_r3(f)</div>
-<div class="line"><a id="l02538" name="l02538"></a><span class="lineno"> 2538</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span>    <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a id="l02540" name="l02540"></a><span class="lineno"> 2540</span>}</div>
-<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span> </div>
-<div class="line"><a id="l02542" name="l02542"></a><span class="lineno"> 2542</span>gmg_laplace_y_line(Field f, <span class="keywordtype">int</span> level)</div>
-<div class="line"><a id="l02543" name="l02543"></a><span class="lineno"> 2543</span>{</div>
-<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span>    <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a>(!AC_poisson_radius_1,<span class="stringliteral">&quot;Only supported for radius 1 at the moment!\n&quot;</span>);</div>
-<div class="line"><a id="l02545" name="l02545"></a><span class="lineno"> 2545</span>    <span class="keywordflow">if</span>(AC_poisson_radius_1)</div>
-<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span>    {</div>
-<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span>        <span class="keywordflow">if</span>(level == 0)  <span class="keywordflow">return</span> gmg_laplace_y_line_l0(f)</div>
-<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span>        <span class="keywordflow">if</span>(level == 1)  <span class="keywordflow">return</span> gmg_laplace_y_line_l1(f)</div>
-<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span>        <span class="keywordflow">if</span>(level == 2)  <span class="keywordflow">return</span> gmg_laplace_y_line_l2(f)</div>
-<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>        <span class="keywordflow">if</span>(level == 3)  <span class="keywordflow">return</span> gmg_laplace_y_line_l3(f)</div>
-<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>        <span class="keywordflow">if</span>(level == 4)  <span class="keywordflow">return</span> gmg_laplace_y_line_l4(f)</div>
-<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span>        <span class="keywordflow">if</span>(level == 5)  <span class="keywordflow">return</span> gmg_laplace_y_line_l5(f)</div>
-<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>        <span class="keywordflow">if</span>(level == 6)  <span class="keywordflow">return</span> gmg_laplace_y_line_l6(f)</div>
-<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>        <span class="keywordflow">if</span>(level == 7)  <span class="keywordflow">return</span> gmg_laplace_y_line_l7(f)</div>
-<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>        <span class="keywordflow">if</span>(level == 8)  <span class="keywordflow">return</span> gmg_laplace_y_line_l8(f)</div>
-<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>        <span class="keywordflow">if</span>(level == 9)  <span class="keywordflow">return</span> gmg_laplace_y_line_l9(f)</div>
-<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>        <span class="keywordflow">if</span>(level == 10) <span class="keywordflow">return</span> gmg_laplace_y_line_l10(f)</div>
-<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span>    }</div>
-<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span>    <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span>}</div>
-<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span> </div>
-<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span>gmg_laplace_neighbours(Field f, <span class="keywordtype">int</span> level)</div>
-<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>{</div>
-<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span>    <span class="keywordflow">if</span>(!AC_use_coarse_galerkin_operators) </div>
-<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"> 2565</span>    {</div>
-<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span>        inv_spacing_2 = AC_inv_ds_2/pow(4,<span class="keywordtype">int</span>(level))</div>
-<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f">laplace_neighbours</a>(f,inv_spacing_2)</div>
-<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"> 2568</span>    }</div>
-<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span>    <span class="keywordflow">if</span>(level == 0) <span class="keywordflow">return</span> <a class="code hl_function" href="general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f">laplace_neighbours</a>(f)</div>
-<div class="line"><a id="l02570" name="l02570"></a><span class="lineno"> 2570</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_1(f)</div>
-<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_2(f)</div>
-<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_3(f)</div>
-<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_4(f)</div>
-<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span>    <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span>}</div>
+<div class="line"><a id="l02515" name="l02515"></a><span class="lineno"> 2515</span>        <span class="keywordflow">if</span>(level == 1)  <span class="keywordflow">return</span> gmg_laplace_level_1_r1(f)</div>
+<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span>        <span class="keywordflow">if</span>(level == 2)  <span class="keywordflow">return</span> gmg_laplace_level_2_r1(f)</div>
+<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span>        <span class="keywordflow">if</span>(level == 3)  <span class="keywordflow">return</span> gmg_laplace_level_3_r1(f)</div>
+<div class="line"><a id="l02518" name="l02518"></a><span class="lineno"> 2518</span>        <span class="keywordflow">if</span>(level == 4)  <span class="keywordflow">return</span> gmg_laplace_level_4_r1(f)</div>
+<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span>        <span class="keywordflow">if</span>(level == 5)  <span class="keywordflow">return</span> gmg_laplace_level_5_r1(f)</div>
+<div class="line"><a id="l02520" name="l02520"></a><span class="lineno"> 2520</span>        <span class="keywordflow">if</span>(level == 6)  <span class="keywordflow">return</span> gmg_laplace_level_6_r1(f)</div>
+<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span>        <span class="keywordflow">if</span>(level == 7)  <span class="keywordflow">return</span> gmg_laplace_level_7_r1(f)</div>
+<div class="line"><a id="l02522" name="l02522"></a><span class="lineno"> 2522</span>        <span class="keywordflow">if</span>(level == 8)  <span class="keywordflow">return</span> gmg_laplace_level_8_r1(f)</div>
+<div class="line"><a id="l02523" name="l02523"></a><span class="lineno"> 2523</span>        <span class="keywordflow">if</span>(level == 9)  <span class="keywordflow">return</span> gmg_laplace_level_9_r1(f)</div>
+<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span>        <span class="keywordflow">if</span>(level == 10) <span class="keywordflow">return</span> gmg_laplace_level_10_r1(f)</div>
+<div class="line"><a id="l02525" name="l02525"></a><span class="lineno"> 2525</span>    }</div>
+<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span><span class="preprocessor">#if STENCIL_ORDER == 4</span></div>
+<div class="line"><a id="l02527" name="l02527"></a><span class="lineno"> 2527</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_level_1_r2(f)</div>
+<div class="line"><a id="l02528" name="l02528"></a><span class="lineno"> 2528</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_level_2_r2(f)</div>
+<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_level_3_r2(f)</div>
+<div class="line"><a id="l02530" name="l02530"></a><span class="lineno"> 2530</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_level_4_r2(f)</div>
+<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02532" name="l02532"></a><span class="lineno"> 2532</span><span class="preprocessor">#if STENCIL_ORDER == 6</span></div>
+<div class="line"><a id="l02533" name="l02533"></a><span class="lineno"> 2533</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_level_1_r3(f)</div>
+<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_level_2_r3(f)</div>
+<div class="line"><a id="l02535" name="l02535"></a><span class="lineno"> 2535</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_level_3_r3(f)</div>
+<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_level_4_r3(f)</div>
+<div class="line"><a id="l02537" name="l02537"></a><span class="lineno"> 2537</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02538" name="l02538"></a><span class="lineno"> 2538</span>    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span>}</div>
+<div class="line"><a id="l02540" name="l02540"></a><span class="lineno"> 2540</span> </div>
+<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span>gmg_laplace_y_line(Field f, <span class="keywordtype">int</span> level)</div>
+<div class="line"><a id="l02542" name="l02542"></a><span class="lineno"> 2542</span>{</div>
+<div class="line"><a id="l02543" name="l02543"></a><span class="lineno"> 2543</span>    <a class="code hl_define" href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a>(!AC_poisson_radius_1,<span class="stringliteral">&quot;Only supported for radius 1 at the moment!\n&quot;</span>);</div>
+<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span>    <span class="keywordflow">if</span>(AC_poisson_radius_1)</div>
+<div class="line"><a id="l02545" name="l02545"></a><span class="lineno"> 2545</span>    {</div>
+<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span>        <span class="keywordflow">if</span>(level == 0)  <span class="keywordflow">return</span> gmg_laplace_y_line_l0(f)</div>
+<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span>        <span class="keywordflow">if</span>(level == 1)  <span class="keywordflow">return</span> gmg_laplace_y_line_l1(f)</div>
+<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span>        <span class="keywordflow">if</span>(level == 2)  <span class="keywordflow">return</span> gmg_laplace_y_line_l2(f)</div>
+<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span>        <span class="keywordflow">if</span>(level == 3)  <span class="keywordflow">return</span> gmg_laplace_y_line_l3(f)</div>
+<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>        <span class="keywordflow">if</span>(level == 4)  <span class="keywordflow">return</span> gmg_laplace_y_line_l4(f)</div>
+<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>        <span class="keywordflow">if</span>(level == 5)  <span class="keywordflow">return</span> gmg_laplace_y_line_l5(f)</div>
+<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span>        <span class="keywordflow">if</span>(level == 6)  <span class="keywordflow">return</span> gmg_laplace_y_line_l6(f)</div>
+<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>        <span class="keywordflow">if</span>(level == 7)  <span class="keywordflow">return</span> gmg_laplace_y_line_l7(f)</div>
+<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>        <span class="keywordflow">if</span>(level == 8)  <span class="keywordflow">return</span> gmg_laplace_y_line_l8(f)</div>
+<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>        <span class="keywordflow">if</span>(level == 9)  <span class="keywordflow">return</span> gmg_laplace_y_line_l9(f)</div>
+<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>        <span class="keywordflow">if</span>(level == 10) <span class="keywordflow">return</span> gmg_laplace_y_line_l10(f)</div>
+<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>    }</div>
+<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span>    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span>}</div>
+<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span> </div>
+<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span>gmg_laplace_neighbours(Field f, <span class="keywordtype">int</span> level)</div>
+<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span>{</div>
+<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>    <span class="keywordflow">if</span>(!AC_use_coarse_galerkin_operators) </div>
+<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span>    {</div>
+<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"> 2565</span>        inv_spacing_2 = AC_inv_ds_2/pow(4,<span class="keywordtype">int</span>(level))</div>
+<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f">laplace_neighbours</a>(f,inv_spacing_2)</div>
+<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span>    }</div>
+<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"> 2568</span>    <span class="keywordflow">if</span>(level == 0) <span class="keywordflow">return</span> <a class="code hl_function" href="general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f">laplace_neighbours</a>(f)</div>
+<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span>    <span class="keywordflow">if</span>(level == 1) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_1(f)</div>
+<div class="line"><a id="l02570" name="l02570"></a><span class="lineno"> 2570</span>    <span class="keywordflow">if</span>(level == 2) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_2(f)</div>
+<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span>    <span class="keywordflow">if</span>(level == 3) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_3(f)</div>
+<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span>    <span class="keywordflow">if</span>(level == 4) <span class="keywordflow">return</span> gmg_laplace_neighbours_level_4(f)</div>
+<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span>    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span>}</div>
+<div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span> </div>
 <div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span> </div>
-<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span> </div>
-<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_copy_rhs_to_residual_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>{</div>
-<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>    write(GMG_RESIDUALS[level],GMG_RHS[level])</div>
-<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>}</div>
+<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_copy_rhs_to_residual_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span>{</div>
+<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>    write(GMG_RESIDUALS[level],GMG_RHS[level])</div>
+<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>}</div>
+<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span> </div>
 <div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span> </div>
-<div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span> </div>
-<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_restrict_solution_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>{</div>
-<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>    <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)level &lt; <a class="code hl_variable" href="geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4">AC_gmg_maximum_level</a>)</div>
-<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>    {</div>
-<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span>        res = <a class="code hl_function" href="grid__transfer__functions_8h.html#a00a38698170dafe1c64e830312f91874">restrict_full_weighting</a>(GMG_SOLUTIONS[level],get_global_gmg_level_dims(level))</div>
-<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span>        write(GMG_SOLUTIONS[level+1],res)</div>
-<div class="line"><a id="l02590" name="l02590"></a><span class="lineno"> 2590</span>    }</div>
-<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span>}</div>
+<div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_restrict_solution_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>{</div>
+<div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>    <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)level &lt; <a class="code hl_variable" href="geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4">AC_gmg_maximum_level</a>)</div>
+<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>    {</div>
+<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>        res = <a class="code hl_function" href="grid__transfer__functions_8h.html#a00a38698170dafe1c64e830312f91874">restrict_full_weighting</a>(GMG_SOLUTIONS[level],get_global_gmg_level_dims(level))</div>
+<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span>        write(GMG_SOLUTIONS[level+1],res)</div>
+<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span>    }</div>
+<div class="line"><a id="l02590" name="l02590"></a><span class="lineno"> 2590</span>}</div>
+<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span> </div>
 <div class="line"><a id="l02592" name="l02592"></a><span class="lineno"> 2592</span> </div>
-<div class="line"><a id="l02593" name="l02593"></a><span class="lineno"> 2593</span> </div>
-<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span>ComputeSteps</div>
-<div class="line"><a id="l02595" name="l02595"></a><span class="lineno"> 2595</span>gmg_restrict_solution(gmg_boundconds)</div>
-<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span>{</div>
-<div class="line"><a id="l02597" name="l02597"></a><span class="lineno"> 2597</span>    gmg_restrict_solution_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02598" name="l02598"></a><span class="lineno"> 2598</span>}</div>
+<div class="line"><a id="l02593" name="l02593"></a><span class="lineno"> 2593</span>ComputeSteps</div>
+<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span>gmg_restrict_solution(gmg_boundconds)</div>
+<div class="line"><a id="l02595" name="l02595"></a><span class="lineno"> 2595</span>{</div>
+<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span>    gmg_restrict_solution_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02597" name="l02597"></a><span class="lineno"> 2597</span>}</div>
+<div class="line"><a id="l02598" name="l02598"></a><span class="lineno"> 2598</span> </div>
 <div class="line"><a id="l02599" name="l02599"></a><span class="lineno"> 2599</span> </div>
-<div class="line"><a id="l02600" name="l02600"></a><span class="lineno"> 2600</span> </div>
-<div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_residual_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02602" name="l02602"></a><span class="lineno"> 2602</span>{</div>
-<div class="line"><a id="l02603" name="l02603"></a><span class="lineno"> 2603</span>    residual = GMG_RHS[level] + gmg_laplace(GMG_SOLUTIONS[level],level)</div>
-<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span>    write(GMG_RESIDUALS[level],residual)</div>
-<div class="line"><a id="l02605" name="l02605"></a><span class="lineno"> 2605</span>}</div>
-<div class="line"><a id="l02606" name="l02606"></a><span class="lineno"> 2606</span> </div>
-<div class="line"><a id="l02607" name="l02607"></a><span class="lineno"> 2607</span>ComputeSteps</div>
-<div class="line"><a id="l02608" name="l02608"></a><span class="lineno"> 2608</span>gmg_get_residual(gmg_boundconds)</div>
-<div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span>{</div>
-<div class="line"><a id="l02610" name="l02610"></a><span class="lineno"> 2610</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02611" name="l02611"></a><span class="lineno"> 2611</span>}</div>
-<div class="line"><a id="l02612" name="l02612"></a><span class="lineno"> 2612</span>ComputeSteps</div>
-<div class="line"><a id="l02613" name="l02613"></a><span class="lineno"> 2613</span>gmg_copy_rhs_to_residual(gmg_boundconds)</div>
-<div class="line"><a id="l02614" name="l02614"></a><span class="lineno"> 2614</span>{</div>
-<div class="line"><a id="l02615" name="l02615"></a><span class="lineno"> 2615</span>    gmg_copy_rhs_to_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02616" name="l02616"></a><span class="lineno"> 2616</span>}</div>
-<div class="line"><a id="l02617" name="l02617"></a><span class="lineno"> 2617</span> </div>
-<div class="line"><a id="l02618" name="l02618"></a><span class="lineno"> 2618</span>gmg_laplace_central_coeff(<span class="keywordtype">int</span> level)</div>
-<div class="line"><a id="l02619" name="l02619"></a><span class="lineno"> 2619</span>{</div>
-<div class="line"><a id="l02620" name="l02620"></a><span class="lineno"> 2620</span>    <span class="keywordflow">return</span> AC_GMG_CENTRAL_COEFFS[level]</div>
-<div class="line"><a id="l02621" name="l02621"></a><span class="lineno"> 2621</span>}</div>
-<div class="line"><a id="l02622" name="l02622"></a><span class="lineno"> 2622</span> </div>
-<div class="line"><a id="l02645" name="l02645"></a><span class="lineno"> 2645</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_prolong_solution_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02646" name="l02646"></a><span class="lineno"> 2646</span>{</div>
-<div class="line"><a id="l02647" name="l02647"></a><span class="lineno"> 2647</span>    <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)level &lt; <a class="code hl_variable" href="geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4">AC_gmg_maximum_level</a>) </div>
-<div class="line"><a id="l02648" name="l02648"></a><span class="lineno"> 2648</span>    {</div>
-<div class="line"><a id="l02649" name="l02649"></a><span class="lineno"> 2649</span>        e = <a class="code hl_function" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a>(GMG_SOLUTIONS[level+1],get_global_gmg_level_dims(level))</div>
-<div class="line"><a id="l02650" name="l02650"></a><span class="lineno"> 2650</span>        write(GMG_SOLUTIONS[level],e)</div>
-<div class="line"><a id="l02651" name="l02651"></a><span class="lineno"> 2651</span>    }</div>
-<div class="line"><a id="l02652" name="l02652"></a><span class="lineno"> 2652</span>}</div>
-<div class="line"><a id="l02653" name="l02653"></a><span class="lineno"> 2653</span> </div>
-<div class="line"><a id="l02654" name="l02654"></a><span class="lineno"> 2654</span>ComputeSteps</div>
-<div class="line"><a id="l02655" name="l02655"></a><span class="lineno"> 2655</span>gmg_prolong_solution(gmg_boundconds)</div>
-<div class="line"><a id="l02656" name="l02656"></a><span class="lineno"> 2656</span>{</div>
-<div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>    gmg_prolong_solution_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span>}</div>
+<div class="line"><a id="l02600" name="l02600"></a><span class="lineno"> 2600</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_residual_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span>{</div>
+<div class="line"><a id="l02602" name="l02602"></a><span class="lineno"> 2602</span>    residual = GMG_RHS[level] + gmg_laplace(GMG_SOLUTIONS[level],level)</div>
+<div class="line"><a id="l02603" name="l02603"></a><span class="lineno"> 2603</span>    write(GMG_RESIDUALS[level],residual)</div>
+<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span>}</div>
+<div class="line"><a id="l02605" name="l02605"></a><span class="lineno"> 2605</span> </div>
+<div class="line"><a id="l02606" name="l02606"></a><span class="lineno"> 2606</span>ComputeSteps</div>
+<div class="line"><a id="l02607" name="l02607"></a><span class="lineno"> 2607</span>gmg_get_residual(gmg_boundconds)</div>
+<div class="line"><a id="l02608" name="l02608"></a><span class="lineno"> 2608</span>{</div>
+<div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02610" name="l02610"></a><span class="lineno"> 2610</span>}</div>
+<div class="line"><a id="l02611" name="l02611"></a><span class="lineno"> 2611</span>ComputeSteps</div>
+<div class="line"><a id="l02612" name="l02612"></a><span class="lineno"> 2612</span>gmg_copy_rhs_to_residual(gmg_boundconds)</div>
+<div class="line"><a id="l02613" name="l02613"></a><span class="lineno"> 2613</span>{</div>
+<div class="line"><a id="l02614" name="l02614"></a><span class="lineno"> 2614</span>    gmg_copy_rhs_to_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02615" name="l02615"></a><span class="lineno"> 2615</span>}</div>
+<div class="line"><a id="l02616" name="l02616"></a><span class="lineno"> 2616</span> </div>
+<div class="line"><a id="l02617" name="l02617"></a><span class="lineno"> 2617</span>gmg_laplace_central_coeff(<span class="keywordtype">int</span> level)</div>
+<div class="line"><a id="l02618" name="l02618"></a><span class="lineno"> 2618</span>{</div>
+<div class="line"><a id="l02619" name="l02619"></a><span class="lineno"> 2619</span>    <span class="keywordflow">return</span> AC_GMG_CENTRAL_COEFFS[level]</div>
+<div class="line"><a id="l02620" name="l02620"></a><span class="lineno"> 2620</span>}</div>
+<div class="line"><a id="l02621" name="l02621"></a><span class="lineno"> 2621</span> </div>
+<div class="line"><a id="l02644" name="l02644"></a><span class="lineno"> 2644</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_prolong_solution_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02645" name="l02645"></a><span class="lineno"> 2645</span>{</div>
+<div class="line"><a id="l02646" name="l02646"></a><span class="lineno"> 2646</span>    <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)level &lt; <a class="code hl_variable" href="geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4">AC_gmg_maximum_level</a>) </div>
+<div class="line"><a id="l02647" name="l02647"></a><span class="lineno"> 2647</span>    {</div>
+<div class="line"><a id="l02648" name="l02648"></a><span class="lineno"> 2648</span>        e = <a class="code hl_function" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a>(GMG_SOLUTIONS[level+1],get_global_gmg_level_dims(level))</div>
+<div class="line"><a id="l02649" name="l02649"></a><span class="lineno"> 2649</span>        write(GMG_SOLUTIONS[level],e)</div>
+<div class="line"><a id="l02650" name="l02650"></a><span class="lineno"> 2650</span>    }</div>
+<div class="line"><a id="l02651" name="l02651"></a><span class="lineno"> 2651</span>}</div>
+<div class="line"><a id="l02652" name="l02652"></a><span class="lineno"> 2652</span> </div>
+<div class="line"><a id="l02653" name="l02653"></a><span class="lineno"> 2653</span>ComputeSteps</div>
+<div class="line"><a id="l02654" name="l02654"></a><span class="lineno"> 2654</span>gmg_prolong_solution(gmg_boundconds)</div>
+<div class="line"><a id="l02655" name="l02655"></a><span class="lineno"> 2655</span>{</div>
+<div class="line"><a id="l02656" name="l02656"></a><span class="lineno"> 2656</span>    gmg_prolong_solution_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>}</div>
+<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span> </div>
 <div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span> </div>
-<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span> </div>
-<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span><span class="comment">//Optimized smoother across all of the 7-point stencils</span></div>
-<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span><span class="comment">//When going to sixth-order can numerically find optimized</span></div>
-<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span><span class="comment">//19-point smoother or even 343-point smoother by minimizing the smoothing factor.</span></div>
-<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span><span class="comment">//Credit and further details</span></div>
-<div class="line"><a id="l02665" name="l02665"></a><span class="lineno"> 2665</span><span class="comment">//https://arxiv.org/pdf/2206.05543</span></div>
-<div class="line"><a id="l02689" name="l02689"></a><span class="lineno"> 2689</span><span class="comment">//This is the full 3x3x3 smoother with numerically derived coeffs that achieve smoothing factor of approx 0.285 which is better than the theoretical best when including only cardinals</span></div>
-<div class="line"><a id="l02690" name="l02690"></a><span class="lineno"> 2690</span><span class="comment">//</span></div>
-<div class="line"><a id="l02691" name="l02691"></a><span class="lineno"> 2691</span><span class="preprocessor">#if STENCIL_ORDER == 2</span></div>
-<div class="line"><a id="l02692" name="l02692"></a><span class="lineno"> 2692</span><span class="comment">//LFA gives smoothing factor 0.1910</span></div>
-<div class="line"><a id="l02693" name="l02693"></a><span class="lineno"> 2693</span><span class="comment">//run_const real AC_omega_for_optimized_smoother = 1.3699</span></div>
-<div class="line"><a id="l02694" name="l02694"></a><span class="lineno"> 2694</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.1432</span></div>
-<div class="line"><a id="l02695" name="l02695"></a><span class="lineno"> 2695</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0284</span></div>
-<div class="line"><a id="l02696" name="l02696"></a><span class="lineno"> 2696</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0081</span></div>
-<div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0025</span></div>
-<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span><span class="comment">//</span></div>
-<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span><span class="comment">//LFA gives smoothing factor of 0.1888</span></div>
-<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>run_const real AC_omega_for_optimized_smoother = 0.9009</div>
-<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.2178</div>
-<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0432</div>
-<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0122</div>
-<div class="line"><a id="l02704" name="l02704"></a><span class="lineno"> 2704</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0038</div>
-<div class="line"><a id="l02705" name="l02705"></a><span class="lineno"> 2705</span> </div>
-<div class="line"><a id="l02706" name="l02706"></a><span class="lineno"> 2706</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02707" name="l02707"></a><span class="lineno"> 2707</span><span class="preprocessor">#if STENCIL_ORDER == 4</span></div>
-<div class="line"><a id="l02708" name="l02708"></a><span class="lineno"> 2708</span><span class="comment">//LFA gives smoothing factor of 0.0828</span></div>
-<div class="line"><a id="l02709" name="l02709"></a><span class="lineno"> 2709</span>run_const real AC_omega_for_optimized_smoother = 0.9363</div>
-<div class="line"><a id="l02710" name="l02710"></a><span class="lineno"> 2710</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.2807</div>
-<div class="line"><a id="l02711" name="l02711"></a><span class="lineno"> 2711</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0329</div>
-<div class="line"><a id="l02712" name="l02712"></a><span class="lineno"> 2712</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0166</div>
-<div class="line"><a id="l02713" name="l02713"></a><span class="lineno"> 2713</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0044</div>
-<div class="line"><a id="l02714" name="l02714"></a><span class="lineno"> 2714</span> </div>
-<div class="line"><a id="l02715" name="l02715"></a><span class="lineno"> 2715</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02716" name="l02716"></a><span class="lineno"> 2716</span><span class="comment">//For compact sixth-order laplacian</span></div>
-<div class="line"><a id="l02717" name="l02717"></a><span class="lineno"> 2717</span><span class="comment">//LFA gives smoothing factor of 0.0909</span></div>
-<div class="line"><a id="l02718" name="l02718"></a><span class="lineno"> 2718</span>run_const real AC_omega_for_optimized_smoother = 0.3543</div>
-<div class="line"><a id="l02719" name="l02719"></a><span class="lineno"> 2719</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.7064</div>
-<div class="line"><a id="l02720" name="l02720"></a><span class="lineno"> 2720</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.1005</div>
-<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"> 2721</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0363</div>
-<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0151</div>
-<div class="line"><a id="l02723" name="l02723"></a><span class="lineno"> 2723</span> </div>
+<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span><span class="comment">//Optimized smoother across all of the 7-point stencils</span></div>
+<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span><span class="comment">//When going to sixth-order can numerically find optimized</span></div>
+<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span><span class="comment">//19-point smoother or even 343-point smoother by minimizing the smoothing factor.</span></div>
+<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span><span class="comment">//Credit and further details</span></div>
+<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span><span class="comment">//https://arxiv.org/pdf/2206.05543</span></div>
+<div class="line"><a id="l02688" name="l02688"></a><span class="lineno"> 2688</span><span class="comment">//This is the full 3x3x3 smoother with numerically derived coeffs that achieve smoothing factor of approx 0.285 which is better than the theoretical best when including only cardinals</span></div>
+<div class="line"><a id="l02689" name="l02689"></a><span class="lineno"> 2689</span><span class="comment">//</span></div>
+<div class="line"><a id="l02690" name="l02690"></a><span class="lineno"> 2690</span><span class="preprocessor">#if STENCIL_ORDER == 2</span></div>
+<div class="line"><a id="l02691" name="l02691"></a><span class="lineno"> 2691</span><span class="comment">//LFA gives smoothing factor 0.1910</span></div>
+<div class="line"><a id="l02692" name="l02692"></a><span class="lineno"> 2692</span><span class="comment">//run_const real AC_omega_for_optimized_smoother = 1.3699</span></div>
+<div class="line"><a id="l02693" name="l02693"></a><span class="lineno"> 2693</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.1432</span></div>
+<div class="line"><a id="l02694" name="l02694"></a><span class="lineno"> 2694</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0284</span></div>
+<div class="line"><a id="l02695" name="l02695"></a><span class="lineno"> 2695</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0081</span></div>
+<div class="line"><a id="l02696" name="l02696"></a><span class="lineno"> 2696</span><span class="comment">//run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0025</span></div>
+<div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span><span class="comment">//</span></div>
+<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span><span class="comment">//LFA gives smoothing factor of 0.1888</span></div>
+<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span>run_const real AC_omega_for_optimized_smoother = 0.9009</div>
+<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.2178</div>
+<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0432</div>
+<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0122</div>
+<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0038</div>
+<div class="line"><a id="l02704" name="l02704"></a><span class="lineno"> 2704</span> </div>
+<div class="line"><a id="l02705" name="l02705"></a><span class="lineno"> 2705</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02706" name="l02706"></a><span class="lineno"> 2706</span><span class="preprocessor">#if STENCIL_ORDER == 4</span></div>
+<div class="line"><a id="l02707" name="l02707"></a><span class="lineno"> 2707</span><span class="comment">//LFA gives smoothing factor of 0.0828</span></div>
+<div class="line"><a id="l02708" name="l02708"></a><span class="lineno"> 2708</span>run_const real AC_omega_for_optimized_smoother = 0.9363</div>
+<div class="line"><a id="l02709" name="l02709"></a><span class="lineno"> 2709</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.2807</div>
+<div class="line"><a id="l02710" name="l02710"></a><span class="lineno"> 2710</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.0329</div>
+<div class="line"><a id="l02711" name="l02711"></a><span class="lineno"> 2711</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0166</div>
+<div class="line"><a id="l02712" name="l02712"></a><span class="lineno"> 2712</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0044</div>
+<div class="line"><a id="l02713" name="l02713"></a><span class="lineno"> 2713</span> </div>
+<div class="line"><a id="l02714" name="l02714"></a><span class="lineno"> 2714</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02715" name="l02715"></a><span class="lineno"> 2715</span><span class="comment">//For compact sixth-order laplacian</span></div>
+<div class="line"><a id="l02716" name="l02716"></a><span class="lineno"> 2716</span><span class="comment">//LFA gives smoothing factor of 0.0909</span></div>
+<div class="line"><a id="l02717" name="l02717"></a><span class="lineno"> 2717</span>run_const real AC_omega_for_optimized_smoother = 0.3543</div>
+<div class="line"><a id="l02718" name="l02718"></a><span class="lineno"> 2718</span>run_const real AC_gmg_optimized_smoother_coeff_facet_0_r1 = 0.7064</div>
+<div class="line"><a id="l02719" name="l02719"></a><span class="lineno"> 2719</span>run_const real AC_gmg_optimized_smoother_coeff_facet_1_r1 = 0.1005</div>
+<div class="line"><a id="l02720" name="l02720"></a><span class="lineno"> 2720</span>run_const real AC_gmg_optimized_smoother_coeff_facet_2_r1 = 0.0363</div>
+<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"> 2721</span>run_const real AC_gmg_optimized_smoother_coeff_facet_3_r1 = 0.0151</div>
+<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span> </div>
+<div class="line"><a id="l02723" name="l02723"></a><span class="lineno"> 2723</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02724" name="l02724"></a><span class="lineno"> 2724</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02725" name="l02725"></a><span class="lineno"> 2725</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02726" name="l02726"></a><span class="lineno"> 2726</span> </div>
-<div class="line"><a id="l02727" name="l02727"></a><span class="lineno"> 2727</span>Stencil</div>
-<div class="line"><a id="l02728" name="l02728"></a><span class="lineno"> 2728</span>optimized_smoother_stencil</div>
-<div class="line"><a id="l02729" name="l02729"></a><span class="lineno"> 2729</span>{</div>
-<div class="line"><a id="l02730" name="l02730"></a><span class="lineno"> 2730</span>          [-1][-1][-1] = AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02731" name="l02731"></a><span class="lineno"> 2731</span>          [-1][-1][0] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02732" name="l02732"></a><span class="lineno"> 2732</span>          [-1][-1][1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02733" name="l02733"></a><span class="lineno"> 2733</span>          [-1][0][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>          [-1][0][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span>          [-1][0][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span>          [-1][1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02737" name="l02737"></a><span class="lineno"> 2737</span>          [-1][1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02738" name="l02738"></a><span class="lineno"> 2738</span>          [-1][1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span>          [0][-1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02740" name="l02740"></a><span class="lineno"> 2740</span>          [0][-1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02741" name="l02741"></a><span class="lineno"> 2741</span>          [0][-1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02742" name="l02742"></a><span class="lineno"> 2742</span>          [0][0][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02743" name="l02743"></a><span class="lineno"> 2743</span>          [0][0][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_0_r1,</div>
-<div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span>          [0][0][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02745" name="l02745"></a><span class="lineno"> 2745</span>          [0][1][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02746" name="l02746"></a><span class="lineno"> 2746</span>          [0][1][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02747" name="l02747"></a><span class="lineno"> 2747</span>          [0][1][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02748" name="l02748"></a><span class="lineno"> 2748</span>          [1][-1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02749" name="l02749"></a><span class="lineno"> 2749</span>          [1][-1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02750" name="l02750"></a><span class="lineno"> 2750</span>          [1][-1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>          [1][0][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>          [1][0][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
-<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>          [1][0][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>          [1][1][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
-<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>          [1][1][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
-<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>          [1][1][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1</div>
-<div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span>}</div>
-<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span> </div>
-<div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span>optimized_smoother(Field r, <span class="keywordtype">int</span> level)</div>
-<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>{</div>
-<div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span>    h2 = <a class="code hl_variable" href="variables_8h.html#a34e38683f3a22c3f59fcdc95a7c3017a">AC_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>*pow(4,<span class="keywordtype">int</span>(level))</div>
-<div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span>    <span class="keywordflow">return</span> optimized_smoother_stencil(r)*h2</div>
-<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span>}</div>
+<div class="line"><a id="l02725" name="l02725"></a><span class="lineno"> 2725</span> </div>
+<div class="line"><a id="l02726" name="l02726"></a><span class="lineno"> 2726</span>Stencil</div>
+<div class="line"><a id="l02727" name="l02727"></a><span class="lineno"> 2727</span>optimized_smoother_stencil</div>
+<div class="line"><a id="l02728" name="l02728"></a><span class="lineno"> 2728</span>{</div>
+<div class="line"><a id="l02729" name="l02729"></a><span class="lineno"> 2729</span>          [-1][-1][-1] = AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02730" name="l02730"></a><span class="lineno"> 2730</span>          [-1][-1][0] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02731" name="l02731"></a><span class="lineno"> 2731</span>          [-1][-1][1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02732" name="l02732"></a><span class="lineno"> 2732</span>          [-1][0][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02733" name="l02733"></a><span class="lineno"> 2733</span>          [-1][0][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>          [-1][0][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span>          [-1][1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span>          [-1][1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02737" name="l02737"></a><span class="lineno"> 2737</span>          [-1][1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02738" name="l02738"></a><span class="lineno"> 2738</span>          [0][-1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span>          [0][-1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02740" name="l02740"></a><span class="lineno"> 2740</span>          [0][-1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02741" name="l02741"></a><span class="lineno"> 2741</span>          [0][0][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02742" name="l02742"></a><span class="lineno"> 2742</span>          [0][0][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_0_r1,</div>
+<div class="line"><a id="l02743" name="l02743"></a><span class="lineno"> 2743</span>          [0][0][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span>          [0][1][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02745" name="l02745"></a><span class="lineno"> 2745</span>          [0][1][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02746" name="l02746"></a><span class="lineno"> 2746</span>          [0][1][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02747" name="l02747"></a><span class="lineno"> 2747</span>          [1][-1][-1] =  AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02748" name="l02748"></a><span class="lineno"> 2748</span>          [1][-1][0] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02749" name="l02749"></a><span class="lineno"> 2749</span>          [1][-1][1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02750" name="l02750"></a><span class="lineno"> 2750</span>          [1][0][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>          [1][0][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_1_r1,</div>
+<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>          [1][0][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>          [1][1][-1] =   AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1,</div>
+<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>          [1][1][0] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_2_r1,</div>
+<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>          [1][1][1] =    AC_omega_for_optimized_smoother*AC_gmg_optimized_smoother_coeff_facet_3_r1</div>
+<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>}</div>
+<div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span> </div>
+<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span>optimized_smoother(Field r, <span class="keywordtype">int</span> level)</div>
+<div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span>{</div>
+<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>    h2 = <a class="code hl_variable" href="variables_8h.html#a34e38683f3a22c3f59fcdc95a7c3017a">AC_ds_2</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>*pow(4,<span class="keywordtype">int</span>(level))</div>
+<div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span>    <span class="keywordflow">return</span> optimized_smoother_stencil(r)*h2</div>
+<div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span>}</div>
+<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span> </div>
 <div class="line"><a id="l02764" name="l02764"></a><span class="lineno"> 2764</span> </div>
 <div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span> </div>
-<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span> </div>
-<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_optimized_smoother_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>{</div>
-<div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>    Field u = GMG_SOLUTIONS[level]</div>
-<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>    Field r = GMG_RESIDUALS[level]</div>
-<div class="line"><a id="l02771" name="l02771"></a><span class="lineno"> 2771</span>    write(u,u + optimized_smoother(r,level))</div>
-<div class="line"><a id="l02772" name="l02772"></a><span class="lineno"> 2772</span>}</div>
-<div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span> </div>
-<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_jacobi_smoother_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span>{</div>
-<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>    Field u = GMG_SOLUTIONS[level]</div>
-<div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>    Field r = GMG_RESIDUALS[level]</div>
-<div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>    write(u,u + r/(-gmg_laplace_central_coeff(level)))</div>
-<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>}</div>
-<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span> </div>
-<div class="line"><a id="l02781" name="l02781"></a><span class="lineno"> 2781</span>ComputeSteps gmg_optimized_smoother(gmg_boundconds)</div>
-<div class="line"><a id="l02782" name="l02782"></a><span class="lineno"> 2782</span>{</div>
-<div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>    gmg_optimized_smoother_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span>}</div>
-<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span> </div>
-<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>ComputeSteps gmg_jacobi_smoother(gmg_boundconds)</div>
-<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>{</div>
-<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>    gmg_jacobi_smoother_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span>}</div>
+<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_optimized_smoother_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>{</div>
+<div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>    Field u = GMG_SOLUTIONS[level]</div>
+<div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>    Field r = GMG_RESIDUALS[level]</div>
+<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>    write(u,u + optimized_smoother(r,level))</div>
+<div class="line"><a id="l02771" name="l02771"></a><span class="lineno"> 2771</span>}</div>
+<div class="line"><a id="l02772" name="l02772"></a><span class="lineno"> 2772</span> </div>
+<div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_jacobi_smoother_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>{</div>
+<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span>    Field u = GMG_SOLUTIONS[level]</div>
+<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>    Field r = GMG_RESIDUALS[level]</div>
+<div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>    write(u,u + r/(-gmg_laplace_central_coeff(level)))</div>
+<div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>}</div>
+<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span> </div>
+<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>ComputeSteps gmg_optimized_smoother(gmg_boundconds)</div>
+<div class="line"><a id="l02781" name="l02781"></a><span class="lineno"> 2781</span>{</div>
+<div class="line"><a id="l02782" name="l02782"></a><span class="lineno"> 2782</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span>    gmg_optimized_smoother_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>}</div>
+<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span> </div>
+<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span>ComputeSteps gmg_jacobi_smoother(gmg_boundconds)</div>
+<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>{</div>
+<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>    gmg_jacobi_smoother_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>}</div>
+<div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span> </div>
 <div class="line"><a id="l02792" name="l02792"></a><span class="lineno"> 2792</span> </div>
 <div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span> </div>
-<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span> </div>
-<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_write_del2_kernel()</div>
-<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>{</div>
-<div class="line"><a id="l02797" name="l02797"></a><span class="lineno"> 2797</span>    write(GMG_RESIDUALS[0],gmg_get_fine_grid_operator(GMG_SOLUTIONS[0]))</div>
-<div class="line"><a id="l02798" name="l02798"></a><span class="lineno"> 2798</span>}</div>
-<div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span> </div>
-<div class="line"><a id="l02800" name="l02800"></a><span class="lineno"> 2800</span>ComputeSteps</div>
-<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>gmg_write_del2(gmg_boundconds)</div>
-<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>{</div>
-<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>    gmg_write_del2_kernel()</div>
-<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>}</div>
-<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span> </div>
-<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>global output real AC_GMG_residual_l2_norm[11]</div>
-<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>global output real AC_GMG_rhs_l2_norm[11]</div>
-<div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>{</div>
-<div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
-<div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>    r = GMG_RHS[level]- res</div>
-<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>    reduce_l2_norm(r,AC_GMG_residual_l2_norm[level])</div>
-<div class="line"><a id="l02813" name="l02813"></a><span class="lineno"> 2813</span>}</div>
-<div class="line"><a id="l02814" name="l02814"></a><span class="lineno"> 2814</span> </div>
-<div class="line"><a id="l02815" name="l02815"></a><span class="lineno"> 2815</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_and_rhs_norms_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>{</div>
-<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
-<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>    r = GMG_RHS[level]- res</div>
-<div class="line"><a id="l02819" name="l02819"></a><span class="lineno"> 2819</span>    reduce_l2_norm(r,AC_GMG_residual_l2_norm[level])</div>
-<div class="line"><a id="l02820" name="l02820"></a><span class="lineno"> 2820</span>    reduce_l2_norm(GMG_RHS[level],AC_GMG_rhs_l2_norm[level])</div>
-<div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span>}</div>
-<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span> </div>
-<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>ComputeSteps</div>
-<div class="line"><a id="l02824" name="l02824"></a><span class="lineno"> 2824</span>gmg_get_residual_norm(gmg_boundconds)</div>
-<div class="line"><a id="l02825" name="l02825"></a><span class="lineno"> 2825</span>{</div>
-<div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>    gmg_get_residual_norm_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>}</div>
-<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span> </div>
-<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>ComputeSteps</div>
-<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span>gmg_get_residual_and_rhs_norms(gmg_boundconds)</div>
-<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>{</div>
-<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>    gmg_get_residual_and_rhs_norms_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span>}</div>
-<div class="line"><a id="l02834" name="l02834"></a><span class="lineno"> 2834</span> </div>
-<div class="line"><a id="l02835" name="l02835"></a><span class="lineno"> 2835</span><a class="code hl_define" href="geometric__multigrid__core_8h.html#a865fc505c2bc00519087f20f1dad5f46">GMG_PRECISION</a> <a class="code hl_function" href="bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930">dims</a>(AC_mlocal_gmg_level_final) Field GMG_COARSE_CG_P </div>
-<div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span><a class="code hl_define" href="geometric__multigrid__core_8h.html#a865fc505c2bc00519087f20f1dad5f46">GMG_PRECISION</a> <a class="code hl_function" href="bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930">dims</a>(AC_mlocal_gmg_level_final) Field GMG_COARSE_CG_R</div>
-<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span> </div>
-<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_compute_alpha(GMG_LEVEL level)</div>
-<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>{</div>
-<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>    Ap = -gmg_laplace(GMG_COARSE_CG_P,level)</div>
-<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>    r  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_R)</div>
-<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span>    p  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_P)</div>
-<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>    <a class="code hl_function" href="cg_8h.html#ad6d71e38fd0036e2d427e9b1b3d91d25">cg_compute_inner_products</a>(Ap,p,r)</div>
-<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span>}</div>
-<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_advance(GMG_LEVEL level)</div>
-<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>{</div>
-<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>    Ap = -gmg_laplace(GMG_COARSE_CG_P,level)</div>
-<div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span>    p  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_P)</div>
-<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>    <a class="code hl_function" href="cg_8h.html#a5bc7a8cb59dbebcdae38dc05556b599a">cg_advance_solution</a>(GMG_SOLUTIONS[level],Ap,p,GMG_COARSE_CG_R)</div>
-<div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span>}</div>
-<div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span> </div>
-<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_advance_p()</div>
-<div class="line"><a id="l02853" name="l02853"></a><span class="lineno"> 2853</span>{</div>
-<div class="line"><a id="l02854" name="l02854"></a><span class="lineno"> 2854</span>    <a class="code hl_function" href="cg_8h.html#a8b1ed4612d5607d53f3e9bc2711e01f3">cg_next_direction</a>(GMG_COARSE_CG_P,GMG_COARSE_CG_R)</div>
-<div class="line"><a id="l02855" name="l02855"></a><span class="lineno"> 2855</span>}</div>
-<div class="line"><a id="l02856" name="l02856"></a><span class="lineno"> 2856</span> </div>
-<div class="line"><a id="l02857" name="l02857"></a><span class="lineno"> 2857</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div>
-<div class="line"><a id="l02858" name="l02858"></a><span class="lineno"> 2858</span>gmg_init_cg_residual_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02859" name="l02859"></a><span class="lineno"> 2859</span>{</div>
-<div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>    r = GMG_RHS[level] + gmg_laplace(GMG_SOLUTIONS[level],level)</div>
-<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>    write(GMG_COARSE_CG_P,r)</div>
-<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span>    write(GMG_COARSE_CG_R,r)</div>
-<div class="line"><a id="l02863" name="l02863"></a><span class="lineno"> 2863</span>}</div>
-<div class="line"><a id="l02864" name="l02864"></a><span class="lineno"> 2864</span>ComputeSteps</div>
-<div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>gmg_init_cg_residual(gmg_boundconds)</div>
-<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>{</div>
-<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>    gmg_init_cg_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>}</div>
-<div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span> </div>
-<div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>ComputeSteps</div>
-<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>gmg_cg_coarsest_level_step(gmg_boundconds)</div>
-<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>{</div>
-<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>    gmg_cg_compute_alpha(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>    gmg_cg_advance(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>    gmg_cg_advance_p()</div>
-<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span>}</div>
-<div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span> </div>
-<div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_init_smoother_res_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>{</div>
-<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>    write(GMG_SMOOTHER_RES[level],0.0)</div>
-<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span>}</div>
-<div class="line"><a id="l02882" name="l02882"></a><span class="lineno"> 2882</span> </div>
-<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span>ComputeSteps</div>
-<div class="line"><a id="l02884" name="l02884"></a><span class="lineno"> 2884</span>gmg_init_iterative_smoother(gmg_boundconds)</div>
-<div class="line"><a id="l02885" name="l02885"></a><span class="lineno"> 2885</span>{</div>
-<div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span>    gmg_init_smoother_res_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02887" name="l02887"></a><span class="lineno"> 2887</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02888" name="l02888"></a><span class="lineno"> 2888</span>}</div>
-<div class="line"><a id="l02889" name="l02889"></a><span class="lineno"> 2889</span> </div>
-<div class="line"><a id="l02890" name="l02890"></a><span class="lineno"> 2890</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div>
-<div class="line"><a id="l02891" name="l02891"></a><span class="lineno"> 2891</span>gmg_y_line_smoother_step_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02892" name="l02892"></a><span class="lineno"> 2892</span>{</div>
-<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span>    Ax = -gmg_laplace_y_line(GMG_SMOOTHER_RES[level],level)</div>
-<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>    central_coeff = -gmg_laplace_central_coeff(level)</div>
-<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>    residual = GMG_RESIDUALS[0]-Ax</div>
-<div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>    write(GMG_SMOOTHER_RES[level], GMG_SMOOTHER_RES[level] + residual/central_coeff)</div>
-<div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>}</div>
-<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span>ComputeSteps</div>
-<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>gmg_smoother_step(gmg_boundconds)</div>
-<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>{</div>
-<div class="line"><a id="l02901" name="l02901"></a><span class="lineno"> 2901</span>    gmg_y_line_smoother_step_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span>}</div>
-<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span> </div>
-<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span>global output real AC_smoother_residual_l2_norm[11]</div>
-<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_smoother_residual_norm_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02906" name="l02906"></a><span class="lineno"> 2906</span>{</div>
-<div class="line"><a id="l02907" name="l02907"></a><span class="lineno"> 2907</span>    Ax = -gmg_laplace_y_line(GMG_SMOOTHER_RES[level],level)</div>
-<div class="line"><a id="l02908" name="l02908"></a><span class="lineno"> 2908</span>    residual = GMG_RESIDUALS[0]-Ax</div>
-<div class="line"><a id="l02909" name="l02909"></a><span class="lineno"> 2909</span>    reduce_l2_norm(residual,AC_smoother_residual_l2_norm[level])</div>
-<div class="line"><a id="l02910" name="l02910"></a><span class="lineno"> 2910</span>}</div>
-<div class="line"><a id="l02911" name="l02911"></a><span class="lineno"> 2911</span> </div>
-<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>ComputeSteps</div>
-<div class="line"><a id="l02913" name="l02913"></a><span class="lineno"> 2913</span>gmg_smoother_residual_norm(gmg_boundconds)</div>
-<div class="line"><a id="l02914" name="l02914"></a><span class="lineno"> 2914</span>{</div>
-<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>    gmg_smoother_residual_norm_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02916" name="l02916"></a><span class="lineno"> 2916</span>}</div>
-<div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span> </div>
-<div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_smoother_update_solution_kernel(GMG_LEVEL level)</div>
-<div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span>{</div>
-<div class="line"><a id="l02920" name="l02920"></a><span class="lineno"> 2920</span>    write(GMG_SOLUTIONS[level], GMG_SOLUTIONS[level] + GMG_SMOOTHER_RES[level])</div>
-<div class="line"><a id="l02921" name="l02921"></a><span class="lineno"> 2921</span>}</div>
-<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span> </div>
-<div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>ComputeSteps</div>
-<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span>gmg_smoother_update_solution(gmg_boundconds)</div>
-<div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>{</div>
-<div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span>    gmg_smoother_update_solution_kernel(AC_GMG_LEVEL)</div>
-<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>}</div>
-<div class="line"><a id="l02928" name="l02928"></a><span class="lineno"> 2928</span> </div>
+<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_write_del2_kernel()</div>
+<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span>{</div>
+<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>    write(GMG_RESIDUALS[0],gmg_get_fine_grid_operator(GMG_SOLUTIONS[0]))</div>
+<div class="line"><a id="l02797" name="l02797"></a><span class="lineno"> 2797</span>}</div>
+<div class="line"><a id="l02798" name="l02798"></a><span class="lineno"> 2798</span> </div>
+<div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span>ComputeSteps</div>
+<div class="line"><a id="l02800" name="l02800"></a><span class="lineno"> 2800</span>gmg_write_del2(gmg_boundconds)</div>
+<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>{</div>
+<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>    gmg_write_del2_kernel()</div>
+<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>}</div>
+<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span> </div>
+<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span>global output real AC_GMG_residual_l2_norm[11]</div>
+<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>global output real AC_GMG_rhs_l2_norm[11]</div>
+<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_norm_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span>{</div>
+<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
+<div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span>    r = GMG_RHS[level]- res</div>
+<div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>    reduce_l2_norm(r,AC_GMG_residual_l2_norm[level])</div>
+<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>}</div>
+<div class="line"><a id="l02813" name="l02813"></a><span class="lineno"> 2813</span> </div>
+<div class="line"><a id="l02814" name="l02814"></a><span class="lineno"> 2814</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_get_residual_and_rhs_norms_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02815" name="l02815"></a><span class="lineno"> 2815</span>{</div>
+<div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>    <span class="keyword">const</span> real res = -gmg_laplace(GMG_SOLUTIONS[level],level)</div>
+<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>    r = GMG_RHS[level]- res</div>
+<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>    reduce_l2_norm(r,AC_GMG_residual_l2_norm[level])</div>
+<div class="line"><a id="l02819" name="l02819"></a><span class="lineno"> 2819</span>    reduce_l2_norm(GMG_RHS[level],AC_GMG_rhs_l2_norm[level])</div>
+<div class="line"><a id="l02820" name="l02820"></a><span class="lineno"> 2820</span>}</div>
+<div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span> </div>
+<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span>ComputeSteps</div>
+<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>gmg_get_residual_norm(gmg_boundconds)</div>
+<div class="line"><a id="l02824" name="l02824"></a><span class="lineno"> 2824</span>{</div>
+<div class="line"><a id="l02825" name="l02825"></a><span class="lineno"> 2825</span>    gmg_get_residual_norm_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>}</div>
+<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span> </div>
+<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>ComputeSteps</div>
+<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>gmg_get_residual_and_rhs_norms(gmg_boundconds)</div>
+<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span>{</div>
+<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>    gmg_get_residual_and_rhs_norms_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>}</div>
+<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span> </div>
+<div class="line"><a id="l02834" name="l02834"></a><span class="lineno"> 2834</span><a class="code hl_define" href="geometric__multigrid__core_8h.html#a865fc505c2bc00519087f20f1dad5f46">GMG_PRECISION</a> <a class="code hl_function" href="bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930">dims</a>(AC_mlocal_gmg_level_final) Field GMG_COARSE_CG_P </div>
+<div class="line"><a id="l02835" name="l02835"></a><span class="lineno"> 2835</span><a class="code hl_define" href="geometric__multigrid__core_8h.html#a865fc505c2bc00519087f20f1dad5f46">GMG_PRECISION</a> <a class="code hl_function" href="bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930">dims</a>(AC_mlocal_gmg_level_final) Field GMG_COARSE_CG_R</div>
+<div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span> </div>
+<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_compute_alpha(GMG_LEVEL level)</div>
+<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span>{</div>
+<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>    Ap = -gmg_laplace(GMG_COARSE_CG_P,level)</div>
+<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>    r  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_R)</div>
+<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>    p  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_P)</div>
+<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span>    <a class="code hl_function" href="cg_8h.html#ad6d71e38fd0036e2d427e9b1b3d91d25">cg_compute_inner_products</a>(Ap,p,r)</div>
+<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>}</div>
+<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_advance(GMG_LEVEL level)</div>
+<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span>{</div>
+<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>    Ap = -gmg_laplace(GMG_COARSE_CG_P,level)</div>
+<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>    p  = <a class="code hl_function" href="stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7">value</a>(GMG_COARSE_CG_P)</div>
+<div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span>    <a class="code hl_function" href="cg_8h.html#a5bc7a8cb59dbebcdae38dc05556b599a">cg_advance_solution</a>(GMG_SOLUTIONS[level],Ap,p,GMG_COARSE_CG_R)</div>
+<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>}</div>
+<div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span> </div>
+<div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_cg_advance_p()</div>
+<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span>{</div>
+<div class="line"><a id="l02853" name="l02853"></a><span class="lineno"> 2853</span>    <a class="code hl_function" href="cg_8h.html#a8b1ed4612d5607d53f3e9bc2711e01f3">cg_next_direction</a>(GMG_COARSE_CG_P,GMG_COARSE_CG_R)</div>
+<div class="line"><a id="l02854" name="l02854"></a><span class="lineno"> 2854</span>}</div>
+<div class="line"><a id="l02855" name="l02855"></a><span class="lineno"> 2855</span> </div>
+<div class="line"><a id="l02856" name="l02856"></a><span class="lineno"> 2856</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div>
+<div class="line"><a id="l02857" name="l02857"></a><span class="lineno"> 2857</span>gmg_init_cg_residual_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02858" name="l02858"></a><span class="lineno"> 2858</span>{</div>
+<div class="line"><a id="l02859" name="l02859"></a><span class="lineno"> 2859</span>    r = GMG_RHS[level] + gmg_laplace(GMG_SOLUTIONS[level],level)</div>
+<div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>    write(GMG_COARSE_CG_P,r)</div>
+<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>    write(GMG_COARSE_CG_R,r)</div>
+<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span>}</div>
+<div class="line"><a id="l02863" name="l02863"></a><span class="lineno"> 2863</span>ComputeSteps</div>
+<div class="line"><a id="l02864" name="l02864"></a><span class="lineno"> 2864</span>gmg_init_cg_residual(gmg_boundconds)</div>
+<div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>{</div>
+<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>    gmg_init_cg_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>}</div>
+<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span> </div>
+<div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span>ComputeSteps</div>
+<div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>gmg_cg_coarsest_level_step(gmg_boundconds)</div>
+<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>{</div>
+<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>    gmg_cg_compute_alpha(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>    gmg_cg_advance(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>    gmg_cg_advance_p()</div>
+<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>}</div>
+<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span> </div>
+<div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_init_smoother_res_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span>{</div>
+<div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>    write(GMG_SMOOTHER_RES[level],0.0)</div>
+<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>}</div>
+<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span> </div>
+<div class="line"><a id="l02882" name="l02882"></a><span class="lineno"> 2882</span>ComputeSteps</div>
+<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span>gmg_init_iterative_smoother(gmg_boundconds)</div>
+<div class="line"><a id="l02884" name="l02884"></a><span class="lineno"> 2884</span>{</div>
+<div class="line"><a id="l02885" name="l02885"></a><span class="lineno"> 2885</span>    gmg_init_smoother_res_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span>    gmg_residual_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02887" name="l02887"></a><span class="lineno"> 2887</span>}</div>
+<div class="line"><a id="l02888" name="l02888"></a><span class="lineno"> 2888</span> </div>
+<div class="line"><a id="l02889" name="l02889"></a><span class="lineno"> 2889</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div>
+<div class="line"><a id="l02890" name="l02890"></a><span class="lineno"> 2890</span>gmg_y_line_smoother_step_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02891" name="l02891"></a><span class="lineno"> 2891</span>{</div>
+<div class="line"><a id="l02892" name="l02892"></a><span class="lineno"> 2892</span>    Ax = -gmg_laplace_y_line(GMG_SMOOTHER_RES[level],level)</div>
+<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span>    central_coeff = -gmg_laplace_central_coeff(level)</div>
+<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>    residual = GMG_RESIDUALS[level]-Ax</div>
+<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>    write(GMG_SMOOTHER_RES[level], GMG_SMOOTHER_RES[level] + residual/central_coeff)</div>
+<div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>}</div>
+<div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>ComputeSteps</div>
+<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span>gmg_smoother_step(gmg_boundconds)</div>
+<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>{</div>
+<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>    gmg_y_line_smoother_step_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02901" name="l02901"></a><span class="lineno"> 2901</span>}</div>
+<div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span> </div>
+<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span>global output real AC_smoother_residual_l2_norm[11]</div>
+<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_smoother_residual_norm_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span>{</div>
+<div class="line"><a id="l02906" name="l02906"></a><span class="lineno"> 2906</span>    Ax = -gmg_laplace_y_line(GMG_SMOOTHER_RES[level],level)</div>
+<div class="line"><a id="l02907" name="l02907"></a><span class="lineno"> 2907</span>    residual = GMG_RESIDUALS[level]-Ax</div>
+<div class="line"><a id="l02908" name="l02908"></a><span class="lineno"> 2908</span>    reduce_l2_norm(residual,AC_smoother_residual_l2_norm[level])</div>
+<div class="line"><a id="l02909" name="l02909"></a><span class="lineno"> 2909</span>}</div>
+<div class="line"><a id="l02910" name="l02910"></a><span class="lineno"> 2910</span> </div>
+<div class="line"><a id="l02911" name="l02911"></a><span class="lineno"> 2911</span>ComputeSteps</div>
+<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>gmg_smoother_residual_norm(gmg_boundconds)</div>
+<div class="line"><a id="l02913" name="l02913"></a><span class="lineno"> 2913</span>{</div>
+<div class="line"><a id="l02914" name="l02914"></a><span class="lineno"> 2914</span>    gmg_smoother_residual_norm_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>}</div>
+<div class="line"><a id="l02916" name="l02916"></a><span class="lineno"> 2916</span> </div>
+<div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span><a class="code hl_typedef" href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a> gmg_smoother_update_solution_kernel(GMG_LEVEL level)</div>
+<div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span>{</div>
+<div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span>    write(GMG_SOLUTIONS[level], GMG_SOLUTIONS[level] + GMG_SMOOTHER_RES[level])</div>
+<div class="line"><a id="l02920" name="l02920"></a><span class="lineno"> 2920</span>}</div>
+<div class="line"><a id="l02921" name="l02921"></a><span class="lineno"> 2921</span> </div>
+<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span>ComputeSteps</div>
+<div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>gmg_smoother_update_solution(gmg_boundconds)</div>
+<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span>{</div>
+<div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>    gmg_smoother_update_solution_kernel(AC_GMG_LEVEL)</div>
+<div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span>}</div>
+<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span> </div>
 <div class="ttc" id="aacc__runtime_8cu_html_a409d4a5ac9fcaadc7f5c3f15eb869cf5"><div class="ttname"><a href="acc__runtime_8cu.html#a409d4a5ac9fcaadc7f5c3f15eb869cf5">AcReal3</a></div><div class="ttdeci">#define AcReal3(x, y, z)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:28</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_a98666be13c8e67196b9560ba9eeff819"><div class="ttname"><a href="acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819">Kernel</a></div><div class="ttdeci">void(* Kernel)(const int3, const int3, DeviceVertexBufferArray vba)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:27</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:466</div></div>
