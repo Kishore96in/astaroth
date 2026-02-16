@@ -244,11 +244,11 @@ var NAVTREEINDEX =
 "pc__derivs_8h.html#a76c8b5731ba1b2c7a1ca6fdaaf5cdf82",
 "smooth__max_8h.html#a2edd97ed808a130333f81f133e854cca",
 "smooth__max_8h.html#adfab411d8059df1fae15565fcd9b58d4",
-"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907",
-"structKernelReduceOutput.html#a57475dc0561a97df5a20e2362e0a5d00",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a38630747267b258d93229eaea64610eb",
-"task_8h.html#a4822044491b695ff1c0a28be7f8778ee",
-"variables_8h.html#ae8a60d03d861590f06a0016a63310ab5"
+"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba",
+"structKernelParameters.html#af5fa2275c17cfd1cad4f086f2482027f",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a2f1fc6a5d8487cb3fc13b31379ca00ec",
+"task_8h.html#a29eeaf568356aeef4c36b6f3150b7219ac46192253e8458f209a350a132cfc876",
+"variables_8h.html#ad4a6675f9db5849f441040decbae6b5c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

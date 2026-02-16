@@ -89,5 +89,8 @@ var typedefs_8h =
       [ "AC_RMS", "typedefs_8h.html#a6e5c882953eef46d1945543099571189a6808798aff5115e511c7fe369f889bbd", null ],
       [ "AC_POSTPROCESS_SQRT", "typedefs_8h.html#a6e5c882953eef46d1945543099571189aa7465ee9c50a4619987fe89dad764cb3", null ],
       [ "AC_RADIAL_WINDOW_RMS", "typedefs_8h.html#a6e5c882953eef46d1945543099571189a5f8b60b0be8c1a29b92d6f6635eaaacf", null ]
-    ] ]
+    ] ],
+    [ "AC_HALF_PRECISION", "typedefs_8h.html#ad206e4acc53a465217d86204a0ef8d90", null ],
+    [ "AC_REAL_PRECISION", "typedefs_8h.html#a485216e16cea8c7b32543a53cfe119c7", null ],
+    [ "AC_SINGLE_PRECISION", "typedefs_8h.html#aa5de9cb2cf36113e3f1bdd0dcf09c233", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[18,0,2,1],
 "structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[18,0,2,0],
 "structAcBuffer.html":[18,0,3],
 "structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[18,0,3,2],
@@ -138,15 +139,17 @@ var NAVTREEINDEX17 =
 "structDeviceConfiguration.html#aed0a483cf5f67596244dadc299db3abf":[18,0,46,3],
 "structDeviceConfiguration.html#af717a0dbaded38622d0954a1a6173377":[18,0,46,1],
 "structDeviceVertexBufferArray.html":[18,0,47],
-"structDeviceVertexBufferArray.html#a3ee06ccf6e4a50b859b2919cab6f3e71":[18,0,47,6],
-"structDeviceVertexBufferArray.html#a40c462cad27ad8eabdb61c89731dd85a":[18,0,47,8],
-"structDeviceVertexBufferArray.html#a42290a43bf8e6bbfd7de55c898943637":[18,0,47,7],
+"structDeviceVertexBufferArray.html#a3ee06ccf6e4a50b859b2919cab6f3e71":[18,0,47,8],
+"structDeviceVertexBufferArray.html#a40c462cad27ad8eabdb61c89731dd85a":[18,0,47,10],
+"structDeviceVertexBufferArray.html#a42290a43bf8e6bbfd7de55c898943637":[18,0,47,9],
 "structDeviceVertexBufferArray.html#aa0702727fc7535b3fe221bf2ca5d3e53":[18,0,47,0],
-"structDeviceVertexBufferArray.html#ab437e01366748a0e8df8dd9340756c5b":[18,0,47,3],
-"structDeviceVertexBufferArray.html#ab80259610f6b73def3555b565f28c5bd":[18,0,47,5],
+"structDeviceVertexBufferArray.html#ab437e01366748a0e8df8dd9340756c5b":[18,0,47,5],
+"structDeviceVertexBufferArray.html#ab80259610f6b73def3555b565f28c5bd":[18,0,47,7],
 "structDeviceVertexBufferArray.html#abc0acc90b45b9a3a6b47e681f915be58":[18,0,47,1],
-"structDeviceVertexBufferArray.html#acf8537e1e2d510da5ecb4b0c241d7bdb":[18,0,47,2],
-"structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b":[18,0,47,4],
+"structDeviceVertexBufferArray.html#ac637e47afdaebdd86f7e2ff5fbfb7bd6":[18,0,47,3],
+"structDeviceVertexBufferArray.html#acf8537e1e2d510da5ecb4b0c241d7bdb":[18,0,47,4],
+"structDeviceVertexBufferArray.html#ad0766019a3cda0fe2ed19578c69c6598":[18,0,47,2],
+"structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b":[18,0,47,6],
 "structError.html":[18,0,49],
 "structError.html#a04ce021fcc96d1a19b9be5ead2889b7f":[18,0,49,7],
 "structError.html#a3d3f04b31fd2d2a97110de6c4f349e0f":[18,0,49,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelParameters.html#a2d5db4fe5348c388367fd1826fdb0233":[18,0,73,1],
 "structKernelParameters.html#aaca53fa49e4f6bc5418d5f1eb6b66de5":[18,0,73,0],
 "structKernelParameters.html#abc092903c583994a2ba3b74dbb2096a7":[18,0,73,2],
-"structKernelParameters.html#ada0397b9daed906a5471a13356613508":[18,0,73,4],
-"structKernelParameters.html#af5fa2275c17cfd1cad4f086f2482027f":[18,0,73,3],
-"structKernelReduceOutput.html":[18,0,74],
-"structKernelReduceOutput.html#a377fc4b473305ec86f43d4ab32396cfa":[18,0,74,4]
+"structKernelParameters.html#ada0397b9daed906a5471a13356613508":[18,0,73,4]
 };

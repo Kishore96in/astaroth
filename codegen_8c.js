@@ -455,6 +455,7 @@ var codegen_8c =
     [ "GLOBAL_MEM_STR", "codegen_8c.html#afeb86a1c6a0f0c4c375dd428852dc2e3", null ],
     [ "GLOBAL_STR", "codegen_8c.html#af1d9fc6f093bedb318e3cf3701c03a88", null ],
     [ "GREATER_STR", "codegen_8c.html#a8b1734b0a8a4122a84f035436146a0cf", null ],
+    [ "HALF_PRECISION_STR", "codegen_8c.html#afaa4dacdb2a3fce8f9200f2885f8202b", null ],
     [ "HALO_STR", "codegen_8c.html#a8108cd5f844d5679c76f20d5333e7594", null ],
     [ "HIP_ON", "codegen_8c.html#aae2a7c45b7db53b382ffb8fd06399d3b", null ],
     [ "INLINE_STR", "codegen_8c.html#a09bda5d83e6dab54f6101d6caee2bc75", null ],
