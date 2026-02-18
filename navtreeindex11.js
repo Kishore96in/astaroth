@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"hip_8h.html#ac39706093bc32338cbc3e0520d0a2021":[19,0,0,1,13,10],
 "hip_8h.html#ac564497d9952b6cc98197be56507f45a":[19,0,0,1,13,0],
 "hip_8h.html#ac71823e8c38c558582f2b19a3045dc28":[19,0,0,1,13,6],
 "hip_8h.html#ace2b992d1816a4110034000e2b3a2ba4":[19,0,0,1,13,72],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "math__utils__base_8h.html":[19,0,0,1,17],
 "math__utils__base_8h.html#a5602a472f54f1ee3b87605f09d164cb3":[19,0,0,1,17,0],
 "math__utils__base_8h_source.html":[19,0,0,1,17],
-"matplotlibcpp_8h.html":[19,0,8,33,0,1],
-"matplotlibcpp_8h.html#a0012ea4e42a80e34bea65dcfefc4b2ee":[19,0,8,33,0,1,37]
+"matplotlibcpp_8h.html":[19,0,8,33,0,1]
 };

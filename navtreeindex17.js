@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structAcAutotuneMeasurement.html":[18,0,2],
 "structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[18,0,2,1],
 "structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[18,0,2,0],
 "structAcBuffer.html":[18,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelConfig.html#a740ae9dcaa850d79a41a764fdbbcb3ec":[18,0,72,3],
 "structKernelConfig.html#a78db35b52d4dcc54ad835cffd900a189":[18,0,72,4],
 "structKernelConfig.html#a995acbc09aa2c821fa5fb2feffc107f0":[18,0,72,0],
-"structKernelConfig.html#aaa1fc6fbe6fe267fc02ec43a78efa30c":[18,0,72,5],
-"structKernelConfig.html#aac19c86063efaa6e112850a55c4d35cd":[18,0,72,6]
+"structKernelConfig.html#aaa1fc6fbe6fe267fc02ec43a78efa30c":[18,0,72,5]
 };
