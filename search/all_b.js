@@ -813,7 +813,7 @@ var searchData=
   ['arrays_2ecc_810',['arrays.cc',['../arrays_8cc.html',1,'']]],
   ['arrow_811',['arrow',['../namespacematplotlibcpp.html#a5da5568ee4a63f144e4541c6c84ed0ce',1,'matplotlibcpp']]],
   ['as_5fsize_5ft_812',['as_size_t',['../errchk_8h.html#a94cbb8b694eb6da3257aaace5fe4f55e',1,'errchk.h']]],
-  ['ast_2eh_813',['ast.h',['../acc-runtime_2acc_2ast_8h.html',1,'(Global Namespace)'],['../deprecated_2acc-2_84_2src_2ast_8h.html',1,'(Global Namespace)']]],
+  ['ast_2eh_813',['ast.h',['../deprecated_2acc-2_84_2src_2ast_8h.html',1,'(Global Namespace)'],['../acc-runtime_2acc_2ast_8h.html',1,'(Global Namespace)']]],
   ['astaroth_20a_20scalable_20multi_20gpu_20library_20for_20stencil_20computations_814',['Astaroth - A Scalable Multi-GPU Library for Stencil Computations',['../index.html',1,'']]],
   ['astaroth_20api_815',['Astaroth API',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md114',1,'']]],
   ['astaroth_20api_20functions_816',['List of Astaroth API Functions',['../md_doc_2Astaroth__API__specification__and__user__manual_2API__specification__and__user__manual.html#autotoc_md115',1,'']]],
