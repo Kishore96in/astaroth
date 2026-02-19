@@ -313,105 +313,55 @@ $(document).ready(function(){initNavTree('grid__transfer__functions_8h_source.ht
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934">  200</a></span><a class="code hl_function" href="grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934">trilinear_prolongation_odd</a>(Field coarse_residual)</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>{</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> shifted_index = localCompdomainVertexIdx + 1</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> I_even = (shifted_index.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a> % 2 == 0)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> J_even = (shifted_index.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a> % 2 == 0)</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> K_even = (shifted_index.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a> % 2 == 0)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> I_odd = shifted_index.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a> &amp; 1</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> J_odd = shifted_index.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a> &amp; 1</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> K_odd = shifted_index.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a> &amp; 1</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> coarse_vertexIdx = (shifted_index/ 2) + NGHOST - 1</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span>(I_even &amp;&amp; J_even &amp;&amp; K_even)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">if</span>(I_even &amp;&amp; J_even &amp;&amp; !K_even)</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">return</span> 0.5*(</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                )</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">if</span>(I_even &amp;&amp; !J_even &amp;&amp; K_even)</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    {</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">return</span> 0.5*(</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                )</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">if</span>(!I_even &amp;&amp; J_even &amp;&amp; K_even)</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">return</span> 0.5*(</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                )</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">if</span>(I_even &amp;&amp; !J_even &amp;&amp; !K_even)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structint3.html">int3</a> coarse_vertexIdx = (shifted_index/ 2) + NGHOST - 1</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">//Branch-free way to get the required neighbours</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    res = coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>]</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    res += I_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>]</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    res += J_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>]</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    res += K_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>+1]</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    res += I_odd*J_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>]</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    res += I_odd*K_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>+1]</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    res += J_odd*K_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>+1]</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    res += I_odd*J_odd*K_odd*coarse_residual[coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5d95e23491677d61019f0354b16adca9">y</a>+1][coarse_vertexIdx.<a class="code hl_variable" href="structint3.html#a5cd5a3c388fa28814e3496ef07c39360">z</a>+1]</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="comment">//Branch-free way to get the correct weights</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    res *= (2.0-I_odd)*0.5;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    res *= (2.0-J_odd)*0.5;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    res *= (2.0-K_odd)*0.5;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">return</span> res</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
+</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment"> * Meant to be launched on the fine grid</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00232" data-start="{" data-end="}">
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">  232</a></span><a class="code hl_function" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a>(Field coarse_residual, <a class="code hl_struct" href="structint3.html">int3</a> global_mesh_dims)</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a> == (<a class="code hl_struct" href="structbool3.html">bool3</a>){<span class="keyword">false</span>,<span class="keyword">true</span>,<span class="keyword">true</span>})</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">return</span> 0.25*(</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                )</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#aa7641ff9fa2ad5034ac02922d0234d29">linear_prolongation</a>(coarse_residual)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">//Assumes a cube</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(global_mesh_dims.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a> % 2 == 0)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#a0c8ed4dccad202826fc3b55ae53481c9">trilinear_prolongation_even</a>(coarse_residual)</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">if</span>(!I_even &amp;&amp; J_even &amp;&amp; !K_even)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">return</span> 0.25*(</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                )</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">if</span>(!I_even &amp;&amp; !J_even &amp;&amp; K_even)</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    {</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">return</span> 0.25*(</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                )</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">if</span>(!I_even &amp;&amp; !J_even &amp;&amp; !K_even)</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">return</span> 0.125*(</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                                coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y+1][coarse_vertexIdx.z]</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                                +coarse_residual[coarse_vertexIdx.x][coarse_vertexIdx.y+1][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                                +coarse_residual[coarse_vertexIdx.x+1][coarse_vertexIdx.y+1][coarse_vertexIdx.z+1]</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                )</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">return</span> 0.0</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934">trilinear_prolongation_odd</a>(coarse_residual)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
 </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment"> * Meant to be launched on the fine grid</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00279" data-start="{" data-end="}">
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">  279</a></span><a class="code hl_function" href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a>(Field coarse_residual, <a class="code hl_struct" href="structint3.html">int3</a> global_mesh_dims)</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>{</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a> == (<a class="code hl_struct" href="structbool3.html">bool3</a>){<span class="keyword">false</span>,<span class="keyword">true</span>,<span class="keyword">true</span>})</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#aa7641ff9fa2ad5034ac02922d0234d29">linear_prolongation</a>(coarse_residual)</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">//Assumes a cube</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(global_mesh_dims.<a class="code hl_variable" href="structint3.html#a0a4ad50a155a35fa938ce6f16930affa">x</a> % 2 == 0)</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#a0c8ed4dccad202826fc3b55ae53481c9">trilinear_prolongation_even</a>(coarse_residual)</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    }</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="grid__transfer__functions_8h.html#afa701f947dd08cf1fcdb2218b4afa934">trilinear_prolongation_odd</a>(coarse_residual)</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>}</div>
-</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="agrid__transfer__functions_8h_html_a00a38698170dafe1c64e830312f91874"><div class="ttname"><a href="grid__transfer__functions_8h.html#a00a38698170dafe1c64e830312f91874">restrict_full_weighting</a></div><div class="ttdeci">restrict_full_weighting(Field fine_residual, int3 fine_dimensions)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:100</div></div>
 <div class="ttc" id="agrid__transfer__functions_8h_html_a0c8ed4dccad202826fc3b55ae53481c9"><div class="ttname"><a href="grid__transfer__functions_8h.html#a0c8ed4dccad202826fc3b55ae53481c9">trilinear_prolongation_even</a></div><div class="ttdeci">trilinear_prolongation_even(Field coarse_residual)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:144</div></div>
-<div class="ttc" id="agrid__transfer__functions_8h_html_a1493885738744f18eff3a464155f9dea"><div class="ttname"><a href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a></div><div class="ttdeci">trilinear_prolongation(Field coarse_residual, int3 global_mesh_dims)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:279</div></div>
+<div class="ttc" id="agrid__transfer__functions_8h_html_a1493885738744f18eff3a464155f9dea"><div class="ttname"><a href="grid__transfer__functions_8h.html#a1493885738744f18eff3a464155f9dea">trilinear_prolongation</a></div><div class="ttdeci">trilinear_prolongation(Field coarse_residual, int3 global_mesh_dims)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:232</div></div>
 <div class="ttc" id="agrid__transfer__functions_8h_html_a553e689bcef4ca523864a824a8b9b196"><div class="ttname"><a href="grid__transfer__functions_8h.html#a553e689bcef4ca523864a824a8b9b196">restrict_full_weighting_3d_even</a></div><div class="ttdeci">restrict_full_weighting_3d_even(Field fine_residual)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:36</div></div>
 <div class="ttc" id="agrid__transfer__functions_8h_html_aa7641ff9fa2ad5034ac02922d0234d29"><div class="ttname"><a href="grid__transfer__functions_8h.html#aa7641ff9fa2ad5034ac02922d0234d29">linear_prolongation</a></div><div class="ttdeci">linear_prolongation(Field coarse_residual)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:120</div></div>
 <div class="ttc" id="agrid__transfer__functions_8h_html_ae3975f392aaeeb377c0751fdaa607735"><div class="ttname"><a href="grid__transfer__functions_8h.html#ae3975f392aaeeb377c0751fdaa607735">restrict_full_weighting_3d_odd</a></div><div class="ttdeci">restrict_full_weighting_3d_odd(Field fine_residual)</div><div class="ttdef"><b>Definition</b> grid_transfer_functions.h:59</div></div>
