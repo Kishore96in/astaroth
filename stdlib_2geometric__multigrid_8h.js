@@ -3,6 +3,7 @@ var stdlib_2geometric__multigrid_8h =
     [ "get_galerkin_operator", "stdlib_2geometric__multigrid_8h.html#a43c436c2644c0676c340802eae669189", null ],
     [ "get_galerkin_operators", "stdlib_2geometric__multigrid_8h.html#a8bb46fe317ddc27b5b2d76aa45c5aeec", null ],
     [ "gmg_get_halo_exchange_operators", "stdlib_2geometric__multigrid_8h.html#abebaf0b47fd5cb109fa48588d54f660a", null ],
+    [ "gmg_iterative_smoother_step", "stdlib_2geometric__multigrid_8h.html#ae69f2c5a9c6f62c996005771507d012b", null ],
     [ "gmg_level_step", "stdlib_2geometric__multigrid_8h.html#a982001c00d7cd02c44d2bb66d06b0545", null ],
     [ "gmg_populate_central_coeffients", "stdlib_2geometric__multigrid_8h.html#a3d7e20b0e945c3cec3c44f0e73fb698c", null ],
     [ "gmg_prolong", "stdlib_2geometric__multigrid_8h.html#a5b516415b82283e3fbe2d7d10c1bf70a", null ],

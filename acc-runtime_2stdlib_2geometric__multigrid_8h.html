@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">geometric_multigrid.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -105,6 +108,70 @@ $(document).ready(function(){initNavTree('acc-runtime_2stdlib_2geometric__multig
 </div>
 </div>
 <p><a href="acc-runtime_2stdlib_2geometric__multigrid_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abb6ad9414ac319aa70b1c5454d3a6b0e" id="r_abb6ad9414ac319aa70b1c5454d3a6b0e"><td class="memItemLeft" align="right" valign="top">hostdefine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2stdlib_2geometric__multigrid_8h.html#abb6ad9414ac319aa70b1c5454d3a6b0e">AC_GMG_ENABLED</a> (1) run_const real AC_gmg_coarse_level_solve_accuracy</td></tr>
+<tr class="separator:abb6ad9414ac319aa70b1c5454d3a6b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adb72bf523a5fd72af9410e16a4dfb54e" id="r_adb72bf523a5fd72af9410e16a4dfb54e"><td class="memItemLeft" align="right" valign="top">GMG_Smoother&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2stdlib_2geometric__multigrid_8h.html#adb72bf523a5fd72af9410e16a4dfb54e">AC_GMG_SMOOTHER</a></td></tr>
+<tr class="separator:adb72bf523a5fd72af9410e16a4dfb54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9baf10e754d8c05d672840d5006675ea" id="r_a9baf10e754d8c05d672840d5006675ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acc-runtime_2stdlib_2geometric__multigrid_8h.html#a9baf10e754d8c05d672840d5006675ea">AC_GMG_post_smooth_steps</a> = 1</td></tr>
+<tr class="separator:a9baf10e754d8c05d672840d5006675ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="abb6ad9414ac319aa70b1c5454d3a6b0e" name="abb6ad9414ac319aa70b1c5454d3a6b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6ad9414ac319aa70b1c5454d3a6b0e">&#9670;&#160;</a></span>AC_GMG_ENABLED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hostdefine AC_GMG_ENABLED </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This file is for a geometric multigrid (GMG) implementation of the Poisson equation -Δu = f, in Cartesian coordinates. For a good introduction to multigrid methods see the book Multigrid by Trottenberg. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9baf10e754d8c05d672840d5006675ea" name="a9baf10e754d8c05d672840d5006675ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9baf10e754d8c05d672840d5006675ea">&#9670;&#160;</a></span>AC_GMG_post_smooth_steps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AC_GMG_post_smooth_steps = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb72bf523a5fd72af9410e16a4dfb54e" name="adb72bf523a5fd72af9410e16a4dfb54e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb72bf523a5fd72af9410e16a4dfb54e">&#9670;&#160;</a></span>AC_GMG_SMOOTHER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GMG_Smoother AC_GMG_SMOOTHER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  SPAI_SMOOTHER </div>
+<div class="line"><span class="keywordtype">int</span> AC_GMG_pre_smooth_steps  = 1</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

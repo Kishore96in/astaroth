@@ -125,6 +125,8 @@ Functions</h2></td></tr>
 <tr class="separator:abebaf0b47fd5cb109fa48588d54f660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b084b0a43134ea36afd9eb3e718ba13" id="r_a4b084b0a43134ea36afd9eb3e718ba13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a4b084b0a43134ea36afd9eb3e718ba13">gmg_setup</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *info)</td></tr>
 <tr class="separator:a4b084b0a43134ea36afd9eb3e718ba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69f2c5a9c6f62c996005771507d012b" id="r_ae69f2c5a9c6f62c996005771507d012b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#ae69f2c5a9c6f62c996005771507d012b">gmg_iterative_smoother_step</a> (const int level)</td></tr>
+<tr class="separator:ae69f2c5a9c6f62c996005771507d012b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3667d8f85f58c31feb2a257d38cf2a" id="r_a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a1d3667d8f85f58c31feb2a257d38cf2a">gmg_smoothing_step</a> (const int level)</td></tr>
 <tr class="separator:a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982001c00d7cd02c44d2bb66d06b0545" id="r_a982001c00d7cd02c44d2bb66d06b0545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a982001c00d7cd02c44d2bb66d06b0545">gmg_level_step</a> (const int level, const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance)</td></tr>
@@ -203,6 +205,24 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a>&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae69f2c5a9c6f62c996005771507d012b" name="ae69f2c5a9c6f62c996005771507d012b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69f2c5a9c6f62c996005771507d012b">&#9670;&#160;</a></span>gmg_iterative_smoother_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gmg_iterative_smoother_step </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -359,8 +379,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>const auto init_y_line_smoother = acGetOptimizedDSLTaskGraph(gmg_init_iterative_smoother); const auto y_line_smoother_step = acGetOptimizedDSLTaskGraph(gmg_smoother_step); const auto y_line_smoother_get_residual = acGetOptimizedDSLTaskGraph(gmg_smoother_residual_norm); const auto y_line_smoother_finalize = acGetOptimizedDSLTaskGraph(gmg_smoother_update_solution);</p>
-<p>acGridExecuteTaskGraph(init_y_line_smoother,1); acGridExecuteTaskGraph(y_line_smoother_get_residual,1); const AcReal y_line_smoother_residual0 = acDeviceGetOutput(acGridGetDevice(),AC_smoother_residual_l2_norm[level]); AcReal y_line_smoother_relative_residual = 1.0; while(y_line_smoother_relative_residual &gt; 1e-12) { acGridExecuteTaskGraph(y_line_smoother_step,1); acGridExecuteTaskGraph(y_line_smoother_get_residual,1); y_line_smoother_relative_residual = acDeviceGetOutput(acGridGetDevice(),AC_smoother_residual_l2_norm[level])/y_line_smoother_residual0; fprintf(stderr,"Smoother res: %d %.14e\n",level,y_line_smoother_relative_residual); } acGridExecuteTaskGraph(y_line_smoother_finalize,1);</p>
 
 </div>
 </div>
