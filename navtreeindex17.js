@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"string__vec_8h.html#a8f3b91283882c14a45d415b3025adada":[19,0,0,0,15,3],
+"string__vec_8h.html#ad75ce53a15d7efcfe62ad3304b3d0d07":[19,0,0,0,15,4],
+"string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[19,0,0,0,15,1],
 "string__vec_8h_source.html":[19,0,0,0,15],
 "structAcAutotuneMeasurement.html":[18,0,2],
 "structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[18,0,2,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelAnalysisInfo.html#ac18d977e81d7c26f26e14c562d27761c":[18,0,71,7],
 "structKernelAnalysisInfo.html#ae0cd112e3a05a4765fe28b4ebc6c8ee1":[18,0,71,11],
 "structKernelAnalysisInfo.html#af464f5fdded35124c64474f6f57c6bd2":[18,0,71,6],
-"structKernelConfig.html":[18,0,72],
-"structKernelConfig.html#a740ae9dcaa850d79a41a764fdbbcb3ec":[18,0,72,3],
-"structKernelConfig.html#a78db35b52d4dcc54ad835cffd900a189":[18,0,72,4],
-"structKernelConfig.html#a995acbc09aa2c821fa5fb2feffc107f0":[18,0,72,0]
+"structKernelConfig.html":[18,0,72]
 };

@@ -37,7 +37,7 @@ var searchData=
   ['ac_5ffrequency_5fspacing_34',['AC_frequency_spacing',['../variables_8h.html#ad4a6675f9db5849f441040decbae6b5c',1,'variables.h']]],
   ['ac_5ffully_5fperiodic_5fgrid_35',['AC_fully_periodic_grid',['../variables_8h.html#a7d7a8c5ee063bcb0fad6fbcd7ec1af01',1,'variables.h']]],
   ['ac_5fgmg_5fmaximum_5flevel_36',['AC_gmg_maximum_level',['../geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4',1,'geometric_multigrid_core.h']]],
-  ['ac_5fgmg_5fpost_5fsmooth_5fsteps_37',['AC_GMG_post_smooth_steps',['../acc-runtime_2stdlib_2geometric__multigrid_8h.html#a9baf10e754d8c05d672840d5006675ea',1,'geometric_multigrid.h']]],
+  ['ac_5fgmg_5fpost_5fsmooth_5fsteps_37',['AC_gmg_post_smooth_steps',['../acc-runtime_2stdlib_2geometric__multigrid_8h.html#a86617d794548a0927f1a413ac87af189',1,'geometric_multigrid.h']]],
   ['ac_5fgmg_5fsmoother_38',['AC_GMG_SMOOTHER',['../acc-runtime_2stdlib_2geometric__multigrid_8h.html#adb72bf523a5fd72af9410e16a4dfb54e',1,'geometric_multigrid.h']]],
   ['ac_5fhalf_5fprecision_39',['AC_HALF_PRECISION',['../typedefs_8h.html#ad206e4acc53a465217d86204a0ef8d90',1,'typedefs.h']]],
   ['ac_5fhost_5fhas_5frow_5fmemory_5forder_40',['AC_host_has_row_memory_order',['../variables_8h.html#a12a873255e2ec7e596d354e4e7937271',1,'variables.h']]],
