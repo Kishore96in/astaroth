@@ -29,6 +29,7 @@ var classTask =
     [ "i", "classTask.html#a393dd0f35f4a9794d2ab01d88c5a34bd", null ],
     [ "input_parameters", "classTask.html#aa5e3f5fbbb546a4ad0fed31c352c20e2", null ],
     [ "input_regions", "classTask.html#abe5cba4e6b47922e6e4e2ffbe180fc54", null ],
+    [ "launch_region", "classTask.html#aff0932e9478641ff09c735cddf899c6d", null ],
     [ "loop_cntr", "classTask.html#a0b5b32cf26cac3acf04357f5c9dc2798", null ],
     [ "name", "classTask.html#a442a9a7a998c24b533b25575f6edeb3f", null ],
     [ "order", "classTask.html#ad5897b98705092ab9361fe7c9ff85432", null ],
