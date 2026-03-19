@@ -21,5 +21,6 @@ var bc_8h =
     [ "BOUNDCOND_SYMMETRIC", "bc_8h.html#ad13616076b9b4fb51c1275730acb4df5", null ],
     [ "get_boundary", "bc_8h.html#ab4edccc9dcf94b3bd54eb8b822399ddd", null ],
     [ "get_normal", "bc_8h.html#af6ff7fc415829b7418df89eada82475e", null ],
-    [ "get_normal_direction", "bc_8h.html#a4d4500912d982dd2589bf40d1402d0d5", null ]
+    [ "get_normal_direction", "bc_8h.html#a4d4500912d982dd2589bf40d1402d0d5", null ],
+    [ "local_boundary_is_a_global_boundary", "bc_8h.html#a3de8c598647e475479b4f2b44bca5fd7", null ]
 ];

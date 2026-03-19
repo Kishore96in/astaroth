@@ -15,7 +15,8 @@ var searchData=
   ['linear_5fprolongation_12',['linear_prolongation',['../grid__transfer__functions_8h.html#aa7641ff9fa2ad5034ac02922d0234d29',1,'grid_transfer_functions.h']]],
   ['load_5foutputs_13',['load_outputs',['../classReduceTask.html#a468982a6292e32ef29e2e283de82e3e8',1,'ReduceTask']]],
   ['loadforcingparamstomeshinfo_14',['loadforcingparamstomeshinfo',['../astaroth__forcing_8h.html#a57a691712b6f33fd6313a5f69c7f3f5d',1,'loadForcingParamsToMeshInfo(const ForcingParams forcing_params, AcMeshInfo *info):&#160;astaroth_forcing.cc'],['../astaroth__forcing_8cc.html#a57a691712b6f33fd6313a5f69c7f3f5d',1,'loadForcingParamsToMeshInfo(const ForcingParams forcing_params, AcMeshInfo *info):&#160;astaroth_forcing.cc']]],
-  ['logautotuningstatus_15',['logAutotuningStatus',['../acc__runtime_8cu.html#a07093fd5ec5bbfc64b4995ca0c625cfd',1,'acc_runtime.cu']]],
-  ['loglog_16',['loglog',['../namespacematplotlibcpp.html#a6cfa8cba00f52a2c4614fa7a8a0bcd2b',1,'matplotlibcpp']]],
-  ['logstatechangedevent_17',['logStateChangedEvent',['../classTask.html#a0bac99defa425b4e28680e3a73e41c76',1,'Task']]]
+  ['local_5fboundary_5fis_5fa_5fglobal_5fboundary_15',['local_boundary_is_a_global_boundary',['../bc_8h.html#a3de8c598647e475479b4f2b44bca5fd7',1,'bc.h']]],
+  ['logautotuningstatus_16',['logAutotuningStatus',['../acc__runtime_8cu.html#a07093fd5ec5bbfc64b4995ca0c625cfd',1,'acc_runtime.cu']]],
+  ['loglog_17',['loglog',['../namespacematplotlibcpp.html#a6cfa8cba00f52a2c4614fa7a8a0bcd2b',1,'matplotlibcpp']]],
+  ['logstatechangedevent_18',['logStateChangedEvent',['../classTask.html#a0bac99defa425b4e28680e3a73e41c76',1,'Task']]]
 ];
