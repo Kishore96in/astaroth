@@ -4,7 +4,6 @@ var astaroth__device_8h =
     [ "DECL_DEVICE_STORE_UNIFORM", "astaroth__device_8h.html#a751b533fee6217d97b3f6aa66f4b0a89", null ],
     [ "DEVICE_LOAD_ARRAY_DECL", "astaroth__device_8h.html#a86108a816a52c8bd2bca4823fd84e179", null ],
     [ "acDeviceWriteMeshToDisk", "astaroth__device_8h.html#aee83bf0c26eb16f5277236aad07d8a00", null ],
-    [ "FUNC_DEFINE", "astaroth__device_8h.html#ad07a95fa3104f0861302a8acd5069cc3", null ],
     [ "FUNC_DEFINE", "astaroth__device_8h.html#afc3b551526628d51cfcc66ea098c6510", null ],
     [ "FUNC_DEFINE", "astaroth__device_8h.html#ae0dc0fef5db8853444230857b1adbefd", null ],
     [ "FUNC_DEFINE", "astaroth__device_8h.html#a8c56794b9dd7e569587d62e52d0f3451", null ],

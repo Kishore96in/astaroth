@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"structuser__enums__info.html#af027c00143458be0d7be45ac419e1305":[18,0,124,2],
 "structvariable.html":[18,0,125],
 "structvariable.html#a2a9eeb57183d967d7086abf99348c6e5":[18,0,125,1],
 "structvariable.html#a35e346f7a550e28c993d5ddabd899f86":[18,0,125,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "variables_8h.html#a8ca916d17435b86b3906235c522253f9":[19,0,0,2,4,63],
 "variables_8h.html#a8d83373f842a0fb5b9ef1a28f5704b95":[19,0,0,2,4,18],
 "variables_8h.html#a9138d8deb2ab991f64f983a41657a97b":[19,0,0,2,4,1],
-"variables_8h.html#a91d104842f632824f608880983dad22f":[19,0,0,2,4,14]
+"variables_8h.html#a91d104842f632824f608880983dad22f":[19,0,0,2,4,14],
+"variables_8h.html#a92204f19b4615c204bdc29e8e0bdbb79":[19,0,0,2,4,19]
 };
