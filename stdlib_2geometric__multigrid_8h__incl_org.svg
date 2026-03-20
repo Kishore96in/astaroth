@@ -12,8 +12,8 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="978,-239 823,-239 823,-220 978,-220 978,-239"/>
-<text text-anchor="middle" x="900.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">stdlib/geometric_multigrid.h</text>
+<polygon fill="#999999" stroke="#666666" points="1029,-239 874,-239 874,-220 1029,-220 1029,-239"/>
+<text text-anchor="middle" x="951.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">stdlib/geometric_multigrid.h</text>
 </a>
 </g>
 </g>
@@ -30,8 +30,26 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M900.5,-219.75C900.5,-212.8 900.5,-202.85 900.5,-194.13"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="904,-194.09 900.5,-184.09 897,-194.09 904,-194.09"/>
+<path fill="none" stroke="#63b8ff" d="M943.08,-219.75C935.73,-212.11 924.87,-200.82 915.96,-191.56"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="918.22,-188.87 908.76,-184.09 913.18,-193.72 918.22,-188.87"/>
+</a>
+</g>
+</g>
+<!-- Node24 -->
+<g id="Node000024" class="node">
+<title>Node24</title>
+<g id="a_Node000024"><a xlink:href="astaroth__grid_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="1047.5,-184 957.5,-184 957.5,-165 1047.5,-165 1047.5,-184"/>
+<text text-anchor="middle" x="1002.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">astaroth_grid.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node24 -->
+<g id="edge32_Node000001_Node000024" class="edge">
+<title>Node1&#45;&gt;Node24</title>
+<g id="a_edge32_Node000001_Node000024"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M959.92,-219.75C967.27,-212.11 978.13,-200.82 987.04,-191.56"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="989.82,-193.72 994.24,-184.09 984.78,-188.87 989.82,-193.72"/>
 </a>
 </g>
 </g>
@@ -174,8 +192,8 @@
 <g id="edge31_Node000002_Node000023" class="edge">
 <title>Node2&#45;&gt;Node23</title>
 <g id="a_edge31_Node000002_Node000023"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M939.26,-166.79C991.74,-157.7 1085.88,-141.39 1147.26,-130.76"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1147.94,-134.19 1157.2,-129.04 1146.75,-127.3 1147.94,-134.19"/>
+<path fill="none" stroke="#63b8ff" d="M939.01,-166.66C942.22,-166.1 945.42,-165.54 948.5,-165 1016.29,-153.15 1094.14,-139.75 1146.44,-130.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1147.28,-134.19 1156.55,-129.05 1146.1,-127.29 1147.28,-134.19"/>
 </a>
 </g>
 </g>

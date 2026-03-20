@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('stdlib_2geometric__multigrid_8h.html',
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="math__utils_8h_source.html">math_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="astaroth__grid_8h_source.html">astaroth_grid.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for geometric_multigrid.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,10 +130,10 @@ Functions</h2></td></tr>
 <tr class="separator:ae69f2c5a9c6f62c996005771507d012b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3667d8f85f58c31feb2a257d38cf2a" id="r_a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a1d3667d8f85f58c31feb2a257d38cf2a">gmg_smoothing_step</a> (const int level)</td></tr>
 <tr class="separator:a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a982001c00d7cd02c44d2bb66d06b0545" id="r_a982001c00d7cd02c44d2bb66d06b0545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a982001c00d7cd02c44d2bb66d06b0545">gmg_level_step</a> (const int level, const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance)</td></tr>
-<tr class="separator:a982001c00d7cd02c44d2bb66d06b0545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cfac260bde0217d59097d867454c0b" id="r_ad1cfac260bde0217d59097d867454c0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#ad1cfac260bde0217d59097d867454c0b">gmg_v_cycle</a> (const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance)</td></tr>
-<tr class="separator:ad1cfac260bde0217d59097d867454c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af232f75a41a7e7156d437d4c74f7a56b" id="r_af232f75a41a7e7156d437d4c74f7a56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#af232f75a41a7e7156d437d4c74f7a56b">gmg_level_step</a> (const int level, const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance, <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *cum_time=NULL)</td></tr>
+<tr class="separator:af232f75a41a7e7156d437d4c74f7a56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0b98f9ba5d00f989269edae888dbac" id="r_a9f0b98f9ba5d00f989269edae888dbac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a9f0b98f9ba5d00f989269edae888dbac">gmg_v_cycle</a> (const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance, <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *cum_time=NULL)</td></tr>
+<tr class="separator:a9f0b98f9ba5d00f989269edae888dbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49f917866bd9546eeb40c1eb11592266" id="r_a49f917866bd9546eeb40c1eb11592266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a49f917866bd9546eeb40c1eb11592266">gmg_setup_parallel_grid_decomposition</a> (<a class="el" href="structAcMeshInfo.html">AcMeshInfo</a> *dst)</td></tr>
 <tr class="separator:a49f917866bd9546eeb40c1eb11592266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -230,8 +231,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a982001c00d7cd02c44d2bb66d06b0545" name="a982001c00d7cd02c44d2bb66d06b0545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a982001c00d7cd02c44d2bb66d06b0545">&#9670;&#160;</a></span>gmg_level_step()</h2>
+<a id="af232f75a41a7e7156d437d4c74f7a56b" name="af232f75a41a7e7156d437d4c74f7a56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af232f75a41a7e7156d437d4c74f7a56b">&#9670;&#160;</a></span>gmg_level_step()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +253,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a>&#160;</td>
-          <td class="paramname"><em>relative_residual_tolerance</em>&#160;</td>
+          <td class="paramname"><em>relative_residual_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>cum_time</em> = <code>NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -410,8 +417,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1cfac260bde0217d59097d867454c0b" name="ad1cfac260bde0217d59097d867454c0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1cfac260bde0217d59097d867454c0b">&#9670;&#160;</a></span>gmg_v_cycle()</h2>
+<a id="a9f0b98f9ba5d00f989269edae888dbac" name="a9f0b98f9ba5d00f989269edae888dbac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0b98f9ba5d00f989269edae888dbac">&#9670;&#160;</a></span>gmg_v_cycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +433,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a>&#160;</td>
-          <td class="paramname"><em>relative_residual_tolerance</em>&#160;</td>
+          <td class="paramname"><em>relative_residual_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *&#160;</td>
+          <td class="paramname"><em>cum_time</em> = <code>NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
