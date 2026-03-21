@@ -128,8 +128,12 @@ Functions</h2></td></tr>
 <tr class="separator:a4b084b0a43134ea36afd9eb3e718ba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69f2c5a9c6f62c996005771507d012b" id="r_ae69f2c5a9c6f62c996005771507d012b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#ae69f2c5a9c6f62c996005771507d012b">gmg_iterative_smoother_step</a> (const int level)</td></tr>
 <tr class="separator:ae69f2c5a9c6f62c996005771507d012b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d3667d8f85f58c31feb2a257d38cf2a" id="r_a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a1d3667d8f85f58c31feb2a257d38cf2a">gmg_smoothing_step</a> (const int level)</td></tr>
-<tr class="separator:a1d3667d8f85f58c31feb2a257d38cf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c556d8098e85e49420084e190614e70" id="r_a9c556d8098e85e49420084e190614e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a9c556d8098e85e49420084e190614e70">gmg_get_residual_func</a> (const int level)</td></tr>
+<tr class="separator:a9c556d8098e85e49420084e190614e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9ee4f366cc7f22b868dd3e89313342" id="r_adc9ee4f366cc7f22b868dd3e89313342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#adc9ee4f366cc7f22b868dd3e89313342">gmg_apply_optimized_smoother</a> (const int level)</td></tr>
+<tr class="separator:adc9ee4f366cc7f22b868dd3e89313342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3104f4fc06a645bbc08411d8f43c8cc" id="r_aa3104f4fc06a645bbc08411d8f43c8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#aa3104f4fc06a645bbc08411d8f43c8cc">gmg_smoothing_step</a> (const int level, const int nsteps)</td></tr>
+<tr class="separator:aa3104f4fc06a645bbc08411d8f43c8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af232f75a41a7e7156d437d4c74f7a56b" id="r_af232f75a41a7e7156d437d4c74f7a56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#af232f75a41a7e7156d437d4c74f7a56b">gmg_level_step</a> (const int level, const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance, <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *cum_time=NULL)</td></tr>
 <tr class="separator:af232f75a41a7e7156d437d4c74f7a56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0b98f9ba5d00f989269edae888dbac" id="r_a9f0b98f9ba5d00f989269edae888dbac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a9f0b98f9ba5d00f989269edae888dbac">gmg_v_cycle</a> (const int number_of_levels, const <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> relative_residual_tolerance, <a class="el" href="stencilgen_8c.html#a46fb0bc56f0b52637b2f4b6cfa04fac3">AcReal</a> *cum_time=NULL)</td></tr>
@@ -147,6 +151,16 @@ Variables</h2></td></tr>
 <tr class="separator:ab2c3ff69aa9259af6a4e298e72ae7bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078c9905ba27ce785af7c7d829a4e9fb" id="r_a078c9905ba27ce785af7c7d829a4e9fb"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *, 11 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb">halo_exchange_solutions</a> {}</td></tr>
 <tr class="separator:a078c9905ba27ce785af7c7d829a4e9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49557f897fc784de201fe8fb851d05e" id="r_af49557f897fc784de201fe8fb851d05e"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *, 11 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#af49557f897fc784de201fe8fb851d05e">halo_exchange_solutions_current</a> {}</td></tr>
+<tr class="separator:af49557f897fc784de201fe8fb851d05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc35b43457c87062efd830f0c40453d8" id="r_afc35b43457c87062efd830f0c40453d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#afc35b43457c87062efd830f0c40453d8">coarsest_level_cg_step</a> = NULL</td></tr>
+<tr class="separator:afc35b43457c87062efd830f0c40453d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08858c6a148e49f5d8ee968162e2e171" id="r_a08858c6a148e49f5d8ee968162e2e171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a08858c6a148e49f5d8ee968162e2e171">coarsest_level_cg_init</a> = NULL</td></tr>
+<tr class="separator:a08858c6a148e49f5d8ee968162e2e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869a3f470a606749592978fba809d061" id="r_a869a3f470a606749592978fba809d061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a869a3f470a606749592978fba809d061">coarsest_level_residual</a> = NULL</td></tr>
+<tr class="separator:a869a3f470a606749592978fba809d061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d68bde08658717807204b0cf94686ee" id="r_a0d68bde08658717807204b0cf94686ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdlib_2geometric__multigrid_8h.html#a0d68bde08658717807204b0cf94686ee">test_comm_graph</a> = NULL</td></tr>
+<tr class="separator:a0d68bde08658717807204b0cf94686ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a43c436c2644c0676c340802eae669189" name="a43c436c2644c0676c340802eae669189"></a>
@@ -195,6 +209,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="adc9ee4f366cc7f22b868dd3e89313342" name="adc9ee4f366cc7f22b868dd3e89313342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9ee4f366cc7f22b868dd3e89313342">&#9670;&#160;</a></span>gmg_apply_optimized_smoother()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gmg_apply_optimized_smoother </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abebaf0b47fd5cb109fa48588d54f660a" name="abebaf0b47fd5cb109fa48588d54f660a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abebaf0b47fd5cb109fa48588d54f660a">&#9670;&#160;</a></span>gmg_get_halo_exchange_operators()</h2>
 
@@ -206,6 +238,24 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structAcMeshInfo.html">AcMeshInfo</a>&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c556d8098e85e49420084e190614e70" name="a9c556d8098e85e49420084e190614e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c556d8098e85e49420084e190614e70">&#9670;&#160;</a></span>gmg_get_residual_func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gmg_get_residual_func </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -371,8 +421,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d3667d8f85f58c31feb2a257d38cf2a" name="a1d3667d8f85f58c31feb2a257d38cf2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d3667d8f85f58c31feb2a257d38cf2a">&#9670;&#160;</a></span>gmg_smoothing_step()</h2>
+<a id="aa3104f4fc06a645bbc08411d8f43c8cc" name="aa3104f4fc06a645bbc08411d8f43c8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3104f4fc06a645bbc08411d8f43c8cc">&#9670;&#160;</a></span>gmg_smoothing_step()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,8 +431,18 @@ Variables</h2></td></tr>
           <td class="memname">void gmg_smoothing_step </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nsteps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -452,6 +512,48 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a08858c6a148e49f5d8ee968162e2e171" name="a08858c6a148e49f5d8ee968162e2e171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08858c6a148e49f5d8ee968162e2e171">&#9670;&#160;</a></span>coarsest_level_cg_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>* coarsest_level_cg_init = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc35b43457c87062efd830f0c40453d8" name="afc35b43457c87062efd830f0c40453d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc35b43457c87062efd830f0c40453d8">&#9670;&#160;</a></span>coarsest_level_cg_step</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>* coarsest_level_cg_step = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a869a3f470a606749592978fba809d061" name="a869a3f470a606749592978fba809d061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869a3f470a606749592978fba809d061">&#9670;&#160;</a></span>coarsest_level_residual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>* coarsest_level_residual = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af39a61ef9b24b8b0fb11e31a5a72b2d5" name="af39a61ef9b24b8b0fb11e31a5a72b2d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af39a61ef9b24b8b0fb11e31a5a72b2d5">&#9670;&#160;</a></span>gmg_central_coeffs</h2>
 
@@ -494,6 +596,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af49557f897fc784de201fe8fb851d05e" name="af49557f897fc784de201fe8fb851d05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49557f897fc784de201fe8fb851d05e">&#9670;&#160;</a></span>halo_exchange_solutions_current</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>*,11&gt; halo_exchange_solutions_current {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4f07557538cba67a86437433deb10266" name="a4f07557538cba67a86437433deb10266"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f07557538cba67a86437433deb10266">&#9670;&#160;</a></span>level_dims</h2>
 
@@ -520,6 +636,20 @@ Variables</h2></td></tr>
 <div class="line">    AC_nlocal_gmg_level_10</div>
 <div class="line">}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a0d68bde08658717807204b0cf94686ee" name="a0d68bde08658717807204b0cf94686ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d68bde08658717807204b0cf94686ee">&#9670;&#160;</a></span>test_comm_graph</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAcTaskGraph.html">AcTaskGraph</a>* test_comm_graph = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->
