@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"stencils_8h.html":[19,0,0,5,2,4],
 "stencils_8h.html#a532fd09cceb968f26df5018df5f834be":[19,0,0,5,2,4,0],
 "stencils_8h_source.html":[19,0,0,5,2,4],
 "string__vec_8h.html":[19,0,0,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelAnalysisInfo.html#a45d0b96abee16af67bb6ffc5ba12b41d":[18,0,71,4],
 "structKernelAnalysisInfo.html#a506429602ce3dcb008bec29f1b49c7c7":[18,0,71,9],
 "structKernelAnalysisInfo.html#a53f1be77bcb02dd6a6b7819b0e13748a":[18,0,71,0],
-"structKernelAnalysisInfo.html#a5536d59c7d94f94af084acd8ab52c399":[18,0,71,2],
-"structKernelAnalysisInfo.html#a59cea945a430f7f1d0b3eb319e223186":[18,0,71,5]
+"structKernelAnalysisInfo.html#a5536d59c7d94f94af084acd8ab52c399":[18,0,71,2]
 };
