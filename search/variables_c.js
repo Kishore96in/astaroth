@@ -21,6 +21,6 @@ var searchData=
   ['minuseq_5fstr_18',['MINUSEQ_STR',['../codegen_8c.html#a27b24ddb93e65fd72f3cb245ab345d67',1,'codegen.c']]],
   ['model_19',['model',['../structError.html#adfccb9f79211ac3ba36bfc2a58f91743',1,'Error']]],
   ['modeq_5fstr_20',['MODEQ_STR',['../codegen_8c.html#addb4aeb681a885a8fa54bfa2b3849191',1,'codegen.c']]],
-  ['mpi_5fdecomposition_5faxes_21',['mpi_decomposition_axes',['../decomposition_8cc.html#a5428f393bb3ce763c84f3abf78fcfa87',1,'MPI_DECOMPOSITION_AXES:&#160;decomposition.cc'],['../decomposition_2decomposition_8cc.html#a5428f393bb3ce763c84f3abf78fcfa87',1,'MPI_DECOMPOSITION_AXES:&#160;decomposition.cc']]],
+  ['mpi_5fdecomposition_5faxes_21',['MPI_DECOMPOSITION_AXES',['../decomposition_8cc.html#a5428f393bb3ce763c84f3abf78fcfa87',1,'decomposition.cc']]],
   ['mult_5fstr_22',['MULT_STR',['../codegen_8c.html#a8e5ed998e5f5fea3bed3448b36749beb',1,'codegen.c']]]
 ];

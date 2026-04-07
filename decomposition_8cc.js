@@ -1,5 +1,6 @@
 var decomposition_8cc =
 [
+    [ "ARRAY_SIZE", "decomposition_8cc.html#a6242a25f9d996f0cc4f4cdb911218b75", null ],
     [ "DECOMPOSITION_TYPE", "decomposition_8cc.html#a378b9d2546aed9f18feae29a44709800", null ],
     [ "DECOMPOSITION_TYPE_HIERARCHICAL", "decomposition_8cc.html#a43a9ad7ebe896b2c5212cfc690373eb5", null ],
     [ "DECOMPOSITION_TYPE_ZORDER", "decomposition_8cc.html#a8ac13401753da8163a0a9b08e58c59bb", null ],
@@ -11,7 +12,8 @@ var decomposition_8cc =
     [ "acGetHierarchicalPid3D", "decomposition_8cc.html#a45f72ad66795421a57e11bbf47121ccd", null ],
     [ "acGetPid", "decomposition_8cc.html#a3febae4b954afff54cdf691799db824f", null ],
     [ "acGetPid3D", "decomposition_8cc.html#a9c896ccd2e5be0c5f3cb100d09dd23ce", null ],
-    [ "acInitDecomposition", "decomposition_8cc.html#a3350a21e1754b89bc777a3504c095f7d", null ],
+    [ "acInitDecomposition", "decomposition_8cc.html#a21a68774f19fb04bdcd7a0cc53c4138f", null ],
+    [ "acQuitDecomposition", "decomposition_8cc.html#a174382bb269e9e804ec50d66932b8e9d", null ],
     [ "acVerifyDecomposition", "decomposition_8cc.html#a7c749c9ce7bf2f856aa9d3bf800ae152", null ],
     [ "compat_acDecompositionInit", "decomposition_8cc.html#a06578a839c00e5f0fbad579d35b7b43c", null ],
     [ "compat_acDecompositionQuit", "decomposition_8cc.html#a67e86817a6c8b4e89b46b349996f4f1b", null ],

@@ -13,8 +13,6 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "common.cc", "common_8cc.html", null ],
     [ "compute_steps.cc", "compute__steps_8cc.html", null ],
     [ "debug.cc", "debug_8cc.html", null ],
-    [ "decomposition.cc", "decomposition_8cc.html", "decomposition_8cc" ],
-    [ "decomposition.h", "decomposition_8h.html", "decomposition_8h" ],
     [ "device.cc", "device_8cc.html", "device_8cc" ],
     [ "empty.cc", "empty_8cc.html", null ],
     [ "grid.cc", "grid_8cc.html", null ],
