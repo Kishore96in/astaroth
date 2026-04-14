@@ -20,6 +20,7 @@ var acc_runtime_2built_in_2kernels_8h =
     [ "AC_VOLUME_COPY_COMPLEX_TO_REAL_BATCHED", "acc-runtime_2built-in_2kernels_8h.html#a9b68aa747d1f842169d10ae1639c3776", null ],
     [ "AC_VOLUME_COPY_FLOAT_TO_COMPLEX_FLOAT_BATCHED", "acc-runtime_2built-in_2kernels_8h.html#ac2579c1c9c5a9a48bee3d20b44cc6bf5", null ],
     [ "AC_VOLUME_COPY_REAL_TO_COMPLEX_BATCHED", "acc-runtime_2built-in_2kernels_8h.html#ae2d33f3ea7b6234e838e5451715fa800", null ],
+    [ "AC_VOLUME_COPY_REAL_TO_COMPLEX_FLOAT_BATCHED", "acc-runtime_2built-in_2kernels_8h.html#a9052567f9b8faf9ebbcce0badf76d457", null ],
     [ "BOUNDCOND_PERIODIC", "acc-runtime_2built-in_2kernels_8h.html#a30006e056b1a6abc2cc2bfca46b1a690", null ],
     [ "BOUNDCOND_PERIODIC_DEVICE", "acc-runtime_2built-in_2kernels_8h.html#a0ea1d682291942c5823d364bd374d83e", null ],
     [ "get_copy_indexes", "acc-runtime_2built-in_2kernels_8h.html#a5fdf2b930a2127c2c2ca674552841d18", null ]

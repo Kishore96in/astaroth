@@ -1,5 +1,8 @@
 var NAVTREEINDEX14 =
 {
+"pc__derivs_8h.html#a7f16283d002374281a1909f53c65234a":[19,0,0,5,21,36],
+"pc__derivs_8h.html#a85b9790e5a836b4f7694032a9cf209a0":[19,0,0,5,21,31],
+"pc__derivs_8h.html#a8bbc85874cf596ebd1e7b98a5a2a7840":[19,0,0,5,21,10],
 "pc__derivs_8h.html#a8e311b6014f7ec47b8e2e16fd17fc7ae":[19,0,0,5,21,58],
 "pc__derivs_8h.html#a98206283bc012d4ad55dc2d9bfbf88b8":[19,0,0,5,21,39],
 "pc__derivs_8h.html#a98c10eeb79ac83e5e928dc43469e15b7":[19,0,0,5,21,29],
@@ -121,6 +124,7 @@ var NAVTREEINDEX14 =
 "rocfft_8cc.html":[19,0,6,0,3,13],
 "rocfft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0":[19,0,6,0,3,13,12],
 "rocfft_8cc.html#a177bfe09122ac9cafccaf67e1c947194":[19,0,6,0,3,13,11],
+"rocfft_8cc.html#a1c2c5b25a17ec1d6d66250f11ba3400a":[19,0,6,0,3,13,16],
 "rocfft_8cc.html#a21875adbe4cd1dce358298978b232b66":[19,0,6,0,3,13,17],
 "rocfft_8cc.html#a33aad6469f85a23bfc62fa7a91bb1783":[19,0,6,0,3,13,24],
 "rocfft_8cc.html#a3a9619b5056d27652cf219935bd049e9":[19,0,6,0,3,13,23],
@@ -130,7 +134,6 @@ var NAVTREEINDEX14 =
 "rocfft_8cc.html#a4dd3485c2ad80497a38703c3c05b37bd":[19,0,6,0,3,13,3],
 "rocfft_8cc.html#a5444bd5aee82aa5e9c70f9d6cb73572b":[19,0,6,0,3,13,5],
 "rocfft_8cc.html#a5533a4e4ab7dc6cf5230063f6643fe33":[19,0,6,0,3,13,6],
-"rocfft_8cc.html#a5552601650346f7b9c62162dc7d74fbf":[19,0,6,0,3,13,16],
 "rocfft_8cc.html#a5b6e24381dd03553e89c1aa8fb441160":[19,0,6,0,3,13,15],
 "rocfft_8cc.html#a607d0ca4436f031fd7688992fc72044b":[19,0,6,0,3,13,21],
 "rocfft_8cc.html#a673332a536d85c3450c8c7ed9b799102":[19,0,6,0,3,13,18],
@@ -246,8 +249,5 @@ var NAVTREEINDEX14 =
 "smooth__max_8h.html#a2edd97ed808a130333f81f133e854cca":[19,0,0,5,27,63],
 "smooth__max_8h.html#a2f5487ae19dfbd41d7219852a7740559":[19,0,0,5,27,72],
 "smooth__max_8h.html#a2f58bb9a8fef2d6879037d4ba9d513e5":[19,0,0,5,27,189],
-"smooth__max_8h.html#a2f5bdb80f5ef032f3050013da942730e":[19,0,0,5,27,308],
-"smooth__max_8h.html#a2f62de2ec60e8716d3a29d35a50c8f23":[19,0,0,5,27,89],
-"smooth__max_8h.html#a312574a7dd1b3953493ef09b9e36af3e":[19,0,0,5,27,177],
-"smooth__max_8h.html#a320c34ee55fbc2e75ad4643d82ec02bc":[19,0,0,5,27,342]
+"smooth__max_8h.html#a2f5bdb80f5ef032f3050013da942730e":[19,0,0,5,27,308]
 };

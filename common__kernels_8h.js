@@ -11,6 +11,7 @@ var common__kernels_8h =
     [ "acKernelVolumeCopyFloatToComplexFloatBatched", "common__kernels_8h.html#a2e9ed2a83cdcab6bdd817aff18654138", null ],
     [ "acKernelVolumeCopyRealToComplex", "common__kernels_8h.html#a731d96d2a0a86628430c3ec776212e8d", null ],
     [ "acKernelVolumeCopyRealToComplexBatched", "common__kernels_8h.html#aea7320d2f4f089c793a5a9b89a4e2aa7", null ],
+    [ "acKernelVolumeCopyRealToComplexFloatBatched", "common__kernels_8h.html#a3e19c65b23e99ad6005f65a04ac591e8", null ],
     [ "acMultiplyInplace", "common__kernels_8h.html#aba44b2648ee0895316f7ccd04cbe0a56", null ],
     [ "acMultiplyInplaceComplex", "common__kernels_8h.html#a6e768249b8ca71756c400b32513b519d", null ],
     [ "acMultiplyInplaceComplexFloat", "common__kernels_8h.html#a683ac95153b00f5b56405fc52b5ad960", null ],
