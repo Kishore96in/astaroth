@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('acc-runtime_2acc_2ast_8h_source.html',
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>astnode_sprintf_postfix(<a class="code hl_struct" href="structastnode__s.html">ASTNode</a>* node, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, ...)</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>{</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab">buffer</a>[10000];</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab">buffer</a>[100000];</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    va_list args;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_function" href="vecs_8h.html#a25419a391fdd4ad7954699c58cfeb3b9">va_start</a>(args,format);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    vsprintf(<a class="code hl_variable" href="structastnode__s.html#a2f8d106918fdda474992ae9bccf6d8ab">buffer</a>, format, args);</div>
