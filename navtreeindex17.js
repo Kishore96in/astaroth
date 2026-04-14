@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[18,0,2,0],
+"structAcBuffer.html":[18,0,3],
+"structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[18,0,3,2],
+"structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2":[18,0,3,0],
 "structAcBuffer.html#aafd050926056760dc16fa401cbccbcb6":[18,0,3,1],
 "structAcBuffer.html#ae17f78dcfb357a8321e940dc32fb4010":[18,0,3,3],
 "structAcCommunicator.html":[18,0,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "structKernelAnalysisInfo.html#ab0702a43e0b53fbbaffb855ee583d6c6":[18,0,74,1],
 "structKernelAnalysisInfo.html#ab9af027c0f27d582bbaa5b22880b4c20":[18,0,74,12],
 "structKernelAnalysisInfo.html#ac18d977e81d7c26f26e14c562d27761c":[18,0,74,7],
-"structKernelAnalysisInfo.html#ae0cd112e3a05a4765fe28b4ebc6c8ee1":[18,0,74,11],
-"structKernelAnalysisInfo.html#af464f5fdded35124c64474f6f57c6bd2":[18,0,74,6],
-"structKernelConfig.html":[18,0,75],
-"structKernelConfig.html#a740ae9dcaa850d79a41a764fdbbcb3ec":[18,0,75,3],
-"structKernelConfig.html#a78db35b52d4dcc54ad835cffd900a189":[18,0,75,4]
+"structKernelAnalysisInfo.html#ae0cd112e3a05a4765fe28b4ebc6c8ee1":[18,0,74,11]
 };

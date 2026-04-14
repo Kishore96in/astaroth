@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"device_8cc.html#ab4aed04345fe55f1e97134f692a116a7":[19,0,6,0,13,82],
+"device_8cc.html#ab7ad307a052a65bc71a3ae170628e3f3":[19,0,6,0,13,60],
+"device_8cc.html#ab7f03364405548fe3ebb9e00299b0d2a":[19,0,6,0,13,66],
+"device_8cc.html#ac1eacbd20e35772396e3ac511fd1aa02":[19,0,6,0,13,54],
 "device_8cc.html#ac2b72cffdc48c4bb0e75beb4600aa15f":[19,0,6,0,13,64],
 "device_8cc.html#ac46e93d02dc53671b354b7ea985cfbc6":[19,0,6,0,13,61],
 "device_8cc.html#ac6c3c37bf5db17e7f52f35796711a024":[19,0,6,0,13,72],
@@ -179,8 +183,8 @@ var NAVTREEINDEX8 =
 "func__define_8h.html#a4c5307d09a6e1193c9df6c7632265b3b":[19,0,4,20,2],
 "func__define_8h.html#add738453ca233fa9a21ec46f6b3380b4":[19,0,4,20,1],
 "func__define_8h_source.html":[19,0,4,20],
-"functions.html":[18,3,0],
 "functions.html":[18,3,0,0],
+"functions.html":[18,3,0],
 "functions_8h.html":[19,0,0,2,0],
 "functions_8h.html#a44810f64ccc8069337bae2cdabf317fc":[19,0,0,2,0,0],
 "functions_8h.html#aa03a13bac25b123fa92448a24ad9ee53":[19,0,0,2,0,1],
@@ -241,13 +245,9 @@ var NAVTREEINDEX8 =
 "general__derivs_8h.html":[19,0,0,5,11],
 "general__derivs_8h.html#a06e40482f31a63e2ce66b2d036e9b005":[19,0,0,5,11,23],
 "general__derivs_8h.html#a07e4e3ee13a1969e5d7f9f67842c73ba":[19,0,0,5,11,14],
-"general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,11,49],
 "general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,11,50],
+"general__derivs_8h.html#a0849ef13f48216a94db94b7c8015cea7":[19,0,0,5,11,49],
 "general__derivs_8h.html#a08a153103580544909f8a020f9603608":[19,0,0,5,11,19],
 "general__derivs_8h.html#a0b0546f4dcff8a79316574c4c3b7bd84":[19,0,0,5,11,59],
-"general__derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[19,0,0,5,11,28],
-"general__derivs_8h.html#a1ea89cadcd1d90487eeef84bee2ee0c2":[19,0,0,5,11,56],
-"general__derivs_8h.html#a20a572dbe1ac8d4db589984d3828d7b6":[19,0,0,5,11,31],
-"general__derivs_8h.html#a24990b016a846112333af562a264df3a":[19,0,0,5,11,27],
-"general__derivs_8h.html#a268b58af4d9e73a3c425e8421dfd8a58":[19,0,0,5,11,16]
+"general__derivs_8h.html#a0fc38a8e138a600a1d31fa18e9e46684":[19,0,0,5,11,28]
 };

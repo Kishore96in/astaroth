@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"matplotlibcpp_8h.html#a2f48d08907cd16a6310191719c51a4d8":[19,0,8,33,0,1,96],
+"matplotlibcpp_8h.html#a2fc05d3a606ce68e7a72c9e4ed7f3556":[19,0,8,33,0,1,77],
+"matplotlibcpp_8h.html#a34e6ea8c8ee6779fe909ecac2ef945c8":[19,0,8,33,0,1,33],
+"matplotlibcpp_8h.html#a3917f5113dcefbf8f6dc1f04e8196ca1":[19,0,8,33,0,1,62],
 "matplotlibcpp_8h.html#a3df1b1d037e54f3ae5d1d7c89342099a":[19,0,8,33,0,1,73],
 "matplotlibcpp_8h.html#a40ac4e0d416fad21899637dcf8d281c6":[19,0,8,33,0,1,82],
 "matplotlibcpp_8h.html#a44ccb9a7b34bc240b8cc8b3095dd8537":[19,0,8,33,0,1,31],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "modelsolver-legacy-do-not-modify_8c.html#ad5991be9890435175b9f00f6b2e02a38":[19,0,6,1,7,0],
 "modelsolver_8cc.html":[19,0,6,1,8],
 "modelsolver_8cc.html#ad5991be9890435175b9f00f6b2e02a38":[19,0,6,1,8,0],
-"mpi-profile-reduce_2main_8cc.html":[19,0,8,17,0],
-"mpi-profile-reduce_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,17,0,0],
-"multigrid-tests_2anisotropic-test_2main_8cc.html":[19,0,8,18,0,0],
-"multigrid-tests_2anisotropic-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,18,0,0,0],
-"multigrid-tests_2compact-stencil-multigrid-test_2main_8cc.html":[19,0,8,18,1,0]
+"mpi-profile-reduce_2main_8cc.html":[19,0,8,17,0]
 };

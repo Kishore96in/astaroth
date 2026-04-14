@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"smooth__max_8h.html#ae687d8d2a1d0d69698aba5af8f54deb0":[19,0,0,5,27,120],
+"smooth__max_8h.html#ae6aed7ca3816e7ab06b4ff1ad23593d8":[19,0,0,5,27,311],
+"smooth__max_8h.html#ae700ac55d6f7afa0a7443ecebb4ffac9":[19,0,0,5,27,59],
+"smooth__max_8h.html#ae7cc02eb9ecacd4f7d06e061228644d0":[19,0,0,5,27,172],
 "smooth__max_8h.html#ae7f0d14093676784f156e15cbedaf830":[19,0,0,5,27,251],
 "smooth__max_8h.html#ae80d9f6b681616497e64bb5861808c28":[19,0,0,5,27,294],
 "smooth__max_8h.html#ae89f6a733fc7f0d8d7f3e88f61c1ebc2":[19,0,0,5,27,296],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "string__vec_8h.html#adf95ace7802cdf5762874c7d32d23523":[19,0,0,0,15,1],
 "string__vec_8h_source.html":[19,0,0,0,15],
 "structAcAutotuneMeasurement.html":[18,0,2],
-"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[18,0,2,1],
-"structAcAutotuneMeasurement.html#afa596f4b367cd5ad741ea97b451b9907":[18,0,2,0],
-"structAcBuffer.html":[18,0,3],
-"structAcBuffer.html#a1ddc5a4c224b1f0db7a043f5e599a461":[18,0,3,2],
-"structAcBuffer.html#a3552824cd24be3e30b6e6fdb97733fb2":[18,0,3,0]
+"structAcAutotuneMeasurement.html#aa766bdc21a35a06a5ede906a379272ba":[18,0,2,1]
 };
