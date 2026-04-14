@@ -884,6 +884,8 @@ Functions</h2></td></tr>
 <tr class="separator:aea114774e4098f47fd448a90f4e42605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaed83b46f533a33f006158cf4b2d5594" id="r_aaed83b46f533a33f006158cf4b2d5594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#aaed83b46f533a33f006158cf4b2d5594">add_casts</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node)</td></tr>
 <tr class="separator:aaed83b46f533a33f006158cf4b2d5594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b2c100fd8bb9108222c8c7cd2dc9f3" id="r_a73b2c100fd8bb9108222c8c7cd2dc9f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a73b2c100fd8bb9108222c8c7cd2dc9f3">process_precision</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *node, const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>)</td></tr>
+<tr class="separator:a73b2c100fd8bb9108222c8c7cd2dc9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561193739431ed5768e1984dae617968" id="r_a561193739431ed5768e1984dae617968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a561193739431ed5768e1984dae617968">preprocess</a> (<a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>, const bool optimize_input_params)</td></tr>
 <tr class="separator:a561193739431ed5768e1984dae617968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032ef32d36b37682250081946283ef78" id="r_a032ef32d36b37682250081946283ef78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a032ef32d36b37682250081946283ef78">gen_kfunc_info</a> (const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *<a class="el" href="deprecated_2acc-2_84_2src_2ast_8h.html#a03ab8730e4c872096325c1cc1c12fcab">root</a>)</td></tr>
@@ -1055,6 +1057,8 @@ Variables</h2></td></tr>
 <tr class="separator:a3d638d989fb36c0137b929fe9557eb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d9a1f1df1c44103f21edcbb9e1a4a6" id="r_a94d9a1f1df1c44103f21edcbb9e1a4a6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a94d9a1f1df1c44103f21edcbb9e1a4a6">SINGLE_PRECISION_STR</a></td></tr>
 <tr class="separator:a94d9a1f1df1c44103f21edcbb9e1a4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf22a4eca64d44ce22ee9136168506e7" id="r_acf22a4eca64d44ce22ee9136168506e7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#acf22a4eca64d44ce22ee9136168506e7">PRECISION_STR</a></td></tr>
+<tr class="separator:acf22a4eca64d44ce22ee9136168506e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa4dacdb2a3fce8f9200f2885f8202b" id="r_afaa4dacdb2a3fce8f9200f2885f8202b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#afaa4dacdb2a3fce8f9200f2885f8202b">HALF_PRECISION_STR</a></td></tr>
 <tr class="separator:afaa4dacdb2a3fce8f9200f2885f8202b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ce457f1c8a9549b4018915ae9c3bd3" id="r_a96ce457f1c8a9549b4018915ae9c3bd3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codegen_8c.html#a96ce457f1c8a9549b4018915ae9c3bd3">HALF_STR</a></td></tr>
@@ -9484,6 +9488,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a73b2c100fd8bb9108222c8c7cd2dc9f3" name="a73b2c100fd8bb9108222c8c7cd2dc9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b2c100fd8bb9108222c8c7cd2dc9f3">&#9670;&#160;</a></span>process_precision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void process_precision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="acc-runtime_2acc_2ast_8h.html#a58b6658d22dcc357b57be73b62c80b91">ASTNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6e1303761fc7d3581953eec942a83370" name="a6e1303761fc7d3581953eec942a83370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e1303761fc7d3581953eec942a83370">&#9670;&#160;</a></span>propagate_array_info()</h2>
 
@@ -12417,6 +12449,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const char* PLUS_STR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf22a4eca64d44ce22ee9136168506e7" name="acf22a4eca64d44ce22ee9136168506e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf22a4eca64d44ce22ee9136168506e7">&#9670;&#160;</a></span>PRECISION_STR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* PRECISION_STR</td>
         </tr>
       </table>
   </td>
