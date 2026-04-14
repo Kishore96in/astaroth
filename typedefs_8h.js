@@ -8,6 +8,7 @@ var typedefs_8h =
     [ "real5", "structreal5.html", "structreal5" ],
     [ "real_symmetric_tensor", "structreal__symmetric__tensor.html", "structreal__symmetric__tensor" ],
     [ "complex", "structcomplex.html", "structcomplex" ],
+    [ "complex_float", "structcomplex__float.html", "structcomplex__float" ],
     [ "bool3", "structbool3.html", "structbool3" ],
     [ "Field2", "structField2.html", "structField2" ],
     [ "Field3", "structField3.html", "structField3" ],

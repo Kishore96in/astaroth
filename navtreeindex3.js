@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"astaroth__helpers_8h.html":[19,0,4,11],
+"astaroth__helpers_8h.html#a0137535945ad81ba9697ae1d4a12ab0f":[19,0,4,11,2],
+"astaroth__helpers_8h.html#a0bb890b1f9749415ac81479ec25ed342":[19,0,4,11,13],
 "astaroth__helpers_8h.html#a1385210b7f14dd76bd612251ad036547":[19,0,4,11,17],
 "astaroth__helpers_8h.html#a24644b8d1d7d2f5faaf49a540146395a":[19,0,4,11,16],
 "astaroth__helpers_8h.html#a4486ef0b22ffe2dfd5efd0d8c377632d":[19,0,4,11,18],
@@ -238,16 +241,13 @@ var NAVTREEINDEX3 =
 "cg-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,7,0,0],
 "cg_8h.html":[19,0,0,5,7],
 "cg_8h_source.html":[19,0,0,5,7],
-"classBoundaryConditionTask.html":[18,0,38],
-"classBoundaryConditionTask.html#a1e2942aa7d0f36205fce53d309b346e8":[18,0,38,3],
-"classBoundaryConditionTask.html#a436993de9286acdbd39ab3bc697f823c":[18,0,38,0],
-"classBoundaryConditionTask.html#a73fa49407a498c7686854c9c6e619b9f":[18,0,38,1],
-"classBoundaryConditionTask.html#ae41c53ea76444134d60b6cc2b991d14a":[18,0,38,2],
-"classComputeTask.html":[18,0,43],
-"classComputeTask.html#a24c696cd4577531a0113ad84347c26d2":[18,0,43,10],
-"classComputeTask.html#a2d99a6cb5f6f7137566c0cce8b5a550f":[18,0,43,7],
-"classComputeTask.html#a39634a7772963a0ab8e588d051ace52e":[18,0,43,3],
-"classComputeTask.html#a7371e943795da5b7bfc3458f44fdfde7":[18,0,43,9],
-"classComputeTask.html#a8b98ee78eaf9450c2750088192f312a7":[18,0,43,2],
-"classComputeTask.html#aa62c6fa4a048067cc89b6d6f8e1db70b":[18,0,43,8]
+"classBoundaryConditionTask.html":[18,0,40],
+"classBoundaryConditionTask.html#a1e2942aa7d0f36205fce53d309b346e8":[18,0,40,3],
+"classBoundaryConditionTask.html#a436993de9286acdbd39ab3bc697f823c":[18,0,40,0],
+"classBoundaryConditionTask.html#a73fa49407a498c7686854c9c6e619b9f":[18,0,40,1],
+"classBoundaryConditionTask.html#ae41c53ea76444134d60b6cc2b991d14a":[18,0,40,2],
+"classComputeTask.html":[18,0,46],
+"classComputeTask.html#a24c696cd4577531a0113ad84347c26d2":[18,0,46,10],
+"classComputeTask.html#a2d99a6cb5f6f7137566c0cce8b5a550f":[18,0,46,7],
+"classComputeTask.html#a39634a7772963a0ab8e588d051ace52e":[18,0,46,3]
 };

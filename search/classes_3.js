@@ -5,6 +5,7 @@ var searchData=
   ['combinatorial_5fparams_2',['combinatorial_params',['../structcombinatorial__params.html',1,'']]],
   ['combinatorial_5fparams_5finfo_3',['combinatorial_params_info',['../structcombinatorial__params__info.html',1,'']]],
   ['complex_4',['complex',['../structcomplex.html',1,'']]],
-  ['computetask_5',['ComputeTask',['../classComputeTask.html',1,'']]],
-  ['crossproductinputs_6',['CrossProductInputs',['../structCrossProductInputs.html',1,'']]]
+  ['complex_5ffloat_5',['complex_float',['../structcomplex__float.html',1,'']]],
+  ['computetask_6',['ComputeTask',['../classComputeTask.html',1,'']]],
+  ['crossproductinputs_7',['CrossProductInputs',['../structCrossProductInputs.html',1,'']]]
 ];

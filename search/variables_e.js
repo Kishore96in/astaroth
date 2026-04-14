@@ -5,7 +5,7 @@ var searchData=
   ['op_2',['op',['../structKernelReduceOutput.html#a600cf0ff1e95354f5c36810ee41b22bc',1,'KernelReduceOutput']]],
   ['options_3',['options',['../structuser__enums__info.html#a2f8186ad918711d7547c00d27ff7d54b',1,'user_enums_info::options'],['../structcombinatorial__params.html#a89e5f76ef2837ea519e92145276df160',1,'combinatorial_params::options']]],
   ['order_4',['order',['../classTask.html#ad5897b98705092ab9361fe7c9ff85432',1,'Task']]],
-  ['out_5',['out',['../structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b',1,'DeviceVertexBufferArray::out'],['../structAcComplexInAndOut.html#a66da07711fe6d29e45b90c86194c9ca1',1,'AcComplexInAndOut::out'],['../structProfileBufferArray.html#a39a6580c56488486a1e3fdf7b5a5d60d',1,'ProfileBufferArray::out'],['../structbc__fields.html#aae50521e8e21bdc6b2c10cc126826230',1,'bc_fields::out']]],
+  ['out_5',['out',['../structAcComplexInAndOut.html#a66da07711fe6d29e45b90c86194c9ca1',1,'AcComplexInAndOut::out'],['../structAcComplexFloatInAndOut.html#a201e4eb1e282a52b93b37913d9386887',1,'AcComplexFloatInAndOut::out'],['../structDeviceVertexBufferArray.html#afaba352da106f6508afeb6b30a93760b',1,'DeviceVertexBufferArray::out'],['../structProfileBufferArray.html#a39a6580c56488486a1e3fdf7b5a5d60d',1,'ProfileBufferArray::out'],['../structbc__fields.html#aae50521e8e21bdc6b2c10cc126826230',1,'bc_fields::out']]],
   ['out_5findex_6',['out_index',['../structin__and__out__indexes.html#aec8a4108084d6e785953636c68feb2d0',1,'in_and_out_indexes']]],
   ['output_7',['output',['../structdevice__s.html#a2cde532c15cf8198d184888276da48a0',1,'device_s']]],
   ['output_5fregion_8',['output_region',['../classTask.html#a90d9243f554ec70b7767629680937cb1',1,'Task']]],
