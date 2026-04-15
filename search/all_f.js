@@ -31,7 +31,7 @@ var searchData=
   ['eval_5fconditionals_5fin_5ffunc_28',['eval_conditionals_in_func',['../codegen_8c.html#ae86a84804d6d2fbe1c9cee1a04c9f323',1,'codegen.c']]],
   ['eval_5fint_5fcomparisons_29',['eval_int_comparisons',['../codegen_8c.html#a679a18a2c1ee77a617bd4339fb249fa2',1,'codegen.c']]],
   ['eval_5freal_5fcomparisons_30',['eval_real_comparisons',['../codegen_8c.html#a63604137d0adc764cd505e18886aaddc',1,'codegen.c']]],
-  ['example_20template_31',['Simple example template',['../index.html#autotoc_md169',1,'']]],
+  ['example_20template_31',['Simple example template',['../index.html#autotoc_md178',1,'']]],
   ['example_3a_32',['example:',['../md_CONTRIBUTING.html#autotoc_md103',1,'Header example:'],['../md_CONTRIBUTING.html#autotoc_md104',1,'Source example:']]],
   ['exchange_33',['exchange',['../classHaloExchangeTask.html#aaa6bd25acd324fa8d8b879d1af72604c',1,'HaloExchangeTask']]],
   ['exchange_5finput_34',['Exchange_input',['../task_8h.html#a68645f369252eb31bc1d60eceaad6c44a1182ffae3c196b98daf984443b6c4722',1,'task.h']]],

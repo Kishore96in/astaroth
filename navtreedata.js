@@ -171,24 +171,24 @@ var NAVTREE =
     ] ],
     [ "GNU GENERAL PUBLIC LICENSE", "md_LICENCE.html", null ],
     [ "Pilot run notes and instructions", "md_pilot_2README.html", [
-      [ "Important files:", "md_pilot_2README.html#autotoc_md160", null ],
-      [ "Issues", "md_pilot_2README.html#autotoc_md161", null ],
-      [ "Manual workflow without scripts (see <tt>scripts/gen_rundir.sh</tt> for automating parts of this)", "md_pilot_2README.html#autotoc_md162", null ],
-      [ "Helper scripts", "md_pilot_2README.html#autotoc_md163", null ]
+      [ "Important files:", "md_pilot_2README.html#autotoc_md169", null ],
+      [ "Issues", "md_pilot_2README.html#autotoc_md170", null ],
+      [ "Manual workflow without scripts (see <tt>scripts/gen_rundir.sh</tt> for automating parts of this)", "md_pilot_2README.html#autotoc_md171", null ],
+      [ "Helper scripts", "md_pilot_2README.html#autotoc_md172", null ]
     ] ],
     [ "contrib/", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html", [
-      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md181", [
-        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md182", null ]
+      [ "Windows support", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md190", [
+        [ "Configuring and Building Samples", "md_test_2walker-test_2matplotlib-cpp_2contrib_2README.html#autotoc_md191", null ]
       ] ]
     ] ],
     [ "matplotlib-cpp", "md_test_2walker-test_2matplotlib-cpp_2README.html", [
-      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md183", null ],
-      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md184", null ],
-      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md185", null ],
-      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md186", null ],
-      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md187", [
-        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md188", null ],
-        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md189", null ]
+      [ "Usage", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md192", null ],
+      [ "Installation", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md193", null ],
+      [ "CMake", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md194", null ],
+      [ "Vcpkg", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md195", null ],
+      [ "C++11", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md196", [
+        [ "Why?", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md197", null ],
+        [ "Todo/Issues/Wishlist", "md_test_2walker-test_2matplotlib-cpp_2README.html#autotoc_md198", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
