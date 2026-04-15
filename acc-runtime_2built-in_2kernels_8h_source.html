@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('acc-runtime_2built-in_2kernels_8h_sour
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> idx_out = indexes.out_index + i*out_size;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> idx_in  = indexes.in_index + i*in_size;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        out[idx_out].<a class="code hl_variable" href="structcomplex__float.html#a8383d8a412ab161297ba32833194825c">x</a> = src[idx_in];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        out[idx_out].<a class="code hl_variable" href="structcomplex__float.html#a8383d8a412ab161297ba32833194825c">x</a> = float(src[idx_in]);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        out[idx_out].<a class="code hl_variable" href="structcomplex__float.html#a1bc3227bae87757cffaf1bc5e6590097">y</a> = 0.0;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
