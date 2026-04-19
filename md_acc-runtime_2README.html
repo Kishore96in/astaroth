@@ -230,10 +230,13 @@ Advanced</h3>
 <p>&zwj;Note: one can combine these to have communicated auxiliary <code>Fields</code>, without <code>communicated</code>, <code>auxiliary</code> <code>Fields</code> are not communicated. </p>
 </blockquote>
 <ul>
-<li><code>dead</code> Tells the variable is not used and thus should not be allocated. Works for arrays and <code>Fields</code>. Passing a dead <code>Field</code> to API functions is a no-op with an appropriate error code. Intented for memory optimization where the compiler infers which <code>Fields</code> or arrays do not need to be allocated based on the computation.</li>
+<li><code>dead</code> Tells the variable is not used and thus should not be allocated. Works for arrays and <code>Fields</code>. Passing a dead <code>Field</code> to API functions is a no-op with an appropriate error code. Intented for memory optimization where the compiler infers which <code>Fields</code> or arrays do not need to be allocated based on the computation. Or in other words, the compiler is intended to infer these qualifiers and not primarily intended to be supplied by the user.</li>
 </ul>
 <p>The DSL compiler can also infer these qualifiers if OPTIMIZE_FIELDS=ON from <code>write</code>, <code>value</code> and <code>Stencil</code> calls. Additionally the DSL compiler can infer which <code>Fields</code> can be <code>dead</code> if you also have ALLOW_DEAD_FIELDS=ON <b>Important</b> requires that all conditionals are known at compile-time (or when loading Astaroth if using runtime compilation).</p>
 <ul>
+<li><code>single_precision</code> Tells that <code>Fields</code> are supposed to be stored in single precision, independent of the default real precision.</li>
+<li><code>half_precision</code> Tells that <code>Fields</code> are supposed to be stored in half precision, independent of the default real precision.</li>
+<li><code>precision</code> More dynamic qualifier that combines the previous two. Takes as an input argument <code>run_const</code> <code>AcPrecision</code> enum telling which precision to use, thus enabling to choose the wanted precision at runtime.</li>
 <li><code>input</code> Designed for variables that are input parameters to Kernels, but should not be allocated/loaded to the GPU. Or for control variables that should only live on the host. (Renaming the qualifier to <code>host</code> is under consideration.) <blockquote class="doxtable">
 <p>&zwj;Note: At the moment, can be used only via <code>ComputeSteps</code>. See the section describing <code>ComputeSteps</code> for example usage. </p>
 </blockquote>
