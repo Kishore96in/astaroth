@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('math_2funcs_8h_source.html',''); initR
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">   41</a></span><a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(real val, real set_sign)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(val)*(set_sign &lt; 0.0 ? -1.0 : 1.0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(val)*(1.0-2.0*(set_sign &lt; 0.0));</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>

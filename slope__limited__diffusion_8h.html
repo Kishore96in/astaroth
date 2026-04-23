@@ -163,6 +163,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>sld_read(Field f, int x_offset, int y_offset, int z_offset) { return f[vertexIdx.x+x_offset][vertexIdx.y+y_offset][vertexIdx.z+z_offset] }</p>
+<p><a class="el" href="slope__limited__diffusion_8h.html#a7bb717734dc778629cfecd407dd2e946">sld_diff_left_left(Field f)</a> { return sld_read(f,-1,0,0)-sld_read(f,-2,0,0) } sld_diff_left(Field f) { return sld_read(f,+0,0,0)-sld_read(f,-1,0,0) } sld_add_left(Field f) { return sld_read(f,+0,0,0)+sld_read(f,-1,0,0) } sld_diff_right(Field f) { return sld_read(f,+1,0,0)-sld_read(f,-0,0,0) } sld_diff_right_right(Field f) { return sld_read(f,+2,0,0)-sld_read(f,+1,0,0) } sld_add_right(Field f) { return sld_read(f,+1,0,0)+sld_read(f,-0,0,0) }</p>
+<p>exp_skip(real x) {return <a class="el" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp(x)</a>}</p>
+<p>sld_diff_left_left_exp(Field f) { return exp(sld_read(f,-1,0,0))-exp(sld_read(f,-2,0,0)) } sld_diff_left_exp(Field f) { return exp(sld_read(f,+0,0,0))-exp(sld_read(f,-1,0,0)) } sld_add_left_exp(Field f) { return exp(sld_read(f,+0,0,0))+exp(sld_read(f,-1,0,0)) } sld_diff_right_exp(Field f) { return exp(sld_read(f,+1,0,0))-exp(sld_read(f,-0,0,0)) } sld_add_right_exp(Field f) { return exp(sld_read(f,+1,0,0))+exp(sld_read(f,-0,0,0)) } sld_diff_right_right_exp(Field f) { return exp(sld_read(f,+2,0,0))-exp(sld_read(f,+1,0,0)) }</p>
+<p>sld_diff_down_down(Field f) { return sld_read(f,0,-1,0)-sld_read(f,0,-2,0) } sld_diff_down(Field f) { return sld_read(f,0,+0,0)-sld_read(f,0,-1,0) } sld_add_down(Field f) { return sld_read(f,0,+0,0)+sld_read(f,0,-1,0) } sld_diff_up(Field f) { return sld_read(f,0,+1,0)-sld_read(f,0,-0,0) } sld_diff_up_up(Field f) { return sld_read(f,0,+2,0)-sld_read(f,0,+1,0) } sld_add_up(Field f) { return sld_read(f,0,+1,0)+sld_read(f,0,-0,0) }</p>
+<p>sld_diff_down_down_exp(Field f) { return exp(sld_read(f,0,-1,0))-exp(sld_read(f,0,-2,0)) } sld_diff_down_exp(Field f) { return exp(sld_read(f,0,+0,0))-exp(sld_read(f,0,-1,0)) } sld_add_down_exp(Field f) { return exp(sld_read(f,0,+0,0))+exp(sld_read(f,0,-1,0)) } sld_diff_up_exp(Field f) { return exp(sld_read(f,0,+1,0))-exp(sld_read(f,0,-0,0)) } sld_diff_up_up_exp(Field f) { return exp(sld_read(f,0,+2,0))-exp(sld_read(f,0,+1,0)) } sld_add_up_exp(Field f) { return exp(sld_read(f,0,+1,0))+exp(sld_read(f,0,-0,0)) }</p>
+<p>sld_diff_back_back(Field f) { return sld_read(f,0,0,-1)-sld_read(f,0,0,-2) } sld_diff_back(Field f) { return sld_read(f,0,0,+0)-sld_read(f,0,0,-1) } sld_add_back(Field f) { return sld_read(f,0,0,+0)+sld_read(f,0,0,-1) } sld_diff_front(Field f) { return sld_read(f,0,0,+1)-sld_read(f,0,0,-0) } sld_diff_front_front(Field f) { return sld_read(f,0,0,+2)-sld_read(f,0,0,+1) } sld_add_front(Field f) { return sld_read(f,0,0,+1)+sld_read(f,0,0,-0) }</p>
+<p>sld_diff_back_back_exp(Field f) { return exp(sld_read(f,0,0,-1))-exp(sld_read(f,0,0,-2)) } sld_diff_back_exp(Field f) { return exp(sld_read(f,0,0,+0))-exp(sld_read(f,0,0,-1)) } sld_add_back_exp(Field f) { return exp(sld_read(f,0,0,+0))+exp(sld_read(f,0,0,-1)) } sld_diff_front_exp(Field f) { return exp(sld_read(f,0,0,+1))-exp(sld_read(f,0,0,-0)) } sld_diff_front_front_exp(Field f) { return exp(sld_read(f,0,0,+2))-exp(sld_read(f,0,0,+1)) } sld_add_front_exp(Field f) { return exp(sld_read(f,0,0,+1))+exp(sld_read(f,0,0,-0)) }</p>
+<p>sld_get_left(Field f) { return sld_read(f,-1,0,0) }</p>
+<p>sld_get_right(Field f) { return sld_read(f,+1,0,0) }</p>
+<p>sld_get_left_exp(Field f) { return exp(sld_read(f,-1,0,0)) }</p>
+<p>sld_get_right_exp(Field f) { return exp(sld_read(f,+1,0,0)) }</p>
+<p>sld_get_down(Field f) { return sld_read(f,0,-1,0) }</p>
+<p>sld_get_up(Field f) { return sld_read(f,0,+1,0) }</p>
+<p>sld_get_down_exp(Field f) { return exp(sld_read(f,0,-1,0)) }</p>
+<p>sld_get_up_exp(Field f) { return exp(sld_read(f,0,+1,0)) }</p>
+<p>sld_get_back(Field f) { return sld_read(f,0,0,-1) }</p>
+<p>sld_get_front(Field f) { return sld_read(f,0,0,+1) }</p>
+<p>sld_get_back_exp(Field f) { return exp(sld_read(f,0,0,-1)) }</p>
+<p>sld_get_front_exp(Field f) { return exp(sld_read(f,0,0,+1)) } </p>
 
 </div>
 </div>
