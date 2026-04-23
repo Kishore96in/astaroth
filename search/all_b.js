@@ -756,7 +756,7 @@ var searchData=
   ['acverifymeshcompdomain_753',['acVerifyMeshCompDomain',['../verification_8cc.html#a6805566dfb61774edf1e7919dcf0f493',1,'verification.cc']]],
   ['acverifymeshinfo_754',['acVerifyMeshInfo',['../acc__runtime_8cu.html#a8c8be022c31af8d84f970bd12495f5d6',1,'acc_runtime.cu']]],
   ['acverifymeshwithmaximumerror_755',['acVerifyMeshWithMaximumError',['../verification_8cc.html#a7658c8ba71d8dd3261ced859e90edf49',1,'verification.cc']]],
-  ['add_5fall_5fidentifiers_756',['add_all_identifiers',['../codegen_8c.html#a3cf4b5a7776dd13b48aadad9232bbdd2',1,'codegen.c']]],
+  ['add_5fall_5fvariables_756',['add_all_variables',['../codegen_8c.html#a42be6c3e49212e645526ffdef4aa0ad4',1,'codegen.c']]],
   ['add_5fassignment_757',['add_assignment',['../codegen_8c.html#a27a9fc8bceaeca6016ecd4dcd69ad97f',1,'codegen.c']]],
   ['add_5fauto_758',['add_auto',['../codegen_8c.html#aaa014acc127a616aea96fb5dad6d17ea',1,'codegen.c']]],
   ['add_5fcasts_759',['add_casts',['../codegen_8c.html#aaed83b46f533a33f006158cf4b2d5594',1,'codegen.c']]],
