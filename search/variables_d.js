@@ -8,7 +8,7 @@ var searchData=
   ['n_5freduce_5finputs_5',['n_reduce_inputs',['../structKernelAnalysisInfo.html#ab0702a43e0b53fbbaffb855ee583d6c6',1,'KernelAnalysisInfo']]],
   ['n_5freduce_5foutputs_6',['n_reduce_outputs',['../structKernelAnalysisInfo.html#a5536d59c7d94f94af084acd8ab52c399',1,'KernelAnalysisInfo']]],
   ['name_7',['name',['../structarray__info.html#a6990b5ca1cf6f95974ba7a6a9b9f3638',1,'array_info::name'],['../structvariable.html#a35e346f7a550e28c993d5ddabd899f86',1,'variable::name'],['../structte__variable.html#a94cf978c87b0c7da037d9cb70fd29987',1,'te_variable::name'],['../structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a',1,'AcReduction::name'],['../classTask.html#a442a9a7a998c24b533b25575f6edeb3f',1,'Task::name']]],
-  ['names_8',['names',['../structdfunc__possibilities.html#a9bb6154634417b7b04f7fe2263101757',1,'dfunc_possibilities::names'],['../structcombinatorial__params.html#a84b97fb85ff3b3b9e7604cec94a51644',1,'combinatorial_params::names'],['../structfuncs__calling__info.html#af8e869d2a12d3cb3012222b918c6f71f',1,'funcs_calling_info::names'],['../structoverloaded__dfuncs.html#a01c864f0f10b707bd6e5581efd27f09c',1,'overloaded_dfuncs::names'],['../structuser__enums__info.html#a2135c65e5a4757c0d43195405d73bc84',1,'user_enums_info::names']]],
+  ['names_8',['names',['../structoverloaded__dfuncs.html#a01c864f0f10b707bd6e5581efd27f09c',1,'overloaded_dfuncs::names'],['../structfuncs__calling__info.html#af8e869d2a12d3cb3012222b918c6f71f',1,'funcs_calling_info::names'],['../structuser__enums__info.html#a2135c65e5a4757c0d43195405d73bc84',1,'user_enums_info::names'],['../structcombinatorial__params.html#a84b97fb85ff3b3b9e7604cec94a51644',1,'combinatorial_params::names'],['../structdfunc__possibilities.html#a9bb6154634417b7b04f7fe2263101757',1,'dfunc_possibilities::names']]],
   ['ndims_9',['ndims',['../structAcDecompositionInfo.html#a527d5e0539e1c10a0d3ba79218f334dd',1,'AcDecompositionInfo::ndims'],['../structkiss__fftnd__state.html#a4d2c3adb6a9a4a70c0fb5b29d4297819',1,'kiss_fftnd_state::ndims']]],
   ['neq_5fstr_10',['NEQ_STR',['../codegen_8c.html#a36a2da0946e4c5ee973e32c98848264a',1,'codegen.c']]],
   ['new_5fqualifier_11',['new_qualifier',['../acc-runtime_2acc_2ast_8h.html#a08187fcca9bba11b127584ec4e70318a',1,'ast.h']]],
@@ -17,9 +17,10 @@ var searchData=
   ['nlayers_14',['nlayers',['../structAcDecompositionInfo.html#aa46463b0f2d8fc9f56e730c554e824d8',1,'AcDecompositionInfo']]],
   ['nn_15',['nn',['../structAcGridInfo.html#aa64b4a5ffc1f0602038d1ac0a4b01f71',1,'AcGridInfo::nn'],['../structAcMeshDims.html#ada484de17a3282a7cd7a79fb8e3a79a1',1,'AcMeshDims::nn']]],
   ['no_5fauto_16',['no_auto',['../structastnode__s.html#a648fc7f669e116df6267ce618a816437',1,'astnode_s']]],
-  ['non_5fnamespaced_5ftag_17',['non_namespaced_tag',['../structHaloMessage.html#a13b259deb542297c7d7a2dfe70e85e18',1,'HaloMessage']]],
-  ['num_5fdevices_18',['num_devices',['../structDeviceConfiguration.html#a822500914b4a435ddea6c517fbad4650',1,'DeviceConfiguration::num_devices'],['../structnode__s.html#a22601c691d3507d1b00a4413a98d45df',1,'node_s::num_devices']]],
-  ['num_5fprofiles_19',['num_profiles',['../structRegionMemoryInputParams.html#adeac3ae9df31455d40b559d3126673eb',1,'RegionMemoryInputParams']]],
-  ['num_5freduce_5foutputs_20',['num_reduce_outputs',['../structRegionMemoryInputParams.html#a2c6d18564120da9cab967c3068af8e3a',1,'RegionMemoryInputParams']]],
-  ['nums_21',['nums',['../structparam__combinations.html#a392b137ebebc19eb5b93138b6e4ac831',1,'param_combinations']]]
+  ['no_5fswap_5fstr_17',['NO_SWAP_STR',['../codegen_8c.html#aae93e65e6d4471ffe0caedf4fad0085f',1,'codegen.c']]],
+  ['non_5fnamespaced_5ftag_18',['non_namespaced_tag',['../structHaloMessage.html#a13b259deb542297c7d7a2dfe70e85e18',1,'HaloMessage']]],
+  ['num_5fdevices_19',['num_devices',['../structDeviceConfiguration.html#a822500914b4a435ddea6c517fbad4650',1,'DeviceConfiguration::num_devices'],['../structnode__s.html#a22601c691d3507d1b00a4413a98d45df',1,'node_s::num_devices']]],
+  ['num_5fprofiles_20',['num_profiles',['../structRegionMemoryInputParams.html#adeac3ae9df31455d40b559d3126673eb',1,'RegionMemoryInputParams']]],
+  ['num_5freduce_5foutputs_21',['num_reduce_outputs',['../structRegionMemoryInputParams.html#a2c6d18564120da9cab967c3068af8e3a',1,'RegionMemoryInputParams']]],
+  ['nums_22',['nums',['../structparam__combinations.html#a392b137ebebc19eb5b93138b6e4ac831',1,'param_combinations']]]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"functions_y.html":[18,3,0,23],
 "functions_z.html":[18,3,0,24],
 "functions_~.html":[18,3,0,25],
 "general__derivs_8h.html":[19,0,0,5,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "globals_func_t.html":[19,1,1,19],
 "globals_func_u.html":[19,1,1,20],
 "globals_func_v.html":[19,1,1,21],
-"globals_func_w.html":[19,1,1,22],
-"globals_func_y.html":[19,1,1,23]
+"globals_func_w.html":[19,1,1,22]
 };
