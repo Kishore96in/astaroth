@@ -522,302 +522,316 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>}</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>get_x_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>{</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    cs = get_x_interpolated_characteristic_speeds(characteristic_speed)</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    interface_values = get_x_interface_values(f,ln_field)</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    left_diff = ln_field ? sld_diff_left_exp(f) : sld_diff_left(f)</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    left_add  = ln_field ? sld_add_left_exp(f)      : sld_add_left(f)</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>    left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    </div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>    right_diff =  ln_field ? sld_diff_right_exp(f) : sld_diff_right(f)</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    right_add  =  ln_field ? sld_add_right_exp(f)  : sld_add_right(f)</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    return sld_flux(left_flux,right_flux)</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>}</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>get_y_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>{</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    cs = get_y_interpolated_characteristic_speeds(characteristic_speed)</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    interface_values = get_y_interface_values(f,ln_field)</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    {</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      cs = get_x_interpolated_characteristic_speeds(characteristic_speed)</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>      interface_values = get_x_interface_values(f,ln_field)</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>      left_diff = ln_field ? sld_diff_left_exp(f) : sld_diff_left(f)</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>      left_add  = ln_field ? sld_add_left_exp(f)      : sld_add_left(f)</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>      left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>      int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>      left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      </div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      right_diff =  ln_field ? sld_diff_right_exp(f) : sld_diff_right(f)</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      right_add  =  ln_field ? sld_add_right_exp(f)  : sld_add_right(f)</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>      right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>      tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>      right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>      right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>      right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>      right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>      return sld_flux(left_flux,right_flux)</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    }</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    return sld_flux(0.0,0.0)</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>}</div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    left_diff = ln_field ? sld_diff_down_exp(f) : sld_diff_down(f)</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    left_add  = ln_field ? sld_add_down_exp(f) : sld_add_down(f)</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span> </div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    right_diff =  ln_field ? sld_diff_up_exp(f) : sld_diff_up(f)</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    right_add  =  ln_field ? sld_add_up_exp(f) : sld_add_up(f)</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>get_y_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>{</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a>.<a class="code hl_variable" href="structbool3.html#a6c1aee22778f595647cacedd6ab333eb">y</a>)</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    {</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>      cs = get_y_interpolated_characteristic_speeds(characteristic_speed)</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>      interface_values = get_y_interface_values(f,ln_field)</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>      left_diff = ln_field ? sld_diff_down_exp(f) : sld_diff_down(f)</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>      left_add  = ln_field ? sld_add_down_exp(f) : sld_add_down(f)</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>      left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>      left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    return sld_flux(left_flux,right_flux)</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>}</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>get_z_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>{</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    cs = get_z_interpolated_characteristic_speeds(characteristic_speed)</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    interface_values = get_z_interface_values(f,ln_field)</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    left_diff = ln_field ? sld_diff_back_exp(f) : sld_diff_back(f)</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    left_add  = ln_field ? sld_add_back_exp(f)  : sld_add_back(f)</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>      left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>      left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>      right_diff =  ln_field ? sld_diff_up_exp(f) : sld_diff_up(f)</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>      right_add  =  ln_field ? sld_add_up_exp(f) : sld_add_up(f)</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>      right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>      tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>      right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>      right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>      right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>      right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>      return sld_flux(left_flux,right_flux)</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    }</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    return sld_flux(0.0,0.0)</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>}</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>get_z_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>{</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    {</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>      cs = get_z_interpolated_characteristic_speeds(characteristic_speed)</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>      interface_values = get_z_interface_values(f,ln_field)</div>
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    right_diff =  ln_field ? sld_diff_front_exp(f) : sld_diff_front(f)</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    right_add  =  ln_field ? sld_add_front_exp(f)  : sld_add_front(f)</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>      left_diff = ln_field ? sld_diff_back_exp(f) : sld_diff_back(f)</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>      left_add  = ln_field ? sld_add_back_exp(f)  : sld_add_back(f)</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>      left_interface_diff = interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a> - interface_values.left_left</div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>      int tmp = (((left_interface_diff)*left_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>      left_slope_ratio = tmp*(left_interface_diff)/left_diff</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(left_add/left_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>      left_diff = (1-tmp)*left_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(left_add,left_diff)/fdiff_limit</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    return sld_flux(left_flux,right_flux)</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>}</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>get_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>{</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a>(</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>              get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field),</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>              get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field),</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>              get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field)</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>                 )</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>}</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>get_x_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>{</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keywordflow">return</span> get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>      left_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*left_slope_ratio),nlf)</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>      left_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583">left</a>*left_Q*(left_interface_diff)</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>      right_diff =  ln_field ? sld_diff_front_exp(f) : sld_diff_front(f)</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>      right_add  =  ln_field ? sld_add_front_exp(f)  : sld_add_front(f)</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>      right_interface_diff = interface_values.right_right - interface_values.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>      tmp = (((right_interface_diff)*right_diff) &gt; 0.0)</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>      right_slope_ratio = tmp*(right_interface_diff)/right_diff</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>      tmp = tmp*(<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(right_add/right_diff) &gt; fdiff_limit)</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>      right_diff = (1-tmp)*right_diff + tmp*<a class="code hl_function" href="math_2funcs_8h.html#a4eb7e4f1524035be4ce1cd842d84960e">sign</a>(right_add,right_diff)/fdiff_limit</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      right_Q = pow(<a class="code hl_define" href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(1.0,h_slope_limited*right_slope_ratio),nlf)</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>      right_flux = 0.5*cs.<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a5cc53ca45b4e6c162559423069c5e989">right</a>*right_Q*(right_interface_diff)</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>      return sld_flux(left_flux,right_flux)</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    }</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    return sld_flux(0.0,0.0)</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>}</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>get_y_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>{</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keywordflow">return</span> get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>}</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>get_z_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>{</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">return</span> get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>}</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>get_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>{</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a>(</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>              get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>),</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>              get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>),</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>              get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                 )</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>}</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>get_slope_limited_divergence(<a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a> fluxes)</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>get_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, bool ln_field)</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>{</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a>(</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>              get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field),</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>              get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field),</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>              get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field)</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>                 )</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>get_x_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>{</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    <span class="keywordflow">return</span> get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>}</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>get_y_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>{</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="keywordflow">return</span> get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>}</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>get_z_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
 <div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>{</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    real divx</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    {</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        divx = (AC_x12[vertexIdx.x]*AC_x12[vertexIdx.x]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - AC_x12[vertexIdx.x-1]*AC_x12[vertexIdx.x-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left)*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    }</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a>)</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    {</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        divx = (AC_x12[vertexIdx.x]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - AC_x12[vertexIdx.x-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left)*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    }</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    {</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        divx = fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    }</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    {</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>          divx *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    }</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    {</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>      dx12 = AC_x12[vertexIdx.x] - AC_x12[vertexIdx.x-1]</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>      divx /= dx12</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    <span class="keywordflow">return</span> get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>}</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>get_fluxes(Field f,Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>{</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a>(</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>              get_x_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>),</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>              get_y_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>),</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>              get_z_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>                 )</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>}</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>get_slope_limited_divergence(<a class="code hl_struct" href="structsld__fluxes.html">sld_fluxes</a> fluxes)</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>{</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    real divx</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    {</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>        divx = (AC_x12[vertexIdx.x]*AC_x12[vertexIdx.x]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - AC_x12[vertexIdx.x-1]*AC_x12[vertexIdx.x-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left)*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    }</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a>)</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    {</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        divx = (AC_x12[vertexIdx.x]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - AC_x12[vertexIdx.x-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left)*<a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    }</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span> </div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    real divy</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    {</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        divy = (AC_sinth12[vertexIdx.y]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right - AC_sinth12[vertexIdx.y-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left)</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>               *<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    {</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        divy = fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    }</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a> || <a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a>)</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    {</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        divy *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    {</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>        divx = fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    }</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a0a487884cdc070d7f0de0f2c9ae83ad9">x</a>)</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    {</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>          divx *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a></div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    }</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    {</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>      dx12 = AC_x12[vertexIdx.x] - AC_x12[vertexIdx.x-1]</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>      divx /= dx12</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    }</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a6c1aee22778f595647cacedd6ab333eb">y</a>)</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    {</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>          divy *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    }</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>      dy12 = AC_y12[vertexIdx.y] - AC_y12[vertexIdx.y-1]</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>      divy /= dy12</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    }</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    divz = (fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left)    <span class="comment">// z contribution</span></div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>) divz *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    {</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>          divz *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>    }</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    {</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>      dz12 = AC_z12[vertexIdx.z] - AC_z12[vertexIdx.z-1]</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>      divz /= dz12</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    }</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <span class="keywordflow">return</span> divx + divy + divz</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>}</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, <span class="keywordtype">bool</span> ln_field)</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>{</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field)</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>}</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span> </div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>get_slope_limited_divergence_and_average_fluxes(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>{</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    div = get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="keywordflow">return</span> </div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>        <a class="code hl_struct" href="structreal4.html">real4</a>(</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>                div,</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right),</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right),</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right)</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>             )</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span> </div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    real divy</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    {</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        divy = (AC_sinth12[vertexIdx.y]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right - AC_sinth12[vertexIdx.y-1]*fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left)</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>               *<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>    {</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>        divy = fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    }</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a> || <a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a>)</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    {</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>        divy *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    }</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a6c1aee22778f595647cacedd6ab333eb">y</a>)</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    {</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>          divy *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#aacff6d4f0bdb822c11bc4992bcfae747">y</a></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    }</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    {</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>      dy12 = AC_y12[vertexIdx.y] - AC_y12[vertexIdx.y-1]</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>      divy /= dy12</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>    }</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    divz = (fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right - fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left)    <span class="comment">// z contribution</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>) divz *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a>.<a class="code hl_variable" href="structbool3.html#a9302d1f8d65a441e2afa647c7a956265">z</a>)</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    {</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>          divz *= <a class="code hl_variable" href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a>.<a class="code hl_variable" href="structreal3.html#ab483f52cb25a1314382d9170ac199173">z</a></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    }</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    {</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>      dz12 = AC_z12[vertexIdx.z] - AC_z12[vertexIdx.z-1]</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>      divz /= dz12</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    }</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <span class="keywordflow">return</span> divx + divy + divz</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>}</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, <span class="keywordtype">bool</span> ln_field)</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>{</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,ln_field)</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(fluxes)</div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>}</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>get_slope_limited_heating(fluxes, Field f, Field lnrho)</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>get_slope_limited_divergence_and_average_fluxes(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>{</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    <span class="comment">//TP: copy-paste TODO: refactor to a function</span></div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    density = <a class="code hl_define" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(lnrho)</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>    density_m1 = sld_get_left_exp(lnrho)</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    density_p1 = sld_get_right_exp(lnrho)</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    f_m1 = sld_get_left(f)</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>    f_p1 = sld_get_right(f)</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    heat_x = 0.5*(</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>              fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a6d790d747653dcfe201ac61548a553c1">AC_INV_MAPPING_FUNC_DER_X</a></div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>            + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_x[vertexIdx.x+1]</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>            )</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    density_m1 = sld_get_down_exp(lnrho)</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    density_p1 = sld_get_up_exp(lnrho)</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    f_m1 = sld_get_down(f)</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    f_p1 = sld_get_up(f)</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    heat_y = 0.5*(</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>                  fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a2ca0f4f14e791972af43a26fbab89026">AC_INV_MAPPING_FUNC_DER_Y</a></div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>                + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_y[vertexIdx.y+1]</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>                )</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    {</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>        heat_y *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    }</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>    density_m1 = sld_get_back_exp(lnrho)</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>    density_p1 = sld_get_front_exp(lnrho)</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>    f_m1 = sld_get_back(f)</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>    f_p1 = sld_get_front(f)</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>    heat_z = 0.5*(</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                   fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#acd13b4e8c8252dcc3ba2ca1228060b05">AC_INV_MAPPING_FUNC_DER_Z</a></div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                 + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_z[vertexIdx.z+1]</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                )</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    div = get_slope_limited_divergence(fluxes)</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keywordflow">return</span> </div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        <a class="code hl_struct" href="structreal4.html">real4</a>(</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>                div,</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right),</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right),</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right)</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>             )</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>}</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>get_slope_limited_heating(fluxes, Field f, Field lnrho)</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>{</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    <span class="comment">//TP: copy-paste TODO: refactor to a function</span></div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    density = <a class="code hl_define" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(lnrho)</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span> </div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    density_m1 = sld_get_left_exp(lnrho)</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    density_p1 = sld_get_right_exp(lnrho)</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    f_m1 = sld_get_left(f)</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    f_p1 = sld_get_right(f)</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    heat_x = 0.5*(</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>              fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a6d790d747653dcfe201ac61548a553c1">AC_INV_MAPPING_FUNC_DER_X</a></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>            + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_x[vertexIdx.x+1]</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>            )</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    density_m1 = sld_get_down_exp(lnrho)</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>    density_p1 = sld_get_up_exp(lnrho)</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span> </div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>    f_m1 = sld_get_down(f)</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>    f_p1 = sld_get_up(f)</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>    heat_y = 0.5*(</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                  fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#a2ca0f4f14e791972af43a26fbab89026">AC_INV_MAPPING_FUNC_DER_Y</a></div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_y[vertexIdx.y+1]</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                )</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span> </div>
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>    {</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        heat_z *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        heat_y *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a></div>
 <div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    }</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    <span class="keywordflow">return</span> heat_x + heat_y + heat_z</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>}</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span> </div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>get_slope_limited_divergence_and_heat(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>{</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    div = get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <span class="keywordflow">return</span> </div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        <a class="code hl_struct" href="structreal2.html">real2</a>(</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                div,</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                heat</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>             )</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>}</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>get_slope_limited_all(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>{</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    div = get_slope_limited_divergence(fluxes)</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keywordflow">return</span> </div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        <a class="code hl_struct" href="structreal5.html">real5</a>(</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>                div,</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right),</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right),</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right),</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                heat</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>             )</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    density_m1 = sld_get_back_exp(lnrho)</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    density_p1 = sld_get_front_exp(lnrho)</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span> </div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    f_m1 = sld_get_back(f)</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    f_p1 = sld_get_front(f)</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    heat_z = 0.5*(</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>                   fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left*(density*f-density_m1*f_m1)*<a class="code hl_define" href="general__grid_2vars_8h.html#acd13b4e8c8252dcc3ba2ca1228060b05">AC_INV_MAPPING_FUNC_DER_Z</a></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>                 + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right*(density_p1*f_p1-density*f)*AC_inv_mapping_func_derivative_z[vertexIdx.z+1]</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                )</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a> == <a class="code hl_enumvalue" href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a>)</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    {</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        heat_z *= <a class="code hl_define" href="general__grid_2vars_8h.html#a47064d30cd3fb6b09eb8f287a835fd7e">AC_INV_R</a>*<a class="code hl_define" href="general__grid_2vars_8h.html#a9aed76740874ab960b6840640d068b38">AC_INV_SIN_THETA</a></div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    }</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="keywordflow">return</span> heat_x + heat_y + heat_z</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>}</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>get_slope_limited_divergence_and_heat(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>{</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    div = get_slope_limited_divergence(fluxes)</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>    <span class="keywordflow">return</span> </div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        <a class="code hl_struct" href="structreal2.html">real2</a>(</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                div,</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>                heat</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>             )</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>}</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed, real w_alfven, <a class="code hl_struct" href="structreal3.html">real3</a> bb, real lnrho, real mu) </div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>{ </div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    inv_rho = <a class="code hl_define" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(-lnrho)</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    inv_mu  = 1.0/mu</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    alfven_speed = <a class="code hl_define" href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(dot(bb,bb)*inv_rho*inv_mu)</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed + w_alfven*alfven_speed</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>}</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed) </div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>{ </div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>}</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>{</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>}</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>get_slope_limited_all(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf, Field lnrho)</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>{</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    fluxes = get_fluxes(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf)</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    div = get_slope_limited_divergence(fluxes)</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    heat = get_slope_limited_heating(fluxes,f,lnrho)</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    <span class="keywordflow">return</span> </div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        <a class="code hl_struct" href="structreal5.html">real5</a>(</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>                div,</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a7209ef71c03f8edab08bb3fabecf8245">x</a>.right),</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#af1ae9388bf8f7089c8c932509740c1d1">y</a>.right),</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                0.5*(fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.left + fluxes.<a class="code hl_variable" href="structsld__fluxes.html#a5599c9b3bd23e1e4af7a709890ea767b">z</a>.right),</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                heat</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>             )</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>}</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed, real w_alfven, <a class="code hl_struct" href="structreal3.html">real3</a> bb, real lnrho, real mu) </div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>{ </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    inv_rho = <a class="code hl_define" href="math__utils_8h.html#afd8bf2ee8004f952446a6df0cbec3dc4">exp</a>(-lnrho)</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    inv_mu  = 1.0/mu</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    alfven_speed = <a class="code hl_define" href="math__utils_8h.html#ac4acb71b4114d72176466f9b52bf72ac">sqrt</a>(dot(bb,bb)*inv_rho*inv_mu)</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed + w_alfven*alfven_speed</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>}</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>calculate_characteristic_speed(real w_uu, <a class="code hl_struct" href="structField3.html">Field3</a> uu, real w_sound, real sound_speed) </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>{ </div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    <span class="keywordflow">return</span> w_uu*<a class="code hl_function" href="math_2funcs_8h.html#add7451dc349c70b5278a1e17ae32f1e1">norm</a>(uu) + w_sound*sound_speed</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>}</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>get_slope_limited_divergence(Field f, Field characteristic_speed, real fdiff_limit, real h_slope_limited, real nlf)</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>{</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    <span class="keywordflow">return</span> get_slope_limited_divergence(f,characteristic_speed,fdiff_limit,h_slope_limited,nlf,<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>}</div>
 <div class="ttc" id="aacc__runtime_8cu_html_a38715da958262eb3d7b9768e2b85dea9"><div class="ttname"><a href="acc__runtime_8cu.html#a38715da958262eb3d7b9768e2b85dea9">suppress_unused_warning</a></div><div class="ttdeci">#define suppress_unused_warning(X)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:463</div></div>
 <div class="ttc" id="aacc__runtime_8cu_html_aca5d6ff754fb064af3f3e1f6c9707a23"><div class="ttname"><a href="acc__runtime_8cu.html#aca5d6ff754fb064af3f3e1f6c9707a23">fatal_error_message</a></div><div class="ttdeci">#define fatal_error_message(error, message)</div><div class="ttdef"><b>Definition</b> acc_runtime.cu:467</div></div>
 <div class="ttc" id="acodegen_8c_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="codegen_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition</b> codegen.c:2091</div></div>
@@ -858,6 +872,7 @@ $(document).ready(function(){initNavTree('slope__limited__diffusion_8h_source.ht
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02">AC_SPHERICAL_COORDINATES</a></div><div class="ttdeci">@ AC_SPHERICAL_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:132</div></div>
 <div class="ttc" id="atypedefs_8h_html_a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce"><div class="ttname"><a href="typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce">AC_CYLINDRICAL_COORDINATES</a></div><div class="ttdeci">@ AC_CYLINDRICAL_COORDINATES</div><div class="ttdef"><b>Definition</b> typedefs.h:133</div></div>
 <div class="ttc" id="avariables_8h_html_a00644960a6aef0ae474c249e7bd04329"><div class="ttname"><a href="variables_8h.html#a00644960a6aef0ae474c249e7bd04329">AC_inv_ds</a></div><div class="ttdeci">run_const real3 AC_inv_ds</div><div class="ttdef"><b>Definition</b> variables.h:181</div></div>
+<div class="ttc" id="avariables_8h_html_a1aeb09ae6c2e41a7c1ac9ae4c11d7f23"><div class="ttname"><a href="variables_8h.html#a1aeb09ae6c2e41a7c1ac9ae4c11d7f23">AC_dimension_inactive</a></div><div class="ttdeci">run_const bool3 AC_dimension_inactive</div><div class="ttdef"><b>Definition</b> variables.h:19</div></div>
 <div class="ttc" id="avariables_8h_html_a1ceced0c5c88cf7524974628429810cb"><div class="ttname"><a href="variables_8h.html#a1ceced0c5c88cf7524974628429810cb">AC_nonequidistant_grid</a></div><div class="ttdeci">run_const bool3 AC_nonequidistant_grid</div><div class="ttdef"><b>Definition</b> variables.h:334</div></div>
 <div class="ttc" id="avariables_8h_html_a3606c9eda2815c6786d6aadd82403203"><div class="ttname"><a href="variables_8h.html#a3606c9eda2815c6786d6aadd82403203">AC_coordinate_system</a></div><div class="ttdeci">run_const AcCoordinateSystem AC_coordinate_system</div><div class="ttdef"><b>Definition</b> variables.h:330</div></div>
 </div><!-- fragment --></div><!-- contents -->
