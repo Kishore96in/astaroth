@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="general__operators_8h.html#a3eae46c874c0fef998976a9d7bea9b5b">  109</a></span><a class="code hl_function" href="general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725">gradient_tensor</a>(<a class="code hl_struct" href="structField3.html">Field3</a> v, Field s)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>     grads = <a class="code hl_function" href="general__operators_8h.html#aa527ad2d83d272b13378a6cbff710530">gradient</a>(RHO)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>     grads = <a class="code hl_function" href="general__operators_8h.html#aa527ad2d83d272b13378a6cbff710530">gradient</a>(s)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>     vij   = <a class="code hl_function" href="general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725">gradient_tensor</a>(v)</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>     Matrix gij</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>     gij[0][0] = vij[0][0]*s + u.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>*grads.x</div>
