@@ -36,6 +36,7 @@ var general__operators_8h =
     [ "gradient_of_divergence", "general__operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc", null ],
     [ "gradient_of_divergence", "general__operators_8h.html#a8e2bc4cfcd244fc5e641aaeb3c6153f8", null ],
     [ "gradient_tensor", "general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725", null ],
+    [ "gradient_tensor", "general__operators_8h.html#a3eae46c874c0fef998976a9d7bea9b5b", null ],
     [ "gradient_upwd", "general__operators_8h.html#a5decb719e2e4b3523af606941f5f06ed", null ],
     [ "hessian", "general__operators_8h.html#a99a940dce8bf6c828cd9ac2bde774bc1", null ],
     [ "laplace", "general__operators_8h.html#a1a22206bdf16bad4796ed0ad293f4a95", null ],
