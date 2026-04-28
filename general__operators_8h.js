@@ -55,6 +55,7 @@ var general__operators_8h =
     [ "length", "general__operators_8h.html#a6110d779b697e31435033dbed7d508e8", null ],
     [ "norm2", "general__operators_8h.html#a2ddaf4d9a185c0db61d05ff66c6448d7", null ],
     [ "traceless_rateof_strain", "general__operators_8h.html#ad2b0396946c5f0237a048cc3c43cf557", null ],
+    [ "traceless_strain", "general__operators_8h.html#a9a68fedd0b4601612c239177e856860b", null ],
     [ "traceless_strain", "general__operators_8h.html#a22a1b48d476d493a1010afcebf88f33d", null ],
     [ "traceless_strain", "general__operators_8h.html#a76446daf7ead1c0411154b6c7385709d", null ],
     [ "u_dot_grad", "general__operators_8h.html#a9772fff5f2796aa84a9600a4f3857a4b", null ],
