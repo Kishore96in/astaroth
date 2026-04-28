@@ -191,17 +191,17 @@ $(document).ready(function(){initNavTree('general__operators_8h_source.html','')
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>     grads = <a class="code hl_function" href="general__operators_8h.html#aa527ad2d83d272b13378a6cbff710530">gradient</a>(s)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>     vij   = <a class="code hl_function" href="general__operators_8h.html#ab3404a1a74e87bd7854d00b518275725">gradient_tensor</a>(v)</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>     Matrix gij</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>     gij[0][0] = vij[0][0]*s + u.<a class="code hl_variable" href="structreal3.html#a05f5a19e28f82de9d31d16c98a0ab634">x</a>*grads.x</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>     gij[0][1] = vij[0][1]*s + u.x*grads.y</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>     gij[0][2] = vij[0][2]*s + u.x*grads.z</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>     gij[0][0] = vij[0][0]*s + v.<a class="code hl_variable" href="structField3.html#ace4dff3244270ab57c1c6f3ff197bd2e">x</a>*grads.x</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>     gij[0][1] = vij[0][1]*s + v.<a class="code hl_variable" href="structField3.html#ace4dff3244270ab57c1c6f3ff197bd2e">x</a>*grads.y</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>     gij[0][2] = vij[0][2]*s + v.<a class="code hl_variable" href="structField3.html#ace4dff3244270ab57c1c6f3ff197bd2e">x</a>*grads.z</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>     gij[1][0] = vij[1][0]*s + u.y*grads.x</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>     gij[1][1] = vij[1][1]*s + u.y*grads.y</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>     gij[1][2] = vij[1][2]*s + u.y*grads.z</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>     gij[1][0] = vij[1][0]*s + v.<a class="code hl_variable" href="structField3.html#a95312b786a16cc3ac6e82e5898c46c8f">y</a>*grads.x</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>     gij[1][1] = vij[1][1]*s + v.<a class="code hl_variable" href="structField3.html#a95312b786a16cc3ac6e82e5898c46c8f">y</a>*grads.y</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>     gij[1][2] = vij[1][2]*s + v.<a class="code hl_variable" href="structField3.html#a95312b786a16cc3ac6e82e5898c46c8f">y</a>*grads.z</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>     gij[2][0] = vij[2][0]*s + u.z*grads.x</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>     gij[2][1] = vij[2][1]*s + u.z*grads.y</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>     gij[2][2] = vij[2][2]*s + u.z*grads.z</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>     gij[2][0] = vij[2][0]*s + v.<a class="code hl_variable" href="structField3.html#a8525a664c520b239cd27e49cf28026ab">z</a>*grads.x</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>     gij[2][1] = vij[2][1]*s + v.<a class="code hl_variable" href="structField3.html#a8525a664c520b239cd27e49cf28026ab">z</a>*grads.y</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>     gij[2][2] = vij[2][2]*s + v.<a class="code hl_variable" href="structField3.html#a8525a664c520b239cd27e49cf28026ab">z</a>*grads.z</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>     <span class="keywordflow">return</span> gij</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
