@@ -70,3 +70,10 @@ extern "C"
   void acInitDecomposition(const AcMeshInfo info, const size_t nprocs);
   void acQuitDecomposition(const AcDecomposeStrategy decompose_strategy);
 }
+
+
+/** Uses ACM for applying the boundary conditions */
+AcResult acPeriodicBoundcondsFusedLaunch(const Device, const Stream stream);
+AcResult acPeriodicBoundcondsFusedWait(const Device, const Stream stream);
+AcResult acPeriodicBoundcondsBatchedLaunch(const Device, const Stream stream);
+AcResult acPeriodicBoundcondsBatchedWait(const Device, const Stream stream);

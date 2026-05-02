@@ -32,6 +32,10 @@
 #include <string>
 #include <unistd.h> // getopt
 
+
+// #define AC_GRID_INTEGRATE_FUNCTION (acGridIntegrate)
+#define AC_GRID_INTEGRATE_FUNCTION (acGridIntegrateACM)
+
 #if !AC_MPI_ENABLED
 int
 main(void)
@@ -104,7 +108,7 @@ timer_event_stop(const char* format, ...)
 int
 main(int argc, char** argv)
 {
-    int verify = 0;
+    int verify = 1;
     MPI_Init(NULL, NULL);
     acProfilerStop();
 
@@ -115,10 +119,14 @@ main(int argc, char** argv)
     // CPU alloc
     AcMeshInfo info = acInitInfo();
     acLoadConfig(AC_DEFAULT_CONFIG, &info);
+    
+    constexpr int3 nn{8,8,8};
+    acPushToConfig(info, AC_ngrid, nn);
     acHostUpdateParams(&info);
 
     TestType test = TEST_STRONG_SCALING;
 
+    #if 0
     int opt;
     while ((opt = getopt(argc, argv, "t:")) != -1) {
         switch (opt) {
@@ -184,6 +192,7 @@ main(int argc, char** argv)
             exit(EXIT_FAILURE);
         }
     }
+    #endif
 
 
     // Device init
@@ -195,7 +204,7 @@ main(int argc, char** argv)
 
     // Dryrun
     acDeviceSetInput(acGridGetDevice(), AC_current_time, 0.0);
-    acGridIntegrate(STREAM_DEFAULT, dt);
+    AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
 
     if (verify) {
         // Host init
@@ -214,7 +223,7 @@ main(int argc, char** argv)
         // Verification run
         const size_t nsteps = 10;
         for (size_t i = 0; i < nsteps; ++i) {
-            acGridIntegrate(STREAM_DEFAULT, dt);
+            AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
 
             if (!pid) {
                 printf("Host integration step %lu\n", i);
@@ -253,7 +262,7 @@ main(int argc, char** argv)
 
     // Warmup
     for (size_t i = 0; i < 5; ++i)
-        acGridIntegrate(STREAM_DEFAULT, dt);
+        AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
 
     // Benchmark
     Timer t;
@@ -261,7 +270,7 @@ main(int argc, char** argv)
         acGridSynchronizeStream(STREAM_ALL);
         timer_reset(&t);
         acGridSynchronizeStream(STREAM_ALL);
-        acGridIntegrate(STREAM_DEFAULT, dt);
+        AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
         acGridSynchronizeStream(STREAM_ALL);
         results.push_back(timer_diff_nsec(t) / 1e6); // ms
         acGridSynchronizeStream(STREAM_ALL);
@@ -328,8 +337,8 @@ main(int argc, char** argv)
 
     acProfilerStart();
     timer_event_launch();
-    acGridIntegrate(STREAM_DEFAULT, dt);
-    timer_event_stop("acGridIntegrate: ");
+    AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
+    timer_event_stop("AC_GRID_INTEGRATE_FUNCTION: ");
     acProfilerStop();
 
     timer_event_launch();

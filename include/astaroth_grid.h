@@ -102,6 +102,7 @@ FUNC_DEFINE(AcResult, acGridStoreMesh,(const Stream stream, AcMesh* host_mesh));
 
 /** */
 FUNC_DEFINE(AcResult, acGridIntegrate,(const Stream stream, const AcReal dt));
+FUNC_DEFINE(AcResult, acGridIntegrateACM,(const Stream stream, const AcReal dt));
 
 FUNC_DEFINE(AcResult, acGridSwapBuffers,(void));
 

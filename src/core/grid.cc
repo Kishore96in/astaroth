@@ -3013,6 +3013,87 @@ acGridIntegrate(const Stream stream, const AcReal dt)
     acDeviceSetInput(grid.device,AC_current_time,dt);
     return acGridExecuteTaskGraph(grid.default_tasks.get(), 3);
 }
+
+/** Uses ACM for communication */
+AcResult
+acGridIntegrateACM(const Stream stream, const AcReal dt)
+{
+    acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+
+    if(!grid.submesh.info[AC_fully_periodic_grid])
+    {
+	    fatal("%s","acGridIntegrate assumes fully periodic grid!\n");
+    }
+    (void)stream;
+    ERRCHK(grid.initialized);
+    acDeviceSetInput(grid.device,AC_dt,dt);
+    acDeviceSetInput(grid.device,AC_current_time,dt);
+
+    // Domain shape
+    const auto nn{grid.nn};
+
+    // Integrate
+    acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+    for (size_t i{0}; i < 3; ++i) {
+        // Outer intergration
+
+        { // Front
+            const Volume m1 = (Volume){NGHOST, NGHOST, NGHOST};
+            const Volume m2 = m1 + (Volume){nn.x, nn.y, NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_0, i, m1, m2, dt);
+        }
+        { // Back
+            const Volume m1 = (Volume){NGHOST, NGHOST, nn.z};
+            const Volume m2 = m1 + (Volume){nn.x, nn.y, NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_1, i, m1, m2, dt);
+        }
+        { // Bottom
+            const Volume m1 = (Volume){NGHOST, NGHOST, 2 * NGHOST};
+            const Volume m2 = m1 + (Volume){nn.x, NGHOST, nn.z - 2 * NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_2, i, m1, m2, dt);
+        }
+        { // Top
+            const Volume m1 = (Volume){NGHOST, nn.y, 2 * NGHOST};
+            const Volume m2 = m1 + (Volume){nn.x, NGHOST, nn.z - 2 * NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_3, i, m1, m2, dt);
+        }
+        { // Left
+            const Volume m1 = (Volume){NGHOST, 2 * NGHOST, 2 * NGHOST};
+            const Volume m2 = m1 + (Volume){NGHOST, nn.y - 2 * NGHOST, nn.z - 2 * NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_4, i, m1, m2, dt);
+        }
+        { // Right
+            const Volume m1 = (Volume){nn.x, 2 * NGHOST, 2 * NGHOST};
+            const Volume m2 = m1 + (Volume){NGHOST, nn.y - 2 * NGHOST, nn.z - 2 * NGHOST};
+            acDeviceIntegrateSubstep(grid.device, STREAM_5, i, m1, m2, dt);
+        }
+        acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+        
+        // Launch halo exchange
+        // acPeriodicBoundcondsFusedLaunch(grid.device, stream);
+        acPeriodicBoundcondsBatchedLaunch(grid.device, stream);
+        
+        // Inner intergration
+        {
+            const Volume m1 = (Volume){2 * NGHOST, 2 * NGHOST, 2 * NGHOST};
+            const Volume m2 = nn;
+            acDeviceIntegrateSubstep(grid.device, STREAM_6, i, m1, m2, dt);
+        }
+        
+        // Wait halo exchange
+        // acPeriodicBoundcondsFusedWait(grid.device, stream);
+        acPeriodicBoundcondsBatchedWait(grid.device, stream);
+
+        // Wait integration
+        acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+
+        // Swap buffers
+        acGridSwapBuffers();
+    }
+    
+    acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+    return AC_FAILURE;
+}
 #endif // AC_INTEGRATION_ENABLED
 
 AcResult
@@ -3030,6 +3111,7 @@ acGridPeriodicBoundconds(const Stream stream)
     }
     return acGridExecuteTaskGraph(grid.periodic_bc_tasks.get(), 1);
 }
+
 static size_t
 get_n_global_points()
 {

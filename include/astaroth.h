@@ -530,6 +530,7 @@ acGetPid(const int3 pid, const int3 decomp, const AcMeshInfo info);
 	LOAD_DSYM(acGridStoreMesh,stream);
 #ifdef AC_INTEGRATION_ENABLED
 	LOAD_DSYM(acGridIntegrate,stream);
+	LOAD_DSYM(acGridIntegrateACM,stream);
 #endif
 	LOAD_DSYM(acGridSwapBuffers,stream);
 	LOAD_DSYM(acGridHaloExchange,stream);

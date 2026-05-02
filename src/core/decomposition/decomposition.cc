@@ -1,4 +1,5 @@
 /*
+    Copyright (C) 2014-2026, Aalto University (Johannes Pekkila, Touko Puro)
     Copyright (C) 2014-2024, Johannes Pekkila, Miikka Vaisala.
 
     This file is part of Astaroth.
@@ -20,20 +21,31 @@
 #include "decomposition.h"
 #include "astaroth.h"
 
+#include "acm/detail/mpi_utils.h"
+#include "acm/detail/experimental/mpi_utils_experimental.h"
+#include "acm/detail/halo_exchange_custom.h"
+#include "acm/detail/halo_exchange_batched.h"
+#define ERRCHK_ALWAYS ERRCHK // Hack: use errchecking from acm instead of acc-runtime
+
 #include <limits.h> // INT_MAX
 #include <string.h> // memcpy
 #include <memory>   // unique_ptr
+#include <iostream> // std::cout
 
-#define DECOMPOSITION_TYPE_ZORDER (1)
-#define DECOMPOSITION_TYPE_HIERARCHICAL (2)
+// #define DECOMPOSITION_TYPE_ZORDER (1)
+// #define DECOMPOSITION_TYPE_HIERARCHICAL (2)
 int MPI_DECOMPOSITION_AXES = 3;
 bool TWO_DIMENSIONAL_SETUP = false;
 
-#define DECOMPOSITION_TYPE (DECOMPOSITION_TYPE_ZORDER)
+// #define DECOMPOSITION_TYPE (DECOMPOSITION_TYPE_ZORDER)
 // #define DECOMPOSITION_TYPE (DECOMPOSITION_TYPE_HIERARCHICAL)
+// #define DECOMPOTION_TYPE (DECOMPOSITION_TYPE_ACM)
 //
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(x[0]))
 
+static MPI_Comm g_acm_comm{MPI_COMM_NULL};
+static acm::halo_exchange<AcReal, ac::mr::device_allocator>* g_fused_halo_exchange;
+static acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>* g_batched_halo_exchange;
 
 void
 acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
@@ -66,6 +78,22 @@ acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
         acVerifyDecomposition(decompose(nprocs,info[AC_decompose_strategy]),info[AC_proc_mapping_strategy]);
     }
 
+    if (info[AC_decompose_strategy] == AC_DECOMPOSE_STRATEGY_ACM) {
+        ERRCHK(g_acm_comm == MPI_COMM_NULL);
+
+
+        const auto mesh_dims{acGetMeshDims(info)};
+        const ac::shape global_nn{as<uint64_t>(mesh_dims.nn.x), as<uint64_t>(mesh_dims.nn.y), as<uint64_t>(mesh_dims.nn.z)};
+
+        g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::no);
+
+        const ac::index rr{(STENCIL_WIDTH-1)/2, (STENCIL_HEIGHT-1)/2, (STENCIL_DEPTH-1)/2};
+        const uint64_t n_max_aggregate_buffers{8};
+        g_fused_halo_exchange =  new acm::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, global_nn, rr, n_max_aggregate_buffers};
+        g_batched_halo_exchange =  new acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, global_nn, rr, n_max_aggregate_buffers};
+
+    }
+
 }
 
 void
@@ -74,6 +102,13 @@ acQuitDecomposition(const AcDecomposeStrategy decompose_strategy)
   if(decompose_strategy == AC_DECOMPOSE_STRATEGY_HIERARCHICAL)
   {
     compat_acDecompositionQuit();
+  }
+  else if (decompose_strategy == AC_DECOMPOSE_STRATEGY_ACM) {
+    delete g_fused_halo_exchange;
+    delete g_batched_halo_exchange;
+
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+    ac::mpi::cart_comm_destroy(&g_acm_comm);
   }
 }
 
@@ -104,7 +139,7 @@ acDecompositionInfoPrint(const AcDecompositionInfo info)
     acPrintArray_size_t("\tglobal_decomposition", info.ndims, info.global_decomposition);
 }
 
-static size_t
+size_t
 prod(const size_t count, const size_t* arr)
 {
     size_t res = 1;
@@ -659,6 +694,14 @@ decompose(const uint64_t target, const AcDecomposeStrategy strategy)
 		return morton_decompose(target);
 	else if(strategy == AC_DECOMPOSE_STRATEGY_HIERARCHICAL)
 		return hierarchical_decompose(target);
+    else if (strategy == AC_DECOMPOSE_STRATEGY_ACM) {
+        
+        ERRCHK(g_acm_comm != MPI_COMM_NULL);
+
+        const auto decomp{ac::mpi::get_decomposition(g_acm_comm)};
+        ERRCHK(decomp.size() == 3);
+        return {decomp[0], decomp[1], decomp[2]};
+    }
 	return (uint3_64){0,0,0};
 }
 
@@ -673,6 +716,9 @@ getPid(int3 pid, const uint3_64 decomp, const AcProcMappingStrategy proc_mapping
 			return morton_getPid(pid,decomp);
 		case AC_PROC_MAPPING_STRATEGY_HIERARCHICAL:
 			return hierarchical_getPid(pid,decomp);
+        case AC_PROC_MAPPING_STRATEGY_ACM: {
+            return ac::mpi::get_rank(g_acm_comm);
+        }
 	}
 	return -1;
 }
@@ -687,6 +733,10 @@ getPid3D(const uint64_t pid, const uint3_64 decomp, const AcProcMappingStrategy 
 			return to_int3(morton_getPid3D(pid,decomp));
 		case AC_PROC_MAPPING_STRATEGY_HIERARCHICAL:
 			return hierarchical_getPid3D(pid,decomp);
+        case AC_PROC_MAPPING_STRATEGY_ACM: {
+            const auto coords{ac::mpi::get_coords(g_acm_comm)};
+            return (int3){as<int>(coords[0]), as<int>(coords[1]), as<int>(coords[2])};
+        }
 	}
 	return (int3){-1,-1,-1};
 }
@@ -742,4 +792,95 @@ extern "C" int
 acGetPid(const int3 pid, const int3 decomp, const AcMeshInfo info)
 {
 	return getPid(pid,decomp,info[AC_proc_mapping_strategy]);
+}
+
+
+/** Helper function copied from acr_utils.cc */
+VertexBufferArray
+acDeviceGetVBA(const Device device); // Hack: get access to device internal function
+
+const std::vector mhd_comm_fields = {
+        VTXBUF_LNRHO, 
+        VTXBUF_UUX, 
+        VTXBUF_UUY, 
+        VTXBUF_UUZ, 
+        VTXBUF_AX, 
+        VTXBUF_AY, 
+        VTXBUF_AZ, 
+        VTXBUF_ENTROPY,
+};
+
+enum class BufferGroup { input, output };
+
+static ac::device_view<AcReal>
+make_ptr(const Device& device, const Field& field, const BufferGroup& type)
+{
+    const auto info{acDeviceGetLocalConfig(device)};
+    const auto local_mm{acGetLocalMM(info)};
+
+
+    const size_t count{local_mm.x * local_mm.y * local_mm.z};
+
+    switch (type) {
+    case BufferGroup::input:
+        return ac::device_view<AcReal>{count, acDeviceGetVBA(device).on_device.in[field]};
+    case BufferGroup::output:
+        return ac::device_view<AcReal>{count, acDeviceGetVBA(device).on_device.out[field]};
+    default:
+        ERRCHK(false);
+        return ac::device_view<AcReal>{};
+    }
+}
+
+AcResult acPeriodicBoundcondsFusedLaunch(const Device device, const Stream stream)
+{    
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+
+    std::vector<ac::view<AcReal, ac::mr::device_allocator>> inputs;
+    for (const auto field : mhd_comm_fields)
+        inputs.push_back(make_ptr(device, field, BufferGroup::output));
+
+    g_fused_halo_exchange->launch(inputs);
+
+    return AC_FAILURE;
+}
+
+AcResult acPeriodicBoundcondsFusedWait(const Device device, const Stream stream)
+{
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+
+    std::vector<ac::view<AcReal, ac::mr::device_allocator>> outputs;
+    for (const auto field : mhd_comm_fields)
+        outputs.push_back(make_ptr(device, field, BufferGroup::output));
+
+    g_fused_halo_exchange->wait(outputs);
+
+    return AC_FAILURE;
+}
+
+AcResult acPeriodicBoundcondsBatchedLaunch(const Device device, const Stream stream)
+{
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+
+    std::vector<ac::view<AcReal, ac::mr::device_allocator>> inputs;
+    for (const auto field : mhd_comm_fields)
+        inputs.push_back(make_ptr(device, field, BufferGroup::output));
+
+    g_batched_halo_exchange->launch(inputs);
+
+    return AC_FAILURE;
+}
+
+AcResult acPeriodicBoundcondsBatchedWait(const Device device, const Stream stream)
+{
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+
+    std::vector<ac::view<AcReal, ac::mr::device_allocator>> outputs;
+    for (const auto field : mhd_comm_fields)
+        outputs.push_back(make_ptr(device, field, BufferGroup::output));
+
+    g_batched_halo_exchange->wait(outputs);
+
+    // TODO
+    return AC_FAILURE;
 }
