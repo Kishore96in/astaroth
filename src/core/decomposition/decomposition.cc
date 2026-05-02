@@ -128,8 +128,11 @@ bool TWO_DIMENSIONAL_SETUP = false;
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(x[0]))
 
 static MPI_Comm g_acm_comm{MPI_COMM_NULL};
-static acm::halo_exchange<AcReal, ac::mr::device_allocator>* g_fused_halo_exchange;
-static acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>* g_batched_halo_exchange;
+static acm::halo_exchange<AcReal, ac::mr::device_allocator>* g_fused_halo_exchange{nullptr};
+static acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>* g_batched_halo_exchange{nullptr};
+static ac::shape g_global_nn{0,0,0};
+static const ac::index rr{(STENCIL_WIDTH-1)/2, (STENCIL_HEIGHT-1)/2, (STENCIL_DEPTH-1)/2};
+static const uint64_t n_max_aggregate_buffers{8};
 
 void
 acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
@@ -165,17 +168,11 @@ acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
     if (info[AC_decompose_strategy] == AC_DECOMPOSE_STRATEGY_ACM) {
         ERRCHK(g_acm_comm == MPI_COMM_NULL);
 
-
         const auto mesh_dims{acGetMeshDims(info)};
         const ac::shape global_nn{as<uint64_t>(mesh_dims.nn.x), as<uint64_t>(mesh_dims.nn.y), as<uint64_t>(mesh_dims.nn.z)};
+        g_global_nn = global_nn;
 
-        g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::no);
-
-        const ac::index rr{(STENCIL_WIDTH-1)/2, (STENCIL_HEIGHT-1)/2, (STENCIL_DEPTH-1)/2};
-        const uint64_t n_max_aggregate_buffers{8};
-        g_fused_halo_exchange =  new acm::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, global_nn, rr, n_max_aggregate_buffers};
-        g_batched_halo_exchange =  new acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, global_nn, rr, n_max_aggregate_buffers};
-
+        g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::no);        
     }
 
 }
@@ -188,8 +185,11 @@ acQuitDecomposition(const AcDecomposeStrategy decompose_strategy)
     compat_acDecompositionQuit();
   }
   else if (decompose_strategy == AC_DECOMPOSE_STRATEGY_ACM) {
-    delete g_fused_halo_exchange;
-    delete g_batched_halo_exchange;
+    if (g_fused_halo_exchange)
+        delete g_fused_halo_exchange;
+
+    if (g_batched_halo_exchange)
+        delete g_batched_halo_exchange;
 
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
     ac::mpi::cart_comm_destroy(&g_acm_comm);
@@ -920,25 +920,30 @@ AcResult acPeriodicBoundcondsFusedLaunch(const Device device, const Stream strea
 {    
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
 
+    if (g_fused_halo_exchange == nullptr) {
+        g_fused_halo_exchange =  new acm::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, g_global_nn, rr, n_max_aggregate_buffers};   
+    }
+
     std::vector<ac::view<AcReal, ac::mr::device_allocator>> inputs;
     for (const auto field : mhd_comm_fields)
         inputs.push_back(make_ptr(device, field, BufferGroup::output));
-
+    
     g_fused_halo_exchange->launch(inputs);
-
+    
     return AC_FAILURE;
 }
 
 AcResult acPeriodicBoundcondsFusedWait(const Device device, const Stream stream)
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
+    ERRCHK(g_fused_halo_exchange != nullptr);
 
     std::vector<ac::view<AcReal, ac::mr::device_allocator>> outputs;
     for (const auto field : mhd_comm_fields)
         outputs.push_back(make_ptr(device, field, BufferGroup::output));
 
     g_fused_halo_exchange->wait(outputs);
-
+    
     return AC_FAILURE;
 }
 
@@ -946,25 +951,29 @@ AcResult acPeriodicBoundcondsBatchedLaunch(const Device device, const Stream str
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
 
+    if (g_batched_halo_exchange == nullptr) {
+        g_batched_halo_exchange =  new acm::rev::halo_exchange<AcReal, ac::mr::device_allocator>{g_acm_comm, g_global_nn, rr, n_max_aggregate_buffers};
+    }
+
     std::vector<ac::view<AcReal, ac::mr::device_allocator>> inputs;
     for (const auto field : mhd_comm_fields)
         inputs.push_back(make_ptr(device, field, BufferGroup::output));
-
+    
     g_batched_halo_exchange->launch(inputs);
-
+    
     return AC_FAILURE;
 }
 
 AcResult acPeriodicBoundcondsBatchedWait(const Device device, const Stream stream)
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
+    ERRCHK(g_batched_halo_exchange != nullptr);
 
     std::vector<ac::view<AcReal, ac::mr::device_allocator>> outputs;
     for (const auto field : mhd_comm_fields)
         outputs.push_back(make_ptr(device, field, BufferGroup::output));
 
     g_batched_halo_exchange->wait(outputs);
-
-    // TODO
+    
     return AC_FAILURE;
 }
