@@ -120,7 +120,7 @@ main(int argc, char** argv)
     AcMeshInfo info = acInitInfo();
     acLoadConfig(AC_DEFAULT_CONFIG, &info);
     
-    constexpr int3 nn{8,8,8};
+    constexpr int3 nn{16, 16, 16};
     acPushToConfig(info, AC_ngrid, nn);
     acHostUpdateParams(&info);
 
