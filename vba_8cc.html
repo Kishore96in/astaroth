@@ -117,6 +117,10 @@ Functions</h2></td></tr>
 <tr class="separator:aaf53c6e4675bd63f3359d7d1dc763aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b9fbcee9024a47049013b5a634fe86" id="r_a93b9fbcee9024a47049013b5a634fe86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a4fbe89db7871cf2ab32327a60eb4520f">size3_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vba_8cc.html#a93b9fbcee9024a47049013b5a634fe86">acGetProfileReduceScratchPadDims</a> (const int profile, const <a class="el" href="structAcMeshDims.html">AcMeshDims</a> <a class="el" href="bicgstab_8h.html#a9f12d89e7979e015dfaa9a88aefc5930">dims</a>)</td></tr>
 <tr class="separator:a93b9fbcee9024a47049013b5a634fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537835c6cc2a7a04ca97d9abff0c5158" id="r_a537835c6cc2a7a04ca97d9abff0c5158"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vba_8cc.html#a537835c6cc2a7a04ca97d9abff0c5158">get_free_mem</a> ()</td></tr>
+<tr class="separator:a537835c6cc2a7a04ca97d9abff0c5158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fedac0d291b021ccda505eafa7d2bd" id="r_af0fedac0d291b021ccda505eafa7d2bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vba_8cc.html#af0fedac0d291b021ccda505eafa7d2bd">check_if_free_memory_for_profile_reductions</a> (const size_t bytes)</td></tr>
+<tr class="separator:af0fedac0d291b021ccda505eafa7d2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8d25afefa4a18a59b8bc4fef731a70" id="r_a3b8d25afefa4a18a59b8bc4fef731a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vba_8cc.html#a3b8d25afefa4a18a59b8bc4fef731a70">init_scratchpads</a> (<a class="el" href="structVertexBufferArray.html">VertexBufferArray</a> *vba)</td></tr>
 <tr class="separator:a3b8d25afefa4a18a59b8bc4fef731a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de99637474474de3bc4a043090a63a1" id="r_a3de99637474474de3bc4a043090a63a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host__datatypes_8h.html#a601254ccb5bcc54c209aeea4ac24e43d">AcResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vba_8cc.html#a3de99637474474de3bc4a043090a63a1">acVBAReset</a> (const <a class="el" href="hip_8h.html#a9d6f45a66fe65d53dc925d8d89b88d38">cudaStream_t</a> stream, <a class="el" href="structVertexBufferArray.html">VertexBufferArray</a> *vba)</td></tr>
@@ -446,6 +450,41 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVertexBufferArray.html">VertexBufferArray</a> *&#160;</td>
           <td class="paramname"><em>vba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0fedac0d291b021ccda505eafa7d2bd" name="af0fedac0d291b021ccda505eafa7d2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0fedac0d291b021ccda505eafa7d2bd">&#9670;&#160;</a></span>check_if_free_memory_for_profile_reductions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_if_free_memory_for_profile_reductions </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a537835c6cc2a7a04ca97d9abff0c5158" name="a537835c6cc2a7a04ca97d9abff0c5158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537835c6cc2a7a04ca97d9abff0c5158">&#9670;&#160;</a></span>get_free_mem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t get_free_mem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
