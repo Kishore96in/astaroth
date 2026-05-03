@@ -22,7 +22,7 @@ var searchData=
   ['reduce_5foffset_19',['reduce_offset',['../structDeviceVertexBufferArray.html#a3ee06ccf6e4a50b859b2919cab6f3e71',1,'DeviceVertexBufferArray']]],
   ['reduce_5foffsets_20',['reduce_offsets',['../acc__runtime_8cu.html#a438c62c4d341b912d420d2bfee1e3dab',1,'acc_runtime.cu']]],
   ['reduce_5fop_21',['reduce_op',['../structAcReduction.html#a29a3bf94741cd64340c6384374bd236c',1,'AcReduction']]],
-  ['reduce_5foutputs_22',['reduce_outputs',['../structRegionMemoryInputParams.html#a2c257dcdc4eb553d2a3ec9d7d05e408b',1,'RegionMemoryInputParams::reduce_outputs'],['../structRegionMemory.html#ae78a3dba4747c922ddfe219428eb9175',1,'RegionMemory::reduce_outputs'],['../structKernelAnalysisInfo.html#aa33f8fd8992c0464e8b4ad12a9efbe05',1,'KernelAnalysisInfo::reduce_outputs']]],
+  ['reduce_5foutputs_22',['reduce_outputs',['../structKernelAnalysisInfo.html#aa33f8fd8992c0464e8b4ad12a9efbe05',1,'KernelAnalysisInfo::reduce_outputs'],['../structRegionMemory.html#ae78a3dba4747c922ddfe219428eb9175',1,'RegionMemory::reduce_outputs'],['../structRegionMemoryInputParams.html#a2c257dcdc4eb553d2a3ec9d7d05e408b',1,'RegionMemoryInputParams::reduce_outputs']]],
   ['reduced_5fprofiles_23',['reduced_profiles',['../structKernelAnalysisInfo.html#a506429602ce3dcb008bec29f1b49c7c7',1,'KernelAnalysisInfo']]],
   ['reduction_5ftile_24',['reduction_tile',['../structAcMeshDims.html#ac2971e168d2915237538889362192992',1,'AcMeshDims']]],
   ['rel_5ferror_25',['rel_error',['../structError.html#a743fa35ffda80523130f9e86dc5dd12e',1,'Error']]],
@@ -47,5 +47,6 @@ var searchData=
   ['runtime_5fcompilation_5fbase_5fpath_44',['runtime_compilation_base_path',['../structAcMeshInfo.html#a761c52981202fb1d6393975bc9a90e26',1,'AcMeshInfo']]],
   ['runtime_5fcompilation_5fbuild_5fpath_45',['runtime_compilation_build_path',['../structAcMeshInfo.html#a1ccd7efb5a4a3acca1987b986dec768b',1,'AcMeshInfo']]],
   ['runtime_5fcompilation_5flog_5fdst_46',['runtime_compilation_log_dst',['../structAcMeshInfo.html#a562de969d5f3c6e6374f7f998dd0d9fd',1,'AcMeshInfo']]],
-  ['runtime_5fcompilation_5fskip_5fmake_5fif_5fnothing_5fhas_5fchanged_47',['runtime_compilation_skip_make_if_nothing_has_changed',['../structAcMeshInfo.html#ace9034660847ff1a3ae0fd4710b6ea76',1,'AcMeshInfo']]]
+  ['runtime_5fcompilation_5fskip_5fautotuning_47',['runtime_compilation_skip_autotuning',['../structAcMeshInfo.html#a01ed95c1032aef06b5e87f77c4dfdc73',1,'AcMeshInfo']]],
+  ['runtime_5fcompilation_5fskip_5fmake_5fif_5fnothing_5fhas_5fchanged_48',['runtime_compilation_skip_make_if_nothing_has_changed',['../structAcMeshInfo.html#ace9034660847ff1a3ae0fd4710b6ea76',1,'AcMeshInfo']]]
 ];
