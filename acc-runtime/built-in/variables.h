@@ -229,11 +229,11 @@ run_const real3 AC_ds_6 = AC_ds_3*AC_ds_3;
 /**
  * How processes should be mapped to process grid. See AcProcMappingStrategy for possible options.
  */
-run_const AcProcMappingStrategy AC_proc_mapping_strategy = AC_PROC_MAPPING_STRATEGY_ACM;
+run_const AcProcMappingStrategy AC_proc_mapping_strategy = AC_PROC_MAPPING_STRATEGY_MORTON;
 /**
  * How the grid should be decomposed to subdomains. See AcDecomposeStrategy for possible options.
  */
-run_const AcDecomposeStrategy   AC_decompose_strategy    = AC_DECOMPOSE_STRATEGY_ACM;
+run_const AcDecomposeStrategy   AC_decompose_strategy    = AC_DECOMPOSE_STRATEGY_MORTON;
 /**
  * How to construct the MPI communicator of Astaroth. See AcMPICommStrategy for possible options.
  */

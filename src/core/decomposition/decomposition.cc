@@ -162,7 +162,6 @@ acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
         compat_acDecompositionInit(ndims, global_dims, nlayers, partitions_per_layer);
         // grid.decomposition_info = acDecompositionInit(ndims, global_dims,
         // nlayers,partitions_per_layer);
-        acVerifyDecomposition(decompose(nprocs,info[AC_decompose_strategy]),info[AC_proc_mapping_strategy]);
     }
 
     if (info[AC_decompose_strategy] == AC_DECOMPOSE_STRATEGY_ACM) {
@@ -174,7 +173,8 @@ acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
 
         g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::no);        
     }
-
+    
+    acVerifyDecomposition(decompose(nprocs,info[AC_decompose_strategy]),info[AC_proc_mapping_strategy]);
 }
 
 void
@@ -789,6 +789,8 @@ decompose(const uint64_t target, const AcDecomposeStrategy strategy)
 	return (uint3_64){0,0,0};
 }
 
+#include "acm/detail/print_debug.h"
+
 int
 getPid(int3 pid, const uint3_64 decomp, const AcProcMappingStrategy proc_mapping_strategy)
 {
@@ -801,7 +803,11 @@ getPid(int3 pid, const uint3_64 decomp, const AcProcMappingStrategy proc_mapping
 		case AC_PROC_MAPPING_STRATEGY_HIERARCHICAL:
 			return hierarchical_getPid(pid,decomp);
         case AC_PROC_MAPPING_STRATEGY_ACM: {
-            return ac::mpi::get_rank(g_acm_comm);
+            const auto expected_decomp{ac::mpi::get_decomposition(g_acm_comm)};
+            ERRCHK((ac::index{decomp.x, decomp.y, decomp.z} == expected_decomp));
+
+            const auto pid_wrapped{wrap(pid, decomp)};
+            return ac::mpi::get_rank(g_acm_comm, ac::index{as<uint64_t>(pid_wrapped.x), as<uint64_t>(pid_wrapped.y), as<uint64_t>(pid_wrapped.z)});
         }
 	}
 	return -1;
@@ -818,20 +824,38 @@ getPid3D(const uint64_t pid, const uint3_64 decomp, const AcProcMappingStrategy 
 		case AC_PROC_MAPPING_STRATEGY_HIERARCHICAL:
 			return hierarchical_getPid3D(pid,decomp);
         case AC_PROC_MAPPING_STRATEGY_ACM: {
-            const auto coords{ac::mpi::get_coords(g_acm_comm)};
+            ERRCHK(pid >= 0);
+            const auto coords{ac::mpi::get_coords(g_acm_comm, pid)};
             return (int3){as<int>(coords[0]), as<int>(coords[1]), as<int>(coords[2])};
         }
 	}
 	return (int3){-1,-1,-1};
 }
 
+
+template<typename T>
+static inline void
+print_int3(const std::string& label, const T& elem)
+{
+    std::cout << elem.x << ", " << elem.y << ", " << elem.z << std::endl;
+}
+
+#define PRINT_INT3(x) print_int3(#x, (x))
+
 void
 acVerifyDecomposition(const uint3_64 decomp, const AcProcMappingStrategy proc_mapping_strategy)
 {
     const size_t n = decomp.x * decomp.y * decomp.z; // prod(info.ndims, info.global_decomposition);
     ERRCHK_ALWAYS(n <= INT_MAX);
-    for (size_t i = 0; i < n; ++i)
-        ERRCHK_ALWAYS(getPid(getPid3D(i, decomp,proc_mapping_strategy), decomp,proc_mapping_strategy) == static_cast<int>(i));
+    for (size_t i = 0; i < n; ++i) {
+        const auto j{getPid3D(i, decomp,proc_mapping_strategy)};
+        const auto k{getPid(j, decomp,proc_mapping_strategy)};
+
+        std::cout << "Rank: " << ac::mpi::get_rank(MPI_COMM_WORLD) << "\n\tID: " << i << "\n\tCoords:" << j.x << ", " << j.y << ", " << j.z << "\n\tMapped ID: " << k << std::endl;
+
+
+        ERRCHK_ALWAYS(k == static_cast<int>(i));
+    }
 
     ERRCHK_ALWAYS(decomp.x <= INT_MAX);
     ERRCHK_ALWAYS(decomp.y <= INT_MAX);
@@ -879,21 +903,18 @@ acGetPid(const int3 pid, const int3 decomp, const AcMeshInfo info)
 }
 
 
-/** Helper function copied from acr_utils.cc */
-VertexBufferArray
-acDeviceGetVBA(const Device device); // Hack: get access to device internal function
-
 const std::vector mhd_comm_fields = {
-        VTXBUF_LNRHO, 
-        VTXBUF_UUX, 
-        VTXBUF_UUY, 
-        VTXBUF_UUZ, 
-        VTXBUF_AX, 
-        VTXBUF_AY, 
-        VTXBUF_AZ, 
-        VTXBUF_ENTROPY,
+    VTXBUF_LNRHO, 
+    VTXBUF_UUX, 
+    VTXBUF_UUY, 
+    VTXBUF_UUZ, 
+    VTXBUF_AX, 
+    VTXBUF_AY, 
+    VTXBUF_AZ, 
+    VTXBUF_ENTROPY,
 };
 
+/** Helper function copied from acr_utils.cc */
 enum class BufferGroup { input, output };
 
 static ac::device_view<AcReal>
@@ -905,11 +926,16 @@ make_ptr(const Device& device, const Field& field, const BufferGroup& type)
 
     const size_t count{local_mm.x * local_mm.y * local_mm.z};
 
+    AcReal* in{nullptr};
+    AcReal* out{nullptr};
+    ERRCHK(acDeviceGetVertexBufferPtrs(device, field, &in, &out) == AC_SUCCESS);
+
+
     switch (type) {
     case BufferGroup::input:
-        return ac::device_view<AcReal>{count, acDeviceGetVBA(device).on_device.in[field]};
+        return ac::device_view<AcReal>{count, in};
     case BufferGroup::output:
-        return ac::device_view<AcReal>{count, acDeviceGetVBA(device).on_device.out[field]};
+        return ac::device_view<AcReal>{count, out};
     default:
         ERRCHK(false);
         return ac::device_view<AcReal>{};

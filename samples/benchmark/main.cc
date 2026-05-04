@@ -122,6 +122,8 @@ main(int argc, char** argv)
     
     constexpr int3 nn{16, 16, 16};
     acPushToConfig(info, AC_ngrid, nn);
+    acPushToConfig(info, AC_decompose_strategy, AC_DECOMPOSE_STRATEGY_ACM);
+    acPushToConfig(info, AC_proc_mapping_strategy, AC_PROC_MAPPING_STRATEGY_ACM);
     acHostUpdateParams(&info);
 
     TestType test = TEST_STRONG_SCALING;
@@ -197,15 +199,15 @@ main(int argc, char** argv)
 
     // Device init
     acGridInit(info);
-    acGridRandomize();
-
+        acGridRandomize();
+    
     // Constant timestep
     const AcReal dt = (AcReal)FLT_EPSILON;
 
     // Dryrun
-    acDeviceSetInput(acGridGetDevice(), AC_current_time, 0.0);
-    AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
-
+        acDeviceSetInput(acGridGetDevice(), AC_current_time, 0.0);
+        AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
+    
     if (verify) {
         // Host init
         AcMesh model, candidate;
@@ -215,11 +217,11 @@ main(int argc, char** argv)
             acHostGridMeshRandomize(&model);
             acHostGridMeshRandomize(&candidate);
         }
-        acGridLoadMesh(STREAM_DEFAULT, model);
-        acGridSynchronizeStream(STREAM_DEFAULT);
-        acGridPeriodicBoundconds(STREAM_DEFAULT);
-        acGridSynchronizeStream(STREAM_DEFAULT);
-
+                acGridLoadMesh(STREAM_DEFAULT, model);
+                acGridSynchronizeStream(STREAM_DEFAULT);
+                acGridPeriodicBoundconds(STREAM_DEFAULT);
+                acGridSynchronizeStream(STREAM_DEFAULT);
+        
         // Verification run
         const size_t nsteps = 10;
         for (size_t i = 0; i < nsteps; ++i) {
@@ -231,22 +233,22 @@ main(int argc, char** argv)
 
                 acHostMeshApplyPeriodicBounds(&model);
                 acHostIntegrateStep(model, dt);
-            }
+                            }
         }
         acGridPeriodicBoundconds(STREAM_DEFAULT);
-        acGridStoreMesh(STREAM_DEFAULT, &candidate);
-        acGridSynchronizeStream(STREAM_ALL);
-
+                acGridStoreMesh(STREAM_DEFAULT, &candidate);
+                acGridSynchronizeStream(STREAM_ALL);
+        
         // Verify
         if (!pid) {
             acHostMeshApplyPeriodicBounds(&model);
-            printf("Verifying...\n");
+                        printf("Verifying...\n");
             fflush(stdout);
 
             AcResult retval = acVerifyMesh("Integration", model, candidate);
             acHostMeshDestroy(&model);
             acHostMeshDestroy(&candidate);
-
+            
             if (retval != AC_SUCCESS) {
                 fprintf(stderr, "Failures found, benchmark invalid. Skipping\n");
                 return EXIT_FAILURE;
@@ -259,23 +261,23 @@ main(int argc, char** argv)
     const size_t num_iters = 100;
     std::vector<double> results; // ms
     results.reserve(num_iters);
-
+    
     // Warmup
     for (size_t i = 0; i < 5; ++i)
         AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
-
+    
     // Benchmark
     Timer t;
     for (size_t i = 0; i < num_iters; ++i) {
-        acGridSynchronizeStream(STREAM_ALL);
+                acGridSynchronizeStream(STREAM_ALL);
         timer_reset(&t);
         acGridSynchronizeStream(STREAM_ALL);
         AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
         acGridSynchronizeStream(STREAM_ALL);
         results.push_back(timer_diff_nsec(t) / 1e6); // ms
         acGridSynchronizeStream(STREAM_ALL);
-    }
-
+            }
+    
     if (!pid) {
         std::sort(results.begin(), results.end(),
                   [](const double& a, const double& b) { return a < b; });
