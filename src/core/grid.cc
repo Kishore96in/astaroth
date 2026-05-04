@@ -3124,6 +3124,8 @@ acGridPeriodicBoundcondsACM(const Stream stream)
     acGridSwapBuffers();
     acPeriodicBoundcondsBatchedLaunch(grid.device, STREAM_DEFAULT);
     acPeriodicBoundcondsBatchedWait(grid.device, STREAM_DEFAULT);
+    // acPeriodicBoundcondsFusedLaunch(grid.device, STREAM_DEFAULT);
+    // acPeriodicBoundcondsFusedWait(grid.device, STREAM_DEFAULT);
     acGridSwapBuffers();
 
     return AC_SUCCESS;
