@@ -240,10 +240,11 @@ Advanced</h3>
 <li><code>input</code> Designed for variables that are input parameters to Kernels, but should not be allocated/loaded to the GPU. Or for control variables that should only live on the host. (Renaming the qualifier to <code>host</code> is under consideration.) <blockquote class="doxtable">
 <p>&zwj;Note: At the moment, can be used only via <code>ComputeSteps</code>. See the section describing <code>ComputeSteps</code> for example usage. </p>
 </blockquote>
-* <code>output</code> At the moment, restricted to <code>real</code> and <code>int</code> scalar quantities resulting from reductions across the whole subdomain. <blockquote class="doxtable">
+* <code>output</code> Used to specify that a variable is supposed to to be the output result of a reduction across the whole subdomain. At the moment, restricted to <code>real</code>,<code>float</code> and <code>int</code> scalar quantities. <blockquote class="doxtable">
 <p>&zwj;Note: implicitly allocates memory on the GPU to perform reductions. </p>
 </blockquote>
 </li>
+<li><code>global</code> Used to specify that the reductions of the corresponding <code>output</code> variable is supposed to be done globally i.e. across the whole grid or in other words across all subdomains.</li>
 <li><code>utility</code> Tells the compiler that the <code>Kernel</code> should be skiped when inferring which <code>Fields</code> are dead.</li>
 <li><code>fixed_boundary</code> Tells the compiler that in <code>ComputeSteps</code> before the kernel boundary values inside the local subdomain should not be updated via boundary conditions. Rather the values on the boundaries should be carried over from before, i.e. the boundary values stay fixed from previous <code>Kernel</code> calls.</li>
 <li><code>boundary_condition</code> Tells the compiler that this kernel is supposed to be used as a boundary condition. As of now the only effect for boundary condition kernels is that all vertices in the computational subdomain (i.e. not halo regions) are skipped. So for example you can calculate periodic boundary conditions in all directions on a single device by launching BOUNDCOND_PERIODIC_DEVICE on the whole subdomain with halos included.</li>
@@ -524,12 +525,16 @@ Allocating declarations</h3>
 <h3><a class="anchor" id="autotoc_md51"></a>
 Reductions</h3>
 <p>For reductions the kernel has to be invoked at each vertex point of the domain. </p><div class="fragment"><div class="line">output real max_derux</div>
+<div class="line">output global real global_max_derux</div>
 <div class="line">Field ux,f</div>
 <div class="line">Profile&lt;X&gt;  X_PROFILE</div>
 <div class="line">Profile&lt;XY&gt; XY_PROFILE</div>
 <div class="line">Kernel reduce_kernel()</div>
 <div class="line">{</div>
-<div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction</div>
+<div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction; will output a different value at each process corresponding to its subdomain.</div>
+<div class="line">                                   //Said in a simpler manner: calculates the maximum across the subdomain</div>
+<div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction; will produce a unique maximum across the whole grid that each process sees.</div>
+<div class="line">                                   //Said in a simpler manner: calculates the maximum across the whole grid.</div>
 <div class="line">    reduce_sum(ux,X_PROFILE) //Reduction along y and z resulting in array that is x-dependent.</div>
 <div class="line">    reduce_sum(ux,XY_PROFILE) //Reduction along z resulting in array that is xy-dependent.</div>
 <div class="line">}</div>
