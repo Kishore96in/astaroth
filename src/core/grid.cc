@@ -3018,7 +3018,7 @@ acGridIntegrate(const Stream stream, const AcReal dt)
 AcResult
 acGridIntegrateACM(const Stream stream, const AcReal dt)
 {
-        acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+    acDeviceSynchronizeStream(grid.device, STREAM_ALL);
 
     if(!grid.submesh.info[AC_fully_periodic_grid])
     {
@@ -3033,11 +3033,11 @@ acGridIntegrateACM(const Stream stream, const AcReal dt)
     const auto nn{grid.nn};
 
     // Integrate
+    for (size_t i{0}; i < 3; ++i) {
         acDeviceSynchronizeStream(grid.device, STREAM_ALL);
-        for (size_t i{0}; i < 3; ++i) {
+        
         // Outer intergration
-
-                { // Front
+        { // Front
             const Volume m1 = (Volume){NGHOST, NGHOST, NGHOST};
             const Volume m2 = m1 + (Volume){nn.x, nn.y, NGHOST};
             acDeviceIntegrateSubstep(grid.device, STREAM_0, i, m1, m2, dt);
@@ -3067,7 +3067,7 @@ acGridIntegrateACM(const Stream stream, const AcReal dt)
             const Volume m2 = m1 + (Volume){NGHOST, nn.y - 2 * NGHOST, nn.z - 2 * NGHOST};
             acDeviceIntegrateSubstep(grid.device, STREAM_5, i, m1, m2, dt);
         }
-                acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+        acDeviceSynchronizeStream(grid.device, STREAM_ALL);
         
         // Launch halo exchange
         // acPeriodicBoundcondsFusedLaunch(grid.device, stream);
@@ -3089,10 +3089,10 @@ acGridIntegrateACM(const Stream stream, const AcReal dt)
 
         // Swap buffers
         acGridSwapBuffers();
-            }
+    }
     
-        acDeviceSynchronizeStream(grid.device, STREAM_ALL);
-        return AC_FAILURE;
+    acDeviceSynchronizeStream(grid.device, STREAM_ALL);
+    return AC_FAILURE;
 }
 #endif // AC_INTEGRATION_ENABLED
 
@@ -3110,15 +3110,25 @@ acGridPeriodicBoundconds(const Stream stream)
 	    fatal("%s","acGridPeriodicBoundconds assumes fully periodic grid!\n");
     }
     return acGridExecuteTaskGraph(grid.periodic_bc_tasks.get(), 1);
-
-    // TODO test: review
-    // acGridSwapBuffers();
-    // acPeriodicBoundcondsBatchedLaunch(grid.device, STREAM_DEFAULT);
-    // acPeriodicBoundcondsBatchedWait(grid.device, STREAM_DEFAULT);
-    // acGridSwapBuffers();
-
-    // return AC_SUCCESS;
 }
+
+AcResult
+acGridPeriodicBoundcondsACM(const Stream stream)
+{
+    (void)stream;
+    if(!grid.submesh.info[AC_fully_periodic_grid])
+    {
+	    fatal("%s","acGridPeriodicBoundconds assumes fully periodic grid!\n");
+    }
+
+    acGridSwapBuffers();
+    acPeriodicBoundcondsBatchedLaunch(grid.device, STREAM_DEFAULT);
+    acPeriodicBoundcondsBatchedWait(grid.device, STREAM_DEFAULT);
+    acGridSwapBuffers();
+
+    return AC_SUCCESS;
+}
+
 
 static size_t
 get_n_global_points()

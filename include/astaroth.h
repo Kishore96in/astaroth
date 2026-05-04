@@ -535,6 +535,7 @@ acGetPid(const int3 pid, const int3 decomp, const AcMeshInfo info);
 	LOAD_DSYM(acGridSwapBuffers,stream);
 	LOAD_DSYM(acGridHaloExchange,stream);
 	LOAD_DSYM(acGridPeriodicBoundconds,stream);
+	LOAD_DSYM(acGridPeriodicBoundcondsACM, stream);
 	LOAD_DSYM(acGridReduceScal,stream);
 	LOAD_DSYM(acGridReduceVec,stream);
 	LOAD_DSYM(acGridReduceVecScal,stream);

@@ -851,7 +851,7 @@ acVerifyDecomposition(const uint3_64 decomp, const AcProcMappingStrategy proc_ma
         const auto j{getPid3D(i, decomp,proc_mapping_strategy)};
         const auto k{getPid(j, decomp,proc_mapping_strategy)};
 
-        std::cout << "Rank: " << ac::mpi::get_rank(MPI_COMM_WORLD) << "\n\tID: " << i << "\n\tCoords:" << j.x << ", " << j.y << ", " << j.z << "\n\tMapped ID: " << k << std::endl;
+        // std::cout << "Rank: " << ac::mpi::get_rank(MPI_COMM_WORLD) << "\n\tID: " << i << "\n\tCoords:" << j.x << ", " << j.y << ", " << j.z << "\n\tMapped ID: " << k << std::endl;
 
 
         ERRCHK_ALWAYS(k == static_cast<int>(i));

@@ -120,6 +120,7 @@ FUNC_DEFINE(AcResult, acGridHaloExchange,());
 
 /** */
 FUNC_DEFINE(AcResult, acGridPeriodicBoundconds,(const Stream stream));
+FUNC_DEFINE(AcResult, acGridPeriodicBoundcondsACM,(const Stream stream));
 
 
 /** */

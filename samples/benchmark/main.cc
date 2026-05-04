@@ -34,7 +34,9 @@
 
 
 // #define AC_GRID_INTEGRATE_FUNCTION (acGridIntegrate)
+// #define AC_GRID_PERIODIC_BOUNDCOND_FUNCTION (acGridPeriodicBoundconds)
 #define AC_GRID_INTEGRATE_FUNCTION (acGridIntegrateACM)
+#define AC_GRID_PERIODIC_BOUNDCOND_FUNCTION (acGridPeriodicBoundcondsACM)
 
 #if !AC_MPI_ENABLED
 int
@@ -205,8 +207,8 @@ main(int argc, char** argv)
     const AcReal dt = (AcReal)FLT_EPSILON;
 
     // Dryrun
-        acDeviceSetInput(acGridGetDevice(), AC_current_time, 0.0);
-        AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
+    acDeviceSetInput(acGridGetDevice(), AC_current_time, 0.0);
+    AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
     
     if (verify) {
         // Host init
@@ -219,7 +221,7 @@ main(int argc, char** argv)
         }
                 acGridLoadMesh(STREAM_DEFAULT, model);
                 acGridSynchronizeStream(STREAM_DEFAULT);
-                acGridPeriodicBoundconds(STREAM_DEFAULT);
+                AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
                 acGridSynchronizeStream(STREAM_DEFAULT);
         
         // Verification run
@@ -233,9 +235,9 @@ main(int argc, char** argv)
 
                 acHostMeshApplyPeriodicBounds(&model);
                 acHostIntegrateStep(model, dt);
-                            }
+            }
         }
-        acGridPeriodicBoundconds(STREAM_DEFAULT);
+        AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
                 acGridStoreMesh(STREAM_DEFAULT, &candidate);
                 acGridSynchronizeStream(STREAM_ALL);
         
@@ -329,13 +331,13 @@ main(int argc, char** argv)
         fprintf(stderr, "\nSanity performance check:\n");
 
     // timer_event_launch();
-    // acGridPeriodicBoundconds(STREAM_DEFAULT);
-    // timer_event_stop("acGridPeriodicBoundconds: ");
+    // AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
+    // timer_event_stop("AC_GRID_PERIODIC_BOUNDCOND_FUNCTION: ");
 
     const AcMeshDims dims = acGetMeshDims(info);
     timer_event_launch();
     acDevicePeriodicBoundconds(acGridGetDevice(), STREAM_DEFAULT, dims.m0, dims.m1);
-    timer_event_stop("acGridPeriodicBoundconds: ");
+    timer_event_stop("AC_GRID_PERIODIC_BOUNDCOND_FUNCTION: ");
 
     acProfilerStart();
     timer_event_launch();
