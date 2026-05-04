@@ -330,14 +330,20 @@ main(int argc, char** argv)
     if (!pid)
         fprintf(stderr, "\nSanity performance check:\n");
 
-    // timer_event_launch();
-    // AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
-    // timer_event_stop("AC_GRID_PERIODIC_BOUNDCOND_FUNCTION: ");
 
-    const AcMeshDims dims = acGetMeshDims(info);
+    // --- BCs ---
+    // Warmup
+    for (size_t i{0}; i < 3; ++i)
+        AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
+
     timer_event_launch();
-    acDevicePeriodicBoundconds(acGridGetDevice(), STREAM_DEFAULT, dims.m0, dims.m1);
+    AC_GRID_PERIODIC_BOUNDCOND_FUNCTION(STREAM_DEFAULT);
     timer_event_stop("AC_GRID_PERIODIC_BOUNDCOND_FUNCTION: ");
+
+    // --- Integrate ---
+    // Warmup
+    for (size_t i{0}; i < 3; ++i)
+        AC_GRID_INTEGRATE_FUNCTION(STREAM_DEFAULT, dt);
 
     acProfilerStart();
     timer_event_launch();
@@ -345,10 +351,21 @@ main(int argc, char** argv)
     timer_event_stop("AC_GRID_INTEGRATE_FUNCTION: ");
     acProfilerStop();
 
-    timer_event_launch();
+
+    // --- Reduce Scal ---
+    // Warmup
     AcReal candval;
+    for (size_t i{0}; i < 3; ++i)
+        acGridReduceScal(STREAM_DEFAULT, RTYPE_SUM, (Field)0, &candval);
+
+    timer_event_launch();
     acGridReduceScal(STREAM_DEFAULT, RTYPE_SUM, (Field)0, &candval);
     timer_event_stop("acGridReduceScal");
+
+    // --- Reduce Vec ---
+    // Warmup
+    for (size_t i{0}; i < 3; ++i)
+        acGridReduceVec(STREAM_DEFAULT, RTYPE_SUM, (Field)0, (Field)1, (Field)2, &candval);
 
     ERRCHK_ALWAYS(NUM_FIELDS >= 3);
     timer_event_launch();
