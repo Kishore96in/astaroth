@@ -110,7 +110,7 @@ timer_event_stop(const char* format, ...)
 int
 main(int argc, char** argv)
 {
-    int verify = 1;
+    int verify = 0;
     MPI_Init(NULL, NULL);
     acProfilerStop();
 
@@ -122,14 +122,15 @@ main(int argc, char** argv)
     AcMeshInfo info = acInitInfo();
     acLoadConfig(AC_DEFAULT_CONFIG, &info);
     
-    constexpr int3 nn{16, 16, 16};
+    // constexpr int3 nn{16, 16, 16};
+    constexpr int3 nn{256, 256, 256};
+    
     acPushToConfig(info, AC_ngrid, nn);
     acPushToConfig(info, AC_decompose_strategy, AC_DECOMPOSE_STRATEGY_ACM);
     acPushToConfig(info, AC_proc_mapping_strategy, AC_PROC_MAPPING_STRATEGY_ACM);
     acHostUpdateParams(&info);
 
     TestType test = TEST_STRONG_SCALING;
-
     #if 0
     int opt;
     while ((opt = getopt(argc, argv, "t:")) != -1) {
