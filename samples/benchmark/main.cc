@@ -31,6 +31,7 @@
 
 #include <string>
 #include <unistd.h> // getopt
+#include <sstream> // ostringstream
 
 
 // #define AC_GRID_INTEGRATE_FUNCTION (acGridIntegrate)
@@ -301,9 +302,18 @@ main(int argc, char** argv)
 
         // char path[4096] = "";
         // sprintf(path, "%s_%d.csv", test == TEST_STRONG_SCALING ? "strong" : "weak", nprocs);
-        const char path[] = "scaling-benchmark.csv";
+        // const char path[] = "scaling-benchmark.csv";
 
-        FILE* fp = fopen(path, "a");
+        int jobid{0};
+        if (argc >= 2)
+            jobid = std::atoi(argv[1]);
+
+        std::ostringstream os;
+        os << "bm-mhd-strong-scaling-" << nprocs << "-" << jobid << ".csv";
+        std::string path{os.str()};
+    
+
+        FILE* fp = fopen(path.c_str(), "a");
         ERRCHK_ALWAYS(fp);
 // Format
 // nprocs, min, 50th perc, 90th perc, max
