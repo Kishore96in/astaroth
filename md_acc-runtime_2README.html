@@ -528,7 +528,8 @@ Allocating declarations</h3>
 </blockquote>
 <h3><a class="anchor" id="autotoc_md51"></a>
 Reductions</h3>
-<p>For reductions the kernel has to be invoked at each vertex point of the domain. </p><div class="fragment"><div class="line">output real max_derux</div>
+<p>For reductions the kernel has to be invoked at each vertex point of the domain. The three types of binary operations currently supported are min,max and sum. </p><div class="fragment"><div class="line">output real max_derux</div>
+<div class="line">output real min_derux</div>
 <div class="line">output global real global_max_derux</div>
 <div class="line">output real sum_derux</div>
 <div class="line">Field ux,f</div>
@@ -538,7 +539,8 @@ Reductions</h3>
 <div class="line">{</div>
 <div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction; will output a different value at each process corresponding to its subdomain.</div>
 <div class="line">                                   //Said in a simpler manner: calculates the maximum across the subdomain</div>
-<div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction; will produce a unique maximum across the whole grid that each process sees.</div>
+<div class="line">    reduce_min(derx(ux),min_derux) //Same as above but calculates the minimum value.</div>
+<div class="line">    reduce_max(derx(ux),global_max_derux) //scalar reduction; will produce a unique maximum across the whole grid that each process sees.</div>
 <div class="line">                                   //Said in a simpler manner: calculates the maximum across the whole grid.</div>
 <div class="line">    reduce_sum(derx(ux),sum_derux) //Will write the sum of derx(ux) to sum_derux</div>
 <div class="line">    reduce_sum_add(derx(ux),sum_derux) //Will write the sum of derx(ux) + value(sum_derux) to sum_derux (works only if launched on the normal subdomain size)</div>
