@@ -73,7 +73,9 @@ extern "C"
 
 
 /** Uses ACM for applying the boundary conditions */
-AcResult acPeriodicBoundcondsFusedLaunch(const Device, const Stream stream);
-AcResult acPeriodicBoundcondsFusedWait(const Device, const Stream stream);
-AcResult acPeriodicBoundcondsBatchedLaunch(const Device, const Stream stream);
-AcResult acPeriodicBoundcondsBatchedWait(const Device, const Stream stream);
+AcResult acmPeriodicBoundcondsFusedLaunch(const Device, const Stream stream);
+AcResult acmAPeriodicBoundcondsFusedWait(const Device, const Stream stream);
+AcResult acmPeriodicBoundcondsBatchedLaunch(const Device, const Stream stream);
+AcResult acmPeriodicBoundcondsBatchedWait(const Device, const Stream stream);
+MPI_Comm acmGetComm();
+int acmSelectDevice();

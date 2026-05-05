@@ -202,14 +202,16 @@ ac_MPI_Init()
         return AC_FAILURE;
     }
 
+    const auto acm_comm{acmGetComm()};
+
     // Get rank for new communicator
     int rank = -1;
-    if (MPI_Comm_rank(MPI_COMM_WORLD, &rank) != MPI_SUCCESS) {
+    if (MPI_Comm_rank(acm_comm, &rank) != MPI_SUCCESS) {
         return AC_FAILURE;
     }
 
-    // Split MPI_COMM_WORLD
-    if (MPI_Comm_split(MPI_COMM_WORLD, astaroth_comm_split_key, rank, &astaroth_comm) !=
+    // Split communicator
+    if (MPI_Comm_split(acm_comm, astaroth_comm_split_key, rank, &astaroth_comm) !=
         MPI_SUCCESS) {
         return AC_FAILURE;
     }
@@ -228,14 +230,16 @@ ac_MPI_Init_thread(int thread_level)
         return AC_FAILURE;
     }
 
+    const auto acm_comm{acmGetComm()};
+
     // Get rank for new communicator
     int rank = -1;
-    if (MPI_Comm_rank(MPI_COMM_WORLD, &rank) != MPI_SUCCESS) {
+    if (MPI_Comm_rank(acm_comm, &rank) != MPI_SUCCESS) {
         return AC_FAILURE;
     }
 
-    // Split MPI_COMM_WORLD
-    if (MPI_Comm_split(MPI_COMM_WORLD, astaroth_comm_split_key, rank, &astaroth_comm) !=
+    // Split communicator
+    if (MPI_Comm_split(acm_comm, astaroth_comm_split_key, rank, &astaroth_comm) !=
         MPI_SUCCESS) {
         return AC_FAILURE;
     }
@@ -850,7 +854,7 @@ acGridInitBase(const AcMesh user_mesh)
     acVerboseLogFromRootProc(pid,"memusage before acDeviceCreate = %f MBytes\n",acMemUsage()/1024.0);
 
     Device device;
-    acDeviceCreate(pid % devices_per_node, submesh_info, &device);
+    acDeviceCreate(acmSelectDevice(), submesh_info, &device);
 
     acVerboseLogFromRootProc(ac_pid(),"memusage after acDeviceCreate = %f MBytes\n", acMemUsage()/1024.0);
     acLogFromRootProc(ac_pid() , "acGridInit: Returned from acDeviceCreate\n");
@@ -937,6 +941,13 @@ acGridInitBase(const AcMesh user_mesh)
     AcCommunicator comm{astaroth_comm};
     const int3 global_offset = acGridGetLocalMeshInfo()[AC_multigpu_offset];
     acFFTInit(&comm, reinterpret_cast<const int*>(&global_offset));
+
+
+    // ACM and lumi-specific mapping
+    int world_pid{MPI_PROC_NULL};
+    MPI_Comm_rank(MPI_COMM_WORLD, &world_pid);
+    std::array device_ids{6, 7, 0, 1, 2, 3, 4, 5, 6};
+    ERRCHK_ALWAYS(acDeviceGetId(grid.device) == device_ids[world_pid % devices_per_node]);
 
     return AC_SUCCESS;
 }
@@ -3070,8 +3081,8 @@ acGridIntegrateACM(const Stream stream, const AcReal dt)
         acDeviceSynchronizeStream(grid.device, STREAM_ALL);
         
         // Launch halo exchange
-        // acPeriodicBoundcondsFusedLaunch(grid.device, stream);
-        acPeriodicBoundcondsBatchedLaunch(grid.device, stream);
+        // acmPeriodicBoundcondsFusedLaunch(grid.device, stream);
+        acmPeriodicBoundcondsBatchedLaunch(grid.device, stream);
         
         // Inner intergration
         {
@@ -3081,8 +3092,8 @@ acGridIntegrateACM(const Stream stream, const AcReal dt)
         }
                 
         // Wait halo exchange
-        // acPeriodicBoundcondsFusedWait(grid.device, stream);
-        acPeriodicBoundcondsBatchedWait(grid.device, stream);
+        // acmPeriodicBoundcondsFusedWait(grid.device, stream);
+        acmPeriodicBoundcondsBatchedWait(grid.device, stream);
 
         // Wait integration
         acDeviceSynchronizeStream(grid.device, STREAM_ALL);
@@ -3122,10 +3133,10 @@ acGridPeriodicBoundcondsACM(const Stream stream)
     }
 
     acGridSwapBuffers();
-    acPeriodicBoundcondsBatchedLaunch(grid.device, STREAM_DEFAULT);
-    acPeriodicBoundcondsBatchedWait(grid.device, STREAM_DEFAULT);
-    // acPeriodicBoundcondsFusedLaunch(grid.device, STREAM_DEFAULT);
-    // acPeriodicBoundcondsFusedWait(grid.device, STREAM_DEFAULT);
+    acmPeriodicBoundcondsBatchedLaunch(grid.device, STREAM_DEFAULT);
+    acmPeriodicBoundcondsBatchedWait(grid.device, STREAM_DEFAULT);
+    // acmPeriodicBoundcondsFusedLaunch(grid.device, STREAM_DEFAULT);
+    // acmPeriodicBoundcondsFusedWait(grid.device, STREAM_DEFAULT);
     acGridSwapBuffers();
 
     return AC_SUCCESS;

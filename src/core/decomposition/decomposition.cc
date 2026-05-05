@@ -171,7 +171,7 @@ acInitDecomposition(const AcMeshInfo info, const size_t nprocs)
         const ac::shape global_nn{as<uint64_t>(mesh_dims.nn.x), as<uint64_t>(mesh_dims.nn.y), as<uint64_t>(mesh_dims.nn.z)};
         g_global_nn = global_nn;
 
-        g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::no);        
+        g_acm_comm = cart_comm_create(MPI_COMM_WORLD, global_nn, ac::mpi::RankReorderMethod::hierarchical);        
     }
     
     acVerifyDecomposition(decompose(nprocs,info[AC_decompose_strategy]),info[AC_proc_mapping_strategy]);
@@ -942,7 +942,7 @@ make_ptr(const Device& device, const Field& field, const BufferGroup& type)
     }
 }
 
-AcResult acPeriodicBoundcondsFusedLaunch(const Device device, const Stream stream)
+AcResult acmPeriodicBoundcondsFusedLaunch(const Device device, const Stream stream)
 {    
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
 
@@ -959,7 +959,7 @@ AcResult acPeriodicBoundcondsFusedLaunch(const Device device, const Stream strea
     return AC_FAILURE;
 }
 
-AcResult acPeriodicBoundcondsFusedWait(const Device device, const Stream stream)
+AcResult acmPeriodicBoundcondsFusedWait(const Device device, const Stream stream)
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
     ERRCHK(g_fused_halo_exchange != nullptr);
@@ -973,7 +973,7 @@ AcResult acPeriodicBoundcondsFusedWait(const Device device, const Stream stream)
     return AC_FAILURE;
 }
 
-AcResult acPeriodicBoundcondsBatchedLaunch(const Device device, const Stream stream)
+AcResult acmPeriodicBoundcondsBatchedLaunch(const Device device, const Stream stream)
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
 
@@ -990,7 +990,7 @@ AcResult acPeriodicBoundcondsBatchedLaunch(const Device device, const Stream str
     return AC_FAILURE;
 }
 
-AcResult acPeriodicBoundcondsBatchedWait(const Device device, const Stream stream)
+AcResult acmPeriodicBoundcondsBatchedWait(const Device device, const Stream stream)
 {
     ERRCHK(g_acm_comm != MPI_COMM_NULL);
     ERRCHK(g_batched_halo_exchange != nullptr);
@@ -1002,4 +1002,14 @@ AcResult acPeriodicBoundcondsBatchedWait(const Device device, const Stream strea
     g_batched_halo_exchange->wait(outputs);
     
     return AC_FAILURE;
+}
+
+MPI_Comm acmGetComm() 
+{ 
+    ERRCHK(g_acm_comm != MPI_COMM_NULL);
+    return g_acm_comm;
+}
+
+int acmSelectDevice(){
+    return ac::mpi::select_device_lumi();
 }
