@@ -535,8 +535,9 @@ Reductions</h3>
 <div class="line">                                   //Said in a simpler manner: calculates the maximum across the subdomain</div>
 <div class="line">    reduce_max(derx(ux),max_derux) //scalar reduction; will produce a unique maximum across the whole grid that each process sees.</div>
 <div class="line">                                   //Said in a simpler manner: calculates the maximum across the whole grid.</div>
-<div class="line">    reduce_sum(ux,X_PROFILE) //Reduction along y and z resulting in array that is x-dependent.</div>
-<div class="line">    reduce_sum(ux,XY_PROFILE) //Reduction along z resulting in array that is xy-dependent.</div>
+<div class="line">    reduce_sum(ux,X_PROFILE)  //Reduction along y and z resulting in array that is x-dependent.</div>
+<div class="line">    reduce_sum(ux,XY_PROFILE) //Reduction along z resulting in array that is xy-dependent. </div>
+<div class="line">                              //Both of these profile reductions are global across the whole grid.</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">Kernel read_output()</div>
