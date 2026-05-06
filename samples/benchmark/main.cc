@@ -325,6 +325,7 @@ main(int argc, char** argv)
 #else
         const bool use_distributed_io = false;
 #endif
+        fprintf(fp, "nprocs,ms_min,ms_median,ms_perc90,ms_max,distr,nx,ny,nz,strong\n");
         fprintf(fp, "%d,%g,%g,%g,%g,%d,%d,%d,%d,%d\n", nprocs, results[0],
                 results[(size_t)(0.5 * num_iters)], results[(size_t)(0.9 * num_iters)],
                 results[num_iters - 1], use_distributed_io, info[AC_ngrid].x, info[AC_ngrid].y,
