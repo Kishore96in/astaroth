@@ -68,8 +68,8 @@ class System:
 
 lumi = System(
     account = "project_462001062",
-    partition = "dev-g",
-    # partition = "standard-g",
+    # partition = "dev-g",
+    partition = "standard-g",
     devices_per_node = 8,
     modules = """
 # Modules
@@ -97,7 +97,7 @@ def gen_strong_scaling_benchmarks(system):
     time_limit = "00:15:00"
 
     nprocs = 1
-    max_nprocs = 64
+    max_nprocs = 512
     while nprocs <= max_nprocs:
         with open(f'bm-mhd-strong-scaling-{nprocs}.sh', 'w') as f:
             print(gen_benchmark(system, nprocs, time_limit), file=f)
