@@ -237,18 +237,18 @@ var NAVTREEINDEX =
 "cpu_8cc.html#a32c8faeefd4219c2a60e92c28d5f85ff",
 "device_8cc.html#a94fb68259b2b3954c09c980786a17831",
 "functions_x.html",
-"globals_func_u.html",
-"hip_8h.html#ac71823e8c38c558582f2b19a3045dc28",
-"math__utils__base_8h_source.html",
-"modelreduce_8cc.html#a1e1e301aca5314403b0619bc9c39f081",
-"pc__derivs_8h.html#a485fb222905ae02459ec04e656970b85",
-"smooth__max_8h.html#a2a632e7d278354d62805a223b3d3053e",
-"smooth__max_8h.html#adc35c039d655dc915061c228635a1f97",
-"stencils_8h.html#a532fd09cceb968f26df5018df5f834be",
-"structKernelAnalysisInfo.html",
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a02240576433a09106044a30dfb2ba4e9",
-"structuint2__64.html",
-"variables_8h.html#a682eb578680f721d1d233c36fcff3ed4"
+"general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f",
+"heffte_8cc.html#a60ac7badd6a8e10bd158609f3af30614",
+"kiss__fft_8h.html#aa79492c87ecb142d418284bf0a6c8259",
+"md_acc-runtime_2README.html#autotoc_md48",
+"node_8cc.html#a2eb2ad2a603610c03b529d4387b8cd01",
+"rocfft_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0",
+"smooth__max_8h.html#a82285b87b13bf3fcf74d6b4fee1ab747",
+"stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb",
+"structAcTaskGraph.html#a1ec0bf72efcbd522abd9b926641825a2",
+"structastnode__s.html",
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Check.html",
+"typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
