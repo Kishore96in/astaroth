@@ -8,6 +8,7 @@ var slope__limited__diffusion_8h =
     [ "get_slope_limited_divergence", "slope__limited__diffusion_8h.html#a6bb2226c460361a5eebdda1fcf1bd7da", null ],
     [ "get_slope_limited_divergence", "slope__limited__diffusion_8h.html#a5c61c5bfefafefdfa198007fca591d70", null ],
     [ "get_slope_limited_divergence", "slope__limited__diffusion_8h.html#a5dad04532ae7ff5fdb7620a27c3d7038", null ],
+    [ "get_slope_limited_divergence", "slope__limited__diffusion_8h.html#ada7ec8257f22fbabe6c773dc18ef23ab", null ],
     [ "get_slope_limited_divergence_and_average_fluxes", "slope__limited__diffusion_8h.html#adf3273c49e6b7ef302625c8277755c8e", null ],
     [ "get_slope_limited_divergence_and_heat", "slope__limited__diffusion_8h.html#a8332c208e5f1a550b29bf8bfe97a46ca", null ],
     [ "left", "slope__limited__diffusion_8h.html#ab5fd94dcb6ece8b551146d8557b24583", null ],
