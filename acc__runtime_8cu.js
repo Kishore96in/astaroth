@@ -34,6 +34,7 @@ var acc__runtime_8cu =
     [ "USE_COMPRESSIBLE_MEMORY", "acc__runtime_8cu.html#a22aa0659c9e26b9557fb9e2dc4827aa8", null ],
     [ "YELLOW", "acc__runtime_8cu.html#abf681265909adf3d3e8116c93c0ba179", null ],
     [ "Kernel", "acc__runtime_8cu.html#a98666be13c8e67196b9560ba9eeff819", null ],
+    [ "ac_is_global", "acc__runtime_8cu.html#ab4ba172c781572048c8082d7c9667e26", null ],
     [ "ac_resize_scratchpads_to_fit", "acc__runtime_8cu.html#a5f3ca0e1995c51d3172cad5610c7f2de", null ],
     [ "acBenchmarkKernel", "acc__runtime_8cu.html#a0bb02bb65a5c61caf56c1cc5d9d7298f", null ],
     [ "acGetKernelReduceScratchPadMinSize", "acc__runtime_8cu.html#a33f612e34c263dd6a6fda3b1cbd71e84", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structKernelAnalysisInfo.html":[18,0,74],
 "structKernelAnalysisInfo.html#a2bc20690403e6324f4272cfa222afb4a":[18,0,74,10],
 "structKernelAnalysisInfo.html#a45d0b96abee16af67bb6ffc5ba12b41d":[18,0,74,4],
 "structKernelAnalysisInfo.html#a506429602ce3dcb008bec29f1b49c7c7":[18,0,74,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structload__scalars.html#ae6cce84b9cc534d8de4e1776ee48dee7":[18,0,88,0],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html":[18,0,0,0,0],
 "structmatplotlibcpp_1_1detail_1_1__interpreter.html":[17,0,1,0,0],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a02240576433a09106044a30dfb2ba4e9":[17,0,1,0,0,5],
-"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a02240576433a09106044a30dfb2ba4e9":[18,0,0,0,0,5]
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#a02240576433a09106044a30dfb2ba4e9":[17,0,1,0,0,5]
 };
