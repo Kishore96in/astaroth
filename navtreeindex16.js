@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"smooth__max_8h.html#a80860f13849f5a4384d236f04de3c97b":[19,0,0,5,27,253],
+"smooth__max_8h.html#a80f5738e64015caaaf200cdbe8969c88":[19,0,0,5,27,87],
+"smooth__max_8h.html#a82285b87b13bf3fcf74d6b4fee1ab747":[19,0,0,5,27,306],
 "smooth__max_8h.html#a831bda2fbf8a80d25193b1b463e3ee5b":[19,0,0,5,27,154],
 "smooth__max_8h.html#a83f7b94d472732613500afbd8804543d":[19,0,0,5,27,231],
 "smooth__max_8h.html#a8499f4dd81cfb4963f89e7b6b956b8d1":[19,0,0,5,27,291],
@@ -161,8 +164,8 @@ var NAVTREEINDEX16 =
 "smooth__max_8h.html#afd0b2b460d9c39ab4650be821fb47dc3":[19,0,0,5,27,211],
 "smooth__max_8h.html#afe1499ec44e563ec32451d18f2c4e875":[19,0,0,5,27,207],
 "smooth__max_8h_source.html":[19,0,0,5,27],
-"sor-test_2main_8cc.html":[19,0,8,26,0],
-"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,26,0,0],
+"sor-test_2main_8cc.html":[19,0,8,27,0],
+"sor-test_2main_8cc.html#a840291bc02cba5474a4cb46a9b9566fe":[19,0,8,27,0,0],
 "spherical__harmonics_8h.html":[19,0,0,5,28],
 "spherical__harmonics_8h_source.html":[19,0,0,5,28],
 "src_2core_2kernels_2kernels_8h.html":[19,0,6,0,3,6],
@@ -211,8 +214,8 @@ var NAVTREEINDEX16 =
 "stdderiv_8h.html":[19,0,2,0,1,0],
 "stdderiv_8h.html#a00bc8e8e8fa119f80ad306d187909b3b":[19,0,2,0,1,0,13],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,2],
-"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
 "stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,0],
+"stdderiv_8h.html#a045054247e192cb387ff6126429f8199":[19,0,2,0,1,0,1],
 "stdderiv_8h.html#a05560cd80904170070b863d504600cf8":[19,0,2,0,1,0,16],
 "stdderiv_8h.html#a10564839083b4c35031b7af19017f0cf":[19,0,2,0,1,0,11],
 "stdderiv_8h.html#a19558133ffcf07b3e0757a2c7787baa7":[19,0,2,0,1,0,28],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "stdderiv_8h.html#aea6fae4c2b0a3571e2cd616b8da87bd8":[19,0,2,0,1,0,22],
 "stdderiv_8h.html#aee790b905f47eb12bdc9f6e17ca7f492":[19,0,2,0,1,0,8],
 "stdderiv_8h_source.html":[19,0,2,0,1,0],
-"stdlib_2fft_8h.html":[19,0,7,0],
-"stdlib_2fft_8h_source.html":[19,0,7,0],
-"stdlib_2geometric__multigrid_8h.html":[19,0,7,1],
-"stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb":[19,0,7,1,20]
+"stdlib_2fft_8h.html":[19,0,7,0]
 };

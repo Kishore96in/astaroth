@@ -23,6 +23,7 @@ var dir_13e138d54eb8818da29c3992edef070a =
     [ "poisson-test", "dir_57b1441fc8d38f228f1268bed9fc16ee.html", "dir_57b1441fc8d38f228f1268bed9fc16ee" ],
     [ "ray-mpi-test", "dir_bdaf9964a7d905e331ca1deb4fb2169a.html", "dir_bdaf9964a7d905e331ca1deb4fb2169a" ],
     [ "ray-test", "dir_3804065860f518b706332ecf697aa387.html", "dir_3804065860f518b706332ecf697aa387" ],
+    [ "reduce-sum-add-test", "dir_c59e4ba44f8126f39db3587975b79333.html", "dir_c59e4ba44f8126f39db3587975b79333" ],
     [ "reduce-test", "dir_d939cf20c503d87a775c8a7eb4b9cd85.html", "dir_d939cf20c503d87a775c8a7eb4b9cd85" ],
     [ "single-precision-test", "dir_92aaaa0424b3e23e8423bff32b439b8b.html", "dir_92aaaa0424b3e23e8423bff32b439b8b" ],
     [ "small-grid-test", "dir_600c3875bf7dc7b5676b4681d09391c3.html", "dir_600c3875bf7dc7b5676b4681d09391c3" ],

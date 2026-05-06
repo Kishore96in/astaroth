@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('functions_8h_source.html',''); initRes
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    previous_value = output_value(param)</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    divisor = ac_is_global(param) ? <a class="code hl_variable" href="variables_8h.html#ad6a03e633a2f733a3d263809f8dda5fd">AC_ngrid_products_inv</a>.<a class="code hl_variable" href="structAcDimProductsInv.html#a757b72242594a4960fc624043630c482">xyz</a> : <a class="code hl_variable" href="variables_8h.html#aded76d078fbd011093151077a46bd5cb">AC_nlocal_products_inv</a>.<a class="code hl_variable" href="structAcDimProductsInv.html#a757b72242594a4960fc624043630c482">xyz</a>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    real new_value = val*divisor</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    real new_value = val + divisor*previous_value</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    reduce_sum(new_value,param)</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>reduce_rms(real val, param)</div>
