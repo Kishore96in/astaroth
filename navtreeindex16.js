@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"smooth__max_8h.html#a82285b87b13bf3fcf74d6b4fee1ab747":[19,0,0,5,27,306],
 "smooth__max_8h.html#a831bda2fbf8a80d25193b1b463e3ee5b":[19,0,0,5,27,154],
 "smooth__max_8h.html#a83f7b94d472732613500afbd8804543d":[19,0,0,5,27,231],
 "smooth__max_8h.html#a8499f4dd81cfb4963f89e7b6b956b8d1":[19,0,0,5,27,291],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "stdderiv_8h_source.html":[19,0,2,0,1,0],
 "stdlib_2fft_8h.html":[19,0,7,0],
 "stdlib_2fft_8h_source.html":[19,0,7,0],
-"stdlib_2geometric__multigrid_8h.html":[19,0,7,1]
+"stdlib_2geometric__multigrid_8h.html":[19,0,7,1],
+"stdlib_2geometric__multigrid_8h.html#a078c9905ba27ce785af7c7d829a4e9fb":[19,0,7,1,20]
 };

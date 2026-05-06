@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Check.html":[17,0,1,0,4,0],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Check.html":[18,0,0,0,4,0],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Derived.html":[17,0,1,0,4,1],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Derived.html":[18,0,0,0,4,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02":[19,0,0,2,3,20,1],
 "typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce":[19,0,0,2,3,20,2],
 "typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991afb9acbcd0c57a9e5e6a58ce9b7e1524b":[19,0,0,2,3,20,0],
-"typedefs_8h.html#a485216e16cea8c7b32543a53cfe119c7":[19,0,0,2,3,27]
+"typedefs_8h.html#a485216e16cea8c7b32543a53cfe119c7":[19,0,0,2,3,27],
+"typedefs_8h.html#a5a1c6585e8bfdc92f9f74988e96e0e61":[19,0,0,2,3,23]
 };
