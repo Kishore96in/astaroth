@@ -226,6 +226,8 @@ var menudata={children:[
 {text:"t",url:"globals_vars_t.html#index_t"},
 {text:"u",url:"globals_vars_u.html#index_u"},
 {text:"v",url:"globals_vars_v.html#index_v"},
+{text:"x",url:"globals_vars_x.html#index_x"},
+{text:"y",url:"globals_vars_y.html#index_y"},
 {text:"z",url:"globals_vars_z.html#index_z"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"a",url:"globals_type.html#index_a"},

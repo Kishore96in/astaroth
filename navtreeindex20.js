@@ -1,5 +1,17 @@
 var NAVTREEINDEX20 =
 {
+"structmatplotlibcpp_1_1detail_1_1is__callable.html#a75964f6079c7465f1c4b2dc2ce37a276":[17,0,1,0,1,0],
+"structmatplotlibcpp_1_1detail_1_1is__callable.html#a75964f6079c7465f1c4b2dc2ce37a276":[18,0,0,0,1,0],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl.html":[18,0,0,0,2],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl.html":[17,0,1,0,2],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01false_00_01T_01_4.html":[18,0,0,0,3],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01false_00_01T_01_4.html":[17,0,1,0,3],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01false_00_01T_01_4.html#a54b64329bf2f22cd03b8914d0bf47c3c":[18,0,0,0,3,0],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01false_00_01T_01_4.html#a54b64329bf2f22cd03b8914d0bf47c3c":[17,0,1,0,3,0],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html":[18,0,0,0,4],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html":[17,0,1,0,4],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html#a5c13bf9203ddac4515b9e46e1db61bc4":[18,0,0,0,4,4],
+"structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html#a5c13bf9203ddac4515b9e46e1db61bc4":[17,0,1,0,4,4],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html#a925cbc5a2b81b008497e6479f8d2485a":[17,0,1,0,4,3],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4.html#a925cbc5a2b81b008497e6479f8d2485a":[18,0,0,0,4,3],
 "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01T_01_4_1_1Check.html":[17,0,1,0,4,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX20 =
 "transpose_8cu.html#a3f5ce4277d520958a0efb0cf330acf9f":[19,0,6,0,3,15,7],
 "transpose_8cu.html#a5f9f2c7fc0fddf5a8c13c1f03f7206e9":[19,0,6,0,3,15,6],
 "transpose_8cu.html#a8abcc668bbabaa8ff8c971a9605de043":[19,0,6,0,3,15,1],
-"transpose_8cu.html#a8acff061d55f2f897aa42823e002adb6":[19,0,6,0,3,15,4],
-"transpose_8cu.html#a98be303b80c21c2c18ffe95a94354193":[19,0,6,0,3,15,0],
-"transpose_8cu.html#ab6b1bba12edd57fde5ac6a74bb869ea6":[19,0,6,0,3,15,2],
-"transpose_8cu.html#aeafd0474c1e6b120dbefcfc4939dbf12":[19,0,6,0,3,15,3],
-"transpose_8cu.html#aff7b592e6f7d271fb40bda19a1bf1257":[19,0,6,0,3,15,5],
-"transpose_8h.html":[19,0,6,0,3,16],
-"transpose_8h.html#a8abcc668bbabaa8ff8c971a9605de043":[19,0,6,0,3,16,0],
-"transpose_8h.html#ab6b1bba12edd57fde5ac6a74bb869ea6":[19,0,6,0,3,16,1],
-"transpose_8h_source.html":[19,0,6,0,3,16],
-"typedefs_8h.html":[19,0,0,2,3],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991":[19,0,0,2,3,20],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a167127d34ea476cc8e24ff90a9176c02":[19,0,0,2,3,20,1],
-"typedefs_8h.html#a02d4757a47347e3084318f5bc9a86991a50964bd761b7fd9a545dfcd108019dce":[19,0,0,2,3,20,2]
+"transpose_8cu.html#a8acff061d55f2f897aa42823e002adb6":[19,0,6,0,3,15,4]
 };

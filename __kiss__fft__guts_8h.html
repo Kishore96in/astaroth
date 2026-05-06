@@ -147,9 +147,9 @@ Macros</h2></td></tr>
 <tr class="separator:a2e780e8fe86d9c3e7b6a469f61aaf5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4fc93cde15512f1946f364d5271dd3" id="r_a2d4fc93cde15512f1946f364d5271dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#a2d4fc93cde15512f1946f364d5271dd3">KISS_FFT_SIN</a>(phase)&#160;&#160;&#160;(<a class="el" href="kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337">kiss_fft_scalar</a>) <a class="el" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(phase)</td></tr>
 <tr class="separator:a2d4fc93cde15512f1946f364d5271dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b812a30fdb0c530a90a18d1692fab6c" id="r_a0b812a30fdb0c530a90a18d1692fab6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#a0b812a30fdb0c530a90a18d1692fab6c">HALF_OF</a>(x)&#160;&#160;&#160;((x)*((<a class="el" href="kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337">kiss_fft_scalar</a>).5))</td></tr>
+<tr class="memitem:a0b812a30fdb0c530a90a18d1692fab6c" id="r_a0b812a30fdb0c530a90a18d1692fab6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#a0b812a30fdb0c530a90a18d1692fab6c">HALF_OF</a>(<a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)&#160;&#160;&#160;((<a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)*((<a class="el" href="kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337">kiss_fft_scalar</a>).5))</td></tr>
 <tr class="separator:a0b812a30fdb0c530a90a18d1692fab6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7852abdf2dc5ed4538551be6d1dd20b" id="r_ac7852abdf2dc5ed4538551be6d1dd20b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#ac7852abdf2dc5ed4538551be6d1dd20b">kf_cexp</a>(x,  phase)</td></tr>
+<tr class="memitem:ac7852abdf2dc5ed4538551be6d1dd20b" id="r_ac7852abdf2dc5ed4538551be6d1dd20b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#ac7852abdf2dc5ed4538551be6d1dd20b">kf_cexp</a>(<a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>,  phase)</td></tr>
 <tr class="separator:ac7852abdf2dc5ed4538551be6d1dd20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1abb41ecdedd05dda5d1ce83b67a704" id="r_ac1abb41ecdedd05dda5d1ce83b67a704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kiss__fft__guts_8h.html#ac1abb41ecdedd05dda5d1ce83b67a704">pcpx</a>(c)&#160;&#160;&#160;    <a class="el" href="kiss__fft__log_8h.html#a839ae15e8f6d48d8185c37314ddd7f23">KISS_FFT_DEBUG</a>(&quot;%g + %gi\n&quot;,(double)((c)-&gt;r),(double)((c)-&gt;i))</td></tr>
 <tr class="separator:ac1abb41ecdedd05dda5d1ce83b67a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -442,8 +442,8 @@ Macros</h2></td></tr>
           <td class="memname">#define HALF_OF</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x)*((<a class="el" href="kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337">kiss_fft_scalar</a>).5))</td>
+          <td class="paramname"><a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)*((<a class="el" href="kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337">kiss_fft_scalar</a>).5))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -460,7 +460,7 @@ Macros</h2></td></tr>
           <td class="memname">#define kf_cexp</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
+          <td class="paramname"><a class="el" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -476,11 +476,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>{ \</div>
-<div class="line">        (x)-&gt;r = <a class="code hl_define" href="__kiss__fft__guts_8h.html#a2e780e8fe86d9c3e7b6a469f61aaf5d1">KISS_FFT_COS</a>(phase);\</div>
-<div class="line">        (x)-&gt;i = <a class="code hl_define" href="__kiss__fft__guts_8h.html#a2d4fc93cde15512f1946f364d5271dd3">KISS_FFT_SIN</a>(phase);\</div>
+<div class="line">        (<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)-&gt;r = <a class="code hl_define" href="__kiss__fft__guts_8h.html#a2e780e8fe86d9c3e7b6a469f61aaf5d1">KISS_FFT_COS</a>(phase);\</div>
+<div class="line">        (<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)-&gt;i = <a class="code hl_define" href="__kiss__fft__guts_8h.html#a2d4fc93cde15512f1946f364d5271dd3">KISS_FFT_SIN</a>(phase);\</div>
 <div class="line">    }<span class="keywordflow">while</span>(0)</div>
 <div class="ttc" id="a__kiss__fft__guts_8h_html_a2d4fc93cde15512f1946f364d5271dd3"><div class="ttname"><a href="__kiss__fft__guts_8h.html#a2d4fc93cde15512f1946f364d5271dd3">KISS_FFT_SIN</a></div><div class="ttdeci">#define KISS_FFT_SIN(phase)</div><div class="ttdef"><b>Definition</b> _kiss_fft_guts.h:137</div></div>
 <div class="ttc" id="a__kiss__fft__guts_8h_html_a2e780e8fe86d9c3e7b6a469f61aaf5d1"><div class="ttname"><a href="__kiss__fft__guts_8h.html#a2e780e8fe86d9c3e7b6a469f61aaf5d1">KISS_FFT_COS</a></div><div class="ttdeci">#define KISS_FFT_COS(phase)</div><div class="ttdef"><b>Definition</b> _kiss_fft_guts.h:136</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a682ab6f9e449fd03e8f93cab54a14f8c"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a></div><div class="ttdeci">sld_flux x</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:35</div></div>
 </div><!-- fragment -->
 </div>
 </div>

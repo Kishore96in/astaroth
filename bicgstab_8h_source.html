@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('bicgstab_8h_source.html',''); initResi
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#ab07230d0f2b81ccfcc89abd241a122d5">   27</a></span><a class="code hl_function" href="bicgstab_8h.html#ab07230d0f2b81ccfcc89abd241a122d5">bicgstab_compute_h_and_s</a>(Field x)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#ab07230d0f2b81ccfcc89abd241a122d5">   27</a></span><a class="code hl_function" href="bicgstab_8h.html#ab07230d0f2b81ccfcc89abd241a122d5">bicgstab_compute_h_and_s</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    alpha = BICGSTAB_rho_prev/BICGSTAB_r0Tv</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    write(BICGSTAB_S,BICGSTAB_R - alpha*BICGSTAB_V)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    write(BICGSTAB_H,x + alpha*BICGSTAB_P)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    write(BICGSTAB_H,<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a> + alpha*BICGSTAB_P)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a08a6206817aa8951fad7523694788bcf">   34</a></span><a class="code hl_function" href="bicgstab_8h.html#a08a6206817aa8951fad7523694788bcf">bicgstab_compute_h_and_s_preconditioned</a>(Field x)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a08a6206817aa8951fad7523694788bcf">   34</a></span><a class="code hl_function" href="bicgstab_8h.html#a08a6206817aa8951fad7523694788bcf">bicgstab_compute_h_and_s_preconditioned</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    alpha = BICGSTAB_rho_prev/BICGSTAB_r0Tv</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    write(BICGSTAB_S,BICGSTAB_R - alpha*BICGSTAB_V)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    write(BICGSTAB_H,x + alpha*BICGSTAB_Y)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    write(BICGSTAB_H,<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a> + alpha*BICGSTAB_Y)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
@@ -151,19 +151,19 @@ $(document).ready(function(){initNavTree('bicgstab_8h_source.html',''); initResi
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a68ffcfa17cd6e50bcda6b0db203366ea">   49</a></span><a class="code hl_function" href="bicgstab_8h.html#a68ffcfa17cd6e50bcda6b0db203366ea">bicgstab_compute_next_solution</a>(Field x)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a68ffcfa17cd6e50bcda6b0db203366ea">   49</a></span><a class="code hl_function" href="bicgstab_8h.html#a68ffcfa17cd6e50bcda6b0db203366ea">bicgstab_compute_next_solution</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    omega = BICGSTAB_tTs/BICGSTAB_tTt</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    write(x,BICGSTAB_H + omega*BICGSTAB_S)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    write(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>,BICGSTAB_H + omega*BICGSTAB_S)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    write(BICGSTAB_R,BICGSTAB_S - omega*BICGSTAB_T)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a2e3d7dd1b90b71bf1cfbc2d63bb8b631">   56</a></span><a class="code hl_function" href="bicgstab_8h.html#a2e3d7dd1b90b71bf1cfbc2d63bb8b631">bicgstab_compute_next_solution_preconditioned</a>(Field x)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a2e3d7dd1b90b71bf1cfbc2d63bb8b631">   56</a></span><a class="code hl_function" href="bicgstab_8h.html#a2e3d7dd1b90b71bf1cfbc2d63bb8b631">bicgstab_compute_next_solution_preconditioned</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    omega = BICGSTAB_tTs/BICGSTAB_tTt</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    write(x,BICGSTAB_H + omega*BICGSTAB_Z)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    write(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>,BICGSTAB_H + omega*BICGSTAB_Z)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    write(BICGSTAB_R,BICGSTAB_S - omega*BICGSTAB_T)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
@@ -210,20 +210,20 @@ $(document).ready(function(){initNavTree('bicgstab_8h_source.html',''); initResi
 </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#abdc75808782d26ac3e390d87a182f5be">   96</a></span><a class="code hl_function" href="bicgstab_8h.html#abdc75808782d26ac3e390d87a182f5be">bicgstab_compute_h_and_s_extended</a>(Field x)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#abdc75808782d26ac3e390d87a182f5be">   96</a></span><a class="code hl_function" href="bicgstab_8h.html#abdc75808782d26ac3e390d87a182f5be">bicgstab_compute_h_and_s_extended</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    alpha = BICGSTAB_rho_prev/BICGSTAB_r0Tv</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    write(EXTENDED_BICGSTAB_S,EXTENDED_BICGSTAB_R - alpha*EXTENDED_BICGSTAB_V)</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    write(EXTENDED_BICGSTAB_H,x + alpha*EXTENDED_BICGSTAB_P)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    write(EXTENDED_BICGSTAB_H,<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a> + alpha*EXTENDED_BICGSTAB_P)</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#ac86c81ef0d48e76d6b85874e3bdf7ed4">  103</a></span><a class="code hl_function" href="bicgstab_8h.html#ac86c81ef0d48e76d6b85874e3bdf7ed4">bicgstab_compute_h_and_s_preconditioned_extended</a>(Field x)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#ac86c81ef0d48e76d6b85874e3bdf7ed4">  103</a></span><a class="code hl_function" href="bicgstab_8h.html#ac86c81ef0d48e76d6b85874e3bdf7ed4">bicgstab_compute_h_and_s_preconditioned_extended</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    alpha = BICGSTAB_rho_prev/BICGSTAB_r0Tv</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    write(EXTENDED_BICGSTAB_S,EXTENDED_BICGSTAB_R - alpha*EXTENDED_BICGSTAB_V)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    write(EXTENDED_BICGSTAB_H,x + alpha*EXTENDED_BICGSTAB_Y)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    write(EXTENDED_BICGSTAB_H,<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a> + alpha*EXTENDED_BICGSTAB_Y)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
 </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
@@ -238,19 +238,19 @@ $(document).ready(function(){initNavTree('bicgstab_8h_source.html',''); initResi
 </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a0e7bc4d8a4e82d6f056ca70851d5eea1">  118</a></span><a class="code hl_function" href="bicgstab_8h.html#a0e7bc4d8a4e82d6f056ca70851d5eea1">bicgstab_compute_next_solution_extended</a>(Field x)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a0e7bc4d8a4e82d6f056ca70851d5eea1">  118</a></span><a class="code hl_function" href="bicgstab_8h.html#a0e7bc4d8a4e82d6f056ca70851d5eea1">bicgstab_compute_next_solution_extended</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    omega = BICGSTAB_tTs/BICGSTAB_tTt</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    write(x,EXTENDED_BICGSTAB_H + omega*EXTENDED_BICGSTAB_S)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    write(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>,EXTENDED_BICGSTAB_H + omega*EXTENDED_BICGSTAB_S)</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    write(EXTENDED_BICGSTAB_R,EXTENDED_BICGSTAB_S - omega*EXTENDED_BICGSTAB_T)</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a9b9c62b518253fa8c9fdc43520052fff">  125</a></span><a class="code hl_function" href="bicgstab_8h.html#a9b9c62b518253fa8c9fdc43520052fff">bicgstab_compute_next_solution_preconditioned_extended</a>(Field x)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="bicgstab_8h.html#a9b9c62b518253fa8c9fdc43520052fff">  125</a></span><a class="code hl_function" href="bicgstab_8h.html#a9b9c62b518253fa8c9fdc43520052fff">bicgstab_compute_next_solution_preconditioned_extended</a>(Field <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>)</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>{</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    omega = BICGSTAB_tTs/BICGSTAB_tTt</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    write(x,EXTENDED_BICGSTAB_H + omega*EXTENDED_BICGSTAB_Z)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    write(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>,EXTENDED_BICGSTAB_H + omega*EXTENDED_BICGSTAB_Z)</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    write(EXTENDED_BICGSTAB_R,EXTENDED_BICGSTAB_S - omega*EXTENDED_BICGSTAB_T)</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 </div>
@@ -296,6 +296,7 @@ $(document).ready(function(){initNavTree('bicgstab_8h_source.html',''); initResi
 <div class="ttc" id="abicgstab_8h_html_ac86c81ef0d48e76d6b85874e3bdf7ed4"><div class="ttname"><a href="bicgstab_8h.html#ac86c81ef0d48e76d6b85874e3bdf7ed4">bicgstab_compute_h_and_s_preconditioned_extended</a></div><div class="ttdeci">bicgstab_compute_h_and_s_preconditioned_extended(Field x)</div><div class="ttdef"><b>Definition</b> bicgstab.h:103</div></div>
 <div class="ttc" id="abicgstab_8h_html_adcfce31f6eab0eaa3c7913b5b2739118"><div class="ttname"><a href="bicgstab_8h.html#adcfce31f6eab0eaa3c7913b5b2739118">bicgstab_compute_t</a></div><div class="ttdeci">bicgstab_compute_t(real As)</div><div class="ttdef"><b>Definition</b> bicgstab.h:41</div></div>
 <div class="ttc" id="abicgstab_8h_html_aee3db0c5445b5f67696c7f6b3bebf2e1"><div class="ttname"><a href="bicgstab_8h.html#aee3db0c5445b5f67696c7f6b3bebf2e1">bicgstab_compute_rho_prev</a></div><div class="ttdeci">bicgstab_compute_rho_prev()</div><div class="ttdef"><b>Definition</b> bicgstab.h:67</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a682ab6f9e449fd03e8f93cab54a14f8c"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a></div><div class="ttdeci">sld_flux x</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

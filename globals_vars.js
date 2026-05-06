@@ -20,5 +20,7 @@ var globals_vars =
     [ "t", "globals_vars_t.html", null ],
     [ "u", "globals_vars_u.html", null ],
     [ "v", "globals_vars_v.html", null ],
+    [ "x", "globals_vars_x.html", null ],
+    [ "y", "globals_vars_y.html", null ],
     [ "z", "globals_vars_z.html", null ]
 ];

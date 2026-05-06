@@ -117,21 +117,21 @@ Usage</h1>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Prepare data.</span></div>
 <div class="line">    <span class="keywordtype">int</span> n = 5000;</div>
-<div class="line">    std::vector&lt;double&gt; x(n), y(n), z(n), w(n,2);</div>
+<div class="line">    std::vector&lt;double&gt; <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>(n), <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>(n), <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>(n), w(n,2);</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;n; ++i) {</div>
-<div class="line">        x.at(i) = i*i;</div>
-<div class="line">        y.at(i) = <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(2*M_PI*i/360.0);</div>
-<div class="line">        z.at(i) = log(i);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>.at(i) = i*i;</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>.at(i) = <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(2*M_PI*i/360.0);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>.at(i) = log(i);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Set the size of output image to 1200x780 pixels</span></div>
 <div class="line">    plt::figure_size(1200, 780);</div>
 <div class="line">    <span class="comment">// Plot line from given x and y data. Color is selected automatically.</span></div>
-<div class="line">    plt::plot(x, y);</div>
+<div class="line">    plt::plot(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>);</div>
 <div class="line">    <span class="comment">// Plot a red dashed line from given x and y data.</span></div>
-<div class="line">    plt::plot(x, w,<span class="stringliteral">&quot;r--&quot;</span>);</div>
+<div class="line">    plt::plot(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, w,<span class="stringliteral">&quot;r--&quot;</span>);</div>
 <div class="line">    <span class="comment">// Plot a line whose name will show up as &quot;log(x)&quot; in the legend.</span></div>
-<div class="line">    plt::named_plot(<span class="stringliteral">&quot;log(x)&quot;</span>, x, z);</div>
+<div class="line">    plt::named_plot(<span class="stringliteral">&quot;log(x)&quot;</span>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>);</div>
 <div class="line">    <span class="comment">// Set x-axis to interval [0,1000000]</span></div>
 <div class="line">    plt::xlim(0, 1000*1000);</div>
 <div class="line">    <span class="comment">// Add graph title</span></div>
@@ -142,6 +142,9 @@ Usage</h1>
 <div class="line">    plt::save(<span class="stringliteral">&quot;./basic.png&quot;</span>);</div>
 <div class="line">}</div>
 <div class="ttc" id="amath__utils_8h_html_a0cb8046c9ac52516329d57a440a7e60a"><div class="ttname"><a href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a></div><div class="ttdeci">#define sin(x)</div><div class="ttdef"><b>Definition</b> math_utils.h:41</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a682ab6f9e449fd03e8f93cab54a14f8c"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a></div><div class="ttdeci">sld_flux x</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:35</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_a7d10a2a41e0b73477b9c627cbb1d268c"><div class="ttname"><a href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a></div><div class="ttdeci">sld_flux y</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:36</div></div>
+<div class="ttc" id="aslope__limited__diffusion_8h_html_ae8e6d1603dfc02a1d42d85a70cd0f228"><div class="ttname"><a href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a></div><div class="ttdeci">sld_flux z</div><div class="ttdef"><b>Definition</b> slope_limited_diffusion.h:37</div></div>
 </div><!-- fragment --><p> g++ basic.cpp -I/usr/include/python2.7 -lpython2.7</p>
 <p><b>Result:</b></p>
 <p><img src="./examples/basic.png" alt="Basic example" class="inline"/></p>
@@ -155,17 +158,17 @@ Usage</h1>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Prepare data.</span></div>
 <div class="line">    <span class="keywordtype">int</span> n = 5000; <span class="comment">// number of data points</span></div>
-<div class="line">    vector&lt;double&gt; x(n),y(n);</div>
+<div class="line">    vector&lt;double&gt; <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>(n),<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>(n);</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;n; ++i) {</div>
 <div class="line">        <span class="keywordtype">double</span> t = 2*M_PI*i/n;</div>
-<div class="line">        x.at(i) = 16*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t)*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t)*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t);</div>
-<div class="line">        y.at(i) = 13*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(t) - 5*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(2*t) - 2*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(3*t) - <a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(4*t);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>.at(i) = 16*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t)*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t)*<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(t);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>.at(i) = 13*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(t) - 5*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(2*t) - 2*<a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(3*t) - <a class="code hl_define" href="math__utils_8h.html#a6164614557902f0c3801d44b5b47e7a6">cos</a>(4*t);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// plot() takes an arbitrary number of (x,y,format)-triples.</span></div>
 <div class="line">    <span class="comment">// x must be iterable (that is, anything providing begin(x) and end(x)),</span></div>
 <div class="line">    <span class="comment">// y must either be callable (providing operator() const) or iterable.</span></div>
-<div class="line">    plt::plot(x, y, <span class="stringliteral">&quot;r-&quot;</span>, x, [](<span class="keywordtype">double</span> d) { <span class="keywordflow">return</span> 12.5+<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(d)); }, <span class="stringliteral">&quot;k-&quot;</span>);</div>
+<div class="line">    plt::plot(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>, <span class="stringliteral">&quot;r-&quot;</span>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, [](<span class="keywordtype">double</span> d) { <span class="keywordflow">return</span> 12.5+<a class="code hl_function" href="math_2funcs_8h.html#a9eebae7aba8e1b5fe3e77c3bdd5a8338">abs</a>(<a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(d)); }, <span class="stringliteral">&quot;k-&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// show plots</span></div>
@@ -184,15 +187,15 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="acc-runtime_2acc_2empty_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    std::vector&lt;double&gt; t(1000);</div>
-<div class="line">    std::vector&lt;double&gt; x(t.size());</div>
+<div class="line">    std::vector&lt;double&gt; <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>(t.size());</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; t.size(); i++) {</div>
 <div class="line">        t[i] = i / 100.0;</div>
-<div class="line">        x[i] = <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(2.0 * M_PI * 1.0 * t[i]);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>[i] = <a class="code hl_define" href="math__utils_8h.html#a0cb8046c9ac52516329d57a440a7e60a">sin</a>(2.0 * M_PI * 1.0 * t[i]);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    plt::xkcd();</div>
-<div class="line">    plt::plot(t, x);</div>
+<div class="line">    plt::plot(t, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>);</div>
 <div class="line">    plt::title(<span class="stringliteral">&quot;AN ORDINARY SIN WAVE&quot;</span>);</div>
 <div class="line">    plt::save(<span class="stringliteral">&quot;xkcd.png&quot;</span>);</div>
 <div class="line">}</div>
@@ -206,17 +209,17 @@ Usage</h1>
 <div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="acc-runtime_2acc_2empty_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// u and v are respectively the x and y components of the arrows we&#39;re plotting</span></div>
-<div class="line">    std::vector&lt;int&gt; x, y, u, v;</div>
+<div class="line">    std::vector&lt;int&gt; <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>, u, v;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -5; i &lt;= 5; i++) {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -5; j &lt;= 5; j++) {</div>
-<div class="line">            x.push_back(i);</div>
+<div class="line">            <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>.push_back(i);</div>
 <div class="line">            u.push_back(-i);</div>
-<div class="line">            y.push_back(j);</div>
+<div class="line">            <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>.push_back(j);</div>
 <div class="line">            v.push_back(-j);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    plt::quiver(x, y, u, v);</div>
+<div class="line">    plt::quiver(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>, u, v);</div>
 <div class="line">    plt::show();</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> g++ quiver.cpp -std=c++11 -I/usr/include/python2.7 -lpython2.7</p>
@@ -228,7 +231,7 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="acc-runtime_2acc_2empty_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
-<div class="line">    std::vector&lt;std::vector&lt;double&gt;&gt; x, y, z;</div>
+<div class="line">    std::vector&lt;std::vector&lt;double&gt;&gt; <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = -5; i &lt;= 5;  i += 0.25) {</div>
 <div class="line">        std::vector&lt;double&gt; x_row, y_row, z_row;</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> j = -5; j &lt;= 5; j += 0.25) {</div>
@@ -236,12 +239,12 @@ Usage</h1>
 <div class="line">            y_row.push_back(j);</div>
 <div class="line">            z_row.push_back(::std::sin(::std::hypot(i, j)));</div>
 <div class="line">        }</div>
-<div class="line">        x.push_back(x_row);</div>
-<div class="line">        y.push_back(y_row);</div>
-<div class="line">        z.push_back(z_row);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>.push_back(x_row);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>.push_back(y_row);</div>
+<div class="line">        <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>.push_back(z_row);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    plt::plot_surface(x, y, z);</div>
+<div class="line">    plt::plot_surface(<a class="code hl_variable" href="slope__limited__diffusion_8h.html#a682ab6f9e449fd03e8f93cab54a14f8c">x</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#a7d10a2a41e0b73477b9c627cbb1d268c">y</a>, <a class="code hl_variable" href="slope__limited__diffusion_8h.html#ae8e6d1603dfc02a1d42d85a70cd0f228">z</a>);</div>
 <div class="line">    plt::show();</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Result:</b></p>
