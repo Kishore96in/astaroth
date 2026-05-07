@@ -17,6 +17,8 @@ var operators_8h =
     [ "divergence", "operators_8h.html#afade80b5099ad85e65911670b5541e8c", null ],
     [ "divergence", "operators_8h.html#a343271a59a6118b6472689ded32de7d6", null ],
     [ "gij5", "operators_8h.html#a5848dea05998443e309b00e6ec089e7d", null ],
+    [ "gij6", "operators_8h.html#aa7a20384b719254c884614dfffaf3225", null ],
+    [ "gij6_ignore_spacing", "operators_8h.html#ac3e687467ca1a7ab57a7110cb7852dad", null ],
     [ "gradient", "operators_8h.html#aa527ad2d83d272b13378a6cbff710530", null ],
     [ "gradient2", "operators_8h.html#a7722626067b25a7e070c6d57a8cf3cf6", null ],
     [ "gradient5", "operators_8h.html#ac7c335885a92da55706a457136b93411", null ],

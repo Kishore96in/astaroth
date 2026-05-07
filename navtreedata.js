@@ -242,13 +242,13 @@ var NAVTREEINDEX =
 "kiss__fft_8h.html#a7a5959c0424de9553661fe50fdc4264e",
 "md_acc-runtime_2README.html#autotoc_md46",
 "node_8cc.html#a07eabc56bed3d3db07eacc089b49a867",
-"reindex_8h.html",
-"smooth__max_8h.html#a75d2cc1d4e5b1bb3278bec8ca2e08e54",
-"stdderiv_8h.html#a9f8c0b89009770b331c2402bede75832",
-"structAcScratchpadStates.html#acb0b8c1da1cbe9452a823599092985cb",
-"structVolume.html#ac28a2e7065235a30502238898e5f22a7",
-"structmatplotlibcpp_1_1detail_1_1is__callable.html",
-"transpose_8cu.html#a8acff061d55f2f897aa42823e002adb6"
+"reindex_8cu.html#aee5bda1f1d1830c5a6621ecbe4c30031",
+"smooth__max_8h.html#a755c9e42f967efa0e2c11dee19d910ec",
+"stdderiv_8h.html#a81bedb1c73542639e049a22e4d86e65b",
+"structAcReduction.html#afa3e8b7c5a222b87fbd962701f5feb6e",
+"structVolume.html#a453d4413dce94f7dcd1aaa41072ae0c4",
+"structmatplotlibcpp_1_1detail_1_1__interpreter.html#afd78dcfa6d7aee67e7ef02f2b8f7945f",
+"transpose_8cu.html#a5f9f2c7fc0fddf5a8c13c1f03f7206e9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
