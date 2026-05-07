@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"kiss__fft_8h.html#a4d9bf2d6a2ce1b061545a16faf77d337":[19,0,6,0,3,0,2,7],
+"kiss__fft_8h.html#a62e86236e852945b8e120d0228377d71":[19,0,6,0,3,0,2,5],
 "kiss__fft_8h.html#a7a5959c0424de9553661fe50fdc4264e":[19,0,6,0,3,0,2,11],
 "kiss__fft_8h.html#aa6e24524bfa0247ac606c950e43a9a4d":[19,0,6,0,3,0,2,6],
 "kiss__fft_8h.html#aa79492c87ecb142d418284bf0a6c8259":[19,0,6,0,3,0,2,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "md_acc-runtime_2README.html#autotoc_md40":[2,1,3],
 "md_acc-runtime_2README.html#autotoc_md41":[2,1,4],
 "md_acc-runtime_2README.html#autotoc_md42":[2,1,4,0],
-"md_acc-runtime_2README.html#autotoc_md43":[2,1,4,1],
-"md_acc-runtime_2README.html#autotoc_md44":[2,1,4,2],
-"md_acc-runtime_2README.html#autotoc_md45":[2,1,5]
+"md_acc-runtime_2README.html#autotoc_md43":[2,1,4,1]
 };

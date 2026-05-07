@@ -32,6 +32,8 @@ var general__operators_8h =
     [ "gradient", "general__operators_8h.html#aa527ad2d83d272b13378a6cbff710530", null ],
     [ "gradient2", "general__operators_8h.html#a7722626067b25a7e070c6d57a8cf3cf6", null ],
     [ "gradient5", "general__operators_8h.html#ac7c335885a92da55706a457136b93411", null ],
+    [ "gradient6", "general__operators_8h.html#ac09824f1c2fb054dc3f1aff8a1a09574", null ],
+    [ "gradient6_ignore_spacing", "general__operators_8h.html#ac58229599d949cd4269d89903a1870b6", null ],
     [ "gradient6_upwd", "general__operators_8h.html#a15b4114f629f46b0fafae5dac68354c1", null ],
     [ "gradient_of_divergence", "general__operators_8h.html#abbdff9cfd80f51139cd5fdb83c4d2dbc", null ],
     [ "gradient_of_divergence", "general__operators_8h.html#a8e2bc4cfcd244fc5e641aaeb3c6153f8", null ],
