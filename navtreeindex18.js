@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"structAcReduction.html#a30da1a72b6ae1bb593e3d85351e6c27a":[18,0,28,3],
+"structAcReduction.html#a34a7c4b74b94494bcc13a842e91c6e22":[18,0,28,0],
 "structAcReduction.html#a99db014842ac6a814b8f1d9d2579bf69":[18,0,28,1],
 "structAcReduction.html#ad17ae34c0710021bbba4bbb537654d19":[18,0,28,4],
 "structAcReduction.html#afa3e8b7c5a222b87fbd962701f5feb6e":[18,0,28,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structVertexBufferArray.html#a39fa9c3ceedfab36ef281682fbfed2e8":[18,0,130,3],
 "structVertexBufferArray.html#a6d116468065bf5430379a3408cd983c1":[18,0,130,0],
 "structVertexBufferArray.html#a88819d76238bfef598a53f0fc95a03e3":[18,0,130,7],
-"structVertexBufferArray.html#aacb033ad00c514818e5f986bc9941fc4":[18,0,130,2],
-"structVertexBufferArray.html#ab1225b9bf0b7e6b73ab88dd1bafde5d3":[18,0,130,8],
-"structVertexBufferArray.html#abad7ee4f5d2a0f3323b2b5a8093370cb":[18,0,130,9]
+"structVertexBufferArray.html#aacb033ad00c514818e5f986bc9941fc4":[18,0,130,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"general__operators_8h.html#a5509bfa9195268451be18d89a323b811":[19,0,0,5,12,9],
+"general__operators_8h.html#a5848dea05998443e309b00e6ec089e7d":[19,0,0,5,12,28],
 "general__operators_8h.html#a5ac842275e205707c4838bd2a5d8183f":[19,0,0,5,12,53],
 "general__operators_8h.html#a5b96ea3ffc80f632cc83a1d32614094b":[19,0,0,5,12,4],
 "general__operators_8h.html#a5decb719e2e4b3523af606941f5f06ed":[19,0,0,5,12,39],
@@ -53,8 +55,8 @@ var NAVTREEINDEX10 =
 "geometric__multigrid__core_8h.html#ac3ca3a756a48a25c261c22ae7ab6cfc4":[19,0,0,5,14,2],
 "geometric__multigrid__core_8h.html#ad4341623573ea5c6cd29d261ae667ea2":[19,0,0,5,14,3],
 "geometric__multigrid__core_8h_source.html":[19,0,0,5,14],
-"globals.html":[19,1,0],
 "globals.html":[19,1,0,0],
+"globals.html":[19,1,0],
 "globals_a.html":[19,1,0,1],
 "globals_b.html":[19,1,0,2],
 "globals_c.html":[19,1,0,3],
@@ -87,8 +89,8 @@ var NAVTREEINDEX10 =
 "globals_defs_z.html":[19,1,6,24],
 "globals_e.html":[19,1,0,5],
 "globals_enum.html":[19,1,4],
-"globals_eval.html":[19,1,5,0],
 "globals_eval.html":[19,1,5],
+"globals_eval.html":[19,1,5,0],
 "globals_eval_b.html":[19,1,5,1],
 "globals_eval_f.html":[19,1,5,2],
 "globals_eval_n.html":[19,1,5,3],
@@ -100,8 +102,8 @@ var NAVTREEINDEX10 =
 "globals_eval_y.html":[19,1,5,9],
 "globals_eval_z.html":[19,1,5,10],
 "globals_f.html":[19,1,0,6],
-"globals_func.html":[19,1,1,0],
 "globals_func.html":[19,1,1],
+"globals_func.html":[19,1,1,0],
 "globals_func_a.html":[19,1,1,1],
 "globals_func_b.html":[19,1,1,2],
 "globals_func_c.html":[19,1,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "heat__conduction__kramers_8h_source.html":[19,0,0,4,1,1],
 "heffte_8cc.html":[19,0,6,0,3,4],
 "heffte_8cc.html#a063a4eea8f0f26ff499dfc68dfff60c0":[19,0,6,0,3,4,9],
-"heffte_8cc.html#a177bfe09122ac9cafccaf67e1c947194":[19,0,6,0,3,4,8],
-"heffte_8cc.html#a1c2c5b25a17ec1d6d66250f11ba3400a":[19,0,6,0,3,4,13],
-"heffte_8cc.html#a45d4ac53092c904de4b94fe22d3de832":[19,0,6,0,3,4,19]
+"heffte_8cc.html#a177bfe09122ac9cafccaf67e1c947194":[19,0,6,0,3,4,8]
 };

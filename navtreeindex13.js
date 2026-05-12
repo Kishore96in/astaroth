@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"md_acc-runtime_2README.html#autotoc_md42":[2,1,4,0],
+"md_acc-runtime_2README.html#autotoc_md43":[2,1,4,1],
 "md_acc-runtime_2README.html#autotoc_md44":[2,1,4,2],
 "md_acc-runtime_2README.html#autotoc_md45":[2,1,5],
 "md_acc-runtime_2README.html#autotoc_md46":[2,1,5,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "namespacematplotlibcpp_1_1detail.html#ab78ea1d46cdefdf8037d2a2c0bcfaedb":[17,0,1,0,9],
 "namespacematplotlibcpp_1_1detail.html#ad711caf78c271008983e97009c6d314c":[17,0,1,0,8],
 "namespacemembers.html":[17,1,0],
-"namespacemembers_func.html":[17,1,1],
-"namespacemembers_type.html":[17,1,2],
-"namespaces.html":[17,0]
+"namespacemembers_func.html":[17,1,1]
 };
